@@ -1,0 +1,73 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Personal site for Nelson Figueroa"
+  keywords = "homepage, blog, science, web, development, programming, technology"
+  images = [""]
+
+  homeSubtitle = "Ruby on Rails Developer / Cybersecurity Enthusiast"
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  [params.logo]
+    logoText = "nfigueroa.dev"
+    logoHomeLink = "/"
+
+  # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:nelsonfigueroa07@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/nelsonfigueroa"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/nelsonfigueroa07"
+
+[languages]
+  [languages.en]
+    title = "Nelson Figueroa"
+    subtitle = "Web Developer"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+	# You can create a language based menu
+    # [languages.en.menu]
+    #   [[languages.en.menu.main]]
+    #     identifier = "about"
+    #     name = "About"
+    #     url = "/about"
+    #   [[languages.en.menu.main]]
+    #     identifier = "showcase"
+    #     name = "Showcase"
+    #     url = "/showcase"
+
+# And you can even create generic menu
+[menu]
+  # [[menu.main]]
+  #   identifier = "about"
+  #   name       = "About"
+  #   url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
