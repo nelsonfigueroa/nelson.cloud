@@ -20,8 +20,8 @@
 {{ end }}
 
 <!-- CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css"> -->
 
 {{ $options := (dict "targetPath" "main.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | resources.Minify | resources.Fingerprint }}
