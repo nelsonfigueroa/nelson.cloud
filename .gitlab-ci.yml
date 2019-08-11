@@ -1,0 +1,21 @@
+---
+image: ubuntu
+stages:
+  - deployment
+
+deploy:
+  stage: deployment
+  before_script: 
+    - apt-get update
+    - apt-get install git
+    - apt-get install python3-pip
+    - apt-get install hugo
+    - pip install --user awscli
+    - git clone https://github.com/nelsonfigueroa/nfigueroa.dev.git
+    - cd nfigueroa.dev
+    - rm -rf public
+    - hugo
+
+  script:
+    - aws s3 sync public/ s3://nfigueroa.dev --acl public-read --delete
+    - aws cloudfront create-invalidation --distribution-id E2EA93TVH6JMPO --paths '/*'
