@@ -7,9 +7,9 @@ deploy:
   stage: deployment
   before_script: 
     - apt-get update
-    - apt-get install git
-    - apt-get install python3-pip
-    - apt-get install hugo
+    - apt-get install git -y
+    - apt-get install python3-pip -y
+    - apt-get install hugo -y
     - pip install --user awscli
     - git clone https://github.com/nelsonfigueroa/nfigueroa.dev.git
     - cd nfigueroa.dev
