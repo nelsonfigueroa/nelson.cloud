@@ -40,7 +40,7 @@ theme = "hello-friend-ng"
 [languages]
   [languages.en]
     title = "Nelson Figueroa"
-    subtitle = "Web Developer"
+    subtitle = "Software Engineer"
     keywords = ""
     copyright = ""
     readOtherPosts = "Read other posts"
