@@ -128,6 +128,12 @@ Now we can commence an attack.
 
 ## Attacking an access point
 
+To put network interfaces back to normal:
+
+```
+sudo service network-manager start
+```
+
 We will be deauthenticating a device
 This is also a method you can use to perform a DOS attacks on wireless networks guaranteed to work
 Wireless networks are very vulnerable to this and you will be able to deauthenticate everybody even in a university
