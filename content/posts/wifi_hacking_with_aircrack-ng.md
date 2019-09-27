@@ -22,7 +22,7 @@ The goal in this post is to use the tools included in `aircrack-ng` to scan for 
 
 To install `aircrack-ng` on Fedora, simply run `yum install aircrack-ng` in the command line. 
 
-We'll also need to set up monitor mode in our wireless network adapter. Keep in mind that not all network adapters support this mode, and you might need a USB wireless adapter specifically used in penetration testing.
+We'll also need to set up monitor mode in our wireless network adapter. Monitor mode allows the wireless network interface to capture all wireless traffic. This means we'll be able to see nearby wireless access points and devices connected to each one. Keep in mind that not all network adapters support this mode, and you might need a USB wireless adapter specifically used in penetration testing.
 
 To set the network adapter to monitor mode, first find the name of the interface as your system detects it. You can see this using `ifconfig`. In my case, the interface name is `wlp2s0`. Now I can set it to monitor mode using the following commands:
 
@@ -31,3 +31,18 @@ To set the network adapter to monitor mode, first find the name of the interface
 ~$ iwconfig wlp2s0 mode monitor # iwconfig, NOT ifconfig
 ~$ ifconfig wlp2s0 up 
 ```
+
+Now, we need to check that no processes interfere with the `airmon-ng` tool, which is part of the `aircrack-ng` suite. To do this, simply run `airmon-ng check wlp2s0`, replacing the interface name with your own. You might get an output as such:
+
+```shell
+Found 5 processes that could cause trouble.
+1215 avahi-daemon
+1216 avahi-daemon
+1312 NetworkManager
+1556 wpa_supplicant
+17917 dhclient
+```
+
+We'll need to kill all those processes to prevent any issues. Simply issue `kill` commands for each process ID. Run `airmon-ng check` once again to be sure that all is well. We are now ready to scan for access points.
+
+## Scanning for access points
