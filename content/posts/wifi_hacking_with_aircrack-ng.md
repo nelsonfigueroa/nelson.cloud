@@ -128,16 +128,13 @@ Now we can commence an attack.
 
 ## Attacking an access point
 
+We'll be flooding the access point with deauthentication frames to keep devices from reconnecting to it. As they try to reconnect, we'll be able to capture the 4-way handshake. This can also be used to simply perform DOS attacks on an access point. Keep in mind you won't be able to capture the handshake if there are no devices associated to the access point. There is nothing conducting the authentication process which you can capture.
+
+
+
+
 To put network interfaces back to normal:
 
 ```
 sudo service network-manager start
 ```
-
-We will be deauthenticating a device
-This is also a method you can use to perform a DOS attacks on wireless networks guaranteed to work
-Wireless networks are very vulnerable to this and you will be able to deauthenticate everybody even in a university
-
-You will not be able to perform this method if you do not have any stations (devices) that are connected to a certain access point because you’ll have nothing to deauthenticate. There is nothing conducting the authentication process which you can capture.
-
-We'll be flooding the access point with deauthentication frames to keep devices from reconnecting to it.
