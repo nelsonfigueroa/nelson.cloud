@@ -217,7 +217,7 @@ crunch [min password length] [max password length] [characters to use] | aircrac
 My full command looks like this:
 
 ```
-crunch 14 14 abcdefghijklmnopqrstuvwxyz 1234567890 | aircrack-ng -w - SCAN_OUTPUT-02.cap -e Lower\ The\ Rent
+crunch 14 14 abcdefghijklmnopqrstuvwxyz 1234567890 | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
 ```
 
 This will be very slow, as the program will attempt every 14-character letter and number combination possible.
@@ -236,13 +236,13 @@ In my case, my router has the default password of `pinkcoconut165`. With this kn
 With this flag, we can modify our command as follows:
 
 ```
-crunch 14 14 -t @@@@@@@@@@@%%%  | aircrack-ng -w - SCAN_OUTPUT-02.cap -e Lower\ The\ Rent
+crunch 14 14 -t @@@@@@@@@@@%%%  | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
 ```
 
 This will still take long, however, due to the length of the password. Let's cheat a little bit just to show the success screen. Here's the new command where we will only replace digits:
 
 ```
-crunch 14 14 -t pinkcoconut%%% | aircrack-ng -w - SCAN_OUTPUT-02.cap -e Lower\ The\ Rent
+crunch 14 14 -t pinkcoconut%%% | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
 ```
 
 Success! The password has been found:
@@ -300,4 +300,4 @@ The `crunch` tool has much more functionality that I did not dive into, but I en
 
 There are other tools that we could have used to crack the password, such as `hashcat`. If I'm not mistaken, `hashcat` can take advantage of a GPU which will allow you to crack passwords much faster. However, I wanted to focus on `aircrack-ng`.
 
-This concludes this wifi hacking guide, hope you enjoyed the read!
+This concludes my wifi hacking notes, I hope you enjoyed the read!
