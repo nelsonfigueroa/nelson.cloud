@@ -10,7 +10,7 @@ theme = "hello-friend-ng"
 
   # Metadata mostly used in document's head
   description = "Personal site for Nelson Figueroa"
-  keywords = "homepage, blog, science, web, development, programming, technology"
+  keywords = "homepage, blog, science, web, development, programming, technology, cybersecurity"
   images = [""]
 
   homeSubtitle = "Software Engineer"
