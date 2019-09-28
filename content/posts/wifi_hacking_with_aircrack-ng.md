@@ -268,6 +268,30 @@ Success! The password has been found:
       EAPOL HMAC     : 92 FB C9 F7 B9 1B 60 B1 82 9B 90 BA 03 EF E4 83
 ```
 
+## Additional Tips
+
+If you want to stay as anonymous as possible, you can change your MAC Address before attempting any of this. You can easily do this using a tool like `macchanger`. The following command will assign a randomized MAC address to the `wlan0` interface:
+
+```
+macchanger -r wlan0
+```
+
+We can be more clever and use a MAC address from a known company. The first 3 bytes of a MAC address are known as the Organizationally Unique Identifier (OUI) and can identify the manufacturer. For example, some of Dell's devices have the first 3 bytes as `F8:DB:88`. The last 8 bytes can be anything, as long as it is within the range of A-F and 0-9 (hexadecimal values).
+
+We can specify a MAC address with the following command:
+
+```
+macchanger -m f8:d8:88:64:fd:c7 wlan0
+```
+
+On MacOS you can change the MAC address of an interface to one of your choosing with the following command:
+
+```
+sudo ifconfig wlan0 ether f8-db-88-e4-94-5d
+```
+
+Using this knowledge of MAC Addresses, we can also determine the manufacturers of the access points we scan. We can look up the MAC addresses, figure out the manufacturer, and see if there are other vulnerabilities with specific device models. Maybe we'll discover their formula for default passwords (which lots of people never change) to be, say, a combination of 5 letters and 5 numbers, which can help us crack the password. Any hint helps. Additionally, default ESSID names such as "NETGEAR-2.4" could mean that the user never changed the default password either ;).
+
 ## Conclusions
 
 Scanning for wifi networks and acquiring handshakes is not difficult. Anyone with minor command line experience can accomplish this. The hardest part will be cracking the password itself, but if an attacker has a powerful computer they can crack a short password in no time. This is an example of why long passwords are important. It is not enough to simply add symbols to a short password. In fact, it is better to get into the habit of creating passphrases as opposed to passwords. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword420?` is much harder to crack than `Password420?`
