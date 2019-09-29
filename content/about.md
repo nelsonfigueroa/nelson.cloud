@@ -2,4 +2,4 @@
 title = "About Me"
 +++
 
-Hello! I'm Nelson. I'm a Software Engineer based in Los Angeles and I enjoy solving problems with code. My specialty is in Ruby on Rails. I'm also into all things cybersecurity. 
+Hello! My name is Nelson Figueroa. I'm a Software Engineer based in Los Angeles. I graduated with a Bachelors degree in Computer Information Technology on May 2019. I'm passionate about coding, cybersecurity, and music. My favorite programming language is Ruby, and my strength is in Ruby on Rails development.
