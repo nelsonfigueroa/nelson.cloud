@@ -290,7 +290,7 @@ On MacOS you can change the MAC address of an interface to one of your choosing 
 sudo ifconfig wlan0 ether f8-db-88-e4-94-5d
 ```
 
-Using this knowledge of MAC Addresses, we can also determine the manufacturers of the access points we scan. We can look up the MAC addresses, figure out the manufacturer, and see if there are other vulnerabilities with specific device models. Maybe we'll discover their formula for default passwords (which lots of people never change) to be, say, a combination of 5 letters and 5 numbers, which can help us crack the password. Any hint helps. Additionally, default ESSID names, such as "NETGEAR-2.4", could mean that the user never changed the default password either ;).
+Using this knowledge of MAC Addresses, we can also determine the manufacturers of the access points we scan. We can look up the MAC addresses, figure out the manufacturer, and see if there are other vulnerabilities with specific device models. Maybe we'll discover their formula for default passwords (which lots of people never change) to be, say, a combination of 5 letters and 5 numbers, which can help us crack the password. Any hint helps. Additionally, default ESSID names, such as "NETGEAR23-2G", could mean that the user never changed the default password either ;).
 
 ## Conclusions
 
