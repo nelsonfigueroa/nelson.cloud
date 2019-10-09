@@ -296,7 +296,7 @@ Using this knowledge of MAC Addresses, we can also determine the manufacturers o
 
 Scanning for wifi networks and acquiring handshakes is not difficult. Anyone with minor command line experience can accomplish this. The hardest part will be cracking the password itself, but if an attacker has a powerful computer they can crack a short password in no time. This is an example of why long passwords are important. It is not enough to simply add symbols to a short password. In fact, it is better to get into the habit of creating passphrases as opposed to passwords. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword420?` is much harder to crack than `Password420?`
 
-The `crunch` tool has much more functionality that I did not dive into, but I encourage you to read through the `man` pages and learn more about it. It's versatile but still easy to pick up.
+The `crunch` tool has much more functionality that I did not dive into. I encourage you to read through the `man` pages and learn more about it. It's versatile but still easy to pick up.
 
 There are other tools that we could have used to crack the password, such as `hashcat`. If I'm not mistaken, `hashcat` can take advantage of a GPU which will allow you to crack passwords much faster. However, I wanted to focus on `aircrack-ng`.
 
