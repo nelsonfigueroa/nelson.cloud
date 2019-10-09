@@ -6,19 +6,23 @@ date = "2019-09-26"
 
 ## Before we start...
 
-This post will essentially be a re-write of notes I took around 2 years ago now. Learning to use `aircrack-ng` and break into my own router was fun and a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router simply due to processing power needed, but sniffing wifi networks is a trivial process. After doing it once, it'll stick.
+This post will be a re-write of notes I took around 2 years ago now. Learning to use `aircrack-ng` and break into my own router was both fun and a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router due to processing power needed, but sniffing wifi networks is a trivial process. After doing it once, it'll stick.
 
 There are likely better methods of doing this now. In fact, I discovered [bettercap](https://github.com/bettercap/bettercap) earlier this year and it is easy to use. Perhaps I'll write a post using that tool in the future.
 
-For reference, I used Kali linux for the entire process. However, the process should be very similar for any linux distribution. This tool is already included on Kali Linux but you can easily install it on any linux OS.
+For reference, I used Kali linux for the entire process. But the process should be very similar for any linux distribution. This tool is already included on Kali Linux but you can install it on any Linux OS.
 
 I shouldn't have to say this but, this is purely for educational purposes. Do NOT try to break into access points that do not belong to you.
 
 ## What is aircrack-ng?
 
-As described on the [official aircrack-ng website](https://www.aircrack-ng.org/doku.php?id=Main), aircrack-ng is a complete suite of tools to assess WiFi network security. It can be used to scan wifi signals and to perform denial-of-service (DOS) attacks. I have personally found this tool to work better on linux systems, but perhaps support for Windows/Mac has greatly improved now. 
+As described on the [official aircrack-ng website](https://www.aircrack-ng.org/doku.php?id=Main), aircrack-ng is a complete suite of tools to assess WiFi network security. It can be used to scan wifi signals and to perform denial-of-service (DOS) attacks.
 
-The goal in this post is to use the tools included in `aircrack-ng` to scan for nearby routers, send spoofed deauthentication packets on behalf of a connected client, capture the 4-way handshake hash, and attempt to crack the hash, which reveals the password of the router in plaintext.
+The goal in this post is to use the tools included in `aircrack-ng` to: 
+1. Scan for nearby routers
+2. Send spoofed deauthentication packets on behalf of a connected client
+3. Capture the 4-way handshake hash
+4. Crack the hash, which reveals the password of the router in plaintext
 
 ## Setup
 
