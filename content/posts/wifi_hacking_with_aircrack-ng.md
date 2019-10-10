@@ -71,25 +71,25 @@ Your terminal screen will fill up with something like this:
  CH 10 ][ Elapsed: 0 s ][ 2019-09-27 21:57                                         
                                                                                                                                                                                         
  BSSID              PWR  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
+      
+ 51:EF:63:2E:47:72  -55        0        0    0   3  -1                    <length:  0>                    
+ 7C:B1:DF:B9:12:59  -42        3        0    0   7  130  WPA2 CCMP   PSK  Lower The Rent
+ DA:4B:77:1A:84:50  -75        2        0    0   1  195  WPA2 CCMP   PSK  Spectrum
+ 19:7H:8D:73:97:FE  -77        2        0    0   1  195  WPA2 CCMP   PSK  MyWifi
+ DA:F4:AC:DC:31:A7  -75        2        0    0   1  130  WPA2 CCMP   PSK  Home
+ 19:AD:EF:C4:0A:36  -71        3        0    0   1  195  WPA2 CCMP   PSK  Verizon
+ 5D:19:32:EA:E0:66  -62        3        0    0   1  360  WPA2 CCMP   PSK  Cali
+ F5:10:4E:EA:E0:63  -62        3        0    0   1  360  WPA2 CCMP        <length:  0>
+ A2:72:C3:EA:E0:69  -62        3        0    0   1  360  OPN              <length:  0>
+ 9D:58:61:62:68:21  -63        3        0    0   1  130  WPA2 CCMP   PSK  INTERNET
+ ED:3D:D4:64:A4:6C  -79        2        0    0   1   65  WPA2 CCMP   PSK  OfficeJet
+ 33:B5:E2:92:08:33  -66        4        0    0   9  260  OPN              Test-guest
                                                                                                                                                                                         
- 51:EF:63:2E:47:72  -55        0        0    0   3  -1                    <length:  0>                                                                                                  
- 7C:B1:DF:B9:12:59  -42        3        0    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                                
- DA:4B:77:1A:84:50  -75        2        0    0   1  195  WPA2 CCMP   PSK  Spectrum                                                                                          
- 19:7H:8D:73:97:FE  -77        2        0    0   1  195  WPA2 CCMP   PSK  MyWifi                                                                                                     
- DA:F4:AC:DC:31:A7  -75        2        0    0   1  130  WPA2 CCMP   PSK  Home                                                                                                         
- 19:AD:EF:C4:0A:36  -71        3        0    0   1  195  WPA2 CCMP   PSK  Verizon                                                                                        
- 5D:19:32:EA:E0:66  -62        3        0    0   1  360  WPA2 CCMP   PSK  Cali                                                                                                       
- F5:10:4E:EA:E0:63  -62        3        0    0   1  360  WPA2 CCMP        <length:  0>                                                                                                  
- A2:72:C3:EA:E0:69  -62        3        0    0   1  360  OPN              <length:  0>                                                                                                  
- 9D:58:61:62:68:21  -63        3        0    0   1  130  WPA2 CCMP   PSK  INTERNET                                                                                                         
- ED:3D:D4:64:A4:6C  -79        2        0    0   1   65  WPA2 CCMP   PSK  OfficeJet                                                                                   
- 33:B5:E2:92:08:33  -66        4        0    0   9  260  OPN              Test-guest                                                                                            
-                                                                                                                                                                                        
- BSSID              STATION            PWR   Rate    Lost    Frames  Probe                                                                                                               
-                                                                                                                                                                                         
- (not associated)   88:D6:CD:88:4C:9D  -47    0 - 1     95        5                                                                                                                      
- (not associated)   93:1E:44:10:82:3A  -63    0 - 1      0        2                                                                                                                      
- 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -29    0 - 1      0        1     
+ BSSID              STATION            PWR   Rate    Lost    Frames  Probe
+
+ (not associated)   88:D6:CD:88:4C:9D  -47    0 - 1     95        5
+ (not associated)   93:1E:44:10:82:3A  -63    0 - 1      0        2
+ 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -29    0 - 1      0        1
 ```
 
 You'll see a list of access points and devices associated with each access point. You'll notice there are acronyms above each column. Here's a list of the ones we care about and what they mean:
@@ -116,14 +116,14 @@ Here's the output:
 
 ```
  CH  7 ][ Elapsed: 24 s ][ 2019-09-27 22:05                                         
-                                                                                                                                                                                        
+
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
-                                                                                                                                                                                        
- 7C:B1:DF:B9:12:59  -47 100      231       92    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                            
-                                                                                                                                                                                        
- BSSID              STATION            PWR   Rate    Lost    Frames  Probe                                                                                                              
-                                                                                                                                                                                        
- 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -31    0e- 1      0      130     
+
+ 7C:B1:DF:B9:12:59  -47 100      231       92    0   7  130  WPA2 CCMP   PSK  Lower The Rent
+
+ BSSID              STATION            PWR   Rate    Lost    Frames  Probe
+
+ 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -31    0e- 1      0      130
 ```
 
 You'll be able to see the access point and associated devices. This provides a much cleaner look instead of your terminal screen being full of information. We can see that there is a single device associated with the access point.
@@ -165,15 +165,15 @@ a connected wireless client (-c <client's mac>).
 Your terminal screen will continue to fill with these messages. Keep the command running until you see a `WPA handshake: XX:XX:XX:XX:XX:XX` message on the upper right of the first window running the `airodump-ng` command. That window will look as follows (notice the message on the upper right):
 
 ```
- CH  7 ][ Elapsed: 1 min ][ 2019-09-28 03:25 ][ WPA handshake: 7C:B1:DF:B9:12:59                                         
-                                                                                                                                                                                    
+ CH  7 ][ Elapsed: 1 min ][ 2019-09-28 03:25 ][ WPA handshake: 7C:B1:DF:B9:12:59
+
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
-                                                                                                                                                                                    
- 7C:B1:DF:B9:12:59  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent                                                                                        
-                                                                                                                                                                                    
- BSSID              STATION            PWR   Rate    Lost    Frames  Probe                                                                                                          
-                                                                                                                                                                    
- 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -41    1e- 1      0       78   
+
+ 7C:B1:DF:B9:12:59  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent
+
+ BSSID              STATION            PWR   Rate    Lost    Frames  Probe
+
+ 7C:B1:DF:B9:12:59  49:12:C4:53:EF:4A  -41    1e- 1      0       78
 ```
 
 If you see the message, you have successfully captured the handshake. The last step left to do now is to crack this handshake and reveal the password in plaintext.
@@ -298,7 +298,7 @@ Using this knowledge of MAC Addresses, we can also determine the manufacturers o
 
 ## Conclusions
 
-Scanning for wifi networks and acquiring handshakes is not difficult. Anyone with minor command line experience can accomplish this. The hardest part will be cracking the password itself, but if an attacker has a powerful computer they can crack a short password in no time. This is an example of why long passwords are important. It is not enough to simply add symbols to a short password. In fact, it is better to get into the habit of creating passphrases as opposed to passwords. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword420?` is much harder to crack than `Password420?`
+Scanning for wifi networks and acquiring handshakes is not difficult. Anyone with minor command line experience can achieve this. The hardest part will be cracking the password itself, but if an attacker has a powerful computer they can crack a short password in no time. This is an example of why long passwords are important. It is not enough to add symbols to a short password. In fact, it is better to get into the habit of creating passphrases as opposed to passwords. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword420?` is much harder to crack than `Password420?`
 
 The `crunch` tool has much more functionality that I did not dive into. I encourage you to read through the `man` pages and learn more about it. It's versatile but still easy to pick up.
 
