@@ -218,7 +218,7 @@ There are likely several tools out there that can generate password combinations
 crunch [min password length] [max password length] [characters to use] | aircrack-ng -w - [filename.cap] -e [ESSID]
 ```
 
-My full command looks like this:
+I already know the length of the passowrd to my own router. My full command looks like this:
 
 ```
 crunch 14 14 abcdefghijklmnopqrstuvwxyz 1234567890 | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
@@ -226,7 +226,7 @@ crunch 14 14 abcdefghijklmnopqrstuvwxyz 1234567890 | aircrack-ng -w - SCAN_OUTPU
 
 This will be very slow, as the program will attempt every 14-character letter and number combination possible.
 
-In my case, my router has the default password of `pinkcoconut165`. With this knowledge, I can specify further. Instead of attempting every letter and number, I can test for the letters and numbers I know are present in the password. Obviously, this would not be known if we were attacking a completely unknown access point, but I simply want to demonstrate what a successful crack looks like. Using the `-t` option we can specify a pattern. Here's the description from the `man` page:
+In my case, my router has the default password of `pinkcoconut165`. With this knowledge, I can specify further. Instead of attempting a random mix of letters and numbers, I can test for a specific arrangement of letters/numbers. Obviously, this would not be known if we were attacking a completely unknown access point, but I want to demonstrate what a successful crack looks like. Using the `-t` option we can specify a pattern. Here's the description from the `man` page:
 
 ```
 -t @,%^
@@ -243,7 +243,7 @@ With this flag, we can modify our command as follows:
 crunch 14 14 -t @@@@@@@@@@@%%%  | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
 ```
 
-This will still take long, however, due to the length of the password. Let's cheat a little bit just to show the success screen. Here's the new command where we will only replace digits:
+This will still take long, however, due to the length of the password. Let's cheat a little bit just to show the success screen. Here's the new command where we will type in the letters of the password only try to guess the remaining digits:
 
 ```
 crunch 14 14 -t pinkcoconut%%% | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
