@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  deploy to aws:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a multi-line script
+      run: |
+        sudo apt-get update
+        sudo apt-get install hugo -y
+        # sudo apt-get install python3-pip -y # i think pip3 is already installed
+        pip3 install awscli --upgrade --user
