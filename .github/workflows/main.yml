@@ -1,4 +1,4 @@
-name: CI
+name: CD
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deploy to aws:
+  deploy:
 
     runs-on: ubuntu-latest
     
