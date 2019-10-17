@@ -20,12 +20,14 @@ jobs:
         | grep -v extended \
         | cut -d '"' -f 4 \
         | wget -i -
-        
+
         sudo dpkg -i hugo*_Linux-64bit.deb
         rm -rf public/
-        pip3 install wheel
-        pip3 install --upgrade setuptools
-        pip3 install awscli --upgrade --user
-        sudo pip install Pygments
+        hugo version
+        hugo
+        # pip3 install wheel
+        # pip3 install --upgrade setuptools
+        # pip3 install awscli --upgrade --user
+        # sudo pip install Pygments
         # hugo
         # aws s3 sync public/ s3://${{ secrets.BUCKET_NAME }}
