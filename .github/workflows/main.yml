@@ -14,12 +14,18 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a multi-line script
       run: |
-        sudo apt update
-        sudo apt install hugo -y
+        curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest \
+        | grep  browser_download_url \
+        | grep Linux-64bit.deb \
+        | grep -v extended \
+        | cut -d '"' -f 4 \
+        | wget -i -
+        
+        sudo dpkg -i hugo*_Linux-64bit.deb
         rm -rf public/
         pip3 install wheel
         pip3 install --upgrade setuptools
         pip3 install awscli --upgrade --user
         sudo pip install Pygments
-        hugo version
+        # hugo
         # aws s3 sync public/ s3://${{ secrets.BUCKET_NAME }}
