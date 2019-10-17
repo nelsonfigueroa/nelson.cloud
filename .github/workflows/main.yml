@@ -16,6 +16,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install hugo -y
+        hugo mod get -u
         rm -rf public/
         pip3 install wheel
         pip3 install --upgrade setuptools
