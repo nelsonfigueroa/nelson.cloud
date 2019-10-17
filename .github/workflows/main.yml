@@ -16,6 +16,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install hugo -y
-        # sudo apt-get install python3-pip -y # i think pip3 is already installed
-        sudo apt-get install python-setuptools -y
+        rm -rf public/
+        python3 --version
         pip3 install awscli --upgrade --user
+        # aws s3 sync
