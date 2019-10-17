@@ -17,6 +17,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install hugo -y
         rm -rf public/
+        pip3 install wheel
         pip3 install --upgrade setuptools
         pip3 install awscli --upgrade --user
         hugo
