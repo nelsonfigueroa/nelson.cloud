@@ -1,0 +1,1 @@
+Maybe install vagrant and get a VM running of ubuntu 18.04 so you can easily copy and paste terminal text. Also it's faster than using virtualbox.
