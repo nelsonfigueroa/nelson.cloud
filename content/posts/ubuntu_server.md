@@ -8,7 +8,7 @@ This is a simple guide to managing and maintaining Ubuntu Server. There is no de
 
 ## Prerequisites
 
-Of course, you'll need to run Ubuntu Server if you want to follow along. For this post, I will be using Ubuntu 18.04. The .iso is available on the [official Canonical website](https://ubuntu.com/download/server) if you'd like to create a virtual machine. You can also use Amazon Web Services to boot up an Ubuntu EC2 instance.
+Of course, you'll need to run Ubuntu Server if you want to follow along. For this post, I will be using Ubuntu 18.04. The .iso is available on the [official Ubuntu website](https://ubuntu.com/download/server) if you'd like to create a virtual machine. You can also use Amazon Web Services to boot up an Ubuntu EC2 instance.
 
 ## Unattended Upgrades
 
