@@ -86,4 +86,108 @@ You can repeat this process for multiple users. Create a user, generate SSH keys
 
 ## Firewall Configuration
 
-(In Progress)
+For firewall configuration, Ubuntu Server comes with `ufw`, or Uncomplicated FireWall. This is just a simple way to manage `iptables`. By default, `ufw` blocks any incoming traffic that isn't associated with outgoing requests.
+
+The `ufw` service is disabled by default. Let's allow port 22 to be able to SSH, and then enable the firewall.
+
+To allow TCP traffic through port 22 run:
+
+```sh
+sudo ufw allow 22/tcp
+```
+
+You should see the following response:
+
+```sh
+Rules updated
+Rules updated (v6)
+```
+
+Then we'll enable the firewall so that it starts on system boot:
+
+```sh
+sudo ufw enable
+```
+
+You can check the status of `ufw` at any moment. Let's try it now:
+
+```sh
+sudo ufw status
+```
+
+You should see the following:
+
+```sh
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+22/tcp (v6)                ALLOW       Anywhere (v6)
+
+```
+
+We can see that our rule was successfully added to the list.
+
+Let's add another rule for HTTPS:
+
+```sh
+sudo ufw allow 443/tcp
+```
+
+Then we'll double-check that the rule has been added:
+
+```sh
+sudo ufw status
+```
+
+And we see the following:
+
+```sh
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+443/tcp                    ALLOW       Anywhere
+22/tcp (v6)                ALLOW       Anywhere (v6)
+443/tcp (v6)               ALLOW       Anywhere (v6)
+
+```
+
+In many cases, services you run on the server will only need one port to be accessible to and from the outside. Some services, however, need more than one port. UFW is aware of some of these services that installed packages use and can make it easier to set up relevant ports.
+
+To see what applications UFW knows about, run:
+
+```sh
+sudo ufw app list
+```
+
+In this case, only OpenSSH is installed, so we see the following output:
+
+```sh
+Available applications:
+  OpenSSH
+```
+
+We can use the name of the application to allow traffic through the firewall as opposed to specifying ports:
+
+```sh
+sudo ufw allow OpenSSH
+```
+
+And when running `sudo ufw status` we'll see a rule specifically for an application:
+
+```sh
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+443/tcp                    ALLOW       Anywhere
+OpenSSH                    ALLOW       Anywhere
+22/tcp (v6)                ALLOW       Anywhere (v6)
+443/tcp (v6)               ALLOW       Anywhere (v6)
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+```
+
