@@ -234,10 +234,10 @@ Here's what the flags do:
 
 There are more flags available, such as `-u` which shows UDP sockets. Check out the man pages for more.
 
-From another machine, we can use `nmap` to see what ports are open from the outside. This can be aggressive, so be careful and responsible when using it. To check open ports from a different machine run:
+From another machine, we can use `nmap` to scan for open ports from the outside. This can be aggressive, so be careful and responsible when using it. To check open ports from a different machine run:
 
 ```
-nmap -sS [ip_address_of_target_machine]
+nmap -sS [ip_address_of_ubuntu_server]
 ```
 
 Earlier, we allowed port 443 using `ufw` even though we have no service on the server actually using this port. As a result, `nmap` should report that port 443 is open but the state is closed. If you followed the previous steps you should see the following:
@@ -250,5 +250,6 @@ PORT    STATE  SERVICE
 22/tcp  open   ssh
 443/tcp closed https
 ```
+As expected, port 443 is open but in a closed state. Port 22 is completely open since we allowed it using `ufw`.
 
 ## Logs
