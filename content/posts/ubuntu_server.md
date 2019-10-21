@@ -253,3 +253,17 @@ PORT    STATE  SERVICE
 As expected, port 443 is open but in a closed state. Port 22 is completely open since we allowed it using `ufw`.
 
 ## Logs
+
+Logs are always useful for maintenance and general troubleshooting. In Ubuntu Server, most logs are stored in `/var/log/`. In this directory you'll see several log files for various services. Some notable ones are listed below.
+
+The system log, `syslog`, is where the kernel and almost everything else writes information about events, errors, and notifications. You can log events manually using the `logger` command as such:
+
+```
+sudo logger "hello!"
+```
+
+Authentication events on the system are shown in `auth.log`. These events include SSH logins and attempts. If your server is in the cloud, you may already have failed login attempts from malicious bots. This log file also shows when users use `sudo` along with whatever command they ran with it.
+
+Some other useful logs include `dpkg.log`, which stores package manager activity, and `ufw.log`, which stores firewall-related logs.
+
+The service in charge of logs is `rsyslog`, which will chop log files, start new ones, and archive old ones. This service compresses logs as .gz (gzip) numbered in reverse order. The higher the number, the older the log.
