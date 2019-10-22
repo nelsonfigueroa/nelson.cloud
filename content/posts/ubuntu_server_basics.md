@@ -311,3 +311,164 @@ Additionally, the `who` command will show which users are currently connected.
 
 ## Managing Processes
 
+To see a general overview of processes, memory, and CPU usage, use the `top` command. There is also a prettier `htop` command installed by default which adds some color. Some other useful tools include `iftop` and `iotop`. They are not installed by default, so you'll need to install them first. `iftop` shows network activity, while `iotop` shows input/output activity between processes and system storage. These commands are useful when troubleshooting processes that are taking up networking or storage resources.
+
+When running `top` or `htop`, there is a column labeled `NI`.
+
+```
+  CPU[||                                        1.3%]   Tasks: 25, 17 thr; 1 running
+  Mem[|||||||||||||||||||                 73.7M/985M]   Load average: 0.00 0.00 0.00
+  Swp[                                       0K/980M]   Uptime: 00:39:14
+
+  PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command
+ 1432 vagrant    20   0  105M  5112  3976 S  0.7  0.5  0:00.25 sshd: vagrant@pts/0
+    1 root       20   0 77632  8556  6432 S  0.0  0.8  0:01.08 /sbin/init
+  409 root       19  -1 94804 13608 12912 S  0.0  1.3  0:00.10 /lib/systemd/systemd-journald
+  416 root       20   0  103M  1868  1640 S  0.0  0.2  0:00.00 /sbin/lvmetad -f
+  426 root       20   0 46256  5112  3140 S  0.0  0.5  0:00.29 /lib/systemd/systemd-udevd
+  492 root       20   0 47600  3432  3040 S  0.0  0.3  0:00.01 /sbin/rpcbind -f -w
+  547 systemd-r  20   0 70628  5200  4644 S  0.0  0.5  0:00.03 /lib/systemd/systemd-resolved
+  661 syslog     20   0  256M  4444  3672 S  0.0  0.4  0:00.00 /usr/sbin/rsyslogd -n
+  662 syslog     20   0  256M  4444  3672 S  0.0  0.4  0:00.00 /usr/sbin/rsyslogd -n
+  663 syslog     20   0  256M  4444  3672 S  0.0  0.4  0:00.00 /usr/sbin/rsyslogd -n
+  650 syslog     20   0  256M  4444  3672 S  0.0  0.4  0:00.01 /usr/sbin/rsyslogd -n
+  664 root       20   0  280M  6916  6056 S  0.0  0.7  0:00.04 /usr/lib/accountsservice/accounts-daemon
+  676 root       20   0  280M  6916  6056 S  0.0  0.7  0:00.00 /usr/lib/accountsservice/accounts-daemon
+  655 root       20   0  280M  6916  6056 S  0.0  0.7  0:00.06 /usr/lib/accountsservice/accounts-daemon
+  657 root       20   0 70608  6064  5336 S  0.0  0.6  0:00.02 /lib/systemd/systemd-logind
+  659 messagebu  20   0 50056  4364  3768 S  0.0  0.4  0:00.14 /usr/bin/dbus-daemon --system --address=systemd: -
+  707 root       20   0 95540  1616  1488 S  0.0  0.2  0:00.00 /usr/bin/lxcfs /var/lib/lxcfs/
+  708 root       20   0 95540  1616  1488 S  0.0  0.2  0:00.00 /usr/bin/lxcfs /var/lib/lxcfs/
+```
+
+The `NI` column specifies the "nicesness" value, which is used to prioritize processes. You can change this value with the `renice` command. This command allows you to specifiy a priority value randing from -20 to 19. The lower the value, the higher the priority a process will have. A process with a `NI` value of -15 will have higher priority over a process with a `NI` value of 5. Normally, you won't need to change process priority, but it is good to know you can change this value. For example, in the previous output of `htop` we have the following process with a `NI` value of 0:
+
+```
+  PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command
+ 1432 vagrant    20   0  105M  5112  3976 S  0.7  0.5  0:00.25 sshd: vagrant@pts/0
+```
+
+With the following command, we can change the value to 5. We specify the process using the `PID`:
+
+```
+renice -n 5 -p 1432
+```
+
+- `-n` is used to specify a niceness value
+- `-p` is used to specify the process ID
+
+Now the process has a `NI` value of 5:
+
+```
+  PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command
+ 1432 vagrant    20   5  105M  5112  3976 S  0.7  0.5  0:00.27 sshd: vagrant@pts/0
+```
+
+It is also possible to change the `NI` value of all processes owned by a user with the following command:
+
+```
+renice -n 5 -u user
+```
+
+- `-u` is used to specify the user
+
+While `top` and `htop` provide a nice overview, we can use the `ps` command to be more precise. Running the command by itself shows processes running as the current user in the current shell:
+
+```
+  PID TTY          TIME CMD
+ 1433 pts/0    00:00:00 bash
+ 1649 pts/0    00:00:00 ps
+```
+
+To show all processes on the system run:
+
+```
+ps -e
+```
+
+```
+  PID TTY          TIME CMD
+    1 ?        00:00:01 systemd
+    2 ?        00:00:00 kthreadd
+    4 ?        00:00:00 kworker/0:0H
+    6 ?        00:00:00 mm_percpu_wq
+    7 ?        00:00:00 ksoftirqd/0
+    8 ?        00:00:00 rcu_sched
+    9 ?        00:00:00 rcu_bh
+   10 ?        00:00:00 migration/0
+   11 ?        00:00:00 watchdog/0
+   12 ?        00:00:00 cpuhp/0
+   13 ?        00:00:00 kdevtmpfs
+   14 ?        00:00:00 netns
+   15 ?        00:00:00 rcu_tasks_kthre
+   16 ?        00:00:00 kauditd
+   17 ?        00:00:00 khungtaskd
+   18 ?        00:00:00 oom_reaper
+   19 ?        00:00:00 writeback
+   20 ?        00:00:00 kcompactd0
+    .
+    .
+    .
+ 1651 pts/0    00:00:00 ps
+```
+
+You can pipe the output through `grep` to find a specific process:
+
+```
+ps -e | grep "bash"
+```
+
+```
+ 1433 pts/0    00:00:00 bash
+ 1654 pts/0    00:00:00 bash
+```
+
+You can also view process trees with the following command:
+
+```
+ps -eHj
+```
+
+```
+  PID  PGID   SID TTY          TIME CMD
+    2     0     0 ?        00:00:00 kthreadd
+    4     0     0 ?        00:00:00   kworker/0:0H
+    6     0     0 ?        00:00:00   mm_percpu_wq
+    7     0     0 ?        00:00:00   ksoftirqd/0
+    8     0     0 ?        00:00:00   rcu_sched
+    9     0     0 ?        00:00:00   rcu_bh
+    .
+    .
+    .
+  686   686   686 ?        00:00:00   cron
+  706   706   706 ?        00:00:00   polkitd
+  889   889   889 ?        00:00:00   sshd
+ 1355  1355  1355 ?        00:00:00     sshd
+ 1432  1355  1355 ?        00:00:00       sshd
+ 1433  1433  1433 pts/0    00:00:00         bash
+ 1657  1657  1433 pts/0    00:00:00           ps
+  905   903   903 ?        00:00:00   VBoxService
+  906   906   906 tty1     00:00:00   agetty
+ 1279  1279  1279 ?        00:00:00   systemd-network
+ 1357  1357  1357 ?        00:00:00   systemd
+```
+
+- `-e` displays information about other users' processes
+- `-H` repeats the information header as needed
+- `-j` prints information associated with keywords such as `user`, `pid`, `ppid`, `pgid`
+
+You can terminate processes with the `kill` command. If you want to terminate a process with a PID of 150 you can run the following command:
+
+```
+kill 150
+```
+
+You can immediately terminate a process with the following command:
+
+```
+kill -9 150
+```
+
+Keep in mind this is not a graceful process termination and should be used sparingly. Additional `kill` signal names can be found through the `kill -l` command.
+
+## Service Management
