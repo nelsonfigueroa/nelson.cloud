@@ -1,5 +1,5 @@
 +++
-title = "Ubuntu Server Maintenance"
+title = "Ubuntu Server Basics"
 description = "Linux maintenance with Ubuntu Server"
 date = "2019-10-19"
 +++
