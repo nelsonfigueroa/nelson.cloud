@@ -279,4 +279,35 @@ Authentication events on the system are shown in `auth.log`. These events includ
 
 Some other useful logs include `dpkg.log`, which stores package manager activity, and `ufw.log`, which stores firewall-related logs.
 
-The service in charge of logs is `rsyslog`, which will chop log files, start new ones, and archive old ones. This service compresses logs as .gz (gzip) numbered in reverse order. The higher the number, the older the log.
+The service in charge of logs is `rsyslog`, which will chop log files, start new ones, and archive old ones. This service compresses logs as .gz (gzip) numbered in reverse order. The higher the number, the older the log. Instead of unzipping logs, you can use the `zcat` command to print out compressed logs directly as such:
+
+```
+zcat ufw.log.gz
+```
+
+Another useful tool is `lastlog`, which shows the last time each user in the system logged in.
+
+```
+sudo lastlog
+```
+
+The output will look similar to the following (I trimmed some of the output to save space):
+
+```
+Username         Port     From             Latest
+root                                       **Never logged in**
+daemon                                     **Never logged in**
+bin                                        **Never logged in**
+sys                                        **Never logged in**
+sync                                       **Never logged in**
+man                                        **Never logged in**
+lp                                         **Never logged in**
+statd                                      **Never logged in**
+sshd                                       **Never logged in**
+ubuntuuser          pts/0    10.0.2.2      Tue Oct 19 22:19:38 +0000 2019
+```
+
+Additionally, the `who` command will show which users are currently connected.
+
+## Managing Processes
+
