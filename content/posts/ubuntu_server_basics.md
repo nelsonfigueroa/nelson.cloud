@@ -473,4 +473,122 @@ Keep in mind this is not a graceful process termination and should be used spari
 
 ## Service Management
 
-(Coming Soon)
+In Ubuntu, the `systemd` process is one of the first processes on boot. It is a process manager that launches daemons and services. Services are programs that run in the background to accomplish tasks, such as web server software or SSH. On Ubuntu Server, we primarily interact with `systemd` using the `systemctl` command. Services managed by `systemd` are defined by unit files which specify what each service does and how it does it. `systemd` also uses "targets", which are groups of services. We can take a look at these with the following command:
+
+```
+systemctl -t target
+```
+
+```
+UNIT                   LOAD   ACTIVE SUB    DESCRIPTION
+basic.target           loaded active active Basic System
+cryptsetup.target      loaded active active Local Encrypted Volumes
+getty.target           loaded active active Login Prompts
+graphical.target       loaded active active Graphical Interface
+.
+.
+.
+```
+
+The same can be done for services:
+
+```
+systemctl -t service
+```
+
+```
+UNIT                               LOAD   ACTIVE SUB     DESCRIPTION
+accounts-daemon.service            loaded active running Accounts Service
+apparmor.service                   loaded active exited  AppArmor initialization
+apport.service                     loaded active exited  LSB: automatic crash report generation
+atd.service                        loaded active running Deferred execution scheduler
+blk-availability.service           loaded active exited  Availability of block devices
+.
+.
+.
+```
+
+You can view more specific details for a particular service with `systemctl status`:
+
+```
+systemctl status rsyslog.service
+```
+
+```
+● rsyslog.service - System Logging Service
+   Loaded: loaded (/lib/systemd/system/rsyslog.service; enabled; vendor preset: enabled)
+   Active: active (running) since Wed 2019-10-23 01:17:54 UTC; 3s ago
+     Docs: man:rsyslogd(8)
+           http://www.rsyslog.com/doc/
+ Main PID: 2092 (rsyslogd)
+    Tasks: 4 (limit: 1135)
+   CGroup: /system.slice/rsyslog.service
+           └─2092 /usr/sbin/rsyslogd -n
+
+Oct 23 01:17:54 myprecise systemd[1]: Starting System Logging Service...
+Oct 23 01:17:54 myprecise systemd[1]: Started System Logging Service.
+Oct 23 01:17:54 myprecise rsyslogd[2092]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) fro
+Oct 23 01:17:54 myprecise rsyslogd[2092]: rsyslogd's groupid changed to 106
+Oct 23 01:17:54 myprecise rsyslogd[2092]: rsyslogd's userid changed to 102
+Oct 23 01:17:54 myprecise rsyslogd[2092]:  [origin software="rsyslogd" swVersion="8.32.0" x-pid="2092" x-info="ht
+```
+
+The lines displayed below the service/target information are the most recent logs for that particular service or target.
+
+
+The same command can be used for targets:
+
+```
+systemctl status basic.target
+```
+
+```
+● basic.target - Basic System
+   Loaded: loaded (/lib/systemd/system/basic.target; static; vendor preset: enabled)
+   Active: active since Tue 2019-10-22 22:19:15 UTC; 2h 59min ago
+     Docs: man:systemd.special(7)
+
+Oct 22 22:19:15 myprecise systemd[1]: Reached target Basic System.
+```
+
+When running these commands, you will see words such as "active" and "running" as part of their descriptions. When a service is "active", it starts when the server boots up. If the service is continuously running, it will have the "running" descriptor. If the service only performs one task and then exits, it will be shown to be "active" but "(exited)". 
+
+Services can be configured to start on system boot:
+
+```
+sudo systemctl enable rsyslog
+```
+
+Services can also be configured to not run on system boot:
+
+```
+sudo systemctl disable rsyslog
+```
+
+You can manually start a service as such:
+
+```
+sudo systemctl start rsyslog.service
+```
+
+You can stop a service as well:
+
+```
+sudo systemctl stop rsyslog.service
+```
+
+And you can also restart a service:
+
+```
+sudo systemctl restart rsyslog.service
+```
+
+Keep in mind starting/stopping a service is not the same as enabling/disabling. An enabled service that has been manually stopped will start automatically once the system is rebooted.
+
+You can see more activity for a service in the log file, or use the command:
+
+```
+sudo journalctl -xe
+```
+
+The logs there can be helpful when troubleshooting why a service isn’t starting as expected.
