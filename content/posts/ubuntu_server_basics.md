@@ -17,25 +17,11 @@ date = "2019-10-19"
 <img src="/ubuntu.svg" alt="Ubuntu" class="center">
 
 
-This is a simple guide to managing and maintaining Ubuntu Server. There is no desktpo GUI on this version of Ubuntu. The goal here is to learn basic Ubuntu maintenance with just the command line.
+This is a simple guide to managing and maintaining Ubuntu Server. There is no desktop GUI on this version of Ubuntu. The goal here is to learn basic Ubuntu maintenance with just the command line.
 
 ## Prerequisites
 
 Of course, you'll need to run Ubuntu Server if you want to follow along. For this post, I will be using Ubuntu 18.04. The .iso is available on the [official Ubuntu website](https://ubuntu.com/download/server) if you'd like to create a virtual machine. You can also use Amazon Web Services to boot up an Ubuntu EC2 instance.
-
-## Unattended Upgrades
-
-As with any system, security is a series of trade-offs. This trade off is convenience vs. security. Always keep security in mind when configuring any system. 
-
-By default, Ubuntu Server comes with `unattended-upgrades` enabled, which automatically updates and install packages considered important or security updates. You can also run the command manually at any time. 
-
-Sometimes it makes sense to turn off automatic updates in a production environment. If you do decide to turn off automatic security updates, be sure to schedule downtime to manually install them. You can enable/disable automatic security updates with:
-
-```
-dpkg-reconfigure unnatended-upgrades
-```
-
-For troubleshooting `unattended-upgrades`, you can refer to the log file located in `/var/log/unattended-upgrades/unaddended-updates.log`.
 
 ## Setting up SSH
 
@@ -96,6 +82,143 @@ ssh user@10.0.2.20 -i /path/to/key/id_rsa
 ```
 
 You can repeat this process for multiple users. Create a user, generate SSH keys on their local machine, and then copy their public keys to their respective home directories in the remote server.
+
+## Unattended Upgrades
+
+As with any system, security is a series of trade-offs. This trade off is convenience vs. security. Always keep security in mind when configuring any system. 
+
+By default, Ubuntu Server comes with `unattended-upgrades` enabled, which automatically updates and install packages considered important or security updates. You can also run the command manually at any time. 
+
+Sometimes it makes sense to turn off automatic updates in a production environment. If you do decide to turn off automatic security updates, be sure to schedule downtime to manually install them. You can enable/disable automatic security updates with:
+
+```
+dpkg-reconfigure unnatended-upgrades
+```
+
+For troubleshooting `unattended-upgrades`, you can refer to the log file located in `/var/log/unattended-upgrades/unaddended-updates.log`.
+
+## Managing Users
+
+Ubuntu Server, as well as other Linux distributions, come with several user accounts by default. Most of these are service accounts, meaning that they are used by specific services like NGINX. Generally speaking, the only human account is the one created during installation. User accounts help keep files and roles separate from others. User accounts are very mninimal, they are simply text entries in a few files. The following are files you should be aware of:
+
+- `/etc/passwd` User accounts are stored in this file. You can see that several accounts already exist.
+- `/etc/shadow` Where hashes of user passwords are stored.
+- `/etc/group` Where group information is stored, such as the sudo group of users who have sudo privileges.
+
+In Ubuntu Server, we use the `adduser` command to create new users, `usermod` command to modify users, and `deluser` to remove a user from the system. Additionally, we can use the `id` command to view more information about a specific user, the `addgroup` command to create new groups to place users in, and the `groups` command to view groups a user belongs to. Examples are shown below.
+
+Adding a user:
+
+```
+sudo adduser nelson
+```
+
+```
+Adding user `nelson' ...
+Adding new group `nelson' (1001) ...
+Adding new user `nelson' (1001) with group `nelson' ...
+Creating home directory `/home/nelson' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+Changing the user information for nelson
+Enter the new value, or press ENTER for the default
+	Full Name []:
+	Room Number []:
+	Work Phone []:
+	Home Phone []:
+	Other []:
+Is the information correct? [Y/n] Y
+```
+
+Notice that the output will prompt for a password. Additionally, there is a line that says `Copying files from '/etc/skel'`. The `skel` directory is a template to provide new users with predefined files or folders. The output also promops for user information such as full name and room number, but these are optional and can be skipped by hitting enter.
+
+Find out more information about a user:
+
+```
+id nelson
+```
+
+```
+uid=1001(nelson) gid=1001(nelson) groups=1001(nelson)
+```
+
+- `uid` stands for User ID
+- `gid` stands for Group ID
+- `groups` all the groups the user belongs to. Only group `nelson` in this case.
+
+In many Linux distributions, the numbering system for regular users starts at 1000. Numbers below 1000 are system accounts and service accounts.
+
+View groups a user belongs to:
+
+```
+groups nelson
+```
+
+```
+nelson : nelson
+```
+
+In this case, the user only belongs to a single group with the same name.
+
+Create a new group:
+
+```
+sudo addgroup developers
+```
+
+```
+Adding group `developers' (GID 1002) ...
+Done.
+```
+
+Add a user to the group:
+
+```
+sudo usermod -aG developers nelson
+```
+
+- `-G` ​Means you’ll provide a list of groups that the user will be a member of, but that list will replace what already exists.
+- `-a` Tells `usermod` to append or add to your list to what’s already there instead of replacing them.
+
+Now try running the `groups` command again:
+
+```
+groups nelson
+```
+
+```
+nelson : nelson developers
+```
+
+We can see that an additional group has been added to the user.
+
+Try the `id` command once again to see what's changed:
+
+```
+id nelson
+```
+
+```
+uid=1001(nelson) gid=1001(nelson) groups=1001(nelson),1002(developers)
+```
+
+We can see an additional group that the user belongs to.
+
+Finally, let's try deleting a user:
+
+```
+sudo deluser nelson
+```
+
+```
+Removing user `nelson' ...
+Warning: group `nelson' has no more members.
+Done.
+```
+
+That covers the basics of user management in Ubuntu.
 
 ## Firewall Configuration
 
@@ -592,3 +715,7 @@ sudo journalctl -xe
 ```
 
 The logs there can be helpful when troubleshooting why a service isn’t starting as expected.
+
+## Conclusions
+
+There is a lot more to cover on Ubuntu Server, and this is just a single distribution, there are many more out there. This post should be enough to get anyone started. All Linux distributions have similar functionality so learning one distribution, like Ubuntu Server, will help to pick up other distributions much more quickly. I hope this post was useful!
