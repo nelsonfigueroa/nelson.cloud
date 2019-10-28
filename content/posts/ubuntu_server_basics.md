@@ -1,7 +1,7 @@
 +++
 title = "Ubuntu Server Basics"
 description = "Linux maintenance with Ubuntu Server"
-date = "2019-10-19"
+date = "2019-10-24"
 +++
 
  
