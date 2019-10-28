@@ -7,40 +7,53 @@ date = "2019-10-31"
 This post will mostly be notes that I took while learning Go. I think they could be useful to many others out there. Previous programming experience is recommended, as I will simply explain how to do things in Go (i.e. arrays) as opposed to explaining programming fundamentals.
 
 
-Go has workspaces
+## Setup
+
+Go has workspaces. The default workspace can be found be running the command:
 
 ```
 go env GOPATH
 ```
 
-This is the path. The directory itself might not exist, but you can create it.
+The directory itself might not exist, but you can create it.
 
 ```
 mkdir go
 ```
 
-Inside it we need another folder: `src`
+Inside the `go` directory, we'll need another directory: `src`
 
 ```
 mkdir src
 ```
 
-that's where all our source code will go
-inside this folder you can create an additional directory for each of your projects
+This is where all of our source code will go. It is inside this `src` directory where you can create additional directories for each of your projects. Let's make a "hello world" project:
 
 ```
-mkdir example
+mkdir hello
 ```
 
-the path of the directory should be `~/go/src/example`
+The path of the example directory should be `~/go/src/hello`.
 
-generally go files are named `main.go` but it can be named anything
+Now, let's create our first go program. Create a file called `hello.go`
+
+Go files can be named anything, although generally the main go file is named `main.go`. We can ignore that for now.
 
 ```
 touch hello.go
 ```
 
 The first line of a go program needs to be the name of the package. Every program, at least the ones you want to be able to execute, will need the package `main`.
+
+IS IT POSSIBLE TO ADD LINE NUMBERS?
+```go
+package main
+
+// you can list out several packages, just add to the list. no commas needed to separate them.
+import (
+	"fmt"
+)
+```
 
 Next section of a go program is the `import` section, where you can import different packages. There are lots of packages you can discover in the official documentation. A popular one is `fmt` since it has functions related to input and output.
 
