@@ -35,17 +35,24 @@ mkdir hello
 
 The path of the example directory should be `~/go/src/hello`.
 
-Now, let's create our first go program. Create a file called `hello.go`
+## Go Basics
 
-Go files can be named anything, although generally the main go file is named `main.go`. We can ignore that for now.
+Now, let's create our first go program. Create a file called `hello.go`:
 
 ```
 touch hello.go
 ```
 
-The first line of a go program needs to be the name of the package. Every program, at least the ones you want to be able to execute, will need the package `main`.
+Go files can be named anything, although generally the main go file is named `main.go`. We can ignore that for now.
 
-IS IT POSSIBLE TO ADD LINE NUMBERS?
+The first line of a go program needs to be the name of the package. Every program, at least the ones you want to be able to execute, will need the package `main`. Add the following line to the file:
+
+```go
+package main
+```
+
+The next section of a go program is the import section where you can import different packages. There are lots of packages you can discover in the official documentation. A popular one is `fmt` since it has functions related to input and output. Add the following
+
 ```go
 package main
 
@@ -55,25 +62,33 @@ import (
 )
 ```
 
-Next section of a go program is the `import` section, where you can import different packages. There are lots of packages you can discover in the official documentation. A popular one is `fmt` since it has functions related to input and output.
+Next, we'll add the `main` function. This function is where the program starts, a function called `main` inside of the package `main`. It takes no arguments and doesn't return anything. Add a `main` function that prints out "hello world". Functions in go are declared with `func`. Function blocks are enclosed in curly braces.
 
-the `main` function is where the program starts, a function called `main` inside of the package `main`. It takes no arguments and doesn't return anything.
+```go
+package main
 
-Run a program
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("hello world")
+}
+```
+
+Let's try running what we have so far:
 
 ```
 go run hello.go
 ```
 
-If you want to compile the code into an executable. no need to specify file
+Go also allows us to compile the code into an executable. Let's try it. Notice that there is no need to specify the file this time:
 
 ```
 go build
 ```
 
-you'll have an executable named after the project directory `example`
-in windows, it'll be a `.exe` file
-you can run this executable and it'll print `hello world`
+This will create an executable named after the project directory `example`. In Windows, this will be a `.exe` file. In this case it is an executable named `example`. You can run this executable and it'll print `hello world`.
 
 ```
 ./example
