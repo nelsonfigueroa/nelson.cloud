@@ -56,7 +56,7 @@ The next section of a go program is the import section where you can import diff
 ```go
 package main
 
-// you can list out several packages, just add to the list. no commas needed to separate them.
+// you can list out several packages. no commas needed to separate them.
 import (
 	"fmt"
 )
@@ -88,7 +88,7 @@ Go also allows us to compile the code into an executable. Let's try it. Notice t
 go build
 ```
 
-This will create an executable named after the project directory `example`. In Windows, this will be a `.exe` file. In this case it is an executable named `example`. You can run this executable and it'll print `hello world`.
+This will create an executable named after the project directory `example`. In Windows, this will be a `.exe` file. In this case it is an executable named `example`. You can run this executable and it'll print "hello world".
 
 ```
 ./example
@@ -96,11 +96,157 @@ This will create an executable named after the project directory `example`. In W
 
 Alternatively, you can run `go install` which is the same thing except the executable is put in a `bin` directory in the same location as the `src` folder we created (the `go` workspace). 
 The path should be `~/go/bin` and in that directory you should see the `example` binary.
-If the program had external dependencies like if we imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory i think in the same go workspace.
+If the program had external dependencies like if we imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
 
 ## Variables
 
+In Go, we declare variables using the `var` keyword followed by the variable name and its type. We can then assign a value to this variable with `=`:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	// declaring variable
+	var x int
+
+	// assigning value to variable
+	x = 5
+
+	fmt.Println(x)
+}
+```
+
+We can also declare a variable and assign it a value in a single line:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	// declare variable and assign value
+	var x int = 5
+
+	fmt.Println(x)
+}
+```
+
+As with other languages, you can assign the result of a mathematical operation to a variable:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	var x int = 5
+	var y int = 10
+
+	// add the two previous variables and assign to 'sum'
+	var sum int = x + y
+
+	fmt.Println(sum)
+}
+```
+
+Go has a shorthand syntax we can use when declaring and assigning variables at the same time. We can ommit the `var` keyword as well as the variable type. Go will infer the value assigned and set an approriate type for the variable. The shorthand syntax makes use of `:=` to assign values:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	// shorhand syntax for variable assignment
+	x := 5
+	y := 5
+	sum := x + y
+
+	fmt.Println(sum)
+}
+```
+
+## Arrays
+
+Arrays in Go are fixed. The size of the array is specified when declaring the array. We use the same `var` keyword to declare arrays along with the array size and type as shown below:
+
+```	go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// create an array that holds 5 integers
+	var arr [5]int
+
+	fmt.Println(a) // will print out an array full of zeros (default values)
+}
+```
+
+```go
+	//set element at index 2 to a specific value
+	a[2] = 7
+	fmt.Println(a)
+
+	// shorthand syntax for arrays
+	a := [5]int{5, 4, 3, 2, 1}
+	fmt.Println(a)
+
+	// can't add a 6the element because array length is part of array's type
+	// you can get around this with slices
+	// slices don't have a fixed number of elements
+	// slices are an abstraction of the top of arrays to make them easier to work with
+	
+	// create a slice of integers instead of an arary of integers
+	// by simply removing the element count
+	a := []int{5, 4, 3, 2, 1}
+	fmt.Println(a)
+```
+
+## If-Else Statements
+
+If-Else statements are not much different compared to other languages. Go does not require the comparison to be enclosed in parentheses.
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	x := 5
+
+	// no parentheses needed around comparisons
+	if x > 1 {
+		fmt.Println("x is more than 1")
+	} else if x < 5 {
+		fmt.Println("x is less than 5")
+	} else {
+    fmt.Println("x is out of range")
+	}
+}
+```
+
+## Default Values
+
 if no initial value is provided for integers the default value is 0
 for strings it is simply an empty string
-
 for arrays, number of elements that an array holds is fixed
