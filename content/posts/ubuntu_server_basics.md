@@ -1,7 +1,7 @@
 +++
 title = "Ubuntu Server Basics"
 description = "Linux maintenance with Ubuntu Server"
-date = "2019-10-19"
+date = "2019-10-24"
 +++
 
  
@@ -25,19 +25,19 @@ Of course, you'll need to run Ubuntu Server if you want to follow along. For thi
 
 ## Setting up SSH
 
-Ubuntu Server comes with SSH already installed. However, the default configuration uses a username and password combination to connect, which is not the best for security. The ideal way to set up SSH is to use SSH keys. With key pairs, you can copy your public key to a remote server in order to SSH without using a password. This can be done for several users in the event that multiple people need SSH access to a server.
+Ubuntu Server comes with SSH already installed. However, the default configuration uses a username and password combination to connect, which is not the best for security. The ideal way to set up SSH is to use SSH keys. With key pairs, you can copy your public key to a remote server to SSH without using a password. This can be done for several users in the event that many people need SSH access to a server.
 
-First, set up SSH keys on your local machine.
+First, generate SSH keys on your local machine.
 
-SSH comes with a package called `ssh-keygen` that is used to generate keys, although there are other ways to do it as well. Let's generate SSH keys by running the command:
+SSH comes with a package called `ssh-keygen` used to generate keys, although there are other ways to do it as well. Let's generate SSH keys by running the command:
 
 ```
 ssh-keygen
 ```
 
-The command will prompt you for an optional password. If you don't want an additional password, press enter to skip the option.
+The command will prompt for an optional password. If you don't want this, press enter to skip the prompt.
 
-This command will save two keys, `id_rsa` and `id_rsa.pub`, in the `~/.ssh/` directory. `id_rsa` is your private key, DO NOT reveal this to anyone. `id_rsa.pub` is your public key. This is the key that will need to be present in the remote server you want to SSH to.
+This command will generate two keys, `id_rsa` and `id_rsa.pub`, in the `~/.ssh/` directory. `id_rsa` is your private key, DO NOT reveal this to anyone. `id_rsa.pub` is your public key. This is the key that will need to be present in the remote server you want to SSH to.
 
 Next, copy the contents of the public key into the remote server. In this case, the remote server is Ubuntu Server. SSH into Ubuntu Server using the username and password you chose during installation:
 
@@ -47,7 +47,7 @@ Next, copy the contents of the public key into the remote server. In this case, 
 ssh user@192.168.1.2
 ```
 
-Then, paste the contents of `id_rsa.pub` into a file called `authorized_keys` in the `~/.ssh/` directory. If the file does not exist, create it. You can add multiple keys in this file if you wish to allow multiple machines to connect to this server under the same user.
+Then, paste the contents of `id_rsa.pub` into a file called `authorized_keys` in the `~/.ssh/` directory. If the file does not exist, create it. You can add several keys in this file if you want to allow several machines to connect to this server.
 
 Now that the public key is in the Ubuntu server, we need to configure SSH to only use key authentication and not username/password combinations. The configuration we need to modify is at `/etc/ssh/sshd_config`. Use your favorite terminal text editor to modify the file.
 
@@ -87,9 +87,9 @@ You can repeat this process for multiple users. Create a user, generate SSH keys
 
 As with any system, security is a series of trade-offs. This trade off is convenience vs. security. Always keep security in mind when configuring any system. 
 
-By default, Ubuntu Server comes with `unattended-upgrades` enabled, which automatically updates and install packages considered important or security updates. You can also run the command manually at any time. 
+Ubuntu Server comes with `unattended-upgrades` enabled by defaul. This package automatically updates and install packages considered important or security updates. You can also run the command manually at any time. 
 
-Sometimes it makes sense to turn off automatic updates in a production environment. If you do decide to turn off automatic security updates, be sure to schedule downtime to manually install them. You can enable/disable automatic security updates with:
+Sometimes it makes sense to turn off automatic updates in a production environment. If you turn off automatic security updates, be sure to schedule downtime to install updates manually. You can enable/disable automatic security updates with:
 
 ```
 dpkg-reconfigure unnatended-upgrades
@@ -99,15 +99,24 @@ For troubleshooting `unattended-upgrades`, you can refer to the log file located
 
 ## Managing Users
 
-Ubuntu Server, as well as other Linux distributions, come with several user accounts by default. Most of these are service accounts, meaning that they are used by specific services like NGINX. Generally speaking, the only human account is the one created during installation. User accounts help keep files and roles separate from others. User accounts are very mninimal, they are simply text entries in a few files. The following are files you should be aware of:
+Ubuntu Server, as well as other Linux distributions, come with several user accounts by default. Most of these are service accounts, meaning that they are used by specific services like NGINX. Generally speaking, the only human account is the one created during installation. User accounts help keep files and roles separate from others. User accounts are very minimal, they are simply text entries in a few files. The following are files you should be aware of:
 
 - `/etc/passwd` User accounts are stored in this file. You can see that several accounts already exist.
 - `/etc/shadow` Where hashes of user passwords are stored.
 - `/etc/group` Where group information is stored, such as the sudo group of users who have sudo privileges.
 
-In Ubuntu Server, we use the `adduser` command to create new users, `usermod` command to modify users, and `deluser` to remove a user from the system. Additionally, we can use the `id` command to view more information about a specific user, the `addgroup` command to create new groups to place users in, and the `groups` command to view groups a user belongs to. Examples are shown below.
+Here are user management commands you should know:
 
-Adding a user:
+- `adduser` Create new users
+- `usermod` Modify users
+- `deluser` Remove a user from the system
+- `id` View more information about a specific user
+- `addgroup` Create new groups to place users in
+- `groups` View groups a user belongs to
+
+Let's run through some examples.
+
+Creating a user:
 
 ```
 sudo adduser nelson
@@ -339,9 +348,9 @@ If you need to block any ports, use `deny`. For example, if we wanted to deny SS
 sudo ufw deny 22/tcp
 ```
 
-These are just the basics of `ufw`. In addition to just allowing or denying access to a specific port, you can also make more complex rules that allow access from certain hosts or networks or only to a particular interface and etc.
+These are just the basics of `ufw`. You can also make complex rules that allow access from certain hosts or networks or only to a particular interface and etc.
 
-To further test our firewall, we can use the `ss` tool to see what ports are open locally. These aren’t firewall ports, but services running behind the firewall listening on local ports. For example, if a web server is running and listening for traffic on port 80, but port 80 is blocked by the firewall, we could still access that web server locally from the same computer it's running on. This can be used to make sure services are running and listening as we expect them to.
+To further test our firewall, we can use the `ss` tool to see what ports are open locally. These aren’t firewall ports, but services running behind the firewall listening on local ports. For example, if a web server is running and listening for traffic on port 80, but port 80 is blocked by our firewall, we could still access that web server locally from the same computer it's running on. This can be used to make sure services are running and listening as we expect them to.
 
 Try running `ss -anpt`. The flags will be explained below:
 
@@ -400,7 +409,7 @@ sudo logger "hello!"
 
 Authentication events on the system are shown in `auth.log`. These events include SSH logins and attempts. If your server is in the cloud, you may already have failed login attempts from malicious bots. This log file also shows when users use `sudo` along with whatever command they ran with it.
 
-Some other useful logs include `dpkg.log`, which stores package manager activity, and `ufw.log`, which stores firewall-related logs.
+Other useful logs include `dpkg.log` and `ufw.log`. `dpkg.log` stores package manager activity, while `ufw.log` stores firewall-related logs.
 
 The service in charge of logs is `rsyslog`, which will chop log files, start new ones, and archive old ones. This service compresses logs as .gz (gzip) numbered in reverse order. The higher the number, the older the log. Instead of unzipping logs, you can use the `zcat` command to print out compressed logs directly as such:
 
