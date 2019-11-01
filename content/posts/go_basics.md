@@ -1,10 +1,10 @@
 +++
-title = "Teaching Myself Go"
+title = "A Quick Guide to Go"
 description = "Learning Go"
 date = "2019-10-31"
 +++
 
-This post will mostly be notes that I took while learning Go. I think they could be useful to many others out there. Previous programming experience is recommended, as I will simply explain how to do things in Go (i.e. arrays) as opposed to explaining programming fundamentals.
+This post is a reiteration of notes that I took while learning Go. I think they could be useful to many others out there. Previous programming experience is recommended.
 
 
 ## Setup
@@ -95,8 +95,7 @@ This will create an executable named after the project directory `example`. In W
 ```
 
 Alternatively, you can run `go install` which is the same thing except the executable is put in a `bin` directory in the same location as the `src` folder we created (the `go` workspace). 
-The path should be `~/go/bin` and in that directory you should see the `example` binary.
-If the program had external dependencies like if we imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
+The directory path will be `~/go/bin` and in that directory you should see the `example` binary (assuming you're following this guide). If the program imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
 
 ## Variables
 
@@ -248,7 +247,7 @@ import (
 func main() {
 	// no element count needed
 	arr := []int{10, 15, 20, 25, 30}
-	
+
 	fmt.Println(arr)
 }
 ```
@@ -279,7 +278,7 @@ func main() {
 	} else if x < 5 {
 		fmt.Println("x is less than 5")
 	} else {
-    fmt.Println("x is out of range")
+		fmt.Println("x is out of range")
 	}
 }
 ```
