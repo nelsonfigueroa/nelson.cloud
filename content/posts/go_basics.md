@@ -170,7 +170,7 @@ import (
 
 func main() {
 
-	// shorhand syntax for variable assignment
+	// shorthand syntax for variable assignment
 	x := 5
 	y := 5
 	sum := x + y
