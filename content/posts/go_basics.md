@@ -195,28 +195,60 @@ func main() {
 	// create an array that holds 5 integers
 	var arr [5]int
 
-	fmt.Println(a) // will print out an array full of zeros (default values)
+	fmt.Println(arr) // will print out an array full of zeros (default values)
 }
 ```
 
+We can then assign values at a specific index just like in any other language:
+
 ```go
-	//set element at index 2 to a specific value
-	a[2] = 7
-	fmt.Println(a)
+package main
 
+import (
+	"fmt"
+)
+
+func main() {
+
+	var arr [5]int
+
+	// assign the value 7 at index 2
+	arr[2] = 7
+
+	fmt.Println(arr)
+}
+```
+
+The Go shorthand syntax also exists for arrays. We can ues it to define an array along with values:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
 	// shorthand syntax for arrays
-	a := [5]int{5, 4, 3, 2, 1}
-	fmt.Println(a)
+	arr := [5]int{10, 15, 20, 25, 30}
+	fmt.Println(arr)
+}
+```
 
-	// can't add a 6the element because array length is part of array's type
-	// you can get around this with slices
-	// slices don't have a fixed number of elements
-	// slices are an abstraction of the top of arrays to make them easier to work with
-	
-	// create a slice of integers instead of an arary of integers
-	// by simply removing the element count
-	a := []int{5, 4, 3, 2, 1}
-	fmt.Println(a)
+Since arrays are fixed, we can't add elements once the array size is specified. We can get around this using array slices. Slices don't have a fixed number of elements. Slices are an abstraction of arrays to make them easier to work with. You do not necessarily need an existing fixed array to create a slice. The syntax is similar to fixed arrays, except we do not specify the array size:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// no element count needed
+	arr := []int{10, 15, 20, 25, 30}
+	fmt.Println(arr)
+}
 ```
 
 ## If-Else Statements
