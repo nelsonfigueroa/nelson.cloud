@@ -4,6 +4,16 @@ description = "Learn Go Quickly"
 date = "2019-10-31"
 +++
 
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+<img src="/gopher.svg" alt="Go Gopher" class="center">
+
 This post is a reiteration of notes that I took while learning Go. I think they could be useful to many others out there. Previous programming experience is recommended.
 
 ## Introduction
@@ -43,6 +53,8 @@ mkdir hello
 The path of the example directory should be `~/go/src/hello`.
 
 ## Go Basics
+
+*Note: At any point while writing Go code, you can run `go fmt` in your terminal and Go will automatically format your code!*
 
 Now, let's create our first go program. Create a file called `hello.go`:
 
@@ -603,4 +615,32 @@ func multiply(x int, y int) (int, bool) {
 }
 ```
 
-## COVER `go fmt` also
+## Structures
+
+It is important to know that there are no classes in Go. Instead, there are Structures (or Structs), which are similar to classes. Structs consist of several typed attributes that form a single entity. It's probably easier to create a struct yourself to understand it:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+// struct for Product
+type Product struct{
+	name string
+	price float64
+	available bool
+}
+
+func main() {
+
+	// create new Product struct with attributes and assign to variable
+	p := Product{name: "Laptop", price: 499.99, available: true}
+
+	fmt.Println(p)
+
+	// print out a single attribute using dot notation
+	fmt.Println(p.name)
+}
+```
