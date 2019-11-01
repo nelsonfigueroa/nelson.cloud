@@ -1,11 +1,18 @@
 +++
 title = "A Quick Guide to Go"
-description = "Learning Go"
+description = "Learn Go Quickly"
 date = "2019-10-31"
 +++
 
 This post is a reiteration of notes that I took while learning Go. I think they could be useful to many others out there. Previous programming experience is recommended.
 
+## Introduction
+
+Go is a programming language developed by Google. It is also known as Golang. It's a statically typed and compiled language. I got interested in Go after seeing how readable its syntax is. My goal is to become good with an interpreted language and a compiled language. I was already decent at Ruby, so I started searching for compiled languages and weighed their pros and cons. I ultimately chose Go because I preferred its syntax over other languages like Java. It also helps that it's very popular amongst DevOps/Infrastructure teams and that's something I'm very interested in.
+
+## Installing
+
+You can download Go on the official Go site: [golang.org](https://golang.org/dl/). If you're on MacOS and have `brew` installed, you can run `brew install go`. On Linux distros, you can download and install Go using the package manager for your OS.
 
 ## Setup
 
