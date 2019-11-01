@@ -195,7 +195,7 @@ func main() {
 	// create an array that holds 5 integers
 	var arr [5]int
 
-	fmt.Println(arr) // will print out an array full of zeros (default values)
+	fmt.Println(arr)
 }
 ```
 
@@ -231,6 +231,7 @@ import (
 func main() {
 	// shorthand syntax for arrays
 	arr := [5]int{10, 15, 20, 25, 30}
+
 	fmt.Println(arr)
 }
 ```
@@ -247,6 +248,7 @@ import (
 func main() {
 	// no element count needed
 	arr := []int{10, 15, 20, 25, 30}
+	
 	fmt.Println(arr)
 }
 ```
