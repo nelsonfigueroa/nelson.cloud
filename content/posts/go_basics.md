@@ -251,6 +251,11 @@ func main() {
 }
 ```
 
+**Quick note on default values**
+
+When creating variables, if no value is assigned, a default value will be assigned. For integers, the default value is 0. For strings, it is an empty string. Arrays with no values assigned will also have default values. For example, an array of type integer will contain zeroes.
+
+
 ## If-Else Statements
 
 If-Else statements are not much different compared to other languages. Go does not require the comparison to be enclosed in parentheses.
@@ -276,9 +281,3 @@ func main() {
 	}
 }
 ```
-
-## Default Values
-
-if no initial value is provided for integers the default value is 0
-for strings it is simply an empty string
-for arrays, number of elements that an array holds is fixed
