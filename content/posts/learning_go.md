@@ -1,6 +1,6 @@
 +++
-title = "A Quick Guide to Go"
-description = "Learn Go Quickly"
+title = "Learning Go"
+description = "Learning Go basics"
 date = "2019-10-31"
 +++
 
@@ -644,3 +644,9 @@ func main() {
 	fmt.Println(p.name)
 }
 ```
+
+## Conclusion
+
+What I covered here should be enough to get started with Go. All that's left to do is to practice before diving into deeper Go functionality. I plan on doing Leetcode questions that I previously completed in Ruby but in Go this time.
+
+Thanks for reading!
