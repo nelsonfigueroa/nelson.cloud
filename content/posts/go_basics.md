@@ -188,7 +188,7 @@ func main() {
 
 ## Arrays
 
-Arrays in Go are fixed. The size of the array is specified when declaring the array. We use the same `var` keyword to declare arrays along with the array size and type as shown below:
+Arrays in Go are fixed. Arrays are also zero-indexed, so the first element is always at index 0. The size of the array is specified when declaring the array. We use the same `var` keyword to declare arrays along with the array size and type as shown below:
 
 ```	go
 package main
@@ -242,7 +242,13 @@ func main() {
 }
 ```
 
-Since arrays are fixed, we can't add elements once the array size is specified. We can get around this using array slices. Slices don't have a fixed number of elements. Slices are an abstraction of arrays to make them easier to work with. You do not necessarily need an existing fixed array to create a slice. The syntax is similar to fixed arrays, except we do not specify the array size:
+**Quick note on default values**
+
+When creating variables, if no value is assigned, a default value will be assigned. For integers, the default value is 0. For strings, it is an empty string. Arrays with no values assigned will also have default values. For example, an array of type integer will contain zeroes.
+
+## Slices
+
+Since arrays are fixed, we can't more elements than the specified size. We can get around this using array slices. Slices don't have a fixed number of elements. Slices are an abstraction of arrays to make them easier to work with. You do not necessarily need an existing fixed array to create a slice. The syntax is similar to fixed arrays, except we do not specify the array size:
 
 ```go
 package main
@@ -252,17 +258,127 @@ import (
 )
 
 func main() {
-	// no element count needed
-	arr := []int{10, 15, 20, 25, 30}
+	// slice of integers, no element count needed
+	slice := []int{10, 15, 20, 25, 30}
 
-	fmt.Println(arr)
+	fmt.Println(slice)
 }
 ```
 
-**Quick note on default values**
+Since slices aren't fixed, we can take advantage of functions such as `append()` to add elements. `append()` doesn't modify the original slice, it returns a new one. Under the hood, Go will be creating a new array and copying things over.
 
-When creating variables, if no value is assigned, a default value will be assigned. For integers, the default value is 0. For strings, it is an empty string. Arrays with no values assigned will also have default values. For example, an array of type integer will contain zeroes.
+```go
+package main
 
+import (
+	"fmt"
+)
+
+func main() {
+
+	slice := []int{10, 15, 20, 25, 30}
+
+	// add the element 35
+	slice = append(slice, 35)
+
+	// prints [10 15 20 25 30 35]
+	fmt.Println(slice)
+}
+```
+
+## Maps
+
+Maps hold key-value pairs. They're what Python calls "dictionaries" and what Ruby calls "hashes". Declaring a map in Go is a little different compared to declaring arrays and variables. We'll need to make use of the `make()` function and pass in the types for the map's keys and values. In the example below we'll be creating a map with keys that are of type `string` and values that are  of type `integer`:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	// create a map called 'inventory'
+	inventory := make(map[string]int)
+
+	fmt.Println(inventory)
+}
+```
+
+To add key-value pairs, it is similar to arrays:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	inventory := make(map[string]int)
+
+	// add key-value pairs
+	inventory["apples"] = 3
+	inventory["oranges"] = 10
+	inventory["peaches"] = 8
+
+	fmt.Println(inventory)	
+}
+```
+
+We can use the same syntax to get a value for a specific key:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	inventory := make(map[string]int)
+
+	inventory["apples"] = 3
+	inventory["oranges"] = 10
+	inventory["peaches"] = 8
+
+	// print out corresponding values
+	fmt.Println(inventory["oranges"])
+	fmt.Println(inventory["apples"])
+	fmt.Println(inventory["peaches"])
+}
+```
+
+We can use the `delete()` function to remove key-pairs. We need to pass in the map and the key name:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	inventory := make(map[string]int)
+
+	inventory["apples"] = 3
+	inventory["oranges"] = 10
+	inventory["peaches"] = 8
+
+	// before deleting
+	fmt.Println(inventory)
+
+	// delete key 'apples' along with its value
+	delete(inventory, "apples")
+
+	// after deleting
+	fmt.Println(inventory)
+}
+```
 
 ## If-Else Statements
 
@@ -289,3 +405,6 @@ func main() {
 	}
 }
 ```
+
+## Loops
+
