@@ -408,3 +408,95 @@ func main() {
 
 ## Loops
 
+The only type of loop in Go is the `for` loop. It is similar to `for` loops in other languages. We define a counter, a stopping condition, and a counter increment/decrement. See the example below:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	// create a for loop
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+
+}
+```
+
+The `for` loop can also double as a `while` loop by rearranging the counter and increment/decrement as such:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	// counter
+	i := 0
+
+	// for loop acting as a while loop
+	for i < 5 {
+		fmt.Println(i)
+
+		// increment
+		i++
+	}
+
+}
+```
+
+We can use `for` loops to iterate over each element in an array or slice by using the `range` keyword:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	// create a slice of strings
+	arr := []string{"a", "b", "c"}
+
+	// loop over each element of slice
+	for index, value := range arr {
+		fmt.Println("index:", index, "value:", value)
+	}
+
+}
+```
+
+We can do the same thing with a map. Instead of looping over an index, we'll loop over a key:
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	// create a map
+	inventory := make(map[string]int)
+	inventory["apples"] = 3
+	inventory["oranges"] = 10
+	inventory["peaches"] = 8
+
+	// loop over each key/value of map
+	for key, value := range inventory {
+		fmt.Println("key:", key, "value:", value)
+	}
+
+}
+```
+
+## Functions
