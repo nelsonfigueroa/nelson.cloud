@@ -6,24 +6,14 @@ title = "About Me"
 
 ## Nelson Figueroa
 ### B.S. Computer Information Technology
-#### Graduated: May 2019
+#### Graduated: May 2019 :tada:
 
-**Interests:**
+**Interests:** Coding, Cybsersecurity, Privacy, Gaming, Music
 
-- Coding, Cybsersecurity, Privacy, Music
+**Favorite programming language:** Ruby
 
-**Favorite Programming Language:**
+**Currently learning:** Golang
 
-- Ruby
+**Currently working on:** Completing leetcode questions in Go
 
-**Currently learning:**
-
-- Golang
-
-**Currently working on:**
-
-- Completing leetcode questions in Go
-
-**Currently playing:**
-
-- The Outer Worlds
+**Currently playing:** The Outer Worlds

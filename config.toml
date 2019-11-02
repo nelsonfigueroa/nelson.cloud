@@ -2,6 +2,9 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
+# why not
+enableEmoji = true
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
