@@ -54,7 +54,7 @@ The path of the example directory should be `~/go/src/hello`.
 
 ## Go Basics
 
-*Note: At any point while writing Go code, you can run `go fmt` in your terminal and Go will automatically format your code!*
+At any point while writing Go code, you can run `go fmt` in your terminal and Go will automatically format your code. Additionally, running `godoc -http :8000` will start up a local server on port 8000 where you can view documentation.
 
 Now, let's create our first go program. Create a file called `hello.go`:
 
