@@ -18,7 +18,7 @@ This post is a reiteration of notes that I took while learning Go. I think they 
 
 ## Introduction
 
-Go is a programming language developed by Google. It is also known as Golang. It's a statically typed and compiled language. I got interested in Go after seeing how readable its syntax is. My goal is to become good with an interpreted language and a compiled language. I was already decent at Ruby, so I started searching for compiled languages and weighed their pros and cons. I ultimately chose Go because I preferred its syntax over other languages like Java. It also helps that it's very popular amongst DevOps/Infrastructure teams and that's something I'm very interested in.
+Go is a programming language developed by Google. It is also known as Golang. It's a statically typed and compiled language. My goal is to become good with an interpreted language and a compiled language. I was already decent at Ruby, so I started searching for compiled languages and weighed their pros and cons. I ultimately chose Go because I preferred its syntax over other compiled languages like Java. It also helps that it's very popular amongst DevOps/Infrastructure teams and that's something I'm very interested in.
 
 ## Installing
 
