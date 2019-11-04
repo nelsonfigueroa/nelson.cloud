@@ -32,7 +32,7 @@ First, generate SSH keys on your local machine.
 SSH comes with a package called `ssh-keygen` used to generate keys, although there are other ways to do it as well. Let's generate SSH keys by running the command:
 
 ```
-ssh-keygen
+$ ssh-keygen
 ```
 
 The command will prompt for an optional password. If you don't want this, press enter to skip the prompt.
@@ -42,9 +42,7 @@ This command will generate two keys, `id_rsa` and `id_rsa.pub`, in the `~/.ssh/`
 Next, copy the contents of the public key into the remote server. In this case, the remote server is Ubuntu Server. SSH into Ubuntu Server using the username and password you chose during installation:
 
 ```
-# replace with your details where needed
-
-ssh user@192.168.1.2
+$ ssh user@192.168.1.2
 ```
 
 Then, paste the contents of `id_rsa.pub` into a file called `authorized_keys` in the `~/.ssh/` directory. If the file does not exist, create it. You can add several keys in this file if you want to allow several machines to connect to this server.
@@ -72,13 +70,13 @@ PasswordAuthentication no
 With these settings, any user with a public SSH key on the server will be able to login. Restart the SSH service to apply changes:
 
 ```
-sudo systemctl restart sshd
+$ sudo systemctl restart sshd
 ```
 
 Exit and reconnect to the remote server. The server should not prompt for a password, and if all steps were followed, you should be able to login to the server. The `ssh` command automatically uses the private key located in `~/.ssh/id_rsa`. If your key is stored elsewhere, you can use the `-i` flag to specify its location:
 
 ```
-ssh user@10.0.2.20 -i /path/to/key/id_rsa
+$ ssh user@10.0.2.20 -i /path/to/key/id_rsa
 ```
 
 You can repeat this process for multiple users. Create a user, generate SSH keys on their local machine, and then copy their public keys to their respective home directories in the remote server.
@@ -92,7 +90,7 @@ Ubuntu Server comes with `unattended-upgrades` enabled by defaul. This package a
 Sometimes it makes sense to turn off automatic updates in a production environment. If you turn off automatic security updates, be sure to schedule downtime to install updates manually. You can enable/disable automatic security updates with:
 
 ```
-dpkg-reconfigure unnatended-upgrades
+$ dpkg-reconfigure unnatended-upgrades
 ```
 
 For troubleshooting `unattended-upgrades`, you can refer to the log file located in `/var/log/unattended-upgrades/unaddended-updates.log`.
@@ -119,7 +117,7 @@ Let's run through some examples.
 Creating a user:
 
 ```
-sudo adduser nelson
+$ sudo adduser nelson
 ```
 
 ```
@@ -146,10 +144,8 @@ Notice that the output will prompt for a password. Additionally, there is a line
 Find out more information about a user:
 
 ```
-id nelson
-```
+$ id nelson
 
-```
 uid=1001(nelson) gid=1001(nelson) groups=1001(nelson)
 ```
 
@@ -162,10 +158,8 @@ In many Linux distributions, the numbering system for regular users starts at 10
 View groups a user belongs to:
 
 ```
-groups nelson
-```
+$ groups nelson
 
-```
 nelson : nelson
 ```
 
@@ -174,10 +168,8 @@ In this case, the user only belongs to a single group with the same name.
 Create a new group:
 
 ```
-sudo addgroup developers
-```
+$ sudo addgroup developers
 
-```
 Adding group `developers' (GID 1002) ...
 Done.
 ```
@@ -185,7 +177,7 @@ Done.
 Add a user to the group:
 
 ```
-sudo usermod -aG developers nelson
+$ sudo usermod -aG developers nelson
 ```
 
 - `-G` ​Means you’ll provide a list of groups that the user will be a member of, but that list will replace what already exists.
@@ -194,10 +186,8 @@ sudo usermod -aG developers nelson
 Now try running the `groups` command again:
 
 ```
-groups nelson
-```
+$ groups nelson
 
-```
 nelson : nelson developers
 ```
 
@@ -206,10 +196,8 @@ We can see that an additional group has been added to the user.
 Try the `id` command once again to see what's changed:
 
 ```
-id nelson
-```
+$ id nelson
 
-```
 uid=1001(nelson) gid=1001(nelson) groups=1001(nelson),1002(developers)
 ```
 
@@ -218,10 +206,8 @@ We can see an additional group that the user belongs to.
 Finally, let's try deleting a user:
 
 ```
-sudo deluser nelson
-```
+$ sudo deluser nelson
 
-```
 Removing user `nelson' ...
 Warning: group `nelson' has no more members.
 Done.
@@ -238,12 +224,8 @@ The `ufw` service is disabled by default. Let's allow port 22 to be able to SSH,
 To allow TCP traffic through port 22 run:
 
 ```
-sudo ufw allow 22/tcp
-```
+$ sudo ufw allow 22/tcp
 
-You should see the following response:
-
-```
 Rules updated
 Rules updated (v6)
 ```
@@ -251,25 +233,20 @@ Rules updated (v6)
 Then we'll enable the firewall so that it starts on system boot:
 
 ```
-sudo ufw enable
+$ sudo ufw enable
 ```
 
 You can check the status of `ufw` at any moment. Let's try it now:
 
 ```
-sudo ufw status
-```
+$ sudo ufw status
 
-You should see the following:
-
-```
 Status: active
 
 To                         Action      From
 --                         ------      ----
 22/tcp                     ALLOW       Anywhere
 22/tcp (v6)                ALLOW       Anywhere (v6)
-
 ```
 
 We can see that our rule was successfully added to the list.
@@ -277,18 +254,14 @@ We can see that our rule was successfully added to the list.
 Let's add another rule for HTTPS:
 
 ```
-sudo ufw allow 443/tcp
+$ sudo ufw allow 443/tcp
 ```
 
 Then we'll double-check that the rule has been added:
 
 ```
-sudo ufw status
-```
+$ sudo ufw status
 
-And we see the following:
-
-```
 Status: active
 
 To                         Action      From
@@ -297,7 +270,6 @@ To                         Action      From
 443/tcp                    ALLOW       Anywhere
 22/tcp (v6)                ALLOW       Anywhere (v6)
 443/tcp (v6)               ALLOW       Anywhere (v6)
-
 ```
 
 In many cases, services you run on the server will only need one port to be accessible to and from the outside. Some services, however, need more than one port. UFW is aware of some of these services that installed packages use and can make it easier to set up relevant ports.
@@ -305,7 +277,7 @@ In many cases, services you run on the server will only need one port to be acce
 To see what applications UFW knows about, run:
 
 ```
-sudo ufw app list
+$ sudo ufw app list
 ```
 
 In this case, only OpenSSH is installed, so we see the following output:
@@ -318,7 +290,7 @@ Available applications:
 We can use the name of the application to allow traffic through the firewall as opposed to specifying ports:
 
 ```
-sudo ufw allow OpenSSH
+$ sudo ufw allow OpenSSH
 ```
 
 And when running `sudo ufw status` we'll see a rule specifically for an application:
@@ -355,7 +327,7 @@ To further test our firewall, we can use the `ss` tool to see what ports are ope
 Try running `ss -anpt`. The flags will be explained below:
 
 ```
-sudo ss -anpt
+$ sudo ss -anpt
 ```
 
 You'll see an output similar to the following:
@@ -382,7 +354,7 @@ There are more flags available, such as `-u` which shows UDP sockets. Check out 
 From another machine, we can use `nmap` to scan for open ports from the outside. This can be aggressive, so be careful and responsible when using it. To check open ports from a different machine run:
 
 ```
-nmap -sS [ip_address_of_ubuntu_server]
+$ nmap -sS [ip_address_of_ubuntu_server]
 ```
 
 Earlier, we allowed port 443 using `ufw` even though we have no service on the server actually using this port. As a result, `nmap` should report that port 443 is open but the state is closed. If you followed the previous steps you should see the following:
@@ -404,7 +376,7 @@ Logs are always useful for maintenance and general troubleshooting. In Ubuntu Se
 The system log, `syslog`, is where the kernel and almost everything else writes information about events, errors, and notifications. You can log events manually using the `logger` command as such:
 
 ```
-sudo logger "hello!"
+$ sudo logger "hello!"
 ```
 
 Authentication events on the system are shown in `auth.log`. These events include SSH logins and attempts. If your server is in the cloud, you may already have failed login attempts from malicious bots. This log file also shows when users use `sudo` along with whatever command they ran with it.
@@ -414,13 +386,13 @@ Other useful logs include `dpkg.log` and `ufw.log`. `dpkg.log` stores package ma
 The service in charge of logs is `rsyslog`, which will chop log files, start new ones, and archive old ones. This service compresses logs as .gz (gzip) numbered in reverse order. The higher the number, the older the log. Instead of unzipping logs, you can use the `zcat` command to print out compressed logs directly as such:
 
 ```
-zcat ufw.log.gz
+$ zcat ufw.log.gz
 ```
 
 Another useful tool is `lastlog`, which shows the last time each user in the system logged in.
 
 ```
-sudo lastlog
+$ sudo lastlog
 ```
 
 The output will look similar to the following (I trimmed some of the output to save space):
@@ -483,7 +455,7 @@ The `NI` column specifies the "nicesness" value, which is used to prioritize pro
 With the following command, we can change the value to 5. We specify the process using the `PID`:
 
 ```
-renice -n 5 -p 1432
+$ renice -n 5 -p 1432
 ```
 
 - `-n` is used to specify a niceness value
@@ -499,7 +471,7 @@ Now the process has a `NI` value of 5:
 It is also possible to change the `NI` value of all processes owned by a user with the following command:
 
 ```
-renice -n 5 -u user
+$ renice -n 5 -u user
 ```
 
 - `-u` is used to specify the user
@@ -507,6 +479,8 @@ renice -n 5 -u user
 While `top` and `htop` provide a nice overview, we can use the `ps` command to be more precise. Running the command by itself shows processes running as the current user in the current shell:
 
 ```
+$ ps
+
   PID TTY          TIME CMD
  1433 pts/0    00:00:00 bash
  1649 pts/0    00:00:00 ps
@@ -515,10 +489,8 @@ While `top` and `htop` provide a nice overview, we can use the `ps` command to b
 To show all processes on the system run:
 
 ```
-ps -e
-```
+$ ps -e
 
-```
   PID TTY          TIME CMD
     1 ?        00:00:01 systemd
     2 ?        00:00:00 kthreadd
@@ -547,10 +519,8 @@ ps -e
 You can pipe the output through `grep` to find a specific process:
 
 ```
-ps -e | grep "bash"
-```
+$ ps -e | grep "bash"
 
-```
  1433 pts/0    00:00:00 bash
  1654 pts/0    00:00:00 bash
 ```
@@ -558,10 +528,8 @@ ps -e | grep "bash"
 You can also view process trees with the following command:
 
 ```
-ps -eHj
-```
+$ ps -eHj
 
-```
   PID  PGID   SID TTY          TIME CMD
     2     0     0 ?        00:00:00 kthreadd
     4     0     0 ?        00:00:00   kworker/0:0H
@@ -592,13 +560,13 @@ ps -eHj
 You can terminate processes with the `kill` command. If you want to terminate a process with a PID of 150 you can run the following command:
 
 ```
-kill 150
+$ kill 150
 ```
 
 You can immediately terminate a process with the following command:
 
 ```
-kill -9 150
+$ kill -9 150
 ```
 
 Keep in mind this is not a graceful process termination and should be used sparingly. Additional `kill` signal names can be found through the `kill -l` command.
@@ -608,10 +576,8 @@ Keep in mind this is not a graceful process termination and should be used spari
 In Ubuntu, the `systemd` process is one of the first processes on boot. It is a process manager that launches daemons and services. Services are programs that run in the background to accomplish tasks, such as web server software or SSH. On Ubuntu Server, we primarily interact with `systemd` using the `systemctl` command. Services managed by `systemd` are defined by unit files which specify what each service does and how it does it. `systemd` also uses "targets", which are groups of services. We can take a look at these with the following command:
 
 ```
-systemctl -t target
-```
+$ systemctl -t target
 
-```
 UNIT                   LOAD   ACTIVE SUB    DESCRIPTION
 basic.target           loaded active active Basic System
 cryptsetup.target      loaded active active Local Encrypted Volumes
@@ -625,10 +591,8 @@ graphical.target       loaded active active Graphical Interface
 The same can be done for services:
 
 ```
-systemctl -t service
-```
+$ systemctl -t service
 
-```
 UNIT                               LOAD   ACTIVE SUB     DESCRIPTION
 accounts-daemon.service            loaded active running Accounts Service
 apparmor.service                   loaded active exited  AppArmor initialization
@@ -643,10 +607,8 @@ blk-availability.service           loaded active exited  Availability of block d
 You can view more specific details for a particular service with `systemctl status`:
 
 ```
-systemctl status rsyslog.service
-```
+$ systemctl status rsyslog.service
 
-```
 ● rsyslog.service - System Logging Service
    Loaded: loaded (/lib/systemd/system/rsyslog.service; enabled; vendor preset: enabled)
    Active: active (running) since Wed 2019-10-23 01:17:54 UTC; 3s ago
@@ -671,10 +633,8 @@ The lines displayed below the service/target information are the most recent log
 The same command can be used for targets:
 
 ```
-systemctl status basic.target
-```
+$ systemctl status basic.target
 
-```
 ● basic.target - Basic System
    Loaded: loaded (/lib/systemd/system/basic.target; static; vendor preset: enabled)
    Active: active since Tue 2019-10-22 22:19:15 UTC; 2h 59min ago
@@ -688,31 +648,31 @@ When running these commands, you will see words such as "active" and "running" a
 Services can be configured to start on system boot:
 
 ```
-sudo systemctl enable rsyslog
+$ sudo systemctl enable rsyslog
 ```
 
 Services can also be configured to not run on system boot:
 
 ```
-sudo systemctl disable rsyslog
+$ sudo systemctl disable rsyslog
 ```
 
 You can manually start a service as such:
 
 ```
-sudo systemctl start rsyslog.service
+$ sudo systemctl start rsyslog.service
 ```
 
 You can stop a service as well:
 
 ```
-sudo systemctl stop rsyslog.service
+$ sudo systemctl stop rsyslog.service
 ```
 
 And you can also restart a service:
 
 ```
-sudo systemctl restart rsyslog.service
+$ sudo systemctl restart rsyslog.service
 ```
 
 Keep in mind starting/stopping a service is not the same as enabling/disabling. An enabled service that has been manually stopped will start automatically once the system is rebooted.
@@ -720,7 +680,7 @@ Keep in mind starting/stopping a service is not the same as enabling/disabling. 
 You can see more activity for a service in the log file, or use the command:
 
 ```
-sudo journalctl -xe
+$ sudo journalctl -xe
 ```
 
 The logs there can be helpful when troubleshooting why a service isn’t starting as expected.
