@@ -118,9 +118,7 @@ Creating a user:
 
 ```
 $ sudo adduser nelson
-```
 
-```
 Adding user `nelson' ...
 Adding new group `nelson' (1001) ...
 Adding new user `nelson' (1001) with group `nelson' ...
