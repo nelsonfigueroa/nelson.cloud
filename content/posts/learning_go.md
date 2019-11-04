@@ -522,16 +522,17 @@ import (
 	"fmt"
 )
 
+// custom function
+func hello() {
+	fmt.Println("hello!")
+}
+
 func main() {
 
 	// calling custom function
 	hello()
 }
 
-// custom function
-func hello() {
-	fmt.Println("hello!")
-}
 ```
 
 We can also create functions that accept parameters. To specify a parameter, write the variable name followed by its type. Multiple parameters are separated by commas:
@@ -543,20 +544,21 @@ import (
 	"fmt"
 )
 
+// function with parameters
+func sum(x int, y int) {
+	sum := x + y
+	fmt.Println("The sum is:", sum)
+}
+
 func main() {
 
 	// passing in parameters
 	sum(3, 4)
 }
 
-// function with parameters
-func sum(x int, y int) {
-	sum := x + y
-	fmt.Println("The sum is:", sum)
-}
 ```
 
-Instead of printing the sum, we can return it. If a function returns a value, the type of the value returned must be specified after the function name:
+Instead of printing the sum, we can return the actual value. If a function returns a value, the type of the value returned must be specified after the function name:
 
 ```go
 package main
@@ -564,6 +566,12 @@ package main
 import (
 	"fmt"
 )
+
+// function that returns an integer
+func sum(x int, y int) int {
+	sum := x + y
+	return sum
+}
 
 func main() {
 
@@ -573,11 +581,6 @@ func main() {
 	fmt.Println(result)	
 }
 
-// function that returns an integer
-func sum(x int, y int) int {
-	sum := x + y
-	return sum
-}
 ```
 
 In Go, functions can have multiple return values. For example, a function that returns both an integer and a boolean would list the return types in parentheses after the function name. We return the values in the same order:
@@ -588,14 +591,6 @@ package main
 import (
 	"fmt"
 )
-
-func main() {
-
-	result, pos := multiply(10, -10)
-
-	fmt.Println("Result:", result)
-	fmt.Println("Positive?:", pos)
-}
 
 // function that returns an integer and boolean
 func multiply(x int, y int) (int, bool) {
@@ -613,6 +608,15 @@ func multiply(x int, y int) (int, bool) {
 	// return int, bool as defined in function
 	return product, positive
 }
+
+func main() {
+
+	result, pos := multiply(10, -10)
+
+	fmt.Println("Result:", result)
+	fmt.Println("Positive?:", pos)
+}
+
 ```
 
 ## Structures
