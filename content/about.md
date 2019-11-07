@@ -16,6 +16,6 @@ title = "About Me"
 
 **Currently learning:** Golang
 
-**Currently working on:** Leetcode challenges in Go
+**Currently working on:** Leetcode challenges in Go, Building Rails APIs
 
 **Currently playing:** The Outer Worlds
