@@ -18,7 +18,7 @@ This post is a reiteration of notes that I took while learning Go. I think they 
 
 ## Introduction
 
-Go is a programming language developed by Google. It is also known as Golang. It's a statically typed and compiled language. I got interested in Go after seeing how readable its syntax is. My goal is to become good with an interpreted language and a compiled language. I was already decent at Ruby, so I started searching for compiled languages and weighed their pros and cons. I ultimately chose Go because I preferred its syntax over other languages like Java. It also helps that it's very popular amongst DevOps/Infrastructure teams and that's something I'm very interested in.
+Go is a programming language developed by Google. It is also known as Golang. It's a statically typed and compiled language. My goal is to become good with an interpreted language and a compiled language. I was already decent at Ruby, so I started searching for compiled languages and weighed their pros and cons. I ultimately chose Go because I preferred its syntax over other compiled languages like Java. It also helps that it's very popular amongst DevOps/Infrastructure teams and that's something I'm very interested in.
 
 ## Installing
 
@@ -29,37 +29,37 @@ You can download Go on the official Go site: [golang.org](https://golang.org/dl/
 Go has workspaces. The default workspace can be found be running the command:
 
 ```
-go env GOPATH
+$ go env GOPATH
 ```
 
 The directory itself might not exist, but you can create it.
 
 ```
-mkdir go
+$ mkdir go
 ```
 
 Inside the `go` directory, we'll need another directory: `src`
 
 ```
-mkdir src
+$ mkdir src
 ```
 
 This is where all of our source code will go. It is inside this `src` directory where you can create additional directories for each of your projects. Let's make a "hello world" project:
 
 ```
-mkdir hello
+$ mkdir hello
 ```
 
 The path of the example directory should be `~/go/src/hello`.
 
 ## Go Basics
 
-*Note: At any point while writing Go code, you can run `go fmt` in your terminal and Go will automatically format your code!*
+At any point while writing Go code, you can run `go fmt` in your terminal and Go will automatically format your code. Additionally, running `godoc -http :8000` will start up a local server on port 8000 where you can view documentation.
 
 Now, let's create our first go program. Create a file called `hello.go`:
 
 ```
-touch hello.go
+$ touch hello.go
 ```
 
 Go files can be named anything, although generally the main go file is named `main.go`. We can ignore that for now.
@@ -98,19 +98,19 @@ func main() {
 Let's try running what we have so far:
 
 ```
-go run hello.go
+$ go run hello.go
 ```
 
 Go also allows us to compile the code into an executable. Let's try it. Notice that there is no need to specify the file this time:
 
 ```
-go build
+$ go build
 ```
 
 This will create an executable named after the project directory `example`. In Windows, this will be a `.exe` file. In this case it is an executable named `example`. You can run this executable and it'll print "hello world".
 
 ```
-./example
+$ ./example
 ```
 
 Alternatively, you can run `go install` which is the same thing except the executable is put in a `bin` directory in the same location as the `src` folder we created (the `go` workspace). 
@@ -522,16 +522,17 @@ import (
 	"fmt"
 )
 
+// custom function
+func hello() {
+	fmt.Println("hello!")
+}
+
 func main() {
 
 	// calling custom function
 	hello()
 }
 
-// custom function
-func hello() {
-	fmt.Println("hello!")
-}
 ```
 
 We can also create functions that accept parameters. To specify a parameter, write the variable name followed by its type. Multiple parameters are separated by commas:
@@ -543,20 +544,21 @@ import (
 	"fmt"
 )
 
+// function with parameters
+func sum(x int, y int) {
+	sum := x + y
+	fmt.Println("The sum is:", sum)
+}
+
 func main() {
 
 	// passing in parameters
 	sum(3, 4)
 }
 
-// function with parameters
-func sum(x int, y int) {
-	sum := x + y
-	fmt.Println("The sum is:", sum)
-}
 ```
 
-Instead of printing the sum, we can return it. If a function returns a value, the type of the value returned must be specified after the function name:
+Instead of printing the sum, we can return the actual value. If a function returns a value, the type of the value returned must be specified after the function name:
 
 ```go
 package main
@@ -564,6 +566,12 @@ package main
 import (
 	"fmt"
 )
+
+// function that returns an integer
+func sum(x int, y int) int {
+	sum := x + y
+	return sum
+}
 
 func main() {
 
@@ -573,11 +581,6 @@ func main() {
 	fmt.Println(result)	
 }
 
-// function that returns an integer
-func sum(x int, y int) int {
-	sum := x + y
-	return sum
-}
 ```
 
 In Go, functions can have multiple return values. For example, a function that returns both an integer and a boolean would list the return types in parentheses after the function name. We return the values in the same order:
@@ -588,14 +591,6 @@ package main
 import (
 	"fmt"
 )
-
-func main() {
-
-	result, pos := multiply(10, -10)
-
-	fmt.Println("Result:", result)
-	fmt.Println("Positive?:", pos)
-}
 
 // function that returns an integer and boolean
 func multiply(x int, y int) (int, bool) {
@@ -613,6 +608,15 @@ func multiply(x int, y int) (int, bool) {
 	// return int, bool as defined in function
 	return product, positive
 }
+
+func main() {
+
+	result, pos := multiply(10, -10)
+
+	fmt.Println("Result:", result)
+	fmt.Println("Positive?:", pos)
+}
+
 ```
 
 ## Structures
