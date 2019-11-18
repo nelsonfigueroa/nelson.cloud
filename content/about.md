@@ -8,14 +8,14 @@ title = "About Me"
 ### B.S. Computer Information Technology
 #### Graduated: May 2019 :tada:
 
-**Interests:** Coding, Cybsersecurity, Privacy, Gaming, Music
+**Interests:** Coding, Cybsersecurity, Privacy, Gaming, Music, Guitars
 
 **Favorite programming language:** Ruby
 
 **Good at:** Ruby on Rails Development
 
-**Currently learning:** Golang
+**Learning:** Golang
 
-**Currently working on:** Leetcode challenges in Go, Building Rails APIs
+**Working on:** Leetcode challenges in Go, Building Rails APIs
 
-**Currently playing:** The Outer Worlds
+**Playing:** The Outer Worlds
