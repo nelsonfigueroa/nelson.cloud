@@ -2,14 +2,6 @@
 title = "Nelson Figueroa"
 +++
 
-<style>
-  p {
-    /* margin: 0;
-    padding: 0; */
-    /* padding-bottom: .5em; */
-  }
-</style>
-
 ---
 ## B.S. Computer Information Technology
 ### Graduated: May 2019 :tada:
