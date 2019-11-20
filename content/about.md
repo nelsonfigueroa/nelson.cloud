@@ -4,8 +4,9 @@ title = "Nelson Figueroa"
 
 <style>
   p {
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
+    /* padding-bottom: .5em; */
   }
 </style>
 
@@ -29,18 +30,22 @@ title = "Nelson Figueroa"
 
 ## Experience
 
-**Dollar Shave Club** - Backend Software Engineering Intern
+**Dollar Shave Club**
 <br>
-*June 2019 - August 2019*
+Backend Software Engineering Intern
+<br>
+<small>*June 2019 - August 2019*</small>
 
-<br>
 
-**Student Affairs IT, CSU Northridge** - Web Developer
+**Student Affairs IT, CSU Northridge**
 <br>
-*May 2018 - May 2019*
+Web Developer
+<br>
+<small>*May 2018 - May 2019*</small>
 
-<br>
 
-**HHD Tech Support, CSU Northridge** - IT Student Assistant
+**HHD Tech Support, CSU Northridge**
 <br>
-*June 2017 - May 2018*
+IT Student Assistant
+<br>
+<small>*June 2017 - May 2018*</small>
