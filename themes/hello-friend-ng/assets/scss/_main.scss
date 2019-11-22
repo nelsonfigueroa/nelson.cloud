@@ -30,6 +30,14 @@ body {
   min-height: 100vh;
   flex-direction: column;
 
+  ::selection {
+    background: #960602;
+  }
+
+  ::-moz-selection {
+    background: #960602;
+  }
+
   @media #{$media-size-phone} {
     font-size: 1rem;
   }
