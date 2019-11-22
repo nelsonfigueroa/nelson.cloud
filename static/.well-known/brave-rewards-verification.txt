@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nfigueroa.dev
+Token: b4d2fbea63267467d7a8f104cccea40a667f9df1adb6aa3ec4c6d6931cf8c7f9
