@@ -8,11 +8,15 @@ date = "2019-09-26"
 
 This post will be a re-write of notes I took around 2 years ago now. Learning to use `aircrack-ng` and break into my own router was both fun and a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router due to processing power needed, but sniffing wifi networks is a trivial process. After doing it once, it'll stick.
 
-There are likely better methods of doing this now. In fact, I discovered [bettercap](https://github.com/bettercap/bettercap) earlier this year and it is easy to use. Perhaps I'll write a post using that tool in the future.
+There are other methods of doing this as well. In fact, I discovered [bettercap](https://github.com/bettercap/bettercap) earlier this year and it is easy to use. Perhaps I'll write a post using that tool in the future.
 
 For reference, I used Kali linux for the entire process. But the process should be very similar for any linux distribution. This tool is already included on Kali Linux but you can install it on any Linux OS.
 
 I shouldn't have to say this but, this is purely for educational purposes. Do NOT try to break into access points that do not belong to you.
+
+## Hardware requirements
+
+To use `aircrack-ng` you'll need a wireless network adapter that has monitor mode and packet injection capabilities. Feel free to do some research about your particular card and it's compatability. There's a good guide on [the aircrack-ng site](https://www.aircrack-ng.org/doku.php?id=compatible_cards) that can help you with research. You can also do what I did and buy a cheap USB wireless adapter with these capabilities. I have the [Panda Wireless N600](https://www.amazon.com/Panda-2-4GHz-300Mbps-Wireless-Adapter/dp/B00U2SIS0O/) and it works perfectly fine on my Macbook Pro.
 
 ## What is aircrack-ng?
 
