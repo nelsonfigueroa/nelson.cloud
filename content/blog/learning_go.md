@@ -107,14 +107,14 @@ Go also allows us to compile the code into an executable. Let's try it. Notice t
 $ go build
 ```
 
-This will create an executable named after the project directory `example`. In Windows, this will be a `.exe` file. In this case it is an executable named `example`. You can run this executable and it'll print "hello world".
+This will create an executable named after the project directory `hello`. In Windows, this will be a `.exe` file. In this case it is an executable named `hello`. You can run this executable and it'll print "hello world".
 
 ```
-$ ./example
+$ ./hello
 ```
 
 Alternatively, you can run `go install` which is the same thing except the executable is put in a `bin` directory in the same location as the `src` folder we created (the `go` workspace). 
-The directory path will be `~/go/bin` and in that directory you should see the `example` binary (assuming you're following this guide). If the program imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
+The directory path will be `~/go/bin` and in that directory you should see the `hello` binary (assuming you're following this guide). If the program imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
 
 ## Variables
 
