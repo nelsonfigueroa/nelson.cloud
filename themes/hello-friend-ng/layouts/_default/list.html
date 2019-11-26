@@ -1,5 +1,11 @@
 {{ define "main" }}
     <main class="posts">
+        <style>
+          .post-item:hover {
+            list-style-type: disc;
+          }
+        </style>
+
         <h1>Blog Posts</h1>
 
         {{- if .Content }}
