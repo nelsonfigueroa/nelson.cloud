@@ -21,10 +21,7 @@ title = "Nelson Figueroa"
 ---
 
 ## Experience
-
-<span style="color:#2fcc70">*Currently available for open positions!*</span>
-<br>
-<small>Feel free to send me an email to request my full resume.</small>
+<small><i>Feel free to send me an email to request my full resume.</i></small>
 
 **Dollar Shave Club**
 <br>

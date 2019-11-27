@@ -63,6 +63,10 @@
       }
     }
 
+    &-item:hover {
+      list-style-type: disc;
+    }
+
     &-day {
       flex-shrink: 0;
       margin-left: 1em;
