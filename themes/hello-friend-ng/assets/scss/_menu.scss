@@ -57,7 +57,14 @@
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      // text-decoration: underline;
+      color: $dark-color;
+      background-color: $dark-background;
+
+      .dark-theme & {
+        color: $light-color;
+        background-color: $light-background;
+      }
     }
 
     &:last-of-type {

@@ -4,16 +4,6 @@ description = "Learning Go basics"
 date = "2019-10-31"
 +++
 
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-<img src="/gopher.svg" alt="Go Gopher" class="center">
-
 This post is a reiteration of notes that I took while learning Go. I think they could be useful to many others out there. Previous programming experience is recommended.
 
 ## Introduction

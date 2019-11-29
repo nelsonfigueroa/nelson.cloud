@@ -4,19 +4,6 @@ description = "Linux maintenance with Ubuntu Server"
 date = "2019-10-24"
 +++
 
- 
-<!-- ![Example image](/ubuntu.svg) -->
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-<img src="/ubuntu.svg" alt="Ubuntu" class="center">
-
-
 This is a guide to managing and maintaining Ubuntu Server. There is no desktop GUI on this version of Ubuntu. The goal here is to learn basic Ubuntu maintenance with just the command line.
 
 ## Prerequisites
