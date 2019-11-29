@@ -10,7 +10,8 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: #ccc;
 	background: none;
-	font-family: Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  // font-family: Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: "Source Code Pro", monospace;
 	font-display: auto;
 	text-align: left;
 	white-space: pre;
@@ -21,7 +22,7 @@ pre[class*="language-"] {
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
-	tab-size: 4;
+	tab-size: 2;
 
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
@@ -34,7 +35,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
-	overflow: auto;
+  overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
@@ -42,11 +43,16 @@ pre[class*="language-"] {
 	background: #0f0f0f;
 }
 
+// custom. had to do this to fix colors.
+.highlight pre {
+  background-color: #0f0f0f !important;
+}
+
 /* Inline code */
 :not(pre) > code[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;
-	white-space: normal;
+  white-space: normal;
 }
 
 .token.comment,

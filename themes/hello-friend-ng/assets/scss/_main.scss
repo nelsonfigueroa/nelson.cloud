@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  line-height: 1.6;
+  line-height: 1.5;
   letter-spacing: .06em;
   scroll-behavior: smooth;
 }
@@ -14,10 +14,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+  // font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+  font-family: "Source Code Pro", monospace;
   font-display: auto;
   font-size: 1rem;
-  line-height: 1.54;
+  // font-size: 0.875rem;
+  line-height: 1.5;
   background-color: $light-background;
   color: $light-color;
   text-rendering: optimizeLegibility;
@@ -148,17 +150,19 @@ figure {
 }
 
 code {
-  font-family: Menlo,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  // font-family: Menlo,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  font-family: "Source Code Pro", monospace;
   font-display: auto;
   font-feature-settings: normal;
   background: $light-background-secondary;
-  padding: 1px 6px;
+  padding: 1px 5px;
   margin: 0 2px;
   border-radius: 5px;
-  font-size: .95rem;
+  font-size: 0.95rem;
 
   .dark-theme & {
-    background: $dark-background-secondary;
+    // background: $dark-background-secondary;
+    background: #0f0f0f;
   }
 }
 
