@@ -4,19 +4,43 @@ description = "Learning Go basics"
 date = "2019-10-31"
 +++
 
-This post is a reiteration of notes that I took while learning Go. I think they could be useful to many others out there. Previous programming experience is recommended.
+This is a guide I made as I was learning Go. I think it could be useful to many others out there. Previous programming experience is recommended if you plan to follow along.
 
 ## Introduction
 
 Go is a programming language developed by Google. It is also known as Golang. It's a statically typed and compiled language. My goal is to become good with an interpreted language and a compiled language. I was already decent at Ruby, so I started searching for compiled languages and weighed their pros and cons. I ultimately chose Go because I preferred its syntax over other compiled languages like Java. It also helps that it's very popular amongst DevOps/Infrastructure teams and that's something I'm very interested in.
 
-## Installing
+Key features of Go include: relatively simple syntax, fast compile times, garbage collection, built-in concurrency, and compilation to standalone binaries.
+
+I will be running all examples on MacOS.
+
+## Following Along
+
+**Go online playground**
+
+Go has an online playground to test out code: [play.golang.org](https://play.golang.org/). Feel free to use this site to follow along. You can also install Go if you prefer.
+
+**Installing Go**
 
 You can download Go on the official Go site: [golang.org](https://golang.org/dl/). If you're on MacOS and have `brew` installed, you can run `brew install go`. On Linux distros, you can download and install Go using the package manager for your OS.
 
-## Setup
+To verify that all is well, you can check for the currently installed Go version by running:
 
-Go has workspaces. The default workspace can be found be running the command:
+```
+$ go version
+```
+
+## Environment Setup
+
+*(This section only applies if you choose to install Go on your machine.)*
+
+Go has an environment variabled called `GOROOT` that tells the environment where to find the Go binaries. It is not necessary to set this variable manually if you've installed Go in its default location. You can check where the Go binaries are installed by running:
+
+```
+$ go env GOROOT
+```
+
+Go also has an environment called `GOPATH` that specifies where Go projects are located. The variable can be modified if the location does not suit you. You see the default path by running:
 
 ```
 $ go env GOPATH
@@ -28,19 +52,21 @@ The directory itself might not exist, but you can create it.
 $ mkdir go
 ```
 
-Inside the `go` directory, we'll need another directory: `src`
+Inside the `go` directory, we'll create three directories, `src`, `bin`, and `pkg`.
 
 ```
-$ mkdir src
+$ mkdir src bin pkg
 ```
 
-This is where all of our source code will go. It is inside this `src` directory where you can create additional directories for each of your projects. Let's make a "hello world" project:
+The `src` directory is where all of our source code will go. It is inside this `src` directory where you can create additional directories for each of your projects. The `bin` directory will hold binaries when we compile code. The `pkg` directory will hold intermediate binaries used when compiling, such as third-party libraries that we might import.
+
+Let's make a "hello world" project in the `src` directory:
 
 ```
 $ mkdir hello
 ```
 
-The path of the example directory should be `~/go/src/hello`.
+The path should be `~/go/src/hello`.
 
 ## Go Basics
 
@@ -54,7 +80,7 @@ $ touch hello.go
 
 Go files can be named anything, although generally the main go file is named `main.go`. We can ignore that for now.
 
-The first line of a go program needs to be the name of the package. Every program, at least the ones you want to be able to execute, will need the package `main`. Add the following line to the file:
+Every Go application is structured into packages. Every Go file will have to declare what package it is a part of. The package `main` is special because it will be the entrypoint to the application. Add the following line to the file:
 
 ```go
 package main
@@ -106,7 +132,7 @@ $ ./hello
 Alternatively, you can run `go install` which is the same thing except the executable is put in a `bin` directory in the same location as the `src` folder we created (the `go` workspace). 
 The directory path will be `~/go/bin` and in that directory you should see the `hello` binary (assuming you're following this guide). If the program imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
 
-## Variables
+## Declaring Variables
 
 In Go, we declare variables using the `var` keyword followed by the variable name and its type. We can then assign a value to this variable with `=`:
 
@@ -186,6 +212,199 @@ func main() {
 
 	fmt.Println(sum)
 }
+```
+
+It is possible to declare variables at the package level. However, you cannot use the `:=` operator when declaring variables at the package level. You'll need to use the full declaration syntax. For example:
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+// declaring a variable at the package level
+var i int = 420
+
+func main() {
+  fmt.Println(i)
+}
+```
+
+When declaring several variables, it can get repetitive using the `var` keyword. Declaring many variables can also get messy in the long run. Go has a way of declaring multiple variables in a block with a single `var` keyword as such:
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+var (
+  name string = "Nelson"
+  favoriteGame string = "Red Dead Redemption 2"
+  gameRating int = 10
+)
+
+func main() {
+  fmt.Println(name + " likes " + favoriteGame + " and rates it a", gameRating , "out of 10.")
+}
+```
+
+Similar to other programming language, the variable declared with the inner-most scope will take precedence. For example, if the same variable is declared at the package level and at the `main()` level, the one at the `main()` level will take precedence:
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+var i int = 10
+
+func main() {
+  var i int = 25
+
+  // prints out 25 as opposed to 10
+  fmt.Println(i)
+}
+```
+
+The variable `i` only gets reassigned after the second declaration, so if we were to put a print statement right before the declaration, it would print out 10.
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+var i int = 10
+
+func main() {
+  // prints out 10
+  fmt.Println(i)
+
+  var i int = 25
+
+  // prints out 25
+  fmt.Println(i)
+}
+```
+
+An important thing to know about Go is that all variables declared must be used. If you declare a variable and don't use it, the program will not run and you'll get an error. For example, running the program below:
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+func main() {
+  i := 5
+  x := 10
+
+  fmt.Println(i)
+}
+```
+
+Will result in the following error:
+
+```
+./test.go:9:3: x declared and not used
+```
+
+This is done to keep code clean. When codebases grow large and features are deprecated, there's a good chance that old, unused code will stick around. Go helps to detect that.
+
+## Variable Conversions
+
+To convert variables in Go you will need to use appropriate conversion functions. For example, to convert an `int` variable to a `float32` variable we would use the `float32()` function. An example is shown below using `Printf` to output the variable value along with its type to demonstrate the conversion:
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+func main() {
+  var i int = 10
+  fmt.Printf("%v, %T", i, i)
+
+  fmt.Println()
+
+  var j float32
+  j = float32(i) // convert int to float32, assign to j
+  fmt.Printf("%v, %T", j, j)
+}
+```
+
+In the `Printf()` function, `%v` is used to print out the value, while `%T` prints out the type.
+The output should be:
+
+```
+10, int
+10, float32
+```
+
+Be careful when converting values. If a `float32` value of, say, 100.25 gets converted to an `int` value, it will lose its decimal and result in only 100.
+
+Converting an integer to a string is a little more involved. If we try to use the `string()` conversion function on an integer, Go will look for the unicode value set at the number.
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+func main() {
+  var i int = 47
+  fmt.Printf("%v, %T", i, i)
+
+  fmt.Println()
+
+  var j string
+  j = string(i)
+  fmt.Printf("%v, %T", j, j)
+}
+```
+
+The output will be:
+
+```
+47, int
+/, string
+```
+
+Because the `/` character is at unicode value at number 47. If we want the expected result of `"47"` then we'll need to import the `strconv` package and its `Itoa()` function which converts an integer into an ASCII string:
+
+```go
+package main
+
+import (
+  "fmt"
+  "strconv" // import string conversion package
+)
+
+func main() {
+  var i int = 47
+  fmt.Printf("%v, %T", i, i)
+
+  fmt.Println()
+
+  var j string
+  j = strconv.Itoa(i)
+  fmt.Printf("%v, %T", j, j)
+}
+```
+
+Now the result is as expected:
+
+```
+47, int
+47, string
 ```
 
 ## Arrays
