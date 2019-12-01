@@ -33,11 +33,17 @@ body {
   flex-direction: column;
 
   ::selection {
+    color: white;
     background: #960602;
   }
 
   ::-moz-selection {
+    color: white;
     background: #960602;
+  }
+
+  svg:hover {
+    color: $dark-color;
   }
 
   @media #{$media-size-phone} {
@@ -47,6 +53,14 @@ body {
   &.dark-theme {
     background-color: $dark-background;
     color: $dark-color;
+
+    h1 {
+      color: $accent-color;
+    }
+
+    svg:hover {
+      color: $accent-color;
+    }
   }
 }
 
@@ -174,7 +188,7 @@ pre {
   overflow: auto;
 
   @media #{$media-size-phone} {
-    white-space: pre-wrap;
+    // white-space: pre-wrap;
     word-wrap: break-word;
   }
 

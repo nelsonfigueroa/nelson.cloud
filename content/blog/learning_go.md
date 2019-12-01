@@ -231,6 +231,8 @@ func main() {
 }
 ```
 
+Keep in mind that declaring variables at the package level beginning with a lowercase letter will limit that variable to the package. If the variable begins with an uppercase letter, it will be exported and globally visibile.
+
 When declaring several variables, it can get repetitive using the `var` keyword. Declaring many variables can also get messy in the long run. Go has a way of declaring multiple variables in a block with a single `var` keyword as such:
 
 ```go
@@ -251,7 +253,7 @@ func main() {
 }
 ```
 
-Similar to other programming language, the variable declared with the inner-most scope will take precedence. For example, if the same variable is declared at the package level and at the `main()` level, the one at the `main()` level will take precedence:
+Similar to other programming language, the variable declared with the inner-most scope will take precedence. For example, if the same variable is declared at the package level and at the `main()` level, the one at the `main()` level will take precedence. This is referred to as "shadowing":
 
 ```go
 package main

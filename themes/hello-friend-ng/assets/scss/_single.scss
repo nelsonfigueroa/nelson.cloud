@@ -15,6 +15,18 @@
     }
   }
 
+  h1 {
+    .dark-theme & {
+      color: $accent-color;
+    }
+  }
+
+  h2 {
+    .dark-theme & {
+      color: $accent-color;
+    }
+  }
+
   &-title {
     font-size: 2.625rem;
     margin: 0 0 20px;
