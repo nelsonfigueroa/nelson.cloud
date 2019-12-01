@@ -12,8 +12,6 @@ title = "Nelson Figueroa"
 
 **Good at:** Ruby on Rails Development
 
-**Learning:** Golang
+**Learning:** Golang, DevOps tools
 
-**Working on:** Leetcode challenges in Go, Building Rails APIs
-
-**Playing:** Overwatch
+**Playing:** Overwatch, Age of Empires II
