@@ -4,15 +4,18 @@ description = "Learning Go basics"
 date = "2019-10-31"
 +++
 
-This is a guide I made as I was learning Go. I think it could be useful to many others out there. Previous programming experience is recommended if you plan to follow along.
+This is a guide I made as I was learning Go. I think it could be useful to many others out there. Previous programming experience is recommended as I will not be explaining programming concepts in-depth. However, anyone can follow along.
 
 ## Introduction
 
 Go is a programming language developed by Google. It is also known as Golang. It's a statically typed and compiled language. My goal is to become good with an interpreted language and a compiled language. I was already decent at Ruby, so I started searching for compiled languages and weighed their pros and cons. I ultimately chose Go because I preferred its syntax over other compiled languages like Java. It also helps that it's very popular amongst DevOps/Infrastructure teams and that's something I'm very interested in.
 
-Key features of Go include: relatively simple syntax, fast compile times, garbage collection, built-in concurrency, and compilation to standalone binaries.
-
-I will be running all examples on MacOS.
+Key features of Go include: 
+- Relatively simple syntax
+- Fast compile times 
+- Garbage collection 
+- Built-in concurrency
+- Compilation to standalone binaries.
 
 ## Following Along
 
@@ -66,17 +69,29 @@ Let's make a "hello world" project in the `src` directory:
 $ mkdir hello
 ```
 
-The path should be `~/go/src/hello`.
+And we'll create a `hello.go` file in our newly created directory:
+
+```
+$ cd hello
+$ touch hello.go
+```
+
+The final layout of the `go` directory should look like the following:
+
+```
+$ tree
+
+.
+├── bin
+├── hello
+│   └── hello.go
+├── pkg
+└── src
+```
 
 ## Go Basics
 
-At any point while writing Go code, you can run `go fmt` in your terminal and Go will automatically format your code. Additionally, running `godoc -http :8000` will start up a local server on port 8000 where you can view documentation.
-
-Now, let's create our first go program. Create a file called `hello.go`:
-
-```
-$ touch hello.go
-```
+Now we're ready to start writing our very first Go program.
 
 Go files can be named anything, although generally the main go file is named `main.go`. We can ignore that for now.
 
@@ -129,8 +144,10 @@ This will create an executable named after the project directory `hello`. In Win
 $ ./hello
 ```
 
-Alternatively, you can run `go install` which is the same thing except the executable is put in a `bin` directory in the same location as the `src` folder we created (the `go` workspace). 
-The directory path will be `~/go/bin` and in that directory you should see the `hello` binary (assuming you're following this guide). If the program imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
+Alternatively, you can run `go install` which is the same thing except the executable is put in the `bin` directory we created earlier. If the program imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
+
+> **Note:** At any point while writing Go code, you can run `go fmt` in your terminal and Go will automatically format your code. If you're using the online Go Playground, there is a 'Format' button that does this same action.
+
 
 ## Declaring Variables
 
@@ -242,6 +259,7 @@ import (
   "fmt"
 )
 
+// declaring several variables in a block
 var (
   name string = "Nelson"
   favoriteGame string = "Red Dead Redemption 2"
@@ -262,6 +280,7 @@ import (
   "fmt"
 )
 
+// package level variable
 var i int = 10
 
 func main() {
@@ -314,14 +333,14 @@ func main() {
 Will result in the following error:
 
 ```
-./test.go:9:3: x declared and not used
+./hello.go:9:3: x declared and not used
 ```
 
 This is done to keep code clean. When codebases grow large and features are deprecated, there's a good chance that old, unused code will stick around. Go helps to detect that.
 
 ## Variable Conversions
 
-To convert variables in Go you will need to use appropriate conversion functions. For example, to convert an `int` variable to a `float32` variable we would use the `float32()` function. An example is shown below using `Printf` to output the variable value along with its type to demonstrate the conversion:
+To convert variables in Go you will need to use appropriate conversion functions. For example, to convert an `int` variable to a `float32` variable we would use the `float32()` function. An example is shown below:
 
 ```go
 package main
@@ -350,7 +369,7 @@ The output should be:
 10, float32
 ```
 
-Be careful when converting values. If a `float32` value of, say, 100.25 gets converted to an `int` value, it will lose its decimal and result in only 100.
+> **Note:** Be careful when converting values. If a `float32` value of, say, 100.25 gets converted to an `int` value, it will lose its decimal and result in only 100.
 
 Converting an integer to a string is a little more involved. If we try to use the `string()` conversion function on an integer, Go will look for the unicode value set at the number.
 
@@ -380,7 +399,7 @@ The output will be:
 /, string
 ```
 
-Because the `/` character is at unicode value at number 47. If we want the expected result of `"47"` then we'll need to import the `strconv` package and its `Itoa()` function which converts an integer into an ASCII string:
+Because the `/` character is at unicode value at number 47. If we want the expected result of `"47"` then we'll need to import the `strconv` package and use its `Itoa()` function which converts an integer into an ASCII string:
 
 ```go
 package main
@@ -397,6 +416,7 @@ func main() {
   fmt.Println()
 
   var j string
+  // convert to string
   j = strconv.Itoa(i)
   fmt.Printf("%v, %T", j, j)
 }
@@ -465,9 +485,7 @@ func main() {
 }
 ```
 
-**Quick note on default values**
-
-When creating variables, if no value is assigned, a default value will be assigned. For integers, the default value is 0. For strings, it is an empty string. Arrays with no values assigned will also have default values. For example, an array of type integer will contain zeroes.
+> **Note:** When creating variables, if no value is assigned, a default value will be assigned. For integers, the default value is 0. For strings, it is an empty string. An array of type integer, like the one we created, will contain zeroes if we don't specify values.
 
 ## Slices
 
@@ -697,7 +715,7 @@ func main() {
 }
 ```
 
-We can do the same thing with a map. Instead of looping over an index, we'll loop over a key:
+We can do the same thing with a map. Instead of looping over an index, we'll loop over a key/index:
 
 ```go
 package main
@@ -862,6 +880,6 @@ func main() {
 
 ## Conclusion
 
-What I covered here should be enough to get started with Go. All that's left to do is to practice before diving into deeper Go functionality. I plan on doing Leetcode questions that I previously completed in Ruby but in Go this time.
+What I covered here should be enough to get started with Go. All that's left to do is to practice before diving into deeper Go functionality.
 
-Thanks for reading!
+Thanks for reading, and I hope this helped!
