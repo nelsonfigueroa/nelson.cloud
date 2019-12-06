@@ -247,7 +247,7 @@ With this flag, we can modify our command as follows:
 $ crunch 14 14 -t @@@@@@@@@@@%%%  | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
 ```
 
-This will still take long, however, due to the length of the password. Let's cheat a little bit just to show the success screen. Here's the new command where we will type in the letters of the password only try to guess the remaining digits:
+This will still take long, however, due to the length of the password. Let's cheat a little bit just to show the success screen. Here's the new command where we will type in the letters of the password and only try to guess the remaining digits:
 
 ```
 crunch 14 14 -t pinkcoconut%%% | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
@@ -302,10 +302,12 @@ Using this knowledge of MAC Addresses, we can also determine the manufacturers o
 
 ## Conclusions
 
-Scanning for wifi networks and acquiring handshakes is not difficult. Anyone with minor command line experience can achieve this. The hardest part will be cracking the password itself, but if an attacker has a powerful computer they can crack a short password in no time. This is an example of why long passwords are important. It is not enough to add symbols to a short password. In fact, it is better to get into the habit of creating passphrases as opposed to passwords. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword420?` is much harder to crack than `Password420?`
+Scanning for wifi networks and acquiring handshakes is not difficult. Anyone with minor command line experience can achieve this. The hardest part will be cracking the password itself, but if an attacker has a powerful computer they can crack a short password in no time. 
+
+This is an example of why long passwords are important. It is not enough to add symbols to a short password. In fact, it is better to get into the habit of creating passphrases as opposed to passwords. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword420?` is much harder to crack than `Password420?`
 
 The `crunch` tool has much more functionality that I did not dive into. I encourage you to read through the `man` pages and learn more about it. It's versatile but still easy to pick up.
 
-There are other tools that we could have used to crack the password, such as `hashcat`. If I'm not mistaken, `hashcat` can take advantage of a GPU which will allow you to crack passwords much faster. However, I wanted to focus on `aircrack-ng`.
+There are other tools that we could have used to crack the password, such as `hashcat`. If I'm not mistaken, `hashcat` can take advantage of a GPU which will allow you to crack passwords much faster. However, I wanted to focus on the tools that come with the `aircrack-ng` suite.
 
-This concludes my wifi hacking notes, I hope you enjoyed the read!
+This concludes my wifi hacking notes, I hope you learned something!

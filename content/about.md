@@ -14,4 +14,4 @@ title = "Nelson Figueroa"
 
 **Learning:** Golang, DevOps tools
 
-**Playing:** Overwatch, Age of Empires II
+**Playing:** Overwatch, Age of Empires II, Halo: Reach
