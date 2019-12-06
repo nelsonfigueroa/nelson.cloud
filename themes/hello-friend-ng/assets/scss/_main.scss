@@ -213,7 +213,12 @@ pre {
 }
 
 // for code blocks with syntax highlighting
-.highlight pre code {
+// .highlight pre code {
+//   font-family: Menlo,Monaco,Consolas,Andale Mono,Ubuntu Mono,monospace;
+// }
+
+// for code blocks with syntax highlighting
+pre[class*=language-] code {
   font-family: Menlo,Monaco,Consolas,Andale Mono,Ubuntu Mono,monospace;
 }
 
