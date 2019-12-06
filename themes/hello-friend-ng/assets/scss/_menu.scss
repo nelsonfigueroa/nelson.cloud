@@ -5,16 +5,16 @@
   z-index: 9999;
 
   .dark-theme & {
-    background: #232425;
+    background: $dark-background-secondary;
   }
 
   @media #{$media-size-phone} {
     position: absolute;
     top: 50px;
     right: 0;
-    border: none;
     margin: 0;
     padding: 10px;
+    border: 1px $dark-color dashed;
   }
 
   &__inner {

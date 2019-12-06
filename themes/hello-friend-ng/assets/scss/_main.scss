@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
+
 html {
   box-sizing: border-box;
   line-height: 1.5;
@@ -17,8 +19,7 @@ body {
   // font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
   font-family: "Source Code Pro", monospace;
   font-display: auto;
-  font-size: 1rem;
-  // font-size: 0.875rem;
+  font-size: 0.875rem; // 16px
   line-height: 1.5;
   background-color: $light-background;
   color: $light-color;
@@ -163,20 +164,20 @@ figure {
   }
 }
 
+// for inline code snippets
 code {
-  // font-family: Menlo,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
-  font-family: "Source Code Pro", monospace;
+  font-family: Menlo,Monaco,Consolas,Andale Mono,Ubuntu Mono,monospace;
   font-display: auto;
   font-feature-settings: normal;
   background: $light-background-secondary;
   padding: 1px 5px;
   margin: 0 2px;
   border-radius: 5px;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
 
   .dark-theme & {
     // background: $dark-background-secondary;
-    background: #0f0f0f;
+    background: #292929;
   }
 }
 
@@ -187,22 +188,33 @@ pre {
   font-size: .95rem;
   overflow: auto;
 
+  .dark-theme & {
+    border: 1px $dark-color dashed;
+  }
+
   @media #{$media-size-phone} {
     // white-space: pre-wrap;
     word-wrap: break-word;
   }
 
+  // for code blocks with no syntax highlighting
   code {
+    font-size: 0.875rem;
     background: none !important;
-    color: #ccc;
+    color: $dark-color;
     margin: 0;
     padding: 0;
-    font-size: inherit;
+    // font-size: inherit;
 
     .dark-theme & {
       color: inherit;
     }
   }
+}
+
+// for code blocks with syntax highlighting
+.highlight pre code {
+  font-family: Menlo,Monaco,Consolas,Andale Mono,Ubuntu Mono,monospace;
 }
 
 blockquote {
