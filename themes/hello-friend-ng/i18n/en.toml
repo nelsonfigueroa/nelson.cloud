@@ -20,17 +20,3 @@ other = "Home"
 
 [notFound]
 other = "Oops, page not found…"
-
-
-# posts/single.html
-#
-[readingTime]
-one   = "One minute"
-other = "{{ .Count }} minutes"
-
-[tableOfContents]
-other = "Table of Contents"
-
-[wordCount]
-one   = "One Word"
-other = "{{ .Count }} Words"
