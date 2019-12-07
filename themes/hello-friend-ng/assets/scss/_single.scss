@@ -222,3 +222,15 @@
     background-color: $light-background
   }
 }
+
+#TableOfContents {
+  a:hover {
+    color: $dark-color;
+    background-color: $dark-background;
+    
+    .dark-theme & {
+      color: $light-color;
+      background-color: $light-background
+    }
+  }
+}
