@@ -67,10 +67,17 @@ enableEmoji = true
 # And you can even create generic menu
 [menu]
   [[menu.main]]
+    identifier = "home"
+    name       = "home"
+    url        = "/"
+    weight = 100
+  [[menu.main]]
     identifier = "about"
-    name       = "About"
+    name       = "about"
     url        = "/about"
+    weight = 110
   [[menu.main]]
     identifier = "blog"
-    name       = "Blog"
+    name       = "blog"
     url        = "/blog"
+    weight = 120

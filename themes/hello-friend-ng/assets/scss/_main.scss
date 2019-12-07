@@ -212,16 +212,6 @@ pre {
   }
 }
 
-// for code blocks with syntax highlighting
-// .highlight pre code {
-//   font-family: Menlo,Monaco,Consolas,Andale Mono,Ubuntu Mono,monospace;
-// }
-
-// for code blocks with syntax highlighting
-pre[class*=language-] code {
-  font-family: Menlo,Monaco,Consolas,Andale Mono,Ubuntu Mono,monospace;
-}
-
 blockquote {
   border-left: 2px solid;
   margin: 40px;
@@ -310,6 +300,10 @@ hr {
   @media #{$media-size-tablet} {
     display: none;
   }
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
 }
 
 // Accessibility
