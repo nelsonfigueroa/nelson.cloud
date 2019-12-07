@@ -53,6 +53,16 @@
 
   &-content {
     margin-top: 30px;
+
+    a:hover {
+      color: $dark-color;
+      background-color: $dark-background;
+
+      .dark-theme & {
+        color: $light-color;
+        background-color: $light-background
+      }
+    }
   }
 
   &-cover {
@@ -161,11 +171,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: $light-background-secondary;
-  font-size: 1rem;
+  background: #fafafa;
+  border: 1px $dark-color dashed;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 8px;
-  max-width: 40%;
+  max-width: 50%;
   padding: 0;
   cursor: pointer;
   appearance: none;
@@ -199,5 +210,27 @@
 
   &.previous .button__icon {
     margin-right: 8px;
+  }
+}
+
+.button:hover {
+  color: $dark-color;
+  background-color: $dark-background;
+  
+  .dark-theme & {
+    color: $light-color;
+    background-color: $light-background
+  }
+}
+
+#TableOfContents {
+  a:hover {
+    color: $dark-color;
+    background-color: $dark-background;
+    
+    .dark-theme & {
+      color: $light-color;
+      background-color: $light-background
+    }
   }
 }
