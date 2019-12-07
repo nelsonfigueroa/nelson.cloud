@@ -12,15 +12,29 @@
         </div>
 
         <article>
+
+            {{ if gt .ReadingTime 1 }}
+                {{ .Scratch.Set "readingTime" "minutes" }}
+            {{ else }}
+                {{ .Scratch.Set "readingTime" "minute" }}
+            {{ end }}
+
             <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
-            {{- if .Params.toc }}
-                <hr />
-                <aside id="toc">
-                <div class="toc-title">{{ i18n "tableOfContents" }}</div>
-                    {{ .TableOfContents }}
-                </aside>
-                <hr />
-            {{- end }}
+
+            {{ if eq .Type "blog"}}
+            <p class="post-info">{{ .WordCount }} Words, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>{{ .ReadingTime }} {{ .Scratch.Get "readingTime" }}</p>
+            <hr />
+            {{ end }}
+
+            {{ if (gt .WordCount 400 ) }}
+            <aside>
+                <header>
+                <h2>Table of Contents</h2>
+                </header>
+                {{.TableOfContents}}
+            </aside>
+            <hr />
+            {{ end }}
 
             {{ with .Params.Cover }}
                 <img src="/img/{{ . }}" class="post-cover" />
