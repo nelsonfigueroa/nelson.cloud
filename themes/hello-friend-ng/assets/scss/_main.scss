@@ -34,13 +34,13 @@ body {
   flex-direction: column;
 
   ::selection {
-    color: white;
-    background: #960602;
+    color: $dark-color;
+    background: $dark-background;
   }
 
   ::-moz-selection {
-    color: white;
-    background: #960602;
+    color: $dark-color;
+    background: $dark-background;
   }
 
   svg:hover {
@@ -61,6 +61,16 @@ body {
 
     svg:hover {
       color: $accent-color;
+    }
+
+    ::selection {
+      color: $light-color;
+      background: $light-background;
+    }
+  
+    ::-moz-selection {
+      color: $light-color;
+      background: $light-background;
     }
   }
 }
