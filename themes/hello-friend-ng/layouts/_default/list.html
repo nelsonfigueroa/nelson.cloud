@@ -13,10 +13,9 @@
                 <ul class="posts-list">
                     {{- range .Pages }}
                         <li class="post-item">
-                          <span class="post-day">{{ if .Site.Params.dateformShort }}{{ .Date.Format .Site.Params.dateformShort }}{{ else }}{{ .Date.Format "Jan 2"}}{{ end }}</span>
+                          <span class="post-day">{{ .Date.Format .Site.Params.dateformShort }}</span>
                           <a href="{{.Permalink}}">
                               <span class="post-title">{{.Title}}</span>
-                              <!-- <span class="post-day">{{ if .Site.Params.dateformShort }}{{ .Date.Format .Site.Params.dateformShort }}{{ else }}{{ .Date.Format "Jan 2"}}{{ end }}</span> -->
                           </a>
                         </li>
                     {{- end }}
