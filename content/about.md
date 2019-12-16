@@ -15,3 +15,14 @@ title = "Nelson Figueroa"
 **Learning:** Golang, DevOps tools
 
 **Playing:** Overwatch, Age of Empires II, Halo: Reach
+
+---
+
+
+Current Position: **Jr. DevOps Engineer** @ Vitu
+
+Previously:
+
+- **Backend Software Engineering Intern** @ Dollar Shave Club
+
+- **Web Developer** @ California State University, Northridge
