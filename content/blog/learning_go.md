@@ -2,6 +2,8 @@
 title = "Learning Go"
 description = "Learning Go basics"
 date = "2019-10-31"
+categories = ["learning"]
+tags = ["golang", "coding"]
 +++
 
 This is a guide I made as I was learning Go. I think it could be useful to many others out there. Previous programming experience is recommended as I will not be explaining programming concepts in-depth. However, anyone can follow along.
