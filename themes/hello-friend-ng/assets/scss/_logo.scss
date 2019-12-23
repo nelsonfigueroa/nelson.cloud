@@ -17,47 +17,5 @@
   &__text {
     font-size: 1.125rem;
   }
-
-  // cursor for header
-  &__cursor {
-    display: inline-block;
-    width: 10px;
-    height: 1rem;
-    background: $light-color;
-    margin-left: 5px;
-    border-radius: 1px;
-    animation: cursor 1s infinite;
-
-    .dark-theme & {
-      background: $dark-color
-    }
-  }
-
-  // cursor for title
-  &__big_cursor {
-    display: inline-block;
-    width: 10px;
-    height: 1.6rem;
-    background: $light-color;
-    margin-left: 5px;
-    border-radius: 1px;
-    animation: cursor 1s infinite;
-
-    .dark-theme & {
-      background: $dark-color
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    &__cursor {
-        animation: none;
-    }
-  }
-
 }
 
-@keyframes cursor {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-}

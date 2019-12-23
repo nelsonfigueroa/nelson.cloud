@@ -199,7 +199,7 @@ pre {
   overflow: auto;
 
   .dark-theme & {
-    border: 1px $dark-color dashed;
+    border: 1px $dark-color solid;
   }
 
   @media #{$media-size-phone} {
