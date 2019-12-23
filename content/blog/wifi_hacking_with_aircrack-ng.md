@@ -2,6 +2,8 @@
 title = "Wifi Hacking with aircrack-ng"
 description = "A guide to using aircrack-ng to bruteforce a router's password"
 date = "2019-09-26"
+categories = ["learning"]
+tags = ["cybersecurity", "hacking"]
 +++
 
 This post will be a re-write of notes I took around 2 years ago now. Learning to use `aircrack-ng` and break into my own router was both fun and a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router due to processing power needed, but sniffing wifi networks is a trivial process. After doing it once, it'll stick.

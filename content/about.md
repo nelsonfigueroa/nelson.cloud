@@ -1,10 +1,10 @@
 +++
-title = "Nelson Figueroa"
+title = "About Me"
 +++
 
 ---
-### B.S. Computer Information Technology
-### Graduated: May 2019 :tada:
+# Nelson Figueroa
+**Education:** B.S. Computer Information Technology from CSU Northridge
 
 **Interests:** Coding, Cybsersecurity, Privacy, Gaming, Music, Guitars
 
@@ -18,11 +18,12 @@ title = "Nelson Figueroa"
 
 ---
 
+### Experience
 
-Current Position: **Jr. DevOps Engineer** @ Vitu
+- **Jr. DevOps Engineer** @ Vitu | (Dec 2019 - Present)
 
-Previously:
+- **Backend Software Engineering Intern** @ Dollar Shave Club (June 2019 - Aug 2019)
 
-- **Backend Software Engineering Intern** @ Dollar Shave Club
+- **Web Developer** @ CSU Northridge (May 2018 - May 2019)
 
-- **Web Developer** @ California State University, Northridge
+- **I.T. Student Assistant** @ CSU Northridge (June 2017 - May 2018)

@@ -1,83 +1,241 @@
-baseurl = "/"
-languageCode = "en-us"
-theme = "hello-friend-ng"
+baseURL = "https://example.com/"
+languageCode = "en"                                      # website language
+defaultContentLanguage = "en"                            # [en, zh, ...] determines which i18n file to use
+title = "Nelson Figueroa"                                   # website title
+theme = "LoveIt"                                         # theme
+enableGitInfo = false                                    # whether to use git commit log to generate lastmod record
+hasCJKLanguage = false                                   # whether to include chinese/japanese/korean
+paginate = 12                                            # default amount of posts in each pages
+enableEmoji = true                                       # whether to use emoji code
+enableRobotsTXT = true                                   # whether to use robots.txt
+googleAnalytics = ""                                     # [UA-XXXXXXXX-X] google analytics code
+# disqusShortname = "dillonzq"                             # Disqus shortname to use Disqus in posts
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+                                                         # copyright description used only for seo schema
 
-# why not
-enableEmoji = true
+                                                      #### Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+pygmentsOptions = "linenos=table"
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
 
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+staticDir = ["static", "../assets/others"]               # static directories
 
-  # Metadata mostly used in document's head
-  description = "Personal site for Nelson Figueroa"
-  keywords = "homepage, blog, science, web, development, programming, technology, cybersecurity, privacy"
-  images = [""]
+[author]                                              #### Author Info
+  name = "Nelson Figueroa"
 
-  homeSubtitle = "Software Engineer"
+[sitemap]                                             #### Sitemap Info
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
-  # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "blog"
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
+[Permalinks]                                          #### Permalinks Info (https://gohugo.io/content-management/urls/#permalinks)
+  posts = ":year/:month/:filename"
 
-  [params.logo]
-    logoText = "cd /home"
-    logoHomeLink = "/"
-
-  # Social icons
-  [[params.social]]
-    name = "email"
-    url  = "mailto:nelsonfigueroa07@gmail.com"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/nelsonfigueroa"
-
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/in/nelsonfigueroa07"
-
-[languages]
-  [languages.en]
-    title = "Nelson Figueroa"
-    subtitle = "Software Engineer"
-    keywords = ""
-    copyright = ""
-    readOtherPosts = "Read other posts"
-
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-	# You can create a language based menu
-    # [languages.en.menu]
-    #   [[languages.en.menu.main]]
-    #     identifier = "about"
-    #     name = "About"
-    #     url = "/about"
-    #   [[languages.en.menu.main]]
-    #     identifier = "showcase"
-    #     name = "Showcase"
-    #     url = "/showcase"
-
-# And you can even create generic menu
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name       = "home"
-    url        = "/"
-    weight = 100
+[menu]                                                #### Menu Info
   [[menu.main]]
     identifier = "about"
-    name       = "about"
-    url        = "/about"
-    weight = 110
+    name = "About"
+    url = "about"
+    weight = 1
+
   [[menu.main]]
     identifier = "blog"
-    name       = "blog"
-    url        = "/blog"
-    weight = 120
+    name = "Blog"
+    url = "blog"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "tags"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "categories"
+    weight = 4
+
+[params]
+  version = "5.x"                                        # LoveIt theme version
+  description = "LoveIt Theme Demo"                      # site description
+  keywords = ["XXXX", "Theme", "Hugo"]                   # site keywords
+
+                                                      #### Home Page Info
+  home_mode = "post"                                     # [post, other] home mode
+  home_paginate = 6                                      # special amount of posts in each home post page
+  avatar = "/avatar.jpeg"                           # URL of avatar shown in home page
+  subtitle = "Nelson Figueroa. Software Engineer."                    # subtitle shown in home page
+
+  socialShare = true                                     # whether to show social share links in post page
+
+                                                      #### Footer CopyRight Info
+  since = 2019                                           # Site creation time
+  icp = ''                                               # ICP info only in China (HTML format is allowed)
+  license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+                                                         # license info (HTML format is allowed)
+  gitRepo = ""                                           # public git repo url to link lastmod git commit only then enableGitInfo is true
+
+  linkToMarkdown = true                                  # whether to show link to Raw Markdown content of the post
+
+                                                      #### site verification code for Google/Bing/Yandex/Pinterest/Baidu
+  google_verification = ""
+  bing_verification = ""
+  yandex_verification = ""
+  pinterest_verification = ""
+  baidu_verification = ""
+
+  [params.cdn]                                       #### CSS and JS Files CDN
+    # fontawesome_free_css = ''                           # for example '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css" integrity="sha256-fdcFNFiBMrNfWL6OcAGQz6jDgNTRxnrLEd4vJYFWScE=" crossorigin="anonymous">'
+    fontawesome_free_css = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css" integrity="sha256-fdcFNFiBMrNfWL6OcAGQz6jDgNTRxnrLEd4vJYFWScE=" crossorigin="anonymous">'
+    animate_css = ''
+    gitalk_css = ''
+    gitalk_js = ''
+    valine_js = ''
+    jquery_js = ''
+    lazysizes_js = ''
+    smooth_scroll_js = ''
+    katex_css = ''
+    katex_js = ''
+    katex_auto_render_js = ''
+    mermaid_js = ''
+    echarts_js = ''
+    echarts_macarons_js = ''
+    typeit_js = ''
+    jquery_countdown_js = ''
+    aplayer_css = ''
+    aplayer_js = ''
+    meting_js = ''
+
+  [params.gravatar]                                      # Gravatar Info for preferred avatar in home page
+    email = ""
+
+  [params.social]                                        # Social Info in home page
+    GitHub = "nelsonfigueroa"
+    Linkedin = "nelsonfigueroa07"
+    #Twitter = "xxxx"
+    #Instagram = "xxxx"
+    Email = "nelsonfigueroa07@gmail.com"
+    #Facebook = "xxxx"
+    #Telegram = "xxxx"
+    #Medium = "xxxx"
+    #Gitlab = "xxxx"
+    #Youtubelegacy = "xxxx"
+    #Youtubecustom = "xxxx"
+    #Youtubechannel = "xxxx"
+    #Tumblr ="xxxx"
+    #Quora = "xxxx"
+    #Keybase = "xxxx"
+    #Pinterest = "xxxx"
+    #Reddit = "xxxx"
+    #Codepen = "xxxx"
+    #Bitbucket = "xxxx"
+    #Stackoverflow = "xxxx"
+    #Weibo = "xxxx"
+    #Odnoklassniki = "xxxx"
+    #VKontakte = "xxxx"
+    #Flickr = "xxxx"
+    #Xing = "xxxx"
+    #Snapchat = "xxxx"
+    #Soundcloud = "xxxx"
+    #Spotify = "xxxx"
+    #Bandcamp = "xxxx"
+    #Paypal = "xxxx"
+    #Fivehundredpx = "xxxx"
+    #Mix = "xxxx"
+    #Goodreads = "xxxx"
+    #Lastfm = "xxxx"
+    #Foursquare = "xxxx"
+    #Hackernews = "xxxx"
+    #Kickstarter = "xxxx"
+    #Patreon = "xxxx"
+    #Steam = "xxxx"
+    #Twitch = "xxxx"
+    #Strava = "xxxx"
+    #Skype = "xxxx"
+    #Whatsapp = "xxxx"
+    #Zhihu = "xxxx"
+    #Douban = "xxxx"
+    #Angellist = "xxxx"
+    #Slidershare = "xxxx"
+    #Jsfiddle = "xxxx"
+    #Deviantart = "xxxx"
+    #Behance = "xxxx"
+    #Dribble = "xxxx"
+    #Wordpress = "xxxx"
+    #Vine = "xxxx"
+    #Googlescholar = "xxxx"
+    #Researchgate = "xxxx"
+    #Mastodon = "xxxx"
+    #Thingiverse = "xxxx"
+
+  [params.share]                                         # Social Share Links in post page
+    enable = true
+    Twitter = true
+    Facebook = true
+    Reddit = true
+    #Linkedin = true
+    #Pinterest = true
+    #HackerNews = true
+    #Mix = true
+    #Tumblr = true
+    #VKontakte = true
+    #Weibo = true
+
+  [params.publisher]                                     # Publisher Info just for SEO
+    name = "XXXX"
+    [params.publisher.logo]
+      url = "logo.png"
+      width = 127
+      height = 40
+
+  [params.logo]                                          # Website Log Info just for SEO
+    url = "logo.png"
+    width = 127
+    height = 40
+
+  [params.image]                                         # Website Image Info just for SEO
+    url = "cover.png"
+    width = 800
+    height = 600
+
+  [params.gitalk]                                        # Gittalk Comment Config (https://github.com/gitalk/gitalk)
+    owner = ""
+    repo = ""
+    clientId = ""
+    clientSecret = ""
+
+  [params.valine]                                        # Valine Comment Config (https://github.com/xCss/Valine)
+    enable = false
+    appId = ""
+    appKey = ""
+    notify = false
+    verify = true
+    avatar = "mp"
+    placeholder = "Your comment ..."
+    visitor = true
+    recordIP = true
+
+[privacy]                                             #### Privacy Info (https://gohugo.io/about/hugo-and-gdpr/)
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[mediaTypes]                                          #### Options to make hugo output .md files.
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+[outputFormats.MarkDown]                              #### Options to make hugo output .md files.
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[outputs]                                             #### Options to make hugo output .md files.
+  home = ["HTML", "RSS"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]

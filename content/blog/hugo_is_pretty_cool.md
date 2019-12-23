@@ -2,6 +2,8 @@
 title = "Hugo is Pretty Cool"
 description = "My first post"
 date = "2019-07-28"
+categories = ["random"]
+tags = ["hugo"]
 +++
 
 
