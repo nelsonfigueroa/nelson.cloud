@@ -6,7 +6,7 @@
         <h2 class="post-title animated pulse faster">Blog</h2>
 
         {{- range (.Paginate (.Pages.GroupByDate "2006")).PageGroups -}}
-            <h3>{{ .Key }}</h3>
+            <h3 class="post-year">{{ .Key }}</h3>
             {{- range .Pages -}}
                 <article class="archive-item">
                     <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
