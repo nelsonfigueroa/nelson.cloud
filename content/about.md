@@ -4,6 +4,7 @@ title = "About Me"
 
 ---
 # Nelson Figueroa
+
 **Education:** B.S. Computer Information Technology from CSU Northridge
 
 **Interests:** Coding, Cybsersecurity, Privacy, Gaming, Music, Guitars
@@ -12,9 +13,9 @@ title = "About Me"
 
 **Good at:** Ruby on Rails Development
 
-**Learning:** Golang, DevOps tools
+**Learning:** Golang, Kubernetes
 
-**Playing:** Overwatch, Age of Empires II, Halo: Reach
+**Playing:** Overwatch
 
 ---
 
