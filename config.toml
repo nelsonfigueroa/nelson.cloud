@@ -21,6 +21,10 @@ pygmentsCodefencesGuessSyntax = true
 
 staticDir = ["static", "../assets/others"]               # static directories
 
+# for raw HTML in markdown files
+# [markup.goldmark.renderer]
+#   unsafe= true
+
 [author]                                              #### Author Info
   name = "Nelson Figueroa"
 

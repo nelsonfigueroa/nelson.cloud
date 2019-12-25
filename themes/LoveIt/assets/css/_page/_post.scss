@@ -324,7 +324,7 @@
     }
 
     &:after {
-      content: "#blockquote" attr(cite);
+      // content: "#blockquote" attr(cite);
       display: block;
       text-align: right;
       font-size: 0.875em;
