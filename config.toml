@@ -177,7 +177,7 @@ staticDir = ["static", "../assets/others"]               # static directories
   [params.share]                                         # Social Share Links in post page
     enable = true
     Twitter = true
-    Facebook = true
+    Facebook = false
     Reddit = true
     #Linkedin = true
     #Pinterest = true
