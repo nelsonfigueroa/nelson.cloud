@@ -114,7 +114,7 @@ package main
 
 // you can list out several packages. no commas needed to separate them.
 import (
-	"fmt"
+  "fmt"
 )
 ```
 
@@ -124,11 +124,11 @@ Next, we'll add the `main` function. This function is where the program starts, 
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
-	fmt.Println("hello world")
+  fmt.Println("hello world")
 }
 ```
 
@@ -163,18 +163,18 @@ In Go, we declare variables using the `var` keyword followed by the variable nam
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	// declaring variable
-	var x int
+  // declaring variable
+  var x int
 
-	// assigning value to variable
-	x = 5
+  // assigning value to variable
+  x = 5
 
-	fmt.Println(x)
+  fmt.Println(x)
 }
 ```
 
@@ -184,15 +184,15 @@ We can also declare a variable and assign it a value in a single line:
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	// declare variable and assign value
-	var x int = 5
+  // declare variable and assign value
+  var x int = 5
 
-	fmt.Println(x)
+  fmt.Println(x)
 }
 ```
 
@@ -202,18 +202,18 @@ As with other languages, you can assign the result of a mathematical operation t
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	var x int = 5
-	var y int = 10
+  var x int = 5
+  var y int = 10
 
-	// add the two previous variables and assign to 'sum'
-	var sum int = x + y
+  // add the two previous variables and assign to 'sum'
+  var sum int = x + y
 
-	fmt.Println(sum)
+  fmt.Println(sum)
 }
 ```
 
@@ -223,17 +223,17 @@ Go has a shorthand syntax we can use when declaring and assigning variables at t
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	// shorthand syntax for variable assignment
-	x := 5
-	y := 5
-	sum := x + y
+  // shorthand syntax for variable assignment
+  x := 5
+  y := 5
+  sum := x + y
 
-	fmt.Println(sum)
+  fmt.Println(sum)
 }
 ```
 
@@ -439,18 +439,18 @@ Now the result is as expected:
 
 Arrays in Go are fixed. Arrays are also zero-indexed, so the first element is always at index 0. The size of the array is specified when declaring the array. We use the same `var` keyword to declare arrays along with the array size and type as shown below:
 
-```	go
+```go
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
-	// create an array that holds 5 integers
-	var arr [5]int
+  // create an array that holds 5 integers
+  var arr [5]int
 
-	fmt.Println(arr)
+  fmt.Println(arr)
 }
 ```
 
@@ -460,17 +460,17 @@ We can then assign values at a specific index just like in any other language:
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	var arr [5]int
+  var arr [5]int
 
-	// assign the value 7 at index 2
-	arr[2] = 7
+  // assign the value 7 at index 2
+  arr[2] = 7
 
-	fmt.Println(arr)
+  fmt.Println(arr)
 }
 ```
 
@@ -480,14 +480,14 @@ The Go shorthand syntax also exists for arrays. We can ues it to define an array
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
-	// shorthand syntax for arrays
-	arr := [5]int{10, 15, 20, 25, 30}
+  // shorthand syntax for arrays
+  arr := [5]int{10, 15, 20, 25, 30}
 
-	fmt.Println(arr)
+  fmt.Println(arr)
 }
 ```
 
@@ -501,14 +501,14 @@ Since arrays are fixed, we can't more elements than the specified size. We can g
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
-	// slice of integers, no element count needed
-	slice := []int{10, 15, 20, 25, 30}
+  // slice of integers, no element count needed
+  slice := []int{10, 15, 20, 25, 30}
 
-	fmt.Println(slice)
+  fmt.Println(slice)
 }
 ```
 
@@ -518,18 +518,18 @@ Since slices aren't fixed, we can take advantage of functions such as `append()`
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	slice := []int{10, 15, 20, 25, 30}
+  slice := []int{10, 15, 20, 25, 30}
 
-	// add the element 35
-	slice = append(slice, 35)
+  // add the element 35
+  slice = append(slice, 35)
 
-	// prints [10 15 20 25 30 35]
-	fmt.Println(slice)
+  // prints [10 15 20 25 30 35]
+  fmt.Println(slice)
 }
 ```
 
@@ -541,15 +541,15 @@ Maps hold key-value pairs. They're what Python calls "dictionaries" and what Rub
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	// create a map called 'inventory'
-	inventory := make(map[string]int)
+  // create a map called 'inventory'
+  inventory := make(map[string]int)
 
-	fmt.Println(inventory)
+  fmt.Println(inventory)
 }
 ```
 
@@ -559,19 +559,19 @@ To add key-value pairs, it is similar to arrays:
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	inventory := make(map[string]int)
+  inventory := make(map[string]int)
 
-	// add key-value pairs
-	inventory["apples"] = 3
-	inventory["oranges"] = 10
-	inventory["peaches"] = 8
+  // add key-value pairs
+  inventory["apples"] = 3
+  inventory["oranges"] = 10
+  inventory["peaches"] = 8
 
-	fmt.Println(inventory)	
+  fmt.Println(inventory)
 }
 ```
 
@@ -581,21 +581,21 @@ We can use the same syntax to get a value for a specific key:
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	inventory := make(map[string]int)
+  inventory := make(map[string]int)
 
-	inventory["apples"] = 3
-	inventory["oranges"] = 10
-	inventory["peaches"] = 8
+  inventory["apples"] = 3
+  inventory["oranges"] = 10
+  inventory["peaches"] = 8
 
-	// print out corresponding values
-	fmt.Println(inventory["oranges"])
-	fmt.Println(inventory["apples"])
-	fmt.Println(inventory["peaches"])
+  // print out corresponding values
+  fmt.Println(inventory["oranges"])
+  fmt.Println(inventory["apples"])
+  fmt.Println(inventory["peaches"])
 }
 ```
 
@@ -605,25 +605,25 @@ We can use the `delete()` function to remove key-pairs. We need to pass in the m
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	inventory := make(map[string]int)
+  inventory := make(map[string]int)
 
-	inventory["apples"] = 3
-	inventory["oranges"] = 10
-	inventory["peaches"] = 8
+  inventory["apples"] = 3
+  inventory["oranges"] = 10
+  inventory["peaches"] = 8
 
-	// before deleting
-	fmt.Println(inventory)
+  // before deleting
+  fmt.Println(inventory)
 
-	// delete key 'apples' along with its value
-	delete(inventory, "apples")
+  // delete key 'apples' along with its value
+  delete(inventory, "apples")
 
-	// after deleting
-	fmt.Println(inventory)
+  // after deleting
+  fmt.Println(inventory)
 }
 ```
 
@@ -635,21 +635,20 @@ If-Else statements are not much different compared to other languages. Go does n
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
+  x := 5
 
-	x := 5
-
-	// no parentheses needed around comparisons
-	if x > 1 {
-		fmt.Println("x is more than 1")
-	} else if x < 5 {
-		fmt.Println("x is less than 5")
-	} else {
-		fmt.Println("x is out of range")
-	}
+  // no parentheses needed around comparisons
+  if x > 1 {
+    fmt.Println("x is more than 1")
+  } else if x < 5 {
+    fmt.Println("x is less than 5")
+  } else {
+    fmt.Println("x is out of range")
+  }
 }
 ```
 
@@ -661,16 +660,15 @@ The only type of loop in Go is the `for` loop. It is similar to `for` loops in o
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	// create a for loop
-	for i := 0; i < 5; i++ {
-		fmt.Println(i)
-	}
-
+  // create a for loop
+  for i := 0; i < 5; i++ {
+    fmt.Println(i)
+  }
 }
 ```
 
@@ -680,22 +678,21 @@ The `for` loop can also double as a `while` loop by rearranging the counter and 
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	// counter
-	i := 0
+  // counter
+  i := 0
 
-	// for loop acting as a while loop
-	for i < 5 {
-		fmt.Println(i)
+  // for loop acting as a while loop
+  for i < 5 {
+    fmt.Println(i)
 
-		// increment
-		i++
-	}
-
+    // increment
+    i++
+  }
 }
 ```
 
@@ -705,19 +702,18 @@ We can use `for` loops to iterate over each element in an array or slice by usin
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	// create a slice of strings
-	arr := []string{"a", "b", "c"}
+  // create a slice of strings
+  arr := []string{"a", "b", "c"}
 
-	// loop over each element of slice
-	for index, value := range arr {
-		fmt.Println("index:", index, "value:", value)
-	}
-
+  // loop over each element of slice
+  for index, value := range arr {
+    fmt.Println("index:", index, "value:", value)
+  }
 }
 ```
 
@@ -727,21 +723,21 @@ We can do the same thing with a map. Instead of looping over an index, we'll loo
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 func main() {
 
-	// create a map
-	inventory := make(map[string]int)
-	inventory["apples"] = 3
-	inventory["oranges"] = 10
-	inventory["peaches"] = 8
+  // create a map
+  inventory := make(map[string]int)
+  inventory["apples"] = 3
+  inventory["oranges"] = 10
+  inventory["peaches"] = 8
 
-	// loop over each key/value of map
-	for key, value := range inventory {
-		fmt.Println("key:", key, "value:", value)
-	}
+  // loop over each key/value of map
+  for key, value := range inventory {
+    fmt.Println("key:", key, "value:", value)
+  }
 
 }
 ```
@@ -754,18 +750,18 @@ So far we've been running everything in the `main()` function. We can create our
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 // custom function
 func hello() {
-	fmt.Println("hello!")
+  fmt.Println("hello!")
 }
 
 func main() {
 
-	// calling custom function
-	hello()
+  // calling custom function
+  hello()
 }
 
 ```
@@ -776,19 +772,19 @@ We can also create functions that accept parameters. To specify a parameter, wri
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 // function with parameters
 func sum(x int, y int) {
-	sum := x + y
-	fmt.Println("The sum is:", sum)
+  sum := x + y
+  fmt.Println("The sum is:", sum)
 }
 
 func main() {
 
-	// passing in parameters
-	sum(3, 4)
+  // passing in parameters
+  sum(3, 4)
 }
 
 ```
@@ -799,21 +795,21 @@ Instead of printing the sum, we can return the actual value. If a function retur
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 // function that returns an integer
 func sum(x int, y int) int {
-	sum := x + y
-	return sum
+  sum := x + y
+  return sum
 }
 
 func main() {
 
-	// assigning returned value to variable
-	result := sum(3, 4)
+  // assigning returned value to variable
+  result := sum(3, 4)
 
-	fmt.Println(result)	
+  fmt.Println(result)
 }
 
 ```
@@ -824,32 +820,32 @@ In Go, functions can have multiple return values. For example, a function that r
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 // function that returns an integer and boolean
 func multiply(x int, y int) (int, bool) {
 
-	var positive bool
+  var positive bool
 
-	product := x * y
+  product := x * y
 
-	if product > 0 {
-		positive = true
-	} else {
-		positive = false
-	}
+  if product > 0 {
+    positive = true
+  } else {
+    positive = false
+  }
 
-	// return int, bool as defined in function
-	return product, positive
+  // return int, bool as defined in function
+  return product, positive
 }
 
 func main() {
 
-	result, pos := multiply(10, -10)
+  result, pos := multiply(10, -10)
 
-	fmt.Println("Result:", result)
-	fmt.Println("Positive?:", pos)
+  fmt.Println("Result:", result)
+  fmt.Println("Positive?:", pos)
 }
 
 ```
@@ -862,25 +858,25 @@ It is important to know that there are no classes in Go. Instead, there are Stru
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 // struct for Product
 type Product struct{
-	name string
-	price float64
-	available bool
+  name string
+  price float64
+  available bool
 }
 
 func main() {
 
-	// create new Product struct with attributes and assign to variable
-	p := Product{name: "Laptop", price: 499.99, available: true}
+  // create new Product struct with attributes and assign to variable
+  p := Product{name: "Laptop", price: 499.99, available: true}
 
-	fmt.Println(p)
+  fmt.Println(p)
 
-	// print out a single attribute using dot notation
-	fmt.Println(p.name)
+  // print out a single attribute using dot notation
+  fmt.Println(p.name)
 }
 ```
 
