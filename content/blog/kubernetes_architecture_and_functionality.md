@@ -212,5 +212,55 @@ Labels
 - They can be changed at any time.
 - Label keys are unique per object.
 
-0:30
+Labels aren't that powerful on their own. They become powerful with Selectors.
+With labels and selectors, you can identify a specific set of objects.
 
+Selectors
+Two kinds of selectors: Equality-based and Set-based
+
+Equality-based
+- include equals ( = ) and not equals ( != )
+
+Set-based
+- include IN, NOTIN, and EXISTS operators
+
+Labels and label selectors are typically used with a `kubectl` command to list and filter objects. 
+
+Namespaces
+- feature of Kubernetes that allows you to have multiple virtual clusters backed by the same physical cluster.
+- Great for large enterprises where there are many users/teams and you want to give access to different teams but at the same time have a rough idea of who owns what in the Kubernetes environment
+- Also a great way to divide cluster resources between multiple users and this can be done using resource quotas
+- Provides scopes for names (must be unique in the namespace)
+- "Default" namespace is created when you launch Kubernetes
+- Objects placed in "default" namespace at start
+- You can create new namespaces whenever you want
+- When you install a newer application Kubernetes, they'll typically install in a brand new namespace so that they don't interfere with your existing cluster and cause confusion
+
+## Kubelet and kube-proxy
+
+Kubelet
+- The "Kubernetes node agent" that runs on each node
+- Has many roles
+	- Communicates with the API server to see if pods have been assigned to nodes
+	- Executes pod containers via a container engine
+	- Mounts and runs pod volumes and secrets
+	- Executes health checks to identify pod/node status and reports that back to the API server
+- Works in terms of Podspec, which is just a YAML file that describes the pod
+- Kubelet takes a set of Podspecs that are provided by the kube-apiserver and ensures that containers described in those Podspecs are running and healthy
+- Kubelet only manages containers that were created by the APi server, not any other containers that might be running on the node
+- We can also manage the kubelet without an API server but that's a more advanced topic.
+
+kube-proxy
+- The Network Proxy
+- Process that runs on all worker nodes
+- Reflects services as defined on each node, and can do simple network stream or round-robin forwarding across a set of backends
+- Service cluster IPs and ports are currently found through `docker --link` compatible environment variables specifying ports opened by the service proxy
+- Has three modes (idk if there's more by now. this is in 1.8)
+	- User space mode: most common mode.
+	- Iptables mode:
+	- Ipvs mode
+- Why these modes are important: 
+	- Services are defined against the API server
+	- The kube-proxy then watches the API server for addition and removal of services
+	- For each new service, kube-proxy opens a randomly chosen port on the local node
+	- Any connections made to that port are proxied to one of the corresponding back-end pods.
