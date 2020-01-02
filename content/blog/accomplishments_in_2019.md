@@ -26,7 +26,8 @@ tags = ["thoughts"]
 
 ## Life Goals for 2020
 
-- Earn a certificate. (i.e. AWS Cloud Practicioner)
+- Get AWS Certified Cloud Practitioner certification
+- Get Certified Kubernetes Administator certification
 - Go for a Master's degree?
 
 ## Learning Goals for 2020
