@@ -4,6 +4,11 @@
     <div class="post-warp single">
         <h1 class="post-title animated pulse faster">{{ .Title }}</h1>
         <div class="post-content">
+            {{ if and (gt .WordCount 400 ) }}
+            <aside>
+                {{ .TableOfContents }}
+            </aside>
+            {{ end }}
             {{ $content := .Content }}
             {{ $REin := `<img src="([^"]+)" alt="([^"]+)?" />` }}
             {{ $REout := "<figure><img src=/images/loading.svg data-sizes=auto data-src=$1 alt=$2 class=lazyload><figcaption class=image-caption>$2</figcaption></figure>" }}
