@@ -9,6 +9,10 @@
   font-size: .88rem;
   color: rgba(85, 85, 85, 0.52941) !important;
 
+  // added next two lines.
+  text-align: right;
+  padding-bottom: 2rem;
+
   span {
     display: inline-block;
   }
@@ -569,8 +573,4 @@
       transform: translateX(4px);
     }
   }
-}
-
-.post-comment {
-  padding: 3rem 0;
 }
