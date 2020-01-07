@@ -2,9 +2,11 @@
 title = "Learning Kubernetes with Minikube"
 description = "Learn Kubernetes with Minikube"
 date = "2020-01-04"
-categories = ["learning"]
+categories = ["devops"]
 tags = ["kubernetes", "minikube", "orchestration", "containers", "docker"]
 +++
+
+{{< figure src="/learning_kubernetes_with_minikube/kubernetes.png" >}}
 
 ## Introduction
 

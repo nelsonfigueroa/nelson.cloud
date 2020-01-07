@@ -2,8 +2,8 @@
 title = "Learning Go"
 description = "Learning Go basics"
 date = "2019-10-31"
-categories = ["learning"]
-tags = ["golang", "coding"]
+categories = ["programming"]
+tags = ["golang", "programming"]
 +++
 
 ## Introduction

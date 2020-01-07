@@ -2,7 +2,7 @@
 title = "Ubuntu Server Basics"
 description = "Linux maintenance with Ubuntu Server"
 date = "2019-10-24"
-categories = ["learning"]
+categories = ["devops"]
 tags = ["ubuntu", "linux"]
 +++
 

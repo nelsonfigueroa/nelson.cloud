@@ -3,6 +3,29 @@
 {{ define "content" }}
     <div class="post-warp single">
         <h1 class="post-title animated pulse faster">{{ .Title }}</h1>
+        {{ if ne .Title "About Me"}}
+        <div class="post-meta">
+            <div class="post-meta-main">
+                {{ with .Params.categories -}}
+                <span class="post-category">
+                    {{ T "included" }}
+                    {{ range . }}
+                        {{- $name := . -}}
+                        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+                            <i class="far fa-folder fa-fw"></i><a href="{{ .Permalink }}">{{ $name }}</a>
+                        {{ end -}}
+                    {{ end }}
+                </span>
+                {{- end }}
+            </div>
+            <div class="post-meta-other">
+                {{ $publish_date := .PublishDate.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+                <i class="far fa-calendar-alt fa-fw"></i><time datetime={{ $publish_date }}>{{ $publish_date }}</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>{{ T "wordCount" .WordCount }}&nbsp;
+                <i class="far fa-clock fa-fw"></i>{{ T "readingTime" .ReadingTime }}&nbsp;
+            </div>
+        </div>
+        {{ end }}
         <div class="post-content">
             {{ if and (gt .WordCount 400 ) }}
             <aside>

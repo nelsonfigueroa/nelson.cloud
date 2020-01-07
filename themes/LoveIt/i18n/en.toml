@@ -49,7 +49,7 @@ other = "Table of Contents"
 other = "published on"
 
 [included]
-other = "included in"
+other = "Categories: "
 
 [wordCount]
 other = "about {{ .Count }} words"

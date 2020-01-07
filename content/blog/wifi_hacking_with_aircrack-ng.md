@@ -2,7 +2,7 @@
 title = "Wifi Hacking with aircrack-ng"
 description = "A guide to using aircrack-ng to bruteforce a router's password"
 date = "2019-09-26"
-categories = ["learning"]
+categories = ["cybersecurity"]
 tags = ["cybersecurity", "hacking"]
 +++
 
