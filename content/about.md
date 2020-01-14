@@ -7,13 +7,13 @@ title = "About Me"
 
 **Education:** B.S. Computer Information Technology from CSU Northridge
 
-**Interests:** Coding, Cybsersecurity, Privacy, Gaming, Music, Guitars
+**Interests:** Coding, DevOps, Cybsersecurity, Privacy, Gaming, Music, Guitars
 
 **Favorite programming language:** Ruby
 
 **Good at:** Ruby on Rails Development
 
-**Learning:** Golang, Kubernetes
+**Learning:** Kubernetes, HashiCorp Vault, Golang
 
 **Playing:** Overwatch
 
