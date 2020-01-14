@@ -1,6 +1,6 @@
 +++
-title = "Learning Kubernetes with Minikube"
-description = "Learn Kubernetes with Minikube"
+title = "Kubernetes Concepts and Hands-On"
+description = "Learn Kubernetes"
 date = "2020-01-04"
 categories = ["devops"]
 tags = ["kubernetes", "minikube", "orchestration", "containers", "docker"]
@@ -10,21 +10,27 @@ tags = ["kubernetes", "minikube", "orchestration", "containers", "docker"]
 
 ## Introduction
 
-Kubernetes, also known as "k8s", is an open-source container orchestration tool designed to automate deploying, scaling, and operating application containers. Docker containers can be used to develop and build applications, then Kubernetes can be used to run these applications. While you can use other container engines with Kubernetes, I'll be using Docker since it is the most popular. With that being said, previous Docker experience is recommended for this post to make more sense, at the very least an understanding of container concepts.
+Kubernetes, also known as "k8s", is an open-source container orchestration tool designed to automate deploying, scaling, and operating application containers. Docker containers can be used to develop and build applications, then Kubernetes can be used to run these applications. You can use other container engines with Kubernetes, but I'll be using Docker since it is the most popular. 
 
-## Clusters, Nodes, and Pods
+Previous Docker experience is recommended for this post to make more sense, at the very least an understanding of container concepts.
 
-The following is Kubernetes architecture in a nutshell:
+## Kubernetes Objects
+
+The following is Kubernetes in a nutshell:
 
 At the highest level, we have **Clusters**. Each Cluster contains a **Master Node** and several **Worker Nodes**. Worker Nodes each have **Pods**, which are just a group of containers. So the order from top to bottom is:
 
 Cluster -> Master Node/Worker Nodes -> Pods -> Containers
 
+Each of these objects are declared through **Deployments** and **Services** within a specified **Context** and **Namespace**. Deployments, Services, Contexts, and Namespaces can be declared through the command line or using YAML files.
+
+The `kubectl` command is how we interact with Kubernetes objects.
+
 Now, let's dive deeper into each of these objects.
 
 ### Clusters
 
-Each cluster contains a single master node and multiple worker nodes. Each node containts its own processes. The master node is responsible for managing the cluster. In a production environment, it is recommended to have at least a three-node cluster in addition to the master node.
+Each cluster contains a single master node and multiple worker nodes. Each node contains its own processes. The master node is responsible for managing the cluster. In a production environment, it is recommended to have at least a three-node cluster in addition to the master node.
 
 ### Master Node
 
@@ -63,7 +69,7 @@ Pods have several states: pending, running, succeeded, failed, and CrashLoopBack
 - `failed`: All containers in the pod have exited and at least one container has failed and returned a non-zero exit status.
 - `CrashLoopBackOff`: A container has failed to start and Kubernetes is repeatedly trying to restart the pod.
 
-## Deployments
+### Deployments
 
 A Deployment is a representation of multiple identical pods, and how we describe a desired state in Kubernetes. After describing a desired state, Kubernetes then changes the actual state to match the state we want. We can create a Deployment directly in the command line like this:
 
@@ -106,7 +112,7 @@ $ kubectl apply -f mydeployment.yaml
 
 The Deployment will ensure that the number of Pods we want are running and available at all times. 
 
-## Services
+### Services
 
 A Service is an abstract way to expose an application running on a set of pods as a network service. Kubernetes automatically assigns pods an IP address, a single DNS name for a set of pods, and can load-balance traffic across pods.
 
@@ -119,7 +125,7 @@ There are four types of Services in Kubernetes
 - `LoadBalancer`: This service type exposes the service externally using the load balancer of your chosen cloud provider. The external load balancer routes to NodePort and ClusterIP services which are automatically created.
 - `ExternalName`: Maps the service to to the contents of the `ExternalName` field. No Proxying of any kind is set up.
 
-If a Deployment named `mydeployment` has been created, we can create a Service using the command line as such:
+If a Deployment named `mydeployment` has been previously created, we can create a Service using the command line as such:
 
 ```
 $ kubectl create service nodeport mydeployment --tcp=80
@@ -149,13 +155,19 @@ And apply it using
 $ kubectl apply -f myservice.yaml
 ```
 
-Now that the Kubernetes concepts and terminology have been covered, we can start getting hands-on experience using Minikube.
+### Contexts
 
-## Minikube
+A Context simply refers to a Kubernetes Cluster. Each Cluster that is created will have its own Context. Contexts tell the `kubectl` command to which Cluster to run commands against. We'll get some hands-on experience with Contexts in a later section.
+
+### Namespaces
+
+Namespaces are virtual clusters within a single physical cluster. Within a single Cluster, you can define several namespaces to logically divide resources and applications. Similar to Contexts, we use Namespaces to further specify to `kubectl` what objects we want to interact with.
+
+## Kubernetes Hands-On with Minikube
 
 Minikube is a tool that will start up a single-node Kubernetes cluster on a virtual machine on our computer. It's great for getting comfortable with Kubernetes commands. 
 
-### Installing
+### Installing Minikube
 
 I'll be showing steps to install Minikube on MacOS using `brew`. If you're running Windows, Your best bet is to refer to the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/install-minikube/).
 
@@ -190,7 +202,7 @@ apiserver: Running
 kubeconfig: Configured
 ```
 
-We can also run Kubernetes commands to verify that we have a node running:
+We can also run Kubernetes commands to verify that we have a Node running:
 
 ```
 $ kubectl get nodes
@@ -199,28 +211,58 @@ NAME       STATUS   ROLES    AGE   VERSION
 minikube   Ready    master   42s   v1.17.0
 ```
 
-### 'Hello World' in Kubernetes
+And we have confirmation that a single Node is up and running!
 
-Now that Minkube is set up, we'll run our first application. We're going to pull a simple container that displays "Hello World" on a browser.
+### Deploying An Image Through The Command Line
 
-First, create a deployment:
+Now that Minkube is set up and we have a Cluster running, let's recap some of the concepts we covered above. Recall Contexts and Namespaces.
+
+By default, Minikube created a Cluster with a Context called 'minikube'. We can see this by running:
+
+```
+$ kubectl config get-contexts
+
+CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
+*         minikube   minikube   minikube
+
+```
+
+Minikube also created a default Namespace simply called 'default'. View it by running:
+
+```
+$ kubectl get namespaces
+
+NAME                   STATUS   AGE
+default                Active   1m
+kube-node-lease        Active   1m
+kube-public            Active   1m
+kube-system            Active   1m
+kubernetes-dashboard   Active   1m
+```
+
+There are additonal Namespaces here used by core Kubernetes services, but we don't have to worry about those.
+
+All of our `kubectl` commands right now will run against the 'default' Namespace within the 'minikube' Context. If in the future you have a Cluster running, say, on Amazon Web Services, you can switch to that Context/Namespace and run commands against that Cluster.
+
+Now, let's deploy a simple container that displays "Hello World" on a browser.
+
+First, create a deployment specifying the image to use:
 
 ```
 $ kubectl create deployment helloworld --image=karthequian/helloworld
 ```
 
-Then, create a service:
+Then, create a service to expose the deployment:
 
 ```
 $ kubectl create service nodeport helloworld --tcp=80
 ```
 
-Then, we can access the service through Minikube with the following command:
+Now we can access the service through Minikube with the following command:
 
 ```
 $ minikube service helloworld
 ```
-
 
 You should get similar output to this:
 
@@ -234,6 +276,8 @@ You should get similar output to this:
 ```
 
 And your browser should automatically open the IP/port in a new window. You should see a simple Bootstrap page that says "Hello". We have successfully run a container with Kubernetes and accessed the application!
+
+Now let's recap some more concepts. Recall Deployments, Services, Nodes, and Pods.
 
 We can view the deployments and services we created with the following commands:
 
@@ -252,19 +296,167 @@ helloworld   NodePort    10.96.77.40   <none>        80:31003/TCP   6m17s
 kubernetes   ClusterIP   10.96.0.1     <none>        443/TCP        12m
 ```
 
-And last, we can view a dashboard of everything running on Minikube through the dashboard:
+There's a default 'kubernetes' service that we can ignore. The one we created is 'helloworld'.The Deployment we created specified the state we want our Cluster to be in, while the Service we created exposed the Pod created by the Deployment.
+
+We can also view the single Node in our Cluster:
+
+```
+$ kubectl get nodes
+
+NAME       STATUS   ROLES    AGE   VERSION
+minikube   Ready    master   10m   v1.17.0
+```
+
+And we can view the Pod that was created by the Deployment:
+
+```
+$ kubectl get pods
+
+NAME                          READY   STATUS    RESTARTS   AGE
+helloworld-7f9bdc6489-tdpd6   1/1     Running   0          2m9s
+```
+
+And finally, we can view everything running on Minikube through the dashboard:
 
 ```
 $ minikube dashboard
 ```
 
-After playing around with the dashboard and application we can shut down Minikube
+You'll notice that there are a lot more Kubernetes Objects and features in the dashboard that I have not covered. Those are beyond the scope of this post and for more advanced purposes. However, feel free to read up on those once you have a solid grasp of the concepts covered in this post.
+
+While it's nice looking at a dashboard, I highly recommend getting comfortable with the `kubectl` command to view and manage Kubernetes resources.
+
+### Deploying Using YAML Manifests
+
+In an earlier section, I briefly mentioned that you can specify Kubernetes objects using YAML files. We're going to deploy a Ruby on Rails application on Minikube using YAML files. (*Note: The application was created by me for learning purposes, but we could be using any other image for this*)
+
+Using YAML files are useful because they allow you to version control your Kubernetes resources and modify them in a single file. Whenever changes are made to a YAML file, we simply need to run `kubectl apply` as you'll see soon. This process can even be automated in a CI service. 
+
+First, let's start a fresh Minikube instance. Go ahead and delete the current Minikube VM and start another one:
+
+```
+$ minikube delete
+
+$ minikube start
+```
+
+Next, copy these two YAML files locally in your system:
+
+**deployment.yaml**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forum-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: forum
+  template:
+    metadata:
+      labels:
+        app: forum
+    spec:
+      containers:
+      - name: forum
+        image: nfigueroa/forum
+        ports:
+        - containerPort: 3000
+```
+
+**service.yaml**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: forum-service
+spec:
+  type: NodePort
+  selector:
+    app: forum
+  ports:
+    - nodePort: 30000
+      port: 3000
+```
+
+Take some time to read through the files to get some idea of what's going on. Kubernetes YAML files can be used for deep configuration, too much to cover in a single post. I recommend reading through documentation to better understand what's possible in a YAML file.
+
+For now, understand that the Deployment is specifying an image to pull (`nfigueroa/forum`), a port to expose on the container (`containerPort`), and the number of pods we want (`replicas`).
+
+The Service is specifying that we want to expose a Node port (`nodePort`) on port 30000, and this Node port will point to port 3000 in the pod.
+
+Let's apply the Deployment YAML:
+
+```
+$ kubectl apply -f deployment.yaml
+
+deployment.apps/forum-deployment created
+```
+
+Once the Deployment has been created, we can view it:
+
+```
+$ kubectl get deployments
+
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+forum-deployment   0/3     3            0           5s
+```
+
+And we can see the Pods starting up:
+
+```
+$ kubectl get pods
+
+NAME                              READY   STATUS              RESTARTS   AGE
+forum-deployment-8d5dd5b9-289m7   0/1     ContainerCreating   0          35s
+forum-deployment-8d5dd5b9-7qq52   0/1     ContainerCreating   0          35s
+forum-deployment-8d5dd5b9-xllg4   0/1     ContainerCreating   0          35s
+```
+
+Next, let's apply the Service YAML:
+
+```
+$ kubectl apply -f service.yaml
+
+service/forum-service created
+```
+
+We can view the Service:
+
+```
+$ kubectl get services
+
+NAME            TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)          AGE
+forum-service   NodePort    10.96.94.69   <none>        3000:30000/TCP   4s
+kubernetes      ClusterIP   10.96.0.1     <none>        443/TCP          3m14s
+```
+
+Now we can view our application with the same command we used before:
+
+```
+minikube service forum-service
+```
+
+And your browser should automatically take you to the landing page. If for any reason the landing page is blank, double check that the pods are running. It might take a while to initialize the application.
+
+YAML files can be created for other Kubernetes Objects as well, like Pods and Namespaces. While it is okay to create a YAML for an individual Namespace, it is not recommended to create individual Pods this way unless it is for testing purposes or a very specific situation. Always use higher level abstractions to create pods, like Deployments.
+
+Feel free to try the YAML files with your own Docker images, just make sure you change the ports to the ones your application needs.
+
+Refer to the Kubernetes documentation and see what other Objects and configurations can be declared using YAML files. There is too much to cover in this post.
+
+### Cleaning Up
+
+After you're done playing with Minikube you can shut it down so it doesn't use up resources:
 
 ```
 $ minikube stop
 ```
 
-Or if you don't plan on using it for a while, feel free to delete the virtual machine:
+If you want to completely remove the Minikube virtual machine, run:
 
 ```
 $ minikube delete
@@ -272,4 +464,6 @@ $ minikube delete
 
 ## Conclusion
 
-In this post we went through the Kubernetes architecture and covered a lot of terminology. Then, we tried out running Kubernetes locally using Minikube. There's a lot more functinonality that I did not cover, but this is enough to get started with Kubernetes. I will most likely write up a deep-dive of Kubernetes components and how it works under the hood. 
+In this post, I covered the essential Kubernetes concepts. Then, we ran Kubernetes locally using Minikube and manually deployed a Docker image. After that, we deployed an application using YAML files. 
+
+There's a lot more functionality that I did not cover, but this is enough to get started. Kubernetes is a complex piece of software and has a tough learning curve, but it is very rewarding. From this point forward, read the Kubernetes documentation and get a deeper understanding.
