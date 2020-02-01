@@ -69,8 +69,6 @@ staticDir = ["static", "../assets/others"]               # static directories
                                                       #### Home Page Info
   home_mode = "other"                                     # [post, other] home mode
   home_paginate = 6                                      # special amount of posts in each home post page
-  avatar = "/avatar.jpeg"                           # URL of avatar shown in home page
-  subtitle = "Nelson Figueroa. Software Engineer."                    # subtitle shown in home page
 
   socialShare = false                                     # whether to show social share links in post page
 

@@ -13,9 +13,7 @@ title = "About Me"
 
 **Good at:** Ruby on Rails Development
 
-**Learning:** Kubernetes, HashiCorp Vault, Golang
-
-**Playing:** Overwatch
+**Learning:** Kubernetes, Terraform
 
 ---
 
