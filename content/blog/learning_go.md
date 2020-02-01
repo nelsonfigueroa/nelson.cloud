@@ -8,12 +8,6 @@ tags = ["golang", "programming"]
 
 ## Introduction
 
-Not too long ago, I made it my goal to become proficient with an interpreted language and a compiled language. I am already decent with Ruby, so I started searching for compiled languages and weighed their pros and cons. I ultimately chose Go because I preferred its syntax over other compiled languages like Java. It also helps that it's very popular amongst DevOps/Infrastructure teams and that's something I'm very interested in.
-
-Previous programming experience is recommended as I will not be explaining programming concepts in-depth. However, anyone can follow along.
-
-## What is Go?
-
 Go is a programming language developed by Google. It is also known as Golang. It's a statically typed and compiled language. 
 
 Key features of Go include: 
@@ -22,6 +16,8 @@ Key features of Go include:
 - Garbage collection 
 - Built-in concurrency
 - Compilation to standalone binaries.
+
+Previous programming experience is recommended as I will not be explaining programming concepts in-depth.
 
 ## Following Along
 
