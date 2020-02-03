@@ -19,7 +19,7 @@ title = "About Me"
 
 ## Experience
 
-- **Jr. DevOps Engineer** @ Vitu | (Dec 2019 - Present)
+- **Jr. DevOps Engineer** @ Vitu (Dec 2019 - Present)
 
 - **Backend Software Engineering Intern** @ Dollar Shave Club (June 2019 - Aug 2019)
 

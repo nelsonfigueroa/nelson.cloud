@@ -21,11 +21,11 @@ Previous programming experience is recommended as I will not be explaining progr
 
 ## Following Along
 
-**Go online playground**
+### Go online playground
 
 Go has an online playground to test out code: [play.golang.org](https://play.golang.org/). Feel free to use this site to follow along. You can also install Go if you prefer.
 
-**Installing Go**
+### Installing Go
 
 You can download Go on the official Go site: [golang.org](https://golang.org/dl/). If you're on MacOS and have `brew` installed, you can run `brew install go`. On Linux distros, you can download and install Go using the package manager for your OS.
 
@@ -33,9 +33,11 @@ To verify that all is well, you can check for the currently installed Go version
 
 ```
 $ go version
+
+go version go1.13.7 darwin/amd64
 ```
 
-## Environment Setup
+### Environment Setup
 
 *(This section only applies if you choose to install Go on your machine.)*
 
@@ -43,29 +45,25 @@ Go has an environment variabled called `GOROOT` that tells the environment where
 
 ```
 $ go env GOROOT
+
+/usr/local/Cellar/go/1.13.7/libexec
 ```
 
 Go also has an environment called `GOPATH` that specifies where Go projects are located. The variable can be modified if the location does not suit you. You see the default path by running:
 
 ```
 $ go env GOPATH
+
+/Users/nelson/go
 ```
 
 The directory itself might not exist, but you can create it.
 
-```
-$ mkdir go
-```
-
-Inside the `go` directory, we'll create three directories, `src`, `bin`, and `pkg`.
-
-```
-$ mkdir src bin pkg
-```
+Browse into the `go` directory and create three directories, `src`, `bin`, and `pkg`.
 
 The `src` directory is where all of our source code will go. It is inside this `src` directory where you can create additional directories for each of your projects. The `bin` directory will hold binaries when we compile code. The `pkg` directory will hold intermediate binaries used when compiling, such as third-party libraries that we might import.
 
-Let's make a "hello world" project in the `src` directory:
+Let's make a "hello world" project in the `src` directory by creating a directory for the project itself:
 
 ```
 $ mkdir hello
@@ -91,13 +89,13 @@ $ tree
 └── src
 ```
 
+Go files can be named anything, although generally the main go file is named `main.go`. We can ignore that for now.
+
 ## 'Hello World' in Go
 
 Now we're ready to start writing our very first Go program.
 
-Go files can be named anything, although generally the main go file is named `main.go`. We can ignore that for now.
-
-Every Go application is structured into packages. Every Go file will have to declare what package it is a part of. The package `main` is special because it will be the entrypoint to the application. Add the following line to the file:
+Every Go application is structured into packages. Every Go file will have to declare what package it is a part of. The package `main` is special because it will be the entrypoint to the application. Add the following line to the `hello.go` file:
 
 ```go
 package main
@@ -124,7 +122,7 @@ import (
 )
 
 func main() {
-  fmt.Println("hello world")
+  fmt.Println("Hello world!")
 }
 ```
 
@@ -132,6 +130,8 @@ Let's try running what we have so far:
 
 ```
 $ go run hello.go
+
+Hello world!
 ```
 
 Go also allows us to compile the code into an executable. Let's try it. Notice that there is no need to specify the file this time:
@@ -144,6 +144,8 @@ This will create an executable named after the project directory `hello`. In Win
 
 ```
 $ ./hello
+
+Hello world!
 ```
 
 Alternatively, you can run `go install` which is the same thing except the executable is put in the `bin` directory we created earlier. If the program imported something from outside the standard library, it would compile and cache those dependencies in a `package` directory.
