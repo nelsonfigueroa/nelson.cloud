@@ -27,7 +27,6 @@ tags = ["thoughts"]
 ## Life Goals for 2020
 
 - Get AWS Certified Cloud Practitioner certification
-- Get Certified Kubernetes Administator certification
 - Go for a Master's degree?
 
 ## Learning Goals for 2020
@@ -36,5 +35,6 @@ tags = ["thoughts"]
 - Ansible
 - React
 - Ruby mastery
-- Golang expertise
-- Better understanding of data structures & algorithms
+- Data structures
+- Algorithms
+- Proper object-oriented design
