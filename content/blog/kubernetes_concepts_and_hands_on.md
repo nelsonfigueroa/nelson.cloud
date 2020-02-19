@@ -69,6 +69,14 @@ Pods have several states: pending, running, succeeded, failed, and CrashLoopBack
 - `failed`: All containers in the pod have exited and at least one container has failed and returned a non-zero exit status.
 - `CrashLoopBackOff`: A container has failed to start and Kubernetes is repeatedly trying to restart the pod.
 
+### Contexts
+
+A Context simply refers to a Kubernetes Cluster. Each Cluster that is created will have its own Context. Contexts tell the `kubectl` command to which Cluster to run commands against. We'll get some hands-on experience with Contexts in a later section.
+
+### Namespaces
+
+Namespaces are virtual clusters within a single physical cluster. Within a single Cluster, you can define several namespaces to logically divide resources and applications. Similar to Contexts, we use Namespaces to further specify to `kubectl` what objects we want to interact with.
+
 ### Deployments
 
 A Deployment is a representation of multiple identical pods, and how we describe a desired state in Kubernetes. After describing a desired state, Kubernetes then changes the actual state to match the state we want. We can create a Deployment directly in the command line like this:
@@ -154,14 +162,6 @@ And apply it using
 ```
 $ kubectl apply -f myservice.yaml
 ```
-
-### Contexts
-
-A Context simply refers to a Kubernetes Cluster. Each Cluster that is created will have its own Context. Contexts tell the `kubectl` command to which Cluster to run commands against. We'll get some hands-on experience with Contexts in a later section.
-
-### Namespaces
-
-Namespaces are virtual clusters within a single physical cluster. Within a single Cluster, you can define several namespaces to logically divide resources and applications. Similar to Contexts, we use Namespaces to further specify to `kubectl` what objects we want to interact with.
 
 ## Kubernetes Hands-On with Minikube
 
