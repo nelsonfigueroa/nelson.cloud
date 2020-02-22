@@ -14,7 +14,7 @@ There are other methods of doing this as well. In fact, I discovered [bettercap]
 
 For reference, I used Kali linux for the entire process. But the process should be very similar for any linux distribution. This tool is already included on Kali Linux but you can install it on any Linux OS.
 
-This is purely for educational purposes. Do NOT try to break into access points that do not belong to you.
+This is purely for educational purposes. **Do not try to break into access points that do not belong to you.**
 
 ## What is aircrack-ng?
 
@@ -286,13 +286,15 @@ Success! The password has been found:
 
 ## Additional Tips
 
+### Changing Your MAC Address
+
 If you want to stay as anonymous as possible, you can change your MAC Address before attempting any of this. You can easily do this using a tool like `macchanger`. The following command will assign a randomized MAC address to the `wlan0` interface:
 
 ```
 $ macchanger -r wlan0
 ```
 
-We can be more clever and use a MAC address from a known company. The first 3 bytes of a MAC address are known as the Organizationally Unique Identifier (OUI) and can identify the manufacturer. For example, some of Dell's devices have the first 3 bytes as `F8:DB:88`. The last 8 bytes can be anything, as long as it is within the range of A-F and 0-9 (hexadecimal values).
+We can be more clever and use a MAC address from a known company. The first 3 bytes of a MAC address are known as the Organizationally Unique Identifier (OUI) and can identify the manufacturer. For example, some of Dell's devices have the first 3 bytes as `F8:DB:88`. The last 3 bytes can be anything, as long as it is within the range of A-F and 0-9 (hexadecimal values).
 
 We can specify a MAC address with the following command:
 
@@ -308,13 +310,19 @@ $ sudo ifconfig wlan0 ether f8-db-88-e4-94-5d
 
 Using this knowledge of MAC Addresses, we can also determine the manufacturers of the access points we scan. We can look up the MAC addresses, figure out the manufacturer, and see if there are other vulnerabilities with specific device models. Maybe we'll discover their formula for default passwords (which lots of people never change) to be, say, a combination of 5 letters and 5 numbers, which can help us crack the password. Any hint helps. Additionally, default ESSID names, such as "NETGEAR23-2G", could mean that the user never changed the default password either ;).
 
+### Password Lists
+
+Password lists are often used in password cracking to speed up the process. Instead of trying every possible combination of characters, we can try our luck using leaked passwords from one of these lists. A good place to find passwords lists and more is the [SecLists GitHub repo](https://github.com/danielmiessler/SecLists). To start off, I suggest trying one of the ["Common Credentials" lists](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials).
+
+Password lists can be used along with the `crunch` tool we used earlier. `crunch` has much more functionality that I did not dive into. I encourage you to read through the `man` pages and learn more about it. It's versatile but still easy to pick up.
+
 ## Conclusions
 
-Scanning for wifi networks and acquiring handshakes is not difficult. Anyone with minor command line experience can achieve this. The hardest part will be cracking the password itself, but if an attacker has a powerful computer they can crack a short password in no time. 
+In this post I covered how to use `aircrack-ng` to scan for nearby access points, capture the 4-way handshake by sending spoofed deauthentication packets, and crack the hash using `crunch`. Once again, only try this on devices you own! 
 
-This is an example of why long passwords are important. It is not enough to add symbols to a short password. In fact, it is better to get into the habit of creating passphrases as opposed to passwords. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword420?` is much harder to crack than `Password420?`
+Scanning for wifi networks and acquiring handshakes is not too difficult. Anyone with some command line experience can achieve this. The hardest part will be cracking the password itself due to processing power required.
 
-The `crunch` tool has much more functionality that I did not dive into. I encourage you to read through the `man` pages and learn more about it. It's versatile but still easy to pick up.
+This is an example of why long passwords are important. It is not enough to add symbols to a short password. In fact, it is better to get into the habit of creating pass-*phrases* as opposed to pass-*words*. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword123?` is much harder to crack than `Password123?`
 
 There are other tools that we could have used to crack the password, such as `hashcat`. If I'm not mistaken, `hashcat` can take advantage of a GPU which will allow you to crack passwords much faster. However, I wanted to focus on the tools that come with the `aircrack-ng` suite.
 
