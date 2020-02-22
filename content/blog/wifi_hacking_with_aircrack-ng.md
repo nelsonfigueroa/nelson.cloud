@@ -6,17 +6,15 @@ categories = ["cybersecurity"]
 tags = ["cybersecurity", "hacking"]
 +++
 
-This post will be a re-write of notes I took around 2 years ago now. Learning to use `aircrack-ng` and break into my own router was both fun and a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router due to processing power needed, but sniffing wifi networks is a trivial process. After doing it once, it'll stick.
+## Introduction
+
+This post is essentially a re-write of notes I took around 2 years ago. Learning to use `aircrack-ng` and break into my own router was both fun but also a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router due to processing power needed, but sniffing wifi networks is a trivial process. After doing it once, it'll stick.
 
 There are other methods of doing this as well. In fact, I discovered [bettercap](https://github.com/bettercap/bettercap) earlier this year and it is easy to use. Perhaps I'll write a post using that tool in the future.
 
 For reference, I used Kali linux for the entire process. But the process should be very similar for any linux distribution. This tool is already included on Kali Linux but you can install it on any Linux OS.
 
-I shouldn't have to say this but, this is purely for educational purposes. Do NOT try to break into access points that do not belong to you.
-
-## Hardware requirements
-
-To use `aircrack-ng` you'll need a wireless network adapter that has monitor mode and packet injection capabilities. Feel free to do some research about your particular card and it's compatability. There's a good guide on [the aircrack-ng site](https://www.aircrack-ng.org/doku.php?id=compatible_cards) that can help you with research. You can also do what I did and buy a cheap USB wireless adapter with these capabilities. I have the [Panda Wireless N600](https://www.amazon.com/Panda-2-4GHz-300Mbps-Wireless-Adapter/dp/B00U2SIS0O/) and it works perfectly fine on my Macbook Pro.
+This is purely for educational purposes. Do NOT try to break into access points that do not belong to you.
 
 ## What is aircrack-ng?
 
@@ -28,11 +26,19 @@ The goal in this post is to use the tools included in `aircrack-ng` to:
 3. Capture the 4-way handshake hash
 4. Crack the hash, which reveals the password of the router in plaintext
 
-## Setup
+## Hardware requirements
 
-We'll need to set up monitor mode in our wireless network adapter. Monitor mode allows the wireless network interface to capture all wireless traffic. This means we'll be able to see nearby wireless access points and devices connected to each one. Keep in mind that not all network adapters support this mode, and you might need a USB wireless adapter specifically used in penetration testing. I purchased a Panda Wireless wireless USB adapter for around $20.
+To use `aircrack-ng` you'll need a wireless network adapter that has monitor mode and packet injection capabilities. Feel free to do some research about your particular card and it's compatability. There's a good guide on [the aircrack-ng site](https://www.aircrack-ng.org/doku.php?id=compatible_cards) that can help you with research. You can also do what I did and buy a cheap USB wireless adapter with these capabilities. I have the [Panda Wireless N600](https://www.amazon.com/Panda-2-4GHz-300Mbps-Wireless-Adapter/dp/B00U2SIS0O/) and it works perfectly fine on my Macbook Pro.
 
-To set the network adapter to monitor mode, first find the name of the interface as your system detects it. You can see this using `ifconfig`. In my case, the interface name is `wlan0`. I can set it to monitor mode using the following commands:
+## Installation
+
+If you're not on Kali Linux, `aircrack-ng` is most likely available through your preferred package manager. For Windows users, refer to the [official aircrack-ng site](https://www.aircrack-ng.org/) to download the suite.
+
+## Setting up monitor mode
+
+We'll need to set up monitor mode in our wireless network adapter. Monitor mode allows the wireless network interface to capture all wireless traffic. This means we'll be able to see nearby wireless access points and devices connected to each one.
+
+To set the network adapter to monitor mode, first find the name of the interface as your system detects it. You can see this using `ifconfig`. In my case, the interface name of my USB wireless adapter is `wlan0`. I can set it to monitor mode using the following commands:
 
 ```
 $ ifconfig wlan0 down
