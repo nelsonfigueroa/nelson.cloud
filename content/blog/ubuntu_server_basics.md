@@ -4,6 +4,7 @@ description = "Linux maintenance with Ubuntu Server"
 date = "2019-10-24"
 categories = ["devops"]
 tags = ["ubuntu", "linux"]
+draft = true
 +++
 
 This is a guide to managing and maintaining Ubuntu Server. There is no desktop GUI on this version of Ubuntu. The goal here is to learn basic Ubuntu maintenance with just the command line.

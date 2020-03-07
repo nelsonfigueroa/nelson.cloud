@@ -1,7 +1,7 @@
 baseURL = "https://nfigueroa.dev/"
 languageCode = "en"                                      # website language
 defaultContentLanguage = "en"                            # [en, zh, ...] determines which i18n file to use
-title = "nfigueroa.dev"                                   # website title
+title = ""                                   # website title
 theme = "LoveIt"                                         # theme
 enableGitInfo = false                                    # whether to use git commit log to generate lastmod record
 hasCJKLanguage = false                                   # whether to include chinese/japanese/korean
@@ -36,35 +36,40 @@ staticDir = ["static", "../assets/others"]               # static directories
 [Permalinks]                                          #### Permalinks Info (https://gohugo.io/content-management/urls/#permalinks)
   posts = ":year/:month/:filename"
 
-[menu]                                                #### Menu Info
+[menu]        
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = ""
+    weight = 1                                        
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "about"
-    weight = 1
+    weight = 2
 
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "blog"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     identifier = "categories"
     name = "Categories"
     url = "categories"
-    weight = 4
+    weight = 5
 
 [params]
   version = "5.x"                                        # LoveIt theme version
   description = "Nelson Figueroa | Software Engineer"    # site description
-  keywords = ["Nelson", "Figueroa", "software", "engineer", "blog"]  # site keywords
+  keywords = ["Nelson", "Figueroa", "software", "engineer", "blog", "devops", "developer", "tech"]  # site keywords
 
                                                       #### Home Page Info
   home_mode = "other"                                     # [post, other] home mode
