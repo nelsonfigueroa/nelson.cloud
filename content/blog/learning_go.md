@@ -4,6 +4,7 @@ description = "Learning Go basics"
 date = "2019-10-31"
 categories = ["programming"]
 tags = ["golang", "programming"]
+draft = true
 +++
 
 ## Introduction

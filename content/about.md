@@ -17,7 +17,7 @@ title = "About Me"
 
 ---
 
-## Experience
+## Work Experience
 
 - **Jr. DevOps Engineer** @ Vitu (Dec 2019 - Present)
 
