@@ -31,5 +31,7 @@ jobs:
         rm -rf public/
         hugo version
         hugo
-        aws s3 sync s3://${{ secrets.S3_BUCKET_NAME }} --acl public-read --delete --exclude "*" --include "index.html"
+        rm -rf public/*
+        copy index.html public/
+        aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --acl public-read --delete
         aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
