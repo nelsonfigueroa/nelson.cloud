@@ -54,22 +54,10 @@ staticDir = ["static", "../assets/others"]               # static directories
     url = "blog"
     weight = 3
 
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "tags"
-    weight = 4
-
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "categories"
-    weight = 5
-
 [params]
   version = "5.x"                                        # LoveIt theme version
   description = "Nelson Figueroa | Software Engineer"    # site description
-  keywords = ["Nelson", "Figueroa", "software", "engineer", "blog", "devops", "developer", "tech"]  # site keywords
+  keywords = ["Nelson", "Figueroa", "software", "engineer", "blog", "devops", "developer", "tech", "ruby", "kubernetes"]  # site keywords
 
                                                       #### Home Page Info
   home_mode = "other"                                     # [post, other] home mode
@@ -85,13 +73,6 @@ staticDir = ["static", "../assets/others"]               # static directories
   gitRepo = ""                                           # public git repo url to link lastmod git commit only then enableGitInfo is true
 
   linkToMarkdown = false                                  # whether to show link to Raw Markdown content of the post
-
-                                                      #### site verification code for Google/Bing/Yandex/Pinterest/Baidu
-  google_verification = ""
-  bing_verification = ""
-  yandex_verification = ""
-  pinterest_verification = ""
-  baidu_verification = ""
 
   [params.cdn]                                       #### CSS and JS Files CDN
     # fontawesome_free_css = ''                           # for example '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css" integrity="sha256-fdcFNFiBMrNfWL6OcAGQz6jDgNTRxnrLEd4vJYFWScE=" crossorigin="anonymous">'
