@@ -26,7 +26,8 @@ B.S. Computer Information Technology
 - Cybersecurity
 - Privacy
 - Gaming
-- MusicGuitars
+- Music
+- Guitars
 
 ## Favorite Programming Language 
 - Ruby
@@ -37,4 +38,3 @@ B.S. Computer Information Technology
 ## Currently Learning
 - Kubernetes
 - Terraform
-- Jenkins

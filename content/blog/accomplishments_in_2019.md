@@ -20,20 +20,20 @@ tags = ["thoughts"]
 - CI/CD services (Travis CI, GitLab CI/CD, GitHub Actions)
 - Test-driven development with RSpec
 - Better code practices
+- More Ruby experience
 - APIs in Rails
-- Golang
+- Some Golang
 - Hugo statc site generator
 
 ## Life Goals for 2020
 
-- Get AWS Certified Cloud Practitioner certification
 - Go for a Master's degree?
 
 ## Learning Goals for 2020
 
 - Kubernetes
 - Ansible
-- React
+- Vue
 - Ruby mastery
 - Data structures
 - Algorithms
