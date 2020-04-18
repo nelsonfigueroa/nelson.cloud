@@ -1,9 +1,9 @@
 +++
-title = "Today I Learned: Rails Links With URI Patterns"
-description = "Learning Go basics"
+title = "TIL: Rails Links With URI Patterns"
+description = "Comparing Rails URL Helpers and URI Patterns"
 date = "2020-03-26"
 categories = ["programming"]
-tags = ["rails", "ruby", "programming"]
+tags = ["rails", "ruby", "programming", "Today I Learned"]
 draft = false
 +++
 

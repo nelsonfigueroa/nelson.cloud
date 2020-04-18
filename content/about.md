@@ -15,6 +15,14 @@ title = "About Me"
 
 - **I.T. Student Assistant** @ CSU Northridge (June 2017 - May 2018)
 
+## Skills
+
+- **Programming/Scripting**: Ruby, Bash, Python
+- **Web Technologies**: Ruby on Rails, HTML, CSS, JavaScript, Bootstrap, Bulma
+- **Databases**: MySQL, SQLite 3, PostgreSQL	
+- **Infrastructure**: Docker, Terraform, Kubernetes, CI/CD (Google Cloud Build, GitHub Actions), Amazon Web Services, Google Cloud Platform
+- **Other**: Git, RSpec, Test-Driven Development
+
 ## Education 
 B.S. Computer Information Technology 
 
@@ -28,12 +36,6 @@ B.S. Computer Information Technology
 - Gaming
 - Music
 - Guitars
-
-## Favorite Programming Language 
-- Ruby
-
-## Strengths 
-- Ruby on Rails Development
 
 ## Currently Learning
 - Kubernetes
