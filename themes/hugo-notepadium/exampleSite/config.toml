@@ -1,7 +1,7 @@
-baseURL = "https://nfigueroa.dev/"
-title = "nfigueroa.dev"
+baseURL = "https://example.com"
+title = "Notepadium"
 theme = "hugo-notepadium"
-# copyright = "©2020 Notepadium."
+copyright = "©2020 Notepadium."
 
 languageCode = "en"  # for the RSS generation
 defaultContentLanguage = "en"
@@ -15,10 +15,6 @@ enableRobotsTXT = true
 
 # Google Analytics
 #googleAnalytics = "UA-123-45"
-
-# [author]
-#   name = "Nelson Figueroa"
-#   homepage = "https://lvv.me"
 
 [markup.highlight]
 codeFences = true
@@ -57,7 +53,7 @@ darkTheme = "xcode-dark"
 
 [params.nav]
 showCategories = true       # /categories/
-# showTags = true             # /tags/
+showTags = true             # /tags/
 
 [[params.nav.custom]]
 title = "About"
