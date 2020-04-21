@@ -55,14 +55,14 @@ use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "xcode"
 darkTheme = "xcode-dark"
 
-[params.nav]
-showCategories = true       # /categories/
-# showTags = true             # /tags/
-
 [[params.nav.custom]]
 title = "About"
 url = "/about/"
 
+[params.nav]
+showCategories = true
+# showTags = true
+
 [[params.nav.custom]]
-title = "Hugo"
-url = "https://gohugo.io/"
+title = "GitHub"
+url = "https://github.com/nelsonfigueroa"
