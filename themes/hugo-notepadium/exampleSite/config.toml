@@ -1,7 +1,7 @@
-baseURL = "https://nfigueroa.dev/"
-title = "nfigueroa.dev"
+baseURL = "https://example.com"
+title = "Notepadium"
 theme = "hugo-notepadium"
-# copyright = "©2020 Notepadium."
+copyright = "©2020 Notepadium."
 
 languageCode = "en"  # for the RSS generation
 defaultContentLanguage = "en"
@@ -16,10 +16,6 @@ enableRobotsTXT = true
 # Google Analytics
 #googleAnalytics = "UA-123-45"
 
-# [author]
-#   name = "Nelson Figueroa"
-#   homepage = "https://lvv.me"
-
 [markup.highlight]
 codeFences = true
 noClasses = false
@@ -32,7 +28,7 @@ style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: bas
 dateFormat = "Jan 02, 2006"  # if unset, default is "2006-01-02"
 readingTime = false  # show reading time after article date
 logo = ""
-slogan = "Nelson Figueroa | Software Engineer"
+slogan = "100% JavaScript-free"
 #license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
 
 [params.assets]
@@ -52,17 +48,17 @@ use = "katex"  # builtin: "katex", "mathjax".  default: "katex"
 
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "monokai"
-darkTheme = "monokai"
+theme = "xcode"
+darkTheme = "xcode-dark"
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
 
 [[params.nav.custom]]
 title = "About"
 url = "/about/"
 
-[params.nav]
-showCategories = true
-# showTags = true
-
 [[params.nav.custom]]
-title = "GitHub"
-url = "https://github.com/nelsonfigueroa"
+title = "Hugo"
+url = "https://gohugo.io/"
