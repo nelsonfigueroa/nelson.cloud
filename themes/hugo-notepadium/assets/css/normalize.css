@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+body {
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+p {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+hr {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+
+    border-top-style: inset;
+    border-top-width: 1px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+dl {
+    margin: 0;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+dd {
+    margin-left: 0;
+    margin-inline-start: 0;
+    -webkit-margin-start: 0;
+}
+
+table {
+    line-height: inherit;
+    font-weight: 400;
+    font-size: inherit;
+}
+
+th {
+    font-weight: 700;
+}
+
+tt,
+code,
+kbd,
+samp,
+pre {
+    font-family: monospace;
+}
+
+pre {
+    margin: 0;
+    white-space: pre;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+blockquote {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: 700;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+mark {
+    color: currentColor;
+    background-color: yellow;
+}
+
+svg,
+img {
+    max-width: 100%;
+    border: none;
+}
