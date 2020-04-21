@@ -1,0 +1,16 @@
+{{- $css := "" -}}
+{{- range site.Params.assets.css -}}
+  {{- $customCSS := resources.Get . -}}
+  {{- if $customCSS -}}
+    {{- $scss := false -}}
+    {{- $filePath := . | lower -}}
+    {{- if or (strings.HasSuffix $filePath ".scss") (strings.HasSuffix $filePath ".sass") -}}{{- $scss = true -}}{{- end -}}
+    {{- if $scss -}}{{- $customCSS = $customCSS | resources.ToCSS -}}{{- end -}}
+    {{- if eq $css "" -}}
+      {{- $css = $customCSS -}}
+    {{- else -}}
+      {{- $css = slice $css $customCSS | resources.Concat (printf "%s.tmp_custom.css" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $css -}}
