@@ -14,7 +14,7 @@ enableRobotsTXT = true
 #disqusShortname = "XXX"
 
 # Google Analytics
-#googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-164232908-1"
 
 # [author]
 #   name = "Nelson Figueroa"
