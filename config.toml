@@ -14,7 +14,7 @@ enableRobotsTXT = true
 #disqusShortname = "XXX"
 
 # Google Analytics
-googleAnalytics = "UA-164232908-1"
+# googleAnalytics = ""
 
 # [author]
 #   name = "Nelson Figueroa"
