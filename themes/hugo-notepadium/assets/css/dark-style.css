@@ -1,6 +1,6 @@
 body {
-  color: rgba(220, 252, 242, .75);
-  background-color: #222831;
+  color: rgba(220, 252, 242);
+  background-color: #1d1d1d;
 }
 
 table thead {
@@ -14,24 +14,24 @@ table tr:nth-child(even) {
 
 mark,
 ::selection {
-  background-color: #515b70;
+  background-color: #9b0000;
 }
 
 .note,
 .site.name {
-  color: rgba(220, 252, 242, 0.75);
+  color: rgba(220, 252, 242);
 }
 
 .site.slogan .title,
 .note.date,
 .article.date,
 .footer {
-  color: rgba(220, 252, 242, .5);
+  color: rgba(220, 252, 242);
 }
 
 .note.content,
 .article.markdown-body {
-  color: rgba(255, 255, 255, .65);
+  color: rgb(248, 248, 248);
 }
 
 code,
@@ -42,7 +42,7 @@ samp {
 }
 
 pre {
-  background-color: #1f1f24;
+  background-color: #000000;
 }
 
 a {
@@ -78,13 +78,13 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(220, 252, 242, .75);
+  color: rgba(220, 252, 242);
 }
 
 .note.list .item,
 .article-container {
-  background-color: #393e46;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
+  background-color: #282a2c;
+  box-shadow: 0 6px 12px #0e0e0e;
 }
 
 @media (max-width: 500px) {
