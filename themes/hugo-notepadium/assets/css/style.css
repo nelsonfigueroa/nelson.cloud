@@ -107,6 +107,7 @@ pre {
   background-color: #f9fafa;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 12px #0e0e0e;
 
   -o-tab-size: 4;
   -moz-tab-size: 4;
