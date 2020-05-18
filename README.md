@@ -1,1 +1,1 @@
-Files for my personal site [nfigueroa.dev](https://nfigueroa.dev). Built using [Hugo](https://gohugo.io).
+Files for my personal site [nfigueroa.dev](https://nfigueroa.dev). Built using [Hugo](https://gohugo.io). Deployed on AWS.
