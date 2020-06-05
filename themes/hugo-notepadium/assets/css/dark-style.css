@@ -1,5 +1,5 @@
 body {
-  color: rgba(220, 252, 242);
+  color: rgb(240, 240, 240);
   background-color: #1d1d1d;
 }
 
@@ -19,14 +19,14 @@ mark,
 
 .note,
 .site.name {
-  color: rgba(220, 252, 242);
+  color: rgb(240, 240, 240);
 }
 
 .site.slogan .title,
 .note.date,
 .article.date,
 .footer {
-  color: rgba(220, 252, 242);
+  color: rgb(240, 240, 240);
 }
 
 .note.content,
@@ -78,19 +78,17 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(220, 252, 242);
+  color: rgb(240, 240, 240);
 }
 
-.note.list .item,
-.article-container {
+.note.list .item {
   background-color: #282a2c;
   box-shadow: 0 6px 12px #0e0e0e;
 }
 
 @media (max-width: 500px) {
 
-  .note.list .item,
-  .article-container {
+  .note.list .item {
     box-shadow: none;
   }
 }
