@@ -513,8 +513,7 @@ b {
   color: rgba(0, 0, 0, .65);
 }
 
-.note.list .item,
-.article-container {
+.note.list .item {
   padding: 20px;
   border-radius: 6px;
   box-shadow: 0 12px 16px 0 rgba(0, 32, 22, .12);
@@ -522,21 +521,15 @@ b {
 
 @media (max-width: 500px) {
 
-  .note.list .item,
-  .article-container {
+  .note.list .item {
     border-radius: 0;
     box-shadow: none;
   }
 
-  .note.list,
-  .article-container {
+  .note.list {
     margin-left: -20px;
     margin-right: -20px;
   }
-}
-
-.article-container {
-  background-color: #fff;
 }
 
 .article.markdown-body {
