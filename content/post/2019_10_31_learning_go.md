@@ -650,9 +650,9 @@ func main() {
 }
 ```
 
-## Loops
+## For Loops
 
-The only type of loop in Go is the `for` loop. It is similar to `for` loops in other languages. We define a counter, a stopping condition, and a counter increment/decrement. See the example below:
+ Similar to `for` loops in other languages. We define a counter, a stopping condition, and a counter increment/decrement. See the example below:
 
 ```go
 package main
@@ -737,6 +737,22 @@ func main() {
     fmt.Println("key:", key, "value:", value)
   }
 
+}
+```
+
+##  While Loops
+
+There is no `while` keyword in Go, but we can still use `for` to create traditional while loops:
+
+```go
+func iterateLinkedList(head *ListNode) *ListNode {
+    
+    // while head != nil
+    for head != nil {
+        head = head.Next
+    }
+
+    return head
 }
 ```
 

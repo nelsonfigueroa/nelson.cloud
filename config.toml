@@ -43,7 +43,6 @@ enable = false  # En/Disable comments globally, default: false. You can always e
 
 [params.share]
 enable = false  # En/Disable share globally, default: false. You can always enable share on per page.
-addThisId = ""
 inlineToolId = ""
 
 [params.math]
@@ -56,11 +55,15 @@ theme = "monokai"
 darkTheme = "monokai"
 
 [[params.nav.custom]]
+title = "Home"
+url = "/"
+
+[[params.nav.custom]]
 title = "About"
 url = "/about/"
 
 [params.nav]
-showCategories = true
+showCategories = false
 # showTags = true
 
 [[params.nav.custom]]
