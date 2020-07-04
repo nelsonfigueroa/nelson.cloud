@@ -59,8 +59,8 @@ title = "Home"
 url = "/"
 
 [[params.nav.custom]]
-title = "About"
-url = "/about/"
+title = "Resume"
+url = "/resume/"
 
 [params.nav]
 showCategories = false
