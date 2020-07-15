@@ -52,4 +52,15 @@ Bachelor of Science in Computer Information Technology
 
 *California State University, Northridge*
 
+## Open-Source Contributions
 
+### [tldr](github.com/tldr-pages/tldr)
+
+Simplified and community-driven instructions for command line tools.
+
+Contributed practical examples for the following commands: 
+- `rails generate`
+- `rails db`
+- `rails routes`
+- `terraform`
+- `terraform fmt`
