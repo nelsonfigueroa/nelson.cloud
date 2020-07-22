@@ -396,14 +396,12 @@ enableEmoji = true
     endLevel = 6
 
 # Author config
-# 作者配置
 [author]
-  name = "xxxx"
-  email = ""
-  link = ""
+  name = "Nelson Figueroa"
+  email = "nelsonfigueroa@hey.com"
+  link = "nfigueroa.dev"
 
 # Sitemap config
-# 网站地图配置
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
