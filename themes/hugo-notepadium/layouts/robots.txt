@@ -1,3 +1,0 @@
-user-agent: *
-disallow: 
-sitemap: https://nfigueroa.dev/sitemap.xml
