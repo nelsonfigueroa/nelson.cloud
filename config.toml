@@ -95,7 +95,7 @@ enableEmoji = true
           # title shown in home page (HTML format is supported)
           title = ""
           # subtitle shown in home page
-          subtitle = "Hi, I'm Nelson. <br> I'm a Software Engineer that works with Ruby on Rails, Docker, Terraform, and Kubernetes. <br> <span style='color:#00b89f'>I'm available for work!</span> <br> Feel free to reach out :)"
+          subtitle = "Hi, I'm Nelson. <br> I'm a Software Engineer based in Los Angeles, CA. <br> I work with Ruby on Rails, Docker, Terraform, and Kubernetes. <br> <span style='color:#00b89f'>I'm available for work!</span> <br> Feel free to reach out :)"
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
@@ -343,7 +343,7 @@ enableEmoji = true
   # TypeIt 配置
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
-    speed = 50
+    speed = 45
     # blinking speed of the cursor (measured in milliseconds)
     cursorSpeed = 1000
     # character used for the cursor (HTML format is supported)
