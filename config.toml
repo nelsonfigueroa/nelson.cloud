@@ -124,7 +124,7 @@ enableEmoji = true
         Slidershare = ""
         Devto = ""
         Email = "nelsonfigueroa@hey.com"
-        RSS = true
+        RSS = false
 
 
 [params]
