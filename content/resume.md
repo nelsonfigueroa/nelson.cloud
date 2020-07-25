@@ -41,7 +41,7 @@ DNS, PostreSQL databases, Redis stores, and Kubernetes clusters
 
 **Databases**: MySQL, SQLite 3, PostgreSQL
 
-**Infrastructure**: Docker, Terraform, Kubernetes, CI/CD (Google Cloud Build, GitHub Actions), Amazon Web Services, Google Cloud Platform
+**Infrastructure**: Docker, Terraform, Kubernetes, CI/CD (Google Cloud Build, GitHub Actions, Jenkins), Amazon Web Services, Google Cloud Platform
 
 **Operating Systems**: Linux (Ubuntu, CentOS, Kali), MacOS, Windows 10
 
@@ -54,7 +54,7 @@ Bachelor of Science in Computer Information Technology
 
 ## Open-Source Contributions
 
-### [tldr](github.com/tldr-pages/tldr)
+### [tldr](https://github.com/tldr-pages/tldr)
 
 Simplified and community-driven instructions for command line tools.
 
