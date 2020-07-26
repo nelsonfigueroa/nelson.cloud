@@ -124,7 +124,7 @@ enableEmoji = true
         Slidershare = ""
         Devto = ""
         Email = "nelsonfigueroa@hey.com"
-        RSS = false
+        RSS = true
 
 
 [params]
@@ -243,7 +243,7 @@ enableEmoji = true
     linkToMarkdown = false
     # whether to show the full text content in RSS
     # 是否在 RSS 中显示全文内容
-    rssFullText = false
+    rssFullText = true
     # Table of the contents config
     # 目录配置
     [params.page.toc]
