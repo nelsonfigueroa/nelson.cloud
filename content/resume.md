@@ -1,5 +1,5 @@
 +++
-title = "Resume"
+title = "Nelson Figueroa"
 +++
 
 ---
@@ -82,3 +82,15 @@ Contributed practical examples for the following commands:
 - `rails routes`
 - `terraform`
 - `terraform fmt`
+
+---
+
+## Interests
+
+**Hobbies**: Videogames, Electric Guitar
+
+**Games**: Overwatch, Factorio
+
+**Shows**: Better Call Saul, Mr. Robot
+
+**Music**: [Mare Cognitum](https://marecognitum.bandcamp.com/track/crimson-abyss-ngc-2237)
