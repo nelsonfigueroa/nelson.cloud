@@ -61,7 +61,7 @@ Bachelor of Science in Computer Information Technology
 
 ## Personal Projects
 
-### [Personal Finance](https://github.com/nelsonfigueroa/personal_finance)
+**[github.com/nelsonfigueroa/personal_finance](https://github.com/nelsonfigueroa/personal_finance)**
 
 - Full Stack application built with Ruby on Rails
 - Applied Test-Driven Development (TDD) using RSpec and achieved a 3:1 test to code ratio
@@ -72,7 +72,7 @@ Bachelor of Science in Computer Information Technology
 
 ## Open-Source Contributions
 
-### [tldr](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa)
+**[github.com/tldr-pages/tldr](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa)**
 
 Simplified and community-driven instructions for command line tools.
 
