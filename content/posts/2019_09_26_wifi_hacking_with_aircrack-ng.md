@@ -27,7 +27,7 @@ The goal in this post is to use the tools included in `aircrack-ng` to:
 
 ## Hardware requirements
 
-To use `aircrack-ng` you'll need a wireless network adapter that has monitor mode and packet injection capabilities. Feel free to do some research about your particular card and it's compatability. There's a good guide on [the aircrack-ng site](https://www.aircrack-ng.org/doku.php?id=compatible_cards) that can help you with research. You can also do what I did and buy a cheap USB wireless adapter with these capabilities. I have the [Panda Wireless N600](https://www.amazon.com/Panda-2-4GHz-300Mbps-Wireless-Adapter/dp/B00U2SIS0O/) and it works perfectly fine on my Macbook Pro.
+To use `aircrack-ng` you'll need a wireless network adapter that has monitor mode and packet injection capabilities. Feel free to do some research about your particular card and it's compatibility. There's a good guide on [the aircrack-ng site](https://www.aircrack-ng.org/doku.php?id=compatible_cards) that can help you with research. You can also do what I did and buy a cheap USB wireless adapter with these capabilities. I have the [Panda Wireless N600](https://www.amazon.com/Panda-2-4GHz-300Mbps-Wireless-Adapter/dp/B00U2SIS0O/) and it works perfectly fine on my Macbook Pro.
 
 ## Installation
 
