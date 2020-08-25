@@ -6,7 +6,7 @@ title = "Nelson Figueroa"
 
 ## Work Experience
 
-#### Jr. DevOps Engineer @ Vitu (Dec 2019 - Present)
+### Jr. DevOps Engineer @ Vitu (Dec 2019 - Present)
 
 - Self-taught Terraform, Kubernetes, and Google Cloud Platform with minimal assistance
 - Developed Terraform modules and resources to provision GCP infrastructure, including Subnets, internal DNS, PostreSQL databases, Redis stores, and Kubernetes clusters
@@ -15,7 +15,7 @@ title = "Nelson Figueroa"
 - Automated creation of Docker images and Kubernetes deployment using Cloud Build CI/CD
 - Improved production deployment speed and reduced downtime associated with production changes
 
-#### Backend Software Engineering Intern @ Dollar Shave Club (June 2019 - Aug 2019)
+### Backend Software Engineering Intern @ Dollar Shave Club (June 2019 - Aug 2019)
 
 - Used Ruby on Rails to refactor Collateral Injection service with the support of a mentor
 - Reduced and replaced legacy code with clean, maintainable code
@@ -24,7 +24,7 @@ title = "Nelson Figueroa"
 - Completed Jira tasks using Agile/Scrum process along with entire Back-end team
 - Pushed code changes to production on a weekly basis
 
-#### Web Developer @ Student Affairs I.T., CSU Northridge (May 2018 - May 2019)
+### Web Developer @ Student Affairs I.T., CSU Northridge (May 2018 - May 2019)
 
 - Self-taught Ruby on Rails and began delivering production features within first 2 months
 - Led development of the National Center on Deafness web app, serving 30,000+ students and faculty
@@ -87,10 +87,12 @@ Contributed practical examples for the following commands:
 
 ## Interests
 
+**Tech**: Programming, DevOps/Infrastructure, Cybersecurity, Privacy
+
 **Hobbies**: Videogames, Electric Guitar
 
 **Games**: Overwatch, Factorio
 
-**Shows**: Better Call Saul, Mr. Robot
+**Shows**: Better Call Saul, Mr. Robot, The Eric Andre Show
 
 **Music**: [Mare Cognitum](https://marecognitum.bandcamp.com/track/crimson-abyss-ngc-2237)
