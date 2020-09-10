@@ -119,7 +119,7 @@ other = "{{ .Count }} minutes"
 other = "views"
 
 [author]
-other = "nelsonfigueroa@hey.com (Nelson Figueroa)"
+other = "nelsonfigueroa.sh@gmail.com (Nelson Figueroa)"
 
 [updatedOnDate]
 other = "Updated on {{ .Date }}"
