@@ -1,11 +1,11 @@
-baseURL = "https://nfigueroa.dev"
+baseURL = "https://nelsonfigueroa.sh"
 
 defaultContentLanguage = "en"
 
 theme = "LoveIt"
 
 # website title
-title = "nfigueroa.dev"
+title = "nelsonfigueroa.sh"
 
 # whether to use robots.txt
 # 是否使用 robots.txt
@@ -69,7 +69,7 @@ enableEmoji = true
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = "nfigueroa.dev"
+        title = "nelsonfigueroa.sh"
         # whether to omit favicon resource links
         noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
@@ -154,7 +154,7 @@ enableEmoji = true
       logo = ""
       # title name
       # 标题名称
-      name = "nfigueroa.dev"
+      name = "nelsonfigueroa.sh"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       # pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
@@ -399,7 +399,7 @@ enableEmoji = true
 [author]
   name = "Nelson Figueroa"
   email = "nelsonfigueroa.sh@gmail.com"
-  link = "nfigueroa.dev"
+  link = "nelsonfigueroa.sh"
 
 # Sitemap config
 [sitemap]
