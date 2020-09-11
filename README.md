@@ -1,1 +1,1 @@
-Files for my personal site [nfigueroa.dev](https://nfigueroa.dev). Built using [Hugo](https://gohugo.io). Deployed on AWS using S3, CloudFront, and Certificate Manager. A GitHub actions workflow automatically deploys code changes on push to the master branch.
+Files for my personal site [nelsonfigueroa.sh](https://nelsonfigueroa.sh). Built using [Hugo](https://gohugo.io). Deployed on AWS using S3, CloudFront, and Certificate Manager. A GitHub actions workflow automatically deploys code changes on push to the master branch.
