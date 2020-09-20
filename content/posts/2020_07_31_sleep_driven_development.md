@@ -3,7 +3,7 @@ title = "Sleep-Driven Development"
 summary = "Taking sleep into consideration during software development"
 date = "2020-07-31"
 categories = ["rant"]
-draft = false
+draft = true
 +++
 
 I know of Test-Driven Development, where a developer writes tests for new functionality first, then writes the actual code to implement a feature. I have also heard of Resume-Driven Development, where a developer implements new and trendy technologies to complete a task simply to be able to add that technology to their resume. Today, after getting asked to do some work early over the weekend and help with a task after midnight on a Sunday, I came up with Sleep-Driven Development.
