@@ -47,7 +47,9 @@ title = "Nelson Figueroa"
 
 **Databases**: MySQL, SQLite 3, PostgreSQL
 
-**Infrastructure**: Docker, Terraform, Kubernetes, CI/CD (Google Cloud Build, GitHub Actions, Jenkins), Amazon Web Services, Google Cloud Platform
+**Infrastructure**: Docker, Terraform, Kubernetes, CI/CD (Google Cloud Build, GitHub Actions, Jenkins)
+
+**Cloud**: Google Cloud Platform, Amazon Web Services
 
 **Operating Systems**: Linux (Ubuntu, CentOS, Kali), MacOS, Windows 10
 
