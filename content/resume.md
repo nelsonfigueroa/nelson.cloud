@@ -80,14 +80,16 @@ Bachelor of Science in Computer Information Technology
 
 **[github.com/tldr-pages/tldr](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa)**
 
-Simplified and community-driven instructions for command line tools.
+Simplified and community-driven "cheat sheet" for command line tools.
 
 Contributed practical examples for the following commands: 
 - `rails generate`
 - `rails db`
 - `rails routes`
-- `terraform`
+- `terraform validate`
 - `terraform fmt`
+- `minikube stop`
+- `minikube delete`
 
 ---
 
