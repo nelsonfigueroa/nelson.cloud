@@ -19,7 +19,7 @@ title = "Nelson Figueroa"
 
 ### Backend Software Engineering Intern @ Dollar Shave Club (June 2019 - Aug 2019)
 
-- Used Ruby on Rails to refactor Collateral Injection service with the support of a mentor
+- Used Ruby on Rails to refactor Collateral Injection service, which supports over 3 million customers, with the support of a mentor
 - Developed locally using docker-compose and MySQL
 - Reduced and replaced legacy code with clean, maintainable code
 - Learned and applied Test-Driven Development using RSpec to deliver well-tested features
@@ -41,7 +41,7 @@ title = "Nelson Figueroa"
 
 ## Skills
 
-**Programming/Scripting**: Ruby, Python, Bash, Go
+**Programming/Scripting**: Ruby, Python, Bash, Go/Golang
 
 **Web Technologies**: Ruby on Rails, HTML, CSS, JavaScript, Bootstrap CSS, Bulma CSS
 
@@ -97,7 +97,7 @@ Contributed practical examples for the following commands:
 
 **Hobbies**: Videogames, Electric Guitar
 
-**Games**: Overwatch, Factorio
+**Games**: Overwatch, Factorio, Red Dead Redemption 2
 
 **Shows**: Better Call Saul, Mr. Robot, The Eric Andre Show, The Boys
 
