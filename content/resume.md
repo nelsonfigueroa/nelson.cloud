@@ -90,6 +90,9 @@ Contributed practical examples for the following commands:
 - `terraform fmt`
 - `minikube stop`
 - `minikube delete`
+- `pmset displaysleepnow`
+- `kuebctl get`
+- `kubectl describe`
 
 ---
 
