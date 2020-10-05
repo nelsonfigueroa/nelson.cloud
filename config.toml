@@ -123,7 +123,7 @@ enableEmoji = true
         Angellist = ""
         Slidershare = ""
         Devto = ""
-        Email = "nelsonfigueroa.sh@gmail.com"
+        Email = "nelsonfigueroa07@gmail.com"
         RSS = true
 
 
@@ -398,7 +398,7 @@ enableEmoji = true
 # Author config
 [author]
   name = "Nelson Figueroa"
-  email = "nelsonfigueroa.sh@gmail.com"
+  email = "nelsonfigueroa07@gmail.com"
   link = "nelsonfigueroa.sh"
 
 # Sitemap config
