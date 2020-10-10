@@ -93,9 +93,9 @@ enableEmoji = true
           # URL of avatar shown in home page
           avatarURL = "https://avatars3.githubusercontent.com/u/30811275?s=400&u=5a46dc5b4505aafc7552301b006ec3d6188608ce&v=4"
           # title shown in home page (HTML format is supported)
-          title = ""
+          title = "Nelson Figueroa"
           # subtitle shown in home page
-          subtitle = "Hi, I'm Nelson. <br> I'm a Software Engineer based in Los Angeles, CA. <br> I work with Ruby on Rails, Docker, Terraform, and Kubernetes. <br> <span style='color:#00b89f'>I'm available for work!</span> <br> Feel free to reach out :)"
+          subtitle = "Hi, I'm Nelson. <br> I'm a Software Engineer based in Los Angeles, CA. <br> I work with technologies like Ruby on Rails, Docker, Terraform, and Kubernetes."
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
@@ -343,7 +343,7 @@ enableEmoji = true
   # TypeIt 配置
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
-    speed = 45
+    speed = 35
     # blinking speed of the cursor (measured in milliseconds)
     cursorSpeed = 1000
     # character used for the cursor (HTML format is supported)
