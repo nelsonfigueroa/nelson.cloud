@@ -45,14 +45,14 @@ enableEmoji = true
         # title will be shown when you hover on this menu link.
         title = ""
         weight = 1
-      [[languages.en.menu.main]]
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Categories"
-        url = "/categories/"
-        title = ""
-        weight = 2
+      # [[languages.en.menu.main]]
+      #   identifier = "categories"
+      #   pre = ""
+      #   post = ""
+      #   name = "Categories"
+      #   url = "/categories/"
+      #   title = ""
+      #   weight = 2
       [[languages.en.menu.main]]
         identifier = "resume"
         pre = ""
