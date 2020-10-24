@@ -6,7 +6,7 @@ title = "Nelson Figueroa"
 
 ## Work Experience
 
-### Jr. DevOps Engineer @ Vitu (Dec 2019 - Present)
+### Jr. DevOps Engineer @ Vitu (Dec 2019 - Oct 2020)
 
 - Self-taught Terraform, Kubernetes, and Google Cloud Platform with minimal assistance
 - Developed Terraform resources and modules to provision GCP infrastructure including: VPC networks, subnets, DNS, PostgreSQL databases, Redis stores, and Kubernetes clusters
