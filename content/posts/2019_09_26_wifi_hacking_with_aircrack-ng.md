@@ -180,7 +180,7 @@ Your terminal screen will continue to fill with these messages. Keep the command
 
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
 
- 7C:B1:DF:B9:12:59  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent
+ 7C:B1:DF:B9:12:59  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent   
 
  BSSID              STATION            PWR   Rate    Lost    Frames  Probe
 

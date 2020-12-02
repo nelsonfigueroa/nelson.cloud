@@ -6,6 +6,10 @@ title = "Nelson Figueroa"
 
 ## Work Experience
 
+### Software Engineer 3 @ Edmunds (Oct 2020 - Present)
+
+tbd ;)
+
 ### Jr. DevOps Engineer @ Vitu (Dec 2019 - Oct 2020)
 
 - Self-taught Terraform, Kubernetes, and Google Cloud Platform with minimal assistance
@@ -62,17 +66,6 @@ title = "Nelson Figueroa"
 Bachelor of Science in Computer Information Technology 
 
 [*California State University, Northridge*](https://www.csun.edu/)
-
----
-
-## Personal Projects
-
-**[github.com/nelsonfigueroa/personal_finance](https://github.com/nelsonfigueroa/personal_finance)**
-
-- Full Stack application built with Ruby on Rails
-- Applied Test-Driven Development (TDD) using RSpec and achieved a 3:1 test to code ratio
-- Containerized with Docker and created a docker-compose YAML to run along with a PostgreSQL container
-- Implemented GitHub Actions CI/CD to automatically build and push a docker image to Docker Hub.
 
 ---
 
