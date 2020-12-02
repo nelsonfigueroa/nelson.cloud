@@ -1,0 +1,14 @@
+<header id="banner">
+    <nav>
+        <ul>
+            <li>
+                <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            </li>
+            {{ range .Site.Menus.main.ByWeight -}}
+            <li>
+                {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">/{{- .Name -}}</a>{{ .Post }}
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
+</header>
