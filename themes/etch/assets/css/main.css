@@ -29,7 +29,7 @@ header#banner a {
 
 header#banner a:hover {
     color: #000;
-    background-color: #DBDBDB;
+    background-color: #cccccc;
 }
 
 header#banner nav {
@@ -67,7 +67,7 @@ main#content a {
 
 main#content a:hover {
     color: #000;
-    background-color: #DBDBDB;
+    background-color: #cccccc;
 }
 
 main#content h1,
@@ -122,7 +122,7 @@ main#content ul#posts li:before {
 
 main#content ul#posts li a:hover {
     color: #000;
-    background-color: #DBDBDB;
+    background-color: #cccccc;
 }
 
 /* single.html styles */
@@ -254,7 +254,6 @@ main#content section.footnotes {
 }
 
 footer#footer {
-    color: #949494;
     margin: 40px 0;
     padding-bottom: 15px;
     border-bottom: dashed 1px;
