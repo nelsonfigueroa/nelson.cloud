@@ -1,5 +1,5 @@
 baseURL = "https://nelsonfigueroa.sh"
-title = "/home"
+title = "nelsonfigueroa.sh"
 theme = "etch"
 languageCode = "en-US"
 enableInlineShortcodes = true
@@ -13,12 +13,6 @@ pygmentsUseClasses = true
   highlight = true
 
 [menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about"
-    weight = 5
   [[menu.main]]
     identifier = "resume"
     name = "resume"

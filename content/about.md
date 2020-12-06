@@ -1,1 +1,0 @@
-I'm Nelson. I'm a Software Engineer that works with technologies like Ruby on Rails, Docker, Kuberenetes, Terraform, and AWS.
