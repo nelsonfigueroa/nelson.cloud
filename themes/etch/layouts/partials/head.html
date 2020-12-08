@@ -27,5 +27,7 @@
     {{ $css := $resources | resources.Concat "css/style.css" | minify }}
     {{ printf `<link rel="stylesheet" href="%s">` $css.RelPermalink | safeHTML }}
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet"> 
     <title>{{ .Title }}</title>
 </head>
