@@ -5,14 +5,31 @@ html {
     scrollbar-color: #6c6c6c #2e2e2e;
 }
 
+/* Webkit/Blink Browsers */
+::selection {
+    color: #000;
+    background-color: #cccccc;
+}
+
+/* Gecko Browsers */
+::-moz-selection {
+    color: #000;
+    background-color: #cccccc;
+}
+
 body {
     color: #cccccc;
-    background: #000;
+    background-color: #000;
 }
 
 header#banner a {
     color: #DBDBDB;
     text-decoration: none;
+}
+
+header#banner a:hover {
+    color: #000;
+    background-color: #cccccc;
 }
 
 header#banner nav ul li a {
@@ -23,8 +40,22 @@ main#content a {
     color: #00a6ff;
 }
 
+main#content a:hover {
+    color: #000;
+    background-color: #cccccc;
+}
+
+main#content ul#posts li a:hover {
+    color: #000;
+    background-color: #cccccc;
+}
+
 main#content p {
     color: #cccccc;
+}
+
+main#content p code {
+    color: orange;
 }
 
 main#content hr {
