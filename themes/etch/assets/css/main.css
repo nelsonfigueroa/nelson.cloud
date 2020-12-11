@@ -120,8 +120,20 @@
     box-sizing: border-box;
 }
 
+/* Webkit/Blink Browsers */
+::selection {
+    color: #cccccc;
+    background-color: #000;
+}
+
+/* Gecko Browsers */
+::-moz-selection {
+    color: #cccccc;
+    background-color: #000;
+}
+
 body {
-    font-family: "Source Code Pro", Arial;
+    font-family: "Source Code Pro", monospace;
     font-size: 14px;
     width: 100%;
     margin: 0 auto;
@@ -139,13 +151,13 @@ header#banner {
 }
 
 header#banner a {
-    color: #313a3d;
+    color: #000;
     text-decoration: none;
 }
 
 header#banner a:hover {
-    color: #000;
-    background-color: #cccccc;
+    color: #cccccc;
+    background-color: #000;
 }
 
 header#banner nav {
@@ -165,16 +177,8 @@ header#banner nav ul li {
 }
 
 header#banner nav ul li a {
-    color: #454545;
+    color: #000;
 }
-
-/* main#content article header {
-    font-family: 'Arial', monospace;
-}
-
-main#content article p {
-    font-family: 'Arial', monospace;
-} */
 
 main#content a {
     color: #007dfa;
@@ -182,8 +186,8 @@ main#content a {
 }
 
 main#content a:hover {
-    color: #000;
-    background-color: #cccccc;
+    color: #cccccc;
+    background-color: #000;
 }
 
 main#content h1,
@@ -206,7 +210,7 @@ main#content h6 + p {
 }
 
 main#content p {
-    color: #394548;
+    color: #000;
     margin: 16px 0;
 }
 
@@ -237,8 +241,8 @@ main#content ul#posts li:before {
 }
 
 main#content ul#posts li a:hover {
-    color: #000;
-    background-color: #cccccc;
+    color: #cccccc;
+    background-color: #000;
 }
 
 /* single.html styles */
@@ -338,7 +342,7 @@ main#content pre {
 }
 
 main#content p code {
-    color: orange;
+    color: rgb(255, 85, 7);
 }
 
 main#content code {
