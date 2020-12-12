@@ -99,4 +99,4 @@ Contributed practical examples for the following commands:
 
 **Shows**: Better Call Saul, Mr. Robot, The Eric Andre Show, The Boys
 
-**Music**: [Mare Cognitum](https://marecognitum.bandcamp.com/track/crimson-abyss-ngc-2237)
+**Music**: Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
