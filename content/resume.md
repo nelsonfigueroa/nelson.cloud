@@ -97,6 +97,6 @@ Contributed practical examples for the following commands:
 
 **Games**: Overwatch, Factorio, Red Dead Redemption 2
 
-**Shows**: Better Call Saul, Mr. Robot, The Eric Andre Show, The Boys
+**Shows**: The Mandalorian, Better Call Saul, Mr. Robot, The Eric Andre Show, The Boys
 
 **Music**: Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
