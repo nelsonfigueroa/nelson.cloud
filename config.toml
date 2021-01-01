@@ -25,18 +25,6 @@ pygmentsUseClasses = true
     url = "/resume"
     weight = 10
   [[menu.main]]
-    identifier = "github"
-    name = "github"
-    title = "github"
-    url = "https://github.com/nelsonfigueroa"
-    weight = 20
-  [[menu.main]]
-    identifier = "linkedin"
-    name = "linkedin"
-    title = "linkedin"
-    url = "https://www.linkedin.com/in/nelsonfigueroa07/"
-    weight = 30
-  [[menu.main]]
     identifier = "rss"
     name = "rss"
     title = "rss"

@@ -35,4 +35,12 @@ main#content pre {
     margin-left: -3.8%;
     padding: 1.5rem 2.2rem;
 }
+
+main#content ul#posts li {
+    display: inline-block;
+}
+
+main#content ul#posts li time {
+    display: inline-block;
+}
 }

@@ -4,6 +4,8 @@ title = "Nelson Figueroa"
 
 ---
 
+[LinkedIn](https://www.linkedin.com/in/nelsonfigueroa07/) | [GitHub](https://github.com/nelsonfigueroa)
+
 ## Work Experience
 
 ### Software Engineer 3 @ Edmunds (Oct 2020 - Present)
