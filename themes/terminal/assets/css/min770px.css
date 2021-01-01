@@ -1,6 +1,8 @@
+/*These styles apply to bigger screens (laptops, etc) */
+
 @media (min-width: 770px) {
 body {
-    width: 600px;
+    width: 650px;
     line-height: 1.5;
 }
 
