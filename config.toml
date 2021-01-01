@@ -13,7 +13,7 @@ pygmentsUseClasses = true
 
 [params]
   description = "Nelson Figueroa's personal site."
-  copyright = "Nelson Figueroa | 2020"
+  copyright = "Nelson Figueroa | 2021"
   dark = true
   highlight = true
 
@@ -51,4 +51,4 @@ pygmentsUseClasses = true
   unsafe = true
 
   [markup.tableOfContents]
-    ordered = true
+    ordered = false

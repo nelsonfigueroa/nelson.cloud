@@ -134,7 +134,7 @@
 
 body {
     font-family: "Source Code Pro", monospace;
-    font-size: 14px;
+    font-size: 14.5px;
     width: 100%;
     margin: 0 auto;
     padding: 0 16px;
@@ -196,7 +196,6 @@ main#content h3,
 main#content h4,
 main#content h5,
 main#content h6 {
-    margin-bottom: 0;
     line-height: 1.15;
 }
 
@@ -236,9 +235,9 @@ main#content ul#posts li a {
     text-decoration: none;
 }
 
-main#content ul#posts li:before { 
+/* main#content ul#posts li:before {  */
     /* content: "-";  margin-right: 9px; */
-}
+/* } */
 
 main#content ul#posts li a:hover {
     color: #cccccc;
@@ -249,7 +248,7 @@ main#content ul#posts li a:hover {
 main#content header#post-header h1 {
     display: block;
     line-height: 1.15;
-    font-size: 1rem;
+    font-size: 1.75rem;
 }
 
 main#content header#post-header time {
@@ -263,6 +262,10 @@ main#content #toc {
     line-height: 26px;
     margin: 16px 0;
     padding: 9px 14px;
+}
+
+main#content #toc li::before {
+    content: "# ";
 }
 
 main#content #toc h4 {
@@ -282,6 +285,8 @@ main#content #toc ul, main#content #toc ol {
     margin: 0;
     padding: 0 0 0 40px;
 }
+
+/* ordered/unordered list can be specified in config.toml */
 
 main#content #toc ul {
     list-style-type: none;

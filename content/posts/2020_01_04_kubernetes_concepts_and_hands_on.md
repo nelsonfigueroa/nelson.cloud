@@ -3,6 +3,7 @@ title = "Kubernetes Concepts and Hands-On with Minikube"
 summary = "Learning Kubernetes"
 date = "2020-01-04"
 categories = ["infrastructure"]
+toc = true
 +++
 
 {{< figure src="/learning_kubernetes_with_minikube/kubernetes.png" >}}
