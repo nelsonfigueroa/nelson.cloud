@@ -55,7 +55,9 @@ main#content p {
 }
 
 main#content p code {
-    color: orange;
+    background-color: #cccccc;
+    color: #000;
+    border-radius: 5px
 }
 
 main#content hr {

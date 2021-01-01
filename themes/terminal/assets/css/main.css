@@ -229,6 +229,12 @@ main#content ul#posts {
 main#content ul#posts li {
     margin: 5px 0;
     padding: 0;
+    display: block;
+}
+
+main#content ul#posts li time {
+    text-decoration: none;
+    display: block;
 }
 
 main#content ul#posts li a {
@@ -347,7 +353,9 @@ main#content pre {
 }
 
 main#content p code {
-    color: rgb(255, 85, 7);
+    background-color: #000;
+    color: #cccccc;
+    border-radius: 5px
 }
 
 main#content code {
@@ -380,6 +388,8 @@ main#content section.footnotes {
 
 footer#footer {
     margin: 40px 0;
+    padding-top: 15px;
     padding-bottom: 15px;
+    border-top: dashed 1px;
     border-bottom: dashed 1px;
 }
