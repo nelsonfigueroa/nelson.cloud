@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     
     steps:
     - uses: actions/checkout@v1
@@ -19,7 +19,6 @@ jobs:
       run: |
         pip3 install --upgrade setuptools
         pip3 install awscli --upgrade --user
-        # sudo pip install Pygments
         curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest \
         | grep  browser_download_url \
         | grep Linux-64bit.deb \
