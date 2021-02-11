@@ -120,18 +120,6 @@
     box-sizing: border-box;
 }
 
-/* Webkit/Blink Browsers */
-::selection {
-    color: #cccccc;
-    background-color: #000;
-}
-
-/* Gecko Browsers */
-::-moz-selection {
-    color: #cccccc;
-    background-color: #000;
-}
-
 body {
     font-family: "Source Code Pro", monospace;
     font-size: 14.5px;
@@ -150,23 +138,12 @@ header#banner {
     border-bottom: dashed 1px;
 }
 
-header#banner a {
-    color: #000;
-    text-decoration: none;
-}
-
-header#banner a:hover {
-    color: #cccccc;
-    background-color: #000;
-}
-
 header#banner nav {
     display: inline-block;
 }
 
 header#banner nav ul {
     list-style-type: none;
-    text-transform: lowercase;
     margin: 0;
     padding: 0;
 }
@@ -176,18 +153,8 @@ header#banner nav ul li {
     margin: 0 3px;
 }
 
-header#banner nav ul li a {
-    color: #000;
-}
-
 main#content a {
-    color: #007dfa;
     text-decoration: none;
-}
-
-main#content a:hover {
-    color: #cccccc;
-    background-color: #000;
 }
 
 main#content h1,
@@ -209,14 +176,12 @@ main#content h6 + p {
 }
 
 main#content p {
-    color: #000;
     margin: 16px 0;
 }
 
 main#content hr {
     height: 1px;
     border: 0;
-    background: #d8d8d8;
 }
 
 /* index.html styles */
@@ -245,11 +210,6 @@ main#content ul#posts li a {
     /* content: "-";  margin-right: 9px; */
 /* } */
 
-main#content ul#posts li a:hover {
-    color: #cccccc;
-    background-color: #000;
-}
-
 /* single.html styles */
 main#content header#post-header h1 {
     display: block;
@@ -259,11 +219,10 @@ main#content header#post-header h1 {
 
 main#content header#post-header time {
     display: block;
-    color: #767676;
 }
 
 main#content #toc {
-    border: 1px solid #b1b1b1;
+    border: 1px solid var(--secondary-color);
     border-radius: 1px;
     line-height: 26px;
     margin: 16px 0;
@@ -272,11 +231,6 @@ main#content #toc {
 
 main#content #toc li::before {
     content: "# ";
-}
-
-main#content #toc h4 {
-    color: #3d3d3d;
-    margin: 0;
 }
 
 main#content #toc nav#TableOfContents {
@@ -350,12 +304,6 @@ main#content figure figcaption p {
 main#content code,
 main#content pre {
     font-family: 'Menlo', monospace;
-}
-
-main#content p code {
-    background-color: #000;
-    color: #cccccc;
-    border-radius: 5px
 }
 
 main#content code {

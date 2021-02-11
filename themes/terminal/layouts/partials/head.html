@@ -11,6 +11,8 @@
 
     {{ $resources := slice -}}
 
+    {{ $resources = $resources | append (resources.Get "css/variables.css") -}}
+
     {{ $resources = $resources | append (resources.Get "css/main.css") -}}
 
     {{ $resources = $resources | append (resources.Get "css/min770px.css") -}}
