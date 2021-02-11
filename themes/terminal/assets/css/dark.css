@@ -1,80 +1,70 @@
-{{ if not (eq .Site.Params.dark "on") -}}
-@media (prefers-color-scheme: dark) {
-{{ end -}}
 html {
     scrollbar-color: #6c6c6c #2e2e2e;
 }
 
 /* Webkit/Blink Browsers */
 ::selection {
-    color: #000;
-    background-color: #cccccc;
+    color: var(--bg-color);
+    background-color: var(--text-color);
 }
 
 /* Gecko Browsers */
 ::-moz-selection {
-    color: #000;
-    background-color: #cccccc;
+    color: var(--bg-color);
+    background-color: var(--text-color);
 }
 
 body {
-    color: #cccccc;
-    background-color: #000;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 header#banner a {
-    color: #DBDBDB;
     text-decoration: none;
 }
 
 header#banner a:hover {
-    color: #000;
-    background-color: #cccccc;
+    color: var(--bg-color);
+    background-color: var(--text-color);
 }
 
 header#banner nav ul li a {
-    color: #cccccc;
+    color: var(--text-color);
 }
 
 main#content a {
-    color: #00a6ff;
+    color: var(--link-color);
 }
 
 main#content a:hover {
-    color: #000;
-    background-color: #cccccc;
+    color: var(--bg-color);
+    background-color: var(--text-color);
 }
 
 main#content ul#posts li a:hover {
-    color: #000;
-    background-color: #cccccc;
+    color: var(--bg-color);
+    background-color: var(--text-color);
 }
 
 main#content p {
-    color: #cccccc;
+    color: var(--text-color);
 }
 
 main#content p code {
-    background-color: #cccccc;
-    color: #000;
+    background-color: var(--text-color);
+    color: var(--bg-color);
     border-radius: 5px
 }
 
 main#content hr {
-    background: #5c5c5c;
-}
-
-main#content #toc h4 {
-    color: #d4d4d4;
+    background: var(--hr-color);
 }
 
 main#content ul#posts small {
-    color: #a7a7a7;
+    color: var(--secondary-color);
 }
 
 main#content header#post-header time {
-    color: #a7a7a7;
+    color: var(--secondary-color);
 }
-{{- if not (eq .Site.Params.dark "on") -}}
-}
-{{- end -}}
+

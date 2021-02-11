@@ -14,7 +14,7 @@ pygmentsUseClasses = true
 [params]
   description = "Nelson Figueroa's personal site."
   copyright = "Nelson Figueroa | 2021"
-  dark = true
+  # dark = "on" # force dark mode
   highlight = true
 
 [menu]
@@ -34,9 +34,28 @@ pygmentsUseClasses = true
 [permalinks]
   posts = "/:title/"
 
+# [markup.goldmark.extensions]
+#   definitionList = true
+#   footnote = true
+#   linkify = true
+#   strikethrough = true
+#   table = true
+#   taskList = true
+#   typographer = false
+
+[markup.highlight]
+  anchorLineNos = false # anchor links for each line number
+  codeFences = true
+  lineNoStart = 1
+  lineNos = false # enable line numbers
+  lineNumbersInTable = false # position of line numbers
+  noClasses = true
+  # style = "api" # only one style exists in syntax.css right now
+  # tabWidth = 4
+
 [markup.goldmark.renderer]
   # Allow HTML in Markdown
   unsafe = true
 
-  [markup.tableOfContents]
-    ordered = false
+[markup.tableOfContents]
+  ordered = false
