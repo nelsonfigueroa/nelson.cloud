@@ -2,7 +2,7 @@ body {
   --bg-color: white;
   --text-color: black;
   --secondary-color: #767676;
-  --link-color: #007dfa;
+  --link-color: #0358f5;
   --hr-color: #d8d8d8;
 }
 
@@ -27,7 +27,7 @@ body.dark {
     --bg-color: white;
     --text-color: black;
     --secondary-color: #767676;
-    --link-color: #007dfa;
+    --link-color: #0358f5;
     --hr-color: #d8d8d8;
   }
 }
