@@ -14,7 +14,6 @@ pygmentsUseClasses = true
 [params]
   description = "Nelson Figueroa's personal site."
   copyright = "Nelson Figueroa | 2021"
-  # dark = "on" # force dark mode
   highlight = true
 
 [menu]
