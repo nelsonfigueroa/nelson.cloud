@@ -86,6 +86,22 @@ main#content h6 {
     margin-top: 2em;
 }
 
+main#content h2::before {
+    content: "# ";
+}
+
+main#content h3::before {
+    content: "## ";
+}
+
+main#content h4::before {
+    content: "### ";
+}
+
+main#content h5::before {
+    content: "#### ";
+}
+
 main#content p {
     margin: 1em 0;
     color: var(--text-color);
