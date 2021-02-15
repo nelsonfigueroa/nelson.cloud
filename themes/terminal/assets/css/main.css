@@ -246,6 +246,16 @@ main#content figure figcaption p {
     padding-left: 0.5em;
 }
 
+/* for inline code `example` */
+main#content p code {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
+main#content figure ::selection {
+    background-color: var(--text-color);
+}
+
 main#content code,
 main#content pre {
     font-family: 'Menlo', monospace;
@@ -262,6 +272,13 @@ main#content pre {
     margin: 1.25em 0;
     padding: 1.5rem 1.5rem;
     line-height: 1.4;
+    background-color: black;
+    color: white;
+}
+
+main#content pre ::selection {
+    color: #000;
+    background-color: #cccccc;
 }
 
 main#content pre code {
