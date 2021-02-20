@@ -6,8 +6,6 @@ categories = ["code"]
 draft = false
 +++
 
-## Multiple Redirects in a Single Action
-
 When using `redirect_to` or `render` twice in one action, we get the `AbstractController::DoubleRenderError` error.
 
 For example, I had the following action with two `redirect_to` methods:

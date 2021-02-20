@@ -3,10 +3,9 @@ title = "Rails Links With URI Patterns"
 summary = "Comparing Rails URL Helpers and URI Patterns"
 date = "2020-03-26"
 categories = ["code"]
+tags = ["code"]
 draft = false
 +++
-
-## URL Helpers and URI Patterns
 
 While learning how to write tests for requests, I came across a different way of writing links in Rails. Up until this discovery I had used URL helpers like the following:
 
