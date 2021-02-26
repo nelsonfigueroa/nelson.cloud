@@ -2,8 +2,7 @@
 title = "Rails Links With URI Patterns"
 summary = "Comparing Rails URL Helpers and URI Patterns"
 date = "2020-03-26"
-categories = ["code"]
-tags = ["code"]
+categories = ["rails"]
 draft = false
 +++
 
