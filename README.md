@@ -1,1 +1,1 @@
-Repo for me personal site [nelsonfigueroa.sh](https://nelsonfigueroa.sh). Built using [Hugo](https://gohugo.io).
+Repo for my personal site [nelsonfigueroa.sh](https://nelsonfigueroa.sh). Built using [Hugo](https://gohugo.io).
