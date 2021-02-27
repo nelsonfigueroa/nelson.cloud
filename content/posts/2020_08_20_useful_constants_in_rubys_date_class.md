@@ -2,7 +2,7 @@
 title = "Useful Constants in Ruby's Date Class"
 summary = "Diving into useful constants in Ruby's Date class"
 date = "2020-08-20"
-categories = ["ruby"]
+tags = ["ruby"]
 draft = false
 +++
 
