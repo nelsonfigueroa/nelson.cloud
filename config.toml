@@ -9,7 +9,7 @@ pygmentsUseClasses = true
 # uncomment these to add to rss feed
 # [author]
   # name = "Nelson Figueroa"
-  # email = "nelsonfigueroa07@gmail.com"
+  # email = "example@test.com"
 
 [params]
   description = "Nelson Figueroa's personal site."

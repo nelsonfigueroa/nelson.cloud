@@ -12,7 +12,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Run a multi-line script
+    - name: Build static site and push to AWS
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
