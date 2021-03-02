@@ -16,7 +16,7 @@
 
 body {
     font-family: "Menlo", "Consolas", monospace;
-    font-size: 0.875em;
+    font-size: 0.9em;
     width: 100%;
     margin: 0 auto;
     padding: 0 1em;
@@ -271,7 +271,7 @@ main#content pre {
     white-space: pre;
     margin: 1.25em 0;
     padding: 1.5rem 1.5rem;
-    line-height: 1.4;
+    line-height: 1.5;
     background-color: black;
     color: white;
 }
