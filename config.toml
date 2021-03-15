@@ -12,7 +12,7 @@ pygmentsUseClasses = true
   # email = "example@test.com"
 
 [params]
-  description = "Nelson Figueroa's personal site."
+  description = "Personal site of Nelson Figueroa. I write about programming, privacy, cybersecurity, and software."
   copyright = "Nelson Figueroa | 2021"
   highlight = true
 

@@ -284,12 +284,14 @@ main#content pre ::selection {
 main#content pre code {
     padding-left: 0;
     margin-right: 1.25em;
+    color: var(--pre-color);
 }
 
 main#content pre {
     border: solid 0.0625em;
     border-radius: 0.3125em;
     border-style: solid;
+    border-color: var(--pre-color);
 }
 
 main#content section.footnotes {
