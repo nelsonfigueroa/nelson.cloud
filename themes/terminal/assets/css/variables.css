@@ -4,6 +4,7 @@ body {
   --secondary-color: #767676;
   --link-color: #034cd3;
   --hr-color: #d8d8d8;
+  --pre-color: white;
 }
 
 body.dark {
@@ -12,6 +13,7 @@ body.dark {
   --secondary-color: #a7a7a7;
   --link-color: #00a6ff;
   --hr-color: #5c5c5c;
+  --pre-color: #cccccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +23,7 @@ body.dark {
     --secondary-color: #a7a7a7;
     --link-color: #00a6ff;
     --hr-color: #5c5c5c;
+    --pre-color: #cccccc;
   }
 
   body.light {
@@ -29,5 +32,6 @@ body.dark {
     --secondary-color: #767676;
     --link-color: #034cd3;
     --hr-color: #d8d8d8;
+    --pre-color: white;
   }
 }
