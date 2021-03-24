@@ -8,20 +8,20 @@ body {
 }
 
 body.dark {
-  --bg-color: #000;
+  --bg-color: #131313;
   --text-color: #cccccc;
   --secondary-color: #a7a7a7;
-  --link-color: #00a6ff;
+  --link-color: #02a7ff;
   --hr-color: #5c5c5c;
   --pre-color: #cccccc;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    --bg-color: #000;
+    --bg-color: #131313;
     --text-color: #cccccc;
     --secondary-color: #a7a7a7;
-    --link-color: #00a6ff;
+    --link-color: #02a7ff;
     --hr-color: #5c5c5c;
     --pre-color: #cccccc;
   }
