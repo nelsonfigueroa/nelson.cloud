@@ -18,17 +18,17 @@ pygmentsUseClasses = true
 
 [menu]
   [[menu.main]]
-    identifier = "resume"
-    name = "resume"
-    title = "resume"
-    url = "/resume"
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about"
     weight = 10
-  [[menu.main]]
-    identifier = "rss"
-    name = "rss"
-    title = "rss"
-    url = "/index.xml"
-    weight = 40
+  # [[menu.main]]
+  #   identifier = "rss"
+  #   name = "rss"
+  #   title = "rss"
+  #   url = "/index.xml"
+  #   weight = 40
 
 [permalinks]
   posts = "/:title/"
