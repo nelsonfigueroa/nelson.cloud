@@ -93,7 +93,7 @@ And I got the following JSON response:
     "success": 1
 }
 ```
-The code appears to be encrypted. Based on previous experience, encrypted strings that end with a `=` are generally encoded in base64. I could be wrong, but I decided to try decoding it as a base64 string anyway:
+The code appears to be encoded. Based on previous experience, encoded strings that end with a `=` are generally encoded in base64. I could be wrong, but I decided to try decoding it as a base64 string anyway:
 
 ```
 $ echo QUpXRlAtR01QUlgtSVhSUFQtQ0dBVUEtUklNWE4= | base64 --decode
