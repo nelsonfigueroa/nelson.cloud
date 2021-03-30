@@ -5,6 +5,7 @@ languageCode = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+enableRobotsTXT = true
 
 # uncomment these to add to rss feed
 # [author]
