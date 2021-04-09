@@ -40,6 +40,7 @@ Simplified and community-driven "cheat sheet" for command line tools.
 
 Contributed practical examples for the following commands: 
 - `rails generate`
+- `rails destroy`
 - `rails db`
 - `rails routes`
 - `terraform validate`
