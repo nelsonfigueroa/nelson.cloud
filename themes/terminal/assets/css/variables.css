@@ -8,7 +8,7 @@ body {
 }
 
 body.dark {
-  --bg-color: #131313;
+  --bg-color: #0e0e0e;
   --text-color: #cccccc;
   --secondary-color: #a7a7a7;
   --link-color: #02a7ff;
@@ -18,7 +18,7 @@ body.dark {
 
 @media (prefers-color-scheme: dark) {
   body {
-    --bg-color: #131313;
+    --bg-color: #0e0e0e;
     --text-color: #cccccc;
     --secondary-color: #a7a7a7;
     --link-color: #02a7ff;
