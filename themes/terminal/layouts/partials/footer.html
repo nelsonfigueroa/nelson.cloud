@@ -1,3 +1,55 @@
 <footer id="footer">
     {{ .Site.Params.copyright }}
 </footer>
+
+<script>
+    const btn = document.querySelector(".theme-toggle");
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const nameBanner = document.querySelector("#name-banner");
+
+    // set the initial name banner based on user preference
+    if (nameBanner != null) {
+        if (prefersDarkScheme.matches) {
+            nameBanner.src = "/name_dark.png";
+        } else {
+            nameBanner.src = "/name_light.png";
+        }
+    }
+
+    // get user's theme preference from local storage, if it's available
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "dark") {
+        // change name banner to dark version
+        if (nameBanner != null) {
+            nameBanner.src = "/name_dark.png";
+        }
+
+        // toggle dark colors
+        document.body.classList.toggle("dark");
+    } else if (currentTheme == "light") {
+        // change name banner to dark version
+        if (nameBanner != null) {
+            nameBanner.src = "/name_light.png";
+        }
+
+        // toggle dark colors
+        document.body.classList.toggle("light");
+    }
+
+    // event listener for theme button
+    btn.addEventListener("click", function() {
+        // check user's OS setting
+        if (prefersDarkScheme.matches) {
+            document.body.classList.toggle("light");
+            // store preference
+            var theme = document.body.classList.contains("light") ? "light" : "dark";
+        } else {
+            document.body.classList.toggle("dark");
+            // store preference
+            var theme = document.body.classList.contains("dark") ? "dark" : "light";
+        }
+        // save preference to localstorage
+        localStorage.setItem("theme", theme);
+    });
+</script>
