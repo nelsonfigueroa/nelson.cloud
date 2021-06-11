@@ -8,15 +8,15 @@ title = "Nelson Figueroa"
 
 ## Skills
 
-**Programming/Scripting**: Ruby, Python, Bash, Go/Golang
+**Programming/Scripting**: Ruby, Python, Bash, Golang
 
 **Web Technologies**: Ruby on Rails, HTML, CSS, JavaScript, Bootstrap CSS, Bulma CSS
 
 **Databases**: MySQL, SQLite 3, PostgreSQL
 
-**Infrastructure**: Docker, Terraform, Kubernetes, CI/CD (Google Cloud Build, GitHub Actions, Jenkins)
+**Infrastructure**: Docker, Terraform, Kubernetes, CI/CD (Google Cloud Build, GitHub Actions, Jenkins, Spinnaker)
 
-**Cloud**: Google Cloud Platform, Amazon Web Services
+**Cloud**: Amazon Web Services, Google Cloud Platform
 
 **Operating Systems**: Linux (Ubuntu, CentOS, Kali), MacOS, Windows 10
 
@@ -26,9 +26,11 @@ title = "Nelson Figueroa"
 
 ##  Education 
 
-Bachelor of Science in Computer Information Technology 
-
 [*California State University, Northridge*](https://www.csun.edu/)
+
+Bachelor of Science in Computer Information Technology (2019)
+
+Master of Science in Software Engineering (In Progress)
 
 ---
 
@@ -61,6 +63,6 @@ Contributed practical examples for the following commands:
 
 **Games**: Overwatch, Factorio, Red Dead Redemption 2
 
-**Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible
+**Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman
 
 **Music**: Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
