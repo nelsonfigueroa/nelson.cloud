@@ -1,5 +1,5 @@
 +++
-title = "Avoiding Double Render Errors in Rails"
+title = "Resolving Double Render Errors in Rails"
 summary = "Prevent Rails from throwing errors when including two redirects in an action"
 date = "2020-04-10"
 tags = ["rails"]
@@ -43,4 +43,4 @@ end
 
 Sometimes I forget that actions are just regular ruby methods and can be exited out of by using `return`.
 
-This guide explains it well: [Avoiding Double Render Errors](https://guides.rubyonrails.org/layouts_and_rendering.html#avoiding-double-render-errors)
+More information is available here: [Avoiding Double Render Errors](https://guides.rubyonrails.org/layouts_and_rendering.html#avoiding-double-render-errors)

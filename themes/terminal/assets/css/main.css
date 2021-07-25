@@ -26,7 +26,6 @@ body {
 }
 
 header#banner {
-    /* margin: 1.5625em 0; */
     margin: 2em 0;
     padding-top: 1.1em;
     padding-bottom: 1.1em;
@@ -132,9 +131,10 @@ main#content ul#posts small {
 }
 
 main#content ul#posts li {
-    margin: 0.3125em 0;
+    margin: 0.3125em ;
     padding: 0;
     display: block;
+    line-height: 18px;
 }
 
 main#content ul#posts li time {
@@ -151,9 +151,30 @@ main#content ul#posts li a:hover {
     background-color: var(--text-color);
 }
 
-/* main#content ul#posts li:before {  */
-    /* content: "-";  margin-right: 9px; */
-/* } */
+/* Styles for posts list for smaller screens */
+@media (max-width: 48.125em) {
+    main#content ul#posts li {
+        margin-bottom: 1.2em ;
+    }
+
+    main#content ul#posts li time:before {  
+        content: "┌──";
+        /*margin-right: 9px;*/
+    } 
+
+    main#content ul#posts li a:before {  
+        content: "└─";
+        color: var(--text-color);
+        /*margin-right: 9px; */
+    }
+
+    main#content ul#posts li a:hover:before {  
+        /* Setting colors so :before element does not get highlighted */
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        /*margin-right: 9px; */
+    }
+}
 
 /* single.html styles */
 main#content header#post-header h1 {
@@ -208,6 +229,14 @@ main#content #toc ol li {
 main#content #toc ol li:before {
     content: counters(item, ".") ". ";
     counter-increment: item;
+}
+
+main#content img#name-banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    width: 90%;
 }
 
 main#content img {
@@ -269,11 +298,11 @@ main#content pre {
     display: block;
     overflow-x: auto;
     white-space: pre;
-    margin: 1.25em 0;
     padding: 1.5rem 1.5rem;
     line-height: 1.5;
     background-color: black;
-    color: white;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 main#content pre ::selection {
