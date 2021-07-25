@@ -8,7 +8,7 @@ title = "Nelson Figueroa"
 
 ## Skills
 
-**Programming/Scripting**: Ruby, Python, Bash, Golang
+**Programming/Scripting**: Ruby, Python, Bash, Go
 
 **Web Technologies**: Ruby on Rails, HTML, CSS, JavaScript, Bootstrap CSS, Bulma CSS
 
@@ -20,7 +20,7 @@ title = "Nelson Figueroa"
 
 **Operating Systems**: Linux (Ubuntu, CentOS, Kali), MacOS, Windows 10
 
-**Other**: Command line, Agile/Scrum, Jira, Git, RSpec, Test-driven Development
+**Other**: Command Line, Agile/Scrum, Jira, Git, RSpec
 
 ---
 

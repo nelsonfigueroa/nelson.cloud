@@ -10,7 +10,7 @@ This is a collection of my most used privacy tools and services. I have not been
 
 ## Firefox
 
-**Official site:** [https://www.mozilla.org/en-US/firefox/new/](https://www.mozilla.org/en-US/firefox/new/)
+**Official site:** [https://www.mozilla.org/](https://www.mozilla.org/en-US/firefox/new/)
 
 Firefox has always been a great alternative to Chrome for privacy purposes. The team continues to improve privacy with every iteration. For example, [Firefox will have a cache partitioning feature soon](https://arstechnica.com/gadgets/2020/12/firefox-v85-will-improve-its-cache-partitioning-for-stronger-privacy/) that will enhance privacy even more. Other browsers like Chrome and Safari already have this feature, but Safari isn't as extensible as Firefox, and Chrome offers no privacy from Google itself. For the average user it's probably best to go with FireFox and add the uBlock Origin extension to block advertisements everywhere.
 

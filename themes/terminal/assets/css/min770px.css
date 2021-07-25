@@ -2,7 +2,7 @@
 
 @media (min-width: 48.125em) {
     body {
-        width: 45em;
+        width: 58em;
         line-height: 1.75em;
     }
 
@@ -30,13 +30,19 @@
     }
 
     main#content pre {
-        width: 108%;
-        margin-left: -3.8%;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
         padding: 1.5rem 2.2rem;
     }
 
+    /*
+    main#content ul#posts li:before {  
+        content: "-";
+    }
+    */
+
     main#content ul#posts li {
-        display: inline-block;
+        line-height: 200%;
     }
 
     main#content ul#posts li time {
