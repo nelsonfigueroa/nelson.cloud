@@ -1,6 +1,6 @@
 +++
 title = "Resolving AWS CloudFront Access Denied Errors when using Private Bucket and Multiple index.html Templates"
-summary = "Resolving Access Denied Errors in a CloudFront Distribution Using an Origin Access Identity and Containing Multiple index.html Templates."
+summary = "Resolving Access Denied Errors in a CloudFront Distribution that uses a Private S3 Bucket, Origin Access Identity, and Contains Multiple index.html Templates."
 date = "2021-07-25"
 tags = ["AWS"]
 toc = false

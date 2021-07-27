@@ -236,7 +236,8 @@ main#content img#name-banner {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-    width: 90%;
+    /* moved width and height to HTML element for best practices */
+    /*width: 90%;*/
 }
 
 main#content img {
