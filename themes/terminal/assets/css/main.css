@@ -17,6 +17,8 @@
 body {
     font-family: "Menlo", "Consolas", monospace;
     font-size: 0.9em;
+    font-style: normal;
+    text-rendering: geometricPrecision;
     width: 100%;
     margin: 0 auto;
     padding: 0 1em;
