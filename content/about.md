@@ -52,6 +52,8 @@ Contributed practical examples for the following commands:
 - `pmset displaysleepnow`
 - `kubectl get`
 - `kubectl describe`
+- `kubectl logs`
+- `kubectl rollout`
 
 ---
 
