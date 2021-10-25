@@ -54,6 +54,7 @@ Contributed practical examples for the following commands:
 - `kubectl describe`
 - `kubectl logs`
 - `kubectl rollout`
+- `kubectl delete`
 
 ---
 
