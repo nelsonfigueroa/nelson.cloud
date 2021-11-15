@@ -8,16 +8,20 @@
 
     const nameBanner = document.querySelector("#name-banner");
 
-    // set the initial name banner based on user preference
-    if (nameBanner != null) {
-        if (prefersDarkScheme.matches) {
+    // set innitial banner and button text based on user preference
+    if (prefersDarkScheme.matches) {
+        btn.innerHTML = "./light-mode";
+        if (nameBanner != null) {
             nameBanner.src = "/name_dark.png";
-        } else {
+        }
+    } else {
+        btn.innerHTML = "./dark-mode";
+        if (nameBanner != null) {
             nameBanner.src = "/name_light.png";
         }
     }
 
-    // get user's theme preference from local storage, if it's available
+    // get user's theme preference from local storage, if it's available, and set theme based on that
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme == "dark") {
         // change name banner to dark version
