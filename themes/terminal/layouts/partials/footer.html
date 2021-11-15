@@ -25,7 +25,9 @@
             nameBanner.src = "/name_dark.png";
         }
 
-        // toggle dark colors
+        btn.innerHTML = "./light-mode";
+
+        // add dark class to <body>
         document.body.classList.toggle("dark");
     } else if (currentTheme == "light") {
         // change name banner to dark version
@@ -33,23 +35,41 @@
             nameBanner.src = "/name_light.png";
         }
 
-        // toggle dark colors
+        btn.innerHTML = "./dark-mode";
+
+        // add light class to <body>
         document.body.classList.toggle("light");
     }
 
     // event listener for theme button
     btn.addEventListener("click", function() {
-        // check user's OS setting
-        if (prefersDarkScheme.matches) {
-            document.body.classList.toggle("light");
-            // store preference
-            var theme = document.body.classList.contains("light") ? "light" : "dark";
+        // check if light or dark mode has been set
+        var theme = document.body.classList.contains("light") ? "light" : "dark";
+
+        if (theme == "light") {
+            document.body.classList.toggle("light"); // remove light mode class
+            document.body.classList.toggle("dark"); // add dark mode class
+            if (nameBanner != null) {
+                nameBanner.src = "/name_dark.png"; // update banner (if present)
+            }
+
+            btn.innerHTML = "./light-mode"
+
+            // update theme variable to store
+            theme = "dark";
         } else {
-            document.body.classList.toggle("dark");
-            // store preference
-            var theme = document.body.classList.contains("dark") ? "dark" : "light";
+            document.body.classList.toggle("dark"); // remove dark mode class
+            document.body.classList.toggle("light"); // add light mode class
+            if (nameBanner != null) {
+                nameBanner.src = "/name_light.png"; // update banner (if present)
+            }
+
+            btn.innerHTML = "./dark-mode"
+
+            // update theme variable to store
+            theme = "light";
         }
-        // save preference to localstorage
+        // save preference to localstorage for future page loads by user
         localStorage.setItem("theme", theme);
     });
 </script>
