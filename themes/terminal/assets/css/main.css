@@ -64,6 +64,26 @@ header#banner nav ul li a {
     color: var(--text-color);
 }
 
+button.theme-toggle {
+    border: none;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-family: "Menlo", "Consolas", monospace;
+    font-size: 1em;
+    font-style: normal;
+    text-rendering: geometricPrecision;
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+
+button.theme-toggle:hover {
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+
 main#content a {
     text-decoration: none;
     color: var(--link-color);
