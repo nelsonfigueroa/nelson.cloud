@@ -1,6 +1,6 @@
 +++
 title = "Handling Decimal Precision in Rails"
-summary = "Set precision and scale to decimal database columns."
+summary = "Set precision and scale to decimal type database columns."
 date = "2021-03-22"
 tags = ["rails"]
 toc = true

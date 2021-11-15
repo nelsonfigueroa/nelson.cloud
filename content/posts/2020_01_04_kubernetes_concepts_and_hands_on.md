@@ -1,12 +1,12 @@
 +++
 title = "Kubernetes Concepts and Hands-On with Minikube"
-summary = "Learning Kubernetes"
+summary = "Learn Kubernetes concepts and get hands-on experience with Minikube"
 date = "2020-01-04"
 tags = ["infrastructure"]
 toc = true
 +++
 
-{{< figure src="/learning_kubernetes_with_minikube/kubernetes.png" >}}
+{{< figure src="/learning_kubernetes_with_minikube/kubernetes.png" alt="Kubernetes logo" >}}
 
 ## Introduction
 
