@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: nelsonfigueroa.sh
-Token: f7f41a0c30df1c4acfd2d9c17bca9aa98af45935d09f0526ccd7755e381bd4d2
+Domain: nelsonfigueroa.dev
+Token: dd2463607c038a25f1adc31201b77c960c753e71dc578958741b5ef18e5f7875
