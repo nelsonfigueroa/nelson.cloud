@@ -98,6 +98,6 @@ I've also learned a lot about privacy in these subreddits:
 
 [/r/privacy](https://www.reddit.com/r/privacy/)
 
-[/r/privacytoolsio](https://www.reddit.com/r/privacytoolsio/)
+[/r/PrivacyGuides](https://www.reddit.com/r/PrivacyGuides/)
 
 [/r/degoogle](https://www.reddit.com/r/degoogle/)
