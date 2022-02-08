@@ -3,7 +3,7 @@
 @media (min-width: 48.125em) {
     body {
         width: 50em;
-        line-height: 1.75em;
+        line-height: 1.3em;
     }
 
     main#content hr {
@@ -38,7 +38,7 @@
     */
 
     main#content ul#posts li {
-        line-height: 200%;
+        line-height: 1.5em;
     }
 
     main#content ul#posts li time {

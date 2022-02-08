@@ -16,21 +16,21 @@
 
 body {
     font-family: "Menlo", "Consolas", monospace;
-    font-size: 1em;
+    font-size: 16px;
     font-style: normal;
     text-rendering: geometricPrecision;
     width: 100%;
     margin: 0 auto;
     padding: 0 1em;
-    line-height: 1.5;
+    line-height: 1.3;
     color: var(--text-color);
     background-color: var(--bg-color);
 }
 
 header#banner {
     margin: 2em 0;
-    padding-top: 1.1em;
-    padding-bottom: 1.1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     margin-bottom: 3.125em;
     border-top: dashed 0.0625em;
     border-bottom: dashed 0.0625em;
@@ -142,11 +142,12 @@ main#content hr {
 }
 
 /* index.html styles */
+
+/* posts list */
 main#content ul#posts {
     list-style-type: none;
     margin-top: 0;
     padding: 0;
-    line-height: 1.75em;
 }
 
 main#content ul#posts small {
@@ -157,7 +158,7 @@ main#content ul#posts li {
     margin: 0.3125em ;
     padding: 0;
     display: block;
-    line-height: 18px;
+    line-height: 1.15em;
 }
 
 main#content ul#posts li time {
@@ -202,7 +203,7 @@ main#content ul#posts li a:hover {
 /* single.html styles */
 main#content header#post-header h1 {
     display: block;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
 main#content header#post-header time {
@@ -353,8 +354,8 @@ main#content section.footnotes {
 
 footer#footer {
     margin: 2em 0;
-    padding-top: 1.1em;
-    padding-bottom: 1.1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border-top: dashed 0.0625em;
     border-bottom: dashed 0.0625em;
 }
