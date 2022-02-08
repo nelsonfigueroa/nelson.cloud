@@ -30,8 +30,6 @@ title = "Nelson Figueroa"
 
 Bachelor of Science in Computer Information Technology (2019)
 
-Master of Science in Software Engineering (In Progress)
-
 ---
 
 ## Open-Source Contributions
