@@ -6,7 +6,9 @@ tags = ["AWS"]
 toc = false
 +++
 
-These are `curl` commands that you can easily copy and paste to retrieve useful EC2 information for use in scripts. Run any of these commands within an EC2 instance. These commands have been tested on an Amazon Linux 2 instance.
+Sometimes I need to get information about an EC2 instance within a script but the [AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html) doesn't provide many useful examples.
+Instead of poking around through all the available metadata endpoints, I made this list of curl commands to retrieve commonly used EC2 information.
+Run any of these commands within an EC2 instance. These commands have been tested on an Amazon Linux 2 instance.
 
 These are not all the possible values you can retrieve from the metadata service, these are only the ones I found most useful.
 
