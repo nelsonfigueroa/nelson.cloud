@@ -64,6 +64,6 @@ Contributed practical examples for the following commands:
 
 **Games**: Overwatch, Factorio, Red Dead Redemption 2
 
-**Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman
+**Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman, Silicon Valley, The Boondocks
 
 **Music**: Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
