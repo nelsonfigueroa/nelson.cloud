@@ -24,6 +24,12 @@ enableRobotsTXT = true
     title = "about"
     url = "/about"
     weight = 10
+  [[menu.main]]
+    identifier = "support"
+    name = "support-me"
+    title = "support"
+    url = "https://buymeacoffee.com/nelsonfigueroa"
+    weight = 20
   # [[menu.main]]
   #   identifier = "rss"
   #   name = "rss"
