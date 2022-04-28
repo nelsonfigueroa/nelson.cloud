@@ -119,6 +119,14 @@ while True:
 After that, I left my script running overnight:
 {{< figure src="/retaliating_against_metamask_scammers/script_output_2.png" alt="script output with loop" >}}
 
+The morning after, I noticed that my script output was stuck along with a new response message...
+{{< figure src="/retaliating_against_metamask_scammers/scammer_response.png" alt="scammer response" >}}
+
+I guess they caught on LOL. They blocked my IP address from sending requests, so I simply changed changed my IP address and carried on.
+
 ## Final Thoughts
 
-I hate scammers. I hope I make their lives more difficult like this. If they're smart, they'll filter out seed phrases coming in from my IP address. But considering that their fake MetaMask site doesn't use a domain or SSL, they probably aren't very bright.
+I hate scammers. I hope I made their lives difficult. 
+If they're smart, they'll filter out seed phrases coming in from my IP address in their database.
+But considering that their fake MetaMask site doesn't use a domain or SSL, they probably aren't very bright.
+Even if my original IP address was blocked, I'm sure the seed phrases I provided polluted their database. I doubt they're keeping track of IP addresses at the database level.
