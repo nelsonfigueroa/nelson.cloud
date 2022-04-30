@@ -124,6 +124,10 @@ The morning after, I noticed that my script output was stuck along with a new re
 
 I guess they caught on LOL. They blocked my IP address from sending requests, so I simply changed changed my IP address and carried on.
 
+Using [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) I was able to see that this IP address originates from Russia, which I thought was interesting.
+
+{{< figure src="/retaliating_against_metamask_scammers/little_snitch.png" alt="Little Snitch connection to Russia" >}}
+
 ## Final Thoughts
 
 I hate scammers. I hope I made their lives difficult. 
