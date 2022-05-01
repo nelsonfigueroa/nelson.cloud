@@ -6,23 +6,13 @@
         line-height: 1.3em;
     }
 
-    main#content hr {
-        width: 108%;
-        margin-left: -3.8%;
-    }
-
     /* single.html styles */
     main#content img {
-        max-width: 108%;
-        margin-left: -3.8%;
-    }
-
-    main#content figure {
-        margin-left: -3.8%;
+        max-width: 100%;
     }
 
     main#content figure img {
-        max-width: 108%;
+        max-width: 100%;
     }
 
     main#content pre {
