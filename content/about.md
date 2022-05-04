@@ -62,7 +62,7 @@ Contributed practical examples for the following commands:
 
 **Hobbies**: Videogames, Electric Guitar
 
-**Games**: Overwatch, Factorio, Red Dead Redemption 2
+**Games**: Overwatch, Factorio, Red Dead Redemption 2, Stardew Valley
 
 **Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman, Silicon Valley, The Boondocks
 
