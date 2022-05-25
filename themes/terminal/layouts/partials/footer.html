@@ -6,39 +6,14 @@
     const btn = document.querySelector(".theme-toggle");
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-    const nameBanner = document.querySelector("#name-banner");
-
-    // set innitial banner and button text based on user preference
-    if (prefersDarkScheme.matches) {
-        btn.innerHTML = "./light-mode";
-        if (nameBanner != null) {
-            nameBanner.src = "/name_dark.png";
-        }
-    } else {
-        btn.innerHTML = "./dark-mode";
-        if (nameBanner != null) {
-            nameBanner.src = "/name_light.png";
-        }
-    }
-
     // get user's theme preference from local storage, if it's available, and set theme based on that
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme == "dark") {
-        // change name banner to dark version
-        if (nameBanner != null) {
-            nameBanner.src = "/name_dark.png";
-        }
-
         btn.innerHTML = "./light-mode";
 
         // add dark class to <body>
         document.body.classList.toggle("dark");
     } else if (currentTheme == "light") {
-        // change name banner to dark version
-        if (nameBanner != null) {
-            nameBanner.src = "/name_light.png";
-        }
-
         btn.innerHTML = "./dark-mode";
 
         // add light class to <body>
@@ -53,10 +28,6 @@
         if (theme == "light") {
             document.body.classList.toggle("light"); // remove light mode class
             document.body.classList.toggle("dark"); // add dark mode class
-            if (nameBanner != null) {
-                nameBanner.src = "/name_dark.png"; // update banner (if present)
-            }
-
             btn.innerHTML = "./light-mode"
 
             // update theme variable to store
@@ -64,10 +35,6 @@
         } else {
             document.body.classList.toggle("dark"); // remove dark mode class
             document.body.classList.toggle("light"); // add light mode class
-            if (nameBanner != null) {
-                nameBanner.src = "/name_light.png"; // update banner (if present)
-            }
-
             btn.innerHTML = "./dark-mode"
 
             // update theme variable to store
