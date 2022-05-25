@@ -27,6 +27,37 @@ body {
     background-color: var(--bg-color);
 }
 
+/* ASCII art styles */
+
+#pre-container {
+    text-align: center;
+}
+
+main#content pre#ascii-art {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2vmin;
+    line-height: 1.25em;
+    font-family: 'Menlo', monospace;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    overflow: unset;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    display: inline-block;
+    text-align: left;
+}
+
+@media (min-width: 48.125em) {
+    main#content pre#ascii-art {
+        font-size: 1vmin;
+    }
+}
+
+/* End ASCII art styles */
+
 header#banner {
     margin: 2em 0;
     padding-top: 1em;
@@ -253,15 +284,6 @@ main#content #toc ol li {
 main#content #toc ol li:before {
     content: counters(item, ".") ". ";
     counter-increment: item;
-}
-
-main#content img#name-banner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    /* moved width and height to HTML element for best practices */
-    /*width: 90%;*/
 }
 
 main#content img {
