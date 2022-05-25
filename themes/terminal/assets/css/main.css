@@ -33,7 +33,7 @@ body {
     text-align: center;
 }
 
-main#content pre#ascii-art {
+#pre-container #ascii-art {
     padding: 0;
     margin: 0;
     font-size: 1.2vmin;
