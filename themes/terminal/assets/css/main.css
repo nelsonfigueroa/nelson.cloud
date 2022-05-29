@@ -51,7 +51,7 @@ body {
 }
 
 @media (min-width: 48.125em) {
-    main#content pre#ascii-art {
+    #pre-container #ascii-art {
         font-size: 1vmin;
     }
 }
@@ -380,4 +380,14 @@ footer#footer {
     padding-bottom: 1em;
     border-top: dashed 0.0625em;
     border-bottom: dashed 0.0625em;
+}
+
+footer#footer a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+footer#footer a:hover {
+    color: var(--bg-color);
+    background-color: var(--text-color);
 }
