@@ -2,7 +2,7 @@
 title = "Retaliating Against MetaMask Scammers"
 summary = "Providing fake seed phrases to a scammer site."
 date = "2022-04-28"
-tags = ["cybersecurity"]
+categories = ["cybersecurity"]
 toc = false
 +++
 

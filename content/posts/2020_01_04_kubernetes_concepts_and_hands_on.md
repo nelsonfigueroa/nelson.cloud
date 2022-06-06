@@ -2,7 +2,7 @@
 title = "Kubernetes Concepts and Hands-On with Minikube"
 summary = "Learn Kubernetes concepts and get hands-on experience with Minikube"
 date = "2020-01-04"
-tags = ["infrastructure"]
+categories = ["infrastructure"]
 toc = true
 +++
 

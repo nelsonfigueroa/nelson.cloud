@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <main id="content">
+            <div class="container">
+                <div class="section">
+                    <div class="content">
+                        <h1>{{ .Title }}</h1>
+                        <a href="/categories"><< All Categories</a>
+                        <br><br>
+                        <ul id="posts">
+                          {{ $p := where site.RegularPages "Type" "posts" }}
+                          {{ $p = where $p "Params.categories" "intersect" (slice $.Title) }}
+
+                          {{ range $p }}
+                            <li>
+                                <time>[ {{ .Date.Format "2006-01-02" }} ]</time>
+                                <a href="{{ .Permalink }}">
+                                    {{ .Title }}
+                                </a>
+                            </li>
+                          {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {{- partial "footer.html" . -}}
+        
+        <script data-goatcounter="https://nelsonfigueroa.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    </body>
+</html>
+
