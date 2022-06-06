@@ -39,6 +39,7 @@ enableRobotsTXT = true
 
 [permalinks]
   posts = "/:title/"
+  categories =  "/:section/:slug"
 
 # [markup.goldmark.extensions]
 #   definitionList = true
@@ -65,3 +66,7 @@ enableRobotsTXT = true
 
 [markup.tableOfContents]
   ordered = false
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

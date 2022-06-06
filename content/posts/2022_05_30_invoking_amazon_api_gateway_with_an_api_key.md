@@ -2,7 +2,7 @@
 title = "Invoking Amazon API Gateway with an API Key"
 summary = "Invoking Amazon API Gateway with an API Key"
 date = "2022-05-30"
-tags = ["AWS"]
+categories = ["AWS"]
 toc = true
 +++
 

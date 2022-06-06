@@ -2,7 +2,7 @@
 title = "Scraping GitHub Contributor Emails"
 summary = "Scraping GitHub contributor emails, and how you can protect yourself."
 date = "2021-10-30"
-tags = ["privacy", "cybersecurity"]
+categories = ["privacy", "cybersecurity"]
 toc = false
 +++
 

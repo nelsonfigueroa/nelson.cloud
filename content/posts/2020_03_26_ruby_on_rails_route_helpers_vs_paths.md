@@ -2,7 +2,7 @@
 title = "Ruby on Rails Route Helpers vs Paths"
 summary = "Comparing Ruby on Rails URL Helpers and Paths"
 date = "2020-03-26"
-tags = ["rails"]
+categories = ["rails"]
 draft = false
 +++
 
