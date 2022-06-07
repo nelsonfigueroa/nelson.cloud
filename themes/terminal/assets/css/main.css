@@ -195,6 +195,7 @@ main#content ul#posts li {
 main#content ul#posts li time {
     text-decoration: none;
     display: block;
+    font-size: 1em;
 }
 
 main#content ul#posts li a {
