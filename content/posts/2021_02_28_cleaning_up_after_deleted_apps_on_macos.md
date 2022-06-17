@@ -2,7 +2,7 @@
 title = "Cleaning Up After Deleted Apps on MacOS"
 summary = "Clean up app remnants after deleting MacOS apps."
 date = "2021-02-28"
-categories = ["mac"]
+categories = ["MacOS"]
 toc = false
 +++
 

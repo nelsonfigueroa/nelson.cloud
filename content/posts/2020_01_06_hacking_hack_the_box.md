@@ -2,7 +2,7 @@
 title = "Hacking into Hack The Box"
 summary = "Getting the invite code to Hack The Box"
 date = "2020-01-06"
-categories = ["cybersecurity"]
+categories = ["Cybersecurity"]
 +++
 
 
