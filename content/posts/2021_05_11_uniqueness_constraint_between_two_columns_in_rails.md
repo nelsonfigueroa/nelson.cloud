@@ -2,7 +2,7 @@
 title = "Uniqueness Constraint Between Two Columns in Rails"
 summary = "Add a uniqueness constraint between two columns in Ruby on Rails."
 date = "2021-05-11"
-categories = ["rails"]
+categories = ["Ruby on Rails"]
 toc = false
 +++
 

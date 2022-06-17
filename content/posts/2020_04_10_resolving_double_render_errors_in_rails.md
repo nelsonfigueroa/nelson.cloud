@@ -2,7 +2,7 @@
 title = "Resolving Double Render Errors in Rails"
 summary = "Prevent Rails from throwing errors when including two redirects in an action"
 date = "2020-04-10"
-categories = ["rails"]
+categories = ["Ruby on Rails"]
 draft = false
 +++
 
