@@ -270,6 +270,8 @@ Here's what the output looks like
 }
 ```
 
+Check the value of `InterfaceType` for clues as to what resource is using the ENI. In this case, it's a Lambda function.
+
 ## References
 
 Thanks to this Serverfault post for information regarding EC2 Instances:
