@@ -92,20 +92,18 @@ header#banner nav ul li {
 }
 
 header#banner nav ul li a {
-    color: var(--text-color);
+    color: var(--link-color);
 }
 
 button.theme-toggle {
     border: none;
-    color: var(--text-color);
-    background-color: var(--bg-color);
     font-family: "Menlo", "Consolas", monospace;
     font-size: 1em;
     font-style: normal;
     text-rendering: geometricPrecision;
     padding: 0;
     margin: 0;
-    color: var(--text-color);
+    color: var(--link-color);
     background-color: var(--bg-color);
     cursor: pointer;
 }
