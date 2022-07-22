@@ -36,7 +36,7 @@ After doing some reading from the official [MetaMask site](https://metamask.zend
 
 So there's a specific list of words that seed phrases are generated from and I have a direct link to them. This was pefect. I could use this list of words in my script:
 
-https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
+- https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
 
 ## Scripting Time
 
