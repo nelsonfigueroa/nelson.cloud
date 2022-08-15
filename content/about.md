@@ -2,9 +2,19 @@
 title = "Nelson Figueroa"
 +++
 
+I'm a Software Engineer with broad experience working with technologies like 
+Ruby on Rails, Docker, Kubernetes, and Amazon Web Services. 
+My interests include programming, cloud infrastructure, and cybersecurity.
+I started this blog for fun and to share my knowledge.
+
 ---
 
-[GitHub](https://github.com/nelsonfigueroa) | [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa07/)
+## Links
+
+- [GitHub](https://github.com/nelsonfigueroa)
+- [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa07/)
+
+---
 
 ## Skills
 
