@@ -58,6 +58,10 @@ body {
 
 /* End ASCII art styles */
 
+#landing-page-caption {
+    text-align: center;
+}
+
 header#banner {
     margin: 2em 0;
     padding-top: 1em;
