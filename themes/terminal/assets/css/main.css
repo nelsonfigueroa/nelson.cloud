@@ -141,20 +141,24 @@ main#content h6 {
     margin-top: 2em;
 }
 
-main#content h2::before {
+main#content h1::before {
     content: "# ";
 }
 
-main#content h3::before {
+main#content h2::before {
     content: "## ";
 }
 
-main#content h4::before {
+main#content h3::before {
     content: "### ";
 }
 
-main#content h5::before {
+main#content h4::before {
     content: "#### ";
+}
+
+main#content h5::before {
+    content: "##### ";
 }
 
 main#content p {

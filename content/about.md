@@ -16,6 +16,20 @@ I started this blog for fun and to share my knowledge.
 
 ---
 
+## Experience
+
+Software Engineer IV @ [Edmunds](https://edmunds.com/) (2020 - Present)
+
+Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
+
+Software Engineering Intern @ [Dollar Shave Club](https://dollarshaveclub.com/) (2019)
+
+Web Developer @ [California State University, Northridge](https://csun.edu/) (2018 - 2019)
+
+IT Assistant @ [California State University, Northridge](https://csun.edu/) (2017 - 2018)
+
+---
+
 ## Skills
 
 **Programming/Scripting**: Ruby, Python, Bash, Go
@@ -72,8 +86,8 @@ Contributed practical examples for the following commands:
 
 **Hobbies**: Videogames, Electric Guitar
 
-**Games**: Overwatch, Factorio, Red Dead Redemption 2, Stardew Valley
+**Games**: Overwatch, Factorio, Red Dead Redemption 2, Stardew Valley, Halo
 
 **Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman, Silicon Valley, The Boondocks
 
-**Music**: Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
+**Music**: I mainly listen to Death Metal and Black Metal. Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
