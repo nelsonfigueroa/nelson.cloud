@@ -18,15 +18,69 @@ I started this blog for fun and to share my knowledge.
 
 ## Experience
 
-Software Engineer IV @ [Edmunds](https://edmunds.com/) (2020 - Present)
+### Software Engineer IV @ [Edmunds](https://edmunds.com/) (2020 - Present)
 
-Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
+{{< detail-tag "View More Details" >}}
 
-Software Engineering Intern @ [Dollar Shave Club](https://dollarshaveclub.com/) (2019)
+- Manage Edmunds’ cloud infrastructure on Amazon Web Services
+- Began as Software Engineer III and was promoted to Software Engineer IV
+- Assist developers with new application initiatives and infrastructure questions
+- Reduced AWS costs in the six figures range using billing dashboard and Trusted Advisor to clean up unused resources
+- Create and update AWS Service Catalog  products that developers to deploy applications with ease
+- Set up Spinnaker CI/CD on Amazon Elastic Kubernetes Service and maintain YAML manifests
+- Migrated SES email relays to dual region setup and set up Kibana, Elasticsearch, and SSO with Okta to view email logs.
+- Deployed QA version of CCPA Requests serverless app that uses Lambdas, DynamoDB defined in Terraform
+- Partake in 24/7 on-call duty to handle any production issues that may arise
+- Set up New Relic for metrics monitoring on all NGINX nodes and set up a dashboard for observability.
+- Create redirects to maintain edmunds.com SEO rankings with CloudFront and Lambda@Edge functions written in Python
+- Developed and Deployed New Relic User Management Service with Python, API Gateway, Lambda, DynamoDB, and Okta.
+- Remediate security vulnerabilities across all infrastructure.
 
-Web Developer @ [California State University, Northridge](https://csun.edu/) (2018 - 2019)
+{{< /detail-tag >}}
 
-IT Assistant @ [California State University, Northridge](https://csun.edu/) (2017 - 2018)
+### Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
+
+{{< detail-tag "View More Details" >}}
+
+- Self-taught Terraform, Kubernetes, and Google Cloud Platform
+- Developed Terraform resources and modules to provision GCP infrastructure including: VPC networks, subnets, DNS, PostgreSQL databases, Redis stores, Linux virtual machines, and Kubernetes clusters
+- Wrote Dockerfiles to containerize .NET Core, Vue.js, and Angular applications
+- Created and managed Dev, Stage, and Production environments for several applications
+- Defined and managed Kubernetes objects in YAML, including: Namespaces, Deployments, Secrets, Horizontal Pod Autoscalers, Services, Managed Certificates, and Ingresses
+- Automated creation of Docker images and Kubernetes deployment using Google Cloud Build CI/CD
+- Improved production deployment speed and reduced downtime associated with production changes
+- Resolved production issues with databases, applications, and load balancers on a 24/7 basis
+
+{{< /detail-tag >}}
+
+
+### Software Engineering Intern @ [Dollar Shave Club](https://dollarshaveclub.com/) (2019)
+
+{{< detail-tag "View More Details" >}}
+
+- Used Ruby on Rails to refactor Collateral Injection service, which supports over 3 million customers
+- Learned and applied Test-Driven Development using RSpec to deliver well-tested features
+
+{{< /detail-tag >}}
+
+
+### Software Engineer @ [California State University, Northridge](https://csun.edu/) (2018 - 2019)
+
+{{< detail-tag "View More Details" >}}
+
+- Self-taught Ruby on Rails and began delivering production features within the first 2 months
+- Led development of the National Center on Deafness web app, serving 30,000+ students and faculty
+- Worked directly with customers in an Agile/Scrum environment to deliver features
+- Implemented LDAP authentication API successfully without interrupting live services
+- Used New Relic to analyze and improve slow SQL queries, reducing multiple query times by 30-50% 
+- Updated application front ends using Bootstrap and JavaScript
+- Deployed production changes to EC2 instances on Amazon Web Services on a weekly basis
+- Wrote documentation for applications and trained incoming engineers
+
+{{< /detail-tag >}}
+
+<br>
+
 
 ---
 
