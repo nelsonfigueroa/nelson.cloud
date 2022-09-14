@@ -12,7 +12,7 @@ I started this blog for fun and to share my knowledge.
 ## Links
 
 - [GitHub](https://github.com/nelsonfigueroa)
-- [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa07/)
+- [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)
 
 ---
 
