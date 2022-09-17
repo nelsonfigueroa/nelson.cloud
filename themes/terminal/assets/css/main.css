@@ -73,30 +73,12 @@ header#banner {
 
 header#banner a {
     text-decoration: none;
+    color: var(--link-color);
 }
 
 header#banner a:hover {
     color: var(--bg-color);
     background-color: var(--text-color);
-}
-
-header#banner nav {
-    display: inline-block;
-}
-
-header#banner nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-header#banner nav ul li {
-    display: inline;
-    margin: 0 0.1875em;
-}
-
-header#banner nav ul li a {
-    color: var(--link-color);
 }
 
 button.theme-toggle {
