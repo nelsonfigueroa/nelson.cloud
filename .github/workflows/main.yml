@@ -5,29 +5,34 @@ on:
     branches: 
       - master
 
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
 jobs:
   deploy:
-
     runs-on: ubuntu-18.04
-    
     steps:
-    - uses: actions/checkout@v1
-    - name: Build static site and push to AWS
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      run: |
-        pip3 install --upgrade setuptools
-        pip3 install awscli --upgrade --user
-        curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest \
-        | grep  browser_download_url \
-        | grep Linux-64bit.deb \
-        | grep -v extended \
-        | cut -d '"' -f 4 \
-        | wget -i -
-        sudo dpkg -i hugo*_Linux-64bit.deb
-        rm -rf public/
-        hugo version
-        hugo
-        aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
-        aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
+      - name: Checkout default branch
+        uses: actions/checkout@v3
+      - name: Install Hugo
+        run: |
+          curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest \
+          | grep  browser_download_url \
+          | grep linux-amd64.deb \
+          | grep -v extended \
+          | cut -d '"' -f 4 \
+          | wget -i -
+          sudo dpkg -i hugo*_linux-amd64.deb
+      - name: Build Site
+        run: |
+          hugo version
+          hugo --minify --gc
+      - name: Install AWS CLI
+        run: |
+          pip3 install --upgrade setuptools
+          pip3 install awscli --upgrade --user
+      - name: Push to CloudFront
+        run: |
+          aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
