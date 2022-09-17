@@ -1,18 +1,8 @@
 <header id="banner">
     <nav>
-        <ul>
-            <li>
-                <!-- <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> -->
-                <a href="{{ .Site.BaseURL }}">/home</a>
-            </li>
-            {{ range .Site.Menus.main.ByWeight -}}
-            <li>
-                {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">/{{- .Name -}}</a>{{ .Post }}
-            </li>
-            {{- end }}
-            <li>
-                <button class="theme-toggle">./change-theme</button>
-            </li>
-        </ul>
+        <!-- <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> -->
+        <a href="{{ .Site.BaseURL }}">/home</a> {{ range .Site.Menus.main.ByWeight -}}
+            {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">/{{- .Name -}}</a> {{ .Post }}
+        {{- end }}<button class="theme-toggle">./change-theme</button>
     </nav>
 </header>
