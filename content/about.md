@@ -11,8 +11,8 @@ I started this blog for fun and to share my knowledge.
 
 ## Links
 
-- [GitHub](https://github.com/nelsonfigueroa)
-- [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)
+- **[GitHub](https://github.com/nelsonfigueroa)**
+- **[LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)**
 
 ---
 
@@ -34,6 +34,7 @@ I started this blog for fun and to share my knowledge.
 - Set up New Relic for metrics monitoring on all NGINX nodes and set up a dashboard for observability.
 - Create redirects to maintain edmunds.com SEO rankings with CloudFront and Lambda@Edge functions written in Python
 - Developed and Deployed New Relic User Management Service with Python, API Gateway, Lambda, DynamoDB, and Okta.
+- Use AWS Athena to query access logs and identify malicious IP addresses and exposed internal services
 - Remediate security vulnerabilities across all infrastructure.
 
 {{< /detail-tag >}}
