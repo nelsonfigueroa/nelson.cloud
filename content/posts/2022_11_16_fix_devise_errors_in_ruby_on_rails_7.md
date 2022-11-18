@@ -74,7 +74,7 @@ To fix the new user registrations, I had to add `data: { turbo: false }` to the 
 
 This is what it looked like before the changes:
 
-```ruby
+```py
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.text_field :name, autofocus: true, placeholder: 'Name', autocomplete: "name" %>
@@ -87,7 +87,7 @@ This is what it looked like before the changes:
 
 And this is what the form looked like after the changes were implemented:
 
-```ruby
+```py
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.text_field :name, autofocus: true, placeholder: 'Name', autocomplete: "name" %>
@@ -104,7 +104,7 @@ I added the following line:
 ```ruby
 Devise.setup do |config|
   #
-  #
+  # new line
   config.navigational_formats = ['*/*', :html, :turbo_stream]
   #
   #
