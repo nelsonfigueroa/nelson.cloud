@@ -3,7 +3,7 @@
     <header id="post-header">
         <h1>{{ .Title }}</h1>
         {{- if isset .Params "date" -}}
-            <time>{{ .Date.Format "January 2, 2006" }} | {{ .ReadingTime }} minutes</time>
+            <time>{{ .Date.Format "2006 January 2" }} | Reading time: {{ .ReadingTime }} minutes</time>
         {{- end -}}
     </header>
     {{ if (.Params.toc) }}
