@@ -26,7 +26,7 @@ enableRobotsTXT = true
     weight = 10
   [[menu.main]]
     identifier = "support"
-    name = "support-me"
+    name = "support"
     title = "support"
     url = "https://buymeacoffee.com/nelsonfigueroa"
     weight = 20
