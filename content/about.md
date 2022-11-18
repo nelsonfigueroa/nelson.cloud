@@ -93,7 +93,7 @@ I started this blog for fun and to share my knowledge.
 
 **Databases**: MySQL, SQLite 3, PostgreSQL
 
-**Infrastructure**: Docker, Terraform, Kubernetes, CI/CD (Google Cloud Build, GitHub Actions, Jenkins, Spinnaker)
+**Infrastructure**: Docker, Kubernetes, Terraform, Serverless, CloudFormation, CI/CD (Google Cloud Build, GitHub Actions, Jenkins, Spinnaker)
 
 **Cloud**: Amazon Web Services, Google Cloud Platform
 
