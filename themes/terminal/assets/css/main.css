@@ -74,11 +74,14 @@ header#banner {
 header#banner a {
     text-decoration: none;
     color: var(--link-color);
+    transition: color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
 }
 
 header#banner a:hover {
     color: var(--bg-color);
     background-color: var(--text-color);
+    border-radius: 0.05em;
 }
 
 button.theme-toggle {
@@ -91,22 +94,28 @@ button.theme-toggle {
     margin: 0;
     color: var(--link-color);
     background-color: var(--bg-color);
+    transition: color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
     cursor: pointer;
 }
 
 button.theme-toggle:hover {
   color: var(--bg-color);
   background-color: var(--text-color);
+  border-radius: 0.05em;
 }
 
 main#content a {
     text-decoration: none;
     color: var(--link-color);
+    transition: color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
 }
 
 main#content a:hover {
     color: var(--bg-color);
     background-color: var(--text-color);
+    border-radius: 0.05em;
 }
 
 main#content h1 {
@@ -370,7 +379,10 @@ main#content article ul li a {
 
 /* for /about resume details */
 .resume-details {
-    color: var(--link-color)
+    color: var(--link-color);
+    transition: color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
+    border-radius: 0.05em;
 }
 
 footer#footer {
@@ -384,9 +396,12 @@ footer#footer {
 footer#footer a {
     text-decoration: none;
     color: var(--link-color);
+    transition: color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
 }
 
 footer#footer a:hover {
     color: var(--bg-color);
     background-color: var(--text-color);
+    border-radius: 0.05em;
 }
