@@ -18,9 +18,7 @@ I started this blog for fun and to share my knowledge.
 
 ## Experience
 
-### Software Engineer IV @ [Edmunds](https://edmunds.com/) (2020 - Present)
-
-{{< detail-tag "View More Details" >}}
+{{< detail-tag "Software Engineer IV @ [Edmunds](https://edmunds.com) (2022-Present)" >}}
 
 - Manage Edmunds’ cloud infrastructure on Amazon Web Services
 - Began as Software Engineer III and was promoted to Software Engineer IV
@@ -39,9 +37,7 @@ I started this blog for fun and to share my knowledge.
 
 {{< /detail-tag >}}
 
-### Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
-
-{{< detail-tag "View More Details" >}}
+{{< detail-tag "Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)" >}}
 
 - Self-taught Terraform, Kubernetes, and Google Cloud Platform
 - Developed Terraform resources and modules to provision GCP infrastructure including: VPC networks, subnets, DNS, PostgreSQL databases, Redis stores, Linux virtual machines, and Kubernetes clusters
@@ -54,20 +50,14 @@ I started this blog for fun and to share my knowledge.
 
 {{< /detail-tag >}}
 
-
-### Software Engineering Intern @ [Dollar Shave Club](https://dollarshaveclub.com/) (2019)
-
-{{< detail-tag "View More Details" >}}
+{{< detail-tag "Software Engineering Intern @ [Dollar Shave Club](https://dollarshaveclub.com/) (2019)" >}}
 
 - Used Ruby on Rails to refactor Collateral Injection service, which supports over 3 million customers
 - Learned and applied Test-Driven Development using RSpec to deliver well-tested features
 
 {{< /detail-tag >}}
 
-
-### Software Engineer @ [California State University, Northridge](https://csun.edu/) (2018 - 2019)
-
-{{< detail-tag "View More Details" >}}
+{{< detail-tag "Software Engineer @ [California State University, Northridge](https://csun.edu/) (2018 - 2019)" >}}
 
 - Self-taught Ruby on Rails and began delivering production features within the first 2 months
 - Led development of the National Center on Deafness web app, serving 30,000+ students and faculty
@@ -146,3 +136,44 @@ Contributed practical examples for the following commands:
 **Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman, Silicon Valley, The Boondocks
 
 **Music**: I mainly listen to Death Metal and Black Metal. Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
+
+
+<ul class="tree">
+  <li>
+    <details open>
+      <summary>Software Engineer IV @ Edmunds (2022-Present)</summary>
+      <ul>
+        <li>
+          <details>
+            <summary>Gas giants</summary>
+            <ul>
+              <li>Jupiter</li>
+              <li>Saturn</li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Ice giants</summary>
+            <ul>
+              <li>Uranus</li>
+              <li>Neptune</li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+<ul class="tree">
+  <li>
+    <details open>
+      <summary>Software Engineer IV @ Edmunds (2022-Present)</summary>
+      <ul>
+        <li>Manage Edmunds’ cloud infrastructure on Amazon Web Services</li>
+        <li>Began as Software Engineer III and was promoted to Software Engineer IV</li>
+      </ul>
+    </details>
+  </li>
+</ul>
