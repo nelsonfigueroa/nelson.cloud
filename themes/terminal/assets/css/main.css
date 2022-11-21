@@ -249,7 +249,7 @@ main#content #toc {
 }
 
 main#content #toc li::before {
-    content: "# ";
+    content: "» ";
 }
 
 main#content #toc nav#TableOfContents {
