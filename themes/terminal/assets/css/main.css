@@ -377,12 +377,89 @@ main#content article ul li a {
     word-wrap: break-word;
 }
 
-/* for /about resume details */
-.resume-details {
-    color: var(--link-color);
-    transition: color 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out;
-    border-radius: 0.05em;
+/* For resume details */
+/* https://iamkate.com/code/tree-views/ */
+.tree{
+  --spacing : 1.5rem;
+  --radius  : 10px;
+  padding: 0;
+}
+
+.tree li{
+  display      : block;
+  position     : relative;
+  padding-left : calc(2 * var(--spacing) - var(--radius) - 2px);
+}
+
+.tree ul{
+  margin-left  : calc(var(--radius) - var(--spacing) - 4px);
+  padding-left : 0;
+}
+
+.tree ul li{
+  border-left : 2px solid var(--text-color);
+}
+
+.tree ul li:last-child{
+  border-color : transparent;
+}
+
+.tree ul li::before{
+  content      : '';
+  display      : block;
+  position     : absolute;
+  top          : calc(var(--spacing) / -2);
+  left         : -2px;
+  width        : calc(var(--spacing) + 2px);
+  height       : calc(var(--spacing) + 1px);
+  border       : solid var(--text-color);
+  border-width : 0 0 2px 2px;
+}
+
+.tree summary{
+  display : block;
+  cursor  : pointer;
+}
+
+.tree summary::marker,
+.tree summary::-webkit-details-marker{
+  display : none;
+}
+
+.tree summary:focus{
+  outline : none;
+}
+
+.tree summary:focus-visible{
+  outline : 1px dotted var(--text-color);
+}
+
+.tree li::after,
+.tree summary::before{
+  content       : '';
+  display       : block;
+  position      : absolute;
+  top           : calc(var(--spacing) / 2 - var(--radius));
+  left          : calc(var(--spacing) - var(--radius) - 10px);
+  width         : calc(3 * var(--radius));
+  height        : calc(2 * var(--radius));
+}
+
+
+.tree summary::before{
+  content     : '[+]';
+  z-index     : 1;
+  background  : var(--bg-color);
+  color       : var(--link-color);
+  line-height : calc(2 * var(--radius) - 2px);
+  text-align  : center;
+  font-weight: bold;
+}
+
+.tree details[open] > summary::before{
+  content : '[-]';
+  left: calc(var(--spacing) - var(--radius) - 10px);
+  font-weight: bold;
 }
 
 footer#footer {
