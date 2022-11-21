@@ -1,4 +1,8 @@
-<details>
-  <summary class="resume-details">{{ (.Get 0) | markdownify }}</summary>
-  {{ .Inner | markdownify }}
-</details>
+<ul class="tree">
+  <li>
+    <details>
+      <summary> {{ (.Get 0) | markdownify }}</summary>
+      {{ .Inner | markdownify }}
+    </details>
+  </li>
+</ul>
