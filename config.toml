@@ -69,4 +69,4 @@ enableRobotsTXT = true
 
 [taxonomies]
   category = 'categories'
-  tag = 'tags'
+  # tag = 'tags' # don't want tags.
