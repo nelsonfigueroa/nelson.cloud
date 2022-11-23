@@ -8,13 +8,16 @@ toc = true
 
 ## Introduction
 
-This post is essentially a re-write of notes I took around 2 years ago. Learning to use `aircrack-ng` and break into my own router was both fun but also a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router due to processing power needed, but sniffing wifi networks is a trivial process. After doing it once, it'll stick.
+This post is essentially a re-write of notes I took around 2 years ago. Learning to use `aircrack-ng` and break into my own router was both fun but also a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router due to processing power needed, but sniffing wifi networks is a trivial process.
 
 There are other methods of doing this as well. In fact, I discovered [bettercap](https://github.com/bettercap/bettercap) earlier this year and it is easy to use. Perhaps I'll write a post using that tool in the future.
 
-For reference, I used Kali linux for the entire process. But the process should be very similar for any linux distribution. This tool is already included on Kali Linux but you can install it on any Linux OS.
+I used [Kali Linux](https://www.kali.org/) for the entire process, but the process should be very similar for any Linux distribution. `aircrack-ng` is already included on Kali Linux but you can install it on any Linux OS.
 
-This is purely for educational purposes. **Do not try to break into access points that do not belong to you.**
+---
+**Disclaimer: This is purely for educational purposes. Do not try to break into access points that do not belong to you.**
+
+---
 
 ## What is aircrack-ng?
 
