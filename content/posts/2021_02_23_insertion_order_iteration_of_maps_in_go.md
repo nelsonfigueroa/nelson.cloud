@@ -166,4 +166,4 @@ Key: e 	 Value: 4
 Key: f 	 Value: 5
 ```
 
-Now each key and value is printed in insert order.
+Now each key and value is printed in insertion order.
