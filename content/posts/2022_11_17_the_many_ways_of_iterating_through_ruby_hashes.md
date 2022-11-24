@@ -56,7 +56,7 @@ value class: Symbol
 symbol_key: symbol_value
 ```
 
-The keys are of the Symbol class even though they are written like strings in the code. The hash values retain their original types.
+The hash keys are of the Symbol class even though they are written like strings in the code. The hash values retain their original types.
 
 Side note: since keys are Symbols, to access an individual value using a key you need to write the key in a Symbol form:
 
