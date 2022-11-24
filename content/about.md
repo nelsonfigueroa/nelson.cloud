@@ -18,7 +18,7 @@ I started this blog for fun and to share my knowledge.
 
 ## Experience
 
-{{< detail-tag "Software Engineer IV @ [Edmunds](https://edmunds.com) (2022-Present)" >}}
+{{< detail-tag "Software Engineer IV @ [Edmunds](https://edmunds.com) (2020-Present)" >}}
 
 - Manage Edmunds’ cloud infrastructure on Amazon Web Services
 - Began as Software Engineer III and was promoted to Software Engineer IV
@@ -127,7 +127,7 @@ Contributed practical examples for the following commands:
 
 ## Interests
 
-**Tech**: Programming, DevOps/Infrastructure, Cybersecurity, Privacy
+**Technology**: Programming, DevOps/Infrastructure, Cybersecurity, Privacy
 
 **Hobbies**: Videogames, Electric Guitar
 
