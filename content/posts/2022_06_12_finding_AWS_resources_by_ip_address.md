@@ -203,12 +203,12 @@ The output for these commands will look something like this:
 
 ### In the AWS Console
 
-To identify other AWS resources (such as Lambdas) based on IP address, you can search for the corresponding ENI. This works using a private IP address.
-In the AWS Console, browse to the EC2 console and click on Network Interfaces on the left hand side. Then search by "Primary private IPv4 address".
+To identify other AWS resources (such as Lambdas) based on IP address, you can search for the corresponding ENI.
+In the AWS Console, browse to the EC2 console and click on Network Interfaces on the left hand side. Then search by "Primary private IPv4 address" (or "Public IPv4 address" if you want to search by a public IP address).
 
 {{< figure src="/finding_aws_resources_by_ip_address/eni_search.png" alt="Results after searching for Elastic Network Interface using a private IP address" >}}
 
-You can then poke around through the ENI details to figure out what resource is associated with the private IP address.
+You can then poke around through the ENI details to figure out what resource is associated with the IP address.
 
 ### Using the AWS CLI
 
