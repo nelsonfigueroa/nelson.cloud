@@ -18,22 +18,22 @@ I started this blog for fun and to share my knowledge.
 
 ## Experience
 
-{{< detail-tag "Software Engineer IV @ [Edmunds](https://edmunds.com) (2020-Present)" >}}
+{{< detail-tag "Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)" >}}
 
-- Manage Edmunds’ cloud infrastructure on Amazon Web Services
+- Managed Edmunds’ cloud infrastructure on Amazon Web Services
 - Began as Software Engineer III and was promoted to Software Engineer IV
-- Assist developers with new application initiatives and infrastructure questions
+- Assisted developers with new application initiatives and infrastructure questions
 - Reduced AWS costs in the six figures range using billing dashboard and Trusted Advisor to clean up unused resources
-- Create and update AWS Service Catalog  products that developers to deploy applications with ease
+- Created and updated AWS Service Catalog products that developers use to deploy infrastructure with ease
 - Set up Spinnaker CI/CD on Amazon Elastic Kubernetes Service and maintain YAML manifests
 - Migrated SES email relays to dual region setup and set up Kibana, Elasticsearch, and SSO with Okta to view email logs.
 - Deployed QA version of CCPA Requests serverless app that uses Lambdas, DynamoDB defined in Terraform
-- Partake in 24/7 on-call duty to handle any production issues that may arise
+- Took part in 24/7 on-call duty to handle any production issues that may arise
 - Set up New Relic for metrics monitoring on all NGINX nodes and set up a dashboard for observability.
-- Create redirects to maintain edmunds.com SEO rankings with CloudFront and Lambda@Edge functions written in Python
+- Creates redirects to maintain edmunds.com SEO rankings with CloudFront and Lambda@Edge functions written in Python
 - Developed and Deployed New Relic User Management Service with Python, API Gateway, Lambda, DynamoDB, and Okta.
-- Use AWS Athena to query access logs and identify malicious IP addresses and exposed internal services
-- Remediate security vulnerabilities across all infrastructure.
+- Used AWS Athena to query access logs and identify malicious IP addresses and exposed internal services
+- Remediates security vulnerabilities across all infrastructure.
 
 {{< /detail-tag >}}
 
