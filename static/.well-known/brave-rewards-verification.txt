@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nelson.cloud
+Token: 8f26bc41d64c1f82c58d71582bbe089feddd0f066e44783996d82a03d837123f
