@@ -177,11 +177,11 @@ For this step, I once again used Route 53, but you can also create a CNAME or AL
 
 Go to Route 53 again. Click on the Hosted Zone you created earlier.
 Create a record with the following settings:
-- Leave the subdomain blank (unless you want your site to be accessible under a subdomain like `blog.mysite.com`).
-- For Record type, select `A`
-- Click the `Alias` toggle to enable it
+- Leave the subdomain blank, unless you want your site to be accessible under a subdomain like `blog.mysite.com`.
+- For Record type, select "A - Routes traffic to an IPv4 address and some AWS resources."
+- Click the "Alias" toggle to enable it.
 - Under "Route traffic to" select "Alias to CloudFront distribution"
-- Under the "Choose distribution" field choose the distribution you created.
+- Under the "Choose distribution" field select the distribution you created.
 - The routing policy can stay as is.
 
 Then click the "Create records" button.
