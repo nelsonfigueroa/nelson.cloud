@@ -33,7 +33,7 @@ body {
     text-align: center;
 }
 
-#pre-container #ascii-art {
+#pre-container .ascii-art {
     padding: 0;
     margin: 0;
     font-size: 1.2vmin;
@@ -51,7 +51,7 @@ body {
 }
 
 @media (min-width: 48.125em) {
-    #pre-container #ascii-art {
+    #pre-container .ascii-art {
         font-size: 1vmin;
     }
 }
@@ -189,7 +189,7 @@ main#content ul#posts li {
     line-height: 1.15em;
 }
 
-main#content ul#posts li time {
+main#content ul#posts li span {
     text-decoration: none;
     display: block;
     font-size: 1em;
@@ -210,7 +210,7 @@ main#content ul#posts li a:hover {
         margin-bottom: 1.2em ;
     }
 
-    main#content ul#posts li time:before {  
+    main#content ul#posts li span:before {  
         content: "┌──";
         /*margin-right: 9px;*/
     } 
@@ -324,6 +324,16 @@ main#content figure figcaption p {
 main#content p code {
     color: var(--bg-color);
     background-color: var(--text-color);
+}
+
+/* styling for `inline code` in lists */
+main#content ul li code {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    border: solid 0.0625em;
+    border-radius: 0.3125em;
+    border-style: solid;
+    border-color: var(--pre-color);
 }
 
 main#content figure ::selection {
