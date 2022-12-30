@@ -1,5 +1,5 @@
 <div id="pre-container">
-<pre id="ascii-art">
+<pre class="ascii-art">
 ███╗   ██╗███████╗██╗     ███████╗ ██████╗ ███╗   ██╗  
 ████╗  ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗  ██║  
 ██╔██╗ ██║█████╗  ██║     ███████╗██║   ██║██╔██╗ ██║  
@@ -7,7 +7,7 @@
 ██║ ╚████║███████╗███████╗███████║╚██████╔╝██║ ╚████║  
 ╚═╝  ╚═══╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝  
 </pre>
-<pre id="ascii-art">
+<pre class="ascii-art">
 ███████╗██╗ ██████╗ ██╗   ██╗███████╗██████╗  ██████╗  █████╗ 
 ██╔════╝██║██╔════╝ ██║   ██║██╔════╝██╔══██╗██╔═══██╗██╔══██╗
 █████╗  ██║██║  ███╗██║   ██║█████╗  ██████╔╝██║   ██║███████║
@@ -20,11 +20,11 @@
 <p id="landing-page-caption">Software Engineer</p>
 
 <h3>Blog Posts</h3>
-<p><a href="/index.xml">RSS Feed</a> | <a href="/categories">View All Categories</a></p>
+<p><a href="/index.xml">RSS Feed</a> | <a href="/categories">Post Categories</a></p>
 <ul id="posts">
 {{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
     <li>
-        <time>[ {{ .Date.Format "2006-01-02" }} ]</time>
+        <span>[ {{ .Date.Format "2006-01-02" }} ]</span>
         <a href="{{ .Permalink }}">
             {{ .Title }}
         </a>

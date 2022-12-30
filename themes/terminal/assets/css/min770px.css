@@ -31,7 +31,7 @@
         line-height: 1.5em;
     }
 
-    main#content ul#posts li time {
+    main#content ul#posts li span {
         display: inline-block;
     }
 }
