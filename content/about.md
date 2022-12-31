@@ -38,7 +38,7 @@ I started this blog for fun and to share my knowledge.
 - Creates redirects to maintain edmunds.com SEO rankings with CloudFront and Lambda@Edge functions written in Python
 - Developed and Deployed New Relic User Management Service with Python, API Gateway, Lambda, DynamoDB, and Okta.
 - Used AWS Athena to query access logs and identify malicious IP addresses and exposed internal services
-- Remediates security vulnerabilities across all infrastructure.
+- Remediated security vulnerabilities across all infrastructure.
 
 {{< /detail-tag >}}
 
