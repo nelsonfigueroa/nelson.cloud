@@ -18,6 +18,11 @@ I started this blog for fun and to share my knowledge.
 
 ## Experience
 
+{{< detail-tag "Security Engineer @ [Robinhood](https://robinhood.com) (2023 - Present)" >}}
+- tbd :)
+{{< /detail-tag >}}
+
+
 {{< detail-tag "Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)" >}}
 
 - Managed Edmunds’ cloud infrastructure on Amazon Web Services
@@ -57,7 +62,7 @@ I started this blog for fun and to share my knowledge.
 
 {{< /detail-tag >}}
 
-{{< detail-tag "Software Engineer @ [California State University, Northridge](https://csun.edu/) (2018 - 2019)" >}}
+{{< detail-tag "Software Engineer @ [CSU Northridge](https://csun.edu/) (2018 - 2019)" >}}
 
 - Self-taught Ruby on Rails and began delivering production features within the first 2 months
 - Led development of the National Center on Deafness web app, serving 30,000+ students and faculty
