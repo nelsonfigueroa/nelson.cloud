@@ -189,7 +189,7 @@ Select the following settings:
 - Select "404: Not Found" for the "HTTP Response code" field
 - Click the "Create custom error response" button 
 
-{{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/custom_error.png" alt="Default CloudFront 404 page." >}}
+{{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/custom_error.png" alt="Creating a custom error page." >}}
 
 Give your distribution a few minutes to update and you're done here.
 
