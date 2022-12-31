@@ -27,7 +27,7 @@ body {
     background-color: var(--bg-color);
 }
 
-/* ASCII art styles */
+/* ASCII art styles for 404 page */
 
 #pre-container {
     text-align: center;
@@ -37,7 +37,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: 1.2vmin;
-    line-height: 1.25em;
+    line-height: 1.1em;
     font-family: 'Menlo', monospace;
     border: none;
     color: var(--text-color);
@@ -45,7 +45,6 @@ body {
     overflow: unset;
     white-space: pre-wrap;
     word-wrap: break-word;
-
     display: inline-block;
     text-align: left;
 }
@@ -58,8 +57,12 @@ body {
 
 /* End ASCII art styles */
 
-#landing-page-caption {
+.landing-page-text {
     text-align: center;
+}
+
+.landing-page-text h1::before {
+    content: "";
 }
 
 header#banner {
@@ -132,24 +135,20 @@ main#content h6 {
     margin-top: 2em;
 }
 
-main#content h1::before {
+main#content h2::before {
     content: "# ";
 }
 
-main#content h2::before {
+main#content h3::before {
     content: "## ";
 }
 
-main#content h3::before {
+main#content h4::before {
     content: "### ";
 }
 
-main#content h4::before {
-    content: "#### ";
-}
-
 main#content h5::before {
-    content: "##### ";
+    content: "#### ";
 }
 
 main#content p {
