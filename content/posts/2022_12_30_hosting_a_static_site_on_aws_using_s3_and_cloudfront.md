@@ -31,10 +31,10 @@ This bucket is where static files (HTML/CSS/JavaScript/Images, etc) will go.
 In the AWS console, browse to S3. Create a new bucket. I named my bucket with the same name as my domain.
 
 Then click on the bucket and go to the "properties" tab. Scroll all the way to the bottom to the "Static website hosting" section. Click the "Edit" button. Now configure this bucket to host a static site:
-1. Under "Static website hosting" select "Enable"
-2. Under "Hosting type" select "Host a static website"
-3. In the "Index document" field, write in "index.html" (unless you want a different root page for your site)
-4. Then click "Save changes"
+- Under "Static website hosting" select "Enable"
+- Under "Hosting type" select "Host a static website"
+- In the "Index document" field, write in "index.html" (unless you want a different root page for your site)
+- Then click "Save changes"
 
 {{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/s3_static_website_hosting.png" alt="Static website hosting configuration." >}}
 
@@ -170,6 +170,31 @@ I chose to use the S3 website endpoint as the Origin, but you can also use the S
 More on Origins in the AWS documentation: 
 - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigins.html
 
+### Adding a 404 Page to the CloudFront Distribution (Optional)
+
+CloudFront Distributions have barebones and unstylized error pages like this 404 page:
+
+{{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/404.png" alt="Default CloudFront 404 page." >}}
+
+If we want to use our own custom error pages, we need to create a custom error response.
+
+Click into your newly created CloudFront Distribution. Click on the "Error pages" tab and then click the "Create custom error response" button.
+
+Select the following settings:
+- "HTTP error code" should be "404: Not Found"
+- Error caching minimum TTL can stay as is (10)
+- Select "Yes" for "Customize error response"
+- The "Response page path" should be "/404.html" (or whatever you want your 404 page file name to be).
+    - You'll need to create a `404.html` template and place it in your S3 Bucket.
+- Select "404: Not Found" for the "HTTP Response code" field
+- Click the "Create custom error response" button 
+
+{{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/custom_error.png" alt="Default CloudFront 404 page." >}}
+
+Give your distribution a few minutes to update and you're done here.
+
+There are several other error codes you can account for using the same process. I only added a 404 page since it's one of the most common.
+
 ## Pointing a Custom Domain to the CloudFront Distribution
 
 The last step is to point your domain to the cloudfront distribution.
@@ -190,6 +215,13 @@ Then click the "Create records" button.
 
 It will take some time for these changes to propagate across DNS servers. In my experience, it's never been more than around 15 minutes. Usually faster.
 
-After adding the DNS record and waiting some time, you should be able to go to your domain on a browser and see your site. Congrats! Your site is now live.
+## Viewing Your Live Site
+After adding the DNS record and waiting some time, you should be able to go to your domain on a browser and see your site.
 
 {{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/live_site.png" alt="Live site." >}}
+
+You can also test out your custom error page(s). In my cause, I browsed to https://nelson.cloud/test to see my custom 404 page:
+
+{{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/404_custom.png" alt="Custom 404 page." >}}
+
+Congrats! Your site is now live.
