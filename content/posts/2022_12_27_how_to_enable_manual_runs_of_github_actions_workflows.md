@@ -40,7 +40,7 @@ After pushing changes, I was able to see a "Run workflow" button that allows me 
 
 {{< figure src="/how_to_enable_manual_runs_of_github_actions_workflows/manual_run_enabled.png" alt="GitHub Actions doesn't show a manual way of running the workflow." >}}
 
-Note that there is a lot more configuration options available when adding the `workflow_dispatch` key. However, I just wanted to enable manual runs and nothing more. Refer to [the documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch) for more information.
+Note that there are a lot more configuration options available when adding the `workflow_dispatch` key. However, I just wanted to enable manual runs and nothing more. Refer to [the documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch) for more information.
 
 ## References
 
