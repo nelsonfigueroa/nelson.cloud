@@ -7,14 +7,25 @@
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
     // get user's theme preference from local storage, if it's available, and set theme based on that
+    // if not, set theme based on preferes-color-scheme
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme == "dark") {
-        btn.innerHTML = "./light-mode";
+        btn.innerHTML = "./light";
 
         // add dark class to <body>
         document.body.classList.toggle("dark");
     } else if (currentTheme == "light") {
-        btn.innerHTML = "./dark-mode";
+        btn.innerHTML = "./dark";
+
+        // add light class to <body>
+        document.body.classList.toggle("light");
+    } else if (prefersDarkScheme.matches) {
+        btn.innerHTML = "./light"
+
+        // add dark class to <body>
+        document.body.classList.toggle("dark");
+    } else if (!prefersDarkScheme.matches) {
+        btn.innerHTML = "./dark"
 
         // add light class to <body>
         document.body.classList.toggle("light");
@@ -28,14 +39,14 @@
         if (theme == "light") {
             document.body.classList.toggle("light"); // remove light mode class
             document.body.classList.toggle("dark"); // add dark mode class
-            btn.innerHTML = "./light-mode"
+            btn.innerHTML = "./light"
 
             // update theme variable to store
             theme = "dark";
         } else {
             document.body.classList.toggle("dark"); // remove dark mode class
             document.body.classList.toggle("light"); // add light mode class
-            btn.innerHTML = "./dark-mode"
+            btn.innerHTML = "./dark"
 
             // update theme variable to store
             theme = "light";
