@@ -215,7 +215,7 @@ Then click the "Create records" button.
 
 It will take some time for these changes to propagate across DNS servers. In my experience, it's never been more than around 15 minutes. Usually faster.
 
-## Viewing Your Live Site
+## Viewing The Live Site
 After adding the DNS record and waiting some time, you should be able to go to your domain on a browser and see your site.
 
 {{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/live_site.png" alt="Live site." >}}
