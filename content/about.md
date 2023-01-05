@@ -140,4 +140,4 @@ Contributed practical examples for the following commands:
 
 **Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman, Silicon Valley, The Boondocks
 
-**Music**: I mainly listen to Death Metal and Black Metal. Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
+**Music**: I mainly listen to Death Metal. Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa).
