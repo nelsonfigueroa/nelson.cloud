@@ -13,7 +13,7 @@ Note that at the time of this writing I'm running Ruby 3.1.2.
 
 ## Iterating With Key and Value
 
-The most common way I've seen hash iterations is by declaring both the key and value in the loop:
+The most common way I've seen hash iterations is by declaring both the key and value variables in the loop. The result is as expected:
 
 ```ruby
 items = {
@@ -213,53 +213,4 @@ Once again, the output is exactly the same as before:
 1
 2
 3
-```
-
-## Key and Value Types When Iterating Through Hashes
-
-Note that hash keys will be of the Symbol class even though they are written like strings in the code, while values will retain their type.
-
-For example, in the code below the class of each key and value is being printed to demonstrate this:
-
-```ruby
-items = {
-  'A': 1,
-  'B': 1.0,
-  'C': :symbol,
-  'D': 'string',
-  'E': [1, 2, 3]
-}
-
-items.each do |key, value|
-  puts "#{key.class}, #{value.class}"
-end
-```
-
-The output looks like this:
-
-```
-Symbol, Integer
-Symbol, Float
-Symbol, Symbol
-Symbol, String
-Symbol, Array
-```
-
-And just a reminder that Symbols are also used when accessing a single element in a hash:
-
-```ruby
-items = {
-  'A': 1,
-  'B': 2,
-  'C': 3
-}
-
-# A is written as a Symbol here as opposed to a String
-puts items[:A]
-```
-
-The output is:
-
-```
-1
 ```
