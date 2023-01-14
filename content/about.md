@@ -132,7 +132,7 @@ Contributed practical examples for the following commands:
 
 ## Interests
 
-**Technology**: Programming, DevOps/Infrastructure, Cybersecurity, Privacy
+**Technology**: Programming, DevOps/Cloud Infrastructure, Cybersecurity, Privacy
 
 **Hobbies**: Videogames, Electric Guitar
 
