@@ -100,7 +100,7 @@ I started this blog for fun and to share my knowledge.
 
 ##  Education 
 
-[*California State University, Northridge*](https://www.csun.edu/)
+**[California State University, Northridge](https://www.csun.edu/)**
 
 Bachelor of Science in Computer Information Technology (2019)
 
