@@ -13,7 +13,7 @@ enableRobotsTXT = true
   # email = "example@test.com"
 
 [params]
-  copyright = "© 2022 Nelson Figueroa"
+  copyright = "© 2023 Nelson Figueroa"
   highlight = true
   description = "Personal site and blog of Nelson Figueroa."
 
