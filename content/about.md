@@ -141,3 +141,11 @@ Contributed practical examples for the following commands:
 **Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman, Silicon Valley, The Boondocks
 
 **Music**: I mainly listen to Death Metal. Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) if you're curious.
+
+---
+
+## Other
+
+This site is a part of:
+- [512kb.club](https://512kb.club)
+- [1mb.club](https://1mb.club)
