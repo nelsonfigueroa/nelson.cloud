@@ -9,21 +9,21 @@ body {
 
 body.dark {
   --bg-color: #0e0e0e;
-  --text-color: #cccccc;
+  --text-color: #ccc;
   --secondary-color: #a7a7a7;
   --link-color: #02a7ff;
   --hr-color: #5c5c5c;
-  --pre-color: #cccccc;
+  --pre-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     --bg-color: #0e0e0e;
-    --text-color: #cccccc;
+    --text-color: #ccc;
     --secondary-color: #a7a7a7;
     --link-color: #02a7ff;
     --hr-color: #5c5c5c;
-    --pre-color: #cccccc;
+    --pre-color: #ccc;
   }
 
   body.light {
