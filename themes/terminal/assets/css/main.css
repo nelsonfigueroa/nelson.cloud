@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: "Menlo", "Consolas", monospace;
+    font-family: Menlo, Consolas, monospace;
     font-size: 16px;
     font-style: normal;
     text-rendering: geometricPrecision;
@@ -211,20 +211,20 @@ main#content ul#posts li a:hover {
 
     main#content ul#posts li span:before {  
         content: "┌──";
-        /*margin-right: 9px;*/
+        /* margin-right: 9px; */
     } 
 
     main#content ul#posts li a:before {  
         content: "└─";
         color: var(--text-color);
-        /*margin-right: 9px; */
+        /* margin-right: 9px; */
     }
 
     main#content ul#posts li a:hover:before {  
         /* Setting colors so :before element does not get highlighted */
         color: var(--text-color);
         background-color: var(--bg-color);
-        /*margin-right: 9px; */
+        /* margin-right: 9px; */
     }
 }
 
