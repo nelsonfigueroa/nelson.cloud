@@ -241,17 +241,14 @@ main#content #toc li::before {
     content: "» ";
 }
 
-main#content #toc nav#TableOfContents {
-    margin-top: 0.25em;
-}
-
-main#content #toc nav#TableOfContents > ul, main#content #toc nav#TableOfContents > ol {
-    margin-left: -2.5em;
-}
-
-main#content #toc ul, main#content #toc ol {
+main#content #toc nav ul {
     margin: 0;
-    padding: 0 0 0 2.5em;
+    padding: 0;
+}
+
+main#content #toc li ul {
+    margin: 0;
+    padding: 0 0 0 2em;
 }
 
 /* ordered/unordered list can be specified in config.toml */
@@ -344,6 +341,10 @@ main#content pre {
     background-color: black;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
+    border: solid 0.0625em;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-color: var(--pre-color);
 }
 
 main#content pre ::selection {
@@ -355,13 +356,6 @@ main#content pre code {
     padding-left: 0;
     margin-right: 1.25em;
     color: var(--pre-color);
-}
-
-main#content pre {
-    border: solid 0.0625em;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-color: var(--pre-color);
 }
 
 main#content section.footnotes {
