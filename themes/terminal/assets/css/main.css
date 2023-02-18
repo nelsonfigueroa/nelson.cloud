@@ -1,16 +1,9 @@
-/* Webkit/Blink Browsers */
 ::selection {
     color: var(--bg-color);
     background-color: var(--text-color);
 }
 
-/* Gecko Browsers */
-::-moz-selection {
-    color: var(--bg-color);
-    background-color: var(--text-color);
-}
-
-*, *:before, *:after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -18,7 +11,7 @@ body {
     font-family: Menlo, Consolas, monospace;
     font-size: 16px;
     font-style: normal;
-    text-rendering: geometricPrecision;
+    text-rendering: geometricprecision;
     width: 100%;
     margin: 0 auto;
     padding: 0 1em;
@@ -38,7 +31,7 @@ body {
     margin: 0;
     font-size: 1.2vmin;
     line-height: 1.1em;
-    font-family: 'Menlo', monospace;
+    font-family: Menlo, monospace;
     border: none;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -89,10 +82,10 @@ header#banner a:hover {
 
 button.theme-toggle {
     border: none;
-    font-family: "Menlo", "Consolas", monospace;
+    font-family: Menlo, Consolas, monospace;
     font-size: 1em;
     font-style: normal;
-    text-rendering: geometricPrecision;
+    text-rendering: geometricprecision;
     padding: 0;
     margin: 0;
     color: var(--link-color);
@@ -203,21 +196,24 @@ main#content ul#posts li a:hover {
         margin-bottom: 1.2em ;
     }
 
-    main#content ul#posts li span:before {  
+    main#content ul#posts li span::before {  
         content: "┌──";
+
         /* margin-right: 9px; */
     } 
 
-    main#content ul#posts li a:before {  
+    main#content ul#posts li a::before {  
         content: "└─";
         color: var(--text-color);
+
         /* margin-right: 9px; */
     }
 
-    main#content ul#posts li a:hover:before {  
+    main#content ul#posts li a:hover::before {  
         /* Setting colors so :before element does not get highlighted */
         color: var(--text-color);
         background-color: var(--bg-color);
+
         /* margin-right: 9px; */
     }
 }
@@ -272,7 +268,7 @@ main#content #toc ol li {
     display: block;
 }
 
-main#content #toc ol li:before {
+main#content #toc ol li::before {
     content: counters(item, ".") ". ";
     counter-increment: item;
 }
@@ -336,14 +332,14 @@ main#content figure ::selection {
 
 main#content code,
 main#content pre {
-    font-family: 'Menlo', monospace;
+    font-family: Menlo, monospace;
 }
 
 main#content pre {
     display: block;
     overflow-x: auto;
     white-space: pre;
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem;
     line-height: 1.5;
     background-color: black;
     margin-top: 2.5em;
@@ -352,7 +348,7 @@ main#content pre {
 
 main#content pre ::selection {
     color: #000;
-    background-color: #cccccc;
+    background-color: #ccc;
 }
 
 main#content pre code {
@@ -378,10 +374,12 @@ main#content article ul li a {
 }
 
 /* For resume details */
+
 /* https://iamkate.com/code/tree-views/ */
 .tree{
   --spacing : 1.5rem;
   --radius  : 10px;
+
   padding: 0;
 }
 
