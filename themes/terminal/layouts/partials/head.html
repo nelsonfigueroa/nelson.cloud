@@ -20,8 +20,6 @@
 
     {{ $resources = $resources | append (resources.Get "css/main.css") -}}
 
-    {{ $resources = $resources | append (resources.Get "css/min770px.css") -}}
-
     {{ if .Site.Params.highlight -}}
         {{ $resources = $resources | append (resources.Get "css/syntax.css") -}}
     {{ end -}}
