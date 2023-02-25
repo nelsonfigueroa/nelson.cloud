@@ -6,7 +6,7 @@ theme = "LoveIt"
 themesDir = "themes/"
 
 # website title
-title = "LoveIt"
+title = "Nelson Figueroa"
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
