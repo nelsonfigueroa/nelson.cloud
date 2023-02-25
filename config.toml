@@ -100,9 +100,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # title name
       name = "nelson.cloud"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
-      post = ""
+      post = "<i class='fa-solid fa-cloud' aria-hidden='true'></i>"
       # whether to use typeit animation for title name
       typeit = false
 
@@ -648,28 +648,28 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         title = ""
       [[languages.en.menu.main]]
         weight = 4
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-      [[languages.en.menu.main]]
-        weight = 5
         identifier = "about"
         pre = ""
         post = ""
         name = "About"
         url = "/about/"
         title = ""
-      [[languages.en.menu.main]]
-        weight = 6
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/dillonzq/LoveIt"
-        title = "GitHub"
+      # [[languages.en.menu.main]]
+      #   weight = 5
+      #   identifier = "documentation"
+      #   pre = ""
+      #   post = ""
+      #   name = "Docs"
+      #   url = "/categories/documentation/"
+      #   title = ""
+      # [[languages.en.menu.main]]
+      #   weight = 6
+      #   identifier = "github"
+      #   pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+      #   post = ""
+      #   name = ""
+      #   url = "https://github.com/nelsonfigueroa/"
+      #   title = "GitHub"
     [languages.en.params]
       [languages.en.params.search]
         enable = true
