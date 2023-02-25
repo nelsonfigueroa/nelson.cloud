@@ -36,9 +36,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = "xxxx"
+  name = "Nelson" # this overrides authors in individual posts.
   email = ""
-  link = ""
+  link = "/"
 
 # Menu config
 [menu]
@@ -112,17 +112,17 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Custom content (HTML format is supported)
     custom = ""
     # whether to show Hugo and theme info
-    hugo = true
+    hugo = false
     # whether to show copyright info
     copyright = true
     # whether to show the author
-    author = true
+    author = false
     # site creation time
     since = 2019
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
-    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    license= ''
 
   # Section (all posts) page config
   [params.section]
@@ -189,11 +189,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.png"
+      avatarURL = "/images/avatar.jpg" # looks like this isn't even working? I can change this in another area
       # title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+      subtitle = "A Clean, Elegant but Advanced Hugo Theme" # looks like this isn't even working? I can change this in another area
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -472,18 +472,18 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Publisher info
       [params.page.seo.publisher]
         name = "xxxx"
-        logoUrl = "/images/avatar.png"
+        logoUrl = "/images/avatar.jpg"
 
   # TypeIt config
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
-    speed = 100
+    speed = 75
     # blinking speed of the cursor (measured in milliseconds)
     cursorSpeed = 1000
     # character used for the cursor (HTML format is supported)
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    duration = -1
+    duration = 5000
 
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
@@ -630,14 +630,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "Posts"
         url = "/posts/"
         title = ""
-      [[languages.en.menu.main]]
-        weight = 2
-        identifier = "tags"
-        pre = ""
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
+      # [[languages.en.menu.main]]
+      #   weight = 2
+      #   identifier = "tags"
+      #   pre = ""
+      #   post = ""
+      #   name = "Tags"
+      #   url = "/tags/"
+      #   title = ""
       [[languages.en.menu.main]]
         weight = 3
         identifier = "categories"
@@ -689,22 +689,23 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         [languages.en.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
+          avatarURL = "/images/avatar.jpg"
           title = ""
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+          subtitle = "Nelson Figueroa - Software Engineer"
           typeit = true
           social = true
           disclaimer = ""
+      # social media icons in home page
       [languages.en.params.social]
-        GitHub = "xxxx"
-        Twitter = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
-        Youtubelegacy = "xxxx"
-        Phone = "555-555-555"
-        Email = "xxxx@xxxx.com"
         RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
+        # GitHub = "nelsonfigueroa"
+        # Twitter = "xxxx"
+        # Instagram = "xxxx"
+        # Facebook = "xxxx"
+        # Telegram = "xxxx"
+        # Youtubelegacy = "xxxx"
+        # Phone = "555-555-555"
+        # Email = "xxxx@xxxx.com"
+        # [languages.en.params.social.Mastodon]
+        #   id = "@xxxx"
+        #   prefix = "https://mastodon.technology/"
