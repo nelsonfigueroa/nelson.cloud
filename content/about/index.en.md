@@ -3,7 +3,7 @@ title: "Nelson Figueroa"
 date: 2019-08-02T11:04:49+08:00
 draft: false
 description: "About Me"
-images: ["/Apple-Devices-Preview.png"]
+images: [""]
 
 lightgallery: true
 
@@ -42,7 +42,7 @@ Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
 - Deployed QA version of CCPA Requests serverless app that uses Lambdas, DynamoDB defined in Terraform
 - Took part in 24/7 on-call duty to handle any production issues that may arise
 - Set up New Relic for metrics monitoring on all NGINX nodes and set up a dashboard for observability.
-- Creates redirects to maintain edmunds.com SEO rankings with CloudFront and Lambda@Edge functions written in Python
+- Created redirects to maintain edmunds.com SEO rankings with CloudFront and Lambda@Edge functions written in Python
 - Developed and Deployed New Relic User Management Service with Python, API Gateway, Lambda, DynamoDB, and Okta.
 - Used AWS Athena to query access logs and identify malicious IP addresses and exposed internal services
 - Remediated security vulnerabilities across all infrastructure.
