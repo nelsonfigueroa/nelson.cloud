@@ -670,8 +670,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           social = true
           disclaimer = ""
       # social media icons in home page
-      [languages.en.params.social]
-        RSS = true
+      # [languages.en.params.social]
+        # RSS = false
         # GitHub = "nelsonfigueroa"
         # Twitter = "xxxx"
         # Instagram = "xxxx"
