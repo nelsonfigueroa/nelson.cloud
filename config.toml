@@ -510,7 +510,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # located in "themes/LoveIt/assets/data/cdn/" directory
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
-    data = "jsdelivr.yml"
+    # data = "jsdelivr.yml"
 
   # Compatibility config
   [params.compatibility]
@@ -665,7 +665,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           gravatarEmail = ""
           avatarURL = "/images/avatar.jpg"
           title = ""
-          subtitle = "Nelson Figueroa - Software Engineer"
+          subtitle = "<h1>Nelson Figueroa</h1><p>Software Engineer</p>"
           typeit = false
           social = true
           disclaimer = ""
