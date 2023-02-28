@@ -5,3 +5,4 @@ node_modules
 .stylelintrc.json
 package.json
 yarn.lock
+/resources/_gen/
