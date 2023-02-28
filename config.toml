@@ -666,7 +666,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           avatarURL = "/images/avatar.jpg"
           title = ""
           subtitle = "Nelson Figueroa - Software Engineer"
-          typeit = true
+          typeit = false
           social = true
           disclaimer = ""
       # social media icons in home page
