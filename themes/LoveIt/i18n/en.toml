@@ -137,7 +137,7 @@ other = "Back"
 other = "Home"
 
 [readMore]
-other = "Read More"
+other = "" # add text here to add a link like "Read Me" under each post title/summary
 # === posts/single.html ===
 
 # === 404.html ===
