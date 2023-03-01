@@ -30,20 +30,13 @@
         {{- /* Meta */ -}}
         <div class="post-meta">
             <div class="post-meta-line">
-                {{- $author := $params.author | default .Site.Author.name | default (T "author") -}}
-                {{- $authorLink := $params.authorlink | default .Site.Author.link | default .Site.Home.RelPermalink -}}
-                <span class="post-author">
-                    {{- $options := dict "Class" "author" "Destination" $authorLink "Title" "Author" "Rel" "author" "Icon" (dict "Class" "fas fa-user-circle fa-fw") "Content" $author -}}
-                    {{- partial "plugin/a.html" $options -}}
-                </span>
-
                 {{- $categories := slice -}}
                 {{- range .Params.categories -}}
                     {{- $category := partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
                     {{- $categories = $categories | append (printf `<a href="%v"><i class="far fa-folder fa-fw" aria-hidden="true"></i>%v</a>` $category.RelPermalink $category.Title) -}}
                 {{- end -}}
                 {{- with delimit $categories "&nbsp;" -}}
-                    &nbsp;<span class="post-category">
+                    <span class="post-category">
                         {{- dict "Categories" . | T "includedInCategories" | safeHTML -}}
                     </span>
                 {{- end -}}
@@ -76,7 +69,7 @@
 
         {{- /* Static TOC */ -}}
         {{- if ne $toc.enable false -}}
-            <div class="details toc" id="toc-static"  data-kept="{{ if $toc.keepStatic }}true{{ end }}">
+            <div class="details toc open" id="toc-static"  data-kept="{{ if $toc.keepStatic }}true{{ end }}">
                 <div class="details-summary toc-title">
                     <span>{{ T "contents" }}</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
