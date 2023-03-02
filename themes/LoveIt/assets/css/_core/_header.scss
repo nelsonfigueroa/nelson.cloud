@@ -230,7 +230,7 @@ header {
       @include transition(margin-top 0.3s ease);
 
       .header-title {
-        font-size: var(--header-title-font-size);
+        font-size: var(--mobile-header-title-font-size);
         max-width: 80%;
       }
 
@@ -313,6 +313,7 @@ header {
       .menu-item {
         display: block;
         line-height: 2.5rem;
+        font-family: var(--header-title-font-family);
       }
 
       &.active {
