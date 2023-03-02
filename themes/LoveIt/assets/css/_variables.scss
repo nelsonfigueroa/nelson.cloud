@@ -59,12 +59,13 @@ $selection-color-dark: $global-font-color !default;
 $header-height: 3.5rem !default;
 
 // Font family and size of the header title
-$header-title-font-family: $global-font-family !default;
+$header-title-font-family: Menlo, Consolas, Monaco, Lucida Console, monospace !default;
 $header-title-font-size: 1.5rem !default;
+$mobile-header-title-font-size: 0.9rem !default;
 
 // Color of the header background
-$header-background-color: #f8f8f8 !default;
-$header-background-color-dark: #252627 !default;
+$header-background-color: rgba(248, 248, 248, 0.8) !default;
+$header-background-color-dark: rgba(0, 0, 0, 0.8) !default;
 
 // Color of the hover header item
 $header-hover-color: #161209 !default;
