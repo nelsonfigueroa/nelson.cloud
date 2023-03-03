@@ -26,8 +26,6 @@ copyright = ""
 
 # whether to use robots.txt
 enableRobotsTXT = true
-# whether to use git commit log
-enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 
@@ -73,8 +71,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [params]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
-  # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/dillonzq/LoveIt"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
@@ -194,8 +190,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       title = ""
       # subtitle shown in home page (HTML format is supported)
       subtitle = "A Clean, Elegant but Advanced Hugo Theme" # looks like this isn't even working? I can change this in another area
-      # whether to use typeit animation for subtitle
-      typeit = true
       # whether to show social links
       social = true
       # disclaimer (HTML format is supported)
@@ -205,82 +199,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       # special amount of posts in each home posts page
       paginate = 6
-  # Social config in home page
-  [params.social]
-    GitHub = ""
-    Linkedin = ""
-    Twitter = ""
-    Instagram = ""
-    Facebook = ""
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    Discord = ""
-    DiscordInvite = ""
-    Lichess = ""
-    ORCID = ""
-    Pleroma = ""
-    Kaggle = ""
-    MediaWiki= ""
-    Plume = ""
-    HackTheBox = ""
-    RootMe= ""
-    Email = ""
-    RSS = ""
 
   # Page global config
   [params.page]
@@ -447,17 +365,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       [params.page.seo.publisher]
         name = "xxxx"
         logoUrl = "/images/avatar.jpg"
-
-  # TypeIt config
-  [params.typeit]
-    # typing speed between each step (measured in milliseconds)
-    speed = 75
-    # blinking speed of the cursor (measured in milliseconds)
-    cursorSpeed = 1000
-    # character used for the cursor (HTML format is supported)
-    cursorChar = "|"
-    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    duration = 5000
 
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
@@ -663,7 +570,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         [languages.en.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.jpg"
+          avatarURL = ""
           title = ""
           subtitle = "<h1>Nelson Figueroa</h1><p>Software Engineer</p>"
           typeit = false
