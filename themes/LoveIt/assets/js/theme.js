@@ -790,44 +790,6 @@ var Theme = /*#__PURE__*/function () {
       }
     }
   }, {
-    key: "initTypeit",
-    value: function initTypeit() {
-      var _this10 = this;
-
-      if (this.config.typeit) {
-        var typeitConfig = this.config.typeit;
-        var speed = typeitConfig.speed ? typeitConfig.speed : 100;
-        var cursorSpeed = typeitConfig.cursorSpeed ? typeitConfig.cursorSpeed : 1000;
-        var cursorChar = typeitConfig.cursorChar ? typeitConfig.cursorChar : '|';
-        Object.values(typeitConfig.data).forEach(function (group) {
-          var typeone = function typeone(i) {
-            var id = group[i];
-            var instance = new TypeIt("#".concat(id), {
-              strings: _this10.data[id],
-              speed: speed,
-              lifeLike: true,
-              cursorSpeed: cursorSpeed,
-              cursorChar: cursorChar,
-              waitUntilVisible: true,
-              afterComplete: function afterComplete() {
-                if (i === group.length - 1) {
-                  if (typeitConfig.duration >= 0) window.setTimeout(function () {
-                    instance.destroy();
-                  }, typeitConfig.duration);
-                  return;
-                }
-
-                instance.destroy();
-                typeone(i + 1);
-              }
-            }).go();
-          };
-
-          typeone(0);
-        });
-      }
-    }
-  }, {
     key: "initComment",
     value: function initComment() {
       var _this11 = this;
