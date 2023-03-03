@@ -172,6 +172,7 @@ header {
 
       .menu-item {
         margin: 0 .5rem;
+        font-family: var(--header-title-font-family);
 
         &.delimiter {
           border-left: 1.5px solid $global-font-color;
