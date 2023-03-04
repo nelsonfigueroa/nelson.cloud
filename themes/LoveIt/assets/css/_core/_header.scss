@@ -24,6 +24,10 @@ header {
 
   &:hover {
     @include box-shadow(0 0 1.5rem 0 rgba(0, 0, 0, .1));
+
+    [theme=dark] & {
+      @include box-shadow(0 0 1.5rem 0 rgbA(2, 167, 255, .2));
+    }
   }
 }
 
@@ -33,6 +37,11 @@ header {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  border-bottom: 0.08em dashed $global-border-color;
+
+  [theme=dark] & {
+    border-bottom: 0.08em dashed $global-border-color-dark;
+  }
 }
 
 .header-title {
@@ -193,6 +202,7 @@ header {
 
       a.active {
         font-weight: 900;
+        border-bottom: 0.1em solid;
         color: $header-hover-color;
 
         [theme=dark] & {
