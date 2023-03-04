@@ -34,7 +34,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = "Nelson" # this overrides authors in individual posts.
+  name = "Nelson Figueroa" # sets author in RSS
   email = ""
   link = "/"
 
@@ -185,11 +185,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.jpg" # looks like this isn't even working? I can change this in another area
+      avatarURL = "" # looks like this isn't even working? I can change this in another area
       # title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme" # looks like this isn't even working? I can change this in another area
+      subtitle = "" # looks like this isn't even working? I can change this in another area
       # whether to show social links
       social = true
       # disclaimer (HTML format is supported)
@@ -216,10 +216,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     fraction = true
     # whether to enable the fontawesome extended syntax
     fontawesome = true
-    # whether to show link to Raw Markdown content of the content
-    linkToMarkdown = true
     # whether to show the full text content in RSS
-    rssFullText = false
+    rssFullText = true
     # Table of the contents config
     [params.page.toc]
       # whether to enable the table of the contents
@@ -227,13 +225,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # whether to keep the static table of the contents in front of the post
       keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
-      auto = true
+      auto = false
     # Code config
     [params.page.code]
       # whether to show the copy button of the code block
       copy = true
-      # the maximum number of lines of displayed code by default
-      maxShownLines = 50
+      # the maximum number of lines of displayed code by default, determines whether code blocks are open or closed by default
+      maxShownLines = 1000
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     [params.page.math]
       enable = false
@@ -534,6 +532,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         post = ""
         name = "About"
         url = "/about/"
+        title = ""
+      [[languages.en.menu.main]]
+        weight = 4
+        identifier = "donate"
+        pre = ""
+        post = ""
+        name = "Donate"
+        url = "https://buymeacoffee.com/nelsonfigueroa"
         title = ""
       # [[languages.en.menu.main]]
       #   weight = 5
