@@ -33,11 +33,11 @@ $global-link-color: #034cd3 !default;
 $global-link-color-dark: #02a7ff !default;
 
 // Color of the hover link
-$global-link-hover-color: #2d96bd !default;
-$global-link-hover-color-dark: #fff !default;
+$global-link-hover-color: $global-link-color-dark !default;
+$global-link-hover-color-dark: $global-link-color !default;
 
 // Color of the border
-$global-border-color: #f0f0f0 !default;
+$global-border-color: #c3c2c2 !default;
 $global-border-color-dark: #363636 !default;
 // ========== Global ========== //
 
@@ -82,13 +82,13 @@ $search-background-color-dark: #363636 !default;
 $toc-title-font-size: 1.2rem !default;
 $toc-content-font-size: 1rem !default;
 
-// Color of the single link
-$single-link-color: #2d96bd !default;
-$single-link-color-dark: #55bde2 !default;
+// // Color of the single link
+$single-link-color: $global-link-color !default;
+$single-link-color-dark: $global-link-color-dark !default;
 
-// Color of the hover single link
-$single-link-hover-color: #ef3982 !default;
-$single-link-hover-color-dark: #bdebfc !default;
+// // Color of the hover single link
+$single-link-hover-color: $global-link-color-dark !default;
+$single-link-hover-color-dark: $global-link-color !default;
 
 // Color of the table background
 $table-background-color: #fff !default;
