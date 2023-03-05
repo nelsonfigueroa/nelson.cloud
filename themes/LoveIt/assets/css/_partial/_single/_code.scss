@@ -7,9 +7,22 @@ code {
   font-size: var(--code-font-size);
   font-family: var(--code-font-family);
   color: $code-color;
+  background-color: $code-color-dark;
+  border-radius: 0.2em;
 
   [theme=dark] & {
     color: $code-color-dark;
+    background-color: $code-color;
+  }
+}
+
+pre code {
+  color: $global-font-color;
+  background-color: $code-block-background-color;
+
+  [theme=dark] & {
+    color: $global-font-color-dark;
+    background-color: $code-block-background-color-dark;
   }
 }
 
@@ -29,11 +42,11 @@ pre {
   }
 }
 
-code, pre, .highlight table, .highlight tr, .highlight td {
-  background: $code-background-color !important;
+pre, .highlight table, .highlight tr, .highlight td {
+  background: $code-block-background-color !important;
 
   [theme=dark] & {
-    background: $code-background-color-dark !important;
+    background: $code-block-background-color-dark !important;
   }
 }
 
@@ -70,11 +83,11 @@ code, pre, .highlight table, .highlight tr, .highlight td {
       font-family: var(--global-font-family);
       font-weight: bold;
       color: $code-info-color;
-      background: darken($code-background-color, 8%);
+      background: darken($code-block-background-color, 8%);
 
       [theme=dark] & {
         color: $code-info-color-dark;
-        background: darken($code-background-color-dark, 6%);
+        background: darken($code-block-background-color-dark, 6%);
       }
 
       &:hover {
@@ -84,6 +97,10 @@ code, pre, .highlight table, .highlight tr, .highlight td {
       .code-title {
         width: 100%;
         padding: .4rem;
+        color: $global-font-color;
+        [theme=dark] & {
+          color: $code-info-color-dark;
+        }
       }
 
       .code-title::after {
@@ -145,8 +162,14 @@ code, pre, .highlight table, .highlight tr, .highlight td {
       display: none;
       padding: .4rem;
 
+      color: $global-font-color;
+      [theme=dark] & {
+        color: $global-font-color-dark;
+      }
+
       &:hover {
         cursor: pointer;
+        // color: $global-link-hover-color;
         color: $global-link-hover-color;
 
         [theme=dark] & {
@@ -163,10 +186,10 @@ code, pre, .highlight table, .highlight tr, .highlight td {
 
     &.open {
       .code-header {
-        background: darken($code-background-color, 3%);
+        background: darken($code-block-background-color, 3%);
 
         [theme=dark] & {
-          background: darken($code-background-color-dark, 3%);
+          background: darken($code-block-background-color-dark, 3%);
         }
       }
 
