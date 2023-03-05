@@ -212,7 +212,7 @@
     img {
       max-width: 100%;
       min-height: 1em;
-      border-radius: 0.5em;
+      border-radius: 0.2em;
     }
 
     figure {
@@ -274,11 +274,11 @@
     hr {
       margin: 1rem 0;
       position: relative;
-      border-top: 1px dashed $global-border-color;
+      border-top: 1px solid $global-border-color;
       border-bottom: none;
 
       [theme=dark] & {
-        border-top: 1px dashed $global-border-color-dark;
+        border-top: 1px solid $global-border-color-dark;
       }
     }
 
