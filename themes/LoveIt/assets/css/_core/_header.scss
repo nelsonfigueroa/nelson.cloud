@@ -37,10 +37,10 @@ header {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  border-bottom: 0.08em dashed $global-border-color;
+  border-bottom: 0.08em solid $global-border-color;
 
   [theme=dark] & {
-    border-bottom: 0.08em dashed $global-border-color-dark;
+    border-bottom: 0.08em solid $global-border-color-dark;
   }
 }
 
