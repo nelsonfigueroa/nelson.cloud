@@ -66,11 +66,11 @@
     padding-top: 1rem;
     padding-bottom: .8rem;
     color: $global-font-color;
-    border-bottom: 1px dashed $global-border-color;
+    border-bottom: 1px solid $global-border-color;
 
     [theme=dark] & {
       color: $global-font-color-dark;
-      border-bottom: 1px dashed $global-border-color-dark;
+      border-bottom: 1px solid $global-border-color-dark;
     }
 
     .featured-image-preview {
