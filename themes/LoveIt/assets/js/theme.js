@@ -392,24 +392,6 @@ var Theme = /*#__PURE__*/function () {
               var query = _ref6.query;
               return "<div class=\"search-empty\">".concat(searchConfig.noResultsFound, ": <span class=\"search-query\">\"").concat(query, "\"</span></div>");
             },
-            footer: function footer(_ref7) {
-              _objectDestructuringEmpty(_ref7);
-
-              var _ref8 = searchConfig.type === 'algolia' ? {
-                searchType: 'algolia',
-                icon: '<i class="fab fa-algolia fa-fw" aria-hidden="true"></i>',
-                href: 'https://www.algolia.com/'
-              } : {
-                searchType: 'Lunr.js',
-                icon: '',
-                href: 'https://lunrjs.com/'
-              },
-                  searchType = _ref8.searchType,
-                  icon = _ref8.icon,
-                  href = _ref8.href;
-
-              return "<div class=\"search-footer\">Search by <a href=\"".concat(href, "\" rel=\"noopener noreffer\" target=\"_blank\">").concat(icon, " ").concat(searchType, "</a></div>");
-            }
           }
         });
         autosearch.on('autocomplete:selected', function (_event, suggestion, _dataset, _context) {
