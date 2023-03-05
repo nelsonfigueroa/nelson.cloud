@@ -17,10 +17,10 @@
         content: "|";
         font-weight: bolder;
         margin-right: .5rem;
-        color: $single-link-color;
+        color: $code-color;
 
         [theme=dark] & {
-          color: $single-link-color-dark;
+          color: $code-color-dark;
         }
       }
 
@@ -95,17 +95,19 @@
 
     a.active {
       font-weight: bold;
-      color: $single-link-color;
+      color: $code-color;
+      background-color: $code-background-color;
 
       [theme=dark] & {
-        color: $single-link-color-dark;
+        color: $code-color-dark;
+        background-color: $code-background-color-dark;
       }
 
       &::before {
-        color: $single-link-hover-color;
+        color: $code-color;
 
         [theme=dark] & {
-          color: $single-link-hover-color-dark;
+          color: $code-color-dark;
         }
       }
     }
@@ -125,15 +127,15 @@
     justify-content: space-between;
     line-height: 2em;
     padding: 0 .75rem;
-    background: darken($code-background-color, 6%);
+    background: darken($code-block-background-color, 6%);
 
     [theme=dark] & {
-      background: darken($code-background-color-dark, 6%);
+      background: darken($code-block-background-color-dark, 6%);
     }
   }
 
   .toc-content {
-    background-color: $code-background-color;
+    background-color: $code-block-background-color;
 
     > nav > ul {
       margin: 0;
@@ -141,16 +143,16 @@
     }
 
     [theme=dark] & {
-      background-color: $code-background-color-dark;
+      background-color: $code-block-background-color-dark;
     }
   }
 
   &.open {
     .toc-title {
-      background: darken($code-background-color, 3%);
+      background: darken($code-block-background-color, 3%);
 
       [theme=dark] & {
-        background: darken($code-background-color-dark, 3%);
+        background: darken($code-block-background-color-dark, 3%);
       }
     }
   }
