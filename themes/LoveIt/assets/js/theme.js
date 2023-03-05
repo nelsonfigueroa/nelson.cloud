@@ -629,33 +629,6 @@ var Theme = /*#__PURE__*/function () {
       if (this.config.math) renderMathInElement(document.body, this.config.math);
     }
   }, {
-    key: "initMermaid",
-    value: function initMermaid() {
-      var _this7 = this;
-
-      this._mermaidOnSwitchTheme = this._mermaidOnSwitchTheme || function () {
-        var $mermaidElements = document.getElementsByClassName('mermaid');
-
-        if ($mermaidElements.length) {
-          mermaid.initialize({
-            startOnLoad: false,
-            theme: _this7.isDark ? 'dark' : 'neutral',
-            securityLevel: 'loose'
-          });
-
-          _this7.util.forEach($mermaidElements, function ($mermaid) {
-            mermaid.render('svg-' + $mermaid.id, _this7.data[$mermaid.id], function (svgCode) {
-              $mermaid.innerHTML = svgCode;
-            }, $mermaid);
-          });
-        }
-      };
-
-      this.switchThemeEventSet.add(this._mermaidOnSwitchTheme);
-
-      this._mermaidOnSwitchTheme();
-    }
-  }, {
     key: "initEcharts",
     value: function initEcharts() {
       var _this8 = this;
@@ -953,8 +926,6 @@ var Theme = /*#__PURE__*/function () {
 
             _this13.initToc();
 
-            _this13.initMermaid();
-
             _this13.initSearch();
           }, 100);
         }
@@ -1001,7 +972,6 @@ var Theme = /*#__PURE__*/function () {
         this.initTable();
         this.initHeaderLink();
         this.initMath();
-        this.initMermaid();
         this.initEcharts();
         this.initTypeit();
         this.initMapbox();
