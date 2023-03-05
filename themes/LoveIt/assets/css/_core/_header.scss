@@ -461,22 +461,5 @@ header {
         }
       }
     }
-
-    .search-footer {
-      padding: .5rem 1rem;
-      float: right;
-      font-size: .8rem;
-      color: $global-font-secondary-color;
-
-      [theme=dark] {
-        color: $global-font-secondary-color-dark;
-      }
-
-      @include link(false, false);
-
-      a {
-        font-size: 1rem;
-      }
-    }
   }
 }
