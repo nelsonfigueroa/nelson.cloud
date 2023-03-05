@@ -50,8 +50,11 @@ $scrollbar-hover-color: #a9a9b3 !default;
 
 // ========== Selection ========== //
 // Color of the selected text
-$selection-color: $global-font-color-dark !default;
-$selection-color-dark: $global-font-color !default;
+$selection-color: $global-font-color !default;
+$selection-color-dark: $global-font-color-dark !default;
+
+$selection-font-color: $global-font-color-dark !default;
+$selection-font-color-dark: $global-font-color !default;
 // ========== Selection ========== //
 
 // ========== Header ========== //

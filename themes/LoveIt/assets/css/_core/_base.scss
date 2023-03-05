@@ -32,9 +32,11 @@ html {
 }
 
 ::selection {
+  color: $selection-font-color;
   background-color: $selection-color;
 
   [theme=dark] & {
+    color: $selection-font-color-dark;
     background-color: $selection-color-dark;
   }
 }
