@@ -64,20 +64,6 @@
     {{- $config = T "copyToClipboard" | dict "copyTitle" | dict "code" | merge $config -}}
 {{- end -}}
 
-{{- /* Sharer.js */ -}}
-{{- if $params.share.enable -}}
-    {{- $source := $cdn.sharerJS | default "lib/sharer/sharer.min.js" -}}
-    {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
-{{- end -}}
-
-{{- /* TypeIt */ -}}
-{{- with (.Scratch.Get "this").typeitMap -}}
-    {{- $typeit := $.Site.Params.typeit -}}
-    {{- $source := $cdn.typeitJS | default "lib/typeit/index.umd.js" -}}
-    {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Scratch" $.Scratch "Data" | partial "scratch/script.html" -}}
-    {{- $config = dict "speed" $typeit.speed "cursorSpeed" $typeit.cursorSpeed "cursorChar" $typeit.cursorChar "duration" $typeit.duration "data" . | dict "typeit" | merge $config -}}
-{{- end -}}
-
 {{- /* KaTeX */ -}}
 {{- $math := $params.math -}}
 {{- if eq $math true -}}
