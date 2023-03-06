@@ -1,0 +1,10 @@
+theme:
+  - html5shiv
+  - Object.values
+  - Promise
+  - fetch
+  - Element.prototype.after
+algoliasearch:
+  - Promise
+  - Object.entries
+  - Object.assign
