@@ -4,6 +4,7 @@ summary = "How to redirect a domain to another one using AWS S3, ACM, and CloudF
 date = "2023-02-16"
 categories = ["AWS"]
 toc = true
+featuredImage = ""
 +++
 
 With AWS S3, it's possible to redirect one domain to another. This is useful when migrating domains.

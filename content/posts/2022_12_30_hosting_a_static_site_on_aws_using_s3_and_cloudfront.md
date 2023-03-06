@@ -220,7 +220,7 @@ After adding the DNS record and waiting some time, you should be able to go to y
 
 {{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/live_site.png" alt="Live site." >}}
 
-You can also test out your custom error page(s). In my cause, I browsed to https://nelson.cloud/test to see my custom 404 page:
+You can also test out your custom error page(s). In my case, I browsed to https://nelson.cloud/test to see my custom 404 page:
 
 {{< figure src="/hosting_a_static_site_on_aws_using_s3_and_cloudfront/404_custom.png" alt="Custom 404 page." >}}
 
