@@ -26,12 +26,6 @@ libFiles:
   clipboardJS: clipboard@2.0.11/dist/clipboard.min.js
   # sharer.js@0.5.1 https://github.com/ellisonleao/sharer.js
   sharerJS: sharer.js@0.5.1/sharer.min.js
-  # katex@0.16.0 https://katex.org/
-  katexCSS: katex@0.16.0/dist/katex.min.css
-  katexJS: katex@0.16.0/dist/katex.min.js
-  katexAutoRenderJS: katex@0.16.0/dist/contrib/auto-render.min.js
-  katexCopyTexJS: katex@0.16.0/dist/contrib/copy-tex.min.js
-  katexMhchemJS: katex@0.16.0/dist/contrib/mhchem.min.js
   # echarts@5.3.3 https://echarts.apache.org/
   echartsJS: echarts@5.3.3/dist/echarts.min.js
   # mapbox-gl@2.9.1 https://docs.mapbox.com/mapbox-gl-js
