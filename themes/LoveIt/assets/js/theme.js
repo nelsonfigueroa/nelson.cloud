@@ -670,81 +670,6 @@ var Theme = /*#__PURE__*/function () {
       }
     }
   }, {
-    key: "initMapbox",
-    value: function initMapbox() {
-      var _this9 = this;
-
-      if (this.config.mapbox) {
-        mapboxgl.accessToken = this.config.mapbox.accessToken;
-        mapboxgl.setRTLTextPlugin(this.config.mapbox.RTLTextPlugin);
-        this._mapboxArr = this._mapboxArr || [];
-        this.util.forEach(document.getElementsByClassName('mapbox'), function ($mapbox) {
-          var _this9$data$$mapbox$i = _this9.data[$mapbox.id],
-              lng = _this9$data$$mapbox$i.lng,
-              lat = _this9$data$$mapbox$i.lat,
-              zoom = _this9$data$$mapbox$i.zoom,
-              lightStyle = _this9$data$$mapbox$i.lightStyle,
-              darkStyle = _this9$data$$mapbox$i.darkStyle,
-              marked = _this9$data$$mapbox$i.marked,
-              navigation = _this9$data$$mapbox$i.navigation,
-              geolocate = _this9$data$$mapbox$i.geolocate,
-              scale = _this9$data$$mapbox$i.scale,
-              fullscreen = _this9$data$$mapbox$i.fullscreen;
-          var mapbox = new mapboxgl.Map({
-            container: $mapbox,
-            center: [lng, lat],
-            zoom: zoom,
-            minZoom: .2,
-            style: _this9.isDark ? darkStyle : lightStyle,
-            attributionControl: false
-          });
-
-          if (marked) {
-            new mapboxgl.Marker().setLngLat([lng, lat]).addTo(mapbox);
-          }
-
-          if (navigation) {
-            mapbox.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
-          }
-
-          if (geolocate) {
-            mapbox.addControl(new mapboxgl.GeolocateControl({
-              positionOptions: {
-                enableHighAccuracy: true
-              },
-              showUserLocation: true,
-              trackUserLocation: true
-            }), 'bottom-right');
-          }
-
-          if (scale) {
-            mapbox.addControl(new mapboxgl.ScaleControl());
-          }
-
-          if (fullscreen) {
-            mapbox.addControl(new mapboxgl.FullscreenControl());
-          }
-
-          mapbox.addControl(new MapboxLanguage());
-
-          _this9._mapboxArr.push(mapbox);
-        });
-
-        this._mapboxOnSwitchTheme = this._mapboxOnSwitchTheme || function () {
-          _this9.util.forEach(_this9._mapboxArr, function (mapbox) {
-            var $mapbox = mapbox.getContainer();
-            var _this9$data$$mapbox$i2 = _this9.data[$mapbox.id],
-                lightStyle = _this9$data$$mapbox$i2.lightStyle,
-                darkStyle = _this9$data$$mapbox$i2.darkStyle;
-            mapbox.setStyle(_this9.isDark ? darkStyle : lightStyle);
-            mapbox.addControl(new MapboxLanguage());
-          });
-        };
-
-        this.switchThemeEventSet.add(this._mapboxOnSwitchTheme);
-      }
-    }
-  }, {
     key: "initComment",
     value: function initComment() {
       var _this11 = this;
@@ -973,8 +898,6 @@ var Theme = /*#__PURE__*/function () {
         this.initHeaderLink();
         this.initMath();
         this.initEcharts();
-        this.initTypeit();
-        this.initMapbox();
         this.initCookieconsent();
       } catch (err) {
         console.error(err);
