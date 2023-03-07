@@ -531,57 +531,6 @@ class Theme {
         }
     }
 
-    initMapbox() {
-        if (this.config.mapbox) {
-            mapboxgl.accessToken = this.config.mapbox.accessToken;
-            mapboxgl.setRTLTextPlugin(this.config.mapbox.RTLTextPlugin);
-            this._mapboxArr = this._mapboxArr || [];
-            this.util.forEach(document.getElementsByClassName('mapbox'), $mapbox => {
-                const { lng, lat, zoom, lightStyle, darkStyle, marked, navigation, geolocate, scale, fullscreen } = this.data[$mapbox.id];
-                const mapbox = new mapboxgl.Map({
-                    container: $mapbox,
-                    center: [lng, lat],
-                    zoom: zoom,
-                    minZoom: .2,
-                    style: this.isDark ? darkStyle : lightStyle,
-                    attributionControl: false,
-                });
-                if (marked) {
-                    new mapboxgl.Marker().setLngLat([lng, lat]).addTo(mapbox);
-                }
-                if (navigation) {
-                    mapbox.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
-                }
-                if (geolocate) {
-                    mapbox.addControl(new mapboxgl.GeolocateControl({
-                        positionOptions: {
-                            enableHighAccuracy: true,
-                        },
-                        showUserLocation: true,
-                        trackUserLocation: true,
-                    }), 'bottom-right');
-                }
-                if (scale) {
-                    mapbox.addControl(new mapboxgl.ScaleControl());
-                }
-                if (fullscreen) {
-                    mapbox.addControl(new mapboxgl.FullscreenControl());
-                }
-                mapbox.addControl(new MapboxLanguage());
-                this._mapboxArr.push(mapbox);
-            });
-            this._mapboxOnSwitchTheme = this._mapboxOnSwitchTheme || (() => {
-                this.util.forEach(this._mapboxArr, mapbox => {
-                    const $mapbox = mapbox.getContainer();
-                    const { lightStyle, darkStyle } = this.data[$mapbox.id];
-                    mapbox.setStyle(this.isDark ? darkStyle : lightStyle);
-                    mapbox.addControl(new MapboxLanguage());
-                });
-            });
-            this.switchThemeEventSet.add(this._mapboxOnSwitchTheme);
-        }
-    }
-
     initComment() {
         if (this.config.comment) {
             if (this.config.comment.gitalk) {
@@ -735,7 +684,6 @@ class Theme {
             this.initMermaid();
             this.initEcharts();
             this.initTypeit();
-            this.initMapbox();
             this.initCookieconsent();
         } catch (err) {
             console.error(err);
