@@ -67,10 +67,6 @@ class Theme {
         });
     }
 
-    initTwemoji() {
-        if (this.config.twemoji) twemoji.parse(document.body);
-    }
-
     initMenuMobile() {
         const $menuToggleMobile = document.getElementById('menu-toggle-mobile');
         const $menuMobile = document.getElementById('menu-mobile');
@@ -671,7 +667,6 @@ class Theme {
         try {
             this.initRaw();
             this.initSVGIcon();
-            this.initTwemoji();
             this.initMenuMobile();
             this.initSwitchTheme();
             this.initSearch();
@@ -683,7 +678,6 @@ class Theme {
             this.initMath();
             this.initMermaid();
             this.initEcharts();
-            this.initTypeit();
             this.initCookieconsent();
         } catch (err) {
             console.error(err);
