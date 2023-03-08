@@ -484,22 +484,6 @@ class Theme {
         if (this.config.math) renderMathInElement(document.body, this.config.math);
     }
 
-    initMermaid() {
-        this._mermaidOnSwitchTheme = this._mermaidOnSwitchTheme || (() => {
-            const $mermaidElements = document.getElementsByClassName('mermaid');
-            if ($mermaidElements.length) {
-                mermaid.initialize({startOnLoad: false, theme: this.isDark ? 'dark' : 'neutral', securityLevel: 'loose'});
-                this.util.forEach($mermaidElements, $mermaid => {
-                    mermaid.render('svg-' + $mermaid.id, this.data[$mermaid.id], svgCode => {
-                        $mermaid.innerHTML = svgCode;
-                    }, $mermaid);
-                });
-            }
-        });
-        this.switchThemeEventSet.add(this._mermaidOnSwitchTheme);
-        this._mermaidOnSwitchTheme();
-    }
-
     initEcharts() {
         if (this.config.echarts) {
             echarts.registerTheme('light', this.config.echarts.lightTheme);
@@ -649,7 +633,6 @@ class Theme {
                     this._resizeTimeout = null;
                     for (let event of this.resizeEventSet) event();
                     this.initToc();
-                    this.initMermaid();
                     this.initSearch();
                 }, 100);
             }
@@ -676,7 +659,6 @@ class Theme {
             this.initTable();
             this.initHeaderLink();
             this.initMath();
-            this.initMermaid();
             this.initEcharts();
             this.initCookieconsent();
         } catch (err) {
