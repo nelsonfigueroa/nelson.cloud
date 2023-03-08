@@ -206,8 +206,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     hiddenFromHomePage = false
     # whether to hide a page from search results
     hiddenFromSearch = false
-    # whether to enable twemoji
-    twemoji = false
     # whether to enable lightgallery
     lightgallery = false
     # whether to enable the ruby extended syntax
