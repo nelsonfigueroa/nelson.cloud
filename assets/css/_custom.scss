@@ -47,3 +47,38 @@ svg {
 #content p a svg {
     margin-bottom: 0.3em;
 }
+
+// svgs in meta info under each individual post
+.post-meta-svg {
+    // color:red;
+    margin-bottom: 0.4em;
+    height: 1.2em;
+
+}
+
+// svg arrows for prev/next article on bottom of each post
+.prev svg {
+    margin-bottom: 0.25em;
+}
+
+.next svg {
+    margin-bottom: 0.25em;
+}
+
+// menu mobile blur
+.header-container {
+    color:red;
+}
+
+#menu-mobile {
+    // @include filter(blur(1.5px));
+    backdrop-filter: blur(2px);
+}
+
+#header-mobile {
+    backdrop-filter: blur(2px);
+}
+
+#header-desktop {
+    backdrop-filter: blur(2px);
+}
