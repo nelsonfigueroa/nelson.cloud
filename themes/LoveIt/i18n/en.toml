@@ -64,12 +64,6 @@ other = "en"
 # === partials/comment.html ===
 
 # === partials/assets.html ===
-[search]
-other = "Search"
-
-[searchPlaceholder]
-other = "Search titles or contents..."
-
 [clear]
 other = "Clear"
 
@@ -78,9 +72,6 @@ other = "Cancel"
 
 [noResultsFound]
 other = "No results found"
-
-[lunrLanguageCode]
-other = "en"
 
 [copyToClipboard]
 other = "Copy to clipboard"

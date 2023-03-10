@@ -64,8 +64,6 @@
     top: 5rem;
   }
 
-  @include blur;
-
   [theme=dark] & {
     border-left-color: $global-border-color-dark;
   }
