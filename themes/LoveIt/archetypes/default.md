@@ -20,7 +20,6 @@ hiddenFromHomePage: false
 hiddenFromSearch: false
 ruby: true
 fraction: true
-fontawesome: true
 linkToMarkdown: true
 rssFullText: false
 

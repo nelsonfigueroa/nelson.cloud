@@ -1,3 +1,52 @@
-// ==============================
 // Custom style
-// ==============================
+
+// styling for all SVGs
+svg {
+    fill: currentColor;
+    vertical-align: middle;
+    display: inline-block;
+    height: 1.33em;
+    font-size: .75em;
+}
+
+// SVG styling for specific sections
+.header-title-post svg {
+    margin-bottom: 0.235em;
+}
+
+.post-category a {
+    padding-right: 0.1em;
+    svg {
+        margin-bottom: 0.35em;
+        margin-right: -0.2em;
+    }
+}
+
+// magnifying glass svg
+#search-toggle-desktop svg {
+    margin-bottom: 0.2em;
+}
+
+#search-toggle-mobile svg {
+    margin-bottom: 0.3em;
+}
+
+// theme switch svg
+.theme-switch svg {
+    margin-bottom: 0.2em;
+}
+
+// rss svg
+.rss-svg svg {
+    margin-bottom: 0.2em;
+}
+
+// svgs in /categories
+.card-item-title a svg {
+    margin-bottom: 0.3em;
+    margin-right: -0.2em;
+}
+
+.single-title svg {
+    margin-bottom: 0.4em;
+}

@@ -3,8 +3,6 @@ prefix:
   # simple-icons@7.3.0 https://github.com/simple-icons/simple-icons
   simpleIcons: https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/
 libFiles:
-  # fontawesome-free@6.1.1 https://fontawesome.com/
-  fontawesomeFreeCSS: '@fortawesome/fontawesome-free@6.1.1/css/all.min.css'
   # autocomplete.js@0.38.1 https://github.com/algolia/autocomplete.js
   autocompleteJS: autocomplete.js@0.38.1/dist/autocomplete.min.js
   # lunr.js@2.3.9 https://lunrjs.com/
