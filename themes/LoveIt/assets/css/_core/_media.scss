@@ -12,10 +12,6 @@
   #header-desktop .header-wrapper {
     padding-right: 1rem;
   }
-
-  .search-dropdown.desktop {
-    right: 1rem;
-  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -43,10 +39,6 @@
 
   #header-mobile {
     display: block;
-  }
-
-  body.blur {
-    overflow: hidden;
   }
 
   .page {

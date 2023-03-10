@@ -22,18 +22,10 @@ svg {
     }
 }
 
-// magnifying glass svg
-#search-toggle-desktop svg {
-    margin-bottom: 0.2em;
-}
-
-#search-toggle-mobile svg {
-    margin-bottom: 0.3em;
-}
-
 // theme switch svg
 .theme-switch svg {
     margin-bottom: 0.2em;
+    @include transform(rotate(225deg));
 }
 
 // rss svg
@@ -49,4 +41,9 @@ svg {
 
 .single-title svg {
     margin-bottom: 0.4em;
+}
+
+// svgs in /about
+#content p a svg {
+    margin-bottom: 0.3em;
 }

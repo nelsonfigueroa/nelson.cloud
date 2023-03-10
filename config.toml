@@ -153,28 +153,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Windows v8-11 tile color
     tileColor = "#da532c"
 
-  # Search config
-  [params.search]
-    enable = true
-    # type of search engine ["lunr", "algolia"]
-    type = "lunr"
-    # max index length of the chunked content
-    contentLength = 4000
-    # placeholder of the search bar
-    placeholder = ""
-    # max number of results length
-    maxResultLength = 10
-    # snippet length of the result
-    snippetLength = 30
-    # HTML tag name of the highlight part in results
-    highlightTag = "em"
-    # whether to use the absolute URL based on the baseURL in search index
-    absoluteURL = false
-    [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
-
   # Home page config
   [params.home]
     # amount of RSS pages
@@ -204,8 +182,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.page]
     # whether to hide a page from home page
     hiddenFromHomePage = false
-    # whether to hide a page from search results
-    hiddenFromSearch = false
     # whether to enable the ruby extended syntax
     ruby = true
     # whether to enable the fraction extended syntax
@@ -523,19 +499,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #   url = "https://github.com/nelsonfigueroa/"
       #   title = "GitHub"
     [languages.en.params]
-      [languages.en.params.search]
-        enable = true
-        type = "lunr"
-        contentLength = 4000
-        placeholder = ""
-        maxResultLength = 10
-        snippetLength = 30
-        highlightTag = "em"
-        absoluteURL = false
-        [languages.en.params.search.algolia]
-          index = "index.en"
-          appID = ""
-          searchKey = ""
       [languages.en.params.home]
         rss = 10
         [languages.en.params.home.profile]

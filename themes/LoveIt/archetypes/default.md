@@ -17,7 +17,6 @@ featuredImage: ""
 featuredImagePreview: ""
 
 hiddenFromHomePage: false
-hiddenFromSearch: false
 ruby: true
 fraction: true
 linkToMarkdown: true

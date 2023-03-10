@@ -4,7 +4,3 @@ theme:
   - Promise
   - fetch
   - Element.prototype.after
-algoliasearch:
-  - Promise
-  - Object.entries
-  - Object.assign
