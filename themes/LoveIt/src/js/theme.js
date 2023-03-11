@@ -71,7 +71,6 @@ class Theme {
         const $menuToggleMobile = document.getElementById('menu-toggle-mobile');
         const $menuMobile = document.getElementById('menu-mobile');
         $menuToggleMobile.addEventListener('click', () => {
-            document.body.classList.toggle('blur');
             $menuToggleMobile.classList.toggle('active');
             $menuMobile.classList.toggle('active');
         }, false);
@@ -408,7 +407,6 @@ class Theme {
     onClickMask() {
         document.getElementById('mask').addEventListener('click', () => {
             for (let event of this.clickMaskEventSet) event();
-            document.body.classList.remove('blur');
         }, false);
     }
 
