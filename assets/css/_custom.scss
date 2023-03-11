@@ -71,14 +71,5 @@ svg {
 }
 
 #menu-mobile {
-    // @include filter(blur(1.5px));
-    backdrop-filter: blur(2px);
-}
-
-#header-mobile {
-    backdrop-filter: blur(2px);
-}
-
-#header-desktop {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
 }
