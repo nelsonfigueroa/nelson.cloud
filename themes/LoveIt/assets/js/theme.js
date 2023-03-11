@@ -128,7 +128,6 @@ var Theme = /*#__PURE__*/function () {
       var $menuToggleMobile = document.getElementById('menu-toggle-mobile');
       var $menuMobile = document.getElementById('menu-mobile');
       $menuToggleMobile.addEventListener('click', function () {
-        document.body.classList.toggle('blur');
         $menuToggleMobile.classList.toggle('active');
         $menuMobile.classList.toggle('active');
       }, false);
@@ -601,8 +600,6 @@ var Theme = /*#__PURE__*/function () {
         } finally {
           _iterator4.f();
         }
-
-        document.body.classList.remove('blur');
       }, false);
     }
   }, {
