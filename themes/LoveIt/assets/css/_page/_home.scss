@@ -36,19 +36,6 @@
       margin: 0;
       padding: .5rem;
     }
-
-    .home-disclaimer {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      font-weight: normal;
-      margin: 0;
-      padding: .5rem;
-      color: $global-font-secondary-color;
-
-      [theme=dark] & {
-        color: $global-font-secondary-color-dark;
-      }
-    }
   }
 }
 
