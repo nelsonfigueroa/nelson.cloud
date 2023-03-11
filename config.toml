@@ -170,8 +170,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       subtitle = "" # looks like this isn't even working? I can change this in another area
       # whether to show social links
       social = true
-      # disclaimer (HTML format is supported)
-      disclaimer = ""
     # Home page posts
     [params.home.posts]
       enable = true
@@ -509,7 +507,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           subtitle = "<h1>Nelson Figueroa</h1><p>Software Engineer</p>"
           typeit = false
           social = true
-          disclaimer = ""
       # social media icons in home page
       # [languages.en.params.social]
         # RSS = false
