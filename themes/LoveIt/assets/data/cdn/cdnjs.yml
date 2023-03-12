@@ -9,5 +9,3 @@ libFiles:
   objectFitImagesJS: object-fit-images/3.2.4/ofi.min.js
   # clipboard.js@2.0.11 https://github.com/zenorocha/clipboard.js
   clipboardJS: clipboard.js/2.0.11/clipboard.min.js
-  # valine@1.5.0 https://valine.js.org/
-  valineJS: valine/1.5.0/Valine.min.js
