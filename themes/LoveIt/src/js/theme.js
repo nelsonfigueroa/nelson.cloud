@@ -276,73 +276,6 @@ class Theme {
             this.resizeEventSet.add(this._echartsOnResize);
         }
     }
-
-    initComment() {
-        if (this.config.comment) {
-            if (this.config.comment.gitalk) {
-                this.config.comment.gitalk.body = decodeURI(window.location.href);
-                const gitalk = new Gitalk(this.config.comment.gitalk);
-                gitalk.render('gitalk');
-            }
-            if (this.config.comment.valine) new Valine(this.config.comment.valine);
-            if (this.config.comment.utterances) {
-                const utterancesConfig = this.config.comment.utterances;
-                const script = document.createElement('script');
-                script.src = 'https://utteranc.es/client.js';
-                script.type = 'text/javascript';
-                script.setAttribute('repo', utterancesConfig.repo);
-                script.setAttribute('issue-term', utterancesConfig.issueTerm);
-                if (utterancesConfig.label) script.setAttribute('label', utterancesConfig.label);
-                script.setAttribute('theme', this.isDark ? utterancesConfig.darkTheme : utterancesConfig.lightTheme);
-                script.crossOrigin = 'anonymous';
-                script.async = true;
-                document.getElementById('utterances').appendChild(script);
-                this._utterancesOnSwitchTheme = this._utterancesOnSwitchTheme || (() => {
-                    const message = {
-                        type: 'set-theme',
-                        theme: this.isDark ? utterancesConfig.darkTheme : utterancesConfig.lightTheme,
-                    };
-                    const iframe = document.querySelector('.utterances-frame');
-                    iframe.contentWindow.postMessage(message, 'https://utteranc.es');
-                });
-                this.switchThemeEventSet.add(this._utterancesOnSwitchTheme);
-            }
-
-            if (this.config.comment.giscus) {
-                const giscusConfig = this.config.comment.giscus;
-                const giscusScript = document.createElement('script');
-                giscusScript.src = 'https://giscus.app/client.js';
-                giscusScript.type = 'text/javascript';
-                giscusScript.setAttribute('data-repo', giscusConfig.repo);
-                giscusScript.setAttribute('data-repo-id', giscusConfig.repoId);
-                giscusScript.setAttribute('data-category', giscusConfig.category);
-                giscusScript.setAttribute('data-category-id', giscusConfig.categoryId);
-                giscusScript.setAttribute('data-lang', giscusConfig.lang);
-                giscusScript.setAttribute('data-mapping', giscusConfig.mapping);
-                giscusScript.setAttribute('data-reactions-enabled', giscusConfig.reactionsEnabled);
-                giscusScript.setAttribute('data-emit-metadata', giscusConfig.emitMetadata);
-                giscusScript.setAttribute('data-input-position', giscusConfig.inputPosition);
-                if (giscusConfig.lazyLoading) giscusScript.setAttribute('data-loading', 'lazy');
-                giscusScript.setAttribute('data-theme', this.isDark ? giscusConfig.darkTheme : giscusConfig.lightTheme);
-                giscusScript.crossOrigin = 'anonymous';
-                giscusScript.async = true;
-                document.getElementById('giscus').appendChild(giscusScript);
-                this._giscusOnSwitchTheme = this._giscusOnSwitchTheme || (() => {
-                    const message = {
-                        setConfig: {
-                            theme: this.isDark ? giscusConfig.darkTheme : giscusConfig.lightTheme,
-                            reactionsEnabled: false,
-                        }
-                    };
-                    const iframe = document.querySelector('iframe.giscus-frame');
-                    if (!iframe) return;
-                    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-                });
-                this.switchThemeEventSet.add(this._giscusOnSwitchTheme);
-            }
-        }
-    }
-
     initCookieconsent() {
         if (this.config.cookieconsent) cookieconsent.initialise(this.config.cookieconsent);
     }
@@ -351,11 +284,6 @@ class Theme {
         const $headers = [];
         if (document.body.getAttribute('data-header-desktop') === 'auto') $headers.push(document.getElementById('header-desktop'));
         if (document.body.getAttribute('data-header-mobile') === 'auto') $headers.push(document.getElementById('header-mobile'));
-        if (document.getElementById('comments')) {
-            const $viewComments = document.getElementById('view-comments');
-            $viewComments.href = `#comments`;
-            $viewComments.style.display = 'block';
-        }
         const $fixedButtons = document.getElementById('fixed-buttons');
         const ACCURACY = 20, MINIMUM = 100;
         window.addEventListener('scroll', () => {
@@ -429,8 +357,6 @@ class Theme {
 
         window.setTimeout(() => {
             this.initToc();
-            this.initComment();
-
             this.onScroll();
             this.onResize();
             this.onClickMask();
