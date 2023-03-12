@@ -250,33 +250,6 @@ class Theme {
         if (this.config.math) renderMathInElement(document.body, this.config.math);
     }
 
-    initEcharts() {
-        if (this.config.echarts) {
-            echarts.registerTheme('light', this.config.echarts.lightTheme);
-            echarts.registerTheme('dark', this.config.echarts.darkTheme);
-            this._echartsOnSwitchTheme = this._echartsOnSwitchTheme || (() => {
-                this._echartsArr = this._echartsArr || [];
-                for (let i = 0; i < this._echartsArr.length; i++) {
-                    this._echartsArr[i].dispose();
-                }
-                this._echartsArr = [];
-                this.util.forEach(document.getElementsByClassName('echarts'), $echarts => {
-                    const chart = echarts.init($echarts, this.isDark ? 'dark' : 'light', {renderer: 'svg'});
-                    chart.setOption(JSON.parse(this.data[$echarts.id]));
-                    this._echartsArr.push(chart);
-                });
-            });
-            this.switchThemeEventSet.add(this._echartsOnSwitchTheme);
-            this._echartsOnSwitchTheme();
-            this._echartsOnResize = this._echartsOnResize || (() => {
-                for (let i = 0; i < this._echartsArr.length; i++) {
-                    this._echartsArr[i].resize();
-                }
-            });
-            this.resizeEventSet.add(this._echartsOnResize);
-        }
-    }
-
     onScroll() {
         const $headers = [];
         if (document.body.getAttribute('data-header-desktop') === 'auto') $headers.push(document.getElementById('header-desktop'));
@@ -346,7 +319,6 @@ class Theme {
             this.initTable();
             this.initHeaderLink();
             this.initMath();
-            this.initEcharts();
         } catch (err) {
             console.error(err);
         }

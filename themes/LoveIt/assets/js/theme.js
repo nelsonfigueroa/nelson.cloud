@@ -355,47 +355,6 @@ var Theme = /*#__PURE__*/function () {
       if (this.config.math) renderMathInElement(document.body, this.config.math);
     }
   }, {
-    key: "initEcharts",
-    value: function initEcharts() {
-      var _this8 = this;
-
-      if (this.config.echarts) {
-        echarts.registerTheme('light', this.config.echarts.lightTheme);
-        echarts.registerTheme('dark', this.config.echarts.darkTheme);
-
-        this._echartsOnSwitchTheme = this._echartsOnSwitchTheme || function () {
-          _this8._echartsArr = _this8._echartsArr || [];
-
-          for (var i = 0; i < _this8._echartsArr.length; i++) {
-            _this8._echartsArr[i].dispose();
-          }
-
-          _this8._echartsArr = [];
-
-          _this8.util.forEach(document.getElementsByClassName('echarts'), function ($echarts) {
-            var chart = echarts.init($echarts, _this8.isDark ? 'dark' : 'light', {
-              renderer: 'svg'
-            });
-            chart.setOption(JSON.parse(_this8.data[$echarts.id]));
-
-            _this8._echartsArr.push(chart);
-          });
-        };
-
-        this.switchThemeEventSet.add(this._echartsOnSwitchTheme);
-
-        this._echartsOnSwitchTheme();
-
-        this._echartsOnResize = this._echartsOnResize || function () {
-          for (var i = 0; i < _this8._echartsArr.length; i++) {
-            _this8._echartsArr[i].resize();
-          }
-        };
-
-        this.resizeEventSet.add(this._echartsOnResize);
-      }
-    }
-  }, {
     key: "onScroll",
     value: function onScroll() {
       var _this12 = this;
@@ -529,7 +488,6 @@ var Theme = /*#__PURE__*/function () {
         this.initTable();
         this.initHeaderLink();
         this.initMath();
-        this.initEcharts();
       } catch (err) {
         console.error(err);
       }
