@@ -11,7 +11,5 @@ libFiles:
   clipboardJS: clipboard@2.0.11/dist/clipboard.min.js
   # sharer.js@0.5.1 https://github.com/ellisonleao/sharer.js
   sharerJS: sharer.js@0.5.1/sharer.min.js
-  # echarts@5.3.3 https://echarts.apache.org/
-  echartsJS: echarts@5.3.3/dist/echarts.min.js
   # valine@1.5.0 https://valine.js.org/
   valineJS: valine@1.5.0/dist/Valine.min.js
