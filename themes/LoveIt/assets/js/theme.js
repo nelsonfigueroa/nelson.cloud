@@ -396,83 +396,6 @@ var Theme = /*#__PURE__*/function () {
       }
     }
   }, {
-    key: "initComment",
-    value: function initComment() {
-      var _this11 = this;
-
-      if (this.config.comment) {
-        if (this.config.comment.gitalk) {
-          this.config.comment.gitalk.body = decodeURI(window.location.href);
-          var gitalk = new Gitalk(this.config.comment.gitalk);
-          gitalk.render('gitalk');
-        }
-
-        if (this.config.comment.valine) new Valine(this.config.comment.valine);
-
-        if (this.config.comment.utterances) {
-          var utterancesConfig = this.config.comment.utterances;
-          var script = document.createElement('script');
-          script.src = 'https://utteranc.es/client.js';
-          script.type = 'text/javascript';
-          script.setAttribute('repo', utterancesConfig.repo);
-          script.setAttribute('issue-term', utterancesConfig.issueTerm);
-          if (utterancesConfig.label) script.setAttribute('label', utterancesConfig.label);
-          script.setAttribute('theme', this.isDark ? utterancesConfig.darkTheme : utterancesConfig.lightTheme);
-          script.crossOrigin = 'anonymous';
-          script.async = true;
-          document.getElementById('utterances').appendChild(script);
-
-          this._utterancesOnSwitchTheme = this._utterancesOnSwitchTheme || function () {
-            var message = {
-              type: 'set-theme',
-              theme: _this11.isDark ? utterancesConfig.darkTheme : utterancesConfig.lightTheme
-            };
-            var iframe = document.querySelector('.utterances-frame');
-            iframe.contentWindow.postMessage(message, 'https://utteranc.es');
-          };
-
-          this.switchThemeEventSet.add(this._utterancesOnSwitchTheme);
-        }
-
-        if (this.config.comment.giscus) {
-          var giscusConfig = this.config.comment.giscus;
-          var giscusScript = document.createElement('script');
-          giscusScript.src = 'https://giscus.app/client.js';
-          giscusScript.type = 'text/javascript';
-          giscusScript.setAttribute('data-repo', giscusConfig.repo);
-          giscusScript.setAttribute('data-repo-id', giscusConfig.repoId);
-          giscusScript.setAttribute('data-category', giscusConfig.category);
-          giscusScript.setAttribute('data-category-id', giscusConfig.categoryId);
-          giscusScript.setAttribute('data-lang', giscusConfig.lang);
-          giscusScript.setAttribute('data-mapping', giscusConfig.mapping);
-          giscusScript.setAttribute('data-reactions-enabled', giscusConfig.reactionsEnabled);
-          giscusScript.setAttribute('data-emit-metadata', giscusConfig.emitMetadata);
-          giscusScript.setAttribute('data-input-position', giscusConfig.inputPosition);
-          if (giscusConfig.lazyLoading) giscusScript.setAttribute('data-loading', 'lazy');
-          giscusScript.setAttribute('data-theme', this.isDark ? giscusConfig.darkTheme : giscusConfig.lightTheme);
-          giscusScript.crossOrigin = 'anonymous';
-          giscusScript.async = true;
-          document.getElementById('giscus').appendChild(giscusScript);
-
-          this._giscusOnSwitchTheme = this._giscusOnSwitchTheme || function () {
-            var message = {
-              setConfig: {
-                theme: _this11.isDark ? giscusConfig.darkTheme : giscusConfig.lightTheme,
-                reactionsEnabled: false
-              }
-            };
-            var iframe = document.querySelector('iframe.giscus-frame');
-            if (!iframe) return;
-            iframe.contentWindow.postMessage({
-              giscus: message
-            }, 'https://giscus.app');
-          };
-
-          this.switchThemeEventSet.add(this._giscusOnSwitchTheme);
-        }
-      }
-    }
-  }, {
     key: "initCookieconsent",
     value: function initCookieconsent() {
       if (this.config.cookieconsent) cookieconsent.initialise(this.config.cookieconsent);
@@ -485,12 +408,6 @@ var Theme = /*#__PURE__*/function () {
       var $headers = [];
       if (document.body.getAttribute('data-header-desktop') === 'auto') $headers.push(document.getElementById('header-desktop'));
       if (document.body.getAttribute('data-header-mobile') === 'auto') $headers.push(document.getElementById('header-mobile'));
-
-      if (document.getElementById('comments')) {
-        var $viewComments = document.getElementById('view-comments');
-        $viewComments.href = "#comments";
-        $viewComments.style.display = 'block';
-      }
 
       var $fixedButtons = document.getElementById('fixed-buttons');
       var ACCURACY = 20,
@@ -625,8 +542,6 @@ var Theme = /*#__PURE__*/function () {
 
       window.setTimeout(function () {
         _this15.initToc();
-
-        _this15.initComment();
 
         _this15.onScroll();
 
