@@ -254,15 +254,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.analytics.yandexMetrica]
       id = ""
 
-  # Cookie consent config
-  [params.cookieconsent]
-    enable = false
-    # text strings used for Cookie consent banner
-    [params.cookieconsent.content]
-      message = ""
-      dismiss = ""
-      link = ""
-
   # CDN config for third-party library files
   [params.cdn]
     # CDN data file name, disabled by default

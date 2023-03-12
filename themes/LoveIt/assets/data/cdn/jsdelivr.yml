@@ -20,6 +20,3 @@ libFiles:
   metingJS: meting@2.0.1/dist/Meting.min.js
   # valine@1.5.0 https://valine.js.org/
   valineJS: valine@1.5.0/dist/Valine.min.js
-  # cookieconsent@3.1.1 https://github.com/osano/cookieconsent
-  cookieconsentCSS: cookieconsent@3.1.1/build/cookieconsent.min.css
-  cookieconsentJS: cookieconsent@3.1.1/build/cookieconsent.min.js

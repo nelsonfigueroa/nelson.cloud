@@ -76,14 +76,6 @@ other = "No results found"
 [copyToClipboard]
 other = "Copy to clipboard"
 
-[cookieconsentMessage]
-other = "This website uses Cookies to improve your experience."
-
-[cookieconsentDismiss]
-other = "Got it!"
-
-[cookieconsentLink]
-other = "Learn more"
 # === partials/assets.html ===
 
 # === partials/plugin/share.html ===

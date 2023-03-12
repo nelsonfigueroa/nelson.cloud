@@ -396,11 +396,6 @@ var Theme = /*#__PURE__*/function () {
       }
     }
   }, {
-    key: "initCookieconsent",
-    value: function initCookieconsent() {
-      if (this.config.cookieconsent) cookieconsent.initialise(this.config.cookieconsent);
-    }
-  }, {
     key: "onScroll",
     value: function onScroll() {
       var _this12 = this;
@@ -535,7 +530,6 @@ var Theme = /*#__PURE__*/function () {
         this.initHeaderLink();
         this.initMath();
         this.initEcharts();
-        this.initCookieconsent();
       } catch (err) {
         console.error(err);
       }
