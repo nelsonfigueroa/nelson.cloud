@@ -276,9 +276,6 @@ class Theme {
             this.resizeEventSet.add(this._echartsOnResize);
         }
     }
-    initCookieconsent() {
-        if (this.config.cookieconsent) cookieconsent.initialise(this.config.cookieconsent);
-    }
 
     onScroll() {
         const $headers = [];
@@ -350,7 +347,6 @@ class Theme {
             this.initHeaderLink();
             this.initMath();
             this.initEcharts();
-            this.initCookieconsent();
         } catch (err) {
             console.error(err);
         }
