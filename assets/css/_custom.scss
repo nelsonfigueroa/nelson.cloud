@@ -12,6 +12,7 @@ svg {
 // SVG styling for specific sections
 .header-title-post svg {
     margin-bottom: 0.235em;
+    height: 2em;
 }
 
 .post-category a {
@@ -27,6 +28,17 @@ svg {
     margin-bottom: 0.2em;
     @include transform(rotate(225deg));
     cursor: pointer;
+    color: $global-link-color;
+    [theme=dark] & {
+        color: $global-link-color-dark
+    }
+
+    &:hover {
+        color: $global-link-hover-color;
+        [theme=dark] & {
+            color: $global-link-hover-color-dark;
+        }
+    }
 }
 
 // rss svg
@@ -66,5 +78,6 @@ svg {
 }
 
 #menu-mobile {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
