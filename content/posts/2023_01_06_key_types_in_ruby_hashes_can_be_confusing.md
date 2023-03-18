@@ -31,7 +31,7 @@ puts items['A']
 puts items.keys.first.class
 ```
 
-The output is;
+The output is:
 
 ```
 1
