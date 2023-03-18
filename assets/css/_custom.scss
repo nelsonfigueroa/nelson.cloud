@@ -81,3 +81,18 @@ svg {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
+
+// font for articles and etc
+div#content.content {
+    font-family: $global-content-font-family;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $global-font-family;
+    }
+}
+
