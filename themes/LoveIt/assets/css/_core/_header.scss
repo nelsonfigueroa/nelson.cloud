@@ -72,7 +72,7 @@ header {
   }
 
   .header-wrapper {
-    padding: 0 2rem 0 10vh;
+    padding: 0 4rem;
 
     .header-title {
       font-size: var(--header-title-font-size);
@@ -97,19 +97,15 @@ header {
             border-left-color: $global-border-color-dark;
           }
         }
-
-        &.language {
-          margin-right: 0;
-        }
       }
 
       a.active {
         font-weight: 900;
         border-bottom: 0.1em solid;
-        color: $header-hover-color;
+        color: $global-font-color;
 
         [theme=dark] & {
-          color: $header-hover-color-dark;
+          color: $global-font-color-dark;
         }
       }
     }
@@ -187,7 +183,6 @@ header {
     .menu {
       text-align: center;
       background: $header-background-color;
-      border-top: 2px solid $global-border-color;
       display: none;
       padding-top: .5rem;
       @include box-shadow(0 .125rem .25rem rgba(0, 0, 0, .1));
