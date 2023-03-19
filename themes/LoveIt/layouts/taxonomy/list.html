@@ -33,7 +33,7 @@
                             {{- .Title | emojify -}}
                         </a>
                         <span class="archive-item-date">
-                            {{- $.Site.Params.list.dateFormat | default "01-02" | .Date.Format -}}
+                            [{{- $.Site.Params.list.dateFormat | default "2006-01-02" | .Date.Format -}}]
                         </span>
                     </article>
                 {{- end -}}
