@@ -5,21 +5,14 @@
 }
 
 @mixin box-shadow($values...) {
-  -webkit-box-shadow: $values;
   box-shadow: $values;
 }
 
 @mixin transition($values...) {
-  -webkit-transition: $values;
-  -moz-transition: $values;
-  -o-transition: $values;
   transition: $values;
 }
 
 @mixin transform($value) {
-  -webkit-transform: $value;
-  -ms-transform: $value;
-  -o-transform: $value;
   transform: $value;
 }
 
@@ -29,7 +22,6 @@
 }
 
 @mixin flex($value) {
-  -webkit-flex: $value;
   flex: $value;
 }
 
