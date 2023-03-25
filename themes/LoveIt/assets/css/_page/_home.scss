@@ -3,6 +3,19 @@
     @include transform(translateY( 16vh));
     padding: 0 0 .5rem;
     text-align: center;
+    border-radius: 2px;
+
+
+    background-color: $global-background-color;
+    opacity: 0.8;
+    background-image:  radial-gradient($global-border-color 0.5px, transparent 0.5px), radial-gradient($global-font-secondary-color 0.5px, $global-background-color 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+
+    [theme=dark] & {
+      background-color: $global-background-color-dark;
+      background-image:  radial-gradient($global-border-color-dark 0.5px, transparent 0.5px), radial-gradient($global-font-secondary-color 0.5px, $global-background-color-dark 0.5px);
+    }
 
     .home-avatar {
       padding: .5rem;
