@@ -405,7 +405,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #   title = "GitHub"
     [languages.en.params]
       [languages.en.params.home]
-        rss = 10
+        rss = 100
         [languages.en.params.home.profile]
           enable = true
           gravatarEmail = ""
