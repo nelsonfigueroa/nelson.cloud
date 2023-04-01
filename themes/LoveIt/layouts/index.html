@@ -21,10 +21,9 @@
         {{- /* Custom */ -}}
         <h2>➜&nbsp;Featured Posts</h2>
         {{- $pages := where .Site.RegularPages "Type" "posts" -}}
-        {{- $single := where $pages "Params.featured" true -}}
-        {{- range $single -}}
+        {{- $pages = where $pages "Params.featured" true -}}
+        {{- range $pages -}}
             {{- .Render "summary" -}}
-            {{- page.Params.categories -}}
         {{- end -}}
 
         {{- /* Posts */ -}}
