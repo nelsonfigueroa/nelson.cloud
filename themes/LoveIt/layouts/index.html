@@ -11,15 +11,24 @@
 
         {{- /* Content */ -}}
         {{- if .Content -}}
-            <div class="single"> WHRE ROERJOEROIJOIERIJOREIJOERJIOERJIOJOIRJOI
+            <div class="single">
                 <div class="content" id="content">
                     {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction | partial "function/content.html" | safeHTML -}}
                 </div>
             </div>
         {{- end -}}
 
+        {{- /* Custom */ -}}
+        <h2>➜&nbsp;Featured Posts</h2>
+        {{- $pages := where .Site.RegularPages "Type" "posts" -}}
+        {{- $single := where $pages "Params.featured" true -}}
+        {{- range $single -}}
+            {{- .Render "summary" -}}
+            {{- page.Params.categories -}}
+        {{- end -}}
+
         {{- /* Posts */ -}}
-        {{- if ne $posts.enable false | and .Site.RegularPages -}}
+        <!-- {{- if ne $posts.enable false | and .Site.RegularPages -}}
             {{- /* Paginate */ -}}
             {{- $pages := where .Site.RegularPages "Type" "posts" -}}
             {{- if .Site.Params.page.hiddenFromHomePage -}}
@@ -36,6 +45,6 @@
                 {{- .Render "summary" -}}
             {{- end -}}
             {{- partial "paginator.html" . -}}
-        {{- end -}}
+        {{- end -}} -->
     </div>
 {{- end -}}
