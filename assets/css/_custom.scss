@@ -96,3 +96,18 @@ div#content.content {
     }
 }
 
+// links under home page title/subtitle
+.links {
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.5rem;
+
+    a * {
+      vertical-align: text-bottom;
+    }
+
+    svg {
+      height: 2rem;
+      padding: 0 0.6rem;
+    }
+  }
