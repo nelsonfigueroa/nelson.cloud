@@ -11,8 +11,8 @@ images: [""]
 </a>
 
 I'm a Software Engineer with broad experience working with technologies like 
-Ruby on Rails, Docker, Kubernetes, and Amazon Web Services. 
-My interests include programming, cloud infrastructure, and cybersecurity.
+Ruby on Rails, Kubernetes, and Amazon Web Services. 
+My interests include writing code, cloud infrastructure, and cybersecurity.
 I started this blog for fun and to share my knowledge. 
 I currently work in a Kubernetes security role. You can see more about my skills and experience on LinkedIn.
 
