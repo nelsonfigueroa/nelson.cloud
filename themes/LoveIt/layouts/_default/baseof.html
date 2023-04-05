@@ -11,6 +11,7 @@
         {{- partial "head/meta.html" . -}}
         {{- partial "head/link.html" . -}}
         {{- partial "head/seo.html" . -}}
+        <script defer data-domain="nelson.cloud" src="https://plausible.io/js/script.js"></script>
     </head>
     <body data-header-desktop="{{ .Site.Params.header.desktopMode }}" data-header-mobile="{{ .Site.Params.header.mobileMode }}">
         {{- /* Check theme isDark before body rendering */ -}}
