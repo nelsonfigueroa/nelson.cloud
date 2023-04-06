@@ -19,7 +19,7 @@
         {{- end -}}
 
         {{- /* Custom */ -}}
-        <h2>➜&nbsp;Featured Posts</h2>
+        <h2>#&nbsp;Featured Posts</h2>
         {{- $pages := where .Site.RegularPages "Type" "posts" -}}
         {{- $pages = where $pages "Params.featured" true -}}
         {{- range $pages -}}
