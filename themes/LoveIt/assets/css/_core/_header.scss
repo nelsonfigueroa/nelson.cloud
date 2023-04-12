@@ -37,10 +37,10 @@ header {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  border-bottom: 0.08em solid $global-border-color;
+  border-bottom: 0.08em dashed $global-border-color;
 
   [theme=dark] & {
-    border-bottom: 0.08em solid $global-border-color-dark;
+    border-bottom: 0.08em dashed $global-border-color-dark;
   }
 }
 
@@ -91,7 +91,7 @@ header {
         font-family: var(--header-title-font-family);
 
         &.delimiter {
-          border-left: 1.5px solid $global-font-color;
+          border-left: 1.5px solid $global-border-color;
 
           [theme=dark] & {
             border-left-color: $global-border-color-dark;
