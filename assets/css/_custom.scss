@@ -25,6 +25,7 @@ svg {
 
 // theme switch svg
 .theme-switch svg {
+    font-size: 0.8em;
     margin-bottom: 0.2em;
     @include transform(rotate(225deg));
     cursor: pointer;
@@ -39,11 +40,6 @@ svg {
             color: $global-link-hover-color-dark;
         }
     }
-}
-
-// rss svg
-.rss-svg svg {
-    margin-bottom: 0.2em;
 }
 
 // svgs in /categories
