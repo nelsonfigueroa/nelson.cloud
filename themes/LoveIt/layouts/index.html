@@ -26,6 +26,16 @@
             {{- .Render "summary" -}}
         {{- end -}}
 
+        <br>
+
+        {{- /* Custom */ -}}
+        <h2>#&nbsp;Latest Post</h2>
+
+        {{- $pages := where .Site.RegularPages "Type" "posts" -}}
+        {{ range first 1 $pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+
         {{- /* Posts */ -}}
         <!-- {{- if ne $posts.enable false | and .Site.RegularPages -}}
             {{- /* Paginate */ -}}
