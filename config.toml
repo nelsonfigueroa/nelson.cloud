@@ -86,9 +86,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Header config
   [params.header]
     # desktop header mode ["fixed", "normal", "auto"]
-    desktopMode = "fixed"
+    desktopMode = "normal"
     # mobile header mode ["fixed", "normal", "auto"]
-    mobileMode = "auto"
+    mobileMode = "normal"
     # Header title config
     [params.header.title]
       # URL of the LOGO
