@@ -19,12 +19,12 @@ I currently work in a Kubernetes security role.
 
 ## Experience
 
-Security Engineer @ [Robinhood](https://robinhood.com) (2023 - Present)
-- tbd :)
+**Security Engineer @ [Robinhood](https://robinhood.com)** (2023 - Present)
+- tbd :), lots of Kubernetes security stuff
 
 <br>
 
-Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
+**Software Engineer IV @ [Edmunds](https://edmunds.com)** (2020 - 2022)
 
 - Managed Edmunds’ cloud infrastructure on Amazon Web Services
 - Began as Software Engineer III and was promoted to Software Engineer IV
@@ -43,7 +43,7 @@ Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
 
 <br>
 
-Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
+**Junior DevOps Engineer @ [Vitu](https://vitu.com/)** (2019 - 2020)
 
 - Self-taught Terraform, Kubernetes, and Google Cloud Platform
 - Developed Terraform resources and modules to provision GCP infrastructure including: VPC networks, subnets, DNS, PostgreSQL databases, Redis stores, Linux virtual machines, and Kubernetes clusters
@@ -56,14 +56,14 @@ Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
 
 <br>
 
-Software Engineering Intern @ [Dollar Shave Club](https://dollarshaveclub.com/) (Summer 2019)
+**Software Engineering Intern @ [Dollar Shave Club](https://dollarshaveclub.com/)** (Summer 2019)
 
 - Used Ruby on Rails to refactor Collateral Injection service, which supports over 3 million customers
 - Learned and applied Test-Driven Development using RSpec to deliver well-tested features
 
 <br>
 
-Software Engineer @ [CSU Northridge](https://csun.edu/) (2018 - 2019)
+**Software Engineer @ [CSU Northridge](https://csun.edu/)** (2018 - 2019)
 
 - Self-taught Ruby on Rails and began delivering production features within the first 2 months
 - Led development of the National Center on Deafness web app, serving 30,000+ students and faculty
