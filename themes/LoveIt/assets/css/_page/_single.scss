@@ -51,7 +51,7 @@
 
   .content {
     padding-top: 1em;
-    border-top: dashed 1px $global-border-color-dark;
+    border-top: solid 1px $global-border-color-dark;
     > h2 {
       font-size: 1.5rem;
 
@@ -118,6 +118,14 @@
 
     > h2 > .header-mark::before {
       content: "#";
+    }
+
+    > h3 > .header-mark::before {
+      content: "##";
+    }
+
+    > h4 > .header-mark::before {
+      content: "###";
     }
 
     p {
