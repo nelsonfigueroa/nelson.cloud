@@ -46,8 +46,7 @@ header {
   position: fixed;
   height: var(--header-height);
   line-height: var(--header-height);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  padding-bottom: 2em;
 
   [data-header-desktop=normal] & {
     position: static;
@@ -91,8 +90,6 @@ header {
   position: fixed;
   height: var(--header-height);
   line-height: var(--header-height);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 
   [data-header-mobile=normal] & {
     position: static;
