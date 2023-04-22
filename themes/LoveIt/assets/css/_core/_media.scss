@@ -48,7 +48,7 @@
       padding-top: var(--header-height);
     }
 
-    [data-header-mobile=normal] & {
+    [data-header-mobile="normal"] & {
       padding-top: 0;
     }
 
@@ -64,6 +64,7 @@
       .icp-splitter {
         display: none;
       }
+
       .icp-br {
         display: block;
       }
