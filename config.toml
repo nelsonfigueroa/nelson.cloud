@@ -19,8 +19,6 @@ hasCJKLanguage = false
 
 # default amount of posts in each pages
 paginate = 10
-# google analytics code [UA-XXXXXXXX-X]
-googleAnalytics = ""
 # copyright description used only for seo schema
 copyright = ""
 
@@ -233,26 +231,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # thumbnail URL
     thumbnailUrl = "/images/screenshot.png"
 
-  # Analytics config
-  [params.analytics]
-    enable = false
-    # Google Analytics
-    [params.analytics.google]
-      id = ""
-      # whether to anonymize IP
-      anonymizeIP = true
-    # Fathom Analytics
-    [params.analytics.fathom]
-      id = ""
-      # server url for your tracker if you're self hosting
-      server = ""
-    # Plausible Analytics
-    [params.analytics.plausible]
-      dataDomain = ""
-    # Yandex Metrica
-    [params.analytics.yandexMetrica]
-      id = ""
-
   # CDN config for third-party library files
   [params.cdn]
     # CDN data file name, disabled by default
@@ -309,10 +287,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
-  # privacy of the Google Analytics (replaced by params.analytics.google)
-  # Google Analytics 相关隐私 (被 params.analytics.google 替代)
-  [privacy.googleAnalytics]
-    # ...
   [privacy.twitter]
     enableDNT = true
   [privacy.youtube]
