@@ -2,7 +2,7 @@
 
 // styling for all SVGs
 svg {
-    fill: currentColor;
+    fill: currentcolor;
     vertical-align: middle;
     display: inline-block;
     height: 1.33em;
@@ -17,6 +17,7 @@ svg {
 
 .post-category a {
     padding-right: 0.1em;
+
     svg {
         margin-bottom: 0.35em;
         margin-right: -0.2em;
@@ -27,16 +28,20 @@ svg {
 .theme-switch svg {
     font-size: 0.8em;
     margin-bottom: 0.2em;
+
     @include transform(rotate(225deg));
+
     cursor: pointer;
     color: $global-link-color;
-    [theme=dark] & {
+
+    [theme="dark"] & {
         color: $global-link-color-dark
     }
 
     &:hover {
         color: $global-link-hover-color;
-        [theme=dark] & {
+
+        [theme="dark"] & {
             color: $global-link-hover-color-dark;
         }
     }
@@ -75,7 +80,7 @@ svg {
 
 #menu-mobile {
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 // font for articles and etc
