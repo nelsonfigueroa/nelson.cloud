@@ -58,12 +58,12 @@ var Util = /*#__PURE__*/function () {
 
       if (!Array.isArray(animation)) animation = [animation];
 
-      (_element$classList = element.classList).add.apply(_element$classList, ['animate__animated'].concat(_toConsumableArray(animation)));
+      (_element$classList = element.classList).add.apply(_element$classList, ['idk'].concat(_toConsumableArray(animation)));
 
       var handler = function handler() {
         var _element$classList2;
 
-        (_element$classList2 = element.classList).remove.apply(_element$classList2, ['animate__animated'].concat(_toConsumableArray(animation)));
+        (_element$classList2 = element.classList).remove.apply(_element$classList2, ['idk'].concat(_toConsumableArray(animation)));
 
         element.removeEventListener('animationend', handler);
         if (typeof callback === 'function') callback();
