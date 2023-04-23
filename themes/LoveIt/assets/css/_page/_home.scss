@@ -1,6 +1,7 @@
 .home {
   .home-profile {
     @include transform(translateY( 16vh));
+
     padding: 0 0 .5rem;
     text-align: center;
 
@@ -12,12 +13,14 @@
         width: 8rem;
         height: auto;
         margin: 0 auto;
+
         @include border-radius(100%);
         @include box-shadow(0 0 0 .3618em rgba(0, 0, 0, .05));
         @include transition(all 0.4s ease);
 
         &:hover {
           position: relative;
+
           @include transform(translateY(-.75rem));
         }
       }
@@ -39,9 +42,10 @@
   }
 }
 
-.home[data-home=posts] {
+.home[data-home="posts"] {
   .home-profile {
     @include transform(translateY(0));
+
     padding-top: 2rem;
     padding-bottom: 2rem
   }
@@ -56,7 +60,7 @@
     color: $global-font-color;
     border-bottom: 1px dashed $global-border-color;
 
-    [theme=dark] & {
+    [theme="dark"] & {
       color: $global-font-color-dark;
       border-bottom: 1px dashed $global-border-color-dark;
     }
@@ -66,6 +70,7 @@
       padding: 30% 0 0;
       position: relative;
       margin: 0.6rem auto;
+
       @include transition(transform 0.4s ease);
 
       img {
@@ -93,15 +98,18 @@
 
     .content {
       @include box(vertical);
+
       -webkit-line-clamp: 3;
       margin-top: .3rem;
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
+
       @include overflow-wrap(break-word);
+
       color: $global-font-secondary-color;
 
-      [theme=dark] & {
+      [theme="dark"] & {
         color: $global-font-secondary-color-dark;
       }
 
@@ -130,7 +138,7 @@
       b, strong {
         color: $global-font-secondary-color;
 
-        [theme=dark] & {
+        [theme="dark"] & {
           color: $global-font-secondary-color-dark;
         }
       }

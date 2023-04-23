@@ -2,15 +2,17 @@ code {
   display:inline-block;
   max-width: 100%;
   padding: 0 .4rem;
+
   @include overflow-wrap(break-word);
   @include line-break(anywhere);
+
   font-size: var(--code-font-size);
   font-family: var(--code-font-family);
   color: $code-color;
   background-color: $code-color-dark;
   border-radius: 0.2em;
 
-  [theme=dark] & {
+  [theme="dark"] & {
     color: $code-color-dark;
     background-color: $code-color;
   }
@@ -20,7 +22,7 @@ pre code {
   color: $global-font-color;
   background-color: $code-block-background-color;
 
-  [theme=dark] & {
+  [theme="dark"] & {
     color: $global-font-color-dark;
     background-color: $code-block-background-color-dark;
   }
@@ -29,6 +31,7 @@ pre code {
 pre {
   margin: 0;
   padding: .25rem 0 .25rem .5rem;
+
   @include tab-size(4);
 
   code {
@@ -45,7 +48,7 @@ pre {
 pre, .highlight table, .highlight tr, .highlight td {
   background: $code-block-background-color !important;
 
-  [theme=dark] & {
+  [theme="dark"] & {
     background: $code-block-background-color-dark !important;
   }
 }
@@ -85,7 +88,7 @@ pre, .highlight table, .highlight tr, .highlight td {
       color: $code-info-color;
       background: darken($code-block-background-color, 8%);
 
-      [theme=dark] & {
+      [theme="dark"] & {
         color: $code-info-color-dark;
         background: darken($code-block-background-color-dark, 6%);
       }
@@ -98,7 +101,8 @@ pre, .highlight table, .highlight tr, .highlight td {
         width: 100%;
         padding: .4rem;
         color: $global-font-color;
-        [theme=dark] & {
+
+        [theme="dark"] & {
           color: $code-info-color-dark;
         }
       }
@@ -136,7 +140,7 @@ pre, .highlight table, .highlight tr, .highlight td {
       display: block;
       background-color: darken($code-background-color, 10%);
 
-      [theme=dark] & {
+      [theme="dark"] & {
         background-color: darken($code-background-color-dark, 5%);
       }
     }
@@ -144,13 +148,14 @@ pre, .highlight table, .highlight tr, .highlight td {
     .ln, .lnt {
       color: $global-font-secondary-color;
 
-      [theme=dark] & {
+      [theme="dark"] & {
         color: $global-font-secondary-color-dark;
       }
     }
 
     .arrow {
       padding: 0 .2rem;
+
       @include transition(transform 0.2s ease);
     }
 
@@ -161,18 +166,19 @@ pre, .highlight table, .highlight tr, .highlight td {
     .copy {
       display: none;
       padding: .4rem;
-
       color: $global-font-color;
-      [theme=dark] & {
+
+      [theme="dark"] & {
         color: $global-font-color-dark;
       }
 
       &:hover {
         cursor: pointer;
+
         // color: $global-link-hover-color;
         color: $global-link-hover-color;
 
-        [theme=dark] & {
+        [theme="dark"] & {
           color: $global-link-hover-color-dark;
         }
       }
@@ -181,6 +187,7 @@ pre, .highlight table, .highlight tr, .highlight td {
     .table-wrapper {
       max-height: 0;
       overflow-y: hidden;
+
       @include details-transition-open;
     }
 
@@ -188,13 +195,14 @@ pre, .highlight table, .highlight tr, .highlight td {
       .code-header {
         background: darken($code-block-background-color, 3%);
 
-        [theme=dark] & {
+        [theme="dark"] & {
           background: darken($code-block-background-color-dark, 3%);
         }
       }
 
       .table-wrapper {
         max-height: 10000px;
+
         @include details-transition-close;
       }
 
@@ -225,7 +233,7 @@ pre, .highlight table, .highlight tr, .highlight td {
     .#{$class} { color: $color; }
   }
 
-  [theme=dark] & {
+  [theme="dark"] & {
     @each $class, $color in $code-highlight-color-map-dark {
       .#{$class} { color: $color; }
     }
@@ -257,16 +265,17 @@ pre, .highlight table, .highlight tr, .highlight td {
 
     @include link(false, false);
 
-    [theme=dark] & {
+    [theme="dark"] & {
       background-color: darken($code-background-color-dark, 5%);
     }
   }
 
-  [theme=dark] & {
+  [theme="dark"] & {
     // imported from https://github.com/lonekorean/gist-syntax-themes/blob/master/stylesheets/one-dark.css
     .highlight {
       background: #141414;
     }
+
     .blob-num,
     .blob-code-inner,
     .highlight,
@@ -285,20 +294,24 @@ pre, .highlight table, .highlight tr, .highlight td {
     .pl-mdr {
         color: #aab1bf;
     }
+
     .pl-mb,
     .pl-pdb {
         font-weight: 700;
     }
+
     .pl-c,
     .pl-c span,
     .pl-pdc {
         color: #5b6270;
         font-style: italic;
     }
+
     .pl-sr .pl-cce {
         color: #56b5c2;
         font-weight: 400;
     }
+
     .pl-ef,
     .pl-en,
     .pl-enf,
@@ -308,10 +321,12 @@ pre, .highlight table, .highlight tr, .highlight td {
     .pl-mr {
         color: #61afef;
     }
+
     .pl-ens,
     .pl-vi {
         color: #be5046;
     }
+
     .pl-enti,
     .pl-mai .pl-sf,
     .pl-ml,
@@ -323,6 +338,7 @@ pre, .highlight table, .highlight tr, .highlight td {
     .pl-vo {
         color: #56b5c2;
     }
+
     .pl-eoi,
     .pl-mri,
     .pl-pds,
@@ -331,54 +347,66 @@ pre, .highlight table, .highlight tr, .highlight td {
     .pl-s1 {
         color: #97c279;
     }
+
     .pl-k,
     .pl-kolp,
     .pl-mc,
     .pl-pde {
         color: #c578dd;
     }
+
     .pl-mi,
     .pl-pdi {
         color: #c578dd;
         font-style: italic;
     }
+
     .pl-mp,
     .pl-stp {
         color: #818896;
     }
+
     .pl-mdh,
     .pl-mdi,
     .pl-mdr {
         font-weight: 400;
     }
+
     .pl-mdht,
     .pl-mi1 {
         color: #97c279;
         background: #020;
     }
+
     .pl-md,
     .pl-mdhf {
         color: #df6b75;
         background: #200;
     }
+
     .pl-corl {
         color: #df6b75;
         text-decoration: underline;
     }
+
     .pl-ib {
         background: #df6b75;
     }
+
     .pl-ii {
         background: #e0c184;
         color: #fff;
     }
+
     .pl-iu {
         background: #e05151;
     }
+
     .pl-ms1 {
         color: #aab1bf;
         background: #373b41;
     }
+
     .pl-c1,
     .pl-cn,
     .pl-e,
@@ -395,6 +423,7 @@ pre, .highlight table, .highlight tr, .highlight td {
     .pl-mb {
         color: #d19965;
     }
+
     .pl-enc,
     .pl-entc,
     .pl-pse .pl-s2,
@@ -407,6 +436,7 @@ pre, .highlight table, .highlight tr, .highlight td {
     .pl-pdb {
         color: #e4bf7a;
     }
+
     .pl-ent,
     .pl-entl,
     .pl-entm,
