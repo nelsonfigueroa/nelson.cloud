@@ -22,7 +22,7 @@
       display: inline-block;
     }
 
-    [theme=dark] & {
+    [theme="dark"] & {
       color: $global-font-secondary-color-dark;
     }
 
@@ -34,7 +34,7 @@
   }
 
   .featured-image {
-    margin: .5rem 0 1rem 0;
+    margin: .5rem 0 1rem;
 
     img {
       display: block;
@@ -52,6 +52,7 @@
   .content {
     padding-top: 1em;
     border-top: solid 1px $global-border-color-dark;
+
     > h2 {
       font-size: 1.5rem;
 
@@ -90,12 +91,9 @@
     h5,
     h6 {
       font-weight: bold;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-      margin-right: 0;
-      margin-left: 0;
+      margin: 2.5rem 0 1rem;
 
-      [theme=dark] & {
+      [theme="dark"] & {
         font-weight: bolder;
       }
     }
@@ -110,7 +108,7 @@
         margin-right: .3125rem;
         color: $single-link-color;
 
-        [theme=dark] & {
+        [theme="dark"] & {
           color: $single-link-color-dark;
         }
       }
@@ -135,7 +133,7 @@
     b, strong {
       font-weight: bold;
 
-      [theme=dark] & {
+      [theme="dark"] & {
         color: #ddd;
       }
     }
@@ -145,12 +143,12 @@
     a {
       @include overflow-wrap(break-word);
 
-      [theme=dark] & b, [theme=dark] & strong {
+      [theme="dark"] & b, [theme="dark"] & strong {
         color: $single-link-color-dark;
       }
     }
 
-    [theme=dark] a:hover b, [theme=dark] a:hover strong {
+    [theme="dark"] a:hover b, [theme="dark"] a:hover strong {
       color: $single-link-hover-color-dark;
     }
 
@@ -170,7 +168,7 @@
         color: $global-font-secondary-color;
       }
 
-      [theme=dark] & {
+      [theme="dark"] & {
         background: $code-background-color-dark;
 
         rt {
@@ -185,7 +183,7 @@
       &::-webkit-scrollbar {
         background-color: $table-background-color;
 
-        [theme=dark] & {
+        [theme="dark"] & {
           background-color: $table-background-color-dark;
         }
       }
@@ -198,14 +196,14 @@
         background: $table-background-color;
         border-collapse: collapse;
 
-        [theme=dark] & {
+        [theme="dark"] & {
           background: $table-background-color-dark;
         }
 
         thead {
           background: $table-thead-color;
 
-          [theme=dark] & {
+          [theme="dark"] & {
             background-color: $table-thead-color-dark;
           }
         }
@@ -214,7 +212,7 @@
           padding: .3rem 1rem;
           border: 1px solid darken($table-thead-color, 2%);
 
-          [theme=dark] & {
+          [theme="dark"] & {
             border-color: darken($table-thead-color-dark, 2%);
           }
         }
@@ -259,7 +257,7 @@
       padding: .25rem .75rem;
       margin: 1rem 0;
 
-      [theme=dark] & {
+      [theme="dark"] & {
         border-left-color: $blockquote-color-dark;
         background-color: rgba($blockquote-color-dark, .2);
       }
@@ -268,7 +266,7 @@
     .footnotes {
       color: $global-font-secondary-color;
 
-      [theme=dark] & {
+      [theme="dark"] & {
         color: $global-font-secondary-color-dark;
       }
 
@@ -286,7 +284,7 @@
       border-top: 1px solid $global-border-color;
       border-bottom: none;
 
-      [theme=dark] & {
+      [theme="dark"] & {
         border-top: 1px solid $global-border-color-dark;
       }
     }
@@ -297,17 +295,21 @@
       background-color: $global-background-color;
       border: 1px solid $global-border-color;
       border-bottom-color: $global-border-color;
+
       @include border-radius(3px);
       @include box-shadow(inset 0 -1px 0 $global-border-color);
+
       font-size: .8rem;
       font-family: var(--code-font-family);
       color: $code-color;
 
-      [theme=dark] & {
+      [theme="dark"] & {
         background-color: $global-background-color-dark;
         border: 1px solid $global-border-color-dark;
         border-bottom-color: $global-border-color-dark;
+
         @include box-shadow(inset 0 -1px 0 $global-border-color-dark);
+
         color: $code-color-dark;
       }
     }
@@ -319,10 +321,11 @@
 
     .person-mention.h-card {
       display: inline-block;
+
       img {
         vertical-align: -12%;
         max-height: 1.1em;
-        margin-right: 0ex;
+        margin-right: 0;
         border-radius: 50%;
       }
     }

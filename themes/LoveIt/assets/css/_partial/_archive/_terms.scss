@@ -3,8 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   line-height: 1.6rem;
 
   .card-item {
@@ -57,7 +56,7 @@
     background-color: transparent;
   }
 
-  [theme=dark] & {
+  [theme="dark"] & {
     color: $global-link-color-dark;
 
     &:hover {
@@ -73,7 +72,7 @@
   color: $global-font-secondary-color;
   font-family: $code-font-family;
 
-  [theme=dark] & {
+  [theme="dark"] & {
     color: $global-font-secondary-color-dark;
   }
 }

@@ -15,7 +15,7 @@
 }
 
 @mixin filter($value) {
-  -webkit-filter: $value;
+  filter: $value;
   filter: $value;
 }
 
@@ -27,26 +27,26 @@
   display: -moz-box;
   display: -webkit-box;
   display: box;
-
   -webkit-box-orient: $orient;
   -moz-box-orient: $orient;
+
   // box-orient: $orient;
 }
 
 @mixin placeholder($color) {
-  input::-webkit-input-placeholder{
+  input::input-placeholder{
     color: $color;
   }
 
-  input:-moz-placeholder{
+  input:placeholder{
     color: $color;
   }
 
-  input::-moz-placeholder{
+  input::placeholder{
     color: $color;
   }
 
-  input:-ms-input-placeholder{
+  input:input-placeholder{
     color: $color;
   }
 
@@ -63,14 +63,14 @@
 }
 
 @mixin tab-size($value) {
-  -moz-tab-size: $value;
-  -o-tab-size: $value;
+  tab-size: $value;
+  tab-size: $value;
   tab-size: $value;
 }
 
 @mixin appearance($value) {
-  -webkit-appearance: $value;
-  -moz-appearance: $value;
+  appearance: $value;
+  appearance: $value;
 }
 
 @mixin overflow-wrap($value) {
@@ -85,7 +85,7 @@
 }
 
 @mixin object-fit($value) {
-  -o-object-fit: $value;
+  object-fit: $value;
   object-fit: $value;
   font-family: "object-fit: #{$value};";
 }
