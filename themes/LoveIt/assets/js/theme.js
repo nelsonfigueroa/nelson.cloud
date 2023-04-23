@@ -226,9 +226,6 @@ var Theme = /*#__PURE__*/function () {
             $copy.setAttribute('data-clipboard-text', code);
             $copy.title = _this5.config.code.copyTitle;
             var clipboard = new ClipboardJS($copy);
-            clipboard.on('success', function (_e) {
-              _this5.util.animateCSS($code, 'animate__flash');
-            });
             $header.appendChild($copy);
           }
 
