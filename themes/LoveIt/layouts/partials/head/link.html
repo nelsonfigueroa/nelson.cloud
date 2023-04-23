@@ -34,8 +34,3 @@
 {{- $toCSS := dict "targetPath" "css/style.min.css" "enableSourceMap" true -}}
 {{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
 {{- partial "plugin/style.html" $options -}}
-
-{{- /* Animate.css */ -}}
-{{- $source := $cdn.animateCSS | default "lib/animate/animate.min.css" -}}
-{{- $options := dict "Source" $source "Fingerprint" $fingerprint "Preload" true -}}
-{{- partial "plugin/style.html" $options -}}
