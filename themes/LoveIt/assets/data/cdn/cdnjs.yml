@@ -1,8 +1,6 @@
 prefix:
   libFiles: https://cdnjs.cloudflare.com/ajax/libs/
 libFiles:
-  # lazysizes@5.3.2 https://github.com/aFarkas/lazysizes
-  lazysizesJS: lazysizes/5.3.2/lazysizes.min.js
   # object-fit-images@3.2.4 https://github.com/fregante/object-fit-images
   objectFitImagesJS: object-fit-images/3.2.4/ofi.min.js
   # clipboard.js@2.0.11 https://github.com/zenorocha/clipboard.js
