@@ -361,14 +361,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         url = "https://buymeacoffee.com/nelsonfigueroa"
         title = ""
       # [[languages.en.menu.main]]
-      #   weight = 5
-      #   identifier = "documentation"
-      #   pre = ""
-      #   post = ""
-      #   name = "Docs"
-      #   url = "/categories/documentation/"
-      #   title = ""
-      # [[languages.en.menu.main]]
       #   weight = 6
       #   identifier = "github"
       #   pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
