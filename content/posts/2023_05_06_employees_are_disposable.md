@@ -20,7 +20,7 @@ It doesn't matter if investor expectations are surpassed, layoffs can still take
 
 <br>
 
-It's somewhat understandable if a company is struggling financially and resorts to layoffs. But there's plenty of companies that are profitable but still lay off the people that earned the company those profits.
+It's somewhat understandable if a company is struggling financially and resorts to layoffs. However, there's plenty of companies that are profitable and still lay off the people that earned the company those profits.
 {{< figure src="/employees_are_disposable/microsoft.png" alt="Polygon Microsoft headline" >}}
 *Source: [Polygon: Microsoft mass layoffs reportedly impact Bethesda, Halo Infinite teams](https://www.polygon.com/23561210/microsoft-layoffs-xbox-bethesda-halo-infinite-343-industries)*
 
