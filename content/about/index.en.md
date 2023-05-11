@@ -117,6 +117,7 @@ Contributed practical examples for the following commands:
 - `kubectl logs`
 - `kubectl rollout`
 - `kubectl delete`
+- `kubectl edit`
 
 ## Interests
 
