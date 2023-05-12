@@ -1,23 +1,5 @@
 {{- $profile := .Site.Params.home.profile -}}
 <div class="home-profile">
-    {{- $avatar := $profile.avatarURL -}}
-    {{- if $avatar -}}
-        <div class="home-avatar">
-            {{- $menus := $.Site.Menus.main | default slice -}}
-            {{- with index $menus 0 -}}
-                {{- $url := .URL | relLangURL -}}
-                {{- with .Page -}}
-                    {{- $url = .RelPermalink -}}
-                {{- end -}}
-                <a href="{{ $url }}"{{ with .Title | default .Name }} title="{{ . }}"{{ end }}{{ if (urls.Parse $url).Host }} rel="noopener noreffer" target="_blank"{{ end }}>
-                    {{- dict "Src" $avatar | partial "plugin/img.html" -}}
-                </a>
-            {{- else -}}
-                {{- dict "Src" $avatar | partial "plugin/img.html" -}}
-            {{- end -}}
-        </div>
-    {{- end -}}
-
     {{- with $profile.title -}}
         <h1 class="home-title">
             {{- . | safeHTML -}}
