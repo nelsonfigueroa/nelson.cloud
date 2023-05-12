@@ -157,10 +157,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Home page profile
     [params.home.profile]
       enable = true
-      # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
-      # URL of avatar shown in home page
-      avatarURL = "" # looks like this isn't even working? I can change this in another area
       # title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
@@ -373,8 +369,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         rss = 100
         [languages.en.params.home.profile]
           enable = true
-          gravatarEmail = ""
-          avatarURL = ""
           title = ""
           subtitle = "<h1>Nelson Figueroa</h1><p>Software Engineer</p>"
           typeit = false
