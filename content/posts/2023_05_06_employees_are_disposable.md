@@ -4,7 +4,7 @@ summary = "Companies are willing to lay off employees despite being profitable."
 date = "2023-05-06"
 categories = ["Opinion"]
 toc = false
-featured = false
+featured = true
 +++
 
 The recent tech layoffs have shown that employees are disposable in the eyes of executives.
