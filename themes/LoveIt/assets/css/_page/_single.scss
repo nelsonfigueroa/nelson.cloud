@@ -44,9 +44,6 @@
       overflow: hidden;
     }
 
-    img.lazyloaded {
-      width: 100%;
-    }
   }
 
   .content {
@@ -222,7 +219,12 @@
     img {
       max-width: 100%;
       min-height: 1em;
-      border-radius: 0.2em;
+      border-radius: 0.3em;
+      border: 1px solid $global-font-color;
+
+      [theme="dark"] & {
+        border: 1px solid $global-font-color-dark;
+      }
     }
 
     figure {
