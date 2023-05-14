@@ -54,10 +54,6 @@
         height: 100%;
         left: 0;
         top: 0;
-
-        &.lazyloaded {
-          @include object-fit(cover);
-        }
       }
 
       &:hover {
