@@ -86,7 +86,7 @@ I currently work in a Kubernetes security role.
 
 **Cloud**: Amazon Web Services, Google Cloud Platform
 
-**Operating Systems**: Linux (Ubuntu, CentOS, Kali), MacOS, Windows 10
+**Operating Systems**: Linux (Ubuntu, CentOS, Kali), macOS, Windows 10
 
 **Other**: Command Line, Agile/Scrum, Jira, Git, RSpec
 
