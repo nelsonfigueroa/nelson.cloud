@@ -169,7 +169,7 @@ Minikube is a tool that will start up a single-node Kubernetes cluster on a virt
 
 ### Installing Minikube
 
-I'll be showing steps to install Minikube on MacOS using `brew`. If you're running Windows, Your best bet is to refer to the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/install-minikube/).
+I'll be showing steps to install Minikube on macOS using `brew`. If you're running Windows, Your best bet is to refer to the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/install-minikube/).
 
 You'll need a hypervisor to run Minikube on. I chose VirtualBox, and installing it was easy as running:
 

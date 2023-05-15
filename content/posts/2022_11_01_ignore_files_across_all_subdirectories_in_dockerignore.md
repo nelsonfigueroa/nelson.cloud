@@ -15,7 +15,7 @@ For example, to ignore the file `file.txt` in all subdirectories, add the follow
 **file.txt
 ```
 
-Another example to ignore `.DS_Store` files on MacOS devices:
+Another example to ignore `.DS_Store` files on macOS devices:
 
 ```
 **.DS_Store

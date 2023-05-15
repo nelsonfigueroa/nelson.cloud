@@ -1,12 +1,12 @@
 +++
-title = "Cleaning Up After Deleted Apps on MacOS"
-summary = "Clean up app remnants after deleting MacOS apps."
+title = "Cleaning Up After Deleted Apps on macOS"
+summary = "Clean up app remnants after deleting macOS apps."
 date = "2021-02-28"
-categories = ["MacOS"]
+categories = ["macOS"]
 toc = false
 +++
 
-After deleting apps on MacOS, they tend leave remnants behind in the form of caches and configs throughout the system. This is how I find and remove those leftover files. I'll be completely removing Skype from my system to demonstrate files and directories left behind after an app is deleted.
+After deleting apps on macOS, they tend leave remnants behind in the form of caches and configs throughout the system. This is how I find and remove those leftover files. I'll be completely removing Skype from my system to demonstrate files and directories left behind after an app is deleted.
 
 ## Searching for Remnants
 
@@ -16,7 +16,7 @@ To find directories and files related to Skype, I ran a system-wide search using
 sudo find / -name '*skype*' -not -path '/System/Volumes/Data/*' > ~/Desktop/findings.txt
 ```
 
-This command finds all files and directories containing the word "skype", while excluding those in `/System/Volumes/Data/`, and saves the results to a textfile. The reason `/System/Volumes/Data/` is being excluded is because the `find` command will give us duplicate results with `/System/Volumes/Data/` prepended. This is because MacOS has an additional read-only system volume. You can [read more about it here](https://support.apple.com/en-us/HT210650), and for a more technical dive into this additional volume you can read [this forensics blog post](http://www.swiftforensics.com/2019/10/macos-1015-volumes-firmlink-magic.html).
+This command finds all files and directories containing the word "skype", while excluding those in `/System/Volumes/Data/`, and saves the results to a textfile. The reason `/System/Volumes/Data/` is being excluded is because the `find` command will give us duplicate results with `/System/Volumes/Data/` prepended. This is because macOS has an additional read-only system volume. You can [read more about it here](https://support.apple.com/en-us/HT210650), and for a more technical dive into this additional volume you can read [this forensics blog post](http://www.swiftforensics.com/2019/10/macos-1015-volumes-firmlink-magic.html).
 
 The command will take a few minutes to complete, so give it some time. Additionally, your terminal will fill up with error messages stating `Operation not permitted`. For example:
 

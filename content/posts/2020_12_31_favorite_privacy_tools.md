@@ -86,7 +86,7 @@ Unlike Google, DuckDuckGo does not sell user information and does not track user
 
 **Official site:** [https://www.obdev.at/products/littlesnitch/index.html](https://www.obdev.at/products/littlesnitch/index.html)
 
-Little Snitch is a MacOS-only application firewall that runs on your Mac and monitors all incoming and outgoing connections. It allows you to allow or deny connections as needed and gives you plenty of information about what your applications are connecting to. This is a paid app (and there's a free trial), but I think it's worth it.
+Little Snitch is a macOS-only application firewall that runs on your Mac and monitors all incoming and outgoing connections. It allows you to allow or deny connections as needed and gives you plenty of information about what your applications are connecting to. This is a paid app (and there's a free trial), but I think it's worth it.
 
 If you want a free alternative, check out [LuLu](https://objective-see.com/products/lulu.html). It has less features, but It's worth a try if you want to see what your machine is connecting to. The same developer has other Mac-related applications that may be useful: [objective-see.com](https://objective-see.com/index.html).
 
