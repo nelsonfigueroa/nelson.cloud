@@ -305,7 +305,7 @@ We can specify a MAC address with the following command:
 $ macchanger -m f8:d8:88:64:fd:c7 wlan0
 ```
 
-On MacOS you can change the MAC address of an interface to one of your choosing with the following command:
+On macOS you can change the MAC address of an interface to one of your choosing with the following command:
 
 ```
 $ sudo ifconfig wlan0 ether f8-db-88-e4-94-5d
