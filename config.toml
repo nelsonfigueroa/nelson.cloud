@@ -30,6 +30,10 @@ enableEmoji = true
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
+# configuration for PurgeCSS
+[build]
+  writeStats = true
+
 # Author config
 [author]
   name = "Nelson Figueroa" # sets author in RSS
