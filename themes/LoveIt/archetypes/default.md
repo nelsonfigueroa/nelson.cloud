@@ -17,8 +17,6 @@ featuredImage: ""
 featuredImagePreview: ""
 
 hiddenFromHomePage: false
-ruby: true
-fraction: true
 linkToMarkdown: true
 rssFullText: false
 
