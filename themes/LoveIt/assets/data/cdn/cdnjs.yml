@@ -3,5 +3,3 @@ prefix:
 libFiles:
   # object-fit-images@3.2.4 https://github.com/fregante/object-fit-images
   objectFitImagesJS: object-fit-images/3.2.4/ofi.min.js
-  # clipboard.js@2.0.11 https://github.com/zenorocha/clipboard.js
-  clipboardJS: clipboard.js/2.0.11/clipboard.min.js

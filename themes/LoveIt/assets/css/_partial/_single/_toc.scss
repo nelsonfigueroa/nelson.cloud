@@ -9,7 +9,7 @@
     font-size: var(--toc-content-font-size);
 
     ul {
-      text-indent: -0.85rem;
+      text-indent: -1rem;
       padding-left: .8rem;
       list-style: none;
 
@@ -24,24 +24,12 @@
         }
       }
 
+      li {
+        padding-top: .2rem;
+      }
+
       ul {
         padding-left: 1.5rem;
-      }
-    }
-  }
-
-  ruby {
-    background: $code-background-color;
-
-    rt {
-      color: $global-font-secondary-color;
-    }
-
-    [theme="dark"] & {
-      background: $code-background-color-dark;
-
-      rt {
-        color: $global-font-secondary-color-dark;
       }
     }
   }

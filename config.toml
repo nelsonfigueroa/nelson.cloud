@@ -208,14 +208,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "xxxx"
         logoUrl = "/images/avatar.jpg"
 
-  # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
-  [params.verification]
-    google = ""
-    bing = ""
-    yandex = ""
-    pinterest = ""
-    baidu = ""
-
   # Site SEO config
   [params.seo]
     # image URL
@@ -245,7 +237,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [markup.highlight]
     codeFences = true
     guessSyntax = true
-    lineNos = true
+    lineNos = false # line numbers in code blocks
     lineNumbersInTable = true
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false

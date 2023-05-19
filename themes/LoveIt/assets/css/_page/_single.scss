@@ -158,22 +158,6 @@
       list-style-type: disc;
     }
 
-    ruby {
-      background: $code-background-color;
-
-      rt {
-        color: $global-font-secondary-color;
-      }
-
-      [theme="dark"] & {
-        background: $code-background-color-dark;
-
-        rt {
-          color: $global-font-secondary-color-dark;
-        }
-      }
-    }
-
     .table-wrapper {
       overflow-x: auto;
 

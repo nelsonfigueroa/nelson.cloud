@@ -35,7 +35,7 @@ pre {
   @include tab-size(4);
 
   code {
-    padding: 0;
+    padding: 1rem 0 1rem 0.5rem;
   }
 
   img {
@@ -78,6 +78,7 @@ pre, .highlight table, .highlight tr, .highlight td {
     position: relative;
 
     .code-header {
+      border-radius: 0.7em 0.7em 0.7em 0.7em;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -146,6 +147,7 @@ pre, .highlight table, .highlight tr, .highlight td {
     }
 
     .ln, .lnt {
+      padding-right: 0.5rem;
       color: $global-font-secondary-color;
 
       [theme="dark"] & {
@@ -153,35 +155,8 @@ pre, .highlight table, .highlight tr, .highlight td {
       }
     }
 
-    .arrow {
-      padding: 0 .2rem;
-
-      @include transition(transform 0.2s ease);
-    }
-
     .ellipses {
       padding: .4rem;
-    }
-
-    .copy {
-      display: none;
-      padding: .4rem;
-      color: $global-font-color;
-
-      [theme="dark"] & {
-        color: $global-font-color-dark;
-      }
-
-      &:hover {
-        cursor: pointer;
-
-        // color: $global-link-hover-color;
-        color: $global-link-hover-color;
-
-        [theme="dark"] & {
-          color: $global-link-hover-color-dark;
-        }
-      }
     }
 
     .table-wrapper {
@@ -193,6 +168,7 @@ pre, .highlight table, .highlight tr, .highlight td {
 
     &.open {
       .code-header {
+        border-radius: 0.7em 0.7em 0 0;
         background: darken($code-block-background-color, 3%);
 
         [theme="dark"] & {
@@ -201,21 +177,14 @@ pre, .highlight table, .highlight tr, .highlight td {
       }
 
       .table-wrapper {
+        border-radius: 0 0 0.7em 0.7em;
         max-height: 10000px;
 
         @include details-transition-close;
       }
 
-      .arrow {
-        @include transform(rotate(90deg));
-      }
-
       .ellipses {
         display: none;
-      }
-
-      .copy {
-        display: inline;
       }
     }
   }
