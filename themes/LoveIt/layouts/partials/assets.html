@@ -6,13 +6,6 @@
 {{- $code := $params.code | default dict -}}
 {{- $config = cond (ne $code.maxShownLines nil) $code.maxShownLines 10 | dict "maxShownLines" | dict "code" | merge $config -}}
 
-{{- /* clipboard.js */ -}}
-{{- if ne $code.copy false -}}
-    {{- $source := $cdn.clipboardJS | default "lib/clipboard/clipboard.min.js" -}}
-    {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
-    {{- $config = T "copyToClipboard" | dict "copyTitle" | dict "code" | merge $config -}}
-{{- end -}}
-
 {{- range $params.library.css -}}
     {{- dict "Source" . "Fingerprint" $fingerprint | dict "Scratch" $.Scratch "Data" | partial "scratch/style.html" -}}
 {{- end -}}
