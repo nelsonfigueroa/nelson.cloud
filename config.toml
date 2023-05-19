@@ -173,10 +173,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.page]
     # whether to hide a page from home page
     hiddenFromHomePage = false
-    # whether to enable the ruby extended syntax
-    ruby = true
-    # whether to enable the fraction extended syntax
-    fraction = true
     # whether to show the full text content in RSS
     rssFullText = true
     # Table of the contents config
