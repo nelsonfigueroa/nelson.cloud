@@ -112,3 +112,37 @@ div#content.content {
       padding: 0 0.6rem;
     }
   }
+
+// ascii art
+  .outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(2.5rem, 12vmin) 1fr 5rem;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+    min-height: 35vh;
+    line-height: normal;
+    font-weight:bolder;
+  }
+  
+  .inner {
+    grid-area: header;
+  }
+  
+  .inner .pre {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: calc(max(0.2rem, 1vmin));
+    padding: 0 !important;
+  }
+  
+  @media only screen and (max-device-width: 700px) {
+    .outer {
+      min-height: 15vh;
+    //   grid-template-rows: 6rem auto 5rem;
+    }
+    .inner {
+      font-size: 55%;
+    }
+  }
