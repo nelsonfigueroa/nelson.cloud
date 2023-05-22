@@ -6,8 +6,6 @@ categories = ["Kubernetes"]
 toc = true
 +++
 
-{{< figure src="/learning_kubernetes_with_minikube/kubernetes.png" alt="Kubernetes logo" >}}
-
 ## Introduction
 
 Kubernetes, also known as "k8s", is an open-source container orchestration tool designed to automate deploying, scaling, and operating application containers. Docker containers can be used to develop and build applications, then Kubernetes can be used to run these applications. You can use other container engines with Kubernetes, but I'll be using Docker since it is the most popular. 
