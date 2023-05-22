@@ -103,29 +103,6 @@ $ go run example.go
 map[a:0 b:1 c:2 d:3 e:4 f:5]
 ```
 
-Ruby, unsurprisingly, also prints elements in insertion order.
-
-```ruby
-# example.rb
-
-# define the hash
-h = { a: 0,
-      b: 1,
-      c: 2,
-      d: 3,
-      e: 4,
-      f: 5 }
-
-# print the hash
-puts h
-```
-
-```
-$ ruby example.rb
-
-{:a=>0, :b=>1, :c=>2, :d=>3, :e=>4, :f=>5}
-```
-
 ## The Solution
 
 To iterate through map contents in insert order, we need to create a slice that keeps track of each key. Then, instead of iterating through the map, we iterate through the slice and use its contents (which are the map keys) to access the map's values in the order in which they were inserted:
