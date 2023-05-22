@@ -45,7 +45,7 @@ pre {
   }
 }
 
-pre, .highlight table, .highlight tr, .highlight td {
+.highlight table, .highlight tr, .highlight td {
   background: $code-block-background-color !important;
 
   [theme="dark"] & {
