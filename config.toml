@@ -341,7 +341,5 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         rss = 100
         [languages.en.params.home.profile]
           enable = true
-          title = ""
-          subtitle = "<h1>Nelson Figueroa</h1><p>Software Engineer</p>"
-          typeit = false
+          title = "<h1>Nelson Figueroa</h1><p>Software Engineer</p>"
           social = true
