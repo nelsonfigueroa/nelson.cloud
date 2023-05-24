@@ -1,13 +1,7 @@
 {{- $profile := .Site.Params.home.profile -}}
 <div class="home-profile">
     {{- with $profile.title -}}
-        <h1 class="home-title">
-            {{- . | safeHTML -}}
-        </h1>
-    {{- end -}}
-
-    {{- with $profile.subtitle -}}
-        <div class="home-subtitle">
+        <div class="home-title">
             {{- . | safeHTML -}}
         </div>
     {{- end -}}
