@@ -23,13 +23,8 @@
   .summary {
     padding-top: 1rem;
     padding-bottom: .8rem;
-    color: $global-font-color;
-    border-bottom: 1px dashed $global-border-color;
-
-    [theme="dark"] & {
-      color: $global-font-color-dark;
-      border-bottom: 1px dashed $global-border-color-dark;
-    }
+    color: $global-font-color-dark;
+    border-bottom: 1px dashed $global-border-color-dark;
 
     .featured-image-preview {
       width: 100%;
@@ -69,11 +64,7 @@
 
       @include overflow-wrap(break-word);
 
-      color: $global-font-secondary-color;
-
-      [theme="dark"] & {
-        color: $global-font-secondary-color-dark;
-      }
+      color: $global-font-secondary-color-dark;
 
       h2,
       h3,
@@ -98,11 +89,7 @@
       @include link(false, true);
 
       b, strong {
-        color: $global-font-secondary-color;
-
-        [theme="dark"] & {
-          color: $global-font-secondary-color-dark;
-        }
+        color: $global-font-secondary-color-dark;
       }
     }
 

@@ -19,27 +19,27 @@ $global-font-weight: 400 !default;
 $global-line-height: 1.5rem !default;
 
 // Color of the background
-$global-background-color: white !default;
+// $global-background-color: white !default;
 $global-background-color-dark: #0e0e0e !default;
 
 // Color of the text
-$global-font-color: black !default;
+// $global-font-color: black !default;
 $global-font-color-dark: #ccc !default;
 
 // Color of the secondary text
-$global-font-secondary-color: #5d5d5f !default;
+// $global-font-secondary-color: #5d5d5f !default;
 $global-font-secondary-color-dark: #868688 !default;
 
 // Color of the link
-$global-link-color: #034cd3 !default;
+// $global-link-color: #034cd3 !default;
 $global-link-color-dark: #02a7ff !default;
 
 // Color of the hover link
-$global-link-hover-color: $global-link-color-dark !default;
-$global-link-hover-color-dark: $global-link-color !default;
+// $global-link-hover-color: $global-link-color-dark !default;
+$global-link-hover-color-dark: #034cd3 !default;
 
 // Color of the border
-$global-border-color: #b0b0b0 !default;
+// $global-border-color: #b0b0b0 !default;
 $global-border-color-dark: #484848 !default;
 
 // ========== Global ========== //
@@ -55,10 +55,10 @@ $scrollbar-hover-color: #a9a9b3 !default;
 
 // ========== Selection ========== //
 // Color of the selected text
-$selection-color: $global-font-color !default;
-$selection-color-dark: $global-font-color-dark !default;
-$selection-font-color: $global-font-color-dark !default;
-$selection-font-color-dark: $global-font-color !default;
+// $selection-color: black !default;
+$selection-color-dark: #ccc !default;
+// $selection-font-color: $global-font-color-dark !default;
+$selection-font-color-dark: black !default;
 
 // ========== Selection ========== //
 
@@ -72,11 +72,11 @@ $header-title-font-size: 1.2rem !default;
 $mobile-header-title-font-size: 0.9rem !default;
 
 // Color of the header background
-$header-background-color: rgba(248, 248, 248, 0.8) !default;
+// $header-background-color: rgba(248, 248, 248, 0.8) !default;
 $header-background-color-dark: rgba(0, 0, 0, 0.8) !default;
 
 // Color of the hover header item
-$header-hover-color: #161209 !default;
+// $header-hover-color: #161209 !default;
 $header-hover-color-dark: #fff !default;
 
 // ========== Header ========== //
@@ -87,30 +87,30 @@ $toc-title-font-size: 1rem !default;
 $toc-content-font-size: 1.1rem !default;
 
 // // Color of the single link
-$single-link-color: $global-link-color !default;
+// $single-link-color: $global-link-color !default;
 $single-link-color-dark: $global-link-color-dark !default;
 
 // // Color of the hover single link
-$single-link-hover-color: $global-link-color-dark !default;
-$single-link-hover-color-dark: $global-link-color !default;
+// $single-link-hover-color: $global-link-color-dark !default;
+$single-link-hover-color-dark: #034cd3!default;
 
 // Color of the table background
-$table-background-color: #fff !default;
+// $table-background-color: #fff !default;
 $table-background-color-dark: #272c34 !default;
 
 // Color of the table thead
-$table-thead-color: #ededed !default;
+// $table-thead-color: #ededed !default;
 $table-thead-color-dark: #20252b !default;
 
 // Color of the blockquote
-$blockquote-color: #6bd6fd !default;
+// $blockquote-color: #6bd6fd !default;
 $blockquote-color-dark: #59c5ec !default;
 
 // ========== Single Content ========== //
 
 // ========== Pagination ========== //
 // Color of the hover link in pagination
-$pagination-link-hover-color: $global-link-color !default;
+// $pagination-link-hover-color: $global-link-color !default;
 $pagination-link-hover-color-dark: $global-link-color-dark !default;
 
 // ========== Pagination ========== //
@@ -123,17 +123,17 @@ $code-font-size: .9rem !default;
 // Color of the code
 // $code-color: $global-font-color !default;
 // $code-color-dark: $global-font-color-dark !default;
-$code-color: #0f4124;
+$code-color-background: #0f4124;
 $code-color-dark: #55d88c;
 
 // Color of the code background
-$code-background-color: #55d88c !default;
+// $code-background-color: #55d88c !default;
 $code-background-color-dark: #0f4124 !default;
 
 // Color of the code block background
-$code-block-background-color: #f5f5f5;
+// $code-block-background-color: #f5f5f5;
 $code-block-background-color-dark: #171a1f;
-$code-info-color: #9c9c9c !default;
+// $code-info-color: #9c9c9c !default;
 $code-info-color-dark: #b1b0b0 !default;
 
 // Code type list
@@ -191,81 +191,6 @@ $code-type-list: "language-bash" "Bash",
   !default;
 
 // Color map of the code highlight
-$code-highlight-color-map: (
-  /* Parentheses */ "p": #3b3b3b,
-  /* Keyword */ "k": #b501a9,
-  /* KeywordConstant */ "kc": #b501a9,
-  /* KeywordDeclaration */ "kd": #b501a9,
-  /* KeywordNamespace */ "kn": #b501a9,
-  /* KeywordPseudo */ "kp": #b501a9,
-  /* KeywordReserved */ "kr": #b501a9,
-  /* KeywordType */ "kt": #b501a9,
-  /* Name */ "n": #333,
-  /* NameAttribute */ "na": #a80f0f,
-  /* NameBuiltin */ "nb": #2b77fa, /* #2b77fa */
-  /* NameBuiltinPseudo */ "bp": #2b77fa, /* #2b77fa */
-  /* NameClass */ "nc": #cb8100,
-  /* NameConstant */ "no": #a80f0f,
-  /* NameDecorator */ "nd": #0086c1,
-  /* NameEntity */ "ni": #a80f0f,
-  /* NameException */ "ne": #a80f0f,
-  /* NameFunction */ "nf": #a80f0f,
-  /* NameFunctionMagic */ "fm": #1ccad6,
-  /* NameLabel */ "nl": #a80f0f,
-  /* NameNamespace */ "nn": #a80f0f,
-  /* NameOther */ "nx": #333,
-  /* NameProperty */ "py": #a80f0f,
-  /* NameTag */ "nt": #a80f0f,
-  /* NameVariable */ "nv": #a80f0f,
-  /* NameVariableClass */ "vc": #a80f0f,
-  /* NameVariableGlobal */ "vg": #a80f0f,
-  /* NameVariableInstance */ "vi": #a80f0f,
-  /* NameVariableMagic */ "vm": #a80f0f,
-  /* Literal */ "l": #2aa198,
-  /* LiteralDate */ "ld": #2aa198,
-  /* LiteralString */ "s": #24a443,
-  /* LiteralStringAffix */ "sa": #24a443,
-  /* LiteralStringBacktick */ "sb": #24a443,
-  /* LiteralStringChar */ "sc": #24a443,
-  /* LiteralStringDelimiter */ "dl": #24a443,
-  /* LiteralStringDoc */ "sd": #24a443,
-  /* LiteralStringDouble */ "s2": #24a443,
-  /* LiteralStringEscape */ "se": #24a443,
-  /* LiteralStringHeredoc */ "sh": #24a443,
-  /* LiteralStringInterpol */ "si": #24a443,
-  /* LiteralStringOther */ "sx": #24a443,
-  /* LiteralStringRegex */ "sr": #24a443,
-  /* LiteralStringSingle */ "s1": #24a443,
-  /* LiteralStringSymbol */ "ss": #24a443,
-  /* LiteralNumber */ "m": #e2893c,
-  /* LiteralNumberBin */ "mb": #e2893c,
-  /* LiteralNumberFloat */ "mf": #e2893c,
-  /* LiteralNumberHex */ "mh": #e2893c,
-  /* LiteralNumberInteger */ "mi": #e2893c,
-  /* LiteralNumberIntegerLong */ "il": #e2893c,
-  /* LiteralNumberOct */ "mo": #e2893c,
-  /* Operator */ "o": #f19b04,
-  /* OperatorWord */ "ow": #b501a9,
-  /* Comment */ "c": #535353,
-  /* CommentHashbang */ "ch": #535353,
-  /* CommentMultiline */ "cm": #535353,
-  /* CommentSingle */ "c1": #535353,
-  /* CommentSpecial */ "cs": #535353,
-  /* CommentPreproc */ "cp": #535353,
-  /* CommentPreprocFile */ "cpf": #535353,
-  /* Generic */ "g": #e72d40,
-  /* GenericDeleted */ "gd": #e72d40,
-  /* GenericEmph */ "ge": #e72d40,
-  /* GenericError */ "gr": #e72d40,
-  /* GenericHeading */ "gh": #e72d40,
-  /* GenericInserted */ "gi": #e72d40,
-  /* GenericOutput */ "go": #e72d40,
-  /* GenericPrompt */ "gp": #e72d40,
-  /* GenericStrong */ "gs": #e72d40,
-  /* GenericSubheading */ "gu": #e72d40,
-  /* GenericTraceback */ "gt": #e72d40,
-  /* TextWhitespace */ "w": #bbb,
-) !default;
 $code-highlight-color-map-dark: (
   /* Parentheses */ "p": #a9a9b3,
   /* Keyword */ "k": #d371e3,

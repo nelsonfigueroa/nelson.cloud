@@ -18,11 +18,7 @@
     }
 
     sup {
-      color: $global-font-secondary-color;
-
-      [theme="dark"] & {
-        color: $global-font-secondary-color-dark;
-      }
+      color: $global-font-secondary-color-dark;
     }
   }
 }

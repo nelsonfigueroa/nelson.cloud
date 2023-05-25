@@ -16,14 +16,10 @@
 
   .post-meta {
     font-size: .875rem;
-    color: $global-font-secondary-color;
+    color: $global-font-secondary-color-dark;
 
     span {
       display: inline-block;
-    }
-
-    [theme="dark"] & {
-      color: $global-font-secondary-color-dark;
     }
 
     @include link(false, true);
@@ -87,12 +83,8 @@
     h4,
     h5,
     h6 {
-      font-weight: bold;
+      font-weight: bolder;
       margin: 2.5rem 0 1rem;
-
-      [theme="dark"] & {
-        font-weight: bolder;
-      }
     }
 
     > h2,
@@ -103,11 +95,7 @@
       > .header-mark::before {
         content: "|";
         margin-right: .3125rem;
-        color: $single-link-color;
-
-        [theme="dark"] & {
-          color: $single-link-color-dark;
-        }
+        color: $single-link-color-dark;
       }
     }
 
@@ -129,10 +117,7 @@
 
     b, strong {
       font-weight: bold;
-
-      [theme="dark"] & {
-        color: #ddd;
-      }
+      color: #ddd;
     }
 
     @include link(false, false);
@@ -140,12 +125,12 @@
     a {
       @include overflow-wrap(break-word);
 
-      [theme="dark"] & b, [theme="dark"] & strong {
+      b, strong {
         color: $single-link-color-dark;
       }
     }
 
-    [theme="dark"] a:hover b, [theme="dark"] a:hover strong {
+    a:hover b, a:hover strong {
       color: $single-link-hover-color-dark;
     }
 
@@ -162,11 +147,7 @@
       overflow-x: auto;
 
       &::-webkit-scrollbar {
-        background-color: $table-background-color;
-
-        [theme="dark"] & {
-          background-color: $table-background-color-dark;
-        }
+        background-color: $table-background-color-dark;
       }
 
       > table {
@@ -174,28 +155,16 @@
         max-width: 100%;
         margin: .625rem 0;
         border-spacing: 0;
-        background: $table-background-color;
+        background: $table-background-color-dark;
         border-collapse: collapse;
 
-        [theme="dark"] & {
-          background: $table-background-color-dark;
-        }
-
         thead {
-          background: $table-thead-color;
-
-          [theme="dark"] & {
-            background-color: $table-thead-color-dark;
-          }
+          background: $table-thead-color-dark;
         }
 
         th, td {
           padding: .3rem 1rem;
-          border: 1px solid darken($table-thead-color, 2%);
-
-          [theme="dark"] & {
-            border-color: darken($table-thead-color-dark, 2%);
-          }
+          border: 1px solid darken($table-thead-color-dark, 2%);
         }
       }
     }
@@ -204,11 +173,7 @@
       max-width: 100%;
       min-height: 1em;
       border-radius: 0.7em;
-      border: 1px solid $global-font-color;
-
-      [theme="dark"] & {
-        border: 1px solid $global-font-color-dark;
-      }
+      border: 1px solid $global-font-color-dark;
     }
 
     figure {
@@ -238,24 +203,14 @@
 
     blockquote {
       display: block;
-      border-left: .5rem solid $blockquote-color;
-      background-color: rgba($blockquote-color, .2);
+      border-left: .5rem solid $blockquote-color-dark;
+      background-color: rgba($blockquote-color-dark, .2);
       padding: .25rem .75rem;
       margin: 1rem 0;
-
-      [theme="dark"] & {
-        border-left-color: $blockquote-color-dark;
-        background-color: rgba($blockquote-color-dark, .2);
-      }
     }
 
     .footnotes {
-      color: $global-font-secondary-color;
-
-      [theme="dark"] & {
-        color: $global-font-secondary-color-dark;
-      }
-
+      color: $global-font-secondary-color-dark;
       p {
         margin: .25rem 0;
       }
@@ -267,37 +222,23 @@
     hr {
       margin: 1rem 0;
       position: relative;
-      border-top: 1px solid $global-border-color;
+      border-top: 1px solid $global-border-color-dark;
       border-bottom: none;
-
-      [theme="dark"] & {
-        border-top: 1px solid $global-border-color-dark;
-      }
     }
 
     kbd {
       display: inline-block;
       padding: .25rem;
-      background-color: $global-background-color;
-      border: 1px solid $global-border-color;
-      border-bottom-color: $global-border-color;
+      background-color: $global-background-color-dark;
+      border: 1px solid $global-border-color-dark;
+      border-bottom-color: $global-border-color-dark;
 
       @include border-radius(3px);
-      @include box-shadow(inset 0 -1px 0 $global-border-color);
+      @include box-shadow(inset 0 -1px 0 $global-border-color-dark);
 
       font-size: .8rem;
       font-family: var(--code-font-family);
-      color: $code-color;
-
-      [theme="dark"] & {
-        background-color: $global-background-color-dark;
-        border: 1px solid $global-border-color-dark;
-        border-bottom-color: $global-border-color-dark;
-
-        @include box-shadow(inset 0 -1px 0 $global-border-color-dark);
-
-        color: $code-color-dark;
-      }
+      color: $code-color-dark;
     }
 
     .version {

@@ -4,9 +4,9 @@
     transition: color 0.2s ease-in-out;
 
     @if $light {
-      color: $global-link-color;
+      color: $global-link-color-dark;
     } @else {
-      color: $single-link-color;
+      color: $single-link-color-dark;
     }
 
     [theme="dark"] & {
@@ -21,9 +21,9 @@
   a:active,
   a:hover {
     @if $light {
-      color: $global-link-hover-color;
+      color: $global-link-hover-color-dark;
     } @else {
-      color: $single-link-hover-color;
+      color: $single-link-hover-color-dark;
     }
 
     [theme="dark"] & {
