@@ -52,29 +52,19 @@
   text-overflow: ellipsis;
 
   &:hover {
-    color: $global-link-hover-color;
+    color: $global-link-hover-color-dark;
     background-color: transparent;
   }
 
-  [theme="dark"] & {
-    color: $global-link-color-dark;
-
-    &:hover {
-      color: $global-link-hover-color-dark;
-    }
-  }
+  color: $global-link-color-dark;
 }
 
 .archive-item-date {
   font-size: 0.9em;
   width: 8em;
   text-align: right;
-  color: $global-font-secondary-color;
+  color: $global-font-secondary-color-dark;
   font-family: $code-font-family;
-
-  [theme="dark"] & {
-    color: $global-font-secondary-color-dark;
-  }
 }
 
 .more-post {

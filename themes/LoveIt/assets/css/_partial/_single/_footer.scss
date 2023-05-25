@@ -2,12 +2,8 @@
   margin-top: 3rem;
 
   .post-info {
-    border-bottom: 1px solid $global-border-color;
+    border-bottom: 1px solid $global-border-color-dark;
     padding: 1rem 0 0.3rem;
-
-    [theme="dark"] & {
-      border-bottom: 1px solid $global-border-color-dark;
-    }
 
     .post-info-line {
       display: flex;
@@ -15,22 +11,14 @@
 
       .post-info-mod {
         font-size: 0.8em;
-        color: $global-font-secondary-color;
-
-        [theme="dark"] & {
-          color: $global-font-secondary-color-dark;
-        }
+        color: $global-font-secondary-color-dark;
 
         @include link(false, false);
       }
 
       .post-info-license {
         font-size: 0.8em;
-        color: $global-font-secondary-color;
-
-        [theme="dark"] & {
-          color: $global-font-secondary-color-dark;
-        }
+        color: $global-font-secondary-color-dark;
 
         @include link(false, false);
       }

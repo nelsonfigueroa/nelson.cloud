@@ -31,27 +31,17 @@ html {
 }
 
 ::selection {
-  color: $selection-font-color;
-  background-color: $selection-color;
-
-  [theme="dark"] & {
-    color: $selection-font-color-dark;
-    background-color: $selection-color-dark;
-  }
+  color: $selection-font-color-dark;
+  background-color: $selection-color-dark;
 }
 
 body {
-  background-color: $global-background-color;
-  color: $global-font-color;
+  color: $global-font-color-dark;
+  background-color: $global-background-color-dark;
 
   @include overflow-wrap(break-word);
 
   scrollbar-color: auto;
-
-  &[theme="dark"] {
-    color: $global-font-color-dark;
-    background-color: $global-background-color-dark;
-  }
 }
 
 @include link(true, true);
