@@ -1,8 +1,8 @@
 ---
 title: "Nelson Figueroa"
 date: 2023-04-13T11:04:49+08:00
-draft: false
 description: "About Me"
+toc: "true"
 images: [""]
 ---
 
@@ -125,11 +125,33 @@ Contributed practical examples for the following commands:
 
 **Hobbies**: Videogames, Electric Guitar
 
-**Games**: [Overwatch](https://overwatch.blizzard.com/), [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring), [Factorio](https://www.factorio.com/), [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/), [Stardew Valley](https://www.stardewvalley.net/), [Halo](https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/)
+**Games**: 
+- [Overwatch](https://overwatch.blizzard.com/) (this game constantly disappoints me though)
+- [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring)
+- [Factorio](https://www.factorio.com/)
+- [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/)
+- [Stardew Valley](https://www.stardewvalley.net/)
+- [Halo](https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/)
 
-**Shows**: Better Call Saul, Breaking Bad, The Mandalorian, The Eric Andre Show, The Boys, Succession, Invincible, BoJack Horseman, Silicon Valley, The Boondocks
+**Shows**:
+- Better Call Saul
+- Breaking Bad
+- The Mandalorian
+- The Eric Andre Show
+- The Boys
+- Succession
+- Invincible
+- BoJack Horseman
+- Silicon Valley
+- The Boondocks
 
-**Music**: I mainly listen to Death Metal. Check out my [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) if you're curious.
+**Music**: I mainly listen to Death Metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of currently favorite songs:
+
+- [The Black Dahlia Murder - To a Breathless Oblivion](https://www.youtube.com/watch?v=K0lhfICzWKI)
+- [Mare Cognitum - Crimson Abyss: NGC 2237](https://www.youtube.com/watch?v=0kdx79x90HI)
+- [Death - Perennial Quest](https://www.youtube.com/watch?v=qcVp-ggYIEc)
+- [Nightbringer - The Grave-Earth's Son](https://www.youtube.com/watch?v=EGA3vcKxYec)
+- [Municipal Waste - Grave Dive](https://www.youtube.com/watch?v=oMchF3XeRD4)
 
 ## Links
 
