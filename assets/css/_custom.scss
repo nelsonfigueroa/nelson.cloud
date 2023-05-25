@@ -24,29 +24,6 @@ svg {
     }
 }
 
-// theme switch svg
-.theme-switch svg {
-    font-size: 0.8em;
-    margin-bottom: 0.2em;
-
-    @include transform(rotate(225deg));
-
-    cursor: pointer;
-    color: $global-link-color;
-
-    [theme="dark"] & {
-        color: $global-link-color-dark
-    }
-
-    &:hover {
-        color: $global-link-hover-color;
-
-        [theme="dark"] & {
-            color: $global-link-hover-color-dark;
-        }
-    }
-}
-
 // svgs in /categories
 .card-item-title a svg {
     margin-bottom: 0.3em;
