@@ -145,7 +145,7 @@ Contributed practical examples for the following commands:
 - Silicon Valley
 - The Boondocks
 
-**Music**: I mainly listen to Death Metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of currently favorite songs:
+**Music**: I mainly listen to Death Metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my currently favorite songs:
 
 - [The Black Dahlia Murder - To a Breathless Oblivion](https://www.youtube.com/watch?v=K0lhfICzWKI)
 - [Mare Cognitum - Crimson Abyss: NGC 2237](https://www.youtube.com/watch?v=0kdx79x90HI)
