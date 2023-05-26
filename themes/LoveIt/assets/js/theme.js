@@ -378,26 +378,6 @@ var Theme = /*#__PURE__*/function () {
       });
     }
   }, {
-    key: "initSVGIcon",
-    value: function initSVGIcon() {
-      this.util.forEach(document.querySelectorAll('[data-svg-src]'), function ($icon) {
-        fetch($icon.getAttribute('data-svg-src')).then(function (response) {
-          return response.text();
-        }).then(function (svg) {
-          var $temp = document.createElement('div');
-          $temp.insertAdjacentHTML('afterbegin', svg);
-          var $svg = $temp.firstChild;
-          $svg.setAttribute('data-svg-src', $icon.getAttribute('data-svg-src'));
-          $svg.classList.add('icon');
-          var $titleElements = $svg.getElementsByTagName('title');
-          if ($titleElements.length) $svg.removeChild($titleElements[0]);
-          $icon.parentElement.replaceChild($svg, $icon);
-        }).catch(function (err) {
-          console.error(err);
-        });
-      });
-    }
-  }, {
     key: "initMenuMobile",
     value: function initMenuMobile() {
       var $menuToggleMobile = document.getElementById('menu-toggle-mobile');
@@ -685,7 +665,6 @@ var Theme = /*#__PURE__*/function () {
 
       try {
         this.initRaw();
-        this.initSVGIcon();
         this.initMenuMobile();
         this.initDetails();
         this.initHighlight();
