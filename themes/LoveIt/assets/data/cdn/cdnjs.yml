@@ -1,5 +1,0 @@
-prefix:
-  libFiles: https://cdnjs.cloudflare.com/ajax/libs/
-libFiles:
-  # object-fit-images@3.2.4 https://github.com/fregante/object-fit-images
-  objectFitImagesJS: object-fit-images/3.2.4/ofi.min.js
