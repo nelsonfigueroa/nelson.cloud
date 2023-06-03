@@ -1,6 +1,0 @@
-theme:
-  - html5shiv
-  - Object.values
-  - Promise
-  - fetch
-  - Element.prototype.after
