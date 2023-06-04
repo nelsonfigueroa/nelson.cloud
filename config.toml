@@ -290,7 +290,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Options to make hugo output files
 [outputs]
   home = ["HTML", "RSS"]
-  page = ["HTML", "MarkDown"]
+  page = ["HTML"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
