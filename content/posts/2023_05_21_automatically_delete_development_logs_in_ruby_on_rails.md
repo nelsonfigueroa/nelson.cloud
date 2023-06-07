@@ -13,14 +13,14 @@ In `config/environments/development.rb`, add the following:
 ```ruby
 # delete local dev logs after exiting
 at_exit do
-  puts "Deleting development.log..."
+  Rails.logger.debug 'Deleting development.log...'
   File.delete(Rails.application.config.paths['log'].first)
 end
 ```
 
 This code will delete `development.log` after the Rails process exits.
 
-For example, I can start up a Rails app locally and see that a `development.log` file has been created:
+For example, I can start up a Rails app locally and see that a `development.log` file is created under `log`/:
 
 ```
 $ rails s
