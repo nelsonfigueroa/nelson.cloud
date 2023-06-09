@@ -276,8 +276,6 @@ window.goatcounter = {endpoint: 'https://nelsonfigueroa.goatcounter.com/count'}
 })();
 // end goatcounter
 
-function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
-
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -358,7 +356,6 @@ var Theme = /*#__PURE__*/function () {
 
     this.config = window.config;
     this.data = this.config.data;
-    this.isDark = document.body.getAttribute('theme') === 'dark';
     this.util = new Util();
     this.newScrollTop = this.util.getScrollTop();
     this.oldScrollTop = this.newScrollTop;
@@ -406,6 +403,8 @@ var Theme = /*#__PURE__*/function () {
     }
   }, {
     key: "initHighlight",
+    // this function dynamically adds html elements to code blocks to format them properly.
+    // this can probably all be moved to go/html.
     value: function initHighlight() {
       var _this5 = this;
 
@@ -437,7 +436,6 @@ var Theme = /*#__PURE__*/function () {
           }, false);
           $header.appendChild($title);
           var $ellipses = document.createElement('span');
-          $ellipses.insertAdjacentHTML('afterbegin', '<i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i>');
           $ellipses.classList.add('ellipses');
           $ellipses.addEventListener('click', function () {
             $chroma.classList.add('open');
