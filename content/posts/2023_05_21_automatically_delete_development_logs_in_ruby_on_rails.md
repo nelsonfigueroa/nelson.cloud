@@ -13,8 +13,12 @@ In `config/environments/development.rb`, add the following:
 ```ruby
 # delete local dev logs after exiting
 at_exit do
-  Rails.logger.debug 'Deleting development.log...'
-  File.delete(Rails.application.config.paths['log'].first)
+  # first, check that the file exists
+  development_logfile = Rails.application.config.paths['log'].first
+  if development_logfile
+    Rails.logger.debug 'Deleting development.log...'
+    File.delete(development_logfile)
+  end
 end
 ```
 
