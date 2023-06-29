@@ -17,7 +17,7 @@ I currently work in a Kubernetes security role.
 
 ## Experience
 
-Security Engineer @ [Robinhood](https://robinhood.com) (2023 - Present)
+Software Engineer @ [Robinhood](https://robinhood.com) (2023 - Present)
 
 Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
 
