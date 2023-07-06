@@ -7,7 +7,7 @@ toc = false
 featured = true
 +++
 
-The recent tech layoffs have shown that employees are disposable in the eyes of executives.
+The recent tech layoffs have shown that employees are disposable in the eyes of executives. This isn't surprising though, and I'm definitely not the first person that has written about this. I just want to highlight the current situation.
 
 {{< figure src="/employees_are_disposable/tech_layoff_tracker.png" alt="TrueUp tech layoff tracker"  
 caption="*Source: [TrueUp: Tech Layoff Tracker](https://www.trueup.io/layoffs)*" >}}
@@ -33,6 +33,13 @@ caption="*Source: [Ars Technica: Googlers angry about CEO's $226M pay after cuts
 
 <br>
 
+Aside from layoffs, employees may have their pay frozen even though company revenues are up. That's what happened at Microsoft. Let's not forget that Microsoft is a $2.5 trillion dollar company (at the time of this writing).
+
+{{< figure src="/employees_are_disposable/microsoft_pay_freeze.png" alt="Ars Technica headline"
+caption="*Source: [Microsoft workers protest 'landmark year' CEO memo following pay freeze](https://www.techradar.com/pro/microsoft-workers-protest-landmark-year-ceo-memo-following-pay-freeze)*" >}}
+
+<br>
+
 It doesn't matter how much value you've delivered. It doesn't matter how much impact you've had in a company. It doesn't matter how long you've been at a company. You are still disposable.
 
 {{< figure src="/employees_are_disposable/jeremy_joslin.png" alt="Ars Technica headline"
@@ -45,4 +52,4 @@ I recently came across a blog post that is very relevant when understanding that
 
 <br>
 
-It's okay to like your job and employer. Just understand that, as an employee, you are disposable.
+It's okay to like your job and employer. Just understand that, **as an employee, you are disposable**.
