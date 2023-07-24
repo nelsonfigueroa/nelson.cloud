@@ -3,7 +3,6 @@ title: "About Me"
 date: 2023-04-13T11:04:49+08:00
 description: "About Me"
 toc: "false"
-images: [""]
 ---
 
 ## Nelson Figueroa
@@ -79,7 +78,6 @@ Contributed practical examples for the following commands:
 **Hobbies**: Videogames, Electric Guitar
 
 **Games**: 
-- [Overwatch](https://overwatch.blizzard.com/) (this game constantly disappoints me though)
 - [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring)
 - [Factorio](https://www.factorio.com/)
 - [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/)
@@ -105,6 +103,7 @@ Contributed practical examples for the following commands:
 - [Death - Perennial Quest](https://www.youtube.com/watch?v=qcVp-ggYIEc)
 - [Nightbringer - The Grave-Earth's Son](https://www.youtube.com/watch?v=EGA3vcKxYec)
 - [Municipal Waste - Grave Dive](https://www.youtube.com/watch?v=oMchF3XeRD4)
+- [Vektor - Cygnus Terminal](https://www.youtube.com/watch?v=BpL3j8sCPAw)
 
 ## Links
 - [GitHub](https://github.com/nelsonfigueroa)
