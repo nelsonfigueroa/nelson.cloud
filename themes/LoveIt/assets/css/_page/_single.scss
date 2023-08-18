@@ -93,7 +93,6 @@
     > h5,
     > h6 {
       > .header-mark::before {
-        content: "|";
         margin-right: .3125rem;
         color: $single-link-color-dark;
       }
