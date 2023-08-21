@@ -96,7 +96,7 @@ Contributed practical examples for the following commands:
 - Silicon Valley
 - The Boondocks
 
-**Music**: I mainly listen to Death Metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my currently favorite songs:
+**Music**: I mainly listen to Death Metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs (all YouTube links):
 
 - [The Black Dahlia Murder - To a Breathless Oblivion](https://www.youtube.com/watch?v=K0lhfICzWKI)
 - [Mare Cognitum - Crimson Abyss: NGC 2237](https://www.youtube.com/watch?v=0kdx79x90HI)
@@ -104,6 +104,7 @@ Contributed practical examples for the following commands:
 - [Nightbringer - The Grave-Earth's Son](https://www.youtube.com/watch?v=EGA3vcKxYec)
 - [Municipal Waste - Grave Dive](https://www.youtube.com/watch?v=oMchF3XeRD4)
 - [Vektor - Cygnus Terminal](https://www.youtube.com/watch?v=BpL3j8sCPAw)
+- [Beyond Creation - Theatrical Delirium](https://www.youtube.com/watch?v=aBNb3HR-ihA)
 
 ## Links
 - [GitHub](https://github.com/nelsonfigueroa)
