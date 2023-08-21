@@ -14,10 +14,11 @@
       list-style: none;
 
       a:first-child::before {
-        content: "|";
+        content: "-";
+        color: $global-font-color-dark;
+        background-color: $global-background-color-dark;
         font-weight: bolder;
         margin-right: .5rem;
-        color: $code-color-dark;
       }
 
       li {
@@ -40,6 +41,14 @@
   border-left: 4px solid $global-border-color-dark;
 
   @include overflow-wrap(break-word);
+
+  // no fade-in/fade-out effect for Table of Contents
+  a {
+    @include transition(0s);
+  }
+  a::before {
+    @include transition(0s);
+  }
 
   box-sizing: border-box;
   top: 10rem;
@@ -75,11 +84,17 @@
 
     a.active {
       font-weight: bold;
-      color: $code-color-dark;
-      background-color: $code-background-color-dark;
+      color: $global-background-color-dark;
+      background-color: $global-font-color-dark;
+      border-radius: 0.2rem;
+      padding-right: 0.2rem;
 
       &::before {
-        color: $code-color-dark;
+        color: $global-background-color-dark;
+        background-color: $global-font-color-dark;
+        border-radius: 0.2rem;
+        content: "→ ";
+        margin-right: -0.1rem;
       }
     }
   }
