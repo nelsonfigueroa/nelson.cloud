@@ -540,8 +540,11 @@ var Theme = /*#__PURE__*/function () {
           var activeTocIndex = $headerLinkElements.length - 1;
 
           for (var i = 0; i < $headerLinkElements.length - 1; i++) {
-            var thisTop = $headerLinkElements[i].getBoundingClientRect().top;
-            var nextTop = $headerLinkElements[i + 1].getBoundingClientRect().top;
+            // thisTop and nextTop are used to calculate at what point in browser scrolling a table of contents anchor should be highlighted
+            // In this case I adjusted it with -90 for both so that when an anchor is clicked, the browser scrolls down AND the link is highlighted in the ToC
+            // still not a perfect solution for situations where a header's section is really small
+            var thisTop = $headerLinkElements[i].getBoundingClientRect().top - 90;
+            var nextTop = $headerLinkElements[i + 1].getBoundingClientRect().top - 90;
 
             if (i == 0 && thisTop > INDEX_SPACING || thisTop <= INDEX_SPACING && nextTop > INDEX_SPACING) {
               activeTocIndex = i;
