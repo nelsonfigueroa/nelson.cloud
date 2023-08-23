@@ -42,14 +42,6 @@
 
   @include overflow-wrap(break-word);
 
-  // no fade-in/fade-out effect for Table of Contents
-  a {
-    @include transition(0s);
-  }
-  a::before {
-    @include transition(0s);
-  }
-
   box-sizing: border-box;
   top: 10rem;
   left: 0;
