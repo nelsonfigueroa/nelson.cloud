@@ -16,7 +16,14 @@ Creating a uniqueness constraint in a migration requires us to add an index on t
 t.index [:attribute, :another_attribute], unique: true
 ```
 
-Here's a more realistic example. In this example we have a banking Account model and a Statement model. An account can have many statements, but we want a maximum of 1 statement per date, per account. To do that, we add indexes to `date` and `account_id` and set them to be unique as a pair.
+Here's a more realistic example. Assume the following:
+- We have an existing `Account` model
+- We want to create a new table for a `Statement` model. 
+- An account can have many statements
+- A statement belongs to one account
+- We want a maximum of 1 statement per date, per account (which means we need the `date` and `account_id` attributes to be unique together)
+
+To accomplish the above, we add indexes to `date` and `account_id` and set them to be unique as a pair.
 
 ```rb
 class CreateStatements < ActiveRecord::Migration[6.0]
