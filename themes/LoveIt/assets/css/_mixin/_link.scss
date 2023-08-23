@@ -1,8 +1,6 @@
 @mixin link($light, $dark) {
   a, a::before, a::after {
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
-
     color: $global-link-color-dark;
   }
 
