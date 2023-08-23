@@ -5,6 +5,11 @@
     padding: 0 0 .5rem;
     text-align: center;
 
+    color: $code-color-dark;
+    font-style: italic;
+    background-color: rgb(0, 39, 6);
+    box-shadow: 0 0 20px 5px rgb(0, 39, 6);
+
     .home-title {
       margin: 0;
       padding: .5rem;
