@@ -2,6 +2,7 @@
 title = "Handling Decimal Precision in Rails"
 summary = "Set precision and scale to decimal type database columns."
 date = "2021-03-22"
+lastmod = "2021-03-22"
 categories = ["Ruby on Rails"]
 toc = true
 +++

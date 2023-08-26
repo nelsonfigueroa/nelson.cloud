@@ -2,6 +2,7 @@
 title = "Resolving AWS CloudFront Access Denied Errors"
 summary = "Resolving Access Denied Errors in a CloudFront Distribution that uses a Private S3 Bucket, Origin Access Identity, and Contains Multiple index.html Templates."
 date = "2021-07-25"
+lastmod = "2021-07-25"
 categories = ["AWS"]
 toc = false
 +++

@@ -1,7 +1,8 @@
 +++
 title = "Replacing AWS ACM SSL Certificates With No Downtime"
 summary = "Updating Amazon Certificate Manager SSL certificates with no downtime"
-date = "2022-06-07"
+date = "2022-06-12"
+lastmod = "2022-06-12"
 categories = ["AWS"]
 toc = false
 +++

@@ -2,6 +2,7 @@
 title = "AWS EC2 Instance Metadata Quick Reference"
 summary = "Useful commands to retrieve EC2 Metadata with curl."
 date = "2022-02-08"
+lastmod = "2022-02-08"
 categories = ["AWS"]
 toc = false
 +++

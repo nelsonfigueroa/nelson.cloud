@@ -1,7 +1,8 @@
 +++
 title = "Invoking Amazon API Gateway with an API Key"
 summary = "Invoking Amazon API Gateway with an API Key"
-date = "2022-05-30"
+date = "2022-06-06"
+lastmod = "2022-06-06"
 categories = ["AWS"]
 toc = true
 +++

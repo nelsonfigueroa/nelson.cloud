@@ -2,6 +2,7 @@
 title = "Ruby Hash Key Types Vary Depending on Hash Syntax"
 summary = "Key types in Ruby hashes depend on hash syntax."
 date = "2023-01-06"
+lastmod = "2023-01-06"
 categories = ["Ruby"]
 toc = true
 +++

@@ -2,6 +2,7 @@
 title = "Hacking into Hack The Box"
 summary = "Getting the invite code to Hack The Box"
 date = "2020-01-06"
+lastmod = "2020-01-06"
 categories = ["Cybersecurity"]
 toc = false
 +++
