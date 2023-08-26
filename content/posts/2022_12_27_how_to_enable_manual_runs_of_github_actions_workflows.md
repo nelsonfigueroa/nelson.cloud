@@ -2,6 +2,7 @@
 title = "How to Enable Manual Runs of GitHub Actions Workflows"
 summary = "How to enable manual runs of GitHub Actions workflows."
 date = "2022-12-27"
+lastmod = "2022-12-27"
 categories = ["GitHub"]
 toc = false
 +++

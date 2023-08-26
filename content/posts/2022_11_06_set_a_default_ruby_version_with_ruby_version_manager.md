@@ -2,6 +2,7 @@
 title = "Set a Default Ruby Version with Ruby Version Manager (RVM)"
 summary = "How to recursively ignore files when building Docker images."
 date = "2022-11-06"
+lastmod = "2022-11-06"
 categories = ["Ruby"]
 toc = false
 +++

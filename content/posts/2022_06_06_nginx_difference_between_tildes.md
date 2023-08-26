@@ -2,6 +2,7 @@
 title = "NGINX: Difference Between ~ and ~* Tildes"
 summary = "Comparing the differences between ~ and ~* tildes in NGINX configuration."
 date = "2022-06-06"
+lastmod = "2022-06-06"
 categories = ["NGINX"]
 toc = false
 +++

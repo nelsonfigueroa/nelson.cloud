@@ -2,6 +2,7 @@
 title = "Hosting a Static Website on AWS Using S3 and CloudFront"
 summary = "How to host a static website on Amazon Web Services using S3 and CloudFront"
 date = "2022-12-30"
+lastmod = "2022-12-30"
 categories = ["AWS"]
 toc = true
 +++

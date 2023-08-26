@@ -2,6 +2,7 @@
 title = "Restricting Ruby on Rails Routes with :only and :except"
 summary = "How to restrict Ruby on Rails routes with :only and :except."
 date = "2022-12-03"
+lastmod = "2022-12-03"
 categories = ["Ruby on Rails"]
 toc = true
 +++
