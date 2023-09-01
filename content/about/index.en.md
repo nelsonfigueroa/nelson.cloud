@@ -109,6 +109,7 @@ Contributed practical examples for the following commands:
 ## Links
 - [GitHub](https://github.com/nelsonfigueroa)
 - [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)
+- [RSS Feed](/index.xml)
 
 This site is a part of:
 - [250kb.club](https://250kb.club)
