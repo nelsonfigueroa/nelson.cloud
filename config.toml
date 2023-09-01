@@ -327,14 +327,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "About"
         url = "/about/"
         title = ""
-      [[languages.en.menu.main]]
-        weight = 4
-        identifier = "donate"
-        pre = ""
-        post = ""
-        name = "Donate"
-        url = "https://buymeacoffee.com/nelsonfigueroa"
-        title = ""
     [languages.en.params]
       [languages.en.params.home]
         rss = 100
