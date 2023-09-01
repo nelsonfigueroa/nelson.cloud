@@ -91,7 +91,7 @@ other = "Contents"
 other = "Published on {{ .Date }},"
 
 [includedInCategories]
-other = "Included in {{ .Categories }}"
+other = "Categorized in {{ .Categories }}"
 
 [wordCount]
 one = "One word"
