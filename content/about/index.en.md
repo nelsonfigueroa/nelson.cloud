@@ -98,11 +98,12 @@ Contributed practical examples for the following commands:
 
 **Music**: I mainly listen to Death Metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs (all YouTube links):
 
+- [Pure Wrath - In Cold World](https://www.youtube.com/watch?v=8OcqfKqxd8o)
+- [Municipal Waste - Parole Violators](https://www.youtube.com/watch?v=2vO_D8XuA_o)
 - [The Black Dahlia Murder - To a Breathless Oblivion](https://www.youtube.com/watch?v=K0lhfICzWKI)
 - [Mare Cognitum - Crimson Abyss: NGC 2237](https://www.youtube.com/watch?v=0kdx79x90HI)
 - [Death - Perennial Quest](https://www.youtube.com/watch?v=qcVp-ggYIEc)
 - [Nightbringer - The Grave-Earth's Son](https://www.youtube.com/watch?v=EGA3vcKxYec)
-- [Municipal Waste - Grave Dive](https://www.youtube.com/watch?v=oMchF3XeRD4)
 - [Vektor - Cygnus Terminal](https://www.youtube.com/watch?v=BpL3j8sCPAw)
 - [Beyond Creation - Theatrical Delirium](https://www.youtube.com/watch?v=aBNb3HR-ihA)
 
