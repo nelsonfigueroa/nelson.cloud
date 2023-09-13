@@ -154,8 +154,12 @@ header {
       border-top-color: $global-border-color-dark;
       display: none;
       padding-top: .5rem;
+      border: 1px solid $global-border-color-dark;
 
-      @include box-shadow(0 .125rem .25rem rgba(0, 0, 0, .1));
+      @include box-shadow(0 .125rem .25rem rgba(0, 0, 0, .3));
+
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px); // to hopefully get blur to work on ios
 
       .menu-item {
         display: block;
