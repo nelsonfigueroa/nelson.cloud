@@ -7,7 +7,6 @@
   line-height: 1.6rem;
 
   .card-item {
-    font-size: .875rem;
     text-align: left;
     width: 45%;
     display: flex;
@@ -27,6 +26,10 @@
         display: inline-block;
         margin-top: 1rem;
         margin-bottom: .75rem;
+        &::before {
+          font-family: $code-font-family;
+          content: "~/";
+        }
       }
 
       span {
