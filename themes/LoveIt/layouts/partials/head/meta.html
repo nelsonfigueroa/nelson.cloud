@@ -5,6 +5,11 @@
 <meta name="application-name" content="{{ .Site.Params.app.title | default .Site.Title }}">
 <meta name="apple-mobile-web-app-title" content="{{ .Site.Params.app.title | default .Site.Title }}">
 
+<meta property="og:title" content="{{ .Site.Params.app.title | default .Site.Title }}">
+<meta property="og:description" content="{{ $params.description | default .Site.Params.description }}">
+<meta property="og:image" content="/favicon.ico">
+<meta property="og:url" content="{{ .Permalink }}">
+
 {{- with .Site.Params.app.themeColor -}}
     <meta name="theme-color" content="{{ . }}">
 {{- end -}}
