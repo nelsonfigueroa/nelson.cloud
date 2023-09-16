@@ -131,44 +131,6 @@ other = "Page not found"
 other = "Page Not Found :("
 # === 404.html ===
 
-# === shortcodes/admonition.html ===
-[note]
-other = "Note"
-
-[abstract]
-other = "Abstract"
-
-[info]
-other = "Info"
-
-[tip]
-other = "Tip"
-
-[success]
-other = "Success"
-
-[question]
-other = "Question"
-
-[warning]
-other = "Warning"
-
-[failure]
-other = "Failure"
-
-[danger]
-other = "Danger"
-
-[bug]
-other = "Bug"
-
-[example]
-other = "Example"
-
-[quote]
-other = "Quote"
-# === shortcodes/admonition.html ===
-
 # === shortcodes/version.html ===
 [new]
 other = "NEW"
