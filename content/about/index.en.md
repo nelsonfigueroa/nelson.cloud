@@ -9,9 +9,8 @@ toc: "false"
 
 I'm a Software Engineer with broad experience working with technologies like 
 Ruby on Rails, Kubernetes, and Amazon Web Services. 
-My interests include writing code, cloud infrastructure, and cybersecurity.
 I started this blog for fun and to share my knowledge. 
-I currently work in a Kubernetes security role.
+I currently work in a Kubernetes role.
 
 
 ## Experience
