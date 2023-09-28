@@ -112,8 +112,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     author = false
     # site creation time
     since = 2019
-    # ICP info only in China (HTML format is supported)
-    icp = ""
     # license info (HTML format is supported)
     license= ''
 
