@@ -81,7 +81,6 @@ Contributed practical examples for the following commands:
 - [Factorio](https://www.factorio.com/)
 - [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/)
 - [Stardew Valley](https://www.stardewvalley.net/)
-- [Halo](https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/)
 
 **Shows**:
 - Better Call Saul
