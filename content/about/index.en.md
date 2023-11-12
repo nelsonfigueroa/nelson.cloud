@@ -15,7 +15,7 @@ I am currently focusing on my health and have left my previous role. However, I 
 
 ## Experience
 
-Software Engineer @ [Robinhood](https://robinhood.com) (2023)
+Software Engineer @ [Robinhood](https://robinhood.com) (All of 2023)
 
 Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
 
