@@ -10,12 +10,12 @@ toc: "false"
 I'm a Software Engineer with broad experience working with technologies like 
 Ruby on Rails, Kubernetes, and Amazon Web Services. 
 I started this blog for fun and to share my knowledge. 
-I currently work in a Kubernetes role.
 
+I am currently focusing on my health and have left my previous role. However, I am open to new roles that begin in 2024.
 
 ## Experience
 
-Software Engineer @ [Robinhood](https://robinhood.com) (2023 - Present)
+Software Engineer @ [Robinhood](https://robinhood.com) (2023)
 
 Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
 
