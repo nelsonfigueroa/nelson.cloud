@@ -1,6 +1,5 @@
 ---
 title: "About Me"
-date: 2023-04-13T11:04:49+08:00
 description: "About Me"
 toc: "false"
 ---
@@ -11,11 +10,11 @@ I'm a Software Engineer with broad experience working with technologies like
 Ruby on Rails, Kubernetes, and Amazon Web Services. 
 I started this blog for fun and to share my knowledge. 
 
-I am currently focusing on my health and have left my previous role. However, I am open to new roles that begin in 2024.
+I am currently focusing on my health and have left my previous role. However, I am open to new roles that begin in early 2024.
 
 ## Experience
 
-Software Engineer @ [Robinhood](https://robinhood.com) (All of 2023)
+Software Engineer @ [Robinhood](https://robinhood.com) (Most of 2023)
 
 Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
 
