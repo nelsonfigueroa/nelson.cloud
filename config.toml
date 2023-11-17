@@ -8,8 +8,6 @@ themesDir = "themes/"
 # website title
 title = "Nelson Figueroa"
 
-# determines default content language ["en", "zh-cn", "fr", "pl", ...]
-defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
