@@ -12,8 +12,7 @@ title = "Nelson Figueroa"
 languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
-# whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
+
 
 # default amount of posts in each pages
 paginate = 10
@@ -296,7 +295,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     weight = 1
     languageCode = "en"
     languageName = "English"
-    hasCJKLanguage = false
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     [languages.en.menu]
       [[languages.en.menu.main]]
