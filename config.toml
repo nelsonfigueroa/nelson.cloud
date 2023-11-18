@@ -19,14 +19,6 @@ paginate = 10
 # copyright description used only for seo schema
 copyright = ""
 
-# whether to use robots.txt
-enableRobotsTXT = true
-# whether to use emoji code
-enableEmoji = true
-
-# ignore some build errors
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
-
 # Author config
 [author]
   name = "Nelson Figueroa" # sets author in RSS
