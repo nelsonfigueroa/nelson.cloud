@@ -10,8 +10,6 @@ title = "Nelson Figueroa"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
-# language name ["English", "简体中文", "Français", "Polski", ...]
-languageName = "English"
 
 
 # default amount of posts in each pages
@@ -286,7 +284,6 @@ copyright = ""
   [languages.en]
     weight = 1
     languageCode = "en"
-    languageName = "English"
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     [languages.en.menu]
       [[languages.en.menu.main]]
