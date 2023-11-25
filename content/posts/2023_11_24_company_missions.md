@@ -1,4 +1,4 @@
-# +++
++++
 title = "On Company Missions"
 summary = "Every companiy's real mission is to make money"
 date = "2023-11-24"
