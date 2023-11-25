@@ -9,7 +9,7 @@ toc = false
 
 I have worked for several companies at this point. Every company has a different mission. 
 
-Honeslty, I feel like missions are just cover-ups for a companies real missioon: **to make money**.
+Honeslty, I feel like missions are just cover-ups for a companies real mission: **to make money**.
 
 I think that no matter what, any company's real mission is to make money. Most, if not all, companies are willing to give up their public mission if it means that they don't make money.
 
