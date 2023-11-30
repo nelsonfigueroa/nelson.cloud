@@ -27,7 +27,7 @@ The command may take some time to complete depending on your machine specs and a
 
 Here's the output I got from the command above. I can now go through each of these files and folders and decide if I want to delete them manually:
 
-```
+```shell
 /private/var/folders/m9/_7bg6tbn3636m1zzlzq33bwh0000gn/T/com.lastpass.lastpassmacdesktop
 /private/var/folders/m9/_7bg6tbn3636m1zzlzq33bwh0000gn/C/com.lastpass.lastpassmacdesktop
 /Users/nelson/Library/Application Support/com.lastpass.lastpassmacdesktop
