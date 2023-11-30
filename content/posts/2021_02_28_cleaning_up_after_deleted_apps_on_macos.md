@@ -1,72 +1,58 @@
 +++
-title = "Cleaning Up After Deleted Apps on macOS"
-summary = "Clean up app remnants after deleting macOS apps."
+title = "Cleaning Up Residual Files on macOS After Deleting Apps"
+summary = "Clean up residual files and directories after deleting macOS apps."
 date = "2021-02-28"
-lastmod = "2021-02-28"
+lastmod = "2023-11-30"
 categories = ["macOS"]
 toc = false
 +++
 
-After deleting apps on macOS, they tend leave remnants behind in the form of caches and configs throughout the system. This is how I find and remove those leftover files. I'll be completely removing Skype from my system to demonstrate files and directories left behind after an app is deleted.
+After deleting apps on macOS, they tend leave behind residual files and directories throughout the system. You can use the `find` command to find these files after an app has been deleted. I'll be deleting the LastPass app and removing its residual files as an example because [nobody should be using LastPass anyway](https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/).
 
-## Searching for Remnants
+## Searching for Residual Files and Directories
 
-To find directories and files related to Skype, I ran a system-wide search using the following command:
+To find directories and files related to LastPass, I ran a system-wide search using `find`. I exlcluded directories such as `/System/Volumes/Data` since those result in errors like "Operation not permitted". I also excluded Homebrew directories that don't need to be cleaned up. You can add more directories as needed, just make sure to not add a trailing slash to the filepaths!
 
-```
-sudo find / -name '*skype*' -not -path '/System/Volumes/Data/*' > ~/Desktop/findings.txt
-```
-
-This command finds all files and directories containing the word "skype", while excluding those in `/System/Volumes/Data/`, and saves the results to a textfile. The reason `/System/Volumes/Data/` is being excluded is because the `find` command will give us duplicate results with `/System/Volumes/Data/` prepended. This is because macOS has an additional read-only system volume. You can [read more about it here](https://support.apple.com/en-us/HT210650), and for a more technical dive into this additional volume you can read [this forensics blog post](http://www.swiftforensics.com/2019/10/macos-1015-volumes-firmlink-magic.html).
-
-The command will take a few minutes to complete, so give it some time. Additionally, your terminal will fill up with error messages stating `Operation not permitted`. For example:
-
-```
-find: /private/var/db/appinstalld: Operation not permitted
-find: /private/var/db/fpsd/dvp: Operation not permitted
-find: /private/var/db/installcoordinationd: Operation not permitted
-find: /private/var/db/oah: Operation not permitted
+```shell
+find / \
+-not \( -path /System/Volumes/Data -prune \) \
+-not \( -path /usr/local/Homebrew -prune \) \
+-not \( -path /usr/local/Cellar -prune \) \
+-not \( -path /usr/local/Caskroom -prune \) \
+-name \*lastpass\* 2>&1 | grep -v -E 'Operation not permitted|Permission denied|Not a directory'
 ```
 
-This is normal, just wait for the command to finish.
+The command may take some time to complete depending on your machine specs and amount of files you have. It took around ~10 minutes for me on an 2019 Macbook Pro with an i7 Intel CPU.
 
-## Results
 
-Once the command is finished, the output textfile will contain paths of Skype-related files and directories. Here are a few examples of those to demonstrate:
-
-```
-/usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask-versions/Casks/skype7.rb
-/usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask-versions/Casks/skype-preview.rb
-/usr/local/Cellar/nmap/7.91/share/nmap/scripts/skypev2-version.nse
-/Users/nelson/Library/Preferences/com.skype.skype.plist
-/Users/nelson/Library/Caches/com.skype.skype
-/Users/nelson/Library/Caches/com.skype.skype.ShipIt
-```
-
-From here, we can see that we can ignore some of the results that were clearly not left behind by Skpe, such as the results under the `/usr/local/Homebrew/` directory. In this case, we want to delete files and directories with `com.skype.skype` in their name.
-
-## Searching by Company
-
-You can also try searching by company name. For example, I ran the `find` command and searched for `*microsoft*` and found that there were several directories in my system that were left by Microsoft applications:
+Here's the output I got from the command above. I can now go through each of these files and folders and decide if I want to delete them manually:
 
 ```
-sudo find / -name '*microsoft*' -not -path '/System/Volumes/Data/*'
+/private/var/folders/m9/_7bg6tbn3636m1zzlzq33bwh0000gn/T/com.lastpass.lastpassmacdesktop
+/private/var/folders/m9/_7bg6tbn3636m1zzlzq33bwh0000gn/C/com.lastpass.lastpassmacdesktop
+/Users/nelson/Library/Application Support/com.lastpass.lastpassmacdesktop
+/Users/nelson/Library/WebKit/com.lastpass.lastpassmacdesktop
+/Users/nelson/Library/Preferences/com.lastpass.lastpassmacdesktop.plist
+/Users/nelson/Library/Application Scripts/N24REP3BMN.lmi.lastpass.group
+/Users/nelson/Library/Application Scripts/com.lastpass.lastpassmacdesktop.safariext
+/Users/nelson/Library/HTTPStorages/com.lastpass.lastpassmacdesktop.binarycookies
+/Users/nelson/Library/HTTPStorages/com.lastpass.lastpassmacdesktop
+/Users/nelson/Library/Group Containers/N24REP3BMN.lmi.lastpass.group
+/Users/nelson/Library/Group Containers/N24REP3BMN.lmi.lastpass.group/Library/Preferences/N24REP3BMN.lmi.lastpass.group.plist
+/Users/nelson/Library/Group Containers/N24REP3BMN.lmi.lastpass.group/Library/Application Scripts/N24REP3BMN.lmi.lastpass.group
+/Users/nelson/Library/Containers/com.lastpass.LastPass
+/Users/nelson/Library/Containers/com.lastpass.lastpassmacdesktop.safariext
+/Users/nelson/Library/Containers/com.lastpass.lastpassmacdesktop.safariext/Data/Library/Application Scripts/com.lastpass.lastpassmacdesktop.safariext
+/Users/nelson/Library/Caches/com.crashlytics.data/com.lastpass.lastpassmacdesktop
+/Users/nelson/Library/Caches/Homebrew/Cask/lastpass--4.116.0.dmg
+/Users/nelson/Library/Caches/com.lastpass.lastpassmacdesktop
 ```
 
-A few examples of the results:
+This could probably be automated all the way through the deletion step, but I prefer to double check what is actually going to be deleted.
 
-```
-/private/var/db/receipts/com.microsoft.package.Microsoft_Excel.app.plist
-/private/var/db/receipts/com.microsoft.package.Microsoft_Outlook.app.plist
-/private/var/db/receipts/com.microsoft.package.Microsoft_PowerPoint.app.bom
-/Users/nelson/Library/Application Scripts/com.microsoft.Powerpoint
-/Users/nelson/Library/Application Scripts/com.microsoft.Word
-/Users/nelson/Library/Application Scripts/com.microsoft.Excel
-/Users/nelson/Library/Mobile Documents/iCloud~com~microsoft~onenote
-/Users/nelson/Library/Mobile Documents/iCloud~com~microsoft~skype~teams
-/Users/nelson/Library/Cookies/com.microsoft.OneDriveStandaloneUpdater.binarycookies
-```
+Also, this *may* help to free up space on macOS, but I mainly did it because I like keeping my system tidy.
 
-It's worth trying both searching by app and searching by company. If we had only searched for Powerpoint, we would've missed the results for Word and Excel.
+Try this out with whatever apps you've deleted in the past. You can also try finding files and folders be specifying a company name. For example, replace `\*lastpass\*` with `\*microsoft\*` and see what you get!
 
-Try this with apps you've deleted in the past. Chances are there's at least one file left behind by an app.
+## References
+- https://stackoverflow.com/questions/4210042/how-do-i-exclude-a-directory-when-using-find
