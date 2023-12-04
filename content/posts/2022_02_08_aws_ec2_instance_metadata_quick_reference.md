@@ -1,8 +1,8 @@
 +++
-title = "AWS EC2 Instance Metadata Quick Reference"
-summary = "Useful commands to retrieve EC2 Metadata with curl."
+title = "Getting EC2 Instance Metadata Using IMDSv1"
+summary = "How to get EC2 Instance metadata using IMDSv1"
 date = "2022-02-08"
-lastmod = "2022-02-08"
+lastmod = "2023-12-04"
 categories = ["AWS"]
 toc = false
 +++
