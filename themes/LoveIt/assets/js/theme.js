@@ -435,19 +435,9 @@ var Theme = /*#__PURE__*/function () {
           $header.className = 'code-header ' + $code.className.toLowerCase();
           var $title = document.createElement('span');
           $title.classList.add('code-title');
-          $title.addEventListener('click', function () {
-            $chroma.classList.toggle('open');
-          }, false);
           $header.appendChild($title);
-          var $ellipses = document.createElement('span');
-          $ellipses.classList.add('ellipses');
-          $ellipses.addEventListener('click', function () {
-            $chroma.classList.add('open');
-          }, false);
-          $header.appendChild($ellipses);
-          var code = $code.innerText;
-          if (_this5.config.code.maxShownLines < 0 || code.split('\n').length < _this5.config.code.maxShownLines + 2) $chroma.classList.add('open');
-
+          // adding 'open' class by default for all code blocks. This could be moved to go/html probs.
+          $chroma.classList.add('open');
           $chroma.insertBefore($header, $chroma.firstChild);
         }
       });
