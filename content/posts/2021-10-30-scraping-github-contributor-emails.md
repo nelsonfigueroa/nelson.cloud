@@ -8,7 +8,7 @@ toc = false
 +++
 
 ---
-2022-07-21 update: Note that I discovered a better way to do this, check out [Scrape Contributor Emails From Any Git Repository]({{< relref "/posts/2022_07_21_scrape_contributor_emails_from_any_git_repository.md" >}})
+2022-07-21 update: Note that I discovered a better way to do this, check out [Scrape Contributor Emails From Any Git Repository]({{< relref "/posts/2022-07-21-scrape-contributor-emails-from-any-git-repository.md" >}})
 
 ---
 
