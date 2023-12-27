@@ -10,7 +10,7 @@ featured = false
 
 Here are my donations earnings for the past year.
 
-{{< figure src="/my_donation_earnings_over_the_past_year/earnings.png" alt="Buymeacoffee total donations" >}}
+{{< figure src="/my-donation-earnings-over-the-past-year/earnings.png" alt="Buymeacoffee total donations" >}}
 
 Amazing right??? 😂
 
@@ -18,6 +18,6 @@ In all seriousness, I'm not upset about this at all. I didn't expect to get any 
 
 It's worth mentioning that my site isn't popular by any means. Here are my metrics from Google Search Console for the past 3 months:
 
-{{< figure src="/my_donation_earnings_over_the_past_year/google_clicks.png" alt="Google Search Console" >}}
+{{< figure src="/my-donation-earnings-over-the-past-year/google-clicks.png" alt="Google Search Console" >}}
 
 I am curious to see what the donation earnings (if any) are for much more popular blogs and personal sites.

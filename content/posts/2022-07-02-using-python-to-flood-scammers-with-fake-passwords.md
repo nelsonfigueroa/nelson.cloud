@@ -12,31 +12,31 @@ featured = true # used to show in home page
 
 Today, I received this text message that is obviously a phishing attempt:
 
-{{< figure src="/using_python_to_flood_scammers_with_fake_credentials/scam_text.png" alt="Fake text received from scammers." >}}
+{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/scam-text.png" alt="Fake text received from scammers." >}}
 
 <br>
 
 I was curious, so I went ahead and checked out the site. It was a mediocre attempt at recreating the actual site.
 
-{{< figure src="/using_python_to_flood_scammers_with_fake_credentials/phishing_site.png" alt="The fake Citi bank phishing site." >}}
+{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/phishing-site.png" alt="The fake Citi bank phishing site." >}}
 
 <br>
 
 I opened my browser's dev tools to capture network activity. Then I submitted some made up credentials. Unsurprisingly, they didn't work:
 
-{{< figure src="/using_python_to_flood_scammers_with_fake_credentials/sign_in_fail.png" alt="Failed sign in on the phishing site." >}}
+{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/sign-in-fail.png" alt="Failed sign in on the phishing site." >}}
 
 <br>
 
 In the dev tools, I checked the headers tab to see that the requests were actually going to `https://toys-store.site/citi.php`:
 
-{{< figure src="/using_python_to_flood_scammers_with_fake_credentials/request_headers.png" alt="Request headers showing where requests were being sent." >}}
+{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/request-headers.png" alt="Request headers showing where requests were being sent." >}}
 
 <br>
 
 I could also see my credentials in the payload:
 
-{{< figure src="/using_python_to_flood_scammers_with_fake_credentials/request_payload.png" alt="Request payload showing fake credentials submitted." >}}
+{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/request-payload.png" alt="Request payload showing fake credentials submitted." >}}
 
 <br>
 
@@ -114,7 +114,7 @@ Quick note about `fake.simple_profile()` from the `payload` dictionary: this lin
 
 I ran the script and left it running for a while. The time being printed out is extracted from the response headers. This way I could easily see requests as they're being sent in the CLI:
 
-{{< figure src="/using_python_to_flood_scammers_with_fake_credentials/cli_output.png" alt="CLI output of requests being sent with fake credentials." >}}
+{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/cli-output.png" alt="CLI output of requests being sent with fake credentials." >}}
 
 It's not easy to tell in a screenshot, but with the `multiprocessing` package I was able to speed up the process of sending post requests. My terminal was filling up pretty quickly.
 
