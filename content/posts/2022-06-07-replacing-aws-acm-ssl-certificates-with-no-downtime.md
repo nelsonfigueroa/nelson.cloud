@@ -12,7 +12,7 @@ The key is that the old certificate must exist while making SSL certificate upda
 
 Here's what a resource associated to an ACM SSL certificate looks like:
 
-{{< figure src="/replacing_aws_acm_ssl_certificates_with_no_downtime/acm_cert_associated_resource.png" alt="ACM SSL certificate associated to a CloudFront Distribution" >}}
+{{< figure src="/replacing-aws-acm-ssl-certificates-with-no-downtime/acm-cert-associated-resource.png" alt="ACM SSL certificate associated to a CloudFront Distribution" >}}
 
 If I wanted to replace the SSL certificate on the CloudFront Distribution above, I would create a new certificate and associate it with the Distribution.
 The updating process is then handled automatically by AWS. Since the old certificate still exists, there would be no downtime during the update. After updates are finished, I would be free to delete the old certificate.

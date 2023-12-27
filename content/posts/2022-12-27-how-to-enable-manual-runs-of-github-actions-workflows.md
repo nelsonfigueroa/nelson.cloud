@@ -22,7 +22,7 @@ on:
 
 This configuration allows for workflows to run on commit pushes, but there is no option to run this workflow manually on GitHub:
 
-{{< figure src="/how_to_enable_manual_runs_of_github_actions_workflows/no_manual_run.png" alt="GitHub Actions doesn't show a manual way of running the workflow." >}}
+{{< figure src="/how-to-enable-manual-runs-of-github-actions-workflows/no-manual-run.png" alt="GitHub Actions doesn't show a manual way of running the workflow." >}}
 
 To enable manual runs of workflows, I added the `workflow_dispatch` key and specified the master branch:
 
@@ -39,7 +39,7 @@ on:
 
 After pushing changes, I was able to see a "Run workflow" button that allows me to run the workflow manually.
 
-{{< figure src="/how_to_enable_manual_runs_of_github_actions_workflows/manual_run_enabled.png" alt="GitHub Actions doesn't show a manual way of running the workflow." >}}
+{{< figure src="/how-to-enable-manual-runs-of-github-actions-workflows/manual-run-enabled.png" alt="GitHub Actions doesn't show a manual way of running the workflow." >}}
 
 Note that there are a lot more configuration options available when adding the `workflow_dispatch` key. However, I just wanted to enable manual runs and nothing more. Refer to [the documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch) for more information.
 
