@@ -5,7 +5,6 @@ date = "2022-07-02"
 lastmod = "2022-07-02"
 categories = ["Cybersecurity", "Python"]
 toc = false
-featured = true # used to show in home page
 +++
 
 ## Phishing Attempt via Text Message
