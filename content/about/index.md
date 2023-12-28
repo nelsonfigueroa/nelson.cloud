@@ -10,7 +10,7 @@ I'm a Software Engineer with broad experience working with technologies like
 Ruby on Rails, Kubernetes, and Amazon Web Services. 
 I started this blog for fun and to share my knowledge. 
 
-I am currently focusing on my health and have left my previous role. However, I am open to new roles that begin in early 2024.
+I am currently focusing on my health and have left my previous role. However, I am open to new **remote** roles that begin in early 2024.
 
 ## Experience
 
@@ -36,7 +36,7 @@ Software Engineer @ [CSU Northridge](https://csun.edu/) (2018 - 2019)
 
 **Cloud**: Amazon Web Services, Google Cloud Platform
 
-**Operating Systems**: Linux (Ubuntu, CentOS, Kali), macOS, Windows 10
+**Operating Systems**: macOS, Linux (Ubuntu, CentOS, Kali), Windows 10
 
 **Other**: Command Line, Agile/Scrum, Jira, Git, RSpec
 
