@@ -29,10 +29,10 @@
         <br>
 
         {{- /* Custom */ -}}
-        <h2>#&nbsp;Latest Post</h2>
+        <h2>#&nbsp;Latest Posts</h2>
 
         {{- $pages := where .Site.RegularPages "Type" "posts" -}}
-        {{ range first 1 $pages }}
+        {{ range first 2 $pages }}
             {{ .Render "summary" }}
         {{ end }}
 
