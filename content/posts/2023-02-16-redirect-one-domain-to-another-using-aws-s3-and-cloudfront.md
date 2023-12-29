@@ -49,7 +49,7 @@ This rule will redirect to the new domain and append paths as well. So if a user
 
 (If you want to redirect to HTTP instead of HTTPS, you can change the protocol to `http`)
 
-{{< figure src="/redirect-one-domain-to-another/bucket-configuration.png" alt="S3 bucket configuration" >}}
+{{< figure src="/redirect-one-domain-to-another/bucket-configuration.webp" alt="S3 bucket configuration" >}}
 
 Then click the "Save changes" button at the very bottom of the page.
 
@@ -65,7 +65,7 @@ On Amazon Web Services, browse to the Route 53 console.
 
 First, make sure you have a public hosted zone in Route 53. If not, create one and specify the old domain name:
 
-{{< figure src="/redirect-one-domain-to-another/creating-hosted-zone.png" alt="Route 53 hosted zone" >}}
+{{< figure src="/redirect-one-domain-to-another/creating-hosted-zone.webp" alt="Route 53 hosted zone" >}}
 
 You will need to update the DNS nameservers for your domain specifying the nameservers that AWS provides to you in the hosted zone. This varies depending on the registrar so I will let you do some Googling for this part. It's pretty easy though :).
 
@@ -73,7 +73,7 @@ Next, create a CNAME record in the new hosted zone that points the old domain to
 
 (Note that in Route 53 specifically you can create an `A` record, enable the "Alias" toggle, and then select the S3 Bucket website endpoint. This is an alternative solution.)
 
-{{< figure src="/redirect-one-domain-to-another/cname-record.png" alt="CNAME record" >}}
+{{< figure src="/redirect-one-domain-to-another/cname-record.webp" alt="CNAME record" >}}
 
 After the CNAME record is created (and changes have propagated), all requests going to the old domain will be redirected to the new domain.
 However, this will only work with HTTP requests to the old domain and *not* HTTPS requests.
@@ -94,7 +94,7 @@ Once you are sure you're in the us-east-1 region, click on "Request certificate"
 
 For the "Certificate type", select "Request a public certificate". Then click the "Next" button:
 
-{{< figure src="/redirect-one-domain-to-another/request-certificate.png" alt="Requesting public certificate" >}}
+{{< figure src="/redirect-one-domain-to-another/request-certificate.webp" alt="Requesting public certificate" >}}
 
 In the following form, do the following:
 - For "Fully qualified domain name", enter the old domain (`nelsonfigueroa.dev` in my case)
@@ -103,13 +103,13 @@ In the following form, do the following:
 
 Then click the "Request" button on the bottom of the page.
 
-{{< figure src="/redirect-one-domain-to-another/certificate-configuration.png" alt="Certificate configuration" >}}
+{{< figure src="/redirect-one-domain-to-another/certificate-configuration.webp" alt="Certificate configuration" >}}
 
 After the certificate is created we'll need to validate the certificate (we need to prove to AWS that we own this domain by creating a CNAME record in the hosted zone for this domain). Click into the certificate and scroll down to the "Domains" section. There will be a table with two columns named "CNAME name" and "CNAME value". You will need to create a CNAME record in Route 53 with this name/value combination following the same procedure as before. 
 
 After the CNAME record is created, wait around 15 minutes and the certificate will be validated and you should see "Success" under the "Status" and "Renewal status" columns:
 
-{{< figure src="/redirect-one-domain-to-another/validated-certificate.png" alt="Certificate configuration" >}}
+{{< figure src="/redirect-one-domain-to-another/validated-certificate.webp" alt="Certificate configuration" >}}
 
 Now we can create a CloudFront Distribution and associate this certificate to it.
 
@@ -121,19 +121,19 @@ In the form, fill out the form with the following:
 
 For "Origin domain" select the S3 bucket you created for your old domain. Or you can paste in the S3 bucket website endpoint from earlier (this is what I did). Either one of these work for our case.
 
-{{< figure src="/redirect-one-domain-to-another/origin.png" alt="CloudFront Distribution origin" >}}
+{{< figure src="/redirect-one-domain-to-another/origin.webp" alt="CloudFront Distribution origin" >}}
 
 For "Viewer protocol policy", select "Redirect HTTP to HTTPS":
 
-{{< figure src="/redirect-one-domain-to-another/viewer-protocol-policy.png" alt="CloudFront Distribution viewer protocol policy" >}}
+{{< figure src="/redirect-one-domain-to-another/viewer-protocol-policy.webp" alt="CloudFront Distribution viewer protocol policy" >}}
 
 Under "Alternate domain name (CNAME)", click the "Add item" button and enter the old domain in the field that appears (`nelsonfigueroa.dev` in my case):
 
-{{< figure src="/redirect-one-domain-to-another/alternate-domain-name.png" alt="CloudFront Distribution alternate domain name" >}}
+{{< figure src="/redirect-one-domain-to-another/alternate-domain-name.webp" alt="CloudFront Distribution alternate domain name" >}}
 
 Under "Custom SSL certificate", select the ACM certificate that you created earlier.
 
-{{< figure src="/redirect-one-domain-to-another/ssl-certificate.png" alt="CloudFront Distribution SSL certificate" >}}
+{{< figure src="/redirect-one-domain-to-another/ssl-certificate.webp" alt="CloudFront Distribution SSL certificate" >}}
 
 The rest of the settings can remain as is. Click the "Create distribution" button on the bottom of the page. Wait a few minutes for the distribution to deploy out. You'll know deployment is done when the “Last modified” field displays a date. Make a note of the "Domain name" column for your distribution. You'll need this value for the next step.
 
@@ -143,7 +143,7 @@ The final step is to update the previous record so that it points to the distrib
 
 Go to Route 53. Click into the hosted zone for the old domain. Then edit the record that was previously created. Instead of entering the S3 Bucket website endpoint in the "Value field, enter the CloudFront Distribution domain name. Then click "Save".
 
-{{< figure src="/redirect-one-domain-to-another/editing-record.png" alt="Editing Route 53 CNAME record" >}}
+{{< figure src="/redirect-one-domain-to-another/editing-record.webp" alt="Editing Route 53 CNAME record" >}}
 
 Now both `http://nelsonfigueroa.dev` and `https://nelsonfigueroa.dev/` will redirect to the new domain.
 
