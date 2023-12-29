@@ -12,20 +12,20 @@ featured = false
 
 Recently, I recieved this email:
 
-{{< figure src="/retaliating-against-metamask-scammers/fake-metamask-email.png" alt="fake metamask email" >}}
+{{< figure src="/retaliating-against-metamask-scammers/fake-metamask-email.webp" alt="fake metamask email" >}}
 
 I have never used MetaMask. It was pretty obvious this was a scam. I decided to check it out anyway out of curiosity. 
 It led me to this site which looked legit but had a major flaw: there is no domain and I'm accessing an insecure IP address.
 
-{{< figure src="/retaliating-against-metamask-scammers/fake-metamask-site.png" alt="fake metamask site" >}}
+{{< figure src="/retaliating-against-metamask-scammers/fake-metamask-site.webp" alt="fake metamask site" >}}
 
 Still curious, I followed along and clicked on "Start verification process". In the next page, there was a text field prompting me to input my seed phrase:
 
-{{< figure src="/retaliating-against-metamask-scammers/fake-metamask-input-field.png" alt="fake metamask input field for seed phrases" >}}
+{{< figure src="/retaliating-against-metamask-scammers/fake-metamask-input-field.webp" alt="fake metamask input field for seed phrases" >}}
 
 So I submitted 12 random words and used the browser dev tools to figure out where my seed phrase was being sent to.
 
-{{< figure src="/retaliating-against-metamask-scammers/fake-metamask-submission.png" alt="fake metamask post-submission page" >}}
+{{< figure src="/retaliating-against-metamask-scammers/fake-metamask-submission.webp" alt="fake metamask post-submission page" >}}
 
 It looks like my fake seed phrase is being sent to `/log.php` as a query string through a `GET` request. I wanted to make these scammers pay somehow.
 I figured I could come up with a quick script to slam this endpoint with random seed phrases to waste their time.
@@ -34,7 +34,7 @@ To make my made up seed phrases look more legitimate, I needed to find out if th
 
 After doing some reading from the official [MetaMask site](https://metamask.zendesk.com/hc/en-us/articles/4404722782107-User-Guide-Secret-Recovery-Phrase-password-and-private-keys#h_01FYVAXJQT914HCHEYFPNMEJEA), I saw this:
 
-{{< figure src="/retaliating-against-metamask-scammers/metamask-documentation.png" alt="metamask documentation" >}}
+{{< figure src="/retaliating-against-metamask-scammers/metamask-documentation.webp" alt="metamask documentation" >}}
 
 So there's a specific list of words that seed phrases are generated from and I have a direct link to them. This was pefect. I could use this list of words in my script:
 
@@ -79,7 +79,7 @@ print(f'{response.status_code} {response.text}')
 ```
 
 I ran this and it worked:
-{{< figure src="/retaliating-against-metamask-scammers/script-output.png" alt="script output" >}}
+{{< figure src="/retaliating-against-metamask-scammers/script-output.webp" alt="script output" >}}
 
 The final step was to put this on a loop and leave it running for a very long time. I added a `while` loop. This is what the updated code looks like:
 
@@ -119,10 +119,10 @@ while True:
 ```
 
 After that, I left my script running overnight:
-{{< figure src="/retaliating-against-metamask-scammers/script-output-2.png" alt="script output with loop" >}}
+{{< figure src="/retaliating-against-metamask-scammers/script-output-2.webp" alt="script output with loop" >}}
 
 The morning after, I noticed that my script output was stuck along with a new response message...
-{{< figure src="/retaliating-against-metamask-scammers/scammer-response.png" alt="scammer response" >}}
+{{< figure src="/retaliating-against-metamask-scammers/scammer-response.webp" alt="scammer response" >}}
 
 I guess they caught on LOL. They blocked my IP address from sending requests, so I simply changed changed my IP address and carried on.
 
@@ -145,7 +145,7 @@ print(r.request.headers)
 
 Using [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) I was able to see that this IP address originates from Russia, which I thought was interesting.
 
-{{< figure src="/retaliating-against-metamask-scammers/little-snitch.png" alt="Little Snitch connection to Russia" >}}
+{{< figure src="/retaliating-against-metamask-scammers/little-snitch.webp" alt="Little Snitch connection to Russia" >}}
 
 ## Final Thoughts
 
