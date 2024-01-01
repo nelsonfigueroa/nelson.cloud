@@ -25,11 +25,6 @@
                     <span class="author" itemprop="copyrightHolder">&nbsp;<a href="{{ $.Site.Author.link | default .Site.Home.RelPermalink }}" target="_blank">{{ .Site.Author.name }}</a></span>
                 {{- end -}}
 
-                {{- /* License */ -}}
-                {{- with .Site.Params.footer.license -}}
-                    &nbsp;|&nbsp;<span class="license">{{ . | safeHTML }}</span>
-                {{- end -}}
-
                 {{- /* ICP */ -}}
                 {{- with .Site.Params.footer.icp -}}
                     <span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
