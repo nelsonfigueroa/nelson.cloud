@@ -95,8 +95,6 @@ copyright = ""
     svgFavicon = ""
     # Android browser theme color
     themeColor = "#ffffff"
-    # Safari mask icon color
-    iconColor = "#5bbad5"
     # Windows v8-11 tile color
     tileColor = "#da532c"
 
