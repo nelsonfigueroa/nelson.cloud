@@ -92,6 +92,7 @@ Contributed practical examples for the following commands:
 - BoJack Horseman
 - Silicon Valley
 - The Boondocks
+- The Bear
 
 **Music**: I mainly listen to Death Metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs (all YouTube links):
 
