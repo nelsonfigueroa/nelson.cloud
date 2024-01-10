@@ -10,7 +10,7 @@ I'm a Software Engineer with broad experience working with technologies like
 Ruby on Rails, Kubernetes, and Amazon Web Services. 
 I started this blog for fun and to share my knowledge. 
 
-I am currently focusing on my health and have left my previous role. However, I am open to new **remote** roles that begin in early 2024.
+I left my previous role due to health reasons, but I am happy to say I am much better now and am ready for new remote roles!
 
 ## Experience
 
