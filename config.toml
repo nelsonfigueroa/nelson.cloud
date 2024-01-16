@@ -246,9 +246,9 @@ copyright = ""
       [[languages.en.menu.main]]
         weight = 5
         identifier = "hire me"
-        pre = ""
-        post = ""
-        name = "Hire Me!"
+        pre = "<span id=\"hireme\">"
+        post = "</span>"
+        name = "Hire Me 🥺"
         url = "https://www.linkedin.com/in/nelsonfigueroa1/"
         title = ""
     [languages.en.params]
