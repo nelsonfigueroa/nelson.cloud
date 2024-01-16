@@ -1,5 +1,14 @@
 // Custom style
 
+// for "Hire Me!" link
+#hireme {
+    color: #fefb67;
+
+    &:hover {
+        color: #c7c400;
+    }
+}
+
 // styling for all SVGs
 svg {
     fill: currentcolor;
