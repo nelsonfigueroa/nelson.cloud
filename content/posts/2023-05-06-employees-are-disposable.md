@@ -5,7 +5,7 @@ date = "2023-05-06"
 lastmod = "2023-09-14"
 categories = ["Opinion"]
 toc = false
-featured = true
+featured = false
 +++
 
 The recent tech layoffs have shown that employees are disposable in the eyes of executives. This isn't surprising though, and I'm definitely not the first person that has written about this. I just want to highlight the current situation.
