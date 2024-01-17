@@ -19,20 +19,23 @@
         {{- end -}}
 
         {{- /* Custom */ -}}
-        <h2>#&nbsp;Featured Posts</h2>
         {{- $pages := where .Site.RegularPages "Type" "posts" -}}
         {{- $pages = where $pages "Params.featured" true -}}
-        {{- range $pages -}}
-            {{- .Render "summary" -}}
-        {{- end -}}
 
+        {{- $count := len $pages -}}
+        {{- if gt $count 0 -}}
+        <h2>#&nbsp;Featured Posts</h2>
+            {{- range $pages -}}
+                {{- .Render "summary" -}}
+            {{- end -}}
         <br>
+        {{- end -}}
 
         {{- /* Custom */ -}}
         <h2>#&nbsp;Latest Posts</h2>
 
         {{- $pages := where .Site.RegularPages "Type" "posts" -}}
-        {{ range first 2 $pages }}
+        {{ range first 3 $pages }}
             {{ .Render "summary" }}
         {{ end }}
 
