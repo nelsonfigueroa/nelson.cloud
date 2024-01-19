@@ -10,7 +10,7 @@ I'm a Software Engineer with broad experience working with technologies like
 Ruby on Rails, Kubernetes, and Amazon Web Services. 
 I started this blog for fun and to share my knowledge. 
 
-I left my previous role due to health reasons, but I am happy to say I am much better now and am ready for new remote roles!
+I left my previous role due to health reasons, but I am happy to say I am much better now and am ready for new remote roles! Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/).
 
 ## Experience
 
@@ -71,7 +71,7 @@ Contributed practical examples for the following commands:
 
 ## Interests
 
-**Technology**: Programming, DevOps/Cloud Infrastructure, Cybersecurity, Privacy
+**Technology**: Programming/Coding, DevOps/Cloud Infrastructure, Cybersecurity, Privacy
 
 **Hobbies**: Videogames, Electric Guitar
 
