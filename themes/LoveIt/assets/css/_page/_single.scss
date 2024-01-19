@@ -171,8 +171,9 @@
     img {
       max-width: 100%;
       min-height: 1em;
+      max-height: 50vh;
+      object-fit: contain;
       border-radius: 0.7em;
-      border: 1px solid $global-font-color-dark;
     }
 
     figure {
