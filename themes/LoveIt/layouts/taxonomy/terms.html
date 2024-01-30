@@ -4,7 +4,7 @@
 
 {{- define "content" -}}
     {{- $taxonomies := .Data.Plural -}}
-    {{- $terms := .Data.Terms.ByCount -}}
+    {{- $terms := .Data.Terms.Alphabetical -}}
     {{- $type := .Type -}}
 
     <div class="page archive">
