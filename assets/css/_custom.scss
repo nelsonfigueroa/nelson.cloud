@@ -2,10 +2,14 @@
 
 // for "Hire Me!" link
 #hireme {
-    color: #fefb67;
+    // https://welearncode.com/rainbow-text/
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     &:hover {
-        color: #c7c400;
+        background: $global-background-color-dark;
+        -webkit-text-fill-color: white;
     }
 }
 
