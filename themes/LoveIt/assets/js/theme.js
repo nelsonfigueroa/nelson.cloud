@@ -317,7 +317,7 @@ window.goatcounter = {
       )
         goatcounter.count();
       else {
-        var f = function (e) {
+        var f = function () {
           if (document.visibilityState !== "visible") return;
           document.removeEventListener("visibilitychange", f);
           goatcounter.count();
@@ -525,18 +525,20 @@ var Util = /*#__PURE__*/ (function () {
 })();
 
 var Theme = /*#__PURE__*/ (function () {
-  function Theme() {
-    _classCallCheck(this, Theme);
+  class Theme {
+    constructor() {
+      _classCallCheck(this, Theme);
 
-    this.config = window.config;
-    this.data = this.config.data;
-    this.util = new Util();
-    this.newScrollTop = this.util.getScrollTop();
-    this.oldScrollTop = this.newScrollTop;
-    this.scrollEventSet = new Set();
-    this.resizeEventSet = new Set();
-    this.clickMaskEventSet = new Set();
-    if (window.objectFitImages) objectFitImages();
+      this.config = window.config;
+      this.data = this.config.data;
+      this.util = new Util();
+      this.newScrollTop = this.util.getScrollTop();
+      this.oldScrollTop = this.newScrollTop;
+      this.scrollEventSet = new Set();
+      this.resizeEventSet = new Set();
+      this.clickMaskEventSet = new Set();
+      if (window.objectFitImages) objectFitImages();
+    }
   }
 
   _createClass(Theme, [
