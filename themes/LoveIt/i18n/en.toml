@@ -1,14 +1,6 @@
 # Translations for English
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
-# === baseof ==
-[backToTop]
-other = "Back to Top"
-
-[viewComments]
-other = "View Comments"
-# === baseof ==
-
 # === Post ===
 [posts]
 other = "Posts"
@@ -35,48 +27,6 @@ other = "Categories"
 [more]
 other = "More"
 # === Pagination ===
-
-# === partials/header.html ===
-[selectLanguage]
-other = "Select Language"
-
-[switchTheme]
-other = "Switch Theme"
-# === partials/header.html ===
-
-# === partials/footer.html ===
-[poweredBySome]
-other = "Powered by {{ .Hugo }} | Theme - {{ .Theme }}"
-# === partials/footer.html ===
-
-# === partials/comment.html ===
-[valineLang]
-other = "en"
-
-[valinePlaceholder]
-other = "Your comment ..."
-
-[facebookLanguageCode]
-other = "en_US"
-
-[giscusLang]
-other = "en"
-# === partials/comment.html ===
-
-# === partials/assets.html ===
-[clear]
-other = "Clear"
-
-[cancel]
-other = "Cancel"
-
-[noResultsFound]
-other = "No results found"
-
-[copyToClipboard]
-other = "Copy to clipboard"
-
-# === partials/assets.html ===
 
 # === partials/plugin/share.html ===
 [shareOn]
@@ -128,7 +78,7 @@ other = "" # add text here to add a link like "Read Me" under each post title/su
 other = "Page not found"
 
 [pageNotFoundText]
-other = "Page Not Found :("
+other = "Page Not Found"
 # === 404.html ===
 
 # === shortcodes/version.html ===
