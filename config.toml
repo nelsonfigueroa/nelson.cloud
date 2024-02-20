@@ -256,4 +256,4 @@ title = ""
 rss = 100
 [languages.en.params.home.profile]
 enable = true
-title = "<h1>Nelson Figueroa</h1><p>Software Engineer</p>"
+title = "Software Engineer"
