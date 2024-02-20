@@ -2,12 +2,14 @@
 title = "Automatically Delete Development Logs in Ruby on Rails"
 summary = "How to automatically delete development logs in Ruby on Rails."
 date = "2023-05-21"
-lastmod = "2023-05-21"
+lastmod = "2024-02-20"
 categories = ["Ruby on Rails"]
 toc = false
 +++
 
-I usually don't need development logs persisted after I'm done developing a Rails app. Sometimes the `development.log` file can balloon up to gigabytes if I forget to delete it. I found a way to delete this file after a Ruby on Rails application exits in development mode.
+I usually don't need development logs persisted after I'm done with a development session of a Rails app. Sometimes the `development.log` file can balloon up to gigabytes if I forget to delete it. I found a way to delete this file after a Ruby on Rails application exits in development mode.
+
+## Deleting development.log on Every Exit
 
 In `config/environments/development.rb`, add the following:
 
@@ -74,3 +76,25 @@ test.log
 ```
 
 The `development.log` file is now gone!
+
+## Deleting development.log if it Reaches a Certain File Size
+
+Maybe you want to keep the `development.log` file around unless it reaches a certain file size. If that's the case, we can tweak what we previously added in `config/environments/development.rb`:
+
+```ruby
+# delete local dev logs after exiting
+at_exit do
+  development_logfile = Rails.application.config.paths['log'].first
+
+  if File.exist?(development_logfile)
+    # get file size of development.log and convert to Megabytes rounded to 2 decimal places
+    file_size = (File.size(development_logfile) / 1_024_000.0).round(2)
+
+    # if development.log is 50MB or more, delete it.
+    if file_size >= 50
+      Rails.logger.debug 'development.log is over 50MB. Deleting...'
+      File.delete(development_logfile)
+    end
+  end
+end
+```
