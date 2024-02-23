@@ -105,11 +105,31 @@ import string
 fake = Faker()
 url = "https://secure005.access.chaise.com.secure-accessaccount.com/submit.php"
 
-step_0_headers = None
-step_1_headers = None
-step_2_headers = None
-step_3_headers = None
-step_4_headers = None
+# headers that are consistent among every request
+base_headers = {
+    "Host": "secure005.access.chaise.com.secure-accessaccount.com",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
+    "Accept": "*/*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Origin": "https://secure005.access.chaise.com.secure-accessaccount.com",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "Connection": "keep-alive",
+    "Referer": "https://secure005.access.chaise.com.secure-accessaccount.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Pragma": "no-cache",
+    "Cache-Control": "no-cache",
+}
+
+step_0_cookie = None
+step_1_cookie = None
+step_2_cookie = None
+step_3_cookie = None
+step_4_cookie = None
 
 step_0_payload = None
 step_1_payload = None
@@ -120,112 +140,25 @@ step_4_payload = None
 
 def generate_headers_and_payloads():
     # telling Python to modify the variables on a global scope
-    global step_0_headers, step_1_headers, step_2_headers, step_3_headers, step_4_headers, step_0_payload, step_1_payload, step_2_payload, step_3_payload, step_4_payload
+    global step_0_cookie, step_1_cookie, step_2_cookie, step_3_cookie, step_4_cookie, step_0_payload, step_1_payload, step_2_payload, step_3_payload, step_4_payload
+
     fake_phpsessid = "".join(random.choices(string.ascii_letters + string.digits, k=26))
 
-    step_0_headers = {
-        "Host": "secure005.access.chaise.com.secure-accessaccount.com",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
-        "Accept": "*/*",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Content-Length": str(fake.random_int(min=80, max=215)),
-        "Origin": "https://secure005.access.chaise.com.secure-accessaccount.com",
-        "DNT": "1",
-        "Sec-GPC": "1",
-        "Connection": "keep-alive",
-        "Referer": "https://secure005.access.chaise.com.secure-accessaccount.com/web/auth/dashboard",
-        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=0; ppath=web%2Fauth%2Fdashboard%23%2Fdashboard%2Findex%2Findex",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-        "Pragma": "no-cache",
-        "Cache-Control": "no-cache",
+    content_length = {"Content-Length": str(fake.random_int(min=80, max=215))}
+    step_0_cookie = {
+        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=0; ppath=web%2Fauth%2Fdashboard%23%2Fdashboard%2Findex%2Findex"
     }
-
-    step_1_headers = {
-        "Host": "secure005.access.chaise.com.secure-accessaccount.com",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
-        "Accept": "*/*",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Content-Length": str(fake.random_int(min=80, max=215)),
-        "Origin": "https://secure005.access.chaise.com.secure-accessaccount.com",
-        "DNT": "1",
-        "Sec-GPC": "1",
-        "Connection": "keep-alive",
-        "Referer": "https://secure005.access.chaise.com.secure-accessaccount.com/",
-        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=1; ppath=oamo/identity/help/passwordhelp/",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-        "Pragma": "no-cache",
-        "Cache-Control": "no-cache",
+    step_1_cookie = {
+        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=1; ppath=oamo/identity/help/passwordhelp/"
     }
-
-    step_2_headers = {
-        "Host": "secure005.access.chaise.com.secure-accessaccount.com",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
-        "Accept": "*/*",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Content-Length": str(fake.random_int(min=80, max=215)),
-        "Origin": "https://secure005.access.chaise.com.secure-accessaccount.com",
-        "DNT": "1",
-        "Sec-GPC": "1",
-        "Connection": "keep-alive",
-        "Referer": "https://secure005.access.chaise.com.secure-accessaccount.com/",
-        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=2; ppath=oamo/identity/help/passwordhelp/",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-        "Pragma": "no-cache",
-        "Cache-Control": "no-cache",
+    step_2_cookie = {
+        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=2; ppath=oamo/identity/help/passwordhelp/"
     }
-
-    step_3_headers = {
-        "Host": "secure005.access.chaise.com.secure-accessaccount.com",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
-        "Accept": "*/*",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Content-Length": str(fake.random_int(min=80, max=215)),
-        "Origin": "https://secure005.access.chaise.com.secure-accessaccount.com",
-        "DNT": "1",
-        "Sec-GPC": "1",
-        "Connection": "keep-alive",
-        "Referer": "https://secure005.access.chaise.com.secure-accessaccount.com/",
-        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=3; ppath=oamo/identity/help/passwordhelp/",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-        "Pragma": "no-cache",
-        "Cache-Control": "no-cache",
+    step_3_cookie = {
+        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=3; ppath=oamo/identity/help/passwordhelp/"
     }
-
-    step_4_headers = {
-        "Host": "secure005.access.chaise.com.secure-accessaccount.com",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:122.0) Gecko/20100101 Firefox/122.0",
-        "Accept": "*/*",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Content-Length": str(fake.random_int(min=80, max=215)),
-        "Origin": "https://secure005.access.chaise.com.secure-accessaccount.com",
-        "DNT": "1",
-        "Sec-GPC": "1",
-        "Connection": "keep-alive",
-        "Referer": "https://secure005.access.chaise.com.secure-accessaccount.com/",
-        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=4; ppath=oamo/identity/help/passwordhelp/",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-        "Pragma": "no-cache",
-        "Cache-Control": "no-cache",
+    step_4_cookie = {
+        "Cookie": f"PHPSESSID={fake_phpsessid}; stp=4; ppath=oamo/identity/help/passwordhelp/"
     }
 
     uid = uuid.uuid4().hex
@@ -246,7 +179,7 @@ def generate_headers_and_payloads():
         "otp": fake.random_int(min=100000, max=999999),
     }
 
-    # the credit card in the payload has spaces in between every number, so I am replicating this
+    # the credit card in the payload has spaces in between every 4 digits, so I am replicating this
     credit_card_number = fake.credit_card_number("mastercard")
     # adding spaces in between every 4 digits
     credit_card_number = " ".join(
@@ -292,16 +225,30 @@ while True:
 
     # handle exceptions so that the script continues even if there are connection issues
     try:
-        # send request for each step using the fake generated data
-        response = requests.post(url, headers=step_0_headers, json=step_0_payload)
+        # for each step, add in corresponding cookie and random content-length to headers
+        base_headers.update(step_0_cookie)
+        base_headers.update({"Content-Length": str(fake.random_int(min=80, max=215))})
+        response = requests.post(url, headers=base_headers, json=step_0_payload)
         print(f"Step 0 status code: {response.status_code}")
-        response = requests.post(url, headers=step_1_headers, json=step_1_payload)
+
+        base_headers.update(step_1_cookie)
+        base_headers.update({"Content-Length": str(fake.random_int(min=80, max=215))})
+        response = requests.post(url, headers=base_headers, json=step_1_payload)
         print(f"Step 1 status code: {response.status_code}")
-        response = requests.post(url, headers=step_2_headers, json=step_2_payload)
+
+        base_headers.update(step_2_cookie)
+        base_headers.update({"Content-Length": str(fake.random_int(min=80, max=215))})
+        response = requests.post(url, headers=base_headers, json=step_2_payload)
         print(f"Step 2 status code: {response.status_code}")
-        response = requests.post(url, headers=step_3_headers, json=step_3_payload)
+
+        base_headers.update(step_3_cookie)
+        base_headers.update({"Content-Length": str(fake.random_int(min=80, max=215))})
+        response = requests.post(url, headers=base_headers, json=step_3_payload)
         print(f"Step 3 status code: {response.status_code}")
-        response = requests.post(url, headers=step_4_headers, json=step_4_payload)
+
+        base_headers.update(step_4_cookie)
+        base_headers.update({"Content-Length": str(fake.random_int(min=80, max=215))})
+        response = requests.post(url, headers=base_headers, json=step_4_payload)
         print(f"Step 4 status code: {response.status_code}")
 
         requests_sent = requests_sent + 5
