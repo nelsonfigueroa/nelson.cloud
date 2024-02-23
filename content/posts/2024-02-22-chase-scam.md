@@ -290,20 +290,24 @@ while True:
     # dynamically generate fake headers and JSON payloads
     generate_headers_and_payloads()
 
-    # send request for each step using the fake generated data to make this as realistic as possible
-    response = requests.post(url, headers=step_0_headers, json=step_0_payload)
-    print(f"Step 0 status code: {response.status_code}")
-    response = requests.post(url, headers=step_1_headers, json=step_1_payload)
-    print(f"Step 1 status code: {response.status_code}")
-    response = requests.post(url, headers=step_2_headers, json=step_2_payload)
-    print(f"Step 2 status code: {response.status_code}")
-    response = requests.post(url, headers=step_3_headers, json=step_3_payload)
-    print(f"Step 3 status code: {response.status_code}")
-    response = requests.post(url, headers=step_4_headers, json=step_4_payload)
-    print(f"Step 4 status code: {response.status_code}")
+    # handle exceptions so that the script continues even if there are connection issues
+    try:
+        # send request for each step using the fake generated data
+        response = requests.post(url, headers=step_0_headers, json=step_0_payload)
+        print(f"Step 0 status code: {response.status_code}")
+        response = requests.post(url, headers=step_1_headers, json=step_1_payload)
+        print(f"Step 1 status code: {response.status_code}")
+        response = requests.post(url, headers=step_2_headers, json=step_2_payload)
+        print(f"Step 2 status code: {response.status_code}")
+        response = requests.post(url, headers=step_3_headers, json=step_3_payload)
+        print(f"Step 3 status code: {response.status_code}")
+        response = requests.post(url, headers=step_4_headers, json=step_4_payload)
+        print(f"Step 4 status code: {response.status_code}")
 
-    requests_sent = requests_sent + 5
-    print(f"Requests sent: {requests_sent}")
+        requests_sent = requests_sent + 5
+        print(f"Requests sent: {requests_sent}")
+    except requests.exceptions.RequestException as e:
+        print({e})
 ```
 
 It's quite lengthy but it works. I ran the script in the background and went about my day.
