@@ -144,7 +144,6 @@ def generate_headers_and_payloads():
 
     fake_phpsessid = "".join(random.choices(string.ascii_letters + string.digits, k=26))
 
-    content_length = {"Content-Length": str(fake.random_int(min=80, max=215))}
     step_0_cookie = {
         "Cookie": f"PHPSESSID={fake_phpsessid}; stp=0; ppath=web%2Fauth%2Fdashboard%23%2Fdashboard%2Findex%2Findex"
     }
