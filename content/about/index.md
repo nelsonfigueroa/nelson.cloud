@@ -6,9 +6,9 @@ toc: "false"
 
 ## Nelson Figueroa
 
-I'm a Software Engineer with broad experience working with technologies like 
-Ruby on Rails, Kubernetes, and Amazon Web Services. 
-I started this blog for fun and to share my knowledge. 
+I'm a Software Engineer with broad experience working with technologies like
+Ruby on Rails, Kubernetes, and Amazon Web Services.
+I started this blog for fun and to share my knowledge.
 
 I left my previous role due to health reasons, but I am happy to say I am much better now and am ready for new remote roles! Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/).
 
@@ -40,7 +40,7 @@ Software Engineer @ [CSU Northridge](https://csun.edu/) (2018 - 2019)
 
 **Other**: Command Line, Agile/Scrum, Jira, Git, RSpec
 
-##  Education 
+##  Education
 
 **[California State University, Northridge](https://www.csun.edu/)**
 
@@ -52,7 +52,7 @@ Bachelor of Science in Computer Information Technology (2019)
 
 Simplified and community-driven "cheat sheet" for command line tools.
 
-Contributed practical examples for the following commands: 
+Contributed practical examples for the following commands:
 - `rails generate`
 - `rails destroy`
 - `rails db`
@@ -75,7 +75,7 @@ Contributed practical examples for the following commands:
 
 **Hobbies**: Videogames, Electric Guitar
 
-**Games**: 
+**Games**:
 - [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring)
 - [Factorio](https://www.factorio.com/)
 - [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/)
@@ -104,6 +104,7 @@ Contributed practical examples for the following commands:
 - [Nightbringer - The Grave-Earth's Son](https://www.youtube.com/watch?v=EGA3vcKxYec)
 - [Vektor - Cygnus Terminal](https://www.youtube.com/watch?v=BpL3j8sCPAw)
 - [Beyond Creation - Theatrical Delirium](https://www.youtube.com/watch?v=aBNb3HR-ihA)
+- [Hooded Menace - Those Who Absorb The Night](https://www.youtube.com/watch?v=jiuTCf9w-_E)
 
 ## Links
 - [GitHub](https://github.com/nelsonfigueroa)
