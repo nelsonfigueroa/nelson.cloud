@@ -115,3 +115,7 @@ This site is a part of:
 - [250kb.club](https://250kb.club)
 - [512kb.club](https://512kb.club)
 - [1mb.club](https://1mb.club)
+
+## Feedback
+
+If you have any feedback regarding my posts or if you just want to tell me how much I suck, you can reach out via feedback[at]nelson.cloud
