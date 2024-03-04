@@ -10,7 +10,7 @@ I'm a Software Engineer with broad experience working with technologies like
 Ruby on Rails, Kubernetes, and Amazon Web Services.
 I started this blog for fun and to share my knowledge.
 
-I left my previous role due to health reasons, but I am happy to say I am much better now and am ready for new remote roles! Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/).
+I am actively looking for a new role! Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/).
 
 ## Experience
 
@@ -118,4 +118,4 @@ This site is a part of:
 
 ## Feedback
 
-If you have any feedback regarding my posts or if you just want to tell me how much I suck, you can reach out via feedback[at]nelson.cloud
+If you have any feedback regarding my posts or if you just want to tell me how much I suck, you can reach out via `feedback[at][this domain]`.
