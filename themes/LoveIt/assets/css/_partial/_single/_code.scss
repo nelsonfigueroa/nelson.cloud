@@ -16,6 +16,7 @@ code {
 pre code {
   color: $global-font-color-dark;
   background-color: $code-block-background-color-dark;
+  font-size: var(--code-block-font-size);
 }
 
 pre {
