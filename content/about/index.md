@@ -68,6 +68,7 @@ Contributed practical examples for the following commands:
 - `kubectl rollout`
 - `kubectl delete`
 - `kubectl edit`
+- `go tool dist list`
 
 ## Interests
 
