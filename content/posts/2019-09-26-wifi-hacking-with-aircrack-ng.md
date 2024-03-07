@@ -22,9 +22,9 @@ I used [Kali Linux](https://www.kali.org/) for the entire process, but the proce
 
 ## What is aircrack-ng?
 
-As described on the [official aircrack-ng website](https://www.aircrack-ng.org/doku.php?id=Main), aircrack-ng is a complete suite of tools to assess WiFi network security. It can be used to scan wifi signals and to perform denial-of-service (DOS) attacks.
+`aircrack-ng` is a complete suite of tools to assess WiFi network security. It can be used to scan wifi signals and to perform denial-of-service (DOS) attacks among other things. Read more about it on the [official aircrack-ng website](https://www.aircrack-ng.org/).
 
-The goal in this post is to use the tools included in `aircrack-ng` to: 
+The goal in this post is to use the tools included in `aircrack-ng` to:
 1. Scan for nearby routers
 2. Send spoofed deauthentication packets on behalf of a connected client
 3. Capture the 4-way handshake hash
@@ -49,10 +49,10 @@ $ ifconfig wlan0 down
 
 $ iwconfig wlan0 mode monitor
 
-$ ifconfig wlan0 up 
+$ ifconfig wlan0 up
 ```
 
-Now, we need to check that no processes interfere with the `airmon-ng` tool, which is part of the `aircrack-ng` suite. To do this, run: 
+Now, we need to check that no processes interfere with the `airmon-ng` tool, which is part of the `aircrack-ng` suite. To do this, run:
 
 ```
 $ airmon-ng check wlan0
@@ -84,11 +84,11 @@ $ airodump-ng wlan0
 Your terminal screen will fill up with something like this:
 
 ```
- CH 10 ][ Elapsed: 0 s ][ 2019-09-27 21:57                                         
-                                                                                                                                                                                        
+ CH 10 ][ Elapsed: 0 s ][ 2019-09-27 21:57
+
  BSSID              PWR  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
-      
- 51:EF:63:2E:47:72  -55        0        0    0   3  -1                    <length:  0>                    
+
+ 51:EF:63:2E:47:72  -55        0        0    0   3  -1                    <length:  0>
  7C:B1:DF:B9:12:59  -42        3        0    0   7  130  WPA2 CCMP   PSK  Lower The Rent
  DA:4B:77:1A:84:50  -75        2        0    0   1  195  WPA2 CCMP   PSK  Spectrum
  19:7H:8D:73:97:FE  -77        2        0    0   1  195  WPA2 CCMP   PSK  MyWifi
@@ -100,7 +100,7 @@ Your terminal screen will fill up with something like this:
  9D:58:61:62:68:21  -63        3        0    0   1  130  WPA2 CCMP   PSK  INTERNET
  ED:3D:D4:64:A4:6C  -79        2        0    0   1   65  WPA2 CCMP   PSK  OfficeJet
  33:B5:E2:92:08:33  -66        4        0    0   9  260  OPN              Test-guest
-                                                                                                                                                                                        
+
  BSSID              STATION            PWR   Rate    Lost    Frames  Probe
 
  (not associated)   88:D6:CD:88:4C:9D  -47    0 - 1     95        5
@@ -113,7 +113,7 @@ You'll see a list of access points and devices associated with each access point
 - BSSID - MAC Address of the access point
 - PWR - Strength of the signal. The closer to 0, the better
 - CH - Channel
-- ESSID - Name of access point 
+- ESSID - Name of access point
 - STATION - Device connected to access point (Laptop, smartphone, etc)
 
 Now lets select an access point and run a scan on only that particular device. We'll capture traffic and save it to a file. You'll need to make note of the BSSID and channel of the access point. In my case, my router's ESSID is "Lower The Rent". We'll scan it using the following command formula:
@@ -131,7 +131,7 @@ $ airodump-ng -c 7 -w SCAN_OUTPUT --bssid 7C:B1:DF:B9:12:59 wlan0
 Here's the output:
 
 ```
- CH  7 ][ Elapsed: 24 s ][ 2019-09-27 22:05                                         
+ CH  7 ][ Elapsed: 24 s ][ 2019-09-27 22:05
 
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
 
@@ -185,7 +185,7 @@ Your terminal screen will continue to fill with these messages. Keep the command
 
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
 
- 7C:B1:DF:B9:12:59  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent   
+ 7C:B1:DF:B9:12:59  -44  96      871       96    0   7  130  WPA2 CCMP   PSK  Lower The Rent
 
  BSSID              STATION            PWR   Rate    Lost    Frames  Probe
 
@@ -322,7 +322,7 @@ Password lists can be used along with the `crunch` tool we used earlier. `crunch
 
 ## Conclusions
 
-In this post I covered how to use `aircrack-ng` to scan for nearby access points, capture the 4-way handshake by sending spoofed deauthentication packets, and crack the hash using `crunch`. Once again, only try this on devices you own! 
+In this post I covered how to use `aircrack-ng` to scan for nearby access points, capture the 4-way handshake by sending spoofed deauthentication packets, and crack the hash using `crunch`. Once again, only try this on devices you own!
 
 Scanning for wifi networks and acquiring handshakes is not too difficult. Anyone with some command line experience can achieve this. The hardest part will be cracking the password itself due to processing power required.
 
