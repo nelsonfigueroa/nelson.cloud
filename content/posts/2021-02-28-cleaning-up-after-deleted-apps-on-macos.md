@@ -3,7 +3,7 @@ title = "Cleaning Up Residual Files on macOS After Deleting Apps"
 summary = "Clean up residual files and directories after deleting macOS apps."
 date = "2021-02-28"
 lastmod = "2023-11-30"
-categories = ["macOS"]
+categories = ["macOS", "Shell"]
 toc = false
 +++
 
