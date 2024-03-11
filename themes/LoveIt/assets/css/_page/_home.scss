@@ -96,8 +96,6 @@
         font-size: 1.125rem;
       }
 
-      @include link(false, true);
-
       b, strong {
         color: $global-font-secondary-color-dark;
       }
@@ -110,12 +108,8 @@
       align-items: center;
       font-size: .875rem;
 
-      @include link(false, false);
-
       .post-tags {
         padding: 0;
-
-        @include link(true, true);
       }
     }
   }

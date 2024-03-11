@@ -32,10 +32,6 @@ $global-font-secondary-color-dark: #868688 !default;
 // $global-link-color: #034cd3 !default;
 $global-link-color-dark: #02a7ff !default;
 
-// Color of the hover link
-// $global-link-hover-color: $global-link-color-dark !default;
-$global-link-hover-color-dark: #034cd3 !default;
-
 // Color of the border
 // $global-border-color: #b0b0b0 !default;
 $global-border-color-dark: #484848 !default;
@@ -73,24 +69,12 @@ $mobile-header-title-font-size: 0.9rem !default;
 // $header-background-color: rgba(248, 248, 248, 0.8) !default;
 $header-background-color-dark: rgba(0, 0, 0, 0.8) !default;
 
-// Color of the hover header item
-// $header-hover-color: #161209 !default;
-$header-hover-color-dark: #fff !default;
-
 // ========== Header ========== //
 
 // ========== Single Content ========== //
 // Font size of the TOC
 $toc-title-font-size: 1rem !default;
 $toc-content-font-size: 1.1rem !default;
-
-// // Color of the single link
-// $single-link-color: $global-link-color !default;
-$single-link-color-dark: $global-link-color-dark !default;
-
-// // Color of the hover single link
-// $single-link-hover-color: $global-link-color-dark !default;
-// $single-link-hover-color-dark: #034cd3!default;
 
 // Color of the table background
 // $table-background-color: #fff !default;
@@ -102,17 +86,12 @@ $table-thead-color-dark: #20252b !default;
 
 // Color of the blockquote
 // $blockquote-color: #6bd6fd !default;
-$blockquote-color-dark: #59c5ec !default;
+$blockquote-color-dark: #c91b00 !default;
 
 // Categories Badges
 $global-badge-background-color-dark: #002975;
 
 // ========== Single Content ========== //
-
-// ========== Pagination ========== //
-// Color of the hover link in pagination
-// $pagination-link-hover-color: $global-link-color !default;
-$pagination-link-hover-color-dark: $global-link-color-dark !default;
 
 // ========== Pagination ========== //
 

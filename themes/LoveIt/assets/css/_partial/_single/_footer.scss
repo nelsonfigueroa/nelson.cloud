@@ -12,8 +12,6 @@
       .post-info-mod {
         font-size: 0.8em;
         color: $global-font-secondary-color-dark;
-
-        @include link(false, false);
       }
     }
   }
