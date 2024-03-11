@@ -17,6 +17,16 @@ html {
   }
 }
 
+// universal link styles
+a {
+    text-decoration: none;
+    color: $global-link-color-dark;
+
+    &:hover {
+        filter: brightness(80%);
+    }
+}
+
 /* scrollbar, only support webkit */
 ::-webkit-scrollbar {
   width: .5rem;
@@ -45,6 +55,5 @@ body {
   scrollbar-color: auto;
 }
 
-@include link(true, true);
 @import "../_partial/icon";
 @import "../_partial/details";

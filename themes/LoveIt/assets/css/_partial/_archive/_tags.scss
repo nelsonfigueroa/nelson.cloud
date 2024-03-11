@@ -1,8 +1,6 @@
 .tag-cloud-tags {
   margin: 10px 0;
 
-  @include link(true, true);
-
   a {
     display: inline-block;
     position: relative;

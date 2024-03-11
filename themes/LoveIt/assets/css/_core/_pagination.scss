@@ -28,7 +28,7 @@
     }
 
     &:hover a {
-      color: $pagination-link-hover-color-dark;
+
     }
 
     &::before,
@@ -37,7 +37,6 @@
       content: "";
       width: 0;
       height: 3px;
-      background: $pagination-link-hover-color-dark;
 
       bottom: 0;
     }
@@ -64,7 +63,7 @@
 
     &.active {
       a {
-        color: $pagination-link-hover-color-dark;
+        color: $global-link-color-dark;
       }
 
       &::before,

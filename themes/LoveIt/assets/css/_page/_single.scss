@@ -22,8 +22,6 @@
       display: inline-block;
     }
 
-    @include link(false, true);
-
     .author {
       font-size: 1.05rem;
     }
@@ -94,7 +92,6 @@
     > h6 {
       > .header-mark::before {
         margin-right: .3125rem;
-        color: $single-link-color-dark;
       }
     }
 
@@ -119,18 +116,12 @@
       color: #ddd;
     }
 
-    @include link(false, false);
-
     a {
       @include overflow-wrap(break-word);
 
       b, strong {
-        color: $single-link-color-dark;
+        color: $global-link-color-dark;
       }
-    }
-
-    a:hover b, a:hover strong {
-      color: $global-link-hover-color-dark;
     }
 
     ul, ol {
