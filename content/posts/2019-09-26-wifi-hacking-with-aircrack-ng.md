@@ -15,10 +15,7 @@ There are other methods of doing this as well. In fact, I discovered [bettercap]
 
 I used [Kali Linux](https://www.kali.org/) for the entire process, but the process should be very similar for any Linux distribution. `aircrack-ng` is already included on Kali Linux but you can install it on any Linux OS.
 
----
-**Disclaimer: This is purely for educational purposes. Do not try to break into access points that do not belong to you.**
-
----
+> **Disclaimer**: This is purely for educational purposes. Do not try to break into access points that do not belong to you.
 
 ## What is aircrack-ng?
 
