@@ -8,7 +8,7 @@ toc = false
 featured = false
 +++
 
-The recent tech layoffs have shown that employees are disposable in the eyes of executives. This isn't surprising though, and I'm definitely not the first person that has written about this. I just want to highlight the current situation.
+The recent tech layoffs have shown that employees are disposable in the eyes of executives. This isn't surprising though and I'm definitely not the first person that has written about this. I just want to highlight the current situation.
 
 {{< figure src="/employees-are-disposable/tech-layoff-tracker.webp" alt="TrueUp tech layoff tracker"
 caption="*Source: [TrueUp: Tech Layoff Tracker](https://www.trueup.io/layoffs)*" >}}
@@ -65,6 +65,7 @@ It's okay to like your job and employer. Just understand that, **as an employee,
 
 ## Further Reading
 
-Here are some articles I've come across that share similar sentiments. I highly recommend giving them a read.
+Here are some articles I've come across that share similar sentiments or are very relevant. I highly recommend giving them a read.
 - [Maybe you should store passwords in plaintext](https://www.qword.net/2023/04/30/maybe-you-should-store-passwords-in-plaintext)
 - [Our Company Is Doing So Well That You’re All Fired](https://www.mcsweeneys.net/articles/our-company-is-doing-so-well-that-youre-all-fired)
+- [What Companies Still Get Wrong About Layoffs](https://hbr.org/2022/12/what-companies-still-get-wrong-about-layoffs)
