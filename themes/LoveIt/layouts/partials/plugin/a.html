@@ -1,8 +1,16 @@
 {{- $rel := "" -}}
-<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if (urls.Parse .Destination).Host | or .Newtab }}{{ $rel = "noopener noreffer " }} target="_blank"{{ end }} rel="{{ $rel }}{{ with .Rel }}{{ . }}{{ end }}"{{ with .Class }} class="{{ . }}"{{ end }}>
-    {{- with .Icon -}}
-        {{- partial "plugin/icon.html" . -}}
-    {{- end -}}
+{{- $url := .Destination -}}
+{{- $refParam := "" -}}
+{{- $hasQuery := strings.Contains $url "?" -}}
+{{- if $hasQuery -}}
+    {{- $refParam = "&ref=" -}}
+{{- else -}}
+    {{- $refParam = "?ref=" -}}
+{{- end -}}
+
+{{- $refDomain := "nelson.cloud" -}}
+
+<a href="{{ $url | safeURL }}{{ $refParam }}{{ $refDomain }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if (urls.Parse .Destination).Host | or .Newtab }}{{ $rel = "noopener" }} target="_blank"{{ end }} rel="{{ $rel }}{{ with .Rel }}{{ . }}{{ end }}"{{ with .Class }} class="{{ . }}"{{ end }}>
     {{- with .Content -}}
         {{- . | safeHTML -}}
     {{- end -}}
