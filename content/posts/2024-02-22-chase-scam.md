@@ -266,3 +266,7 @@ If you enjoyed this, I've done a few other posts similar to this one:
 - [Hitting Back at Ledger Scammers With Python](/hitting-back-at-ledger-scammers-with-python/)
 - [Using Python to Flood Scammers with Fake Passwords](/using-python-to-flood-scammers-with-fake-passwords/)
 - [Retaliating Against MetaMask Scammers With Python](/retaliating-against-metamask-scammers-with-python/)
+
+## Elsewhere
+
+Also posted on: <a class="u-syndication" href="https://dev.to/nelsonfigueroa/making-life-more-difficult-for-bank-scammers-58ia?ref=nelson.cloud" rel="syndication">dev.to</a>
