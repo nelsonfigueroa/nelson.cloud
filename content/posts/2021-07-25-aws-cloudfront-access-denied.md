@@ -2,7 +2,7 @@
 title = "Resolving AWS CloudFront Access Denied Errors"
 summary = "Resolving Access Denied Errors in a CloudFront Distribution that uses a Private S3 Bucket, Origin Access Identity, and Contains Multiple index.html Templates."
 date = "2021-07-25"
-lastmod = "2021-07-25"
+lastmod = "2024-03-15"
 categories = ["AWS"]
 toc = false
 +++
@@ -32,7 +32,7 @@ Or
 - Avoid having multiple index.html templates in the bucket, excluding the root index.html template, which could be a hurdle.
 
 
-I was surprised that this isnt documented in Amazon's own troubleshooting guide. I only learned about this issue through a [comment on a forum](https://forums.aws.amazon.com/thread.jspa?threadID=85849) that reads as follows:
+I was surprised that this isnt documented in Amazon's own troubleshooting guide. I only learned about this issue through a [comment on a forum](https://forums.aws.amazon.com/thread.jspa?threadID=85849) (which has now been archived) that reads as follows:
 
 > "...CloudFront provides default root object support as well, but not for any subdirectories. You can solve this by using a custom origin instead. When CloudFront uses the S3 static website URL as the origin, you get the desired functionality."
 
