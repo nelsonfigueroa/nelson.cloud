@@ -62,8 +62,6 @@ enable = true
 custom = "All organic content free from AI :)"
 # whether to show copyright info
 copyright = true
-# whether to show the author
-author = false
 # site creation time
 since = 2019
 
