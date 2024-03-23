@@ -13,12 +13,11 @@ I now realize that is a very complicated way to go about it after discovering th
 
 With `git shortlog` you can list all contributor emails for any git repository, not just GitHub repos.
 
-> Disclaimer: I am writing about this to make others aware of this form of scraping. I am simply writing about a privacy issue with git. I do not plan on doing anything with emails from git repos and you shouldn't either.
+> Disclaimer: I am writing about this to make others aware of this form of scraping and it is purely for educational purposes. I do not plan on doing anything with emails from git repos and you shouldn’t either
 
+## TL;DR
 
-## Extracting Emails With `git shortlog`
-
-Run this command within any git repo to extract all contributor emails:
+You can run this command within any git repo to extract all contributor emails:
 
 ```bash
 git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b" | awk '{print tolower($0)}' | sort | uniq | grep -wv 'users.noreply.github.com'
