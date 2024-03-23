@@ -20,11 +20,6 @@
                     {{- end -}}
                 {{- end -}}
 
-                {{- /* Author */ -}}
-                {{- if ne .Site.Params.footer.author false -}}
-                    <span class="author" itemprop="copyrightHolder">&nbsp;<a href="{{ $.Site.Author.link | default .Site.Home.RelPermalink }}" target="_blank">{{ .Site.Author.name }}</a></span>
-                {{- end -}}
-
                 {{- /* ICP */ -}}
                 {{- with .Site.Params.footer.icp -}}
                     <span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
