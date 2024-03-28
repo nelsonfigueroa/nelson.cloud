@@ -26,10 +26,9 @@ jobs:
         run: |
           pip3 install --upgrade setuptools
           pip3 install awscli --upgrade --user
-      - name: Initialize submodule
+      - name: Initialize and pull submodule
         run: |
-          git submodule init
-          git submodule update
+          git submodule update --init --recursive
       - name: Build Site
         run: |
           hugo version
