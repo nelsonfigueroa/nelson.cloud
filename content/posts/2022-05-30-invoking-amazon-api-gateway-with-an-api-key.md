@@ -4,7 +4,8 @@ summary = "Invoking Amazon API Gateway with an API Key"
 date = "2022-06-06"
 lastmod = "2022-06-06"
 categories = ["AWS"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 To invoke an Amazon API Gateway with an API Key we need to pass in the API key in a `x-api-key` header.

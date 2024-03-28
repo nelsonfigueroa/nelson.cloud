@@ -4,7 +4,6 @@ summary = "How to enable manual runs of GitHub Actions workflows."
 date = "2022-12-27"
 lastmod = "2022-12-27"
 categories = ["GitHub"]
-toc = false
 +++
 
 By default, GitHub Actions does not allow you to run a workflow manually. In order to enable manual workflow runs, I had to add `workflow_dispatch` to the YAML file under `.github/workflows/`.
@@ -16,7 +15,7 @@ For example, the beginning of my GitHub Actions YAML file looked like this:
 name: Deploy
 on:
   push:
-    branches: 
+    branches:
       - master
 ```
 
@@ -30,7 +29,7 @@ To enable manual runs of workflows, I added the `workflow_dispatch` key and spec
 name: Deploy
 on:
   push:
-    branches: 
+    branches:
       - master
   workflow_dispatch:
     branches:

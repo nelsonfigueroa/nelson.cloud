@@ -4,7 +4,6 @@ summary = "Getting the invite code to Hack The Box"
 date = "2020-01-06"
 lastmod = "2020-01-06"
 categories = ["Cybersecurity"]
-toc = false
 +++
 
 
@@ -20,7 +19,7 @@ Hack The Box is an online penetration testing platform where users can practice 
 ---
 <br>
 
-To sign up to the site, I was redirected to [https://www.hackthebox.eu/invite](https://www.hackthebox.eu/invite). There is a single field that prompts for an invite code. Other than that, there are no clues on the surface. 
+To sign up to the site, I was redirected to [https://www.hackthebox.eu/invite](https://www.hackthebox.eu/invite). There is a single field that prompts for an invite code. Other than that, there are no clues on the surface.
 
 {{< figure src="/hacking-hack-the-box/invitecode.webp" alt="Invite code field">}}
 

@@ -4,13 +4,12 @@ summary = "Comparing Ruby on Rails URL Helpers and Paths"
 date = "2020-03-26"
 lastmod = "2020-03-26"
 categories = ["Ruby on Rails"]
-draft = false
 +++
 
 ---
-**2021-11-08 update**: 
-When I first wrote this post I thought this was a better way of writing links, specially after seeing it done this way in a professional setting. 
-However, it may not be best practice. It's best to stick with Rails helpers since they're dynamic. If routes change, the helpers may not need to be changed at all. 
+**2021-11-08 update**:
+When I first wrote this post I thought this was a better way of writing links, specially after seeing it done this way in a professional setting.
+However, it may not be best practice. It's best to stick with Rails helpers since they're dynamic. If routes change, the helpers may not need to be changed at all.
 I found this article that covers best practices better than I can: [Rails URL Helpers Readme](https://learn.co/lessons/rails-url-helpers-readme)
 
 ---
@@ -21,7 +20,7 @@ While learning how to write tests for requests, I came across a different way of
 <%= link_to 'Add Account', new_account_path %>
 ```
 
-By checking the application's routes, we can see URL helpers (1st column) and URI Patterns (3rd column). 
+By checking the application's routes, we can see URL helpers (1st column) and URI Patterns (3rd column).
 
 ```
 $ rails routes -c accounts

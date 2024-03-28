@@ -4,14 +4,15 @@ summary = "How to fix Devise errors in Ruby on Rails 7."
 date = "2022-11-16"
 lastmod = "2022-11-16"
 categories = ["Ruby on Rails"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 In Ruby on Rails 7, Webpacker, Turbolinks, and UJS were [replaced with Import Maps and Hotwire](https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-javascript-in-2021-8d68191b).
 Honestly, I'm not much of a front-end guy so I didn't know what these changes meant for me exactly, so I decided to blindly upgrade a Ruby on Rails app for personal use.
 This resulted in issues with [Devise](https://github.com/heartcombo/devise).
 
-I noticed that some Devise actions were not working as intended. 
+I noticed that some Devise actions were not working as intended.
 Specifically, the new user registration and logout actions were broken.
 The solution was to add a couple gems and then update some views.
 
@@ -67,11 +68,11 @@ To get this to work properly, I had to remove `method: :delete` and replace it w
 <%= link_to('Logout', destroy_user_session_path, data: { turbo_method: :delete }) %>
 ```
 
-That took care of my 'Logout' action. 
+That took care of my 'Logout' action.
 
 ### Fixing New User Registrations
 
-To fix the new user registrations, I had to add `data: { turbo: false }` to the `form_for` helper. 
+To fix the new user registrations, I had to add `data: { turbo: false }` to the `form_for` helper.
 
 This is what it looked like before the changes:
 
@@ -99,7 +100,7 @@ And this is what the form looked like after the changes were implemented:
 <% end %>
 ```
 
-Alternatively, another solution that worked for me to fix new user registrations was to modify `config/initializers/devise.rb`. 
+Alternatively, another solution that worked for me to fix new user registrations was to modify `config/initializers/devise.rb`.
 I added the following line:
 
 ```ruby
@@ -112,7 +113,7 @@ Devise.setup do |config|
 end
 ```
 
-This line was present (but commented out) in the default Devise installation. However, the only two formats present were `'*/*'` and `:html`. 
+This line was present (but commented out) in the default Devise installation. However, the only two formats present were `'*/*'` and `:html`.
 The `:turbo_stream` format had to be added.
 
 This resolved the new user registration issue without having to add `data: { turbo: false }` to the view. I don't know which approach is best, so you may want to do further research.

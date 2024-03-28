@@ -4,7 +4,6 @@ summary = "Clean up residual files and directories after deleting macOS apps."
 date = "2021-02-28"
 lastmod = "2023-11-30"
 categories = ["macOS", "Shell"]
-toc = false
 +++
 
 After deleting apps on macOS, they tend leave behind residual files and directories throughout the system. You can use the `find` command to find these files after an app has been deleted. I'll be deleting the LastPass app and removing its residual files as an example because [nobody should be using LastPass anyway](https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/).

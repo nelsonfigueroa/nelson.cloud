@@ -1,0 +1,135 @@
+/* for ascii art on home page */
+pre.entry-header {
+    font-size: 10px;
+    line-height: 1.1;
+    white-space: pre-wrap;
+    max-width: 100%;
+}
+
+.first-entry {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 320px;
+    margin: var(--gap) 0 calc(var(--gap) * 2) 0;
+    text-align: center;
+}
+
+.first-entry .entry-header {
+    overflow: visible;
+    display: unset;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+@media screen and (max-width: 768px) {
+    pre.entry-header {
+        font-size: 8px;
+    }
+}
+
+/* for titles of post links */
+.entry-header h2 {
+    font-size: 1.25rem;
+}
+
+/* nav width */
+.nav {
+    max-width: calc(var(--nav-width) + var(--gap) * 35);
+}
+
+/* borders around post images */
+.post-content img {
+    border: 1px solid var(--border);
+}
+
+/* category badges */
+.post-tags a {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    color: var(--secondary);
+    background: var(--code-bg);
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.post-tags {
+    display: inline-block;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.post-meta {
+    color: var(--secondary);
+    font-size: 14px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+/* override theme colors */
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: rgb(255, 255, 255);
+    --entry: rgb(255, 255, 255);
+    --primary: rgb(30, 30, 30);
+    --secondary: rgb(108, 108, 108);
+    --tertiary: rgb(214, 214, 214);
+    --content: rgb(31, 31, 31);
+    --code-block-bg: rgb(46, 46, 51);
+    --code-bg: rgb(245, 245, 245);
+    --border: rgb(238, 238, 238);
+
+    ::selection {
+      color: var(--theme);
+      background-color: black;
+    }
+
+    a:hover {
+        color: #1f9aff;
+    }
+
+    #moon:hover {
+        color: #1f9aff;
+    }
+}
+
+.dark {
+    --theme: #000;
+    --entry: rgb(46, 46, 51);
+    --primary: rgb(218, 218, 219);
+    --secondary: rgb(155, 156, 157);
+    --tertiary: rgb(65, 66, 68);
+    --content: rgb(196, 196, 197);
+    --code-block-bg: rgb(28, 29, 33);
+    --code-bg: rgb(55, 56, 62);
+    --border: rgb(51, 51, 51);
+
+    ::selection {
+      color: var(--theme);
+      background-color: var(--primary);
+    }
+
+    a:hover {
+        color: #c91b00;
+    }
+
+    #sun:hover {
+        color: #c91b00;
+    }
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+.dark.list {
+    background: var(--theme);
+}

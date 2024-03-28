@@ -4,7 +4,6 @@ summary = "Scraping contributor emails from git repositories using git shortlog.
 date = "2022-07-21"
 lastmod = "2022-07-21"
 categories = ["Cybersecurity", "Privacy", "Git", "Shell"]
-toc = false
 +++
 
 In a [previous post]({{< relref "/posts/2021-10-30-scraping-github-contributor-emails.md" >}}) I wrote about how it's possible to scrape emails from GitHub repositories using their API.

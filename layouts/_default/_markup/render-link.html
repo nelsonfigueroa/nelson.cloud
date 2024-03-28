@@ -1,0 +1,13 @@
+<!-- processes post links with external domains, but not nav or social links -->
+{{- $url := .Destination -}}
+{{- $refParam := "" -}}
+{{- $hasQuery := strings.Contains $url "?" -}}
+{{- if $hasQuery -}}
+    {{- $refParam = "&ref=" -}}
+{{- else -}}
+    {{- $refParam = "?ref=" -}}
+{{- end -}}
+
+{{- $refDomain := "nelson.cloud" -}}
+
+<a href="{{ .Destination | safeURL }}{{ $refParam }}{{ $refDomain }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>{{ .Text | safeHTML }}</a>

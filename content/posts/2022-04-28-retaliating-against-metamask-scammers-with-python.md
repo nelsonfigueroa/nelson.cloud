@@ -4,8 +4,6 @@ summary = "Using Python to send fake seed phrases to a MetaMask scam site."
 date = "2022-04-28"
 lastmod = "2022-04-28"
 categories = ["Cybersecurity", "Python"]
-toc = false
-featured = false
 +++
 
 ## Reconnaissance
@@ -14,7 +12,7 @@ Recently, I recieved this email:
 
 {{< figure src="/retaliating-against-metamask-scammers/fake-metamask-email.webp" alt="fake metamask email" >}}
 
-I have never used MetaMask. It was pretty obvious this was a scam. I decided to check it out anyway out of curiosity. 
+I have never used MetaMask. It was pretty obvious this was a scam. I decided to check it out anyway out of curiosity.
 It led me to this site which looked legit but had a major flaw: there is no domain and I'm accessing an insecure IP address.
 
 {{< figure src="/retaliating-against-metamask-scammers/fake-metamask-site.webp" alt="fake metamask site" >}}
@@ -149,7 +147,7 @@ Using [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) I w
 
 ## Final Thoughts
 
-I hate scammers. I hope I made their lives difficult. 
+I hate scammers. I hope I made their lives difficult.
 If they're smart, they'll filter out seed phrases coming in from my IP address in their database.
 But considering that their fake MetaMask site doesn't use a domain or SSL, they probably aren't very bright.
 Even if my original IP address was blocked, I'm sure the seed phrases I provided polluted their database. I doubt they're keeping track of IP addresses at the database level.

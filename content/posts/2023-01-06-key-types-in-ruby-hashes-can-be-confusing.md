@@ -4,7 +4,8 @@ summary = "Key types in Ruby hashes depend on hash syntax."
 date = "2023-01-06"
 lastmod = "2023-01-06"
 categories = ["Ruby"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 In Ruby, when a hash is created with keys and values, the keys may or may not retain their type depending on the hash syntax.

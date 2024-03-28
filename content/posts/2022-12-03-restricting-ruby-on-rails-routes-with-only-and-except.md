@@ -4,7 +4,8 @@ summary = "How to restrict Ruby on Rails routes with :only and :except."
 date = "2022-12-03"
 lastmod = "2023-08-27"
 categories = ["Ruby on Rails"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 ## Generating All Routes for a Model
@@ -81,7 +82,7 @@ edit_item GET    /items/:id/edit(.:format) items#edit
           DELETE /items/:id(.:format)      items#destroy
 ```
 
-## Restricting a Single Route 
+## Restricting a Single Route
 
 Note that if you need to restrict a single route with either `:only` or `:except`, there is no need to place the route in an array. Write it as a symbol after `:only` or `:except` like so:
 

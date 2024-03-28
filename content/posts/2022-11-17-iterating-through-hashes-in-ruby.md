@@ -4,10 +4,11 @@ summary = "Several methods of iterating through Ruby hashes."
 date = "2022-11-17"
 lastmod = "2022-11-17"
 categories = ["Ruby"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
-In my career, I have only seen Ruby hashes being iterated through by declaring both the key and value. 
+In my career, I have only seen Ruby hashes being iterated through by declaring both the key and value.
 However, there are several ways of approaching hash iterations.
 
 Note that at the time of this writing I'm running Ruby 3.1.2.

@@ -1,10 +1,8 @@
----
-title: "About Me"
-description: "About Me"
-toc: "false"
----
-
-## Nelson Figueroa
++++
+title = "About Me"
+ShowReadingTime = false
+ShowWordCount = false
++++
 
 I'm a Software Engineer with broad experience working with technologies like
 Ruby on Rails, Kubernetes, and Amazon Web Services.

@@ -4,8 +4,8 @@ summary = "How to redirect a domain to another one using AWS S3, ACM, and CloudF
 date = "2023-02-16"
 lastmod = "2023-02-16"
 categories = ["AWS"]
-toc = true
-featuredImage = ""
+ShowToc = true
+TocOpen = true
 +++
 
 With AWS S3, it's possible to redirect one domain to another. This is useful when migrating domains.
@@ -88,7 +88,7 @@ To redirect the old domain when using HTTPS we'll need a ACM SSL Certificate and
 
 ### Requesting a ACM SSL Certificate
 
-Browse to the AWS Certificate Manager console. Make sure you are in the us-east-1 region by looking at the region on the top-right corner of the screen. Only ACM certificates from the us-east-1 region will work with a CloudFront Distribution. 
+Browse to the AWS Certificate Manager console. Make sure you are in the us-east-1 region by looking at the region on the top-right corner of the screen. Only ACM certificates from the us-east-1 region will work with a CloudFront Distribution.
 
 Once you are sure you're in the us-east-1 region, click on "Request certificate" on the left-hand sidebar.
 
@@ -105,7 +105,7 @@ Then click the "Request" button on the bottom of the page.
 
 {{< figure src="/redirect-one-domain-to-another/certificate-configuration.webp" alt="Certificate configuration" >}}
 
-After the certificate is created we'll need to validate the certificate (we need to prove to AWS that we own this domain by creating a CNAME record in the hosted zone for this domain). Click into the certificate and scroll down to the "Domains" section. There will be a table with two columns named "CNAME name" and "CNAME value". You will need to create a CNAME record in Route 53 with this name/value combination following the same procedure as before. 
+After the certificate is created we'll need to validate the certificate (we need to prove to AWS that we own this domain by creating a CNAME record in the hosted zone for this domain). Click into the certificate and scroll down to the "Domains" section. There will be a table with two columns named "CNAME name" and "CNAME value". You will need to create a CNAME record in Route 53 with this name/value combination following the same procedure as before.
 
 After the CNAME record is created, wait around 15 minutes and the certificate will be validated and you should see "Success" under the "Status" and "Renewal status" columns:
 

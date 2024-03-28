@@ -4,8 +4,6 @@ summary = "How to install older versions of homebrew packages."
 date = "2023-04-18"
 lastmod = "2023-04-18"
 categories = ["Homebrew", "macOS"]
-toc = false
-featured = false
 +++
 
 It's possible to install older versions of Homebrew packages by saving an older version of the corresponding Ruby file locally and running `brew install <package>.rb`. I'll use the `terraform` package as an example.
@@ -16,7 +14,7 @@ Let's say we have `terraform` version 1.4.5 but we need `terraform` version 1.3.
 
 {{< figure src="/how-to-install-older-versions-of-homebrew-packages/formulas.webp" alt="List of Homebrew formulas" >}}
 
-Since there are a lot of files here, it's easier to just modify the URL. Take the name of the package and append it at the end of the url, adding `/<package-name>.rb` to the URL. The `.rb` is important because all Homebrew packages are defined in Ruby (files with the `.rb` extension). 
+Since there are a lot of files here, it's easier to just modify the URL. Take the name of the package and append it at the end of the url, adding `/<package-name>.rb` to the URL. The `.rb` is important because all Homebrew packages are defined in Ruby (files with the `.rb` extension).
 
 In this case, we'll append `/terraform.rb` to the URL like so: https://github.com/Homebrew/homebrew-core/tree/master/Formula/terraform.rb
 
@@ -88,4 +86,3 @@ $ terraform version
 
 Terraform v1.3.6
 ```
-
