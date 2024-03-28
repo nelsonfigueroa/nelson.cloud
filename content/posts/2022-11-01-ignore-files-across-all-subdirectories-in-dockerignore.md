@@ -4,12 +4,11 @@ summary = "How to recursively ignore files when building Docker images."
 date = "2022-11-01"
 lastmod = "2022-11-01"
 categories = ["Docker"]
-toc = false
 +++
 
 Ignoring files within directories using `.dockerignore` is a bit different compared to `.gitignore`.
 
-To ignore a file across all subdirectories, prefix the filename with `**`. 
+To ignore a file across all subdirectories, prefix the filename with `**`.
 For example, to ignore the file `file.txt` in all subdirectories, add the following to `.dockerignore`:
 
 ```

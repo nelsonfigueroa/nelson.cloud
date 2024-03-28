@@ -4,7 +4,6 @@ summary = "Add a uniqueness constraint between two columns in Ruby on Rails."
 date = "2021-05-11"
 lastmod = "2021-05-11"
 categories = ["Ruby on Rails"]
-toc = false
 +++
 
 Ruby on Rails allows us to define uniqueness between two database table columns (i.e. two model attributes). At the time of this writing, I couldn't find official Rails documentation that shows how to do this in both the migration and the model, hence this post.
@@ -19,7 +18,7 @@ t.index [:attribute, :another_attribute], unique: true
 
 Here's a more realistic example. Assume the following:
 - We have an existing `Account` model
-- We want to create a new table for a `Statement` model. 
+- We want to create a new table for a `Statement` model.
 - An account can have many statements
 - A statement belongs to one account
 - We want a maximum of 1 statement per date, per account (which means we need the `date` and `account_id` attributes to be unique together)

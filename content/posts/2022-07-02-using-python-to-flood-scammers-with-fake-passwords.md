@@ -4,7 +4,6 @@ summary = "Creating a python script to flood scammers with fake credentials."
 date = "2022-07-02"
 lastmod = "2022-07-02"
 categories = ["Cybersecurity", "Python"]
-toc = false
 +++
 
 ## Phishing Attempt via Text Message
@@ -43,7 +42,7 @@ With this information, I could create a Python script to flood the scammers with
 
 ## Creating a Python Script
 
-My plan was to create a loop that would continuously send POST requests to the scammer site. 
+My plan was to create a loop that would continuously send POST requests to the scammer site.
 I wanted to speed up the amount of `POST` requests I could send at a time. I came across the [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) package that could help me with that.
 I also planned on using [Faker](https://faker.readthedocs.io/) to dynamically generate credentials.
 

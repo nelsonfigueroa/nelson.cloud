@@ -4,12 +4,13 @@ summary = "Learn Kubernetes concepts and get hands-on experience with Minikube"
 date = "2020-01-04"
 lastmod = "2020-01-04"
 categories = ["Kubernetes"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 ## Introduction
 
-Kubernetes, also known as "k8s", is an open-source container orchestration tool designed to automate deploying, scaling, and operating application containers. Docker containers can be used to develop and build applications, then Kubernetes can be used to run these applications. You can use other container engines with Kubernetes, but I'll be using Docker since it is the most popular. 
+Kubernetes, also known as "k8s", is an open-source container orchestration tool designed to automate deploying, scaling, and operating application containers. Docker containers can be used to develop and build applications, then Kubernetes can be used to run these applications. You can use other container engines with Kubernetes, but I'll be using Docker since it is the most popular.
 
 Previous Docker experience is recommended for this post to make more sense, at the very least an understanding of container concepts.
 
@@ -117,7 +118,7 @@ And then apply the YAML with the following command:
 $ kubectl apply -f mydeployment.yaml
 ```
 
-The Deployment will ensure that the number of Pods we want are running and available at all times. 
+The Deployment will ensure that the number of Pods we want are running and available at all times.
 
 ### Services
 
@@ -164,7 +165,7 @@ $ kubectl apply -f myservice.yaml
 
 ## Kubernetes Hands-On with Minikube
 
-Minikube is a tool that will start up a single-node Kubernetes cluster on a virtual machine on our computer. It's great for getting comfortable with Kubernetes commands. 
+Minikube is a tool that will start up a single-node Kubernetes cluster on a virtual machine on our computer. It's great for getting comfortable with Kubernetes commands.
 
 ### Installing Minikube
 
@@ -329,7 +330,7 @@ While it's nice looking at a dashboard, I highly recommend getting comfortable w
 
 In an earlier section, I briefly mentioned that you can specify Kubernetes objects using YAML files. We're going to deploy a Ruby on Rails application on Minikube using YAML files. (*Note: The application was created by me for learning purposes, but we could be using any other image for this*)
 
-Using YAML files are useful because they allow you to version control your Kubernetes resources and modify them in a single file. Whenever changes are made to a YAML file, we simply need to run `kubectl apply` as you'll see soon. This process can even be automated in a CI service. 
+Using YAML files are useful because they allow you to version control your Kubernetes resources and modify them in a single file. Whenever changes are made to a YAML file, we simply need to run `kubectl apply` as you'll see soon. This process can even be automated in a CI service.
 
 First, let's start a fresh Minikube instance. Go ahead and delete the current Minikube VM and start another one:
 
@@ -463,6 +464,6 @@ $ minikube delete
 
 ## Conclusion
 
-In this post, I covered the essential Kubernetes concepts. Then, we ran Kubernetes locally using Minikube and manually deployed a Docker image. After that, we deployed an application using YAML files. 
+In this post, I covered the essential Kubernetes concepts. Then, we ran Kubernetes locally using Minikube and manually deployed a Docker image. After that, we deployed an application using YAML files.
 
 There's a lot more functionality that I did not cover, but this is enough to get started. Kubernetes is a complex piece of software and has a tough learning curve, but it is very rewarding. From this point forward, read the Kubernetes documentation and get a deeper understanding.

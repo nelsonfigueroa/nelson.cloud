@@ -4,7 +4,6 @@ summary = "Using a Python script to send fake data to a Ledger phishing site."
 date = "2023-12-27"
 lastmod = "2023-12-27"
 categories = ["Cybersecurity", "Python"]
-toc = false
 +++
 
 ## Fake Ledger Email
@@ -91,4 +90,3 @@ Then I just let it run for a while to give the scammers a ton of fake data.
 {{< figure src="/ledger-scammers/terminal.webp" alt="Terminal output when running Python script." >}}
 
 I hope I made scamming/phishing more difficult for them :)
-

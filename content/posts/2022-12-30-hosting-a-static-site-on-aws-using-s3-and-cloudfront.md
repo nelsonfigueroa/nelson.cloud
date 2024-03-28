@@ -4,7 +4,8 @@ summary = "How to host a static website on Amazon Web Services using S3 and Clou
 date = "2022-12-30"
 lastmod = "2022-12-30"
 categories = ["AWS"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 ## Overview
@@ -76,7 +77,7 @@ Go to the "Objects" tab on the bucket and drop in your static files. Even a sing
 
 Then go to the "Properties" tab and at the very bottom you should see a "Bucket website endpoint". Click on this link and your site should open in your browser. If you see the contents of your HTML file(s) then you are all done here with S3.
 
-The AWS docs provide more information about S3 permissions for static hosting if you're curious: 
+The AWS docs provide more information about S3 permissions for static hosting if you're curious:
 - https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html
 
 ## Creating an ACM SSL Certificate
@@ -124,12 +125,12 @@ After the record(s) are created, wait some time until the certificate is validat
 
 {{< figure src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/certificate-validated.webp" alt="Validated ACM SSL certificate." >}}
 
-This page from the AWS documentation elaborates more on DNS validation for ACM SSL Certificates: 
+This page from the AWS documentation elaborates more on DNS validation for ACM SSL Certificates:
 - https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html
 
 ## Creating a CloudFront Distribution
 
-Next, we need to create a CloudFront distribution. The distribution will use the bucket and ACM certificate we created in order to host our site. 
+Next, we need to create a CloudFront distribution. The distribution will use the bucket and ACM certificate we created in order to host our site.
 
 CloudFront is [Amazon's content delivery network (CDN)](https://aws.amazon.com/cloudfront/). By deploying our site on CloudFront, our site will be available worldwide with low latency.
 
@@ -144,7 +145,7 @@ Under "Origin domain"  paste the value of "Bucket website endpoint" that you cop
 
 {{< figure src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/origin-domain.webp" alt="CloudFront Distribution Origin domain." >}}
 
-Under "Viewer protocol policy" I like to select "Redirect HTTP to HTTPS", essentially disallowing HTTP connections. 
+Under "Viewer protocol policy" I like to select "Redirect HTTP to HTTPS", essentially disallowing HTTP connections.
 
 {{< figure src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/viewer-protocol-policy.webp" alt="CloudFront Distribution viewer protocol policy." >}}
 
@@ -168,7 +169,7 @@ Once the "Last modified" field doesn't say "Deploying" and displays a date, it's
 
 I chose to use the S3 website endpoint as the Origin, but you can also use the S3 bucket itself. I chose the website endpoint because my site has multiple `index.html` templates [which can give errors in CloudFront](https://nelson.cloud/resolving-aws-cloudfront-access-denied-errors/).
 
-More on Origins in the AWS documentation: 
+More on Origins in the AWS documentation:
 - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigins.html
 
 ### Adding a 404 Page to the CloudFront Distribution (Optional)
@@ -188,7 +189,7 @@ Select the following settings:
 - The "Response page path" should be "/404.html" (or whatever you want your 404 page file name to be).
     - You'll need to create a `404.html` template and place it in your S3 Bucket.
 - Select "404: Not Found" for the "HTTP Response code" field
-- Click the "Create custom error response" button 
+- Click the "Create custom error response" button
 
 {{< figure src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/custom-error.webp" alt="Creating a custom error page." >}}
 

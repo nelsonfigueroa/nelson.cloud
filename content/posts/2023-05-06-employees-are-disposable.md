@@ -4,8 +4,6 @@ summary = "Companies are willing to lay off employees despite being profitable."
 date = "2023-05-06"
 lastmod = "2024-02-22"
 categories = ["Opinion"]
-toc = false
-featured = false
 +++
 
 The recent tech layoffs have shown that employees are disposable in the eyes of executives. This isn't surprising though and I'm definitely not the first person that has written about this. I just want to highlight the current situation.
@@ -13,40 +11,40 @@ The recent tech layoffs have shown that employees are disposable in the eyes of 
 {{< figure src="/employees-are-disposable/tech-layoff-tracker.webp" alt="TrueUp tech layoff tracker"
 caption="*Source: [TrueUp: Tech Layoff Tracker](https://www.trueup.io/layoffs)*" >}}
 
-<br><br>
+<br>
 
 It doesn't matter if investor expectations are surpassed, layoffs can still take place.
 {{< figure src="/employees-are-disposable/cnbc-shopify.webp" alt="CNBC Shopfiy headline"
 caption="*Source: [CNBC: Shopify cuts 20% of its workforce; shares surge on earnings beat](https://www.cnbc.com/2023/05/04/shopify-cuts-20percent-of-its-workforce-shares-surge-on-earnings-beat.html)*" >}}
 
-<br><br>
+<br>
 
 It's somewhat understandable if a company is struggling financially and resorts to layoffs. However, there's plenty of companies that are profitable and still lay off the people that earned the company those profits.
 {{< figure src="/employees-are-disposable/microsoft.webp" alt="Polygon Microsoft headline"
 caption="*Source: [Polygon: Microsoft mass layoffs reportedly impact Bethesda, Halo Infinite teams](https://www.polygon.com/23561210/microsoft-layoffs-xbox-bethesda-halo-infinite-343-industries)*" >}}
 
-<br><br>
+<br>
 
 Many companies are not only profitable, but their executives continue to earn huge sums of money amidst layoffs.
 
 {{< figure src="/employees-are-disposable/ars-google.webp" alt="Ars Technica headline"
 caption="*Source: [Ars Technica: Googlers angry about CEO's $226M pay after cuts in perks and 12,000 layoffs](https://arstechnica.com/tech-policy/2023/05/googlers-angry-about-ceos-226m-pay-after-cuts-in-perks-and-12000-layoffs/)*" >}}
 
-<br><br>
+<br>
 
 Aside from layoffs, employees may have their pay frozen even though company revenues are up. That's what happened at Microsoft. Let's not forget that Microsoft is a $2.5 trillion dollar company (at the time of this writing).
 
 {{< figure src="/employees-are-disposable/microsoft-pay-freeze.webp" alt="Techradar headline"
 caption="*Source: [Techradar: Microsoft workers protest 'landmark year' CEO memo following pay freeze](https://www.techradar.com/pro/microsoft-workers-protest-landmark-year-ceo-memo-following-pay-freeze)*" >}}
 
-<br><br>
+<br>
 
 It doesn't matter how much value you've delivered. It doesn't matter how much impact you've had in a company. It doesn't matter how long you've been at a company. You are still disposable.
 
 {{< figure src="/employees-are-disposable/jeremy-joslin.webp" alt="Tweet from @jcj"
 caption="*Source: [Jeremy Joslin (@jcj) on Twitter](https://twitter.com/jcj/status/1616482322278420481)*" >}}
 
-<br><br>
+<br>
 
 This article shows the mindset some very wealthy executives have about the average worker/employee.
 

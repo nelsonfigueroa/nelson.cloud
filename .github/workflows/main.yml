@@ -22,14 +22,18 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v0.123.0/hugo_extended_0.123.0_linux-amd64.deb --output-document hugo.deb
           sudo dpkg -i hugo.deb
-      - name: Build Site
-        run: |
-          hugo version
-          hugo --minify --gc
       - name: Install AWS CLI
         run: |
           pip3 install --upgrade setuptools
           pip3 install awscli --upgrade --user
+      - name: Initialize submodule
+        run: |
+          git submodule init
+          git submodule update
+      - name: Build Site
+        run: |
+          hugo version
+          hugo --minify --gc
       - name: Push to S3 and CloudFront
         run: |
           aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --delete

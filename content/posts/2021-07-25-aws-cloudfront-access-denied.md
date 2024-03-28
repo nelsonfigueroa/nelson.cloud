@@ -4,7 +4,6 @@ summary = "Resolving Access Denied Errors in a CloudFront Distribution that uses
 date = "2021-07-25"
 lastmod = "2024-03-15"
 categories = ["AWS"]
-toc = false
 +++
 
 If you're seeing "Access Denied" errors on CloudFront and [the official troubleshooting](https://aws.amazon.com/premiumsupport/knowledge-center/s3-website-cloudfront-error-403/) docs aren't helping, you might be running into the following issue.

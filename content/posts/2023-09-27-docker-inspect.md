@@ -4,7 +4,6 @@ summary = "Using `docker inspect` to determine the entrypoint for a given docker
 date = "2023-09-27"
 lastmod = "2023-09-27"
 categories = ["Docker"]
-toc = false
 +++
 
 You can use `docker inspect` to determine the entrypoint of a docker image.
@@ -12,7 +11,7 @@ You can use `docker inspect` to determine the entrypoint of a docker image.
 The command looks like this:
 
 ```shell
-docker inspect --type=image --format='{{json .Config.Entrypoint}}' <image-name> 
+docker inspect --type=image --format='{{json .Config.Entrypoint}}' <image-name>
 ```
 
 And here's a real-world example (assuming you have the `hashicorp/terraform` image downloaded):

@@ -4,7 +4,6 @@ summary = "Using Python to flood scammers with fake information."
 date = "2024-02-22"
 lastmod = "2024-02-22"
 categories = ["Python", "Cybersecurity"]
-toc = false
 +++
 
 If you've been around you know I enjoy spamming phishing/scamming sites. I recently received this fake Chase email and decided to go down another phishing/scamming attempt.

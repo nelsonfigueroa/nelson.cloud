@@ -4,7 +4,8 @@ summary = "The differences of get vs list RBAC verbs in Kubernetes"
 date = "2024-03-23"
 lastmod = "2024-03-23"
 categories = ["Kubernetes", "Cybersecurity"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 ## TL;DR

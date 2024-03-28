@@ -4,7 +4,6 @@ summary = "How to add environment variables to Serverless functions"
 date = "2022-09-10"
 lastmod = "2022-09-10"
 categories = ["Serverless"]
-toc = false
 +++
 
 Environment variables can be set for each individual Serverless function or at the provider level for all functions.
@@ -71,5 +70,3 @@ functions:
 ```
 
 In this case, both `function1` and `function2` will have both the `STAGE` and `REGION` environment variables set, but `function1` will have `S3_BUCKET_NAME` set while `function2` will have `TABLE_NAME` set.
-
-

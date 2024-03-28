@@ -4,7 +4,6 @@ summary = "Using canarytokens.org to generate fake AWS API keys and then publish
 date = "2023-06-16"
 lastmod = "2023-06-16"
 categories = ["Cybersecurity"]
-toc = false
 +++
 
 I recently discovered [canarytokens.org](https://canarytokens.org), which helps detect if your infrastructure has been breached through various methods. For example, [canarytokens.org](https://canarytokens.org) lets me generate fake AWS API keys and receive an email notification when they are used. So I did exactly that just to see what would happen.

@@ -4,7 +4,8 @@ summary = "How to sort Ruby hashes."
 date = "2022-12-04"
 lastmod = "2022-12-04"
 categories = ["Ruby"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 ## Sorting Hashes by Key
@@ -124,4 +125,3 @@ The code above will result in `items` being a hash again:
 ```ruby
 {:a=>3, :b=>2, :c=>1}
 ```
-

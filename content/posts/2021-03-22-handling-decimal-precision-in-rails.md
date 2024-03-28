@@ -4,7 +4,8 @@ summary = "Set precision and scale to decimal type database columns."
 date = "2021-03-22"
 lastmod = "2021-03-22"
 categories = ["Ruby on Rails"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 Ruby on Rails allows us to specify how precise we want decimals to be by defining precision and scale in database migrations. Rails also provides a way of adding front-end validation to forms that accept decimal values. I'll be using an `expense` model that lets a user track expense amounts as an example. I'll also point out differences between SQLite and PostgreSQL in regards to saving decimals beyond constraints.

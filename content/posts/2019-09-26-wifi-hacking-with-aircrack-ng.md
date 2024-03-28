@@ -4,7 +4,8 @@ summary = "A guide to using aircrack-ng to bruteforce a router's password"
 date = "2019-09-26"
 lastmod = "2019-09-26"
 categories = ["Cybersecurity"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 ## Introduction

@@ -4,7 +4,8 @@ summary = "How to run a shell command against multiple EC2 instances using AWS S
 date = "2024-01-18"
 lastmod = "2024-01-18"
 categories = ["AWS", "Shell"]
-toc = true
+ShowToc = true
+TocOpen = true
 +++
 
 In AWS, you can use [AWS Systems Manager](https://aws.amazon.com/systems-manager/) to run commands on any EC2 Instances that have the [AWS Systems Manager Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html) installed. AWS Systems Manager has a lot more functionality than what I'm demonstrating here, but this is a specific use case.

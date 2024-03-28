@@ -4,7 +4,6 @@ summary = "Comparing the differences between ~ and ~* tildes in NGINX configurat
 date = "2022-06-06"
 lastmod = "2022-06-06"
 categories = ["NGINX"]
-toc = false
 +++
 
 The difference is that `~` is case-sensitive while `~*` is not case-sensitive.
