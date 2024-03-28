@@ -1,1 +1,1 @@
-Repo for my personal site [nelson.cloud](https://nelson.cloud). Built using [Hugo](https://gohugo.io). My site uses a heavily stripped down version of the [LoveIt](https://hugoloveit.com/) theme by [dillonzq](https://dillonzq.com/).
+Repo for my personal site [nelson.cloud](https://nelson.cloud). Built using [Hugo](https://gohugo.io). My site uses a modified version of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
