@@ -81,6 +81,11 @@ pre.entry-header {
     flex-wrap: wrap;
 }
 
+/* code copy button */
+.copy-code {
+    padding: 5px 10px;
+}
+
 /* override theme colors */
 :root {
     --gap: 24px;
