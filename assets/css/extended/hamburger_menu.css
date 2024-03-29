@@ -13,6 +13,7 @@
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
+    font-weight: bold;
 }
 
 .menu li+li {
@@ -24,7 +25,6 @@
 }
 
 .menu .active {
-    font-weight: 500;
     border-bottom: 2px solid currentColor;
 }
 
