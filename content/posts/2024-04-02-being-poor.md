@@ -8,7 +8,7 @@ categories = ["Random", "Personal"]
 
 I came across this article and it hit pretty deep: https://whatever.scalzi.com/2005/09/03/being-poor/
 
-This post is and extension of that link with my own personal experiences.
+This post is an extension of that link with my own personal experiences.
 
 ---
 
