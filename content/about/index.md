@@ -70,7 +70,7 @@ Contributed practical examples for the following commands:
 
 ## Interests
 
-**Technology**: Programming/Coding, DevOps/Cloud Infrastructure, Cybersecurity, Privacy
+**Technology**: Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 
 **Hobbies**: Videogames, Electric Guitar
 
@@ -81,29 +81,27 @@ Contributed practical examples for the following commands:
 - [Stardew Valley](https://www.stardewvalley.net/)
 
 **Shows**:
-- Better Call Saul
-- Breaking Bad
-- The Mandalorian
-- The Eric Andre Show
-- The Boys
-- Succession
-- Invincible
-- BoJack Horseman
-- Silicon Valley
-- The Boondocks
-- The Bear
+- [Better Call Saul](https://www.imdb.com/title/tt3032476/)
+- [Breaking Bad](https://www.imdb.com/title/tt0903747/)
+- [The Mandalorian](https://www.imdb.com/title/tt8111088/)
+- [The Eric Andre Show](https://www.imdb.com/title/tt2244495/)
+- [The Boys](https://www.imdb.com/title/tt1190634/)
+- [Succession](https://www.imdb.com/title/tt7660850/)
+- [Invincible](https://www.imdb.com/title/tt6741278/)
+- [BoJack Horseman](https://www.imdb.com/title/tt3398228/)
+- [Silicon Valley](https://www.imdb.com/title/tt2575988/)
+- [The Boondocks](https://www.imdb.com/title/tt0373732/)
+- [The Bear](https://www.imdb.com/title/tt14452776/)
 
-**Music**: I mainly listen to Death Metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs (all YouTube links):
+**Music**: I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs (all YouTube links):
 
-- [Pure Wrath - In Cold World](https://www.youtube.com/watch?v=8OcqfKqxd8o)
-- [Municipal Waste - Parole Violators](https://www.youtube.com/watch?v=2vO_D8XuA_o)
-- [The Black Dahlia Murder - To a Breathless Oblivion](https://www.youtube.com/watch?v=K0lhfICzWKI)
+- [Municipal Waste - Mind Eraser](https://www.youtube.com/watch?v=ywJiCpdVv7o)
+- [The Black Dahlia Murder -  On Stirring Seas of Salted Blood](https://www.youtube.com/watch?v=YScz1fq1yQk)
 - [Mare Cognitum - Crimson Abyss: NGC 2237](https://www.youtube.com/watch?v=0kdx79x90HI)
 - [Death - Perennial Quest](https://www.youtube.com/watch?v=qcVp-ggYIEc)
 - [Nightbringer - The Grave-Earth's Son](https://www.youtube.com/watch?v=EGA3vcKxYec)
-- [Vektor - Cygnus Terminal](https://www.youtube.com/watch?v=BpL3j8sCPAw)
-- [Beyond Creation - Theatrical Delirium](https://www.youtube.com/watch?v=aBNb3HR-ihA)
 - [Hooded Menace - Those Who Absorb The Night](https://www.youtube.com/watch?v=jiuTCf9w-_E)
+- [Slayer - Chemical Warfare](https://www.youtube.com/watch?v=DuiR1iNsyvc)
 
 ## Links
 - [GitHub](https://github.com/nelsonfigueroa)
