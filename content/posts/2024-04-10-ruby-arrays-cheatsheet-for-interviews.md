@@ -1,0 +1,546 @@
++++
+title = "Ruby Arrays Cheatsheet"
+summary = "Ruby array basics and methods to learn fast or refresh your memory."
+date = "2024-04-10"
+lastmod = "2024-04-10"
+categories = ["Ruby"]
+ShowToc = true
+TocOpen = false
++++
+
+This is a cheatsheet I made for myself when studying for ([Leetcode](https://leetcode.com/)/[Hackerrank](https://www.hackerrank.com/))-style interviews. It's organized in a way that makes sense to me when I'm trying to solve an array problem. I figured I would make it public incase it can help others :)
+
+All examples were run using the [Ruby v3.2.3 REPL](https://www.rubyguides.com/2018/12/what-is-a-repl-in-ruby/).
+
+## Initializing an Array
+
+### Empty Array
+
+```ruby
+arr = Array.new
+# => []
+```
+
+Alternative way:
+
+```ruby
+arr = []
+# => []
+```
+
+### Array with Values
+
+Initializing an array of integers:
+
+```ruby
+arr = [1, 2, 3, 4, 5]
+# => [1, 2, 3, 4, 5]
+```
+
+Initializing an array of strings:
+
+```ruby
+arr = ["A", "B", "C"]
+# => ["A", "B", "C"]
+```
+
+You can do the above with any type.
+
+Initializing an array of symbols:
+
+```ruby
+arr = [:A, :B, :C]
+# => [:A, :B, :C]
+```
+
+#### Shorthand Notations
+
+With shorthand notations there is no need to add quotes for strings or colons for symbols. There's also no need to add commas after each element. Just separate each element with a space.
+
+Initializing an array of strings using `%w`:
+
+```ruby
+arr = %w[A B C D E]
+# => ["A", "B", "C", "D", "E"]
+```
+
+Initializing an array of symbols using `%i`:
+
+```ruby
+arr = %i[A B C D E]
+# => [:A, :B, :C, :D, :E]
+```
+
+## Adding Elements
+
+### At the Beginning of the Array
+
+Add elements to the beginning of the array with `unshift()` or `prepend()`, which is an alias for `unshift()`.
+
+```ruby
+arr = [1, 2, 3]
+arr.unshift(0)
+# => [0, 1, 2, 3]
+
+arr
+# => [0, 1, 2, 3]
+```
+
+```ruby
+arr = [1, 2, 3]
+arr.prepend(0)
+# => [0, 1, 2, 3]
+
+arr
+# => [0, 1, 2, 3]
+```
+
+### At the End of the Array
+
+Add elements to the end of the array with `push()` or `append()`, which is an alias for `push()`:
+
+```ruby
+arr = [1, 2, 3]
+arr.append(4)
+
+arr
+# => [1, 2, 3, 4]
+```
+
+```ruby
+a = [1, 2, 3]
+a.push(4)
+
+a
+# => [1, 2, 3, 4]
+```
+
+You can use `<<` as a shortcut to add elements to the end of an array:
+
+```ruby
+arr = []
+
+arr << 1 # [1]
+arr << 2 # [1, 2]
+arr << 3 # [1, 2, 3]
+
+arr
+# => [1, 2, 3]
+```
+
+If you add arrays, the arrays added to the first one will be appended in the order in which they are added:
+
+```ruby
+[1, 2, 3] + [4]
+# => [1, 2, 3, 4]
+
+[1, 2, 3] + [7] + [6] + [5] + [4]
+# => [1, 2, 3, 7, 6, 5, 4]
+```
+
+You can add arrays containing multiple elements and they will be appended:
+
+```ruby
+[1, 2, 3] + [1, 2, 3]
+# => [1, 2, 3, 1, 2, 3]
+```
+
+### At a Specific Index
+
+Use `insert()` to add an element at a specific index of an array. The `insert()` method accepts multiple parameters but the first one must be an index. This method modifies the array in-place.
+
+In this example, `"A"` is being added at index 2:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.insert(2, "A")
+# => ["A", "B", "A", "C"]
+
+arr
+# => ["A", "B", "A", "C"]
+```
+
+Multiple elements can be added at once:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.insert(2, "Z", "Z", "Z")
+# => ["A", "B", "Z", "Z", "Z", "C"]
+
+arr
+# => ["A", "B", "Z", "Z", "Z", "C"]
+```
+
+## Removing Elements
+
+### At the Beginning of the Array
+
+Remove an element from the beginning of an array with `shift()`. This method returns the removed element and modifies the array in-place:
+
+```ruby
+arr = [1, 2, 3]
+arr.shift
+# => 1
+
+arr
+# => [2, 3]
+```
+
+### At the End of the Array
+
+Remove an element from the end of the array with `pop()`. This method returns the removed element and modifies the array in-place:
+
+```ruby
+arr = [1, 2, 3]
+arr.pop
+# => 3
+
+arr
+# => [1, 2]
+```
+
+Delete all instances of an element by passing in that element to `.delete()`. This method returns the removed element and modifies the array in-place:
+
+```ruby
+arr = [1, 2, 3, 3, 3]
+arr.delete(3)
+# => 3
+
+arr
+# => [1, 2]
+```
+
+Attempting to delete an element that isn't present returns `nil`:
+
+```ruby
+arr = [1, 2, 3, 3, 3]
+arr.delete(5)
+# => nil
+```
+
+Note that you cannot delete multiple values in one call of `.delete()`. But it is possible to do it by subtracting arrays. Keep reading after this example to see how:
+
+```ruby
+arr = [1, 2, 3, 3, 3]
+arr.delete(1,2,3)
+# (irb):83:in `delete': wrong number of arguments (given 3, expected 1) (ArgumentError)
+```
+
+You can subtract an array to remove all occurrences of an element and get the resulting array as a return value, but it does not modify the array in-place:
+
+``` ruby
+arr = [1, 2, 3, 3, 3]
+arr - [3]
+# => [1, 2]
+
+arr
+# => [1, 2, 3, 3, 3]
+```
+
+Subtracted arrays can have multiple elements:
+
+```ruby
+[1, 2, 3, 4, 4, 5, 5, 6, 6, 7, 7] - [4, 5, 6]
+# => [1, 2, 3, 7, 7]
+```
+
+Subtracting arrays with elements that aren't present in the first array does nothing:
+
+```ruby
+[1, 2, 3] - [4]
+# => [1, 2, 3]
+```
+
+### At a Specific Index
+
+We can delete an element at a specific index using `delete_at(index)`. The `.delete_at()` method returns the element that is removed. Passing in an index that is out of bounds returns `nil`:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.delete_at(1)
+# => "B"
+
+arr
+# => ["A", "C"]
+
+arr.delete_at(100)
+# => nil
+```
+
+## Retrieving Elements
+
+### Element at a Specific Index
+
+Like in most programming languages, an element can be retrieved using `my_array[index]` where `index` is an integer.
+
+```ruby
+arr = ["A", "B", "C"]
+arr[1]
+# => "B"
+```
+
+We can also use `.at()` to get the element at a certain index. It works the same way as the previous example:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.at(1)
+# => "B"
+```
+
+Negative indexes start at the end of the array.
+
+```ruby
+arr = ["A", "B", "C"]
+arr[-1]
+# => "C"
+arr[-2]
+# => "B"
+arr[-3]
+# => "A"
+```
+
+Out of bounds indexes return `nil`:
+
+```ruby
+arr = ["A", "B", "C"]
+arr[5]
+# => nil
+arr[-4]
+# => nil
+```
+
+### The First Element
+
+There is a handy `.first()` method to retrieve the first element of an array:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.first
+# => "A"
+```
+
+### The Last Element
+
+There's also a `.last()` method to retrieve the last element of an array:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.last
+# => "C"
+```
+
+## Sorting Arrays
+
+The `sort()` method returns a sorted version of the array it is used on. This does not modify the original array:
+
+```ruby
+arr = ["E", "D", "A", "C", "B"]
+arr.sort
+# => ["A", "B", "C", "D", "E"]
+
+arr
+# => ["E", "D", "A", "C", "B"]
+```
+
+Use `sort!()` to modify the array in-place:
+
+```ruby
+arr = ["E", "D", "A", "C", "B"]
+arr.sort!
+# => ["A", "B", "C", "D", "E"]
+
+arr
+# => ["A", "B", "C", "D", "E"]
+```
+
+Sorting works with other types of elements as well.
+
+Sorting integers:
+```ruby
+arr = [5, 9, 0, 3, 4]
+# => [5, 9, 0, 3, 4]
+arr.sort
+# => [0, 3, 4, 5, 9]
+```
+
+Sorting symbols:
+```ruby
+arr = [:red, :blue, :green, :cyan]
+# => [:red, :blue, :green, :cyan]
+arr.sort
+# => [:blue, :cyan, :green, :red]
+```
+
+Sorting multi-character strings:
+```ruby
+arr = ["someone", "hire", "me", "please"]
+# => ["someone", "hire", "me", "please"]
+arr.sort
+# => ["hire", "me", "please", "someone"]
+```
+```ruby
+arr = ["aaaa", "aa", "aaa", "a"]
+# => ["aaaa", "aa", "aaa", "a"]
+arr.sort
+# => ["a", "aa", "aaa", "aaaa"]
+ ```
+
+> Note: There's also a `sort_by()` method but I am too dumb to come up with good examples. You should read about it in this article instead: [How to Sort Arrays & Hashes in Ruby](https://www.rubyguides.com/2017/07/ruby-sort/).
+
+## Looping Through Arrays
+
+### Each Element
+
+Use `each()` to iterate through each element in an array:
+```ruby
+arr = ["A", "B", "C", "D", "E"]
+
+arr.each do |i|
+  puts i
+end
+
+# output:
+# A
+# B
+# C
+# D
+# E
+```
+
+### Each Index
+
+Use `each_index()` to iterate through each index in an array beginning at 0:
+
+```ruby
+arr = ["A", "B", "C", "D", "E"]
+
+arr.each_index do |i|
+  puts i
+end
+
+# output:
+# 0
+# 1
+# 2
+# 3
+# 4
+```
+
+### Element and Index
+
+Use `each_with_index()` to iterate through both elements and indexes at the same time. The first variable in the `| |` is the element, the second one is the index.
+
+```ruby
+arr = ["A", "B", "C", "D", "E"]
+
+arr.each_with_index do |element, index|
+  puts "#{index}: #{element}"
+end
+
+# output:
+# 0: A
+# 1: B
+# 2: C
+# 3: D
+# 4: E
+```
+## Other Things to Know
+
+### Arrays Can Contain Multiple Types
+
+For example:
+
+```ruby
+arr = []
+
+arr << 1
+arr << "a"
+arr << :my_symbol
+arr << [1,2]
+arr << {hash_key: "hash_value"}
+
+arr
+# => [1, "a", :my_symbol, [1, 2], {:hash_key=>"hash_value"}]
+```
+
+### Getting the Index of an Element
+
+Use `index()` and pass in the element you are looking for to retrieve its index.
+
+```ruby
+arr = ["A", "B", "C"]
+arr.index("B")
+# => 1
+```
+
+If there are multiple occurrences of an element, `index()` will return the index of the first occurrence of the element:
+
+```ruby
+arr = ["A", "B", "B", "B", "C"]
+arr.index("B")
+# => 1
+```
+
+If an element isn't present in the array, `index()` returns `nil`:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.index("Z")
+# => nil
+```
+
+### Reversing Elements in an Array
+
+Elements in an array can be reversed with `reverse()`. This method returns an array with elements sorted in reverse and does not modify the original array:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.reverse
+# => ["C", "B", "A"]
+
+arr
+# => ["A", "B", "C"]
+```
+
+The `reverse!()` method does the same thing but it modifies the array in-place:
+
+```ruby
+arr = ["A", "B", "C"]
+arr.reverse!
+# => ["C", "B", "A"]
+
+arr
+# => ["C", "B", "A"]
+```
+
+### Converting Multi-dimensional Array into 1-dimensional Array
+
+We can use `.flatten()` to recursively extract elements from all arrays within an array and return an array with only elements. The original array remains unchanged.
+
+```ruby
+arr = ["A", ["B", "C"], ["D", ["E", ["F"]]]]
+arr.flatten
+# => ["A", "B", "C", "D", "E", "F"]
+
+arr
+# => ["A", ["B", "C"], ["D", ["E", ["F"]]]]
+```
+
+We can use `.flatten!()` to modify the array in-place:
+
+```ruby
+arr = ["A", ["B", "C"], ["D", ["E", ["F"]]]]
+arr.flatten!
+# => ["A", "B", "C", "D", "E", "F"]
+
+arr
+# => ["A", "B", "C", "D", "E", "F"]
+```
+
+## References
+- https://gist.github.com/mkdika/d1a9c72b6d2b86547f2269e82c235e83
+- https://www.rubyguides.com/2017/07/ruby-sort/
+- https://apidock.com/ruby/v2_5_5/Enumerable/sort_by
+- https://www.shortcutfoo.com/app/dojos/ruby-arrays/cheatsheet
+- https://apidock.com/ruby/Array/
+- https://ruby-doc.org/core-3.1.0/Array.html
