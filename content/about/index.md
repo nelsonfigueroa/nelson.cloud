@@ -95,6 +95,7 @@ Contributed practical examples for the following commands:
 
 **Music**: I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs (all YouTube links):
 
+- [Mind Prisoner - 3:33](https://www.youtube.com/watch?v=-gYSzrIIvMU)
 - [Municipal Waste - Mind Eraser](https://www.youtube.com/watch?v=ywJiCpdVv7o)
 - [The Black Dahlia Murder -  On Stirring Seas of Salted Blood](https://www.youtube.com/watch?v=YScz1fq1yQk)
 - [Mare Cognitum - Crimson Abyss: NGC 2237](https://www.youtube.com/watch?v=0kdx79x90HI)
