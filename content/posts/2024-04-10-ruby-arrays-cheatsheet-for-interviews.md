@@ -444,6 +444,65 @@ end
 # 3: D
 # 4: E
 ```
+
+## Modifying All Elements in an Array
+
+We can use `map()` to modify all elements in an array.
+
+For example, to increment all integers in an array we can do the following:
+
+```ruby
+arr = [1, 2, 3, 4, 5]
+arr.map { |i| i += 1 }
+#  => [2, 3, 4, 5, 6]
+
+arr
+# => [1, 2, 3, 4, 5]
+```
+
+To modify the elements/array in-place, add an exclamation point:
+
+```ruby
+arr = [1, 2, 3, 4, 5]
+arr.map! { |i| i += 1 }
+#  => [2, 3, 4, 5, 6]
+
+arr
+# => [2, 3, 4, 5, 6]
+```
+
+Here's another example where string names in an array are capitalized appropriately:
+
+```ruby
+names = ["nelson", "cindy", "john", "sophia"]
+names.map! { |name| name.capitalize }
+# => ["Nelson", "Cindy", "John", "Sophia"]
+```
+
+There is a shorthand notation when you want to run a method against all elements in an array. We can use `&:method_name`. The following example achieves the exact same thing as the previous example:
+
+```ruby
+names = ["nelson", "cindy", "john", "sophia"]
+names.map!(&:capitalize)
+# => ["Nelson", "Cindy", "John", "Sophia"]
+```
+
+Here's another example using shorthand notation to convert all strings to symbols:
+
+```ruby
+arr = ["A", "B", "C", "D", "E"]
+arr.map!(&:to_sym)
+# => [:A, :B, :C, :D, :E]
+```
+
+If you want to do more advanced things, like modify elements conditionally, you will need to stick to the long format. This example replaces all `nil` elements with `0` but leaves other elements unchanged:
+
+```ruby
+data = [100, 200, nil, 400, 500, nil]
+data.map! { |i| i.nil? ? i = 0 : i = i }
+# => [100, 200, 0, 400, 500, 0]
+```
+
 ## Other Things to Know
 
 ### Arrays Can Contain Multiple Types
@@ -544,3 +603,5 @@ arr
 - https://www.shortcutfoo.com/app/dojos/ruby-arrays/cheatsheet
 - https://apidock.com/ruby/Array/
 - https://ruby-doc.org/core-3.1.0/Array.html
+- https://www.rubyguides.com/2018/10/ruby-map-method/
+- https://womanonrails.com/one-line-map-ruby
