@@ -1,8 +1,0 @@
-<header id="banner">
-    <nav>
-        <!-- <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> -->
-        <a href="{{ .Site.BaseURL }}">/home</a> {{ range .Site.Menus.main.ByWeight -}}
-            {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">/{{- .Name -}}</a> {{ .Post }}
-        {{- end }}<button class="theme-toggle"></button>
-    </nav>
-</header>
