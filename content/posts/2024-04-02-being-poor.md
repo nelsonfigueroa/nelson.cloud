@@ -15,6 +15,10 @@ Being poor is having to stay home alone as a kid because your parents can’t af
 
 Being poor is being afraid that your parents may get shot while you’re in elementary school.
 
+Being poor is empty cans and bottles on the street catching your eye
+
+Being poor is collecting cans on the street with your mom for some recycling money
+
 Being poor is taking extra care of your clothes because you know your parents can’t buy you more.
 
 Being poor is feeling guilty when your parents buy you something.

@@ -11,6 +11,9 @@ This is a list of blogs I enjoy along with a recommended post. This is essential
 **[Julia Evans](https://jvns.ca/)**
 - [Blog about what you've struggled with](https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/)
 
+**[Akshay Khot - Write Software, Well](https://www.writesoftwarewell.com/)**
+- [How I Read Rails Source Code](https://www.writesoftwarewell.com/how-to-read-rails-codebase/)
+
 **[Xe Iaso](https://xeiaso.net/)**
 - [The Layoff](https://xeiaso.net/blog/2024/the-layoff/)
 
