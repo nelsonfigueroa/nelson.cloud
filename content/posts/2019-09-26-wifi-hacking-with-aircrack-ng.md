@@ -2,7 +2,7 @@
 title = "Wifi Hacking with aircrack-ng"
 summary = "A guide to using aircrack-ng to bruteforce a router's password"
 date = "2019-09-26"
-lastmod = "2019-09-26"
+lastmod = "2024-04-14"
 categories = ["Cybersecurity"]
 ShowToc = true
 TocOpen = true
@@ -10,9 +10,7 @@ TocOpen = true
 
 ## Introduction
 
-This post is essentially a re-write of notes I took around 2 years ago. Learning to use `aircrack-ng` and break into my own router was both fun but also a bit shocking as to how easily someone could do this. The difficult part is guessing the password to a router due to processing power needed, but sniffing wifi networks is a trivial process.
-
-There are other methods of doing this as well. In fact, I discovered [bettercap](https://github.com/bettercap/bettercap) earlier this year and it is easy to use. Perhaps I'll write a post using that tool in the future.
+> This post is an organized re-write of notes I took in 2017. As such, this guide may now be outdated.
 
 I used [Kali Linux](https://www.kali.org/) for the entire process, but the process should be very similar for any Linux distribution. `aircrack-ng` is already included on Kali Linux but you can install it on any Linux OS.
 
@@ -34,7 +32,7 @@ To use `aircrack-ng` you'll need a wireless network adapter that has monitor mod
 
 ## Installation
 
-If you're not on Kali Linux, `aircrack-ng` is most likely available through your preferred package manager. For Windows users, refer to the [official aircrack-ng site](https://www.aircrack-ng.org/) to download the suite.
+If you're not on Kali Linux, `aircrack-ng` is most likely available through your preferred package manager. For Windows users, refer to the [official aircrack-ng site](https://www.aircrack-ng.org/) to download the suite. On MacOS using [Homebrew](https://brew.sh/) you can run `brew install aircrack-ng`
 
 ## Setting up monitor mode
 
