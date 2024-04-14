@@ -2,7 +2,7 @@
 title = "My Favorite Privacy Apps and Services"
 summary = "My favorite privacy-respecting tools, apps, and services."
 date = "2020-12-31"
-lastmod = "2024-03-26"
+lastmod = "2024-04-14"
 categories = ["Privacy"]
 ShowToc = true
 TocOpen = true
@@ -14,7 +14,15 @@ This is a collection of my most used privacy tools and services. I have not been
 
 **Official site:** [https://www.mozilla.org/](https://www.mozilla.org/en-US/firefox/new/)
 
-Firefox has always been a great alternative to Chrome for privacy purposes. The team continues to improve privacy with every iteration. For example, [Firefox will have a cache partitioning feature soon](https://arstechnica.com/gadgets/2020/12/firefox-v85-will-improve-its-cache-partitioning-for-stronger-privacy/) that will enhance privacy even more. Other browsers like Chrome and Safari already have this feature, but Safari isn't as extensible as Firefox, and Chrome offers no privacy from Google itself. For the average user it's probably best to go with FireFox and add the uBlock Origin extension to block advertisements everywhere.
+Firefox has always been a great alternative to Chrome for privacy purposes. Firefox is, in my opinion, the only real alternative to Chrome and Chromium-based browsers. Sure there's also Safari but the support for extensions is butchered. If I can't install [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) on a browser, I don't use it.
+
+## uBlock Origin
+
+**Official site:**: [https://ublockorigin.com/](https://ublockorigin.com/)
+
+uBlock Origin is probably the best adblocker out there. I debated adding it to my list because I thought it was the norm to install an adblocker but I've come across so many people that, for whatever reason, do not use any sort of adblocker.
+
+If you use a browser (aside from Safari) and you don't have this extension installed...what are you doin'??
 
 ## Tor
 
@@ -34,43 +42,37 @@ It has all the essential features that you'd expect from a modern messaging appl
 
 **Official site:** [https://mullvad.net/en/](https://mullvad.net/en/)
 
-Mullvad VPN is open-source, does not log any activity (and has been audited to prove it), and afforable. I know many people out there opt to use free VPNs, but there's a 99% chance they're selling your information to marketing companies. It's much better to pay for a VPN.
+Mullvad VPN does not log any activity (and has been audited to prove it), and is pretty afforable. I know many people out there opt to use free VPNs, but there's a 99% chance they're selling your information to marketing companies. It's much better to pay for a VPN.
+
+The source code for the Mullvad client applications [is open-source](https://github.com/mullvad/mullvadvpn-app).
 
 Mullvad even encourages you to remain as anonymous as possible when buying their service. You don't need an email to sign up and you can pay with Bitcoin.
 
 Mullvad VPN is based in Sweden, which has generally good privacy laws.
 
-## VSCodium
+## Proton VPN
 
-**Official site:** [https://vscodium.com/](https://vscodium.com/)
+**Official site:** [https://protonvpn.com/](https://protonvpn.com/)
 
-VSCodium is VSCode with telemetry disabled by default. When the VSCode binary is downloaded from Microsoft, it comes with telemetry automatically enabled. You can build VSCode from source and avoid telemetry, but it's more convenient to simply download VSCodium. If you're using Homebrew, it's as easy as running `brew install --cask vscodium`.
+I eventually switched to Proton VPN since I bought their subscription suite that includes email and cloud storage. My experience with Proton VPN has been very positive and it's just as good as Mullvad from what I can tell. Proton VPN (and the rest of their services) are based in Switzerland which has good privacy laws.
 
-## Bitwarden
-
-**Official site:** [https://bitwarden.com/](https://bitwarden.com/)
-
-Bitwarden is a free and open source password manager. It's very similar to other password managers like LastPass. There is a paid tier that's useful for organizations, but for individuals you're probably fine with the free tier. [They have been audited as of 2020](https://bitwarden.com/blog/post/bitwarden-network-security-assessment-2020/) to ensure their security is good. They have apps available on all major platforms so you always have your passwords handy.
-
-## ProtonMail
+## Proton Mail
 
 **Official site:** [https://protonmail.com/](https://protonmail.com/)
 
-ProtonMail is free and open source email based in Switzerland. Emails are encrypted. Keep in mind email isn't private by design, as someone can forward your email and all of a sudden you lose any encryption benefits. I personally don't mind if people forward my emails. I decided to use Protonmail to simply avoid my emails being mined for data.
+Proton Mail is an email service based in Switzerland. Your emails are encrypted and aren't used for training AI or selling advertisements to you.
 
-[This article](https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html) points out some fundamental flaws with email and why it can't be 100% private. It's a bit pessimistic in my opinion, but it's still worth a read. I think it's okay to keep using ProtonMail for the sole purpose of preventing my emails from being scanned and my data sold.
+The UI/UX isn't as great as something like GMail but I think it's worth the trade-off. They also support bringing in your own domain to use for emailing.
 
-## DuckDuckGo
-
-**Official site:** [https://duckduckgo.com/](https://duckduckgo.com/)
-
-Unlike Google, DuckDuckGo does not sell user information and does not track users as they search. As a search engine, DuckDuckGo generally gets the job done. I still find myself using Google from time to time, but DuckDuckGo has definitely been improving. I hope that some day I'll be able to completely leave Google behind.
+You can create a free account to try it out.
 
 ## Little Snitch
 
 **Official site:** [https://www.obdev.at/products/littlesnitch/index.html](https://www.obdev.at/products/littlesnitch/index.html)
 
-Little Snitch is a macOS-only application firewall that runs on your Mac and monitors all incoming and outgoing connections. It allows you to allow or deny connections as needed and gives you plenty of information about what your applications are connecting to. This is a paid app (and there's a free trial), but I think it's worth it.
+Little Snitch is a macOS-only application firewall that runs on your Mac and monitors all incoming and outgoing connections. It allows you to allow or deny connections as needed and gives you plenty of information about what your applications are connecting to. There's also [curated blocklists](https://www.obdev.at/products/littlesnitch-mini/blocklists.html) you can add to Little Snitch to block things like ads on your entire machine.
+
+This is a paid app (and there's a free trial), but I think it's worth it.
 
 If you want a free alternative, check out [LuLu](https://objective-see.com/products/lulu.html). It has less features, but it's worth a try if you want to see what your machine is connecting to. The same developer has other Mac-related applications that may be useful: [objective-see.com](https://objective-see.com/index.html).
 
