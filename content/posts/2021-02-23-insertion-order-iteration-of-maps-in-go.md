@@ -8,7 +8,7 @@ categories = ["Go"]
 
 In Go, map contents are randomized. Go doesn't care about insertion order. Elements in a map are always random when iterating through them.
 
-To iterate through map contents in insert order, we need to create a slice that keeps track of each key. Then we iterate through this slice and use its contents (which are the map keys) to access the map's values in the order in which they were inserted:
+To iterate through map contents in insertion order, we need to create a slice that keeps track of each key. Then we iterate through this slice and use its contents (which are the map keys) to access the map's values in the order in which they were inserted:
 
 ```go
 package main
