@@ -32,12 +32,13 @@ end
 
 In this case, if a statement has an existing statement record for the current month, the action should redirect the user to `account_path`. This part works. However, redirects *do not* stop execution of the remaining code. This means that in the code above, it is possible to try to redirect to `account_path` as well as render the `new` template. This results in an error: `AbstractController::DoubleRenderError`.
 
-To resolve this, we simply add a `return` statement after the `redirect_to` in order to exit out of the action:
+To resolve this we need to add a `return` statement after the `redirect_to` in order to exit out of the action:
 
 ```rb
 if @user.has_statement_this_month?(@account)
   flash[:alert] = "You already have a statement for this month."
-  redirect_to(account_path(@account)) && return
+  redirect_to(account_path(@account))
+  return # add this
 end
 ```
 
