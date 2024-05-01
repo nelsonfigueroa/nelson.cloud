@@ -2,13 +2,13 @@
 title = "How I Discover New Blogs"
 summary = "A list of resources I use to discover new blogs."
 date = "2024-04-04"
-lastmod = "2024-04-04"
+lastmod = "2024-05-01"
 categories = ["Blogs"]
 ShowToc = true
 TocOpen = true
 +++
 
-This is a list of resources I use to discover new blogs.
+This is a list of resources I use to discover new blogs. I also maintain a [list of my favorite blogs]({{< relref "2024-04-03-my-favorite-blogs.md" >}}) if you're interested.
 
 ## Hacker News
 
