@@ -8,6 +8,9 @@ categories = ["Blogs"]
 
 This is a list of blogs I enjoy along with a recommended post. This is essentially a [blogroll](https://indieweb.org/blogroll). I'll be updating this over time.
 
+**[CrankySec](https://crankysec.com/)**
+- [Let's go team!](https://crankysec.com/blog/sports/)
+
 **[Julia Evans](https://jvns.ca/)**
 - [Blog about what you've struggled with](https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/)
 
@@ -17,9 +20,6 @@ This is a list of blogs I enjoy along with a recommended post. This is essential
 **[Xe Iaso](https://xeiaso.net/)**
 - [The Layoff](https://xeiaso.net/blog/2024/the-layoff/)
 
-**[CrankySec](https://crankysec.com/)**
-- [So, your CISO is a bitch.](https://crankysec.com/blog/ciso/)
-
 **[Ed Zitron](https://www.wheresyoured.at/)**
 - [Have We Reached Peak AI?](https://www.wheresyoured.at/peakai/)
 
@@ -28,9 +28,3 @@ This is a list of blogs I enjoy along with a recommended post. This is essential
 
 **[Cory Dransfeldt](https://coryd.dev/)**
 - [An indie web primer](https://coryd.dev/posts/2024/an-indie-web-primer/)
-
-**[Taylor Troesh](https://taylor.town/)**
-- [On Nontrepeneurship](https://taylor.town/nontrepeneur)
-
-**[Geoffrey Huntley](https://ghuntley.com/)**
-- [Why are McDonald’s Self Service Kiosks so hackable?](https://ghuntley.com/mcdonalds/)
