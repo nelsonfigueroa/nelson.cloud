@@ -2,7 +2,7 @@
 title = "Ruby Arrays Cheatsheet"
 summary = "Ruby array basics and methods to learn fast or refresh your memory."
 date = "2024-04-10"
-lastmod = "2024-04-10"
+lastmod = "2024-05-15"
 categories = ["Ruby"]
 ShowToc = true
 TocOpen = false
@@ -199,7 +199,7 @@ arr
 # => [1, 2]
 ```
 
-Delete all instances of an element by passing in that element to `.delete()`. This method returns the removed element and modifies the array in-place:
+Delete all instances of an element by passing in that element to `delete()`. This method returns the removed element and modifies the array in-place:
 
 ```ruby
 arr = [1, 2, 3, 3, 3]
@@ -218,7 +218,7 @@ arr.delete(5)
 # => nil
 ```
 
-Note that you cannot delete multiple values in one call of `.delete()`. But it is possible to do it by subtracting arrays. Keep reading after this example to see how:
+Note that you cannot delete multiple values in one call of `delete()`. But it is possible to do it by subtracting arrays. Keep reading after this example to see how:
 
 ```ruby
 arr = [1, 2, 3, 3, 3]
@@ -253,7 +253,7 @@ Subtracting arrays with elements that aren't present in the first array does not
 
 ### At a Specific Index
 
-We can delete an element at a specific index using `delete_at(index)`. The `.delete_at()` method returns the element that is removed. Passing in an index that is out of bounds returns `nil`:
+We can delete an element at a specific index using `delete_at(index)`. The `delete_at()` method returns the element that is removed. Passing in an index that is out of bounds returns `nil`:
 
 ```ruby
 arr = ["A", "B", "C"]
@@ -279,7 +279,7 @@ arr[1]
 # => "B"
 ```
 
-We can also use `.at()` to get the element at a certain index. It works the same way as the previous example:
+We can also use `at()` to get the element at a certain index. It works the same way as the previous example:
 
 ```ruby
 arr = ["A", "B", "C"]
@@ -311,22 +311,44 @@ arr[-4]
 
 ### The First Element
 
-There is a handy `.first()` method to retrieve the first element of an array:
+There is a handy `first()` method to retrieve the first element of an array:
 
 ```ruby
 arr = ["A", "B", "C"]
-arr.first
+arr.first # equivalent to arr[0]
 # => "A"
 ```
 
 ### The Last Element
 
-There's also a `.last()` method to retrieve the last element of an array:
+There's also a `last()` method to retrieve the last element of an array:
 
 ```ruby
 arr = ["A", "B", "C"]
 arr.last
 # => "C"
+```
+
+### Range of Elements
+
+We can use a `..` or `...` to specify a range of indices within an array. These are useful for [sliding window problems](https://www.geeksforgeeks.org/window-sliding-technique/):
+
+Using `..` results in an inclusive range:
+
+```ruby
+a = [1,2,3,4,5]
+
+a[1..4]
+# => [2, 3, 4, 5]
+```
+
+Using `...` results in an exclusive range:
+
+```ruby
+a = [1,2,3,4,5]
+
+a[1...4]
+# => [2, 3, 4]
 ```
 
 ## Sorting Arrays
@@ -574,7 +596,7 @@ arr
 
 ### Converting Multi-dimensional Array into 1-dimensional Array
 
-We can use `.flatten()` to recursively extract elements from all arrays within an array and return an array with only elements. The original array remains unchanged.
+We can use `flatten()` to recursively extract elements from all arrays within an array and return an array with only elements. The original array remains unchanged.
 
 ```ruby
 arr = ["A", ["B", "C"], ["D", ["E", ["F"]]]]
@@ -585,7 +607,7 @@ arr
 # => ["A", ["B", "C"], ["D", ["E", ["F"]]]]
 ```
 
-We can use `.flatten!()` to modify the array in-place:
+We can use `flatten!()` to modify the array in-place:
 
 ```ruby
 arr = ["A", ["B", "C"], ["D", ["E", ["F"]]]]
