@@ -2,7 +2,7 @@
 title = "Calendly Denial of Service via Mass-Scheduling"
 summary = "Showing how Calendly can be easily spammed because I'm bored and unemployed."
 date = "2024-05-16"
-lastmod = "2024-05-16"
+lastmod = "2024-05-18"
 categories = ["Python", "Cybersecurity"]
 ShowToc = true
 TocOpen = true
@@ -295,7 +295,7 @@ There's probably a lot more scenarios.
 
 ## Further Reading
 
-After writing this post I noticed someone else already had the same idea. I hesitated to link this because it's essentially an advertisement for this company's product but the article is still somewhat interesting (I have no association with this company):
+After writing this post I noticed someone else already had the same idea. I hesitated to link this because it's essentially an advertisement for this company's product but the article is still somewhat interesting (I have no association with this company). I also think their title is better than mine:
 - https://www.ipm-corporation.com/research/distributed-denial-of-scheduling-on-calendly
 
 I also noticed that there are Calendly API docs. These would have come in handy earlier but I only found out after I was done. That's fine though, the process of figuring it all out by inspecting browser requests was fun:
