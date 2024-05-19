@@ -2,7 +2,7 @@
 title = "Ruby Arrays Cheatsheet"
 summary = "Ruby array basics and methods to learn fast or refresh your memory."
 date = "2024-04-10"
-lastmod = "2024-05-15"
+lastmod = "2024-05-18"
 categories = ["Ruby"]
 ShowToc = true
 TocOpen = false
@@ -350,6 +350,84 @@ a = [1,2,3,4,5]
 a[1...4]
 # => [2, 3, 4]
 ```
+
+### Maximum Element
+
+We can use `max()` to retrieve the biggest number in an array:
+
+```ruby
+arr = [1, 5, 8, 2, 0, 4]
+
+arr.max
+# => 8
+```
+
+If `max()` is used on an array of strings it returns the last string after sorting alphabetically:
+
+```ruby
+arr = ["B", "D", "A", "C"]
+
+arr.max
+# => "D"
+```
+
+It works the same way for an array of Symbols:
+
+```ruby
+arr = [:A, :C, :D, :B]
+
+arr.max
+# => :D
+```
+
+`max()` will not work on an array containing elements of different types:
+
+```ruby
+arr = [1, "B", 4, "C", 2, "A"]
+
+arr.max
+# => (irb):14:in `max': comparison of Integer with String failed (ArgumentError)
+```
+
+### Minimum Element
+
+Works the same way as `max()` but with the smallest value instead.
+
+Retrieving the smallest number in an array:
+
+```ruby
+arr = [9, 2, 5, 1, 8]
+
+arr.min
+# => 1
+```
+
+If `min()` is used on an array of strings it returns the first string after sorting alphabetically:
+
+```ruby
+arr = ["B", "D", "A", "C"]
+
+arr.min
+# => "A"
+ ```
+
+ It works the same way for an array of Symbols:
+
+ ```ruby
+ arr = [:A, :C, :D, :B]
+
+ arr.min
+# => :A
+ ```
+
+ And once again, `min()` will not work on an array containing elements of different types:
+
+ ```ruby
+ arr = [1, "B", 4, "C", 2, "A"]
+
+ arr.min
+ # => (irb):27:in `min': comparison of Integer with String failed (ArgumentError)
+ ```
 
 ## Sorting Arrays
 
