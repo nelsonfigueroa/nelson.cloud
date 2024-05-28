@@ -93,6 +93,11 @@ Contributed practical examples for the following commands:
 - [The Boondocks](https://www.imdb.com/title/tt0373732/)
 - [The Bear](https://www.imdb.com/title/tt14452776/)
 
+**Movies**
+- [Saving Private Ryan](https://www.imdb.com/title/tt0120815/)
+- [Interstellar](https://www.imdb.com/title/tt0816692/)
+- [Mad Max: Fury Road](https://www.imdb.com/title/tt1392190/)
+
 **Music**: I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs (all YouTube links):
 
 - [Mind Prisoner - 3:33](https://www.youtube.com/watch?v=-gYSzrIIvMU)
