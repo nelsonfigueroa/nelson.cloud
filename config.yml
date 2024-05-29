@@ -101,7 +101,7 @@ params:
   ShowFullTextinRSS: true
   ShowWordCount: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  images: []
 
   profileMode:
     enabled: false
