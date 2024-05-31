@@ -300,12 +300,12 @@ We can reverse a list using this syntax. This does not modify a list in-place, i
 
 ```python
 my_list = [1, 2, 3, 4, 5]
-reversed = my_list[::-1]
+reversed_list = my_list[::-1]
 
 print(my_list)
 # [1, 2, 3, 4, 5]
 
-print(reversed)
+print(reversed_list)
 # [5, 4, 3, 2, 1]
 ```
 
@@ -316,6 +316,16 @@ my_list = [1, 2, 3, 4, 5]
 my_list.sort(reverse=True)
 
 print(my_list)
+# [5, 4, 3, 2, 1]
+```
+
+There is also a `reversed()` function. This function returns an iterator which we can then convert back to a list:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+reversed_list = list(reversed(my_list))
+
+print(reversed_list)
 # [5, 4, 3, 2, 1]
 ```
 
