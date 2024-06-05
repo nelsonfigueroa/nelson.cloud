@@ -12,10 +12,14 @@ I quit my previous job at [Robinhood](https://robinhood.com/) in late November o
 
 It seems like most (if not all) companies do these kinds of interviews simply because that's what all the big companies do, like Google, Facebook, Amazon, and so on.
 
-I've had some very bright engineers tell me that I shouldn't memorize things that I can easily google. But yet, these interviews quiz me on things that I can easily Google that I may not know off the top of my head. It's absurd.
+I've had some very bright engineers tell me that I shouldn't memorize things that I can easily Google. But yet, these interviews quiz me on things that I can easily Google that I may not know off the top of my head. It's absurd.
 
 I don't really have a solution to this problem, I just know it's a problem.
 
 And I'm sick of it.
 
 If you need a Software Engineer with AWS, Kuberentes, and Ruby on Rails experience, and you don't do silly quizzes, feel free to reach out!
+
+---
+
+Discussion over at [Hacker News](https://news.ycombinator.com/item?id=40571395)
