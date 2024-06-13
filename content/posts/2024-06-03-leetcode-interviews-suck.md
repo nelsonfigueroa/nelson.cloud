@@ -2,7 +2,7 @@
 title = "I Am So Sick of Leetcode-Style Interviews"
 summary = "Leetcode-style interviews do not reflect real world software engineering problems."
 date = "2024-06-03"
-lastmod = "2024-06-06"
+lastmod = "2024-06-12"
 categories = ["Opinion"]
 ShowToc = false
 TocOpen = false
@@ -17,6 +17,8 @@ I've had very bright engineers tell me that I shouldn't memorize things that I c
 I don't really have a solution to this problem, I just know it's a problem.
 
 And I'm sick of it.
+
+To add more context, I have both succeeded and failed at these kinds of interviews. My failure rate is not influencing my opinion. If anything, my previous professional experience influences my opinion.
 
 If you need a Software Engineer with AWS, Kuberentes, and Ruby on Rails experience, and you don't do silly quizzes, feel free to reach out!
 
