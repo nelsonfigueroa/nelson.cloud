@@ -28,7 +28,7 @@ Software Engineer @ [CSU Northridge](https://csun.edu/) (2018 - 2019)
 
 **Web Technologies**: Ruby on Rails, HTML, CSS, JavaScript, Bootstrap CSS, Bulma CSS
 
-**Databases**: MySQL, SQLite 3, PostgreSQL
+**Databases**: MySQL, SQLite 3, PostgreSQL, DynamoDB
 
 **Infrastructure**: Docker, Kubernetes, Terraform, Serverless, CloudFormation, CI/CD (Google Cloud Build, GitHub Actions, Jenkins, Spinnaker)
 
@@ -98,7 +98,7 @@ Contributed practical examples for the following commands:
 - [Interstellar](https://www.imdb.com/title/tt0816692/)
 - [Mad Max: Fury Road](https://www.imdb.com/title/tt1392190/)
 
-**Music**: I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs (all YouTube links):
+**Music**: I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs below (all YouTube links):
 
 - [Mind Prisoner - 3:33](https://www.youtube.com/watch?v=-gYSzrIIvMU)
 - [Municipal Waste - Mind Eraser](https://www.youtube.com/watch?v=ywJiCpdVv7o)
