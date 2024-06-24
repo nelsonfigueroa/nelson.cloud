@@ -12,7 +12,7 @@ I am actively looking for a new role! Feel free to reach out via [LinkedIn](http
 
 ## Experience
 
-Software Engineer @ [Robinhood](https://robinhood.com) (Most of 2023)
+Software Engineer @ [Robinhood](https://robinhood.com) (Jan - Nov 2023)
 
 Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
 
