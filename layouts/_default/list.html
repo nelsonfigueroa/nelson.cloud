@@ -95,6 +95,37 @@
 </article>
 {{- end }}
 
+{{/* custom: show recently enjoyed articles from recentereads.yaml for home page only */}}
+{{- if .IsHome }}
+
+{{- $class := "post-entry" }}
+
+<h2>Recent Reads</h2>
+<small>Posts from other blogs I enjoyed.</small>
+<hr>
+{{ range .Site.Data.recentreads }}
+<article class="{{ $class }}">
+    <header class="entry-header">
+        <h2 class="entry-hint-parent">
+            {{- .title }}
+            <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="16" width="16">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14L21 3"></path>
+            </svg>
+        </h2>
+    </header>
+    <div class="entry-content">
+        <p>From {{ .from }}</p>
+        <span>{{ .date }}</span>
+    </div>
+    <!-- manually adding target="_blank" and ?ref=nelson.cloud -->
+    <a class="entry-link" aria-label="{{ .title }}" target="_blank" href="{{ .url }}?ref=nelson.cloud"></a>
+</article>
+{{ end }}
+{{- end }}
+
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
   <nav class="pagination">

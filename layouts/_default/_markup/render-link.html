@@ -1,4 +1,5 @@
 <!-- processes post links with external domains, but not nav or social links -->
+<!-- https://gohugo.io/render-hooks/links/ -->
 {{- $url := .Destination -}}
 {{- $refParam := "" -}}
 {{- $hasQuery := strings.Contains $url "?" -}}
