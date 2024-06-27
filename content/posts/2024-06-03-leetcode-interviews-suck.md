@@ -1,6 +1,6 @@
 +++
 title = "I Am So Sick of Leetcode-Style Interviews"
-summary = "Leetcode-style interviews do not reflect real world software engineering problems."
+summary = "Leetcode-style interviews do not reflect real-world software engineering problems."
 date = "2024-06-03"
 lastmod = "2024-06-12"
 categories = ["Opinion"]

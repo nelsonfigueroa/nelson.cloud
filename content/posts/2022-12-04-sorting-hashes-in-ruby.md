@@ -1,6 +1,6 @@
 +++
 title = "Sorting Hashes in Ruby"
-summary = "How to sort Ruby hashes."
+summary = "Many ways of sorting hashes in Ruby."
 date = "2022-12-04"
 lastmod = "2022-12-04"
 categories = ["Ruby"]
