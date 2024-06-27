@@ -68,6 +68,10 @@ Contributed practical examples for the following commands:
 - `kubectl edit`
 - `go tool dist list`
 
+**[github.com/alveusgg/data/](https://github.com/alveusgg/data/commits?author=nelsonfigueroa)**
+
+Contributed a few corrections to data used in the [Alveus Sanctuary site](https://www.alveussanctuary.org/).
+
 ## Interests
 
 **Technology**: Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
