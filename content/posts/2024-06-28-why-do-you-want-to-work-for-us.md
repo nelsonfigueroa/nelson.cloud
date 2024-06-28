@@ -14,7 +14,7 @@ I have run into this question many times as I've been applying to and interviewi
 
 99% of the reason people want to work for a company is because of money. That's it. They want to be able to pay off debt. They want to be able to pay their bills. They want to be able to pay rent or their mortgage. They want to be able provide for their family. They want to be able to afford a better life. And so on.
 
-Sure, the tech stack might be exciting. Or the product may be compelling. But I promise you that the biggest reason is still because of money.
+Sure, the tech stack might be exciting. Or the product may be compelling. The work-life balance may be good. But I promise you that the biggest reason is still because of money.
 
 If you don't believe me, find your most passionate engineers, cut their compensation in half, and see if they stick around. I guarantee you they won't.
 
