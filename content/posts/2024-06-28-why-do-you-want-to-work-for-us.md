@@ -1,5 +1,5 @@
 +++
-title = "The Interview Question \"Why Do You Want To Work for Us?\" Is Stupid"
+title = "Let's Stop Asking \"Why Do You Want To Work for Us?\" in Interviews"
 summary = "Most people want to work for your company for money, and there's nothing wrong with that."
 date = "2024-06-28"
 lastmod = "2024-06-28"
@@ -8,13 +8,13 @@ ShowToc = false
 TocOpen = false
 +++
 
-"Why do you want to work for us?"
+*"Why do you want to work for us?"*
 
 I have run into this question many times as I've been applying to and interviewing with lots of companies.
 
-99% of the reason people want to work for a company is because of money. That's it. They want to be able to pay off debt. They want to be able to pay their bills. They want to be able to pay rent or their mortgage. They want to be able provide for their family. They want to be able to afford a better life. And so on.
+99% of the reason people want to work for a company is **because they need money**. That's it. They want to be able to pay off debt. They want to be able to pay their bills. They want to be able to pay rent or their mortgage. They want to be able provide for their family. They want to be able to afford a better life. And so on.
 
-Sure, the tech stack might be exciting. Or the product may be compelling. The work-life balance may be good. But I promise you that the biggest reason is still because of money.
+Sure, the tech stack might be exciting. Or the product may be compelling. The work-life balance may be good. But I promise you that the biggest reason is still money.
 
 If you don't believe me, find your most passionate engineers, cut their compensation in half, and see if they stick around. I guarantee you they won't.
 
