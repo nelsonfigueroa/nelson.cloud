@@ -24,7 +24,7 @@ Software Engineer @ [CSU Northridge](https://csun.edu/) (2018 - 2019)
 
 ## Skills
 
-**Programming/Scripting**: Ruby, Python, Bash, Go
+**Programming Languages**: Ruby, Python, Bash, Go
 
 **Web Technologies**: Ruby on Rails, HTML, CSS, JavaScript, Bootstrap CSS, Bulma CSS
 
@@ -36,7 +36,7 @@ Software Engineer @ [CSU Northridge](https://csun.edu/) (2018 - 2019)
 
 **Operating Systems**: macOS, Linux (Ubuntu, CentOS, Kali), Windows 10
 
-**Other**: Command Line, Agile/Scrum, Jira, Git, RSpec
+**Other**: Command Line, Git,  Agile, Scrum, Atlassian Suite (Jira, Confluence, Bitbucket)
 
 ##  Education
 
@@ -46,11 +46,11 @@ Bachelor of Science in Computer Information Technology (2019)
 
 ## Open-Source Contributions
 
-**[github.com/tldr-pages/tldr](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa)**
+### [github.com/tldr-pages/tldr](https://github.com/tldr-pages/tldr)
 
 Simplified and community-driven "cheat sheet" for command line tools.
 
-Contributed practical examples for the following commands:
+[Contributed practical examples](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa) for the following commands:
 - `rails generate`
 - `rails destroy`
 - `rails db`
@@ -68,9 +68,9 @@ Contributed practical examples for the following commands:
 - `kubectl edit`
 - `go tool dist list`
 
-**[github.com/alveusgg/data/](https://github.com/alveusgg/data/commits?author=nelsonfigueroa)**
+### [github.com/alveusgg/data](https://github.com/alveusgg/data/commits?author=nelsonfigueroa)
 
-Contributed a few corrections to data used in the [Alveus Sanctuary site](https://www.alveussanctuary.org/).
+Data repository powering the [Alveus Sanctuary site](https://www.alveussanctuary.org/). [Contributed some spelling and date corrections](https://github.com/alveusgg/data/commits?author=nelsonfigueroa) to this repository.
 
 ## Interests
 
@@ -80,9 +80,9 @@ Contributed a few corrections to data used in the [Alveus Sanctuary site](https:
 
 **Games**:
 - [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring)
-- [Factorio](https://www.factorio.com/)
 - [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/)
 - [Stardew Valley](https://www.stardewvalley.net/)
+- [Factorio](https://www.factorio.com/)
 
 **Shows**:
 - [Better Call Saul](https://www.imdb.com/title/tt3032476/)
@@ -105,12 +105,11 @@ Contributed a few corrections to data used in the [Alveus Sanctuary site](https:
 **Music**: I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs below (all YouTube links):
 
 - [Mind Prisoner - 3:33](https://www.youtube.com/watch?v=-gYSzrIIvMU)
+- [Akhlys - Sister Silence, Brother Sleep ](https://www.youtube.com/watch?v=epiC2fBqWxM)
 - [Municipal Waste - Mind Eraser](https://www.youtube.com/watch?v=ywJiCpdVv7o)
 - [The Black Dahlia Murder -  On Stirring Seas of Salted Blood](https://www.youtube.com/watch?v=YScz1fq1yQk)
 - [Mare Cognitum - Crimson Abyss: NGC 2237](https://www.youtube.com/watch?v=0kdx79x90HI)
 - [Death - Perennial Quest](https://www.youtube.com/watch?v=qcVp-ggYIEc)
-- [Nightbringer - The Grave-Earth's Son](https://www.youtube.com/watch?v=EGA3vcKxYec)
-- [Hooded Menace - Those Who Absorb The Night](https://www.youtube.com/watch?v=jiuTCf9w-_E)
 - [Slayer - Chemical Warfare](https://www.youtube.com/watch?v=DuiR1iNsyvc)
 
 ## Links
