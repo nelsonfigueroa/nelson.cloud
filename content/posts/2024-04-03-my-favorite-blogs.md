@@ -11,6 +11,9 @@ This is a list of blogs I enjoy along with a recommended post. This is essential
 **[CrankySec](https://crankysec.com/)**
 - [Let's go team!](https://crankysec.com/blog/sports/)
 
+**[Nikhil Suresh](https://ludic.mataroa.blog/)**
+- [I Will Fucking Piledrive You If You Mention AI Again](https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/)
+
 **[Julia Evans](https://jvns.ca/)**
 - [Blog about what you've struggled with](https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/)
 
