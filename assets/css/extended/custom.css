@@ -37,10 +37,10 @@ pre.entry-header {
     padding-bottom: 1rem;
 }
 
-/* for titles of post links */
-/* .entry-header h2 { */
-    /* font-size: 1.25rem; */
-/* } */
+.post-entry:hover {
+    background: var(--code-block-bg);
+    transition: background 0.2s;
+}
 
 /* for meta of post links */
 .entry-footer {
