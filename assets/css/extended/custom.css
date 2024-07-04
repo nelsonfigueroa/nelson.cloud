@@ -37,10 +37,10 @@ pre.entry-header {
     padding-bottom: 1rem;
 }
 
-.post-entry:hover {
+/* article.post-entry:hover {
     background: var(--code-block-bg);
     transition: background 0.2s;
-}
+} */
 
 /* for meta of post links */
 .entry-footer {
