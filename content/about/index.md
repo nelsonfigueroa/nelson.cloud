@@ -4,9 +4,7 @@ ShowReadingTime = false
 ShowWordCount = false
 +++
 
-I'm a Software Engineer with broad experience working with technologies like
-Ruby on Rails, Kubernetes, and Amazon Web Services.
-I started this blog for fun and to share my knowledge.
+I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog for fun and to share my knowledge.
 
 I am actively looking for a new role! Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/).
 
