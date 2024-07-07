@@ -20,7 +20,7 @@ Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
 
 Software Engineering Intern @ [Dollar Shave Club](https://dollarshaveclub.com/) (Summer 2019)
 
-Software Engineer @ [CSU Northridge](https://csun.edu/) (2018 - 2019)
+Software Engineer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
 
 ## Skills
 
