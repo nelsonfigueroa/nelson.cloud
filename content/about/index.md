@@ -74,17 +74,21 @@ Data repository powering the [Alveus Sanctuary site](https://www.alveussanctuary
 
 ## Interests
 
-**Technology**: Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
+### Technology
 
-**Hobbies**: Videogames, Electric Guitar
+Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 
-**Games**:
+### Hobbies
+- Videogames
+- Electric Guitar
+
+### Games
 - [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring)
 - [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/)
 - [Stardew Valley](https://www.stardewvalley.net/)
 - [Factorio](https://www.factorio.com/)
 
-**Shows**:
+### Shows
 - [Better Call Saul](https://www.imdb.com/title/tt3032476/)
 - [Breaking Bad](https://www.imdb.com/title/tt0903747/)
 - [The Mandalorian](https://www.imdb.com/title/tt8111088/)
@@ -97,20 +101,15 @@ Data repository powering the [Alveus Sanctuary site](https://www.alveussanctuary
 - [The Boondocks](https://www.imdb.com/title/tt0373732/)
 - [The Bear](https://www.imdb.com/title/tt14452776/)
 
-**Movies**
+### Movies
 - [Saving Private Ryan](https://www.imdb.com/title/tt0120815/)
 - [Interstellar](https://www.imdb.com/title/tt0816692/)
 - [Mad Max: Fury Road](https://www.imdb.com/title/tt1392190/)
 
-**Music**: I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious. Or check out some of my current favorite songs below (all YouTube links):
-
-- [Mind Prisoner - 3:33](https://www.youtube.com/watch?v=-gYSzrIIvMU)
-- [Akhlys - Sister Silence, Brother Sleep ](https://www.youtube.com/watch?v=epiC2fBqWxM)
-- [Municipal Waste - Mind Eraser](https://www.youtube.com/watch?v=ywJiCpdVv7o)
-- [The Black Dahlia Murder -  On Stirring Seas of Salted Blood](https://www.youtube.com/watch?v=YScz1fq1yQk)
-- [Mare Cognitum - Crimson Abyss: NGC 2237](https://www.youtube.com/watch?v=0kdx79x90HI)
-- [Death - Perennial Quest](https://www.youtube.com/watch?v=qcVp-ggYIEc)
-- [Slayer - Chemical Warfare](https://www.youtube.com/watch?v=DuiR1iNsyvc)
+### Music
+I mainly listen to metal. My Bandcamp is public if you're curious. I also have a Last.fm page where you can see my most listened to songs and artists:
+- [Bandcamp collection](https://bandcamp.com/nelsonfigueroa)
+- [Last.fm](https://www.last.fm/user/nelson-figueroa)
 
 ## Links
 - [GitHub](https://github.com/nelsonfigueroa)
