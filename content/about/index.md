@@ -2,6 +2,8 @@
 title = "About Me"
 ShowReadingTime = false
 ShowWordCount = false
+ShowToc = true
+TocOpen = true
 +++
 
 I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog for fun and to share my knowledge.
