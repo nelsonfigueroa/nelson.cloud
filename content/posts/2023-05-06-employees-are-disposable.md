@@ -68,3 +68,7 @@ Here are some articles I've come across that share similar sentiments or are ver
 - [Our Company Is Doing So Well That You’re All Fired](https://www.mcsweeneys.net/articles/our-company-is-doing-so-well-that-youre-all-fired)
 - [What Companies Still Get Wrong About Layoffs](https://hbr.org/2022/12/what-companies-still-get-wrong-about-layoffs)
 - [I Accidentally Saved Half A Million Dollars](https://ludic.mataroa.blog/blog/i-accidentally-saved-half-a-million-dollars/)
+
+---
+
+Discussion over at [Hacker News](https://news.ycombinator.com/item?id=40943436)
