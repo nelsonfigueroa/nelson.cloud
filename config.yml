@@ -32,9 +32,6 @@ languages:
         - name: Home
           url: /
           weight: 1
-        - name: About
-          url: about
-          weight: 5
         - name: Posts
           url: posts/
           weight: 2
@@ -44,8 +41,11 @@ languages:
         - name: Search
           url: search/
           weight: 4
+        - name: About
+          url: about
+          weight: 5
         - name: Support Me
-          url: https://github.com/sponsors/nelsonfigueroa
+          url: support/
           weight: 6
         - name: Hire Me
           url: https://www.linkedin.com/in/nelsonfigueroa1/
