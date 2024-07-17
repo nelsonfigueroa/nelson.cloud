@@ -25,3 +25,7 @@ It's okay to be motivated by money. That's the world we live in. An engineer can
 You may have come across my application to your company at some point. I may have said something about wanting to work with bright people and looking for growth opportunities. While that is still true, you should know that 99% of the reason I applied to your company is to earn money so I can buy food, pay rent, and provide for my family.
 
 Let's stop asking this question in the application and interview process. We all know the real answer.
+
+---
+
+Discussion over at [Hacker News](https://news.ycombinator.com/item?id=40842603)
