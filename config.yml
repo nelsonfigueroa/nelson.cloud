@@ -124,12 +124,15 @@ params:
 
   socialIcons:
     - name: github
-      title: My GitHub Profile
+      title: GitHub
       url: "https://github.com/nelsonfigueroa"
-    - name: LinkedIn
-      title: My LinkedIn
+    - name: linkedin
+      title: LinkedIn
       url: "https://www.linkedin.com/in/nelsonfigueroa1/"
-    - name: RSS
+    - name: ycombinator
+      title: Hacker News
+      url: "https://news.ycombinator.com/user?id=nelsonfigueroa"
+    - name: rss
       title: RSS Feed
       url: "/index.xml"
 
