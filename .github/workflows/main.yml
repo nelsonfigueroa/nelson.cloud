@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Install Hugo
         run: |
-          wget https://github.com/gohugoio/hugo/releases/download/v0.123.0/hugo_extended_0.123.0_linux-amd64.deb --output-document hugo.deb
+          wget https://github.com/gohugoio/hugo/releases/download/v0.129.0/hugo_extended_0.129.0_linux-amd64.deb --output-document hugo.deb
           sudo dpkg -i hugo.deb
       - name: Install AWS CLI
         run: |
