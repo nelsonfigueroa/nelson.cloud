@@ -44,12 +44,9 @@ languages:
         - name: About
           url: about
           weight: 5
-        - name: Support Me
+        - name: Support
           url: support/
           weight: 6
-        - name: Hire Me
-          url: https://www.linkedin.com/in/nelsonfigueroa1/
-          weight: 7
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
