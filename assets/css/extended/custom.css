@@ -38,7 +38,9 @@ pre.entry-header {
 }
 
 .post-entry:hover {
-    filter: brightness(85%);
+    filter: brightness(90%);
+    border-style: dashed;
+    border-color: var(--secondary)
 }
 
 /* for meta of post links */
