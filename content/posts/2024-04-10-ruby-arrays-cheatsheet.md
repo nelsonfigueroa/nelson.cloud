@@ -2,7 +2,7 @@
 title = "Ruby Arrays Cheatsheet"
 summary = "Ruby array basics and methods to learn fast or refresh your memory."
 date = "2024-04-10"
-lastmod = "2024-05-18"
+lastmod = "2024-08-03"
 categories = ["Ruby"]
 ShowToc = true
 TocOpen = false
@@ -694,6 +694,54 @@ arr.flatten!
 
 arr
 # => ["A", "B", "C", "D", "E", "F"]
+```
+
+### Removing All Elements from Array
+
+We can use `clear()` to remove all elements from an array in-place.
+
+```ruby
+arr = ["A", "B", "C"]
+arr.clear
+# => []
+
+arr
+# => []
+```
+
+This is the same as assigning an empty array to the existing array variable.
+
+```ruby
+arr = ["A", "B", "C"]
+arr = []
+# => []
+
+arr
+# => []
+```
+
+### Removing `nil` Elements from Array
+
+We can use `compact()` to remove all `nil` elements in an array. This method returns a new array.
+
+```ruby
+arr = [1, nil, 2, nil, 3]
+arr.compact
+# => [1, 2, 3]
+
+arr
+# => [1, nil, 2, nil, 3]
+```
+
+We can use `compact!()` to do the same operation to the array in-place:
+
+```ruby
+arr = [1, nil, 2, nil, 3]
+arr.compact!
+# => [1, 2, 3]
+
+arr
+#  => [1, 2, 3]
 ```
 
 ## References
