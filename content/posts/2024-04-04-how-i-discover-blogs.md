@@ -2,7 +2,7 @@
 title = "How I Discover New Blogs"
 summary = "A list of resources I use to discover new blogs."
 date = "2024-04-04"
-lastmod = "2024-05-01"
+lastmod = "2024-08-03"
 categories = ["Blogs"]
 ShowToc = true
 TocOpen = true
@@ -69,3 +69,9 @@ ooh.directory is a collection of blogs on all sorts of topics. They have a [Rand
 **https://1mb.club**
 
 These sites all have the same idea in that they are collections of sites that are under a certain size (at least for the home page). There's lots of blogs to discover among all three lists.
+
+## bukmark.club
+
+**https://bukmark.club/directory/**
+
+bukmark.club is a list of sites that have curated links to other sites. You can easily go down a rabbit hole.
