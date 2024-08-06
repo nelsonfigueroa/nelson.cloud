@@ -8,9 +8,9 @@ TocOpen = true
 
 I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog for fun and to share my knowledge.
 
-I am actively looking for a new role! Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/).
-
 ## Experience
+
+Customer Support Engineer @ [Pulumi](https://www.pulumi.com/) (Aug 2024 - Present)
 
 Software Engineer @ [Robinhood](https://robinhood.com) (Jan - Nov 2023)
 
