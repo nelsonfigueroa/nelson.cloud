@@ -10,7 +10,7 @@ I'm a Software Engineer with professional experience using technologies like Rub
 
 ## Experience
 
-Customer Support Engineer @ [Pulumi](https://www.pulumi.com/) (Aug 2024 - Present)
+Customer Support Engineer II @ [Pulumi](https://www.pulumi.com/) (Aug 2024 - Present)
 
 Software Engineer @ [Robinhood](https://robinhood.com) (Jan - Nov 2023)
 
