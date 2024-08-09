@@ -30,7 +30,7 @@ Software Engineer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
 
 **Databases**: MySQL, SQLite 3, PostgreSQL, DynamoDB
 
-**Infrastructure**: Docker, Kubernetes, Terraform, Serverless, CloudFormation, CI/CD (Google Cloud Build, GitHub Actions, Jenkins, Spinnaker)
+**Infrastructure**: Docker, Kubernetes, Pulumi, Terraform, Serverless, CloudFormation, CI/CD (Google Cloud Build, GitHub Actions, Jenkins, Spinnaker)
 
 **Cloud**: Amazon Web Services, Google Cloud Platform
 
