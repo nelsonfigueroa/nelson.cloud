@@ -2,7 +2,7 @@
 title = "How I Discover New Blogs"
 summary = "A list of resources I use to discover new blogs."
 date = "2024-04-04"
-lastmod = "2024-08-03"
+lastmod = "2024-08-24"
 categories = ["Blogs"]
 ShowToc = true
 TocOpen = true
@@ -59,6 +59,12 @@ Neocities is a place where users can create a static site for free. Most sites h
 **https://ooh.directory/**
 
 ooh.directory is a collection of blogs on all sorts of topics. They have a [Random Blogs](https://ooh.directory/random/) area that works similarly to [indieblog.page](https://indieblog.page/) and [theforest.link](https://theforest.link/).
+
+## https://personalsit.es/
+
+**https://personalsit.es/**
+
+Another collection of blogs -- with previews!
 
 ## 250kb.club, 512kb.club, 1mb.club
 
