@@ -6,7 +6,7 @@ ShowToc = true
 TocOpen = true
 +++
 
-I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog for fun and to share my knowledge.
+I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog to share my knowledge and occasionally rant.
 
 ## Experience
 
@@ -44,29 +44,13 @@ Software Engineer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
 
 Bachelor of Science in Computer Information Technology (2019)
 
-## Open-Source Contributions
+## Open Source Contributions
 
 ### [github.com/tldr-pages/tldr](https://github.com/tldr-pages/tldr)
 
 Simplified and community-driven "cheat sheet" for command line tools.
 
-[Contributed practical examples](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa) for the following commands:
-- `rails generate`
-- `rails destroy`
-- `rails db`
-- `rails routes`
-- `terraform validate`
-- `terraform fmt`
-- `minikube stop`
-- `minikube delete`
-- `pmset displaysleepnow`
-- `kubectl get`
-- `kubectl describe`
-- `kubectl logs`
-- `kubectl rollout`
-- `kubectl delete`
-- `kubectl edit`
-- `go tool dist list`
+Contributed practical examples for CLI tools such as `rails`, `terraform`, `minikube`, `kubectl`, and `pulumi`. You [can see all my contributions here](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa).
 
 ### [github.com/alveusgg/data](https://github.com/alveusgg/data/commits?author=nelsonfigueroa)
 
