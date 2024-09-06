@@ -50,7 +50,7 @@ Bachelor of Science in Computer Information Technology (2019)
 
 Simplified and community-driven "cheat sheet" for command line tools.
 
-Contributed practical examples for CLI tools such as `rails`, `terraform`, `minikube`, `kubectl`, and `pulumi`. You [can see all my contributions here](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa).
+Contributed practical examples for CLI tools such as `rails`, `terraform`, `minikube`, `kubectl`, `hugo`, and `pulumi`. You [can see all my contributions here](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa).
 
 ### [github.com/alveusgg/data](https://github.com/alveusgg/data/commits?author=nelsonfigueroa)
 
