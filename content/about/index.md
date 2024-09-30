@@ -63,8 +63,8 @@ Data repository powering the [Alveus Sanctuary site](https://www.alveussanctuary
 Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 
 ### Hobbies
-- Videogames
 - Electric Guitar
+- Videogames
 
 ### Games
 - [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring)
