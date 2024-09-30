@@ -35,6 +35,11 @@ pre.entry-header {
     padding-right: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    transition: none;
+}
+
+.post-entry:active {
+    transform: none;
 }
 
 .post-entry:hover {
