@@ -109,3 +109,8 @@ But I stopped because I have no interest in collecting this information. I just 
 Also, I think it's a violation of Google's terms of service to scrape their results, but they violate everyone's privacy so...maybe someone should go ahead and do it anyway.
 
 In conclusion, it's really easy to find private information on resumes posted online. Please reconsider if you are thinking of making your resume available online.
+
+## Further Reading
+
+I am not the first to have this idea. Here's a similar post that you should also check out: 
+- https://www.trickster.dev/post/simple-ways-to-find-exposed-sensitive-information/
