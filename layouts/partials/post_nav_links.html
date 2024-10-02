@@ -16,30 +16,4 @@
   </a>
   {{- end }}
 </nav>
-
-
-<script>
-const posts = [
-{{- range .Site.RegularPages -}}
-  "{{ .RelPermalink }}",
-{{- end -}}
-];
-
-if (posts.length > 0) {
-  function getRandomPost() {
-    const randomIndex = Math.floor(Math.random() * posts.length);
-    window.location.href = posts[randomIndex].concat("?ref=random");
-  }
-}
-</script>
-
-<article class="post-entry">
-    <header class="entry-header">
-        <h2 class="entry-hint-parent entry-content">
-            Or see a random post »
-        </h2>
-    </header>
-    <a class="entry-link" onclick="getRandomPost()" href="#"></a>
-</article>
-
 {{- end }}
