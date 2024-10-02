@@ -157,3 +157,22 @@ pre.entry-header {
 .dark.list {
     background: var(--theme);
 }
+
+/* Random post button */
+
+.random-post-button {
+    color: var(--primary);
+    font-size: 1.1rem;
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 0.7rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; 
+    display: block;
+}
+
+.random-post-button:hover {
+    filter: brightness(90%);
+    border-color: var(--secondary)
+}
