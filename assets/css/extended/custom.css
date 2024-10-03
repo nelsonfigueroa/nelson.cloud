@@ -176,3 +176,14 @@ pre.entry-header {
     filter: brightness(90%);
     border-color: var(--secondary)
 }
+
+/* remove box shadow from links and use decoration instead */
+.post-content a {
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+/* remove margin from inline <code> */
+.post-content code {
+    margin: 0;
+}
