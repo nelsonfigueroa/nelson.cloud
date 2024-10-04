@@ -2,13 +2,13 @@
 title = "Getting EC2 Instance Metadata Using IMDSv2"
 summary = "How to get EC2 Instance metadata using IMDSv2"
 date = "2023-12-01"
-lastmod = "2023-12-01"
+lastmod = "2024-10-04"
 categories = ["AWS"]
 +++
 
 The EC2 Instance Metadata Service (IMDS) allows us to make an API call within an EC2 instance to retrieve instance metadata, such as a local IP address. There are 2 versions of IMDS.
 
-Using IMDSv1, all we needed to do was to hit the `http://169.254.169.254/latest/meta-data/` endpoint to retrieve metadata. I previously created a post with some examples: [Getting EC2 Instance Metadata Using IMDSv1]({{< relref "/posts/2022-02-08-ec2-metadata-using-imdsv1" >}})
+Using IMDSv1, all we needed to do was to hit the `http://169.254.169.254/latest/meta-data/` endpoint to retrieve metadata. I previously created a post with some examples: [Getting EC2 Instance Metadata Using IMDSv1]({{< relref "/posts/2022-02-08-ec2-metadata-using-imdsv1" >}}). **Note that you should NOT use IMDSv1 if you care about security!**
 
 Using IMDSv2, we now need to make an API call to `http://169.254.169.254/latest/api/token` to retrieve a token, then include that token in a `X-aws-ec2-metadata-token` header to hit the metadata endpoint `http://169.254.169.254/latest/meta-data/`.
 
