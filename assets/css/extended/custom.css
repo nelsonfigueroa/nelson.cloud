@@ -44,8 +44,7 @@ pre.entry-header {
 
 .post-entry:hover {
     filter: brightness(90%);
-    border-style: dashed;
-    border-color: var(--secondary)
+    border-color: var(--secondary);
 }
 
 /* for meta of post links */
@@ -102,14 +101,18 @@ pre.entry-header {
     --footer-height: 60px;
     --radius: 8px;
     --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
+    --entry: rgb(243, 243, 243);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
-    --code-block-bg: rgb(35, 35, 35);
+    --code-block-bg: rgb(22, 22, 22);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+
+    body {
+        background: var(--theme);
+    }
 
     ::selection {
       color: var(--theme);
@@ -161,20 +164,19 @@ pre.entry-header {
 /* Random post button */
 
 .random-post-button {
-    color: var(--primary);
-    font-size: 1.1rem;
-    background: var(--code-bg);
+    background: var(--entry);
     border-radius: var(--radius);
-    padding: 0.7rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center; 
+    text-align: center;
     display: block;
+    position: relative;
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+    border: 1px solid var(--border);
 }
 
 .random-post-button:hover {
     filter: brightness(90%);
-    border-color: var(--secondary)
+    border: 1px solid var(--secondary);
 }
 
 /* remove box shadow from links and use decoration instead */
