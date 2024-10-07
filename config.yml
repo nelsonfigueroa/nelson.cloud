@@ -114,10 +114,8 @@ params:
         url: categories
 
   homeInfoParams:
-    Title: >
-      Nelson Figueroa
-    Content: >
-      Software Engineer
+    Title: Nelson Figueroa
+    Content: Software Engineer
 
   socialIcons:
     - name: github
