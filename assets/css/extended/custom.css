@@ -68,7 +68,7 @@ pre.entry-header {
     flex-wrap: wrap;
     padding: 0 5px;
     color: var(--secondary);
-    background: var(--code-bg);
+    background: var(--tertiary);
     font-size: 12px;
     line-height: 24px;
 }
@@ -77,6 +77,11 @@ pre.entry-header {
     display: inline-block;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.post-tags a:hover {
+    filter: brightness(70%);
+    background: var(--entry);
 }
 
 .post-meta {
@@ -150,6 +155,10 @@ pre.entry-header {
 
     #sun:hover {
         color: #c91b00;
+    }
+
+    .post-tags a {
+        background: var(--tertiary);
     }
 }
 
