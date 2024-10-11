@@ -1,3 +1,41 @@
+/* override theme colors */
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: rgb(255, 255, 255);
+    --entry: rgb(243, 243, 243);
+    --primary: rgb(30, 30, 30);
+    --secondary: rgb(108, 108, 108);
+    --tertiary: rgb(214, 214, 214);
+    --content: rgb(31, 31, 31);
+    --code-block-bg: rgb(22, 22, 22);
+    --code-bg: rgb(245, 245, 245);
+    --border: rgb(238, 238, 238);
+    --tint: #1f9aff;
+
+    body {
+        background: var(--theme);
+    }
+}
+
+.dark {
+    --theme: #000;
+    --entry: rgb(46, 46, 51);
+    --primary: rgb(218, 218, 219);
+    --secondary: rgb(155, 156, 157);
+    --tertiary: rgb(65, 66, 68);
+    --content: rgb(196, 196, 197);
+    --code-block-bg: rgb(25, 25, 25);
+    --code-bg: rgb(55, 56, 62);
+    --border: rgb(51, 51, 51);
+    --tint: #ab1700;
+}
+
 /* for ascii art on home page */
 pre.entry-header {
     font-size: 10px;
@@ -96,78 +134,21 @@ pre.entry-header {
     padding: 5px 10px;
 }
 
-/* override theme colors */
-:root {
-    --gap: 24px;
-    --content-gap: 20px;
-    --nav-width: 1024px;
-    --main-width: 720px;
-    --header-height: 60px;
-    --footer-height: 60px;
-    --radius: 8px;
-    --theme: rgb(255, 255, 255);
-    --entry: rgb(243, 243, 243);
-    --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
-    --content: rgb(31, 31, 31);
-    --code-block-bg: rgb(22, 22, 22);
-    --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238);
-
-    body {
-        background: var(--theme);
-    }
-
-    ::selection {
-      color: var(--theme);
-      background-color: black;
-    }
-
-    a:hover {
-        color: #1f9aff;
-    }
-
-    #moon:hover {
-        color: #1f9aff;
-    }
+::selection {
+  color: var(--primary);
+  background-color: var(--tint);
 }
 
-.dark {
-    --theme: #000;
-    --entry: rgb(46, 46, 51);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(65, 66, 68);
-    --content: rgb(196, 196, 197);
-    --code-block-bg: rgb(25, 25, 25);
-    --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
-
-    ::selection {
-      color: var(--theme);
-      background-color: var(--primary);
-    }
-
-    a:hover {
-        color: #c91b00;
-    }
-
-    #sun:hover {
-        color: #c91b00;
-    }
-
-    .post-tags a {
-        background: var(--tertiary);
-    }
+a:hover {
+    color: var(--tint);
 }
 
-.list {
-    background: var(--code-bg);
+#moon:hover {
+    color: var(--tint);
 }
 
-.dark.list {
-    background: var(--theme);
+#sun:hover {
+    color: var(--tint);
 }
 
 /* Random post button */
