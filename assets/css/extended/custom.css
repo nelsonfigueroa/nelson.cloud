@@ -135,8 +135,8 @@ pre.entry-header {
 }
 
 ::selection {
-  color: var(--primary);
-  background-color: var(--tint);
+  color: var(--theme);
+  background-color: var(--primary);
 }
 
 a:hover {
