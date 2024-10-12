@@ -38,6 +38,10 @@ Software Engineer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
 
 **Other**: Command Line, Git,  Agile, Scrum, Atlassian Suite (Jira, Confluence, Bitbucket)
 
+## Certifications
+
+- [AWS Certified Cloud Practitioner](https://www.credly.com/badges/f55c43a7-ffb6-4260-a741-2a889e99fa40/public_url)
+
 ##  Education
 
 **[California State University, Northridge](https://www.csun.edu/)**
