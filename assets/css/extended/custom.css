@@ -74,6 +74,8 @@ pre.entry-header {
     padding-top: 1rem;
     padding-bottom: 1rem;
     transition: none;
+    border: 1px solid var(--border);
+    background: none;
 }
 
 .post-entry:active {
@@ -81,8 +83,12 @@ pre.entry-header {
 }
 
 .post-entry:hover {
-    filter: brightness(90%);
-    border-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+/* title of post links */
+.post-entry-title:hover {
+    color: var(--tint)
 }
 
 /* for meta of post links */
@@ -109,6 +115,7 @@ pre.entry-header {
     background: var(--tertiary);
     font-size: 12px;
     line-height: 24px;
+    font-family: monospace;
 }
 
 .post-tags {
@@ -154,7 +161,7 @@ a:hover {
 /* Random post button */
 
 .random-post-button {
-    background: var(--entry);
+    background: var(--theme);
     border-radius: var(--radius);
     text-align: center;
     display: block;
@@ -165,7 +172,6 @@ a:hover {
 }
 
 .random-post-button:hover {
-    filter: brightness(90%);
     border: 1px solid var(--secondary);
 }
 
@@ -178,4 +184,23 @@ a:hover {
 /* remove margin from inline <code> */
 .post-content code {
     margin: 0;
+}
+
+/* prev / next navbar on post footers */
+
+.paginav {
+    background: none;
+}
+
+a.prev:hover {
+    background: none;
+}
+
+a.next:hover {
+    background: none;
+}
+
+/* /categories badges */
+.terms-tags {
+    font-family: monospace;
 }
