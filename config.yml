@@ -124,9 +124,6 @@ params:
     - name: linkedin
       title: LinkedIn
       url: "https://www.linkedin.com/in/nelsonfigueroa1/"
-    - name: ycombinator
-      title: Hacker News
-      url: "https://news.ycombinator.com/user?id=nelsonfigueroa"
     - name: rss
       title: RSS Feed
       url: "/index.xml"
