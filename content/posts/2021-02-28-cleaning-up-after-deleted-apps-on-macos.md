@@ -2,18 +2,18 @@
 title = "Cleaning Up Residual Files on macOS After Deleting Apps"
 summary = "Clean up residual files and directories after deleting macOS apps."
 date = "2021-02-28"
-lastmod = "2024-10-12"
+lastmod = "2024-10-13"
 categories = ["macOS", "Shell"]
 +++
 
 After deleting apps on macOS, they tend leave behind residual files and directories throughout the system. You can use the `find` command to find these files after an app has been deleted. I'll be deleting the LastPass app and removing its residual files as an example.
 
-**2024-10-12 Update**: I recently discovered [AppCleaner](https://freemacsoft.net/appcleaner/). You can drag apps into it and it cleans up a lot of the extra files and folders that apps create. I recommend you use this first and then proceed with this post if you want to look more deeply.
+**2024-10-13 Update**: I recently discovered [Pearcleaner](https://github.com/alienator88/Pearcleaner). You can use this app to delete other apps along with all the extra files and folders they create. I recommend you use this first and then continue reading this post if you want to look more deeply.
 
-You can download AppCleaner from the link above or install it with [Homebrew](https://formulae.brew.sh/cask/appcleaner):
+You can download Pearcleaner from the link above or install it with [Homebrew](https://formulae.brew.sh/cask/pearcleaner):
 
 ```shell
-brew install --cask appcleaner
+brew install --cask pearcleaner
 ```
 
 ## Searching for Residual Files and Directories
