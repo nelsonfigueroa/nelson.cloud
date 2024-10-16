@@ -186,6 +186,11 @@ a:hover {
     margin: 0;
 }
 
+/* make regular text prettier? */
+/* https://codersblock.com/blog/nicer-text-wrapping-with-css-text-wrap/ */
+.post-content p {
+    text-wrap: pretty; 
+}
 /* prev / next navbar on post footers */
 
 .paginav {
