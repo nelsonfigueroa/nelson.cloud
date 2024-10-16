@@ -42,9 +42,7 @@
         line-height: 2.5;
         margin: calc(var(--header-height) - var(--gap)) var(--gap);
         display: block;
-        filter: drop-shadow(5px 5px var(--tertiary));
-        -webkit-box-shadow: 5px 5px var(--tertiary);
-        box-shadow: 5px 5px var(--tertiary);
+        box-shadow: 5px 5px var(--secondary);
     }
 
     .list .menu {
