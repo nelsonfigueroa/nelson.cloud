@@ -36,16 +36,17 @@
         z-index: 5;
         margin-bottom: var(--gap);
         padding: var(--gap);
-        background: var(--code-bg);
-        border-radius: var(--radius);
-        border: 2px solid var(--tertiary);
+        background: var(--theme);
+        border-radius: 0;
+        border: 1px solid var(--primary);
         line-height: 2.5;
         margin: calc(var(--header-height) - var(--gap)) var(--gap);
         display: block;
+        filter: drop-shadow(5px 5px var(--tertiary));
     }
 
     .list .menu {
-        background: var(--entry);
+        background: var(--theme);
     }
 
     .menu li+li {
