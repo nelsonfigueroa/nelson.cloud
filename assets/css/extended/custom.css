@@ -219,6 +219,9 @@ a.next:hover {
 /* code blocks with syntax highlighting */
 .highlight {
     border: 1px solid var(--border);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 /* to remove overlapping borders */
@@ -230,6 +233,9 @@ a.next:hover {
 .post-content pre code {
     border-radius: var(--radius);
     border: 1px solid var(--border);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
 }
 
 /* table of contents */
