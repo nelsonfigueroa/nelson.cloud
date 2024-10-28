@@ -96,11 +96,6 @@ pre.entry-header {
     line-height: 1.6rem;
 }
 
-/* nav width */
-.nav {
-    max-width: calc(var(--nav-width) + var(--gap) * 35);
-}
-
 /* borders around post images */
 .post-content img {
     border: 1px solid var(--border);
