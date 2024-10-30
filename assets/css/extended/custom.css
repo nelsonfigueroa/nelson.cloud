@@ -2,7 +2,7 @@
 :root {
     --gap: 24px;
     --content-gap: 20px;
-    --nav-width: 1024px;
+    --nav-width: 720px;
     --main-width: 720px;
     --header-height: 60px;
     --footer-height: 60px;
@@ -245,4 +245,13 @@ a.next:hover {
 
 .dark .toc {
     background: var(--theme);
+}
+
+/* remove margin from theme switch */
+.logo-switches {
+    margin: 0;
+}
+
+button#theme-toggle {
+    margin: 0;
 }
