@@ -26,7 +26,7 @@ jobs:
           pip3 install awscli --upgrade --user
       - name: Install npm and purgecss
         run: |
-          apt install nodejs
+          sudo apt install nodejs
           npm install postcss postcss-cli @fullhuman/postcss-purgecss --save
       - name: Initialize and pull submodule
         run: |
