@@ -6,7 +6,7 @@ ShowToc = true
 TocOpen = true
 +++
 
-I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog to share my knowledge and occasionally rant.
+I'm Nelson. I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog to share my knowledge and occasionally rant.
 
 ## Experience
 
