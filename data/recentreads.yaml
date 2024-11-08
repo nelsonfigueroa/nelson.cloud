@@ -4,3 +4,5 @@
   url: "https://ericmurphy.xyz/blog/minimalist-web/"
 - title: "Don't ask someone to file a ticket"
   url: "https://www.nothingeasyaboutthis.com/dont-ask-someone-to-file-a-ticket/"
+- title: "Creating a Brainrot Language Server in Golang"
+  url: "https://jitesh117.github.io/blog/creating-a-brainrot-language-server-in-golang/"
