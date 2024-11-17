@@ -2,7 +2,7 @@
 title = "AWS IAM: Allowing a Role to Assume Another Role"
 summary = "How to allow an IAM Role to assume another Role."
 date = "2021-06-19"
-lastmod = "2021-06-19"
+lastmod = "2024-11-17"
 categories = ["AWS"]
 +++
 
@@ -10,7 +10,7 @@ To allow an IAM Role to assume another Role, we need to modify the **trust relat
 
 ## Roles in the Same Account
 
-Let's say we have two roles, `Role_A` and `Role_B`. If we want to allow `Role_A` to assume `Role_B`, we need to modify the trust relationship of `Role_B` with the following:
+Let's say we have two roles, `Role_A` and `Role_B`. If we want to allow `Role_A` to assume `Role_B`, we need to modify the **trust relationship** of `Role_B` with the following:
 
 ```json
 {
@@ -29,7 +29,7 @@ Let's say we have two roles, `Role_A` and `Role_B`. If we want to allow `Role_A`
 
 This is all that's needed to allow a role to assume another role within the same account.
 
-Note the `Principal` element where we specify the role that we want to give permissions to. In general, the `Principal` element is used in policies to give users/roles/services access to other AWS resources. However, the `Principal` element cannot be used in policies attached to Roles. It can only exist in the trust relationships of roles (you'll get errors if you try to use the `Principal` element in an IAM Role policy).
+> Note the `Principal` element where we specify the role that we want to give permissions to. In general, the `Principal` element is used in policies to give users/roles/services access to other AWS resources. However, the `Principal` element cannot be used in policies attached to Roles. It can only exist in the trust relationships of roles (you'll get errors if you try to use the `Principal` element in an IAM Role policy).
 
 You can read more about this element in the [AWS docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html).
 
