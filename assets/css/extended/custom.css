@@ -35,7 +35,6 @@ a:hover {
 }
 
 /* Random post button */
-
 .random-post-button {
     background: var(--theme);
     text-align: center;
@@ -50,19 +49,6 @@ a:hover {
 .post-content p {
     text-wrap: pretty; 
 }
-/* prev / next navbar on post footers */
-
-.paginav {
-    background: none;
-}
-
-a.prev:hover {
-    background: none;
-}
-
-a.next:hover {
-    background: none;
-}
 
 /* code blocks with syntax highlighting */
 .highlight {
@@ -73,17 +59,9 @@ a.next:hover {
 }
 
 /* to remove overlapping borders */
+/* there should be a way to do this without additional css */
 .chroma td pre code {
     border: 0;
-}
-
-/* code blocks without syntax highlighting */
-.post-content pre code {
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
 }
 
 /* table of contents */

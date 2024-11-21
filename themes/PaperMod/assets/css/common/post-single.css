@@ -203,12 +203,16 @@
     border-radius: 2px;
 }
 
+/* code blocks without syntax highlighting */
 .post-content pre code {
     display: grid;
     margin: auto 0;
-    padding: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
     color: rgb(213, 213, 214);
     background: var(--code-block-bg) !important;
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow-x: auto;
     word-break: break-all;
@@ -319,7 +323,6 @@
 .share-buttons,
 .paginav {
     border-radius: var(--radius);
-    background: var(--code-bg);
     border: 1px solid var(--border);
 }
 
