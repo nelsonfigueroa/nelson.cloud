@@ -14,20 +14,9 @@ pre.ascii-art {
 }
 
 /* title of post links */
+/* this should be unnecessary if i use <a> for links instead of <h2> or idk */
 .post-entry-title:hover {
     color: var(--tint)
-}
-
-.post-meta {
-    color: var(--secondary);
-    font-size: 14px;
-    display: inline-block;
-    flex-wrap: wrap;
-}
-
-/* code copy button */
-.copy-code {
-    padding: 5px 10px;
 }
 
 ::selection {
@@ -35,14 +24,12 @@ pre.ascii-art {
   background-color: var(--primary);
 }
 
+/* hover tint for all links throughout */
 a:hover {
     color: var(--tint);
 }
 
-#moon:hover {
-    color: var(--tint);
-}
-
+#moon:hover,
 #sun:hover {
     color: var(--tint);
 }
@@ -51,28 +38,11 @@ a:hover {
 
 .random-post-button {
     background: var(--theme);
-    border-radius: var(--radius);
     text-align: center;
     display: block;
     position: relative;
     margin-bottom: var(--gap);
     padding: var(--gap);
-    border: 1px solid var(--border);
-}
-
-.random-post-button:hover {
-    border: 1px solid var(--secondary);
-}
-
-/* remove box shadow from links and use decoration instead */
-.post-content a {
-    box-shadow: none;
-    text-decoration: underline;
-}
-
-/* remove margin from inline <code> */
-.post-content code {
-    margin: 0;
 }
 
 /* make regular text prettier? */
