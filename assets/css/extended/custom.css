@@ -64,24 +64,6 @@ a:hover {
     border: 0;
 }
 
-/* table of contents */
-.toc {
-    margin: 0 2px 40px 2px;
-    border: 1px solid var(--border);
-    background: var(--theme);
-    border-radius: var(--radius);
-    padding: 0.4em;
-    box-shadow: 5px 5px var(--secondary);
-}
-
-.dark .toc {
-    background: var(--theme);
-}
-
-/* remove margin from theme switch */
-.logo-switches {
-    margin: 0;
-}
 
 button#theme-toggle {
     margin: 0;
