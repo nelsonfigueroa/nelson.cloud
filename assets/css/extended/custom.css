@@ -1,30 +1,14 @@
 /* for ascii art on home page */
-pre.entry-header {
+pre.ascii-art {
     font-size: 10px;
     line-height: 1.1;
     white-space: pre-wrap;
     max-width: 100%;
 }
 
-.first-entry {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 320px;
-    margin: var(--gap) 0 calc(var(--gap) * 2) 0;
-    text-align: center;
-}
-
-.first-entry .entry-header {
-    overflow: visible;
-    display: unset;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-}
-
+/* ascii art font size on smaller screens */
 @media screen and (max-width: 768px) {
-    pre.entry-header {
+    pre.ascii-art {
         font-size: 8px;
     }
 }
@@ -32,33 +16,6 @@ pre.entry-header {
 /* title of post links */
 .post-entry-title:hover {
     color: var(--tint)
-}
-
-/* borders around post images */
-.post-content img {
-    border: 1px solid var(--border);
-}
-
-/* category badges */
-.post-tags a {
-    display: inline-block;
-    flex-wrap: wrap;
-    padding: 0 5px;
-    color: var(--secondary);
-    background: var(--theme);
-    font-size: 12px;
-    line-height: 24px;
-    font-family: monospace;
-}
-
-.post-tags {
-    display: inline-block;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.post-tags a:hover {
-    background: var(--theme);
 }
 
 /* badges in /categories/ path */

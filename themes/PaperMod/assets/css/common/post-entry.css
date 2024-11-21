@@ -5,11 +5,12 @@
     justify-content: center;
     min-height: 320px;
     margin: var(--gap) 0 calc(var(--gap) * 2) 0;
+    text-align: center;
 }
 
 .first-entry .entry-header {
-    overflow: hidden;
-    display: -webkit-box;
+    overflow: visible;
+    display: unset;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
 }

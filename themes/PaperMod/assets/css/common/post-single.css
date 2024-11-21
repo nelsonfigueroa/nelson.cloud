@@ -229,6 +229,7 @@
 .post-content img {
     border-radius: 4px;
     margin: 1rem 0;
+    border: 1px solid var(--border);
 }
 
 .post-content img[src*="#center"] {
@@ -300,7 +301,7 @@
 }
 
 .post-tags {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -318,17 +319,14 @@
 }
 
 .post-tags a {
-    display: block;
-    padding: 0 14px;
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0 5px;
     color: var(--secondary);
-    font-size: 14px;
-    line-height: 34px;
-    background: var(--code-bg);
-}
-
-.post-tags a:hover,
-.paginav a:hover {
-    background: var(--border);
+    background: var(--theme);
+    font-size: 12px;
+    line-height: 24px;
+    font-family: monospace;
 }
 
 .share-buttons {

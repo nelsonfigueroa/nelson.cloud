@@ -53,6 +53,7 @@
     "classes": [
       "active",
       "anchor",
+      "ascii-art",
       "chroma",
       "details",
       "entry-content",
