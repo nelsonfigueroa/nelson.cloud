@@ -28,9 +28,6 @@ jobs:
         run: |
           sudo apt install nodejs
           npm install postcss postcss-cli @fullhuman/postcss-purgecss --save
-      - name: Initialize and pull submodule
-        run: |
-          git submodule update --init --recursive
       - name: Build Site
         run: |
           hugo version
