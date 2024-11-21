@@ -13,6 +13,5 @@
 }
 
 .terms-tags a:active {
-    background: var(--tertiary);
-    transform: scale(0.96);
+    background: var(--theme);
 }

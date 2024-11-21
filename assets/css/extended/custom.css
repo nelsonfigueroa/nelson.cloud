@@ -68,11 +68,6 @@ pre.entry-header {
     font-family: monospace;
 }
 
-.terms-tags a:active {
-    background: var(--theme);
-    transform: none;
-}
-
 .post-meta {
     color: var(--secondary);
     font-size: 14px;
