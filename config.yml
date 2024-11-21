@@ -2,7 +2,7 @@ baseURL: "https://nelson.cloud/"
 title: nelson.cloud ☁️
 pagination:
   pagerSize: 10
-# theme: [PaperMod]
+theme: [PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
