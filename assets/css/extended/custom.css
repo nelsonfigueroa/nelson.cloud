@@ -29,29 +29,9 @@ pre.entry-header {
     }
 }
 
-/* for entire post link box itself */
-.post-entry {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 1rem;
-    padding-bottom: 0;
-    transition: none;
-    border: none;
-    background: none;
-}
-
-.post-entry:active {
-    transform: none;
-}
-
 /* title of post links */
 .post-entry-title:hover {
     color: var(--tint)
-}
-
-/* for meta of post links */
-.entry-footer {
-    line-height: 1.6rem;
 }
 
 /* borders around post images */

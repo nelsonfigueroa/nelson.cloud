@@ -36,15 +36,6 @@
 .post-entry {
     position: relative;
     margin-bottom: var(--gap);
-    padding: var(--gap);
-    background: var(--entry);
-    border-radius: var(--radius);
-    transition: transform 0.1s;
-    border: 1px solid var(--border);
-}
-
-.post-entry:active {
-    transform: scale(0.96);
 }
 
 .tag-entry .entry-cover {
@@ -70,6 +61,7 @@
 .entry-footer {
     color: var(--secondary);
     font-size: 13px;
+    line-height: 1.6rem;
 }
 
 .entry-link {
