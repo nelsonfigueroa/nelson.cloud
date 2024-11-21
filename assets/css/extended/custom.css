@@ -18,13 +18,6 @@ pre.ascii-art {
     color: var(--tint)
 }
 
-/* badges in /categories/ path */
-.terms-tags li a {
-    border: 1px solid var(--border);
-    background: var(--theme);
-    font-family: monospace;
-}
-
 .post-meta {
     color: var(--secondary);
     font-size: 14px;

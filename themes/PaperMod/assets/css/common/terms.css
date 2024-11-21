@@ -2,16 +2,14 @@
     display: inline-block;
     margin: 10px;
     font-weight: 500;
+    font-family: monospace;
 }
 
 .terms-tags a {
     display: block;
     padding: 3px 10px;
-    background: var(--tertiary);
+    background: var(--theme);
+    border: 1px solid var(--border);
     border-radius: 6px;
     transition: transform 0.1s;
-}
-
-.terms-tags a:active {
-    background: var(--theme);
 }
