@@ -67,3 +67,21 @@ a:hover {
 button#theme-toggle {
     margin: 0;
 }
+
+/* post links */
+.post-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.post-link:before {
+    content: "[";
+    color: var(--tertiary);
+}
+
+.post-link:after {
+    content: "]";
+    color: var(--tertiary);
+}

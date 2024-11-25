@@ -25,11 +25,6 @@
     width: 100%;
 }
 
-#searchResults li:active {
-    transition: transform 0.1s;
-    transform: scale(0.98);
-}
-
 #searchResults a {
     position: absolute;
     width: 100%;
@@ -37,6 +32,10 @@
     top: 0px;
     left: 0px;
     outline: none;
+}
+
+#searchResults li:hover {
+    color: var(--tint);
 }
 
 #searchResults .focus {

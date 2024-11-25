@@ -68,9 +68,7 @@
 <article class="{{ $class }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-  <a class="" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
-    {{- .Title }}
-  </a>
+  <a class="post-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">{{- .Title }}</a>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
@@ -100,9 +98,7 @@
 {{ range .Site.Data.recentreads }}
 <article class="{{ $class }}">
     <!-- manually adding target="_blank" and ?ref=nelson.cloud -->
-    <a class="" aria-label="{{ .title }}" target="_blank" href="{{ .url }}?ref=nelson.cloud">
-      {{- .title }}
-    </a>
+    <a class="post-link" aria-label="{{ .title }}" target="_blank" href="{{ .url }}?ref=nelson.cloud">{{- .title }}</a>
     <div class="entry-content">
         <p>{{ .url }}</p>
     </div>
