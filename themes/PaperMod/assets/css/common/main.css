@@ -64,3 +64,10 @@ div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
 }
+
+hr {
+    margin: 0 0 1rem 0;
+    height: 2px;
+    background: var(--tertiary);
+    border: 0;
+}
