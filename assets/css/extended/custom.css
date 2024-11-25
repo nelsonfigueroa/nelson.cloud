@@ -13,12 +13,6 @@ pre.ascii-art {
     }
 }
 
-/* title of post links */
-/* this should be unnecessary if i use <a> for links instead of <h2> or idk */
-.post-entry-title:hover {
-    color: var(--tint)
-}
-
 ::selection {
   color: var(--theme);
   background-color: var(--primary);
@@ -36,16 +30,17 @@ a:hover {
 
 /* Random post button */
 .random-post-button {
-    padding: 0.8rem;
-    border: 1.5px solid var(--primary);
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
     color: var(--primary);
     text-decoration: none;
     margin-bottom: 2rem;
+    font-size: 14px;
 }
 
 .random-post-button:hover {
     color: var(--tint);
-    border: 1.5px solid var(--tint);
 }
 
 /* make regular text prettier? */

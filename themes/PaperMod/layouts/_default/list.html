@@ -69,11 +69,7 @@
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <a class="" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
-  <header class="entry-header">
-    <h2 class="post-entry-title">
-      {{- .Title }}
-    </h2>
-  </header>
+    {{- .Title }}
   </a>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
@@ -105,11 +101,7 @@
 <article class="{{ $class }}">
     <!-- manually adding target="_blank" and ?ref=nelson.cloud -->
     <a class="" aria-label="{{ .title }}" target="_blank" href="{{ .url }}?ref=nelson.cloud">
-    <header class="entry-header">
-        <h2 class="post-entry-title">
-            {{- .title }}
-        </h2>
-    </header>
+      {{- .title }}
     </a>
     <div class="entry-content">
         <p>{{ .url }}</p>
