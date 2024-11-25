@@ -200,7 +200,3 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
-
-# for purgecss
-build:
-  writeStats: true
