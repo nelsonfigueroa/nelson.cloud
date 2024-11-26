@@ -6,10 +6,6 @@
     padding: var(--gap);
 }
 
-.page-header h1 {
-    font-size: 40px;
-}
-
 .pagination {
     display: flex;
 }

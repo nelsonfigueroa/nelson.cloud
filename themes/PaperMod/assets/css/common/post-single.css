@@ -5,7 +5,6 @@
 
 .post-title {
     margin-bottom: 2px;
-    font-size: 40px;
 }
 
 .post-description {
@@ -50,8 +49,8 @@
 }
 
 .post-content h1 {
-    margin: 40px auto 32px;
-    font-size: 40px;
+    margin: 36px auto 28px;
+    font-size: 36px;
 }
 
 .post-content h2 {

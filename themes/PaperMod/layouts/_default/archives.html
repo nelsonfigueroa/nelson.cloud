@@ -46,7 +46,7 @@
       {{- range .Pages }}
       {{- if eq .Kind "page" }}
       <div class="archive-entry">
-        <h3 class="archive-entry-title entry-hint-parent">
+        <h3 class="archive-entry-title">
           {{- .Title | markdownify }}
           {{- if .Draft }}
           <span class="entry-hint" title="Draft">
