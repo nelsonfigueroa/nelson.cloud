@@ -15,7 +15,7 @@
     --code-block-bg: rgb(0, 0, 0);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
-    --tint: rgb(31, 154, 255);
+    --tint: rgb(0, 137, 249);
 
     body {
         background: var(--theme);

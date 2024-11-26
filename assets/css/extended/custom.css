@@ -18,9 +18,13 @@ pre.ascii-art {
   background-color: var(--primary);
 }
 
-/* hover tint for all links throughout */
-a:hover {
+/* styling for links throughout */
+a {
     color: var(--tint);
+}
+
+a:hover {
+    filter: brightness(75%);
 }
 
 #moon:hover,
