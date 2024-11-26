@@ -49,6 +49,16 @@ body:not(.dark) #sun {
     display: none;
 }
 
+#moon,
+#sun {
+    color: var(--tint);
+}
+
+#moon:hover,
+#sun:hover {
+    filter: brightness(75%);
+}
+
 #menu {
     list-style: none;
     word-break: keep-all;

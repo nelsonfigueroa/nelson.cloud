@@ -27,24 +27,19 @@ a:hover {
     filter: brightness(75%);
 }
 
-#moon:hover,
-#sun:hover {
-    color: var(--tint);
-}
-
 /* Random post button */
 .random-post-button {
     padding: 0.5rem;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    color: var(--primary);
+    color: var(--tint);
     text-decoration: none;
     margin-bottom: 2rem;
     font-size: 14px;
 }
 
 .random-post-button:hover {
-    color: var(--tint);
+    filter: brightness(75%);
 }
 
 /* make regular text prettier? */
