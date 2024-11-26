@@ -3,8 +3,11 @@
     margin: 24px auto var(--content-gap) auto;
 }
 
+/* basically <header><h1>... */
+/* so keep this consistent with H1 */
 .post-title {
     margin-bottom: 2px;
+    font-size: 32px;
 }
 
 .post-description {
@@ -50,12 +53,12 @@
 
 .post-content h1 {
     margin: 36px auto 28px;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .post-content h2 {
     margin: 32px auto 24px;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .post-content h3 {
@@ -63,20 +66,18 @@
 }
 
 .post-content h4 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .post-content h5 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .post-content h6 {
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.post-content a,
 .toc a:hover {
-    text-decoration: underline;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
@@ -355,7 +356,7 @@ h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor {
     display: inline-flex;
-    color: var(--secondary);
+    color: var(--tint);
     margin-inline-start: 8px;
     font-weight: 500;
     user-select: none;
