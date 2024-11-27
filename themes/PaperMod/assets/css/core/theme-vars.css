@@ -15,7 +15,11 @@
     --code-block-bg: rgb(0, 0, 0);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
-    --tint: rgb(0, 137, 249);
+
+    --tint: #1E66F5;
+    --tint-2: #328A5D;
+    --tint-3: #FA701D;
+    --tint-4: #F8282A;
 
     body {
         background: var(--theme);
@@ -32,7 +36,11 @@
     --code-block-bg: rgb(0, 0, 0);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
-    --tint: rgb(171, 23, 0);
+
+    --tint: #D20F39;
+    --tint-2: #40A02B;
+    --tint-3: #DF8E1D;
+    --tint-4: #1E66F5;
 }
 
 .list {
