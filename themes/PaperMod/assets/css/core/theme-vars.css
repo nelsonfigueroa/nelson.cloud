@@ -20,6 +20,7 @@
     --tint-2: #328A5D;
     --tint-3: #FA701D;
     --tint-4: #F8282A;
+    --tint-5: #179299;
 
     body {
         background: var(--theme);
@@ -41,6 +42,7 @@
     --tint-2: #40A02B;
     --tint-3: #DF8E1D;
     --tint-4: #1E66F5;
+    --tint-5: #33C3C1;
 }
 
 .list {

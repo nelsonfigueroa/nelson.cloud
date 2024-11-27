@@ -18,6 +18,7 @@
     margin: 10px 0;
     position: relative;
     font-weight: 500;
+    color: var(--tint);
 }
 
 #searchResults {
@@ -35,7 +36,7 @@
 }
 
 #searchResults li:hover {
-    color: var(--tint);
+    filter: brightness(75%);
 }
 
 #searchResults .focus {
