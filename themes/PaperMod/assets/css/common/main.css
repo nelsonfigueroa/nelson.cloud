@@ -11,11 +11,12 @@
 }
 
 .pagination a {
-    color: var(--theme);
+    color: var(--primary);
     font-size: 13px;
     line-height: 36px;
-    background: var(--primary);
-    border-radius: calc(36px / 2);
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
     padding: 0 16px;
 }
 
