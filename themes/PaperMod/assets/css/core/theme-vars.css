@@ -24,10 +24,6 @@
 
     --blockquote-border: rgb(23, 146, 153);
     --blockquote-background: rgba(23, 146, 153, 0.38);
-
-    body {
-        background: var(--theme);
-    }
 }
 
 .dark {
