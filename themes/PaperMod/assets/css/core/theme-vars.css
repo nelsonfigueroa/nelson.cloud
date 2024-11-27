@@ -22,6 +22,9 @@
     --tint-4: #F8282A;
     --tint-5: #179299;
 
+    --blockquote-border: rgb(23, 146, 153);
+    --blockquote-background: rgba(23, 146, 153, 0.38);
+
     body {
         background: var(--theme);
     }
@@ -43,6 +46,9 @@
     --tint-3: #DF8E1D;
     --tint-4: #1E66F5;
     --tint-5: #33C3C1;
+
+    --blockquote-border: rgb(76, 191, 153);
+    --blockquote-background: rgba(23, 146, 153, 0.3);
 }
 
 .list {

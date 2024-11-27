@@ -13,10 +13,8 @@ Hack The Box is an online penetration testing platform where users can practice 
 
 <br>
 
----
 >2022-12-10 Update: I noticed that hackthebox no longer requires users to solve a puzzle to register, so this post no longer applies :(
 
----
 <br>
 
 To sign up to the site, I was redirected to [https://www.hackthebox.eu/invite](https://www.hackthebox.eu/invite). There is a single field that prompts for an invite code. Other than that, there are no clues on the surface.
