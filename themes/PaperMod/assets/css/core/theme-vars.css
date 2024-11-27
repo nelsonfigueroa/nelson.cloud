@@ -17,10 +17,10 @@
     --border: rgb(238, 238, 238);
 
     --tint: #1E66F5;
-    --tint-2: #328A5D;
-    --tint-3: #FA701D;
-    --tint-4: #F8282A;
-    --tint-5: #179299;
+    /* --tint-2: #328A5D; */
+    /* --tint-3: #FA701D; */
+    /* --tint-4: #F8282A; */
+    /* --tint-5: #179299; */
 
     --blockquote-border: rgb(23, 146, 153);
     --blockquote-background: rgba(23, 146, 153, 0.38);
@@ -42,10 +42,10 @@
     --border: rgb(51, 51, 51);
 
     --tint: #D20F39;
-    --tint-2: #40A02B;
-    --tint-3: #DF8E1D;
-    --tint-4: #1E66F5;
-    --tint-5: #33C3C1;
+    /* --tint-2: #40A02B; */
+    /* --tint-3: #DF8E1D; */
+    /* --tint-4: #1E66F5; */
+    /* --tint-5: #33C3C1; */
 
     --blockquote-border: rgb(76, 191, 153);
     --blockquote-background: rgba(23, 146, 153, 0.3);
