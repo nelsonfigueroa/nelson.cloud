@@ -13,7 +13,7 @@
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
     --code-block-bg: rgb(0, 0, 0);
-    --code-bg: rgb(245, 245, 245);
+    --code-bg: rgb(235, 235, 235);
     --border: rgb(238, 238, 238);
 
     --tint: #1E66F5;
@@ -45,12 +45,4 @@
 
     --blockquote-border: rgb(76, 191, 153);
     --blockquote-background: rgba(23, 146, 153, 0.3);
-}
-
-.list {
-    background: var(--code-bg);
-}
-
-.dark.list {
-    background: var(--theme);
 }
