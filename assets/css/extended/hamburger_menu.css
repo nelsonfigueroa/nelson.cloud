@@ -59,6 +59,7 @@
         display: block;
         float: right;
         margin: auto var(--gap);
+        color: var(--tint);
     }
 
     .menu.hidden {
