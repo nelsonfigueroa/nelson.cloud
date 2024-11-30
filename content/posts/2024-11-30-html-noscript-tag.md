@@ -1,5 +1,5 @@
 +++
-title = "Render HTML and CSS if JavaScript Is Disabled Using the <noscript> Tag"
+title = "Render HTML and CSS if JavaScript Is Disabled Using the `<noscript>` Tag"
 summary = "Render HTML and apply CSS styles if JavaScript is disabled."
 date = "2024-11-30"
 lastmod = "2024-11-30"
