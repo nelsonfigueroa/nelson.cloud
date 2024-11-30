@@ -90,8 +90,8 @@
 {{- end -}}
 
 {{/*  Hamburger Menu + GoatCounter (used on every page) */}}
-{{- $hamburger_menu := resources.Get "js/hamburger_menu.js" }}
-{{- $goatcounter := resources.Get "js/goatcounter.js" }}
+{{- $hamburger_menu := resources.Get "js/hamburger_menu.js" | resources.Minify }}
+{{- $goatcounter := resources.Get "js/goatcounter.js" | resources.Minify }}
 {{- $goat_burger := (slice $hamburger_menu $goatcounter) | resources.Concat "assets/js/all.js" }}
 <script defer crossorigin="anonymous" src="{{ $goat_burger.RelPermalink }}" integrity="{{ $goat_burger.Data.Integrity }}"></script>
 
