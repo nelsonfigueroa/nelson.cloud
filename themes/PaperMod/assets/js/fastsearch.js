@@ -72,6 +72,15 @@ function reset() {
     sInput.focus(); // shift focus to input box
 }
 
+// to escape special characters if they show up in post titles
+function escapeHTML(str) {
+    return str.replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;")
+              .replace(/"/g, "&quot;")
+              .replace(/'/g, "&#039;");
+}
+
 // execute search as each character is typed
 sInput.onkeyup = function (e) {
     // run a search query (for "term") every time a letter is typed
@@ -88,8 +97,12 @@ sInput.onkeyup = function (e) {
             let resultSet = ''; // our results bucket
 
             for (let item in results) {
-                resultSet += `<li class="post-entry"><header class="post-link">${results[item].item.title}</header>` +
-                    `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`
+                const title = escapeHTML(results[item].item.title);
+                const permalink = results[item].item.permalink;
+                resultSet += `<li class="post-entry">
+                                <header class="post-link">${title}</header>
+                                <a href="${permalink}" aria-label="${title}"></a>
+                              </li>`;
             }
 
             resList.innerHTML = resultSet;
