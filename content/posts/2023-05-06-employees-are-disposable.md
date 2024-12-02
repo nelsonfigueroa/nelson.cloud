@@ -2,7 +2,7 @@
 title = "As an Employee, You Are Disposable"
 summary = "Companies are willing to lay off employees despite being profitable."
 date = "2023-05-06"
-lastmod = "2024-05-27"
+lastmod = "2024-12-01"
 categories = ["Opinion"]
 +++
 
@@ -43,6 +43,16 @@ It doesn't matter how much value you've delivered. It doesn't matter how much im
 
 {{< figure src="/employees-are-disposable/jeremy-joslin.webp" alt="Tweet from @jcj"
 caption="*Source: [Jeremy Joslin (@jcj) on Twitter](https://twitter.com/jcj/status/1616482322278420481)*" >}}
+
+<br>
+
+Employees everywhere are disposable, not just in the tech field. You can work at a company for over 30 years and still get thrown away like nothing.
+
+{{< figure src="/employees-are-disposable/gm-employee.webp" alt="Adam Bernard headline."
+caption="*Source: [38-Year GM Employee Gets Laid Off By 5 AM Email](https://gmauthority.com/blog/2024/11/38-year-gm-employee-gets-laid-off-by-5-am-email/)*" >}}
+
+{{< figure src="/employees-are-disposable/adam-bernard.webp" alt="Adam Bernard on LinkedIn"
+caption="*Source: [Adam Bernard on LinkedIn](https://www.linkedin.com/posts/adamdbernard_well-in-unexpected-news-i-was-let-go-from-activity-7263190210874617856-wE6z/)*" >}}
 
 <br>
 
