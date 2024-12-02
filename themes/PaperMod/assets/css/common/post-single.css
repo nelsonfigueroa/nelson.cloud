@@ -220,7 +220,7 @@
 
 .post-content blockquote {
     margin: 20px 0;
-    padding: 0 14px;
+    padding: 16px 16px;
     border-inline-start: 5px solid var(--blockquote-border);
     background: var(--blockquote-background);
 }
