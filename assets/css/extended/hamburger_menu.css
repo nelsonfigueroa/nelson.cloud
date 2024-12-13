@@ -1,7 +1,5 @@
 /* Source: https://github.com/adityatelange/hugo-PaperMod/discussions/943 */
 
-/* START hamburger menu */
-
 #menu-trigger {
     display: none;
 }
@@ -66,5 +64,3 @@
         display: none;
     }
 }
-
-/* END hamburger menu */

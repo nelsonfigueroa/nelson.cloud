@@ -37,7 +37,3 @@
 .button-inner {
     padding: 0 8px;
 }
-
-.button:active {
-    transform: scale(0.96);
-}
