@@ -17,10 +17,6 @@
     gap: 10px;
 }
 
-.profile img {
-    border-radius: 50%;
-}
-
 .buttons {
     flex-wrap: wrap;
     max-width: 400px;
@@ -28,7 +24,6 @@
 
 .button {
     background: var(--tertiary);
-    border-radius: var(--radius);
     margin: 8px;
     padding: 6px;
     transition: transform 0.1s;

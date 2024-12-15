@@ -4,7 +4,6 @@
     color: var(--primary);
     font-weight: bold;
     border: 2px solid var(--tertiary);
-    border-radius: var(--radius);
 }
 
 #searchbox input:focus {
@@ -13,7 +12,6 @@
 
 #searchResults li {
     list-style: none;
-    border-radius: var(--radius);
     padding: 10px;
     margin: 10px 0;
     position: relative;

@@ -35,7 +35,6 @@
         margin-bottom: var(--gap);
         padding: var(--gap);
         background: var(--theme);
-        border-radius: 0;
         border: 1px solid var(--primary);
         line-height: 2.5;
         margin: calc(var(--header-height) - var(--gap)) var(--gap);

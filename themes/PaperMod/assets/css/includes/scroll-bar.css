@@ -10,7 +10,6 @@
 ::-webkit-scrollbar-thumb {
     background: var(--tertiary);
     border: 5px solid var(--theme);
-    border-radius: var(--radius);
 }
 
 .list:not(.dark)::-webkit-scrollbar-thumb {

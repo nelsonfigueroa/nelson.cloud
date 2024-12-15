@@ -84,7 +84,6 @@
 
 .post-content a code {
     margin: auto 0;
-    border-radius: 0;
     text-decoration: underline;
 }
 
@@ -155,14 +154,9 @@
     margin: auto 0;
 }
 
-.post-content .highlight table {
-    border-radius: var(--radius);
-}
-
 .post-content .highlight:not(table) {
     margin: 10px auto;
     background: var(--code-block-bg) !important;
-    border-radius: var(--radius);
     direction: ltr;
 }
 
@@ -200,7 +194,6 @@
     font-size: 14px;
     line-height: 1.5;
     background: var(--code-bg);
-    border-radius: 2px;
 }
 
 /* code blocks without syntax highlighting */
@@ -213,7 +206,6 @@
     color: rgb(213, 213, 214);
     background: var(--code-block-bg) !important;
     border: 1px solid var(--border);
-    border-radius: var(--radius);
     overflow-x: auto;
     word-break: break-all;
 }
@@ -230,7 +222,6 @@
 }
 
 .post-content img {
-    border-radius: 4px;
     margin: 1rem 0;
     border: 1px solid var(--border);
 }
@@ -261,7 +252,6 @@
     margin: 0 2px 40px 2px;
     border: 1px solid var(--border);
     background: var(--theme);
-    border-radius: var(--radius);
     padding: 0.4em;
     box-shadow: 5px 5px var(--secondary);
 }
@@ -318,7 +308,6 @@
 .post-tags a,
 .share-buttons,
 .paginav {
-    border-radius: var(--radius);
     border: 1px solid var(--border);
 }
 
@@ -371,7 +360,6 @@ h6:hover .anchor {
 .paginav a {
     padding-inline-start: 14px;
     padding-inline-end: 14px;
-    border-radius: var(--radius);
 }
 
 .paginav .title {

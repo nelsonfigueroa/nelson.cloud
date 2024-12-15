@@ -10,6 +10,5 @@
     padding: 3px 10px;
     background: var(--theme);
     border: 1px solid var(--border);
-    border-radius: 6px;
     transition: transform 0.1s;
 }

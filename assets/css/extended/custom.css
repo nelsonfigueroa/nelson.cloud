@@ -31,7 +31,6 @@ a:hover {
 .random-post-button {
     padding: 0.5rem;
     border: 1px solid var(--border);
-    border-radius: var(--radius);
     color: var(--tint);
     text-decoration: none;
     margin-bottom: 2rem;

@@ -16,7 +16,6 @@
     line-height: 36px;
     background: var(--theme);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
     padding: 0 16px;
 }
 
@@ -51,7 +50,6 @@ pre {
     right: 4px;
     color: rgba(255, 255, 255, 0.8);
     background: rgba(78, 78, 78, 0.8);
-    border-radius: var(--radius);
     padding: 5px 10px;
     font-size: 14px;
     user-select: none;
