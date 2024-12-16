@@ -142,8 +142,7 @@ params:
   #     google:
   #         SiteVerificationTag: "XYZabc"
 
-  assets:
-    disableHLJS: true
+  # assets:
   #     favicon: "<link / abs url>"
   #     favicon16x16: "<link / abs url>"
   #     favicon32x32: "<link / abs url>"
