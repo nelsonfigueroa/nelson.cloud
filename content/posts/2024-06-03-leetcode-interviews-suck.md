@@ -2,7 +2,7 @@
 title = "I Am So Sick of Leetcode-Style Interviews"
 summary = "Leetcode-style interviews do not reflect real-world software engineering problems."
 date = "2024-06-03"
-lastmod = "2024-06-12"
+lastmod = "2024-12-15"
 categories = ["Opinion"]
 ShowToc = false
 TocOpen = false
@@ -22,6 +22,7 @@ To add more context, I have both succeeded and failed at these kinds of intervie
 
 If you need a Software Engineer with AWS, Kuberentes, and Ruby on Rails experience, and you don't do silly quizzes, feel free to reach out!
 
----
+## Further Reading
 
-Discussion over at [Hacker News](https://news.ycombinator.com/item?id=40571395)
+- Discussion over at [Hacker News](https://news.ycombinator.com/item?id=40571395)
+- [Re-imagining Technical Interviews: Valuing Experience Over Exam Skills](https://danielabaron.me/blog/reimagining-technical-interviews/)
