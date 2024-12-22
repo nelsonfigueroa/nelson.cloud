@@ -2,13 +2,19 @@
 <!-- https://gohugo.io/render-hooks/links/ -->
 {{- $url := .Destination -}}
 {{- $refParam := "" -}}
+{{- $refDomain:= "" -}}
 {{- $hasQuery := strings.Contains $url "?" -}}
+{{- $hasHash := strings.Contains $url "#" -}}
 {{- if $hasQuery -}}
+    {{/*  taking into account existing query strings  */}}
     {{- $refParam = "&ref=" -}}
+    {{- $refDomain = "nelson.cloud" -}}
+{{- else if $hasHash -}}
+    {{/*  ensuring that URL doesn't have a hash #  */}}
+    {{/*  do nothing in this case  */}}
 {{- else -}}
     {{- $refParam = "?ref=" -}}
+    {{- $refDomain = "nelson.cloud" -}}
 {{- end -}}
-
-{{- $refDomain := "nelson.cloud" -}}
 
 <a href="{{ .Destination | safeURL }}{{ $refParam }}{{ $refDomain }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>{{ .Text | safeHTML }}</a>
