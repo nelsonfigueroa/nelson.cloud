@@ -190,10 +190,11 @@
 }
 
 .post-content code {
-    padding: 4px 6px;
+    padding: 3px 6px;
     font-size: 14px;
     line-height: 1.5;
     background: var(--code-bg);
+    border: 0.5px solid var(--primary);
 }
 
 /* code blocks without syntax highlighting */
