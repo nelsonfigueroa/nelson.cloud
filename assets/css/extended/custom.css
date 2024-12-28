@@ -9,7 +9,7 @@ pre.ascii-art {
 /* ascii art font size on smaller screens */
 @media screen and (max-width: 768px) {
     pre.ascii-art {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
