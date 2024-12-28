@@ -15,14 +15,14 @@
     --code-bg: rgb(235, 235, 235);
     --border: rgb(238, 238, 238);
 
-    --tint: #0A4CD1;
+    --tint: #1e69ff;
     /* --tint-2: #328A5D; */
     /* --tint-3: #FA701D; */
     /* --tint-4: #F8282A; */
     /* --tint-5: #179299; */
 
-    --blockquote-border: rgb(10 76 209);
-    --blockquote-background: rgba(10, 76, 209, 0);
+    --blockquote-border: rgb(30 105 255);
+    --blockquote-background: rgba(30, 105, 255, 0);
 }
 
 .dark {
