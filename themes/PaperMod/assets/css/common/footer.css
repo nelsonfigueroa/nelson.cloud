@@ -1,7 +1,6 @@
-.footer,
 .top-link {
     font-size: 12px;
-    color: var(--secondary);
+    color: var(--tint);
 }
 
 .footer {
@@ -9,6 +8,7 @@
     margin: auto;
     padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
     text-align: center;
+    border-top: 1px solid var(--border);
 }
 
 .footer span {
@@ -41,11 +41,6 @@
 .top-link,
 .top-link svg {
     filter: drop-shadow(0px 0px 0px var(--theme));
-}
-
-.footer a:hover,
-.top-link:hover {
-    color: var(--primary);
 }
 
 .top-link:focus,
