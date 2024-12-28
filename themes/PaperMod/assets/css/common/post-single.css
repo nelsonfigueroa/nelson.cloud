@@ -319,7 +319,6 @@
     background: var(--theme);
     font-size: 12px;
     line-height: 24px;
-    font-family: monospace;
 }
 
 .share-buttons {
