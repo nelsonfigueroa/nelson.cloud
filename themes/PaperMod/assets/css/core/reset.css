@@ -4,6 +4,7 @@
     src: url('/JetBrainsMono-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
     src: url('/JetBrainsMono-ExtraBold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +20,7 @@
     src: url('/JetBrainsMono-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 *,
