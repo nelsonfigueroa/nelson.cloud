@@ -2,13 +2,13 @@
 title = "How to Generate the Current Date and Time in Hugo"
 summary = "How to generate dates and times with Hugo shortcodes."
 date = "2024-12-22"
-lastmod = "2024-12-22"
+lastmod = "2024-12-29"
 categories = ["Hugo"]
 ShowToc = true
 TocOpen = true
 +++
 
-Here are a bunch of Hugo snippets you can use to generate the current date and time in your Hugo site. 
+Here are a bunch of [Hugo](https://gohugo.io/) snippets you can use to generate the current date and time in your Hugo site. 
 
 You can copy and paste these into HMTL templates. If you want to use these within your posts/articles (Markdown files) you'll need to create a shortcode first. Scroll down to the [Using Shortcodes](#using-shortcodes) section for more details.
 
