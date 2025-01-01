@@ -1,6 +1,6 @@
 +++
-title = "How to Add a Custom Response Header to an Amazon CloudFront Distribution"
-summary = "tbd"
+title = "How to Add a Custom Response Header to an Amazon Cloudfront Distribution"
+summary = "Adding a custom header to AWS CloudFront Distribution responses."
 date = "2025-01-01"
 lastmod = "2025-01-01"
 categories = ["AWS"]
@@ -62,3 +62,4 @@ Done!
 ## References
 
 - https://stackoverflow.com/questions/56187791/how-to-set-cache-control-header-in-amazon-cloudfront
+- https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/modifying-response-headers.html
