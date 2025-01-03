@@ -92,13 +92,13 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: false
+  ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: false
   ShowFullTextinRSS: true
   ShowWordCount: true
-  # comments: false
+  comments: true
   images: []
 
   profileMode:
