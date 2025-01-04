@@ -18,6 +18,12 @@ pre.ascii-art {
   background-color: var(--primary);
 }
 
+/* selection for code blocks */
+pre ::selection {
+    color: rgb(0, 0, 0);
+    background-color: rgb(90, 213, 131);
+}
+
 /* styling for links throughout */
 a {
     color: var(--tint);
