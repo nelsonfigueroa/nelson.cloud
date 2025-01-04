@@ -21,6 +21,7 @@ pre.ascii-art {
 /* styling for links throughout */
 a {
     color: var(--tint);
+    text-decoration: none;
 }
 
 a:hover {
@@ -59,11 +60,6 @@ a:hover {
 /* there should be a way to do this without additional css */
 .chroma td pre code {
     border: 0;
-}
-
-
-button#theme-toggle {
-    margin: 0;
 }
 
 /* post links */

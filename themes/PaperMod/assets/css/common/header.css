@@ -37,6 +37,7 @@
 
 button#theme-toggle {
     font-size: 26px;
+    margin: 0;
 }
 
 body.dark #moon {
