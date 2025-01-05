@@ -1,6 +1,9 @@
 {{- /* Comments area start */ -}}
 {{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
 
+{{/*  don't show for /support/ page  */}}
+{{ if not (or (hasPrefix .RelPermalink "/support/") (hasPrefix .RelPermalink "/about/")) }}
+
  <!-- 
 comments by Giscus
 this dynamically selects a theme
@@ -51,3 +54,5 @@ document.body.appendChild(giscusScript);
 </script>
  
 {{- /* Comments area end */ -}}
+
+{{ end }}
