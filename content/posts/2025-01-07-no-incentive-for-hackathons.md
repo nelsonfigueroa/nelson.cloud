@@ -10,9 +10,6 @@ TocOpen = true
 
 I don't understand why software developers participate in voluntary company [hackathons](https://en.wikipedia.org/wiki/Hackathon) on top of their day-to-day work. The company benefits the most out of whatever software is developed during these hackathons. In general, most of the work you do in your company mainly benefits the company, but I think this is especially true for hackathons.
 
-
-The title of this post is a sweeping statement that may not apply to all companies but I think it applies to most companies that do hackathons.
-
 I'd rather do a hackathon outside of work with friends or colleagues, even if there is no financial gain.
 
 You might ask, "if you don't care about money, why not just do a hackathon for your company?". 
