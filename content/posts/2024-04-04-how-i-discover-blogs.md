@@ -2,7 +2,7 @@
 title = "How I Discover New Blogs"
 summary = "A list of resources I use to discover new blogs."
 date = "2024-04-04"
-lastmod = "2024-12-26"
+lastmod = "2025-01-09"
 categories = ["Blogs"]
 ShowToc = true
 TocOpen = true
@@ -87,3 +87,9 @@ bukmark.club is a list of sites that have curated links to other sites. You can 
 **https://minifeed.net/welcome**
 
 A curated list of human-written blogs. When viewing a post or article from a blog here, minifeed will also show related blog posts from different sites which is great for discovering new blogs.
+
+## The Big List of Personal Websites
+
+**http://biglist.terraaeon.com/**
+
+Another curated list of personal websites.
