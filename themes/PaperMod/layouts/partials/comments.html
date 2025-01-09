@@ -1,7 +1,7 @@
 {{- /* Comments area start */ -}}
 {{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
 
-{{/*  don't show for /support/ page  */}}
+{{/*  don't show for /support/ or /about/ pages  */}}
 {{ if not (or (hasPrefix .RelPermalink "/support/") (hasPrefix .RelPermalink "/about/")) }}
 
  <!-- 
