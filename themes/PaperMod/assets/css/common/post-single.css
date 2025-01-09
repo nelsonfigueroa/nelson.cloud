@@ -10,6 +10,14 @@
     font-size: 32px;
 }
 
+/* title size on smaller screens */
+@media screen and (max-width: 768px) {
+    .post-title {
+        margin-bottom: 2px;
+        font-size: 24px;
+    }
+}
+
 .post-description {
     margin-top: 10px;
     margin-bottom: 5px;
