@@ -93,3 +93,9 @@ A curated list of human-written blogs. When viewing a post or article from a blo
 **http://biglist.terraaeon.com/**
 
 Another curated list of personal websites.
+
+## personalsit.es
+
+**https://personalsit.es/**
+
+Yet another curated list of personal sites.
