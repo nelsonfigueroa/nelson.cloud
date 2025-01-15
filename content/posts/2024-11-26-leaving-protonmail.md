@@ -28,7 +28,7 @@ This post is meant as honest feedback. Proton has a [respectable mission](https:
 
 ---
 
-2025-01-15: I was recently made aware about Proton CEO Andy Yen's comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
+2025-01-15: I was recently made aware about [Proton CEO Andy Yen](https://proton.me/blog/author/ayen)'s comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
 
 - https://archive.ph/txuJ2
 - https://www.reddit.com/r/ProtonMail/comments/1i1zjgn/so_that_happened/
