@@ -91,12 +91,8 @@
 
 {{/*  Hamburger Menu + GoatCounter (used on every page) */}}
 {{- $hamburger_menu := resources.Get "js/hamburger_menu.js" | resources.Minify }}
-{{/*  trying out tinylytics  */}}
-{{/*  {{- $goatcounter := resources.Get "js/goatcounter.js" | resources.Minify }}  */}}
-{{/*  {{- $goat_burger := (slice $hamburger_menu $goatcounter) | resources.Concat "assets/js/all.js" }}  */}}
-
-{{- $tinylytics := resources.Get "js/tinylytics.js" | resources.Minify }}
-{{- $combined := (slice $hamburger_menu $tinylytics) | resources.Concat "assets/js/all.js" }}
+{{- $goatcounter := resources.Get "js/goatcounter.js" | resources.Minify }}
+{{- $combined := (slice $hamburger_menu $goatcounter) | resources.Concat "assets/js/all.js" }}
 <script defer crossorigin="anonymous" src="{{ $combined.RelPermalink }}" integrity="{{ $combined.Data.Integrity }}"></script>
 
 {{- /* Favicons */}}
