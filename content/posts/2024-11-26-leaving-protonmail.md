@@ -2,7 +2,7 @@
 title = "Leaving Proton Mail"
 summary = "Reasons why I won't renew my Proton subscription."
 date = "2024-11-26"
-lastmod = "2024-11-26"
+lastmod = "2025-01-15"
 categories = ["Opinion"]
 +++
 
@@ -25,3 +25,13 @@ Aside from mail, [Proton Calendar](https://proton.me/calendar), [Proton Drive](h
 Finally, Proton released [Proton Wallet](https://proton.me/blog/proton-wallet-launch). This came out of the blue. I do not understand why they would work on this service when their other offerings need more work. There was a lot of [community backlash on Reddit](https://www.reddit.com/r/ProtonMail/comments/1eayqs4/proton_wallet_early_access/) when they announced it. Here's [some more feedback](https://www.reddit.com/r/ProtonMail/comments/1ebfjp4/proton_wallet_is_unexpected/) that overall represents my sentiments.
 
 This post is meant as honest feedback. Proton has a [respectable mission](https://proton.me/about) that resonates with me. I wish Proton well and I hope I can return some day. I sincerely mean that.
+
+---
+
+2025-01-15: I was recently made aware about Proton CEO Andy Yen's comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
+
+- https://archive.ph/txuJ2
+- https://www.reddit.com/r/ProtonMail/comments/1i1zjgn/so_that_happened/
+- https://www.reddit.com/r/privacy/comments/1i210jg/protonmail_supporting_the_party_that_killed/
+
+{{< figure src="/leaving-proton/andy-yen-tweet.webp" alt="Andy Yen on Twitter aka X" >}}
