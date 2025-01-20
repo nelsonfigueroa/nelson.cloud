@@ -2,18 +2,17 @@
 title = "How to Add a Custom Response Header to an Amazon Cloudfront Distribution"
 summary = "Adding a custom header to AWS CloudFront Distribution responses."
 date = "2025-01-01"
-lastmod = "2025-01-01"
+lastmod = "2025-01-20"
 categories = ["AWS"]
 ShowToc = false
 TocOpen = false
 +++
 
-This post assumes you already have a CloudFront Distribution deployed and properly configured.
+This post assumes you already have an [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) Distribution deployed and properly configured. You'll also need knowledge about [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) if you found your way here because your boss told you to do this and "figure it out".
 
 Go to the AWS Console and click into your CloudFront Distribution. Then click on the "Behaviors" tab. If you already have a behavior, you can edit the existing one. Otherwise, create a behavior.
 
 {{< figure src="/aws-cloudfront-custom-response-header/distribution.webp" alt="CloudFront Distribution Behaviors tab." >}}
-
 
 I won't cover the other Behavior settings as that is out of the scope of this post, but to add a custom response header look for the "Response headers policy - *optional*" field which is under "Cache key and origin requests".
 
@@ -60,6 +59,6 @@ cache-control: max-age=31536000
 Done!
 
 ## References
-
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
 - https://stackoverflow.com/questions/56187791/how-to-set-cache-control-header-in-amazon-cloudfront
 - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/modifying-response-headers.html
