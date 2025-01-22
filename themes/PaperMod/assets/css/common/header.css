@@ -13,7 +13,7 @@
 }
 
 .logo,
-#menu {
+.menu {
     display: flex;
     margin: auto var(--gap);
 }
@@ -59,43 +59,77 @@ body:not(.dark) #sun {
     filter: brightness(75%);
 }
 
-#menu {
+.menu {
     list-style: none;
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
+    font-weight: bold;
 }
 
-#menu li + li {
+.menu li a span {
+    padding: 1px 3px 1px 3px;
+    border-radius: 3px;
+}
+
+.menu li + li {
     margin-inline-start: var(--gap);
 }
 
-#menu a {
+.menu a {
     font-size: 16px;
 }
 
-#menu .active {
-    font-weight: 500;
-    border-bottom: 2px solid currentColor;
+.menu .active {
+    color: var(--theme);
+    background-color: var(--tint);
 }
 
-.lang-switch li,
-.lang-switch ul,
 .logo-switches {
+    flex-wrap: inherit;
     display: inline-flex;
 }
 
-.lang-switch {
-    display: flex;
-    flex-wrap: inherit;
+#menu-trigger {
+    display: none;
 }
 
-.lang-switch a {
-    margin: auto 3px;
-    font-size: 16px;
-    font-weight: 500;
-}
+/* hamburger menu on smaller screens */
+/* Source: https://github.com/adityatelange/hugo-PaperMod/discussions/943 */
+@media screen and (max-width: 768px) {
+    .menu {
+        list-style: none;
+        position: absolute;
+        right: 0;
+        z-index: 5;
+        margin-bottom: var(--gap);
+        padding: var(--gap);
+        background: var(--theme);
+        border: 1px solid var(--primary);
+        line-height: 2.5;
+        margin: calc(var(--header-height) - var(--gap)) var(--gap);
+        display: block;
+        box-shadow: 5px 5px var(--secondary);
+    }
 
-.logo-switches {
-    flex-wrap: inherit;
+    .list .menu {
+        background: var(--theme);
+    }
+
+    .menu li+li {
+        margin-inline-start: 0;
+    }
+
+    #menu-trigger {
+        font-size: 30px;
+        position: relative;
+        display: block;
+        float: right;
+        margin: auto var(--gap);
+        color: var(--tint);
+    }
+
+    .menu.hidden {
+        display: none;
+    }
 }
