@@ -2,7 +2,7 @@
 title = "As an Employee, You Are Disposable"
 summary = "Companies are willing to lay off employees despite being profitable."
 date = "2023-05-06"
-lastmod = "2024-12-01"
+lastmod = "2025-01-27"
 categories = ["Opinion"]
 +++
 
@@ -78,6 +78,7 @@ Here are some articles I've come across that share similar sentiments or are ver
 - [Our Company Is Doing So Well That You’re All Fired](https://www.mcsweeneys.net/articles/our-company-is-doing-so-well-that-youre-all-fired)
 - [What Companies Still Get Wrong About Layoffs](https://hbr.org/2022/12/what-companies-still-get-wrong-about-layoffs)
 - [I Accidentally Saved Half A Million Dollars](https://ludic.mataroa.blog/blog/i-accidentally-saved-half-a-million-dollars/)
+- [Once You're Laid Off, You'll Never Be the Same Again](https://mertbulan.com/2025/01/26/once-you-are-laid-off-you-will-never-be-the-same-again/)
 
 ---
 
