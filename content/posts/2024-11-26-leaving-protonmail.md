@@ -2,8 +2,8 @@
 title = "Leaving Proton Mail"
 summary = "Reasons why I won't renew my Proton subscription."
 date = "2024-11-26"
-lastmod = "2025-01-15"
-categories = ["Opinion"]
+lastmod = "2025-01-28"
+categories = ["Opinion", "Privacy"]
 +++
 
 I've been a [Proton](https://proton.me/) subscriber for around 2 years now. I won't be renewing my subscription for several reasons.
@@ -30,6 +30,7 @@ This post is meant as honest feedback. Proton has a [respectable mission](https:
 
 2025-01-15: I was recently made aware about [Proton CEO Andy Yen](https://proton.me/blog/author/ayen)'s comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
 
+- https://theintercept.com/2025/01/28/proton-mail-andy-yen-trump-republicans/
 - https://archive.ph/txuJ2
 - https://www.reddit.com/r/ProtonMail/comments/1i1zjgn/so_that_happened/
 - https://www.reddit.com/r/privacy/comments/1i210jg/protonmail_supporting_the_party_that_killed/
