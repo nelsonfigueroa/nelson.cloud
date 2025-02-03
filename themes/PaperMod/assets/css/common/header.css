@@ -69,7 +69,7 @@ body:not(.dark) #sun {
 
 .menu li a span {
     padding: 1px 3px 1px 3px;
-    border-radius: 3px;
+    border-radius: var(--global-border-radius);
 }
 
 .menu li + li {

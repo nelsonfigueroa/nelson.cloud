@@ -21,7 +21,7 @@ pre.ascii-art {
 /* selection for code blocks */
 pre ::selection {
     color: rgb(0, 0, 0);
-    background-color: rgb(90, 213, 131);
+    background-color: var(--code-block-selection);
 }
 
 /* styling for links throughout */
