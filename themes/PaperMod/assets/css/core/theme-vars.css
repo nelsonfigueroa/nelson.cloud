@@ -12,8 +12,11 @@
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
     --code-block-bg: rgb(0, 0, 0);
+    --code-block-hover: rgb(33, 35, 36);
+    --code-block-selection: rgb(90, 213, 131);
     --code-bg: rgb(235, 235, 235);
     --border: rgb(238, 238, 238);
+    --global-border-radius: 3px;
 
     --tint: #1e69ff;
     /* --tint-2: #328A5D; */
