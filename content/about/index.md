@@ -101,8 +101,3 @@ I mainly listen to metal. My Bandcamp is public if you're curious. I also have a
 - [GitHub](https://github.com/nelsonfigueroa)
 - [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)
 - [RSS Feed](/index.xml)
-
-This site is a part of:
-- [250kb.club](https://250kb.club)
-- [512kb.club](https://512kb.club)
-- [1mb.club](https://1mb.club)
