@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Monaspace Neon';
+    src: url('/MonaspaceNeon-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monaspace Neon';
+    src: url('/MonaspaceNeon-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monaspace Neon';
+    src: url('/MonaspaceNeon-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 *,
 ::after,
 ::before {
@@ -24,7 +48,11 @@ h6 {
 }
 
 body {
-    font-family: monospace;
+    font-family: 'Monaspace Neon', monospace;
+    -webkit-font-feature-settings: "calt" 1;
+    -moz-font-feature-settings:    "calt" 1;
+    -ms-font-feature-settings:     "calt" 1;
+    font-feature-settings:         "calt" 1;
     font-size: 16px;
     line-height: 1.6;
     word-break: break-word;
