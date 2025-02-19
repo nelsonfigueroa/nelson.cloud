@@ -22,7 +22,7 @@ You can run this command within any git repo to extract all contributor emails:
 git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b" | awk '{print tolower($0)}' | sort | uniq | grep -wv 'users.noreply.github.com'
 ```
 
-## Command Breakdown
+## Command Break Down
 
 The `git shortlog -sea` part of the command is short for `git shortlog --summary --email --all`. This command outputs the number of commits each user has made, along with their name and email, across all branches.
 
