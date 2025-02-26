@@ -90,6 +90,7 @@ Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 ### Movies
 - [Saving Private Ryan](https://www.imdb.com/title/tt0120815/)
 - [Interstellar](https://www.imdb.com/title/tt0816692/)
+- [Whiplash](https://www.imdb.com/title/tt2582802/)
 - [Mad Max: Fury Road](https://www.imdb.com/title/tt1392190/)
 
 ### Music
