@@ -1,4 +1,3 @@
-
 +++
 title = "Delete All Pulumi Stacks with One Command"
 summary = "How to delete all pulumi stacks with a shell one-liner."
