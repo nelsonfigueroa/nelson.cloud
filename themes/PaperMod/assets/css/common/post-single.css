@@ -352,11 +352,17 @@ h3:hover .anchor,
 h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor {
-    display: inline-flex;
     color: var(--tint);
-    margin-inline-start: 8px;
-    font-weight: 500;
-    user-select: none;
+}
+
+h1:not(.post-title)::before,
+h2:not(.post-title)::before,
+h3:not(.post-title)::before,
+h4:not(.post-title)::before,
+h5:not(.post-title)::before,
+h6:not(.post-title)::before {
+    color: var(--secondary);
+    content: '# ';
 }
 
 .paginav {
