@@ -3,21 +3,6 @@
     margin: 24px auto var(--content-gap) auto;
 }
 
-/* basically <header><h1>... */
-/* so keep this consistent with H1 */
-.post-title {
-    margin-bottom: 2px;
-    font-size: 32px;
-}
-
-/* title size on smaller screens */
-@media screen and (max-width: 768px) {
-    .post-title {
-        margin-bottom: 2px;
-        font-size: 24px;
-    }
-}
-
 .post-description {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -52,37 +37,89 @@
     color: var(--content);
 }
 
+/*** headers ***/
+
+/* basically <header><h1>...so keep this consistent with H1 */
+.post-title {
+    margin-bottom: 2px;
+    font-size: 24px;
+}
+
+/* title size on smaller screens */
+@media screen and (max-width: 768px) {
+    .post-title {
+        margin-bottom: 2px;
+        font-size: 20px;
+    }
+}
+
+h1 .anchor,
+h2 .anchor,
+h3 .anchor,
+h4 .anchor,
+h5 .anchor,
+h6 .anchor {
+    font-size: 20px;
+}
+
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+    color: var(--tint);
+}
+
+.post-content h1::before {
+    color: var(--secondary);
+    content: '# ';
+    font-size: 20px;
+}
+
+.post-content h2::before {
+    color: var(--secondary);
+    content: '## ';
+    font-size: 20px;
+}
+
+.post-content h3::before {
+    color: var(--secondary);
+    content: '### ';
+    font-size: 20px;
+}
+
+.post-content h4::before {
+    color: var(--secondary);
+    content: '#### ';
+    font-size: 20px;
+}
+
+.post-content h5::before {
+    color: var(--secondary);
+    content: '##### ';
+    font-size: 20px;
+}
+
+.post-content h6::before {
+    color: var(--secondary);
+    content: '###### ';
+    font-size: 20px;
+}
+
+.post-content h1 {
+    margin: 36px auto 28px;
+}
+
+.post-content h2 {
+    margin: 32px auto 24px;
+}
+
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
     margin: 24px 0 16px;
-}
-
-.post-content h1 {
-    margin: 36px auto 28px;
-    font-size: 32px;
-}
-
-.post-content h2 {
-    margin: 32px auto 24px;
-    font-size: 28px;
-}
-
-.post-content h3 {
-    font-size: 24px;
-}
-
-.post-content h4 {
-    font-size: 20px;
-}
-
-.post-content h5 {
-    font-size: 16px;
-}
-
-.post-content h6 {
-    font-size: 16px;
 }
 
 .toc a:hover {
@@ -344,25 +381,6 @@
 
 .share-buttons a:not(:last-of-type) {
     margin-inline-end: 12px;
-}
-
-h1:hover .anchor,
-h2:hover .anchor,
-h3:hover .anchor,
-h4:hover .anchor,
-h5:hover .anchor,
-h6:hover .anchor {
-    color: var(--tint);
-}
-
-h1:not(.post-title)::before,
-h2:not(.post-title)::before,
-h3:not(.post-title)::before,
-h4:not(.post-title)::before,
-h5:not(.post-title)::before,
-h6:not(.post-title)::before {
-    color: var(--secondary);
-    content: '# ';
 }
 
 .paginav {
