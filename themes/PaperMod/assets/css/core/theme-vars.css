@@ -29,7 +29,7 @@
 }
 
 .dark {
-    --theme: rgb(0, 0, 0);
+    --theme: rgb(2, 5, 20);
     --entry: rgb(46, 46, 51);
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
@@ -39,12 +39,14 @@
     --code-bg: rgb(33, 35, 36);
     --border: rgb(51, 51, 51);
 
-    --tint: #D20F39;
+    --tint: rgb(83, 179, 249);
+
+    /* --tint: #D20F39; */
     /* --tint-2: #40A02B; */
     /* --tint-3: #DF8E1D; */
     /* --tint-4: #1E66F5; */
     /* --tint-5: #33C3C1; */
 
-    --blockquote-border: rgb(210 15 57);
-    --blockquote-background: rgba(210, 15, 57, 0);
+    --blockquote-border: rgb(83, 179, 249);
+    --blockquote-background: rgba(83, 179, 249, 0);
 }
