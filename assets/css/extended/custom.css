@@ -71,8 +71,6 @@ a:hover {
 
 /* post links */
 .post-link {
-    text-transform: uppercase;
-    font-weight: bold;
     margin: 0;
     padding: 0;
 }
