@@ -1,3 +1,37 @@
+/* custom font: Commit Mono */
+/* https://commitmono.com/ */
+@font-face {
+    font-family: 'Commit Mono';
+    src: url('/CommitMono-400-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commit Mono';
+    src: url('/CommitMono-700-Regular.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commit Mono';
+    src: url('/CommitMono-400-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commit Mono';
+    src: url('/CommitMono-700-Italic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
 *,
 ::after,
 ::before {
@@ -24,9 +58,10 @@ h6 {
 }
 
 body {
-    font-family: monospace;
-    font-size: 16px;
-    line-height: 1.6;
+    font-family: 'Commit Mono', monospace;
+    font-size: 0.875rem; /* 14px */
+    font-feature-settings: "ss03", "ss04", "ss05";
+    line-height: 1.5rem;
     word-break: break-word;
     background: var(--theme);
 }

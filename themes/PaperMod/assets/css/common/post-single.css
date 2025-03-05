@@ -235,7 +235,7 @@ h6:hover .anchor {
 
 .post-content code {
     padding: 3px 6px;
-    font-size: 14px;
+    font-family: 'Commit Mono', monospace;
     line-height: 1.5;
     background: var(--code-bg);
     border: 0.5px solid var(--primary);
