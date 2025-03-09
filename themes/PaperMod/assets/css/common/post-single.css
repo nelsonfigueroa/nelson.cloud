@@ -42,15 +42,7 @@
 /* basically <header><h1>...so keep this consistent with H1 */
 .post-title {
     margin-bottom: 2px;
-    font-size: 24px;
-}
-
-/* title size on smaller screens */
-@media screen and (max-width: 768px) {
-    .post-title {
-        margin-bottom: 2px;
-        font-size: 20px;
-    }
+    /* font-size: 24px; */
 }
 
 h1 .anchor,
@@ -350,7 +342,6 @@ h6:hover .anchor {
     display: inline-block;
 }
 
-.post-tags a,
 .share-buttons,
 .paginav {
     border: 1px solid var(--border);
@@ -359,11 +350,19 @@ h6:hover .anchor {
 .post-tags a {
     display: inline-block;
     flex-wrap: wrap;
-    padding: 0 5px;
     color: var(--secondary);
-    background: var(--theme);
     font-size: 12px;
     line-height: 24px;
+}
+
+.post-tags a::before {
+    content: "[";
+    color: var(--tertiary);
+}
+
+.post-tags a::after {
+    content: "]";
+    color: var(--tertiary);
 }
 
 .share-buttons {
