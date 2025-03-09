@@ -1,12 +1,9 @@
 .terms-tags li {
     display: inline-block;
-    margin: 6px;
-    font-weight: 500;
+    padding: 8px;
 }
 
 .terms-tags a {
     display: block;
     padding: 3px 6px;
-    background: var(--theme);
-    border: 1px solid var(--border);
 }
