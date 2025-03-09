@@ -36,16 +36,23 @@ a:hover {
 
 /* Random post button */
 .random-post-button {
-    padding: 0.5rem;
-    border: 1px solid var(--border);
     color: var(--tint);
     text-decoration: none;
     margin-bottom: 2rem;
-    width: 100%;
 }
 
 .random-post-button:hover {
     filter: brightness(75%);
+}
+
+.random-post-button::before {
+    content: "[";
+    color: var(--tertiary);
+}
+
+.random-post-button::after {
+    content: "]";
+    color: var(--tertiary);
 }
 
 /* make regular text prettier? */
