@@ -4,5 +4,5 @@ layout: "search" # necessary for search
 # url: "/archive"
 # description: "Description for Search"
 summary: "search"
-placeholder: "Search posts"
+placeholder: "Start typing..."
 ---

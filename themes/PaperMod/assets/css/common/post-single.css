@@ -1,6 +1,6 @@
-.page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
+    text-transform: uppercase;
 }
 
 .post-description {
@@ -45,58 +45,52 @@
     /* font-size: 24px; */
 }
 
-h1 .anchor,
+/* h1 .anchor,
 h2 .anchor,
 h3 .anchor,
 h4 .anchor,
 h5 .anchor,
 h6 .anchor {
-    font-size: 20px;
-}
 
-h1:hover .anchor,
-h2:hover .anchor,
-h3:hover .anchor,
-h4:hover .anchor,
-h5:hover .anchor,
-h6:hover .anchor {
-    color: var(--tint);
+} */
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    text-transform: uppercase;
 }
 
 .post-content h1::before {
     color: var(--secondary);
     content: '# ';
-    font-size: 20px;
 }
 
 .post-content h2::before {
     color: var(--secondary);
     content: '## ';
-    font-size: 20px;
 }
 
 .post-content h3::before {
     color: var(--secondary);
     content: '### ';
-    font-size: 20px;
 }
 
 .post-content h4::before {
     color: var(--secondary);
     content: '#### ';
-    font-size: 20px;
 }
 
 .post-content h5::before {
     color: var(--secondary);
     content: '##### ';
-    font-size: 20px;
 }
 
 .post-content h6::before {
     color: var(--secondary);
     content: '###### ';
-    font-size: 20px;
 }
 
 .post-content h1 {
@@ -419,6 +413,13 @@ h6:hover .anchor {
 
 h1>a>svg {
     display: inline;
+}
+
+/* RSS svg next to category in category view */
+.page-header h1 a svg {
+    width: 1.1em;
+    height: 1.1em;
+    vertical-align: middle;
 }
 
 img.in-text {

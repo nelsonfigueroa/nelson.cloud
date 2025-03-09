@@ -1,5 +1,4 @@
 {{- define "main" }}
-
 <header class="page-header">
     <h1>{{- .Title | htmlUnescape -}}</h1>
     {{- if .Description }}
@@ -11,9 +10,7 @@
     <div class="post-meta">
         {{- partial "translation_list.html" . -}}
     </div>
-    {{- end }}
-</header>
-
+    {{- end }}</header>
 <div id="searchbox">
     <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
         aria-label="search" type="search" autocomplete="off" maxlength="64">

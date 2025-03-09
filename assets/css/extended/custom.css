@@ -83,3 +83,12 @@ a:hover {
     content: "]";
     color: var(--tertiary);
 }
+
+.page-header {
+    margin: 24px auto var(--content-gap) auto;
+    text-transform: uppercase;
+}
+
+.page-header::after {
+    content: "---";
+}

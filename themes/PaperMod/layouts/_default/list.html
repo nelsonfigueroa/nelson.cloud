@@ -92,9 +92,10 @@
 
 {{- $class := "post-entry" }}
 
-<h2>Recent Reads</h2>
-<small>Posts from other blogs I enjoyed.</small>
-<hr>
+<span class="page-header">
+  <h2>You should also read...</h2>
+</span>
+
 {{ range .Site.Data.recentreads }}
 <article class="{{ $class }}">
     <!-- manually adding target="_blank" and ?ref=nelson.cloud -->

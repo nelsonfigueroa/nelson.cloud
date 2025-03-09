@@ -12,10 +12,9 @@
 
 #searchResults li {
     list-style: none;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 6px;
+    margin: 6px 0;
     position: relative;
-    font-weight: 500;
     color: var(--tint);
 }
 

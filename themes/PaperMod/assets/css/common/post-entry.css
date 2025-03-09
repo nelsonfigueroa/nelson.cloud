@@ -9,7 +9,6 @@
 
 .first-entry .entry-content {
     margin: 14px 0;
-    font-size: 16px;
     -webkit-line-clamp: 3;
 }
 
@@ -33,7 +32,6 @@
 .entry-content {
     margin: 8px 0;
     color: var(--secondary);
-    font-size: 14px;
     line-height: 1.6;
     overflow: hidden;
     display: -webkit-box;
