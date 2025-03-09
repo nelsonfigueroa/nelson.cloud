@@ -50,13 +50,9 @@ Bachelor of Science in Computer Information Technology (2019)
 
 ## Open Source Contributions
 
-**[github.com/tldr-pages/tldr](https://github.com/tldr-pages/tldr)**
+**[https://github.com/tldr-pages/tldr](https://github.com/tldr-pages/tldr)**
 - Simplified and community-driven "cheat sheet" for command line tools.
-- Contributed practical examples for CLI tools such as `rails`, `terraform`, `minikube`, `kubectl`, `hugo`, and `pulumi`. You [can see all my contributions here](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa).
-
-**[github.com/alveusgg/data](https://github.com/alveusgg/data/commits?author=nelsonfigueroa)**
-
-- Data repository powering the [Alveus Sanctuary site](https://www.alveussanctuary.org/). [Contributed some spelling and date corrections](https://github.com/alveusgg/data/commits?author=nelsonfigueroa) to this repository.
+- Contributed practical examples for CLI tools such as `rails`, `terraform`, `minikube`, `kubectl`, `hugo`, and `pulumi`. [See all my contributions here](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa).
 
 ## Interests
 
