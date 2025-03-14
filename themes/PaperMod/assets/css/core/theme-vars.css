@@ -7,9 +7,9 @@
     --footer-height: 60px;
     --theme: rgb(255, 255, 255);
     --entry: rgb(243, 243, 243);
-    --primary: rgb(30, 30, 30);
+    --primary: rgb(0, 0, 0);
     --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(214, 214, 214);
+    --tertiary: rgb(173, 173, 173);
     --content: rgb(31, 31, 31);
     --code-block-bg: rgb(0, 0, 0);
     --code-block-hover: rgb(33, 35, 36);
