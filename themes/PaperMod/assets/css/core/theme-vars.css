@@ -10,17 +10,17 @@
     --primary: rgb(0, 0, 0);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(173, 173, 173);
-    --content: rgb(31, 31, 31);
+    --content: rgb(0, 0, 0);
     --code-block-bg: rgb(0, 0, 0);
     --code-block-hover: rgb(33, 35, 36);
     --code-block-selection: rgb(90, 213, 131);
-    --code-bg: rgb(235, 235, 235);
+    --code-bg: rgb(220, 220, 220);
     --border: rgb(238, 238, 238);
 
     --tint: #1e69ff;
 
     --blockquote-border: rgb(30 105 255);
-    --blockquote-background: rgba(30, 105, 255, 0);
+    --blockquote-background: rgba(30, 105, 255, 0.2);
 }
 
 .dark {
@@ -29,13 +29,13 @@
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(65, 66, 68);
-    --content: rgb(196, 196, 197);
+    --content: rgb(218, 218, 219);
     --code-block-bg: rgb(0, 0, 0);
-    --code-bg: rgb(33, 35, 36);
+    --code-bg: rgb(40, 40, 40);
     --border: rgb(51, 51, 51);
 
     --tint: rgb(83, 179, 249);
 
     --blockquote-border: rgb(83, 179, 249);
-    --blockquote-background: rgba(83, 179, 249, 0);
+    --blockquote-background: rgba(83, 180, 249, 0.2);
 }
