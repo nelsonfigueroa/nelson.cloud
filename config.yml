@@ -26,8 +26,6 @@ languages:
     weight: 1
     taxonomies:
       category: categories
-      tag: tags
-      series: series
     menu:
       main:
         - name: Home
