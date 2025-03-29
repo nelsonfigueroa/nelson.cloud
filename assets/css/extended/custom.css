@@ -1,16 +1,16 @@
 /* for ascii art on home page */
 pre.ascii-art {
-    font-size: 10px;
-    line-height: 1;
+    line-height: 1.2;
     white-space: pre-wrap;
     max-width: 100%;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
-/* ascii art font size on smaller screens */
-@media screen and (max-width: 768px) {
-    pre.ascii-art {
-        font-size: 10px;
-    }
+pre.ascii-art #ascii-subtitle {
+    color: var(--secondary);
 }
 
 ::selection {

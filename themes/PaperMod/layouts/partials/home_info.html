@@ -1,29 +1,36 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
 <pre class="ascii-art">
-███╗   ██╗███████╗██╗     ███████╗ ██████╗ ███╗   ██╗
-████╗  ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗  ██║
-██╔██╗ ██║█████╗  ██║     ███████╗██║   ██║██╔██╗ ██║
-██║╚██╗██║██╔══╝  ██║     ╚════██║██║   ██║██║╚██╗██║
-██║ ╚████║███████╗███████╗███████║╚██████╔╝██║ ╚████║
-╚═╝  ╚═══╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝
+╭─────────────────────────────────────╮
+│                                     │
+│                                     │
+│                                     │
+│           Nelson Figueroa           │
+│          -----------------          │
+│          <span id="ascii-subtitle">Software Engineer</span>          │
+│                                     │
+│                                     │
+│                                     │
+╰─────────────────────────────────────╯
 
-███████╗██╗ ██████╗ ██╗   ██╗███████╗██████╗  ██████╗  █████╗&nbsp
-██╔════╝██║██╔════╝ ██║   ██║██╔════╝██╔══██╗██╔═══██╗██╔══██╗
-█████╗  ██║██║  ███╗██║   ██║█████╗  ██████╔╝██║   ██║███████║
-██╔══╝  ██║██║   ██║██║   ██║██╔══╝  ██╔══██╗██║   ██║██╔══██║
-██║     ██║╚██████╔╝╚██████╔╝███████╗██║  ██║╚██████╔╝██║  ██║
-╚═╝     ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
++--[<a href="https://github.com/nelsonfigueroa">GitHub</a>]--[<a href="https://www.linkedin.com/in/nelsonfigueroa1/">LinkedIn</a>]--[<a href=/index.xml>RSS</a>]--+
+
 </pre>
+    {{/*  this is homeInfoParams.Content from config.yml */}}
+    {{/*
     <div class="entry-content">
         {{ .Content | markdownify }}
     </div>
+    */}}
+
+    {{/*  social icon SVGs  */}}
+    {{/*
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
+    */}}
 </article>
 {{- end -}}
 <span class="page-header">
     <h2>Recent Posts</h2>
 </span>
-
