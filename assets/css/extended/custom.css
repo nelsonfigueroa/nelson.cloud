@@ -13,6 +13,29 @@ pre.ascii-art #ascii-subtitle {
     color: var(--secondary);
 }
 
+/* stars animations */
+/* star animation 1 */
+.shining-star::after {
+    content: "*";
+    animation: shine 2s infinite alternate;
+}
+
+@keyframes shine {
+    0%, 50% { content: "*"; }
+    51%, 100% { content: "·"; }
+}
+
+/* star animation 2 */
+.shining-star-2::after {
+    content: "+";
+    animation: shine-2 2s infinite alternate;
+}
+
+@keyframes shine-2 {
+    0%, 50% { content: "+"; }
+    51%, 100% { content: "×"; }
+}
+
 ::selection {
   color: var(--theme);
   background-color: var(--primary);
