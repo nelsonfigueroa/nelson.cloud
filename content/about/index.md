@@ -69,6 +69,7 @@ Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 - [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/)
 - [Stardew Valley](https://www.stardewvalley.net/)
 - [Factorio](https://www.factorio.com/)
+- [Helldivers 2](https://store.steampowered.com/app/553850/HELLDIVERS_2/)
 
 ### Shows
 - [Better Call Saul](https://www.imdb.com/title/tt3032476/)
