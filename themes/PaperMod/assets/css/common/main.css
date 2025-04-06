@@ -23,6 +23,11 @@
     margin-inline-start: auto;
 }
 
+.pagination .next,
+.pagination .prev {
+    color: var(--tint);
+}
+
 
 .social-icons a {
     display: inline-flex;
