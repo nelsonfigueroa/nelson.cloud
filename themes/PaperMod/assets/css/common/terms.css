@@ -7,3 +7,13 @@
     display: block;
     padding: 3px 6px;
 }
+
+.terms-tags a::before {
+    content: "[";
+    color: var(--tertiary);
+}
+
+.terms-tags a::after {
+    content: "]";
+    color: var(--tertiary);
+}
