@@ -3,7 +3,7 @@ title = "How to Add a Custom Response Header to an Amazon Cloudfront Distributio
 summary = "Adding a custom header to AWS CloudFront Distribution responses."
 date = "2025-01-01"
 lastmod = "2025-01-20"
-categories = ["AWS"]
+categories = ["AWS", "HTTP"]
 ShowToc = false
 TocOpen = false
 +++
