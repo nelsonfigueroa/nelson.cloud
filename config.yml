@@ -79,11 +79,11 @@ params:
   DateFormat: 2006-01-02
 
   # hide summary in post links
-  hideSummary: true
+  hideSummary: false
 
   defaultTheme: auto
   # disableThemeToggle: true
-  ShowShareButtons: false
+  ShowShareButtons: true
   ShowReadingTime: false
   # disableSpecial1stPost: true
   displayFullLangName: true
