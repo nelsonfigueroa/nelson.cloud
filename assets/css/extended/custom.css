@@ -81,7 +81,36 @@ a:hover {
 /* make regular text prettier? */
 /* https://codersblock.com/blog/nicer-text-wrapping-with-css-text-wrap/ */
 .post-content p {
-    text-wrap: pretty; 
+    text-wrap: pretty;
+}
+
+/* going for a more "packed" terminal look */
+.entry-content {
+    line-height: 1.3;
+}
+
+.entry-footer {
+    line-height: 1.3;
+}
+
+.post-link {
+    line-height: 1.1;
+}
+
+.post-content p {
+    line-height: 1.3;
+}
+
+.post-content li {
+    line-height: 1.3;
+}
+
+.post-meta {
+    line-height: 1.3;
+}
+
+.post-title {
+    line-height: 1.1;
 }
 
 /* code blocks with syntax highlighting */
