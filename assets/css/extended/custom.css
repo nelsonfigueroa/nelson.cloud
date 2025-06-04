@@ -151,3 +151,42 @@ a:hover {
 .page-header::after {
     content: "---";
 }
+
+/* related posts section */
+.related-posts {
+    padding-bottom: 1.5rem;
+}
+
+.related-posts h3 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.related-posts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.related-posts li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.related-posts a::before {
+    content: "[";
+    color: var(--tertiary);
+}
+
+.related-posts a::after {
+    content: "]";
+    color: var(--tertiary);
+}
+
+.related-summary {
+    color: var(--secondary);
+}
+
+.see-all-posts {
+    margin-bottom: 1.5rem;
+}
