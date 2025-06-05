@@ -152,6 +152,10 @@ a:hover {
     content: "---";
 }
 
+.related-posts-header::after {
+    content: "---";
+}
+
 /* related posts section */
 .related-posts {
     padding-bottom: 1.5rem;

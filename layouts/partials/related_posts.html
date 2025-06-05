@@ -12,7 +12,9 @@
 
   {{- if gt (len $relatedPosts) 0 -}}
     <div class="related-posts">
-      <h3>Related {{ $primaryCategory }} Posts</h3>
+        <span class="related-posts-header">
+            <h2>Related {{ $primaryCategory }} Posts</h2>
+        </span>
       <ul>
         {{- range first 3 $relatedPosts -}}
           <li>
