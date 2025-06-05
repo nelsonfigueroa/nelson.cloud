@@ -2,7 +2,7 @@
 title = "Finding AWS Resources by IP Address"
 summary = "Find AWS Resources by private or public IP addresses."
 date = "2022-06-12"
-lastmod = "2022-06-12"
+lastmod = "2025-06-05"
 categories = ["AWS"]
 ShowToc = true
 TocOpen = true
@@ -14,8 +14,9 @@ TocOpen = true
 
 In the AWS EC2 Management Console, you can search for EC2 instances using a private or public IP address. Filter by either `Private IP address` or `Public IPv4 address` in the search field:
 
-{{< figure src="/finding-aws-resources-by-ip-address/ec2-private-ip-search.webp" alt="Results after searching for an EC2 Instance with a private IP address." >}}
-{{< figure src="/finding-aws-resources-by-ip-address/ec2-public-ip-search.webp" alt="Results after searching for an EC2 Instance with a public IP address." >}}
+![Results after searching for an EC2 Instance with a private IP address.](/finding-aws-resources-by-ip-address/ec2-private-ip-search.webp)
+
+![Results after searching for an EC2 Instance with a public IP address.](/finding-aws-resources-by-ip-address/ec2-public-ip-search.webp)
 
 ### Using the AWS CLI
 
@@ -208,13 +209,13 @@ The output for these commands will look something like this:
 To identify other AWS resources (such as Lambdas) based on IP address, you can search for the corresponding ENI.
 In the AWS Console, browse to the EC2 console and click on Network Interfaces on the left hand side. Then search by "Primary private IPv4 address" (or "Public IPv4 address" if you want to search by a public IP address).
 
-{{< figure src="/finding-aws-resources-by-ip-address/eni-search.webp" alt="Results after searching for Elastic Network Interface using a private IP address" >}}
+![Results after searching for Elastic Network Interface using a public IP address](/finding-aws-resources-by-ip-address/eni-search.webp)
 
 You can then poke around through the ENI details to figure out what resource is associated with the IP address.
 
 ### Using the AWS CLI
 
-This can also be done using the AWS CLI with the following command, replacing `--region` and `Values` as needed:
+This can also be done using the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) with the following command, replacing `--region` and `Values` as needed:
 
 ```bash
 aws ec2 describe-network-interfaces --region=us-west-1 --filters Name=addresses.private-ip-address,Values=10.0.0.1
