@@ -24,13 +24,13 @@ Around 2 minutes after deploying out this file, I received my first email notifi
 
 The notification emails from canarytokens.org provide useful details about the attackers using the AWS API keys. Here's an example notification I received:
 
-{{< figure src="/putting-up-fake-aws-keys/notification.webp" alt="canarytokens.org notification showing python usage" >}}
+![canarytokens.org notification showing python usage](/putting-up-fake-aws-keys/notification.webp)
 
 We can see based on the user agent that whoever used these AWS keys was doing this automatically using Python.
 
 I also got another notification that shows that the attacker was using Powershell:
 
-{{< figure src="/putting-up-fake-aws-keys/notification2.webp" alt="canarytokens.org notification showing powershell usage" >}}
+![canarytokens.org notification showing powershell usage](/putting-up-fake-aws-keys/notification2.webp)
 
 It's worth noting that **User Agent strings can be spoofed**, so take these screenshots with a grain of salt.
 

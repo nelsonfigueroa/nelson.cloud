@@ -16,7 +16,7 @@ It's possible to install older versions of Homebrew packages by saving an older 
 
 Let's say we have `terraform` version 1.4.5 but we need `terraform` version 1.3.6. We can start by browsing to https://github.com/Homebrew/homebrew-core/tree/master/Formula and try to find the formula for `terraform` under the `t` directory.
 
-{{< figure src="/how-to-install-older-versions-of-homebrew-packages/formulas.webp" alt="List of Homebrew formulas" >}}
+![List of Homebrew formulas](/how-to-install-older-versions-of-homebrew-packages/formulas.webp)
 
 Since there are a lot of files here, it's easier to just modify the URL path in the browser. Modify the path based on the directory the command is in: Take the name of the package and append it at the end of the url, adding `/<directory-containing-package>/<package-name>.rb` to the URL. The `.rb` is important because all Homebrew packages are defined in Ruby (files with the `.rb` extension).
 
@@ -24,23 +24,23 @@ In this case, we'll append `/t/terraform.rb` to the URL like so: https://github.
 
 That URL will then take us to the Ruby file where the `terraform` Homebrew package is defined.
 
-{{< figure src="/how-to-install-older-versions-of-homebrew-packages/terraform.webp" alt="Terraform Homebrew formula" >}}
+![Terraform Homebrew formula](/how-to-install-older-versions-of-homebrew-packages/terraform.webp)
 
 Next, click the "History" link on the upper right above the code, or just click on this link https://github.com/Homebrew/homebrew-core/commits/master/Formula/t/terraform.rb. In the next page, scroll down until you see the "terraform: update 1.3.6 bottle" link. Note that you may need to click on "Browse History" at the bottom of this page before continuing your search.
 
-{{< figure src="/how-to-install-older-versions-of-homebrew-packages/1.3.6.webp" alt="Commit history for the terraform formula" >}}
+![Commit history for the terraform formula](/how-to-install-older-versions-of-homebrew-packages/1.3.6.webp)
 
 Click on the [terraform: update 1.3.6 bottle](https://github.com/Homebrew/homebrew-core/commit/169f333f93fe0703b542cdf75b1decd4cb78f68d) link to see this page:
 
-{{< figure src="/how-to-install-older-versions-of-homebrew-packages/commit.webp" alt="Commit for terraform 1.3.6" >}}
+![Commit for terraform 1.3.6](/how-to-install-older-versions-of-homebrew-packages/commit.webp)
 
 On the right side above the code block, click on the three dots, then click on "View file".
 
-{{< figure src="/how-to-install-older-versions-of-homebrew-packages/view-file.webp" alt="Three dots menu showing view file link" >}}
+![Three dots menu showing view file link](/how-to-install-older-versions-of-homebrew-packages/view-file.webp)
 
 This will take you to the [package formula for this specific version of terraform](https://github.com/Homebrew/homebrew-core/blob/169f333f93fe0703b542cdf75b1decd4cb78f68d/Formula/terraform.rb).
 
-{{< figure src="/how-to-install-older-versions-of-homebrew-packages/older-terraform.webp" alt="Formula for terraform 1.3.6" >}}
+![Formula for terraform 1.3.6](/how-to-install-older-versions-of-homebrew-packages/older-terraform.webp)
 
 On the upper right side of the code block, click on "Raw". This [gives us the exact code we need](https://raw.githubusercontent.com/Homebrew/homebrew-core/169f333f93fe0703b542cdf75b1decd4cb78f68d/Formula/terraform.rb) to install Terraform 1.3.6. Save the code locally to a file called `terraform.rb`. You can manually copy and paste or use `curl`:
 

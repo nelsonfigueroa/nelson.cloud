@@ -12,8 +12,8 @@ Using IMDSv1, all we needed to do was to hit the `http://169.254.169.254/latest/
 
 Using IMDSv2, we now need to make an API call to `http://169.254.169.254/latest/api/token` to retrieve a token, then include that token in a `X-aws-ec2-metadata-token` header to hit the metadata endpoint `http://169.254.169.254/latest/meta-data/`.
 
-During EC2 creation you can configure your instance to use IMDSv2. This is what the setting looks like under "Advanced details" when creating an EC2 Instance. As of December 2023, it deaulted to "V2 only (token required)":
-{{< figure src="/getting-ec2-metadata-using-imdsv2/imdsv2.webp" alt="AWS EC2 creation process" >}}
+During EC2 creation you can configure your instance to use IMDSv2. This is what the setting looks like under "Advanced details" when creating an EC2 Instance. As of December 2023, it defaulted to "V2 only (token required)":
+![AWS EC2 creation process](/getting-ec2-metadata-using-imdsv2/imdsv2.webp)
 
 Once IMDSv2 is enabled on an instance, you can SSH into your instance and start making API calls from within.
 

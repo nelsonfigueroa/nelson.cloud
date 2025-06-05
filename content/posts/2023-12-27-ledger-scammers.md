@@ -10,27 +10,27 @@ categories = ["Cybersecurity", "Python"]
 
 I recently received this email claiming to be from [Ledger](https://www.ledger.com/). I immediately knew it was a scam.
 
-{{< figure src="/ledger-scammers/scam-email.webp" alt="Email pretending to be from Ledger" >}}
+![Email pretending to be from Ledger](/ledger-scammers/scam-email.webp)
 
 I decided to take a peek at `vaultscanner.com` just for fun. The site looked like a genuine Ledger site. This site was created with more effort than other scam sites I've seen.
 
-{{< figure src="/ledger-scammers/fake-ledger-site.webp" alt="The fake Ledger website." >}}
+![The fake Ledger website.](/ledger-scammers/fake-ledger-site.webp)
 
 I clicked on a random Ledger device and it played a "connecting" animation.
 
-{{< figure src="/ledger-scammers/connecting-device.webp" alt="Fake Ledger site showing a Ledger device connecting." >}}
+![Fake Ledger site showing a Ledger device connecting.](/ledger-scammers/connecting-device.webp)
 
 After that I got an error. It's obviously fake. How can my Ledger data be damaged if I didn't connect a Ledger device to begin with? I don't even own one.
 
-{{< figure src="/ledger-scammers/fake-error.webp" alt="Fake error" >}}
+![Fake error](/ledger-scammers/fake-error.webp)
 
 And of course, the site then prompts for the recovery phrase.
 
-{{< figure src="/ledger-scammers/recovery-phrase-entry.webp" alt="Fake Ledger site asking for recovery phrase" >}}
+![Fake Ledger site asking for recovery phrase](/ledger-scammers/recovery-phrase-entry.webp)
 
 I checked the browser dev tools to see where this phrase was going to. It was getting sent as a query string to `/data1.php` as a `POST` request.
 
-{{< figure src="/ledger-scammers/dev-tools.webp" alt="Developer tools showing where the recovery phrase was sent" >}}
+![Developer tools showing where the recovery phrase was sent](/ledger-scammers/dev-tools.webp)
 
 ## Writing a Python Script
 
@@ -87,6 +87,6 @@ while True:
 
 Then I just let it run for a while to give the scammers a ton of fake data.
 
-{{< figure src="/ledger-scammers/terminal.webp" alt="Terminal output when running Python script." >}}
+![Terminal output when running Python script.](/ledger-scammers/terminal.webp)
 
 I hope I made scamming/phishing more difficult for them :)

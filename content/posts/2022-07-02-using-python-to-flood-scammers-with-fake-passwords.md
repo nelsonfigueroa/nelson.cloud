@@ -10,31 +10,31 @@ categories = ["Cybersecurity", "Python"]
 
 Today, I received this text message that is obviously a phishing attempt:
 
-{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/scam-text.webp" alt="Fake text received from scammers." >}}
+![Fake text received from scammers.](/using-python-to-flood-scammers-with-fake-credentials/scam-text.webp)
 
 <br>
 
 I was curious, so I went ahead and checked out the site. It was a mediocre attempt at recreating the actual site.
 
-{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/phishing-site.webp" alt="The fake Citi bank phishing site." >}}
+![The fake Citi bank phishing site.](/using-python-to-flood-scammers-with-fake-credentials/phishing-site.webp)
 
 <br>
 
 I opened my browser's dev tools to capture network activity. Then I submitted some made up credentials. Unsurprisingly, they didn't work:
 
-{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/sign-in-fail.webp" alt="Failed sign in on the phishing site." >}}
+![Failed sign in on the phishing site.](/using-python-to-flood-scammers-with-fake-credentials/sign-in-fail.webp)
 
 <br>
 
 In the dev tools, I checked the headers tab to see that the requests were actually going to `https://toys-store.site/citi.php`:
 
-{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/request-headers.webp" alt="Request headers showing where requests were being sent." >}}
+![Request headers showing where requests were being sent.](/using-python-to-flood-scammers-with-fake-credentials/request-headers.webp)
 
 <br>
 
 I could also see my credentials in the payload:
 
-{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/request-payload.webp" alt="Request payload showing fake credentials submitted." >}}
+![Request payload showing fake credentials submitted.](/using-python-to-flood-scammers-with-fake-credentials/request-payload.webp)
 
 <br>
 
@@ -112,7 +112,7 @@ Quick note about `fake.simple_profile()` from the `payload` dictionary: this lin
 
 I ran the script and left it running for a while. The time being printed out is extracted from the response headers. This way I could easily see requests as they're being sent in the CLI:
 
-{{< figure src="/using-python-to-flood-scammers-with-fake-credentials/cli-output.webp" alt="CLI output of requests being sent with fake credentials." >}}
+![CLI output of requests being sent with fake credentials.](/using-python-to-flood-scammers-with-fake-credentials/cli-output.webp)
 
 It's not easy to tell in a screenshot, but with the `multiprocessing` package I was able to speed up the process of sending post requests. My terminal was filling up pretty quickly.
 
