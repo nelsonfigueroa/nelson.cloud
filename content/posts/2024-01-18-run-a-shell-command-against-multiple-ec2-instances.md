@@ -14,27 +14,27 @@ In AWS, you can use [AWS Systems Manager](https://aws.amazon.com/systems-manager
 
 To get started running a shell command on multiple EC2 Instances, head over to [AWS Systems Manager via the AWS Console](https://console.aws.amazon.com/systems-manager/home). Then, on the left side under "Node Management", click on "Run Command".
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/node-management.webp" alt="Node Management menu" >}}
+![Node Management menu](/run-a-shell-command-on-ec2-instances/node-management.webp)
 
 On the next screen, click on the orange "Run a Command" button on the right.
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/aws-ssm-run-command.webp" alt="AWS SSM home page" >}}
+![AWS SSM home page](/run-a-shell-command-on-ec2-instances/aws-ssm-run-command.webp)
 
 Next, under "Command document" search for "shell" to find `AWS-RunShellScript` and select it.
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/command-document.webp" alt="AWS SSM command document" >}}
+![AWS SSM command document](/run-a-shell-command-on-ec2-instances/command-document.webp)
 
 Then, under "Command parameters" type in the shell command you want to run on your EC2 instances. In my case, I want to run security updates on my instances.
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/command-parameters.webp" alt="AWS SSM command parameters" >}}
+![AWS SSM command parameters](/run-a-shell-command-on-ec2-instances/command-parameters.webp)
 
 Then select EC2 Instances by your preferred method under "Target Selection". I chose to manually select my instances but you can also select based on tags or resource groups. Make sure you are using the same region your EC2 instances are in!
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/target-selection.webp" alt="AWS SSM target selection" >}}
+![AWS SSM target selection](/run-a-shell-command-on-ec2-instances/target-selection.webp)
 
 This part is optional. If you want log outputs of the commands that are run on every instance you can save logs to a S3 Bucket under "Output options". Make sure the Instance Profile IAM Role has permissions to write to this bucket!
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/output-options.webp" alt="AWS SSM output options" >}}
+![AWS SSM output options](/run-a-shell-command-on-ec2-instances/output-options.webp)
 
 I left all other settings with their default values.
 
@@ -44,13 +44,13 @@ Now we can click the orange "Run" button on the bottom of the page to execute ou
 
 After running a command you'll see the following screen. You can see the status of the command execution on each EC2 instance to ensure everything went fine. You can also see the Command ID here which will come in handy if you enabled S3 logging.
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/command-id.webp" alt="SSM screen after execution" >}}
+![SSM screen after execution](/run-a-shell-command-on-ec2-instances/command-id.webp)
 
 ### Viewing Logs
 
 If you enabled logging to S3, you can browse to the bucket you selected and view logs. The output log file will be several directories deep under `<Command ID>/<ec2-instance-id/<command document>/...`. It's easier if you refer to the screenshot below:
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/s3-logs.webp" alt="AWS SSM output logs" >}}
+![AWS SSM output logs](/run-a-shell-command-on-ec2-instances/s3-logs.webp)
 
 I downloaded the `stdout` file locally and viewed it via the command line to confirm that my command executed properly on this particular EC2 instance:
 
@@ -73,7 +73,7 @@ If your EC2 Instances do not show up under "Target selection" they may not have 
 
 If your EC2 Instances do have the SSM agent installed but still aren't showing up, they may not have an IAM instance profile. You can confirm this by clicking on an EC2 Instance and then checking under the "IAM Role" field. If this field is empty, assign an IAM Role and ensure it has proper permissions. In my case, I used to AWS managed policies `AmazonSSMManagedInstanceCore` and `AmazonSSMPatchAssociation`.
 
-{{< figure src="/run-a-shell-command-on-ec2-instances/permission-policies.webp" alt="AWS IAM permission policies" >}}
+![AWS IAM permission policies](/run-a-shell-command-on-ec2-instances/permission-policies.webp)
 
 (The inline policy in the screenshot is to grant this Role S3 permissions for logging purposes which I cover in the next section.)
 
