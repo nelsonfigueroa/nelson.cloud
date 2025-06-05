@@ -8,14 +8,15 @@ categories = ["Python", "Cybersecurity"]
 
 If you've been around you know I enjoy spamming phishing/scamming sites. I recently received this fake Chase email and decided to go down another phishing/scamming attempt.
 
-{{< figure src="/chase-scam/email.webp" alt="Phishing Email" >}}
+![Phishing Email](/chase-scam/email.webp)
 
 The email linked to a Google Drive link of a PDF.
-{{< figure src="/chase-scam/pdf.webp" alt="Google Drive PDF" >}}
+
+![Google Drive PDF](/chase-scam/pdf.webp)
 
 The PDF itself links to somewhere else. I clicked on the PDF and after some redirects I ultimately landed on a fake Chase login site. Look at the URL lol.
 
-{{< figure src="/chase-scam/login.webp" alt="Fake Chase login form" >}}
+![Fake Chase login form](/chase-scam/login.webp)
 
 Next, I opened my browser dev tools, I filled in the form and pressed "Sign In".
 
@@ -27,13 +28,13 @@ A `POST` request goes out to `https://secure005.access.chaise.com.secure-accessa
 
 Then I was shown this page:
 
-{{< figure src="/chase-scam/wrong-credentials.webp" alt="Error message" >}}
+![Error message](/chase-scam/wrong-credentials.webp)
 
 And of course on the frontend there's a message about incorrect credentials. It's one of the most common tricks these people use.
 
 Attempting to submit new credentials does nothing. I noticed that the "reset your password" link is the only way forward so I clicked that and it took me to this page:
 
-{{< figure src="/chase-scam/otp.webp" alt="One-time code form" >}}
+![One-time code form](/chase-scam/otp.webp)
 
 It's asking for a one-time code. I'm not really sure how they expect people to enter a code that they normally receive after submitting *correct* credentials. Not only that but they don't even know the phone number of the user. Either way, I filled in `000000` and hit "Next".
 
@@ -47,7 +48,7 @@ Another `POST` request goes out to the same URL as before: `https://secure005.ac
 
 Then I landed on this page that asks me for my card information:
 
-{{< figure src="/chase-scam/credit-card.webp" alt="credit card form" >}}
+![credit card form](/chase-scam/credit-card.webp)
 
 I once again filled the form with fake information and hit "Next". Another `POST` request went out to the same URL as before. The main thing that changes here are the headers and the JSON payload.
 
@@ -59,7 +60,7 @@ I once again filled the form with fake information and hit "Next". Another `POST
 
 Next, I was shown this form. Notice how the first field says "Full Number". I'm pretty sure they meant "Full Name" lol.
 
-{{< figure src="/chase-scam/personal-details.webp" alt="personal details form" >}}
+![personal details form](/chase-scam/personal-details.webp)
 
 Once again, I filled out and submitted the form.
 
@@ -73,7 +74,7 @@ The `fullname` key in the JSON payload confirms that they meant to write "Full N
 
 After submitting the previous form I was shown yet another one, this time asking for email address and email password. They are really thorough. They also asked for my email in the previous step so that was a bit redundant.
 
-{{< figure src="/chase-scam/email-form.webp" alt="email form" >}}
+![email form](/chase-scam/email-form.webp)
 
 I typed in some fake credentials and submitted the form. A `POST` request goes out to the same URL as before with the following JSON payload:
 ```json
@@ -82,7 +83,7 @@ I typed in some fake credentials and submitted the form. A `POST` request goes o
 
 Then I was redirected to the offical Chase site:
 
-{{< figure src="/chase-scam/chase-site.webp" alt="Official Chase site" >}}
+![official chase site](/chase-scam/chase-site.webp)
 
 ## Spamming Fake Information with Python
 
@@ -257,7 +258,7 @@ while True:
 
 It's quite lengthy but it works. I ran the script in the background and went about my day.
 
-{{< figure src="/chase-scam/terminal.webp" alt="Terminal output after running the Python script" >}}
+![Terminal output after running the Python script](/chase-scam/terminal.webp)
 
 ## More Retaliation Against Scammers
 
