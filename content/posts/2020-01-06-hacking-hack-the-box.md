@@ -7,7 +7,7 @@ categories = ["Cybersecurity"]
 +++
 
 
-{{< figure src="/hacking-hack-the-box/hackthebox.webp" alt="Hack The Box logo" >}}
+![Hack The Box Logo](/hacking-hack-the-box/hackthebox.webp)
 
 Hack The Box is an online penetration testing platform where users can practice their hacking abilities and test their cybersecurity knowledge. What's interesting is that in order to sign up to the site in the first place, you need to hack your way in. In this post, I'll be showing how I managed to get in and what my thought process was along the way.
 
@@ -19,7 +19,7 @@ Hack The Box is an online penetration testing platform where users can practice 
 
 To sign up to the site, I was redirected to [https://www.hackthebox.eu/invite](https://www.hackthebox.eu/invite). There is a single field that prompts for an invite code. Other than that, there are no clues on the surface.
 
-{{< figure src="/hacking-hack-the-box/invitecode.webp" alt="Invite code field">}}
+![Invite code field](/hacking-hack-the-box/invitecode.webp)
 
 The first thing I did was to inspect the code by simply right-clicking on the page and selecting 'View Page Source'. Once I had the raw code in front of me, I tried to look for any clues as to how to get in. I ended up finding a JavaScript file that looked like exactly what I needed due to its name: [inviteapi.min.js](https://www.hackthebox.eu/js/inviteapi.min.js). However, it was minified and hard to decipher just by looking at it:
 
@@ -80,7 +80,7 @@ The `data` clearly looks like encrypted text. And we even get the `enctype` tell
 
 Using the tool, I decrypted the string and got the result: "In order to generate the invite code, make a POST request to /api/invite/"
 
-{{< figure src="/hacking-hack-the-box/rot13site.webp" alt="Site used to decrypt ROT13 cipher" >}}
+![Site used to decrypt ROT13 cipher](/hacking-hack-the-box/rot13site.webp)
 
 Now, to make a `POST` request to `https://hackthebox.eu/api/invite/` I used [HTTPie](https://httpie.org/). It was as easy as running the following:
 
@@ -110,6 +110,6 @@ AJWFP-GMPRX-IXRPT-CGAUA-RIMXN
 
 That looked like a code to me. I tried it on the form, and sure enough it worked! I was in.
 
-{{< figure src="/hacking-hack-the-box/congrats.webp" alt="Congratulations screen" >}}
+![Congratulations screen](/hacking-hack-the-box/congrats.webp)
 
 It was a lot of fun trying to figure this out. That was the easiest part though. Next, I'll try to root some actual machines in Hack The Box's pentesting labs.
