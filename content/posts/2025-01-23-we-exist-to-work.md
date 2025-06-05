@@ -10,12 +10,11 @@ TocOpen = false
 
 I randomly checked LinkedIn the other day and I saw this banner at the top of my feed:
 
-{{< figure src="/we-exist-only-to-work/linkedin-banner.webp" alt="Banner on LinkedIn" >}}
+![Banner on LinkedIn](/we-exist-only-to-work/linkedin-banner.webp)
 
 It's obviously an advertisement but it made me think about how much we actually work in our lives. I looked up the average lifespan of a male in the USA and got this:
 
-{{< figure src="/we-exist-only-to-work/life-expectancy.webp" alt="Life expectancy in the USA" >}}
-
+![Life expectancy in the USA](/we-exist-only-to-work/life-expectancy.webp)
 
 That's depressing. We work most of our lives. I know that wasn't their intent but yeah.
 
