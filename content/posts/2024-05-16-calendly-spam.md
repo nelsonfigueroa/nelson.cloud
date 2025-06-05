@@ -24,17 +24,17 @@ The plan is to automate the process of scheduling appointments with Python to fi
 
 First, I created a free account at https://calendly.com/signup.
 
-{{< figure src="/calendly-spam/new-account.webp" alt="My new Calendly account" >}}
+![My new Calendly account](/calendly-spam/new-account.webp)
 
 The dates and times available are shown in the following screenshot:
 
-{{< figure src="/calendly-spam/dates-available.webp" alt="Dates available for scheduling" >}}
+![Dates available for scheduling](/calendly-spam/dates-available.webp)
 
 I went through the process of manually creating an appointment in order to capture requests, HTTP verbs, and the URLs they were going to.
 
 This was the final step before creating an appointment:
 
-{{< figure src="/calendly-spam/scheduling-appointment.webp" alt="The process of scheduling an appointment on Calendly" >}}
+![The process of scheduling an appointment on Calendly](/calendly-spam/scheduling-appointment.webp)
 
 As I went through the process of scheduling and appointment I was keeping track of all the `GET` requests and their payloads (I chose not to show those here to get to the good stuff sooner). The final request that actually created an appointment was a `POST` request to `https://calendly.com/api/booking/invitees`. This is the payload of that request:
 
@@ -260,11 +260,11 @@ for event_type in event_types:
 
 I ran the script for a bit to create appointments. Soon after I started getting emails about appointments being made:
 
-{{< figure src="/calendly-spam/mailbox.webp" alt="Gmail inbox showing an influx of Calendly appointments" >}}
+![Gmail inbox showing an influx of Calendly appointments](/calendly-spam/mailbox.webp)
 
 And for further confirmation I also refreshed my Calendly calendar and saw that there were a couple days that are no longer available (May 16 and May 17):
 
-{{< figure src="/calendly-spam/dates-available-aftermath.webp" alt="Remaining dates available for scheduling" >}}
+![Remaining dates available for scheduling](/calendly-spam/dates-available-aftermath.webp)
 
 This was much easier than expected. I didn't even let my script run indefinitely.
 
