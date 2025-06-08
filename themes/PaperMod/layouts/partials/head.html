@@ -89,10 +89,9 @@
 {{- end }}
 {{- end -}}
 
-{{/*  Hamburger Menu + GoatCounter (used on every page) */}}
+{{/*  Hamburger Menu (used on every page) */}}
 {{- $hamburger_menu := resources.Get "js/hamburger_menu.js" | resources.Minify }}
-{{- $goatcounter := resources.Get "js/goatcounter.js" | resources.Minify }}
-{{- $combined := (slice $hamburger_menu $goatcounter) | resources.Concat "assets/js/all.js" }}
+{{- $combined := (slice $hamburger_menu) | resources.Concat "assets/js/all.js" }}
 <script defer crossorigin="anonymous" src="{{ $combined.RelPermalink }}" integrity="{{ $combined.Data.Integrity }}"></script>
 
 {{- /* Favicons */}}
