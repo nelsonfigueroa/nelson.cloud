@@ -35,4 +35,4 @@ This post is meant as honest feedback. Proton has a [respectable mission](https:
 - https://www.reddit.com/r/ProtonMail/comments/1i1zjgn/so_that_happened/
 - https://www.reddit.com/r/privacy/comments/1i210jg/protonmail_supporting_the_party_that_killed/
 
-![Andy Yen on Twitter aka X](/leaving-proton/andy-yen-tweet.webp)
+<img src="/leaving-proton/andy-yen-tweet.webp" alt="Andy Yen on Twitter aka X" width="720" height="1149" style="max-width: 100%; height: auto; aspect-ratio: 932 / 1488;" loading="lazy" decoding="async">
