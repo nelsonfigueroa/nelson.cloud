@@ -12,27 +12,27 @@ This post assumes you already have an [Amazon CloudFront](https://docs.aws.amazo
 
 Go to the AWS Console and click into your CloudFront Distribution. Then click on the "Behaviors" tab. If you already have a behavior, you can edit the existing one. Otherwise, create a behavior.
 
-![CloudFront Distribution Behaviors tab](/aws-cloudfront-custom-response-header/distribution.webp)
+<img src="/aws-cloudfront-custom-response-header/distribution.webp" alt="CloudFront Distribution Behaviors tab" width="720" height="180" style="max-width: 100%; height: auto; aspect-ratio: 2284 / 572;" loading="lazy" decoding="async">
 
 I won't cover the other Behavior settings as that is out of the scope of this post, but to add a custom response header look for the "Response headers policy - *optional*" field which is under "Cache key and origin requests".
 
-![Response headers policy field](/aws-cloudfront-custom-response-header/response-headers-policy.webp)
+<img src="/aws-cloudfront-custom-response-header/response-headers-policy.webp" alt="Response headers policy field" width="720" height="107" style="max-width: 100%; height: auto; aspect-ratio: 1580 / 236;" loading="lazy" decoding="async">
 
 Click on the "Create response headers policy" link. On the next page fill in the "Name" field at the very top. Then, scroll a bit down and you should see the "Custom headers - *optional*" field.
 
-![Custom headers field](/aws-cloudfront-custom-response-header/custom-headers.webp)
+<img src="/aws-cloudfront-custom-response-header/custom-headers.webp" alt="Custom headers field" width="720" height="589" style="max-width: 100%; height: auto; aspect-ratio: 2184 / 1788;" loading="lazy" decoding="async">
 
 Click on the "Add header" button and add the custom header you'd like. In my case, I added the `Cache-Control` header with a value of `max-age=31536000`. I also checked the `Origin override` box because I want this header to take precedence over other headers that may be set in the origin.
 
-![Custom headers field filled in](/aws-cloudfront-custom-response-header/custom-header-filled.webp)
+<img src="/aws-cloudfront-custom-response-header/custom-header-filled.webp" alt="Custom headers field filled in" width="720" height="134" style="max-width: 100%; height: auto; aspect-ratio: 2172 / 404;" loading="lazy" decoding="async">
 
 Then click the "Create" button on the bottom right. You'll be redirected to CloudFront > Policies. You can see your newly created response header under the "Response headers" tab. In my case it's called `cache-control-header`.
 
-![Policies view showing custom policy](/aws-cloudfront-custom-response-header/policies.webp)
+<img src="/aws-cloudfront-custom-response-header/policies.webp" alt="Policies view showing custom policy" width="720" height="533" style="max-width: 100%; height: auto; aspect-ratio: 1738 / 1286;" loading="lazy" decoding="async">
 
 Now that this custom header policy is created, browse back to your Distribution and click on the "Behaviors" tab. Edit an existing Behavior or create one. Scroll down to the "Response headers policy - *optional*" field again. Then, select your new response header policy.
 
-![Selecting new response header policy in Behaviors tab](/aws-cloudfront-custom-response-header/behavior-filled.webp)
+<img src="/aws-cloudfront-custom-response-header/behavior-filled.webp" alt="Selecting new response header policy in Behaviors tab" width="720" height="131" style="max-width: 100%; height: auto; aspect-ratio: 1236 / 224;" loading="lazy" decoding="async">
 
 Then save your changes.
 
