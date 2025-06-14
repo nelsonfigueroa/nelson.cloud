@@ -10,7 +10,7 @@ TocOpen = false
 
 I ran into this warning recently on [PageSpeed Insights](https://pagespeed.web.dev/): *"Serve static assets with an efficient cache policy"*. The warning highlighted three assets that had no "Cache TTL" defined:
 
-![Efficient cache policy warning on Google Search Console](/fix-efficient-cache-policy-on-gsc/before.webp)
+<img src="/fix-efficient-cache-policy-on-gsc/before.webp" alt="Efficient cache policy warning on Google Search Console" width="720" height="295" style="max-width: 100%; height: auto; aspect-ratio: 1904 / 782;" loading="lazy" decoding="async">
 
 To resolve this warning, I added a `Cache-Control` header with the value `max-age=31536000` to the HTTP responses of my domain (`31536000` is the number of seconds in a year).
 
@@ -18,7 +18,7 @@ Since I host [nelson.cloud](https://nelson.cloud) on [Amazon CloudFront](https:/
 
 After the header was configured, I checked PageSpeed Insights again and the warning had gone away for the assets under my domain `nelson.cloud`:
 
-![Efficient cache policy warning is gone for 2 assets.](/fix-efficient-cache-policy-on-gsc/after.webp)
+<img src="/fix-efficient-cache-policy-on-gsc/after.webp" alt="Efficient cache policy warning is gone for 2 assets." width="720" height="194" style="max-width: 100%; height: auto; aspect-ratio: 1912 / 516;" loading="lazy" decoding="async">
 
 (The remaining asset is not under my control so I can't fix that one.)
 
