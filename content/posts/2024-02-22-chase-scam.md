@@ -8,15 +8,15 @@ categories = ["Python", "Cybersecurity"]
 
 If you've been around you know I enjoy spamming phishing/scamming sites. I recently received this fake Chase email and decided to go down another phishing/scamming attempt.
 
-![Phishing Email](/chase-scam/email.webp)
+<img src="/chase-scam/email.webp" alt="Phishing Email" width="720" height="357" style="max-width: 100%; height: auto; aspect-ratio: 1500 / 744;" loading="lazy" decoding="async">
 
 The email linked to a Google Drive link of a PDF.
 
-![Google Drive PDF](/chase-scam/pdf.webp)
+<img src="/chase-scam/pdf.webp" alt="Google Drive PDF" width="720" height="276" style="max-width: 100%; height: auto; aspect-ratio: 2796 / 1072;" loading="lazy" decoding="async">
 
 The PDF itself links to somewhere else. I clicked on the PDF and after some redirects I ultimately landed on a fake Chase login site. Look at the URL lol.
 
-![Fake Chase login form](/chase-scam/login.webp)
+<img src="/chase-scam/login.webp" alt="Fake Chase login form" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
 Next, I opened my browser dev tools, I filled in the form and pressed "Sign In".
 
@@ -28,13 +28,13 @@ A `POST` request goes out to `https://secure005.access.chaise.com.secure-accessa
 
 Then I was shown this page:
 
-![Error message](/chase-scam/wrong-credentials.webp)
+<img src="/chase-scam/wrong-credentials.webp" alt="Error message" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
 And of course on the frontend there's a message about incorrect credentials. It's one of the most common tricks these people use.
 
 Attempting to submit new credentials does nothing. I noticed that the "reset your password" link is the only way forward so I clicked that and it took me to this page:
 
-![One-time code form](/chase-scam/otp.webp)
+<img src="/chase-scam/otp.webp" alt="One-time code form" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
 It's asking for a one-time code. I'm not really sure how they expect people to enter a code that they normally receive after submitting *correct* credentials. Not only that but they don't even know the phone number of the user. Either way, I filled in `000000` and hit "Next".
 
@@ -48,7 +48,7 @@ Another `POST` request goes out to the same URL as before: `https://secure005.ac
 
 Then I landed on this page that asks me for my card information:
 
-![credit card form](/chase-scam/credit-card.webp)
+<img src="/chase-scam/credit-card.webp" alt="credit card form" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
 I once again filled the form with fake information and hit "Next". Another `POST` request went out to the same URL as before. The main thing that changes here are the headers and the JSON payload.
 
@@ -60,7 +60,7 @@ I once again filled the form with fake information and hit "Next". Another `POST
 
 Next, I was shown this form. Notice how the first field says "Full Number". I'm pretty sure they meant "Full Name" lol.
 
-![personal details form](/chase-scam/personal-details.webp)
+<img src="/chase-scam/personal-details.webp" alt="personal details form" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
 Once again, I filled out and submitted the form.
 
@@ -74,7 +74,7 @@ The `fullname` key in the JSON payload confirms that they meant to write "Full N
 
 After submitting the previous form I was shown yet another one, this time asking for email address and email password. They are really thorough. They also asked for my email in the previous step so that was a bit redundant.
 
-![email form](/chase-scam/email-form.webp)
+<img src="/chase-scam/email-form.webp" alt="email form" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
 I typed in some fake credentials and submitted the form. A `POST` request goes out to the same URL as before with the following JSON payload:
 ```json
@@ -83,7 +83,7 @@ I typed in some fake credentials and submitted the form. A `POST` request goes o
 
 Then I was redirected to the offical Chase site:
 
-![official chase site](/chase-scam/chase-site.webp)
+<img src="/chase-scam/chase-site.webp" alt="official chase site" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
 ## Spamming Fake Information with Python
 
@@ -258,7 +258,7 @@ while True:
 
 It's quite lengthy but it works. I ran the script in the background and went about my day.
 
-![Terminal output after running the Python script](/chase-scam/terminal.webp)
+<img src="/chase-scam/terminal.webp" alt="Terminal output after running the Python script" width="720" height="438" style="max-width: 100%; height: auto; aspect-ratio: 1780 / 1084;" loading="lazy" decoding="async">
 
 ## More Retaliation Against Scammers
 
