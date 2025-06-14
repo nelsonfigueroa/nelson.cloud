@@ -8,7 +8,7 @@ categories = ["Random"]
 
 Here are my donations earnings for the past year.
 
-![Buymeacoffee total donations](/my-donation-earnings-over-the-past-year/earnings.webp)
+<img src="/my-donation-earnings-over-the-past-year/earnings.webp" alt="Buymeacoffee total donations" width="720" height="286" style="max-width: 100%; height: auto; aspect-ratio: 1772 / 704;" loading="lazy" decoding="async">
 
 Amazing right??? 😂
 
@@ -16,6 +16,6 @@ In all seriousness, I'm not upset about this at all. I didn't expect to get any 
 
 It's worth mentioning that my site isn't popular by any means. Here are my metrics from Google Search Console for the past 3 months:
 
-![Google Search Console](/my-donation-earnings-over-the-past-year/google-clicks.webp)
+<img src="/my-donation-earnings-over-the-past-year/google-clicks.webp" alt="Google Search Console" width="720" height="278" style="max-width: 100%; height: auto; aspect-ratio: 2144 / 828;" loading="lazy" decoding="async">
 
 I am curious to see what the donation earnings (if any) are for much more popular blogs and personal sites.
