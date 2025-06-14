@@ -14,27 +14,27 @@ In AWS, you can use [AWS Systems Manager](https://aws.amazon.com/systems-manager
 
 To get started running a shell command on multiple EC2 Instances, head over to [AWS Systems Manager via the AWS Console](https://console.aws.amazon.com/systems-manager/home). Then, on the left side under "Node Management", click on "Run Command".
 
-![Node Management menu](/run-a-shell-command-on-ec2-instances/node-management.webp)
+<img src="/run-a-shell-command-on-ec2-instances/node-management.webp" alt="Node Management menu" width="500" height="608" style="max-width: 100%; height: auto; aspect-ratio: 500 / 608;" loading="lazy" decoding="async">
 
 On the next screen, click on the orange "Run a Command" button on the right.
 
-![AWS SSM home page](/run-a-shell-command-on-ec2-instances/aws-ssm-run-command.webp)
+<img src="/run-a-shell-command-on-ec2-instances/aws-ssm-run-command.webp" alt="AWS SSM home page" width="720" height="214" style="max-width: 100%; height: auto; aspect-ratio: 2040 / 608;" loading="lazy" decoding="async">
 
 Next, under "Command document" search for "shell" to find `AWS-RunShellScript` and select it.
 
-![AWS SSM command document](/run-a-shell-command-on-ec2-instances/command-document.webp)
+<img src="/run-a-shell-command-on-ec2-instances/command-document.webp" alt="AWS SSM command document" width="720" height="328" style="max-width: 100%; height: auto; aspect-ratio: 2704 / 1232;" loading="lazy" decoding="async">
 
 Then, under "Command parameters" type in the shell command you want to run on your EC2 instances. In my case, I want to run security updates on my instances.
 
-![AWS SSM command parameters](/run-a-shell-command-on-ec2-instances/command-parameters.webp)
+<img src="/run-a-shell-command-on-ec2-instances/command-parameters.webp" alt="AWS SSM command parameters" width="720" height="330" style="max-width: 100%; height: auto; aspect-ratio: 984 / 452;" loading="lazy" decoding="async">
 
 Then select EC2 Instances by your preferred method under "Target Selection". I chose to manually select my instances but you can also select based on tags or resource groups. Make sure you are using the same region your EC2 instances are in!
 
-![AWS SSM target selection](/run-a-shell-command-on-ec2-instances/target-selection.webp)
+<img src="/run-a-shell-command-on-ec2-instances/target-selection.webp" alt="AWS SSM target selection" width="720" height="333" style="max-width: 100%; height: auto; aspect-ratio: 2692 / 1248;" loading="lazy" decoding="async">
 
 This part is optional. If you want log outputs of the commands that are run on every instance you can save logs to a S3 Bucket under "Output options". Make sure the Instance Profile IAM Role has permissions to write to this bucket!
 
-![AWS SSM output options](/run-a-shell-command-on-ec2-instances/output-options.webp)
+<img src="/run-a-shell-command-on-ec2-instances/output-options.webp" alt="AWS SSM output options" width="720" height="269" style="max-width: 100%; height: auto; aspect-ratio: 2688 / 1006;" loading="lazy" decoding="async">
 
 I left all other settings with their default values.
 
@@ -44,13 +44,13 @@ Now we can click the orange "Run" button on the bottom of the page to execute ou
 
 After running a command you'll see the following screen. You can see the status of the command execution on each EC2 instance to ensure everything went fine. You can also see the Command ID here which will come in handy if you enabled S3 logging.
 
-![SSM screen after execution](/run-a-shell-command-on-ec2-instances/command-id.webp)
+<img src="/run-a-shell-command-on-ec2-instances/command-id.webp" alt="SSM screen after execution" width="720" height="261" style="max-width: 100%; height: auto; aspect-ratio: 2708 / 984;" loading="lazy" decoding="async">
 
 ### Viewing Logs
 
 If you enabled logging to S3, you can browse to the bucket you selected and view logs. The output log file will be several directories deep under `<Command ID>/<ec2-instance-id/<command document>/...`. It's easier if you refer to the screenshot below:
 
-![AWS SSM output logs](/run-a-shell-command-on-ec2-instances/s3-logs.webp)
+<img src="/run-a-shell-command-on-ec2-instances/s3-logs.webp" alt="AWS SSM output logs" width="720" height="324" style="max-width: 100%; height: auto; aspect-ratio: 2444 / 1100;" loading="lazy" decoding="async">
 
 I downloaded the `stdout` file locally and viewed it via the command line to confirm that my command executed properly on this particular EC2 instance:
 
@@ -73,7 +73,7 @@ If your EC2 Instances do not show up under "Target selection" they may not have 
 
 If your EC2 Instances do have the SSM agent installed but still aren't showing up, they may not have an IAM instance profile. You can confirm this by clicking on an EC2 Instance and then checking under the "IAM Role" field. If this field is empty, assign an IAM Role and ensure it has proper permissions. In my case, I used to AWS managed policies `AmazonSSMManagedInstanceCore` and `AmazonSSMPatchAssociation`.
 
-![AWS IAM permission policies](/run-a-shell-command-on-ec2-instances/permission-policies.webp)
+<img src="/run-a-shell-command-on-ec2-instances/permission-policies.webp" alt="AWS IAM permission policies" width="720" height="299" style="max-width: 100%; height: auto; aspect-ratio: 1500 / 624;" loading="lazy" decoding="async">
 
 (The inline policy in the screenshot is to grant this Role S3 permissions for logging purposes which I cover in the next section.)
 
