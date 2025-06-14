@@ -10,27 +10,27 @@ categories = ["Cybersecurity", "Python"]
 
 I recently received this email claiming to be from [Ledger](https://www.ledger.com/). I immediately knew it was a scam.
 
-![Email pretending to be from Ledger](/ledger-scammers/scam-email.webp)
+<img src="/ledger-scammers/scam-email.webp" alt="Email pretending to be from Ledger" width="720" height="675" style="max-width: 100%; height: auto; aspect-ratio: 1240 / 1164;" loading="lazy" decoding="async">
 
 I decided to take a peek at `vaultscanner.com` just for fun. The site looked like a genuine Ledger site. This site was created with more effort than other scam sites I've seen.
 
-![The fake Ledger website.](/ledger-scammers/fake-ledger-site.webp)
+<img src="/ledger-scammers/fake-ledger-site.webp" alt="The fake Ledger website." width="720" height="417" style="max-width: 100%; height: auto; aspect-ratio: 3456 / 2004;" loading="lazy" decoding="async">
 
 I clicked on a random Ledger device and it played a "connecting" animation.
 
-![Fake Ledger site showing a Ledger device connecting.](/ledger-scammers/connecting-device.webp)
+<img src="/ledger-scammers/connecting-device.webp" alt="Fake Ledger site showing a Ledger device connecting." width="720" height="417" style="max-width: 100%; height: auto; aspect-ratio: 3456 / 2004;" loading="lazy" decoding="async">
 
 After that I got an error. It's obviously fake. How can my Ledger data be damaged if I didn't connect a Ledger device to begin with? I don't even own one.
 
-![Fake error](/ledger-scammers/fake-error.webp)
+<img src="/ledger-scammers/fake-error.webp" alt="Fake error" width="720" height="417" style="max-width: 100%; height: auto; aspect-ratio: 3456 / 2004;" loading="lazy" decoding="async">
 
 And of course, the site then prompts for the recovery phrase.
 
-![Fake Ledger site asking for recovery phrase](/ledger-scammers/recovery-phrase-entry.webp)
+<img src="/ledger-scammers/recovery-phrase-entry.webp" alt="Fake Ledger site asking for recovery phrase" width="720" height="417" style="max-width: 100%; height: auto; aspect-ratio: 3456 / 2004;" loading="lazy" decoding="async">
 
 I checked the browser dev tools to see where this phrase was going to. It was getting sent as a query string to `/data1.php` as a `POST` request.
 
-![Developer tools showing where the recovery phrase was sent](/ledger-scammers/dev-tools.webp)
+<img src="/ledger-scammers/dev-tools.webp" alt="Developer tools showing where the recovery phrase was sent" width="720" height="351" style="max-width: 100%; height: auto; aspect-ratio: 2302 / 1124;" loading="lazy" decoding="async">
 
 ## Writing a Python Script
 
@@ -87,6 +87,6 @@ while True:
 
 Then I just let it run for a while to give the scammers a ton of fake data.
 
-![Terminal output when running Python script.](/ledger-scammers/terminal.webp)
+<img src="/ledger-scammers/terminal.webp" alt="Terminal output when running Python script." width="720" height="307" style="max-width: 100%; height: auto; aspect-ratio: 3016 / 1290;" loading="lazy" decoding="async">
 
 I hope I made scamming/phishing more difficult for them :)
