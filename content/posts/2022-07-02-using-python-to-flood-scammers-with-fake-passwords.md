@@ -10,31 +10,31 @@ categories = ["Cybersecurity", "Python"]
 
 Today, I received this text message that is obviously a phishing attempt:
 
-![Fake text received from scammers.](/using-python-to-flood-scammers-with-fake-credentials/scam-text.webp)
+<img src="/using-python-to-flood-scammers-with-fake-credentials/scam-text.webp" alt="Fake text received from scammers." width="720" height="351" style="max-width: 100%; height: auto; aspect-ratio: 888 / 434;" loading="lazy" decoding="async">
 
 <br>
 
 I was curious, so I went ahead and checked out the site. It was a mediocre attempt at recreating the actual site.
 
-![The fake Citi bank phishing site.](/using-python-to-flood-scammers-with-fake-credentials/phishing-site.webp)
+<img src="/using-python-to-flood-scammers-with-fake-credentials/phishing-site.webp" alt="The fake Citi bank phishing site." width="720" height="377" style="max-width: 100%; height: auto; aspect-ratio: 3570 / 1874;" loading="lazy" decoding="async">
 
 <br>
 
 I opened my browser's dev tools to capture network activity. Then I submitted some made up credentials. Unsurprisingly, they didn't work:
 
-![Failed sign in on the phishing site.](/using-python-to-flood-scammers-with-fake-credentials/sign-in-fail.webp)
+<img src="/using-python-to-flood-scammers-with-fake-credentials/sign-in-fail.webp" alt="Failed sign in on the phishing site." width="720" height="286" style="max-width: 100%; height: auto; aspect-ratio: 1036 / 412;" loading="lazy" decoding="async">
 
 <br>
 
 In the dev tools, I checked the headers tab to see that the requests were actually going to `https://toys-store.site/citi.php`:
 
-![Request headers showing where requests were being sent.](/using-python-to-flood-scammers-with-fake-credentials/request-headers.webp)
+<img src="/using-python-to-flood-scammers-with-fake-credentials/request-headers.webp" alt="Request headers showing where requests were being sent." width="720" height="333" style="max-width: 100%; height: auto; aspect-ratio: 2444 / 1132;" loading="lazy" decoding="async">
 
 <br>
 
 I could also see my credentials in the payload:
 
-![Request payload showing fake credentials submitted.](/using-python-to-flood-scammers-with-fake-credentials/request-payload.webp)
+<img src="/using-python-to-flood-scammers-with-fake-credentials/request-payload.webp" alt="Request payload showing fake credentials submitted." width="720" height="334" style="max-width: 100%; height: auto; aspect-ratio: 2446 / 1136;" loading="lazy" decoding="async">
 
 <br>
 
@@ -112,7 +112,7 @@ Quick note about `fake.simple_profile()` from the `payload` dictionary: this lin
 
 I ran the script and left it running for a while. The time being printed out is extracted from the response headers. This way I could easily see requests as they're being sent in the CLI:
 
-![CLI output of requests being sent with fake credentials.](/using-python-to-flood-scammers-with-fake-credentials/cli-output.webp)
+<img src="/using-python-to-flood-scammers-with-fake-credentials/cli-output.webp" alt="CLI output of requests being sent with fake credentials." width="720" height="490" style="max-width: 100%; height: auto; aspect-ratio: 1620 / 1104;" loading="lazy" decoding="async">
 
 It's not easy to tell in a screenshot, but with the `multiprocessing` package I was able to speed up the process of sending post requests. My terminal was filling up pretty quickly.
 
