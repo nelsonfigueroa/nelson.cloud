@@ -1,6 +1,6 @@
 +++
-title = "Remove hugo generated meta tag html bullshit and keep your hugo site lean as fuck"
-summary = "why does hugo do this."
+title = "Remove Unnecessary Hugo Meta Tag to Keep HTML Lean"
+summary = "Remove  an unnecessary and auto-generated Hugo meta tag by setting `disableHugoGeneratorInject` to `true`."
 date = "2025-06-15"
 lastmod = "2025-06-15"
 categories = ["Hugo", "HTML"]
@@ -8,7 +8,9 @@ ShowToc = false
 TocOpen = false
 +++
 
-I like to keep my [Hugo](https://gohugo.io/) site as lean as possible for performance reasons and to save on hosting costs. I recently discovered that Hugo generates a HTML `<meta>` tag with the version number of Hugo in the HTML `<head>` tag. This is done by default and here's what it looks like:
+I like to keep my [Hugo](https://gohugo.io/) site as lean as possible for performance reasons and to save on hosting costs.
+
+I recently discovered that Hugo generates a HTML `<meta>` tag with the Hugo version in the `<head>` tag. This is done by default and looks like this:
 
 ```html
 <head>
@@ -16,7 +18,7 @@ I like to keep my [Hugo](https://gohugo.io/) site as lean as possible for perfor
 </head>
 ```
 
-In `config.yaml` or `config.toml`.
+To remove this tag, we can disable it in `config.yaml` or `config.toml` by setting the `disableHugoGeneratorInject` boolean to `true`.
 
 In YAML:
 
@@ -30,5 +32,8 @@ In TOML:
 disableHugoGeneratorInject = true
 ```
 
+If setting `disableHugoGeneratorInject` doesn't work, do a global search in your Hugo project for `{{ hugo.Generator }}`. This shortcode outputs the same `<meta>` tag and doesn't respect the `disableHugoGeneratorInject` configuration (at least as of Hugo v0.147.8).
+
 ## References:
 - https://gohugo.io/configuration/all/#disablehugogeneratorinject
+- https://gohugo.io/functions/hugo/generator/
