@@ -4,6 +4,7 @@ pagination:
   pagerSize: 10
 theme: [PaperMod]
 
+disableHugoGeneratorInject: true # remove <meta name="generator" content="Hugo {{ hugo.Version }}"> from HTML output
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
