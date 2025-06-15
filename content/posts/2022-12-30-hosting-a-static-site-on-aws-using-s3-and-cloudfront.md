@@ -38,13 +38,13 @@ Then click on the bucket and go to the "properties" tab. Scroll all the way to t
 - In the "Index document" field, write in "index.html" (unless you want a different root page for your site)
 - Then click "Save changes"
 
-![Static website hosting configuration.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/s3-static-website-hosting.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/s3-static-website-hosting.webp" alt="Static website hosting configuration." width="720" height="729" style="max-width: 100%; height: auto; aspect-ratio: 1516 / 1536;" loading="lazy" decoding="async">
 
 Then go to the "Permissions" tab in the bucket. Click the "Edit" button under the "Block public access (bucket settings)" section.
 Uncheck the "Block *all* public access" checkbox. We need this bucket to have public access so the site is viewable across the internet.
 Save changes.
 
-![S3 bucket access.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/bucket-public-access.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/bucket-public-access.webp" alt="S3 bucket access." width="720" height="586" style="max-width: 100%; height: auto; aspect-ratio: 1572 / 1280;" loading="lazy" decoding="async">
 
 Next, still under the "Permissions tab", click the "Edit" button on the "Bucket policy" section. We need to add permissions for public access. Here is what the policy should look like. Change the bucket name after `Resource` to your bucket name:
 
@@ -67,13 +67,13 @@ Then save changes.
 
 At this point "Block *all* public access" should be off, and the bucket policy should show under the section:
 
-![Completed S3 bucket configuration.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/completed-bucket-permissions.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/completed-bucket-permissions.webp" alt="Completed S3 bucket configuration." width="720" height="410" style="max-width: 100%; height: auto; aspect-ratio: 2202 / 1254;" loading="lazy" decoding="async">
 
 To verify that everything works, we can upload some HTML files to test out the site.
 
 Go to the "Objects" tab on the bucket and drop in your static files. Even a single `index.html` file will do. In my case I have a lot more files since my site has blog posts and other things:
 
-![Objects in S3 bucket.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/bucket-objects.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/bucket-objects.webp" alt="Objects in S3 bucket." width="720" height="271" style="max-width: 100%; height: auto; aspect-ratio: 2638 / 996;" loading="lazy" decoding="async">
 
 Then go to the "Properties" tab and at the very bottom you should see a "Bucket website endpoint". Click on this link and your site should open in your browser. If you see the contents of your HTML file(s) then you are all done here with S3.
 
@@ -89,17 +89,17 @@ Check the upper right corner and make sure you are in the us-east-1 region. SSL 
 
 For "Certificate type" select "Request a public certificate". Then click Next
 
-![Requesting an ACM SSL certificate.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/requesting-ssl-certificate.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/requesting-ssl-certificate.webp" alt="Requesting an ACM SSL certificate." width="720" height="236" style="max-width: 100%; height: auto; aspect-ratio: 2122 / 696;" loading="lazy" decoding="async">
 
 Then, under "Fully qualified domain name" write in the name of your domain
 I also like to add in support for all subdomains. If you want to do this, add in the wildcard subdomain `*.yourdomain.com`
 
-![Adding domain names to ACM SSL certificate.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/ssl-cert-domains.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/ssl-cert-domains.webp" alt="Adding domain names to ACM SSL certificate." width="720" height="196" style="max-width: 100%; height: auto; aspect-ratio: 1906 / 520;" loading="lazy" decoding="async">
 
 Under "Validation method" select DNS validation.
 Under "Key algorithm" select "RSA 2048" or higher if you'd like
 
-![Validation method and key algorithm for ACM SSL certificate.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/ssl-cert-validation-and-key-algorithm.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/ssl-cert-validation-and-key-algorithm.webp" alt="Validation method and key algorithm for ACM SSL certificate." width="720" height="317" style="max-width: 100%; height: auto; aspect-ratio: 1976 / 870;" loading="lazy" decoding="async">
 
 Then click the "Request" button.
 
@@ -112,18 +112,18 @@ Note that in my case the CNAME names and values are repeated. I only had to crea
 
 *Side note: The CNAME record(s) can also be created on your registrar, but I chose to do it all on AWS to keep things in one place.*
 
-![ACM SSL certificate CNAME records.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/cname-record.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/cname-record.webp" alt="ACM SSL certificate CNAME records." width="720" height="169" style="max-width: 100%; height: auto; aspect-ratio: 1440 / 338;" loading="lazy" decoding="async">
 
 Go to Route 53 and create a public hosted zone for your domain (note that at the time of this writing hosted zones are 50 cents per month).
 
-![Creating a Hosted Zone in Route 53.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/hosted-zone.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/hosted-zone.webp" alt="Creating a Hosted Zone in Route 53." width="720" height="554" style="max-width: 100%; height: auto; aspect-ratio: 1516 / 1168;" loading="lazy" decoding="async">
 
 Once the zone is created, go back to your certificate and click on the upper right button that says "Create records in Route 53".
 AWS will add the records for you without any manual work on your part.
 
 After the record(s) are created, wait some time until the certificate is validated. In my case, it took around 10 minutes.
 
-![Validated ACM SSL certificate.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/certificate-validated.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/certificate-validated.webp" alt="Validated ACM SSL certificate." width="720" height="162" style="max-width: 100%; height: auto; aspect-ratio: 968 / 218;" loading="lazy" decoding="async">
 
 This page from the AWS documentation elaborates more on DNS validation for ACM SSL Certificates:
 - https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html
@@ -143,29 +143,29 @@ Then go to the CloudFront service in the AWS console. Click the "Create distribu
 
 Under "Origin domain"  paste the value of "Bucket website endpoint" that you copied. The value should be something like `http://mybucket.s3-website-us-east-1.amazonaws.com`
 
-![CloudFront Distribution Origin domain.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/origin-domain.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/origin-domain.webp" alt="CloudFront Distribution Origin domain." width="720" height="129" style="max-width: 100%; height: auto; aspect-ratio: 1086 / 196;" loading="lazy" decoding="async">
 
 Under "Viewer protocol policy" I like to select "Redirect HTTP to HTTPS", essentially disallowing HTTP connections.
 
-![CloudFront Distribution viewer protocol policy.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/viewer-protocol-policy.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/viewer-protocol-policy.webp" alt="CloudFront Distribution viewer protocol policy." width="720" height="191" style="max-width: 100%; height: auto; aspect-ratio: 806 / 214;" loading="lazy" decoding="async">
 
 Under "Alternate domain name (CNAME)", add in your domain.
 
-![CloudFront Distribution Alternate domain name (CNAME).](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/alternate-domain-name.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/alternate-domain-name.webp" alt="CloudFront Distribution Alternate domain name (CNAME)." width="720" height="174" style="max-width: 100%; height: auto; aspect-ratio: 1026 / 248;" loading="lazy" decoding="async">
 
 Under "Custom SSL certificate" select the ACM certificate that you created earlier. It should show up in the drop-down menu.
 
-![CloudFront Distribution custom SSL certificate.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/custom-ssl-certificate.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/custom-ssl-certificate.webp" alt="CloudFront Distribution custom SSL certificate." width="720" height="123" style="max-width: 100%; height: auto; aspect-ratio: 1264 / 216;" loading="lazy" decoding="async">
 
 Under "default root object" write in `index.html` or whatever you want your root to be. This is the page that gets loaded by default when hitting your domain without a path (`https://nelson.cloud/` in this case).
 
-![CloudFront Distribution default root object.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/default-root-object.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/default-root-object.webp" alt="CloudFront Distribution default root object." width="720" height="120" style="max-width: 100%; height: auto; aspect-ratio: 1084 / 182;" loading="lazy" decoding="async">
 
 The rest of the settings can stay as is. Click the "Create distribution" button.
 Allow some time for the distribution to deploy.
 Once the "Last modified" field doesn't say "Deploying" and displays a date, it's done.
 
-![Deployed CloudFront Distribution.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/distribution-created.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/distribution-created.webp" alt="Deployed CloudFront Distribution." width="720" height="51" style="max-width: 100%; height: auto; aspect-ratio: 1892 / 136;" loading="lazy" decoding="async">
 
 I chose to use the S3 website endpoint as the Origin, but you can also use the S3 bucket itself. I chose the website endpoint because my site has multiple `index.html` templates [which can give errors in CloudFront](https://nelson.cloud/resolving-aws-cloudfront-access-denied-errors/).
 
@@ -176,7 +176,7 @@ More on Origins in the AWS documentation:
 
 CloudFront Distributions have barebones and unstylized error pages like this 404 page:
 
-![Default CloudFront 404 page.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/404.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/404.webp" alt="Default CloudFront 404 page." width="720" height="151" style="max-width: 100%; height: auto; aspect-ratio: 1566 / 330;" loading="lazy" decoding="async">
 
 If we want to use our own custom error pages, we need to create a custom error response.
 
@@ -191,7 +191,7 @@ Select the following settings:
 - Select "404: Not Found" for the "HTTP Response code" field
 - Click the "Create custom error response" button
 
-![Creating a custom error page.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/custom-error.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/custom-error.webp" alt="Creating a custom error page." width="720" height="622" style="max-width: 100%; height: auto; aspect-ratio: 1508 / 1304;" loading="lazy" decoding="async">
 
 Give your distribution a few minutes to update and you're done here.
 
@@ -213,17 +213,17 @@ Create a record with the following settings:
 
 Then click the "Create records" button.
 
-![Creating a Route 53 record.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/route-53-record.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/route-53-record.webp" alt="Creating a Route 53 record." width="720" height="446" style="max-width: 100%; height: auto; aspect-ratio: 2004 / 1244;" loading="lazy" decoding="async">
 
 It will take some time for these changes to propagate across DNS servers. In my experience, it's never been more than around 15 minutes. Usually faster.
 
 ## Viewing The Live Site
 After adding the DNS record and waiting some time, you should be able to go to your domain on a browser and see your site.
 
-![Live site.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/live-site.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/live-site.webp" alt="Live site." width="720" height="348" style="max-width: 100%; height: auto; aspect-ratio: 2158 / 1044;" loading="lazy" decoding="async">
 
 You can also test out your custom error page(s). In my case, I browsed to https://nelson.cloud/test to see my custom 404 page:
 
-![Custom 404 page.](/hosting-a-static-site-on-aws-using-s3-and-cloudfront/404-custom.webp)
+<img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/404-custom.webp" alt="Custom 404 page." width="720" height="277" style="max-width: 100%; height: auto; aspect-ratio: 1774 / 684;" loading="lazy" decoding="async">
 
 Congrats! Your site is now live.
