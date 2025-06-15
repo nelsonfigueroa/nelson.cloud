@@ -2,7 +2,7 @@
 title = "Finding Private Information Through Resumes on Google Search"
 summary = "Reconsider uploading your resume on the open web."
 date = "2024-09-16"
-lastmod = "2024-09-16"
+lastmod = "2025-06-15"
 categories = ["Cybersecurity", "Privacy", "Google"]
 ShowToc = false
 TocOpen = false
@@ -99,7 +99,7 @@ Maybe we want the name, number, and address of someone who has worked at a defen
 "resume.pdf" "Raytheon" filetype:pdf
 ```
 
-<small><i>(I'm just joking please don't come after me feds)</i></small>
+<small><i>(I'm just joking. Please don't come after me, feds.)</i></small>
 
 <br>
 
@@ -112,5 +112,5 @@ In conclusion, it's really easy to find private information on resumes posted on
 
 ## Further Reading
 
-I am not the first to have this idea. Here's a similar post that you should also check out: 
+I am not the first to have this idea. Here's a similar post that you should also check out:
 - https://www.trickster.dev/post/simple-ways-to-find-exposed-sensitive-information/
