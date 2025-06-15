@@ -14,9 +14,9 @@ TocOpen = true
 
 In the AWS EC2 Management Console, you can search for EC2 instances using a private or public IP address. Filter by either `Private IP address` or `Public IPv4 address` in the search field:
 
-![Results after searching for an EC2 Instance with a private IP address.](/finding-aws-resources-by-ip-address/ec2-private-ip-search.webp)
+<img src="/finding-aws-resources-by-ip-address/ec2-private-ip-search.webp" alt="Results after searching for an EC2 Instance with a private IP address." width="720" height="185" style="max-width: 100%; height: auto; aspect-ratio: 1506 / 388;" loading="lazy" decoding="async">
 
-![Results after searching for an EC2 Instance with a public IP address.](/finding-aws-resources-by-ip-address/ec2-public-ip-search.webp)
+<img src="/finding-aws-resources-by-ip-address/ec2-public-ip-search.webp" alt="Results after searching for an EC2 Instance with a public IP address." width="720" height="182" style="max-width: 100%; height: auto; aspect-ratio: 1492 / 378;" loading="lazy" decoding="async">
 
 ### Using the AWS CLI
 
@@ -209,7 +209,7 @@ The output for these commands will look something like this:
 To identify other AWS resources (such as Lambdas) based on IP address, you can search for the corresponding ENI.
 In the AWS Console, browse to the EC2 console and click on Network Interfaces on the left hand side. Then search by "Primary private IPv4 address" (or "Public IPv4 address" if you want to search by a public IP address).
 
-![Results after searching for Elastic Network Interface using a public IP address](/finding-aws-resources-by-ip-address/eni-search.webp)
+<img src="/finding-aws-resources-by-ip-address/eni-search.webp" alt="Results after searching for Elastic Network Interface using a public IP address" width="720" height="195" style="max-width: 100%; height: auto; aspect-ratio: 1312 / 356;" loading="lazy" decoding="async">
 
 You can then poke around through the ENI details to figure out what resource is associated with the IP address.
 
