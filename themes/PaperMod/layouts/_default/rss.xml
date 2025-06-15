@@ -55,7 +55,6 @@
       <link>{{ index . 0 | absURL }}</link>
     </image>
     {{- end }}
-    <generator>Hugo -- gohugo.io</generator>
     <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
     <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with site.Copyright }}
