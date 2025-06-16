@@ -106,7 +106,7 @@ Maybe we want the name, number, and address of someone who has worked at a defen
 I also considered writing a script to run these searches for me, gather all PDF links, download the PDFs, and then parse through them for names, numbers, emails, and addresses.
 But I stopped because I have no interest in collecting this information. I just wanted to see and show others how easy it is to find information on the open web. It's definitely possible to write a script to do this though.
 
-Also, I think it's a violation of Google's terms of service to scrape their results, but they violate everyone's privacy so...maybe someone should go ahead and do it anyway.
+## Conclusion
 
 In conclusion, it's really easy to find private information on resumes posted online. Please reconsider if you are thinking of making your resume available online.
 
