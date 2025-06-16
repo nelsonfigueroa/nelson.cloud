@@ -16,4 +16,5 @@
     {{- $refDomain = "nelson.cloud" -}}
 {{- end -}}
 
-<a href="{{ .Destination | safeURL }}{{ $refParam }}{{ $refDomain }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>
+{{/*  the ending shortcode removes whitespace. Needed so periods after links don't have a space before them.  */}}
+<a href="{{ .Destination | safeURL }}{{ $refParam }}{{ $refDomain }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>{{- "" -}}
