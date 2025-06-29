@@ -194,3 +194,93 @@ a:hover {
 .see-all-posts {
     margin-bottom: 1.5rem;
 }
+
+/* floating table of contents */
+.dynamic-toc {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    border: 1px solid var(--primary);
+    padding: 1rem;
+    max-width: 260px;
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 5px 5px var(--secondary);
+}
+
+.dynamic-toc-header {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.dynamic-toc-title {
+    text-transform: uppercase;
+}
+
+.dynamic-toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* wtf this works */
+.dynamic-toc-list .dynamic-toc-list {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+}
+
+.dynamic-toc-item {
+    margin: 0.25rem 0;
+}
+
+.dynamic-toc-link {
+    display: block;
+    color: var(--secondary);
+    text-decoration: none;
+    line-height: 1.2;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.2s ease;
+    border-left: 2px solid transparent;
+}
+
+.dynamic-toc-link:hover {
+    color: var(--primary);
+    background: var(--code-bg);
+    filter: none;
+}
+
+.dynamic-toc-link.active {
+    color: var(--tint);
+    border-left-color: var(--tint);
+}
+
+/* Hide on mobile and tablet */
+@media (max-width: 1449px) {
+    .dynamic-toc {
+        display: none;
+    }
+}
+
+/* Adjust TOC positioning for different screen sizes */
+@media (min-width: 1450px) {
+    .dynamic-toc {
+        max-width: 280px;
+    }
+}
+
+/* @media (min-width: 1200px) and (max-width: 1599px) {
+    .dynamic-toc {
+        right: 2.5rem !important;
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .dynamic-toc {
+        right: 1rem !important;
+        max-width: 220px;
+    }
+} */

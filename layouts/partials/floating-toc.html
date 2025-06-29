@@ -1,0 +1,190 @@
+<!-- source: https://gist.github.com/skyzyx/a796d66f6a124f057f3374eff0b3f99a -->
+<!-- idk how this works though lmao -->
+
+{{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
+{{- $has_headers := ge (len $headers) 1 -}}
+{{- if $has_headers -}}
+
+<div class="dynamic-toc" id="dynamic-toc">
+    <div class="dynamic-toc-header">
+        <span class="dynamic-toc-title">{{- i18n "toc" | default "Contents" }}</span>
+    </div>
+    <nav id="dynamic-toc-nav">
+        {{- if (.Param "UseHugoToc") }}
+        {{- .TableOfContents -}}
+        {{- else }}
+        {{- $largest := 6 -}}
+        {{- range $headers -}}
+        {{- $headerLevel := index (findRE "[1-6]" . 1) 0 -}}
+        {{- $headerLevel := len (seq $headerLevel) -}}
+        {{- if lt $headerLevel $largest -}}
+        {{- $largest = $headerLevel -}}
+        {{- end -}}
+        {{- end -}}
+
+        {{- $firstHeaderLevel := len (seq (index (findRE "[1-6]" (index $headers 0) 1) 0)) -}}
+
+        {{- $.Scratch.Set "bareul" slice -}}
+        <ul class="dynamic-toc-list">
+            {{- range seq (sub $firstHeaderLevel $largest) -}}
+            <ul class="dynamic-toc-list">
+                {{- $.Scratch.Add "bareul" (sub (add $largest .) 1) -}}
+                {{- end -}}
+                {{- range $i, $header := $headers -}}
+                {{- $headerLevel := index (findRE "[1-6]" . 1) 0 -}}
+                {{- $headerLevel := len (seq $headerLevel) -}}
+
+                {{- $id := index (findRE "(id=\"(.*?)\")" $header 9) 0 }}
+
+                {{- $cleanedID := replace (replace $id "id=\"" "") "\"" "" }}
+                {{- $header := replaceRE "<h[1-6].*?>((.|\n])+?)</h[1-6]>" "$1" $header -}}
+
+                {{- if ne $i 0 -}}
+                {{- $prevHeaderLevel := index (findRE "[1-6]" (index $headers (sub $i 1)) 1) 0 -}}
+                {{- $prevHeaderLevel := len (seq $prevHeaderLevel) -}}
+                {{- if gt $headerLevel $prevHeaderLevel -}}
+                {{- range seq $prevHeaderLevel (sub $headerLevel 1) -}}
+                <ul class="dynamic-toc-list">
+                    {{/* the first should not be recorded */}}
+                    {{- if ne $prevHeaderLevel . -}}
+                    {{- $.Scratch.Add "bareul" . -}}
+                    {{- end -}}
+                    {{- end -}}
+                    {{- else -}}
+                    </li>
+                    {{- if lt $headerLevel $prevHeaderLevel -}}
+                    {{- range seq (sub $prevHeaderLevel 1) -1 $headerLevel -}}
+                    {{- if in ($.Scratch.Get "bareul") . -}}
+                </ul>
+                {{- $tmp := $.Scratch.Get "bareul" -}}
+                {{- $.Scratch.Delete "bareul" -}}
+                {{- $.Scratch.Set "bareul" slice}}
+                {{- range seq (sub (len $tmp) 1) -}}
+                {{- $.Scratch.Add "bareul" (index $tmp (sub . 1)) -}}
+                {{- end -}}
+                {{- else -}}
+            </ul>
+            </li>
+            {{- end -}}
+            {{- end -}}
+            {{- end -}}
+            {{- end }}
+            <li class="dynamic-toc-item">
+                <a href="#{{- $cleanedID -}}" class="dynamic-toc-link" data-heading="{{- $cleanedID -}}" aria-label="{{- $header | plainify | safeHTML -}}">{{- $header | plainify | safeHTML -}}</a>
+                {{- else }}
+            <li class="dynamic-toc-item">
+                <a href="#{{- $cleanedID -}}" class="dynamic-toc-link" data-heading="{{- $cleanedID -}}" aria-label="{{- $header | plainify | safeHTML -}}">{{- $header | plainify | safeHTML -}}</a>
+                {{- end -}}
+                {{- end -}}
+                <!-- {{- $firstHeaderLevel := len (seq (index (findRE "[1-6]" (index $headers 0) 1) 0)) -}} -->
+                {{- $firstHeaderLevel := $largest }}
+                {{- $lastHeaderLevel := len (seq (index (findRE "[1-6]" (index $headers (sub (len $headers) 1)) 1) 0)) }}
+            </li>
+            {{- range seq (sub $lastHeaderLevel $firstHeaderLevel) -}}
+            {{- if in ($.Scratch.Get "bareul") (add . $firstHeaderLevel) }}
+        </ul>
+        {{- else }}
+        </ul>
+        </li>
+        {{- end -}}
+        {{- end }}
+        </ul>
+        {{- end }}
+    </nav>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dynamicToc = document.getElementById('dynamic-toc');
+    const tocNav = document.getElementById('dynamic-toc-nav');
+    const tocLinks = document.querySelectorAll('.dynamic-toc-link');
+    const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+
+    if (!dynamicToc || !tocNav || headings.length === 0) return;
+
+    // Smooth scrolling for TOC links
+    tocLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('data-heading');
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Update active link and progress bar on scroll
+    function updateActiveLink() {
+        const scrollY = window.pageYOffset;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+
+
+        // Find current active heading
+        let currentHeading = null;
+
+        for (let i = headings.length - 1; i >= 0; i--) {
+            const heading = headings[i];
+            const rect = heading.getBoundingClientRect();
+
+            if (rect.top <= 100) {
+                currentHeading = heading;
+                break;
+            }
+        }
+
+        // Update active link
+        tocLinks.forEach(link => link.classList.remove('active'));
+
+        if (currentHeading) {
+            const activeLink = document.querySelector(`.dynamic-toc-link[data-heading="${currentHeading.id}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        }
+    }
+
+    // Show/hide dynamic TOC based on normal TOC visibility
+    function handleDynamicTocVisibility() {
+        const normalToc = document.querySelector('.toc');
+        if (!normalToc) {
+            // If there's no normal TOC, keep dynamic TOC hidden
+            dynamicToc.style.opacity = '0';
+            dynamicToc.style.pointerEvents = 'none';
+            return;
+        }
+
+        const normalTocRect = normalToc.getBoundingClientRect();
+        const shouldShowDynamic = normalTocRect.bottom < 0; // Normal TOC is scrolled past
+
+        dynamicToc.style.opacity = shouldShowDynamic ? '1' : '0';
+        dynamicToc.style.pointerEvents = shouldShowDynamic ? 'auto' : 'none';
+    }
+
+    // Throttled scroll handler
+    let ticking = false;
+    function onScroll() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                updateActiveLink();
+                handleDynamicTocVisibility();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', onScroll);
+
+    // Initial call
+    updateActiveLink();
+    handleDynamicTocVisibility();
+});
+</script>
+
+{{- end }}
