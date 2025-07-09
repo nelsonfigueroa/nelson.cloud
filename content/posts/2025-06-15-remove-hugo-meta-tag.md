@@ -1,6 +1,6 @@
 +++
 title = "Remove Unnecessary Hugo Meta Tag to Keep HTML Lean"
-summary = "Remove  an unnecessary and auto-generated Hugo meta tag by setting `disableHugoGeneratorInject` to `true`."
+summary = "Remove an unnecessary and auto-generated Hugo meta tag by setting `disableHugoGeneratorInject` to `true`."
 date = "2025-06-15"
 lastmod = "2025-06-15"
 categories = ["Hugo", "HTML"]
