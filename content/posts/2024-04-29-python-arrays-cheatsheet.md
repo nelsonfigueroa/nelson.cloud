@@ -2,7 +2,7 @@
 title = "Python Lists Cheatsheet"
 summary = "Python list basics and methods to learn fast or refresh your memory."
 date = "2024-04-29"
-lastmod = "2024-12-09"
+lastmod = "2025-07-17"
 categories = ["Python"]
 ShowToc = true
 TocOpen = false
@@ -327,6 +327,16 @@ reversed_list = list(reversed(my_list))
 
 print(reversed_list)
 # [5, 4, 3, 2, 1]
+```
+
+### Get Number of Elements in a List
+Use `len()` to get the number of elements in a list.
+
+```python
+my_list = ['a', 'b', 'c']
+
+print(len(my_list))
+# 3
 ```
 
 ### Count Number of Occurrences
