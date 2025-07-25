@@ -88,8 +88,8 @@
 <a class="random-post-button" href="/posts/">« See all Posts »</a>
 {{- end }}
 
-{{/* custom: show recently enjoyed articles from recentereads.yaml for home page only */}}
-{{- if .IsHome }}
+{{/* custom: show recently enjoyed articles from recentereads.yaml for home page only, and only if there are articles */}}
+{{- if and .IsHome .Site.Data.youshouldalsoread }}
 
 {{- $class := "post-entry" }}
 
