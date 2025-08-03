@@ -58,7 +58,7 @@ pre {
     padding: 5px 10px;
     font-size: 14px;
     user-select: none;
-    box-shadow: 2px 2px var(--secondary);
+    border: 1px solid var(--border);
 }
 
 div.highlight:hover .copy-code,
