@@ -15,15 +15,15 @@ Recently, I recieved this email:
 I have never used MetaMask. It was pretty obvious this was a scam. I decided to check it out anyway out of curiosity.
 It led me to this site which looked legit but had a major flaw: there is no domain and I'm accessing an insecure IP address.
 
-<img src="/retaliating-against-metamask-scammers/fake-metamask-site.webp" alt="fake metamask site" width="720" height="473" style="max-width: 100%; height: auto; aspect-ratio: 3446 / 2266;" loading="lazy" decoding="async">
+<img src="/retaliating-against-metamask-scammers/fake-metamask-site.webp" alt="fake metamask site" width="720" height="463" style="max-width: 100%; height: auto; aspect-ratio: 3268 / 2103;" loading="lazy" decoding="async">
 
 Still curious, I followed along and clicked on "Start verification process". In the next page, there was a text field prompting me to input my seed phrase:
 
-<img src="/retaliating-against-metamask-scammers/fake-metamask-input-field.webp" alt="fake metamask input field for seed phrases" width="720" height="473" style="max-width: 100%; height: auto; aspect-ratio: 3446 / 2266;" loading="lazy" decoding="async">
+<img src="/retaliating-against-metamask-scammers/fake-metamask-input-field.webp" alt="fake metamask input field for seed phrases" width="720" height="463" style="max-width: 100%; height: auto; aspect-ratio: 3264 / 2101;" loading="lazy" decoding="async">
 
 So I submitted 12 random words and used the browser dev tools to figure out where my seed phrase was being sent to.
 
-<img src="/retaliating-against-metamask-scammers/fake-metamask-submission.webp" alt="fake metamask post-submission page" width="720" height="473" style="max-width: 100%; height: auto; aspect-ratio: 3446 / 2266;" loading="lazy" decoding="async">
+<img src="/retaliating-against-metamask-scammers/fake-metamask-submission.webp" alt="fake metamask post-submission page" width="720" height="463" style="max-width: 100%; height: auto; aspect-ratio: 3262 / 2099;" loading="lazy" decoding="async">
 
 It looks like my fake seed phrase is being sent to `/log.php` as a query string through a `GET` request. I wanted to make these scammers pay somehow.
 I figured I could come up with a quick script to slam this endpoint with random seed phrases to waste their time.
@@ -119,11 +119,11 @@ while True:
 
 After that, I left my script running overnight:
 
-<img src="/retaliating-against-metamask-scammers/script-output-2.webp" alt="script output with loop" width="720" height="518" style="max-width: 100%; height: auto; aspect-ratio: 1844 / 1328;" loading="lazy" decoding="async">
+<img src="/retaliating-against-metamask-scammers/script-output-2.webp" alt="script output with loop" width="720" height="503" style="max-width: 100%; height: auto; aspect-ratio: 1663 / 1163;" loading="lazy" decoding="async">
 
 The morning after, I noticed that my script output was stuck along with a new response message...
 
-<img src="/retaliating-against-metamask-scammers/scammer-response.webp" alt="scammer response" width="720" height="518" style="max-width: 100%; height: auto; aspect-ratio: 1844 / 1328;" loading="lazy" decoding="async">
+<img src="/retaliating-against-metamask-scammers/scammer-response.webp" alt="scammer response" width="720" height="503" style="max-width: 100%; height: auto; aspect-ratio: 1662 / 1163;" loading="lazy" decoding="async">
 
 I guess they caught on LOL. They blocked my IP address from sending requests, so I simply changed changed my IP address and carried on.
 
@@ -146,7 +146,7 @@ print(r.request.headers)
 
 Using [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) I was able to see that this IP address originates from Russia, which I thought was interesting.
 
-<img src="/retaliating-against-metamask-scammers/little-snitch.webp" alt="Little Snitch connection to Russia" width="720" height="316" style="max-width: 100%; height: auto; aspect-ratio: 3514 / 1546;" loading="lazy" decoding="async">
+<img src="/retaliating-against-metamask-scammers/little-snitch.webp" alt="Little Snitch connection to Russia" width="720" height="304" style="max-width: 100%; height: auto; aspect-ratio: 3380 / 1429;" loading="lazy" decoding="async">
 
 ## Final Thoughts
 
