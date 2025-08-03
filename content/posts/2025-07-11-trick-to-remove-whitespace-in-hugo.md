@@ -24,7 +24,7 @@ This sentence has a [link at the end](https://example.com).
 
 In Hugo, you can apply post-processing to links through [link render hooks](https://gohugo.io/render-hooks/links/) by editing the `layouts/partials/link.html` file. Here's my terrible template that I use to process links. Once again, nothing stood out that would add unnecessary whitespace after links:
 
-```html
+```go-html-template
 {{- $url := .Destination -}}
 {{- $refParam := "" -}}
 {{- $refDomain:= "" -}}
@@ -55,7 +55,7 @@ Eventually, I was out of ideas and asked ChatGPT what could be going wrong. Chat
 
 I modified my `render-link.html` template to include the `{{- "" -}}` shortcode at the end of the `<a>` tag:
 
-```html
+```go-html-template
 {{- $url := .Destination -}}
 {{- $refParam := "" -}}
 {{- $refDomain:= "" -}}
