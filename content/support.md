@@ -10,4 +10,4 @@ You can support me and this blog via the following methods:
 
 Anything is appreciated!
 
-...or you could [hire me](https://www.linkedin.com/in/nelsonfigueroa1/) and maybe I'll be able to move out of the ghetto some day.
+...or you could [hire me](https://www.linkedin.com/in/nelsonfigueroa1/).
