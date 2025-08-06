@@ -83,7 +83,6 @@ params:
   hideSummary: false
 
   defaultTheme: auto
-  # disableThemeToggle: true
   ShowShareButtons: false
   ShowReadingTime: false
   # disableSpecial1stPost: true
