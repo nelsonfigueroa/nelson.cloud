@@ -6,7 +6,7 @@ ShowToc = true
 TocOpen = true
 +++
 
-I'm Nelson. I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog to share my knowledge and occasionally rant.
+I'm Nelson. I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog to share things I learn and to occasionally rant.
 
 ## Experience
 
@@ -32,7 +32,7 @@ Software Engineer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
 
 **Cloud**: Amazon Web Services, Google Cloud Platform
 
-**Operating Systems**: macOS, Linux (Ubuntu, CentOS, Kali), Windows 10
+**Operating Systems**: macOS, Linux (Ubuntu, Kali Linux, Amazon Linux, Alpine Linux)
 
 **Other**: Command Line, Git,  Agile, Scrum, Atlassian Suite (Jira, Confluence, Bitbucket)
 
@@ -48,9 +48,9 @@ Bachelor of Science in Computer Information Technology (2019)
 
 ## Open Source Contributions
 
-**[https://github.com/tldr-pages/tldr](https://github.com/tldr-pages/tldr)**
-- Simplified and community-driven "cheat sheet" for command line tools.
-- Contributed practical examples for CLI tools such as `rails`, `terraform`, `minikube`, `kubectl`, `hugo`, and `pulumi`. [See all my contributions here](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa).
+**[tldr-pages](https://github.com/tldr-pages/tldr)**
+- Maintainer and contributor to the [tldr-pages project](https://github.com/tldr-pages/tldr). tldr-pages is a simplified and community-driven "cheat sheet" for command line tools.
+- Contributed practical examples for CLI tools such as [`rails`](https://rubyonrails.org/), [`terraform`](https://developer.hashicorp.com/terraform), [`minikube`](https://minikube.sigs.k8s.io/docs/), [`kubectl`](https://kubernetes.io/), [`hugo`](https://gohugo.io/), and [`pulumi`](https://www.pulumi.com/). [See all my contributions here](https://github.com/tldr-pages/tldr/commits?author=nelsonfigueroa).
 
 ## Interests
 
@@ -68,6 +68,7 @@ Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 - [Stardew Valley](https://www.stardewvalley.net/)
 - [Factorio](https://www.factorio.com/)
 - [Helldivers 2](https://store.steampowered.com/app/553850/HELLDIVERS_2/)
+- [Old School RuneScape](https://oldschool.runescape.com/)
 
 ### Shows
 - [Better Call Saul](https://www.imdb.com/title/tt3032476/)
