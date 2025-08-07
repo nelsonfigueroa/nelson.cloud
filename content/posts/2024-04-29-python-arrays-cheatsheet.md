@@ -4,6 +4,7 @@ summary = "Python list basics and methods to learn fast or refresh your memory."
 date = "2024-04-29"
 lastmod = "2025-07-17"
 categories = ["Python"]
+keywords = ["Python lists", "Python arrays", "Python cheatsheet", "list methods", "Python tutorial", "data structures", "Python programming", "list operations", "Python basics"]
 ShowToc = true
 TocOpen = false
 +++

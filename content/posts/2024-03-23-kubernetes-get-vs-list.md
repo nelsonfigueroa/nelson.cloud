@@ -4,6 +4,7 @@ summary = "The differences of get vs list RBAC verbs in Kubernetes"
 date = "2024-03-23"
 lastmod = "2024-03-23"
 categories = ["Kubernetes", "Cybersecurity"]
+keywords = ["Kubernetes RBAC", "Kubernetes permissions", "kubectl get", "kubectl list", "RBAC verbs", "Kubernetes security", "access control", "Kubernetes authorization", "K8s RBAC"]
 ShowToc = true
 TocOpen = true
 +++

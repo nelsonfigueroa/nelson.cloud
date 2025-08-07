@@ -4,6 +4,7 @@ summary = "Using Python to flood scammers with fake information."
 date = "2024-02-22"
 lastmod = "2024-02-22"
 categories = ["Python", "Cybersecurity"]
+keywords = ["bank scammers", "Chase scam", "Python automation", "scammer retaliation", "phishing prevention", "fake information", "cybersecurity", "scam prevention", "Python scripting"]
 +++
 
 If you've been around you know I enjoy spamming phishing/scamming sites. I recently received this fake Chase email and decided to go down another phishing/scamming attempt.

@@ -4,6 +4,7 @@ summary = "If you're willing to use AI-generated images, how do I know the text 
 date = "2024-10-01"
 lastmod = "2025-01-06"
 categories = ["AI", "Blogs", "Opinion"]
+keywords = ["AI generated images", "artificial intelligence", "blog content", "AI images", "content authenticity", "blog opinion", "AI in blogging", "image generation", "content quality"]
 ShowToc = false
 TocOpen = false
 +++

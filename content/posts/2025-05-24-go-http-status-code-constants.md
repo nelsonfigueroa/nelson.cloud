@@ -4,6 +4,7 @@ summary = "Convenient constants and functions in the Go http package."
 date = "2025-05-24"
 lastmod = "2025-05-24"
 categories = ["Go", "HTTP"]
+keywords = ["Go HTTP", "HTTP status codes", "Go constants", "net/http package", "Go web development", "HTTP response codes", "Go programming", "status code validation", "Go stdlib"]
 ShowToc = true
 TocOpen = true
 +++

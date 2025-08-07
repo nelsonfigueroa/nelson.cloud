@@ -4,6 +4,7 @@ summary = "Invoking Amazon API Gateway with an API Key"
 date = "2022-06-06"
 lastmod = "2022-06-06"
 categories = ["AWS"]
+keywords = ["Amazon API Gateway", "API Gateway", "API key", "x-api-key header", "AWS API", "REST API", "API authentication", "curl", "AWS tutorial", "API security"]
 ShowToc = true
 TocOpen = true
 +++

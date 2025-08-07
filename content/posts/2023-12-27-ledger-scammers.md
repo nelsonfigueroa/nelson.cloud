@@ -4,6 +4,7 @@ summary = "Using a Python script to send fake data to a Ledger phishing site."
 date = "2023-12-27"
 lastmod = "2023-12-27"
 categories = ["Cybersecurity", "Python"]
+keywords = ["Ledger scam", "phishing", "Python automation", "scammer retaliation", "fake data", "cybersecurity", "Ledger phishing", "crypto scams", "Python scripting", "scam prevention"]
 +++
 
 ## Fake Ledger Email

@@ -4,6 +4,7 @@ summary = "Many ways of sorting hashes in Ruby."
 date = "2022-12-04"
 lastmod = "2022-12-04"
 categories = ["Ruby"]
+keywords = ["Ruby hashes", "hash sorting", "Ruby sort", "hash methods", "Ruby programming", "data structures", "Ruby tutorial", "hash manipulation", "Ruby basics"]
 ShowToc = true
 TocOpen = true
 +++

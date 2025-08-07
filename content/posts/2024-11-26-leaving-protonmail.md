@@ -4,6 +4,7 @@ summary = "Reasons why I won't renew my Proton subscription."
 date = "2024-11-26"
 lastmod = "2025-01-28"
 categories = ["Opinion", "Privacy"]
+keywords = ["Proton Mail", "email privacy", "privacy tools", "encrypted email", "email service review", "de-Google", "privacy opinion", "email provider", "ProtonMail review"]
 +++
 
 I've been a [Proton](https://proton.me/) subscriber for around 2 years now. I won't be renewing my subscription for several reasons.

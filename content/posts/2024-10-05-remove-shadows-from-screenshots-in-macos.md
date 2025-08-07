@@ -4,6 +4,7 @@ summary = "How to remove annoying shadows on MacOS screenshots."
 date = "2024-10-05"
 lastmod = "2024-10-05"
 categories = ["macOS"]
+keywords = ["macOS screenshots", "remove shadows", "disable shadow", "macOS tips", "screenshot settings", "macOS commands", "screen capture", "macOS productivity", "defaults write"]
 +++
 
 On macOS, screenshots of windows have an added drop shadow by default for whatever reason. Here's how to remove it:

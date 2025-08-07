@@ -4,6 +4,7 @@ summary = "How to run a shell command against multiple EC2 instances using AWS S
 date = "2024-01-18"
 lastmod = "2024-01-18"
 categories = ["AWS", "Shell"]
+keywords = ["AWS SSM", "Systems Manager", "EC2 instances", "Run Command", "AWS automation", "EC2 management", "shell commands", "AWS CLI", "remote execution", "AWS infrastructure"]
 ShowToc = true
 TocOpen = true
 +++

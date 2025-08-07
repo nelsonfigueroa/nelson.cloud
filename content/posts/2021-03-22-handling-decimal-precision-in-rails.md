@@ -4,6 +4,7 @@ summary = "Set precision and scale to decimal type database columns."
 date = "2021-03-22"
 lastmod = "2021-03-22"
 categories = ["Ruby on Rails"]
+keywords = ["Ruby on Rails", "decimal precision", "database migrations", "Rails migrations", "precision and scale", "decimal fields", "Rails models", "database columns", "ActiveRecord", "Rails validation"]
 ShowToc = true
 TocOpen = true
 +++

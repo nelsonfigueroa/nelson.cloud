@@ -4,6 +4,7 @@ summary = "Adding a custom header to AWS CloudFront Distribution responses."
 date = "2025-01-01"
 lastmod = "2025-01-20"
 categories = ["AWS", "HTTP"]
+keywords = ["AWS CloudFront", "CloudFront response headers", "CloudFront distribution", "HTTP headers", "CloudFront configuration", "AWS CDN", "custom headers", "CloudFront behavior", "AWS tutorial"]
 ShowToc = false
 TocOpen = false
 +++

@@ -4,6 +4,7 @@ summary = "How to enable file downloads using the link_to helper."
 date = "2024-02-03"
 lastmod = "2024-02-03"
 categories = ["Ruby on Rails", "HTML"]
+keywords = ["Ruby on Rails", "file downloads", "link_to", "Rails helpers", "download attribute", "file serving", "Rails tutorial", "HTML download", "Rails controllers", "web development"]
 +++
 
 In a Ruby on Rails app I was working on, I wanted to include a link that would download a user's data (bank statements in this case) as JSON.

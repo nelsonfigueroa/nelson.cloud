@@ -4,6 +4,7 @@ summary = "Prevent Rails from throwing errors when including two redirects in an
 date = "2020-04-10"
 lastmod = "2020-04-10"
 categories = ["Ruby on Rails"]
+keywords = ["Ruby on Rails", "double render error", "AbstractController::DoubleRenderError", "Rails redirect_to", "Rails render", "Rails controllers", "Rails debugging", "Rails errors", "controller actions", "Rails troubleshooting"]
 +++
 
 When using `redirect_to` or `render` twice in one action, we get the `AbstractController::DoubleRenderError` error.

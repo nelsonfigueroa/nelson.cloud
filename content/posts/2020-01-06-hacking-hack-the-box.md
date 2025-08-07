@@ -4,6 +4,7 @@ summary = "Getting the invite code to Hack The Box"
 date = "2020-01-06"
 lastmod = "2020-01-06"
 categories = ["Cybersecurity"]
+keywords = ["Hack The Box", "HTB", "cybersecurity", "penetration testing", "ethical hacking", "invite code", "hacking challenges", "security training", "CTF", "vulnerability assessment"]
 +++
 
 

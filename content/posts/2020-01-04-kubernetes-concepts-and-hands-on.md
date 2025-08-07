@@ -4,6 +4,7 @@ summary = "Learn Kubernetes concepts and get hands-on experience with Minikube"
 date = "2020-01-04"
 lastmod = "2020-01-04"
 categories = ["Kubernetes"]
+keywords = ["Kubernetes", "k8s", "Minikube", "container orchestration", "Docker containers", "pods", "deployments", "services", "kubectl", "Kubernetes tutorial"]
 ShowToc = true
 TocOpen = true
 +++

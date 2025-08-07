@@ -4,6 +4,7 @@ summary = "Key types in Ruby hashes depend on hash syntax."
 date = "2023-01-06"
 lastmod = "2023-01-06"
 categories = ["Ruby"]
+keywords = ["Ruby hashes", "hash keys", "symbol keys", "string keys", "Ruby syntax", "hash key types", "Ruby programming", "data structures", "Ruby tutorial"]
 ShowToc = true
 TocOpen = true
 +++

@@ -4,6 +4,7 @@ summary = "Reconsider uploading your resume on the open web."
 date = "2024-09-16"
 lastmod = "2025-06-15"
 categories = ["Cybersecurity", "Privacy", "Google"]
+keywords = ["Google search", "resume scraping", "privacy", "OSINT", "data harvesting", "Google dorking", "personal information", "cybersecurity", "resume privacy", "information gathering"]
 ShowToc = false
 TocOpen = false
 +++

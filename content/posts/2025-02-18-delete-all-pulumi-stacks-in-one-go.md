@@ -4,6 +4,7 @@ summary = "How to delete all pulumi stacks with a shell one-liner."
 date = "2025-02-18"
 lastmod = "2025-02-18"
 categories = ["Shell", "Pulumi"]
+keywords = ["Pulumi stacks", "Pulumi commands", "delete Pulumi stacks", "Pulumi CLI", "infrastructure as code", "Pulumi automation", "shell scripting", "Pulumi management", "cloud infrastructure"]
 +++
 
 There currently isn't a way to delete all stacks with `pulumi stack rm` so this is an alternative way to achieve that.

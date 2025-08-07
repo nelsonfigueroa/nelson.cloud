@@ -4,6 +4,7 @@ summary = "Creating a python script to flood scammers with fake credentials."
 date = "2022-07-02"
 lastmod = "2022-07-02"
 categories = ["Cybersecurity", "Python"]
+keywords = ["Python scripting", "scammer retaliation", "fake credentials", "phishing prevention", "cybersecurity", "Python automation", "scam prevention", "credential flooding", "anti-scam"]
 +++
 
 ## Phishing Attempt via Text Message

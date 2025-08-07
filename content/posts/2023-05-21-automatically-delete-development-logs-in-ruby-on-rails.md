@@ -4,6 +4,7 @@ summary = "How to automatically delete development logs in Ruby on Rails."
 date = "2023-05-21"
 lastmod = "2024-02-20"
 categories = ["Ruby on Rails"]
+keywords = ["Ruby on Rails", "development logs", "Rails logs", "log rotation", "Rails development", "log management", "Rails configuration", "development.log", "Rails cleanup", "log deletion"]
 +++
 
 I usually don't need development logs persisted after I'm done with a development session of a Rails app. Sometimes the `development.log` file can balloon up to gigabytes if I forget to delete it. I found a way to delete this file after a Ruby on Rails application exits in development mode.

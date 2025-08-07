@@ -4,6 +4,7 @@ summary = "Showing how Calendly can be easily spammed because I'm bored and unem
 date = "2024-05-16"
 lastmod = "2024-05-18"
 categories = ["Python", "Cybersecurity"]
+keywords = ["Calendly", "denial of service", "mass scheduling", "Python automation", "cybersecurity", "scheduling vulnerability", "Calendly spam", "automated booking", "security testing"]
 ShowToc = true
 TocOpen = true
 +++

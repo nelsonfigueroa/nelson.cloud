@@ -4,6 +4,7 @@ summary = "Resolving Access Denied Errors in a CloudFront Distribution that uses
 date = "2021-07-25"
 lastmod = "2024-04-15"
 categories = ["AWS"]
+keywords = ["AWS CloudFront", "CloudFront access denied", "S3 bucket", "Origin Access Identity", "CloudFront troubleshooting", "AWS CDN", "S3 private bucket", "CloudFront errors", "AWS debugging", "CloudFront distribution"]
 +++
 
 If you're seeing "Access Denied" errors on CloudFront and [the official troubleshooting docs](https://repost.aws/knowledge-center/s3-website-cloudfront-error-403) aren't helping, you might be running into the following issue.

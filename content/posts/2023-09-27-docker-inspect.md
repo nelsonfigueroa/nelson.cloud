@@ -4,6 +4,7 @@ summary = "Using `docker inspect` to determine the entrypoint for a given docker
 date = "2023-09-27"
 lastmod = "2024-11-21"
 categories = ["Docker"]
+keywords = ["Docker inspect", "Docker entrypoint", "Docker image", "container entrypoint", "Docker commands", "Docker tutorial", "Docker configuration", "container inspection", "Docker CLI"]
 +++
 
 You can use `docker inspect` to determine the entrypoint of a docker image.

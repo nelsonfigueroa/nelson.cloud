@@ -4,6 +4,7 @@ summary = "How to get unique elements in a Python list using set()"
 date = "2024-04-22"
 lastmod = "2024-04-22"
 categories = ["Python"]
+keywords = ["Python unique elements", "Python sets", "remove duplicates", "Python list", "unique values", "Python programming", "data deduplication", "Python tutorial", "set() function"]
 ShowToc = false
 TocOpen = false
 +++

@@ -4,6 +4,7 @@ summary = "Use \"dependent: :nullify\" to prevent child objects from getting del
 date = "2024-11-18"
 lastmod = "2024-11-18"
 categories = ["Ruby on Rails", "Ruby"]
+keywords = ["Ruby on Rails", "dependent nullify", "Rails associations", "Rails models", "Active Record", "Rails database", "object relationships", "Rails tutorial", "data retention"]
 +++
 
 In most Ruby on Rails models I've seen `dependent: :destroy` being used to handle child objects when a parent object is destroyed. I don't know why it took me this long to learn that there is also a `:nullify` option. Using `dependent: :nullify` is handy for situations where keeping associated objects after destroying the parent object is important (data retention purposes, etc).

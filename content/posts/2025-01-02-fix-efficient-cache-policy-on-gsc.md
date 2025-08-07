@@ -4,6 +4,7 @@ summary = "Get rid of the efficient cache policy warning on PageSpeed Insights b
 date = "2025-01-02"
 lastmod = "2025-01-02"
 categories = ["AWS", "Google", "SEO"]
+keywords = ["PageSpeed Insights", "CloudFront cache", "Cache-Control header", "AWS CloudFront", "efficient cache policy", "web performance", "CloudFront response headers", "site speed optimization", "Google PageSpeed"]
 ShowToc = false
 TocOpen = false
 +++

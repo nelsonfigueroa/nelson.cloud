@@ -4,6 +4,7 @@ summary = "How to generate dates and times with Hugo shortcodes."
 date = "2024-12-22"
 lastmod = "2024-12-29"
 categories = ["Hugo"]
+keywords = ["Hugo dates", "Hugo time", "Hugo now function", "Hugo date formatting", "Hugo templates", "current date Hugo", "Hugo shortcodes", "date generation", "Hugo tutorial"]
 ShowToc = true
 TocOpen = true
 +++

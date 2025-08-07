@@ -4,6 +4,7 @@ summary = "How to host a static website on Amazon Web Services using S3 and Clou
 date = "2022-12-30"
 lastmod = "2022-12-30"
 categories = ["AWS"]
+keywords = ["AWS S3", "CloudFront", "static website hosting", "AWS tutorial", "S3 static site", "AWS CDN", "website deployment", "AWS hosting", "static site AWS", "S3 bucket hosting"]
 ShowToc = true
 TocOpen = true
 +++

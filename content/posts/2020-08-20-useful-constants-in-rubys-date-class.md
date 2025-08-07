@@ -4,6 +4,7 @@ summary = "Diving into useful constants in Ruby's Date class"
 date = "2020-08-20"
 lastmod = "2020-08-20"
 categories = ["Ruby"]
+keywords = ["Ruby Date class", "Ruby constants", "MONTHNAMES", "ABBR_MONTHNAMES", "Ruby date manipulation", "date parsing", "Ruby programming", "Ruby stdlib", "month constants", "Ruby tutorial"]
 +++
 
 While tying to modify dates in string form, I came across a convenient way to convert months into their numerical values.

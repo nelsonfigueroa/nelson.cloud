@@ -4,6 +4,7 @@ summary = "How to redirect a domain to another one using AWS S3, ACM, and CloudF
 date = "2023-02-16"
 lastmod = "2023-02-16"
 categories = ["AWS"]
+keywords = ["AWS S3", "CloudFront", "domain redirect", "AWS ACM", "website redirect", "S3 redirect", "CloudFront redirect", "domain migration", "AWS tutorial", "DNS redirect"]
 ShowToc = true
 TocOpen = true
 +++

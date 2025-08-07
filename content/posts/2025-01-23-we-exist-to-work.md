@@ -4,6 +4,7 @@ summary = "We are born, we go to school to prepare for a job, we work most of ou
 date = "2025-01-23"
 lastmod = "2025-01-23"
 categories = ["Opinion", "Funny (to me)", "Random"]
+keywords = ["work life balance", "career thoughts", "life philosophy", "work culture", "employment", "job market", "career advice", "workplace opinion", "modern work"]
 ShowToc = false
 TocOpen = false
 +++
