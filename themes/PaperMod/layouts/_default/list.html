@@ -88,26 +88,6 @@
 <a class="random-post-button" href="/posts/">« See all Posts »</a>
 {{- end }}
 
-{{/* custom: show recently enjoyed articles from recentereads.yaml for home page only, and only if there are articles */}}
-{{- if and .IsHome .Site.Data.youshouldalsoread }}
-
-{{- $class := "post-entry" }}
-
-<span class="page-header">
-  <h2>You should also read...</h2>
-</span>
-
-{{ range .Site.Data.youshouldalsoread }}
-<article class="{{ $class }}">
-    <!-- manually adding target="_blank" and ?ref=nelson.cloud -->
-    <a class="post-link" aria-label="{{ .title }}" target="_blank" href="{{ .url }}?ref=nelson.cloud">{{- .title }}</a>
-    <div class="entry-content">
-        <p>{{ .url }}</p>
-    </div>
-</article>
-{{ end }}
-{{- end }}
-
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
   <nav class="pagination">
