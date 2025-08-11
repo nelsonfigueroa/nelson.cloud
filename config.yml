@@ -41,14 +41,14 @@ languages:
         - name: Search
           url: search/
           weight: 4
-        - name: About
-          url: about
-          weight: 5
-        - name: Support
-          url: support/
-          weight: 6
         - name: Links
           url: links/
+          weight: 5
+        - name: About
+          url: about
+          weight: 6
+        - name: Support
+          url: support/
           weight: 7
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
