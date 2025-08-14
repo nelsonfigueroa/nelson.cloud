@@ -2,7 +2,6 @@
 title = "Remove Shadows From Screenshots in macOS"
 summary = "How to remove annoying shadows on MacOS screenshots."
 date = "2024-10-05"
-lastmod = "2024-10-05"
 categories = ["macOS"]
 keywords = ["macOS screenshots", "remove shadows", "disable shadow", "macOS tips", "screenshot settings", "macOS commands", "screen capture", "macOS productivity", "defaults write"]
 +++

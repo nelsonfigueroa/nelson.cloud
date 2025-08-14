@@ -2,7 +2,6 @@
 title = "How to Clone a Specific Git Branch Without Other Branches"
 summary = "How to clone a specific git repository branch without cloning all other branches."
 date = "2025-02-27"
-lastmod = "2025-02-27"
 categories = ["Git", "Shell"]
 keywords = ["Git clone", "Git branch", "single branch clone", "Git commands", "version control", "Git tutorial", "repository cloning", "Git workflow", "branch isolation"]
 +++

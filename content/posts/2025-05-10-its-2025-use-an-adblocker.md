@@ -2,7 +2,6 @@
 title = "It’s 2025, Why Aren’t You Using an Ad Blocker?"
 summary = "Far too many people still don't use ad blockers."
 date = "2025-05-10"
-lastmod = "2025-05-10"
 categories = ["Privacy"]
 keywords = ["ad blocker", "privacy", "web browsing", "uBlock Origin", "browser extensions", "online privacy", "internet security", "ad blocking", "web experience"]
 +++

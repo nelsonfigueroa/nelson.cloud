@@ -14,6 +14,11 @@ enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["posts"]
 
+# use first 160 words as summary if a summary is not provided for a post
+summaryLength: 160
+# enable git information in posts. Allows for lastmod to be updated automatically based on git commit timestamps.
+enableGitInfo: true
+
 permalinks:
   posts: "/:title/"
 
@@ -75,10 +80,11 @@ outputs:
     - JSON
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   description: "Nelson Figueroa - Software Engineer"
   author: Nelson Figueroa
-  # author: ["Me", "You"] # multiple authors
+  # keywords for home page
+  keywords: ["Nelson Figueroa", "Software Engineer", "Ruby on Rails", "AWS", "Kubernetes", "DevOps", "Programming", "Cybersecurity", "Tech Blog"]
 
   DateFormat: 2006-01-02
 
@@ -139,31 +145,20 @@ params:
   # icon: icon.png
   # iconHeight: 35
 
-  # analytics:
-  #     google:
-  #         SiteVerificationTag: "XYZabc"
-
-  # assets:
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
-
   # cover:
   #     hidden: true # hide everywhere but not in structured data
   #     hiddenInList: true # hide on list pages and home
   #     hiddenInSingle: true # hide on single page
 
   # for search
-  # fuseOpts:
-  #     isCaseSensitive: false
-  #     shouldSort: true
-  #     location: 0
-  #     distance: 1000
-  #     threshold: 0.4
-  #     minMatchCharLength: 0
-  #     keys: ["title", "permalink", "summary", "content"]
+  fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 2
+      keys: ["title", "permalink", "summary", "content", "tags", "categories"]
 
 markup:
   goldmark:

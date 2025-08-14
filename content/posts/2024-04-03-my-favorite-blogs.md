@@ -2,7 +2,6 @@
 title = "My Favorite Blogs"
 summary = "A list of my favorite blogs from around the web."
 date = "2024-04-03"
-lastmod = "2024-11-02"
 categories = ["Blogs"]
 keywords = ["favorite blogs", "blog recommendations", "blogroll", "tech blogs", "programming blogs", "blog discovery", "recommended reading", "web blogs", "blog list"]
 +++

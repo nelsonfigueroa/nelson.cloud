@@ -2,7 +2,6 @@
 title = "Finding AWS Resources by IP Address"
 summary = "Find AWS Resources by private or public IP addresses."
 date = "2022-06-12"
-lastmod = "2025-06-05"
 categories = ["AWS"]
 keywords = ["AWS IP address", "find AWS resources", "AWS CLI", "EC2 instances", "ENI lookup", "VPC resources", "AWS networking", "IP address lookup", "AWS infrastructure"]
 ShowToc = true

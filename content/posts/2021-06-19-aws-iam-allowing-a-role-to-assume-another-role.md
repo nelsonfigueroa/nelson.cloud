@@ -2,7 +2,6 @@
 title = "AWS IAM: Allowing a Role to Assume Another Role"
 summary = "How to allow an IAM Role to assume another Role."
 date = "2021-06-19"
-lastmod = "2024-12-27"
 categories = ["AWS"]
 keywords = ["AWS IAM", "IAM roles", "role assumption", "trust relationship", "AWS security", "cross-account roles", "AssumeRole", "IAM policies", "AWS permissions", "role-based access"]
 +++

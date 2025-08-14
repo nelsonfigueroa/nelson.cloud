@@ -2,7 +2,6 @@
 title = "Optional Type Hints in Python"
 summary = "How to use optional type hints in Python"
 date = "2024-01-16"
-lastmod = "2024-01-16"
 categories = ["Python"]
 keywords = ["Python type hints", "optional types", "Python typing", "type annotations", "Optional", "Union types", "Python static typing", "type checking", "Python tutorial"]
 ShowToc = true

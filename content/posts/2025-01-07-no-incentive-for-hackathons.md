@@ -2,7 +2,6 @@
 title = "There Is Little Incentive to Participate in Your Employer's Hackathons"
 summary = "Come up with a million-dollar idea, get $100 in return."
 date = "2025-01-07"
-lastmod = "2025-01-07"
 categories = ["Opinion"]
 keywords = ["hackathons", "company hackathons", "workplace culture", "software development", "career advice", "employer incentives", "workplace opinion", "tech industry", "developer experience"]
 ShowToc = true

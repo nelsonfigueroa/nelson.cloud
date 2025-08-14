@@ -2,7 +2,6 @@
 title = "How I Discover New Blogs"
 summary = "A list of resources I use to discover new blogs."
 date = "2024-04-04"
-lastmod = "2025-01-09"
 categories = ["Blogs"]
 keywords = ["blog discovery", "finding blogs", "blog resources", "blog recommendations", "RSS feeds", "blog aggregators", "content discovery", "reading list", "blog exploration"]
 ShowToc = true

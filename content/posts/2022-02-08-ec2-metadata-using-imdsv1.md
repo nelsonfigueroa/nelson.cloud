@@ -2,7 +2,6 @@
 title = "Getting EC2 Instance Metadata Using IMDSv1"
 summary = "How to get EC2 Instance metadata using IMDSv1"
 date = "2022-02-08"
-lastmod = "2024-10-04"
 categories = ["AWS"]
 keywords = ["EC2 metadata", "IMDSv1", "EC2 instance metadata", "AWS metadata service", "instance metadata", "EC2 API", "AWS EC2", "metadata endpoint", "curl commands", "AWS CLI"]
 +++

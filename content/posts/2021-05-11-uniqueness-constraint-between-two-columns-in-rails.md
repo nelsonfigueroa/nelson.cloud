@@ -2,7 +2,6 @@
 title = "Uniqueness Constraint Between Two Columns in Rails"
 summary = "Add a uniqueness constraint between two columns in Ruby on Rails."
 date = "2021-05-11"
-lastmod = "2021-05-11"
 categories = ["Ruby on Rails"]
 keywords = ["Ruby on Rails", "uniqueness constraint", "database indexes", "Rails migrations", "compound uniqueness", "database constraints", "ActiveRecord validation", "Rails models", "multi-column uniqueness", "Rails database"]
 +++

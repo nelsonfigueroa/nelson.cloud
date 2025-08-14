@@ -2,7 +2,6 @@
 title = "Scrape Contributor Emails From Any Git Repository"
 summary = "Scraping contributor emails from git repositories using git shortlog."
 date = "2022-07-21"
-lastmod = "2022-07-21"
 categories = ["Cybersecurity", "Privacy", "Git", "Shell"]
 keywords = ["git shortlog", "email scraping", "git repository", "contributor emails", "git commands", "privacy", "cybersecurity", "git log", "version control", "data scraping"]
 +++

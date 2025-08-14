@@ -2,7 +2,6 @@
 title = "Proper Hugo Template Syntax Highlighting with go-html-template"
 summary = "Use `go-html-template` to properly highlight Hugo template code blocks."
 date = "2025-08-03"
-lastmod = "2025-08-03"
 categories = ["Hugo", "HTML"]
 keywords = ["Hugo template", "go-html-template", "syntax highlighting", "Hugo code blocks", "Chroma", "Hugo templating", "HTML templates", "code syntax", "Hugo guide"]
 ShowToc = false

@@ -2,7 +2,6 @@
 title = "Iterate Through Strings in Go with a for-range Loop"
 summary = "Something new I learned about Go today."
 date = "2024-08-27"
-lastmod = "2024-08-27"
 categories = ["Go"]
 keywords = ["Go strings", "for range loop", "Go iteration", "string iteration", "Go programming", "Go loops", "Go tutorial", "string manipulation", "Go basics"]
 ShowToc = false

@@ -2,7 +2,6 @@
 title = "Keep Homebrew Tidy With `brew leaves`"
 summary = "Using `brew leaves` to find potentially unnecessary Hombrew packages."
 date = "2024-01-22"
-lastmod = "2024-01-22"
 categories = ["Homebrew", "macOS"]
 keywords = ["Homebrew", "brew leaves", "package management", "macOS", "Homebrew cleanup", "brew commands", "system maintenance", "package dependencies", "Homebrew tips"]
 +++

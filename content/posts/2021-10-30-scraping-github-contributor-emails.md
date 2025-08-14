@@ -2,7 +2,6 @@
 title = "Scraping GitHub Contributor Emails"
 summary = "Scraping GitHub contributor emails, and how you can protect yourself."
 date = "2021-10-30"
-lastmod = "2024-04-15"
 categories = ["Git", "GitHub", "Privacy", "Cybersecurity"]
 keywords = ["GitHub scraping", "email scraping", "GitHub API", "Git privacy", "contributor emails", "GitHub security", "email protection", "Git commits", "data scraping", "privacy protection"]
 +++

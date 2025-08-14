@@ -2,7 +2,6 @@
 title = "Insertion Order Iteration of Maps in Go"
 summary = "Iterating through Go maps in insertion order."
 date = "2021-02-23"
-lastmod = "2024-01-23"
 categories = ["Go"]
 keywords = ["Go maps", "map iteration", "insertion order", "Go programming", "ordered maps", "Go slices", "map keys", "Go tutorial", "data structures", "Go basics"]
 +++

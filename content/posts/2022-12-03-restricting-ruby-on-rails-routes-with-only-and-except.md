@@ -2,7 +2,6 @@
 title = "Restricting Ruby on Rails Routes with :only and :except"
 summary = "How to restrict Ruby on Rails routes with :only and :except."
 date = "2022-12-03"
-lastmod = "2023-08-27"
 categories = ["Ruby on Rails"]
 keywords = ["Ruby on Rails", "Rails routes", "routes restriction", "only routes", "except routes", "Rails routing", "resourceful routes", "routes.rb", "Rails controllers", "RESTful routes"]
 ShowToc = true

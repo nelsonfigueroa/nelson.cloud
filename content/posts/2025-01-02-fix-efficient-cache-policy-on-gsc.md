@@ -2,7 +2,6 @@
 title = "Fix \"Efficient Cache Policy\" Warning on PageSpeed Insights When Using Amazon CloudFront"
 summary = "Get rid of the efficient cache policy warning on PageSpeed Insights by adding a `Cache-Control` header to CloudFront."
 date = "2025-01-02"
-lastmod = "2025-01-02"
 categories = ["AWS", "Google", "SEO"]
 keywords = ["PageSpeed Insights", "CloudFront cache", "Cache-Control header", "AWS CloudFront", "efficient cache policy", "web performance", "CloudFront response headers", "site speed optimization", "Google PageSpeed"]
 ShowToc = false

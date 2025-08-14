@@ -2,7 +2,6 @@
 title = "Ruby Arrays Cheatsheet"
 summary = "Ruby array basics and methods to learn fast or refresh your memory."
 date = "2024-04-10"
-lastmod = "2024-08-03"
 categories = ["Ruby"]
 keywords = ["Ruby arrays", "Ruby cheatsheet", "array methods", "Ruby programming", "Ruby tutorial", "data structures", "Ruby basics", "array operations", "Ruby reference"]
 ShowToc = true

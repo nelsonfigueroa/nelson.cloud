@@ -2,7 +2,6 @@
 title = "Let's Stop Asking \"Why Do You Want To Work for Us?\" in Interviews"
 summary = "Most people want to work for your company for money, and there's nothing wrong with that."
 date = "2024-06-28"
-lastmod = "2024-06-28"
 categories = ["Opinion"]
 keywords = ["job interviews", "interview questions", "why do you want to work here", "job application", "hiring process", "interview advice", "workplace culture", "career advice", "employment"]
 ShowToc = false

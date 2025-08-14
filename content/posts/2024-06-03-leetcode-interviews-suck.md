@@ -2,7 +2,6 @@
 title = "I Am So Sick of Leetcode-Style Interviews"
 summary = "Leetcode-style interviews do not reflect real-world software engineering problems."
 date = "2024-06-03"
-lastmod = "2024-12-15"
 categories = ["Opinion"]
 keywords = ["LeetCode interviews", "technical interviews", "software engineering interviews", "coding interviews", "interview process", "tech recruiting", "algorithm interviews", "programming interviews", "job interview critique"]
 ShowToc = false

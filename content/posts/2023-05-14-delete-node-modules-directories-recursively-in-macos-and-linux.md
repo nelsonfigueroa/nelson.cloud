@@ -2,7 +2,6 @@
 title = "Delete All node_modules Directories Recursively in macOS and Linux"
 summary = "How to delete all node_modules directories recursively in macOS and Linux systems."
 date = "2023-05-14"
-lastmod = "2023-05-14"
 categories = ["Linux", "Shell", "Bash", "macOS", "Node"]
 keywords = ["node_modules", "delete directories", "find command", "recursive delete", "Node.js", "npm cleanup", "disk space", "shell commands", "macOS", "Linux"]
 +++

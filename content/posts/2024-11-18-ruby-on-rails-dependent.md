@@ -2,7 +2,6 @@
 title = "Preserve Child Objects When Parent Objects Are Deleted in Ruby on Rails"
 summary = "Use \"dependent: :nullify\" to prevent child objects from getting deleted."
 date = "2024-11-18"
-lastmod = "2024-11-18"
 categories = ["Ruby on Rails", "Ruby"]
 keywords = ["Ruby on Rails", "dependent nullify", "Rails associations", "Rails models", "Active Record", "Rails database", "object relationships", "Rails tutorial", "data retention"]
 +++

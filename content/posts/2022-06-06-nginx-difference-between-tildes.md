@@ -2,7 +2,6 @@
 title = "NGINX: Difference Between ~ and ~* Tildes"
 summary = "Comparing the differences between ~ and ~* tildes in NGINX configuration."
 date = "2022-06-06"
-lastmod = "2022-06-06"
 categories = ["NGINX"]
 keywords = ["NGINX", "nginx configuration", "location directive", "regex modifiers", "case sensitive", "case insensitive", "nginx tildes", "nginx location", "web server", "nginx tutorial"]
 +++

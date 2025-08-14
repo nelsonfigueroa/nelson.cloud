@@ -2,7 +2,6 @@
 title = "The prefers-reduced-motion CSS Media Query"
 summary = "Apply CSS styles when a user enables reduced motion on their device."
 date = "2024-11-27"
-lastmod = "2024-11-27"
 categories = ["CSS"]
 keywords = ["CSS media query", "prefers-reduced-motion", "CSS accessibility", "motion sensitivity", "CSS animations", "reduced motion", "accessibility", "CSS tutorial", "responsive design"]
 +++

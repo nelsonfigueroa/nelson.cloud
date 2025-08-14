@@ -2,7 +2,6 @@
 title = "How to Enable Manual Runs of GitHub Actions Workflows"
 summary = "How to enable manual runs of GitHub Actions workflows."
 date = "2022-12-27"
-lastmod = "2024-10-04"
 categories = ["GitHub"]
 keywords = ["GitHub Actions", "workflow_dispatch", "manual workflow", "GitHub CI/CD", "workflow triggers", "GitHub automation", "manual trigger", "GitHub workflow", "CI/CD pipeline", "GitHub tutorial"]
 +++

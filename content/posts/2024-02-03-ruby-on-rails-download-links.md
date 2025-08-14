@@ -2,7 +2,6 @@
 title = "Ruby on Rails: Enable File Downloads Using link_to"
 summary = "How to enable file downloads using the link_to helper."
 date = "2024-02-03"
-lastmod = "2024-02-03"
 categories = ["Ruby on Rails", "HTML"]
 keywords = ["Ruby on Rails", "file downloads", "link_to", "Rails helpers", "download attribute", "file serving", "Rails tutorial", "HTML download", "Rails controllers", "web development"]
 +++

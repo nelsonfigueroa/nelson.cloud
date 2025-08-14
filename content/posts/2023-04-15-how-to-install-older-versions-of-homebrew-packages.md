@@ -2,7 +2,6 @@
 title = "How To Install Older Versions of Homebrew Packages"
 summary = "How to install a specific version of Homebrew packages."
 date = "2023-04-18"
-lastmod = "2024-10-04"
 categories = ["Homebrew", "macOS"]
 keywords = ["brew install older version", "Homebrew downgrade package", "install specific Homebrew formula version", "Homebrew version history", "downgrade Homebrew package"]
 +++

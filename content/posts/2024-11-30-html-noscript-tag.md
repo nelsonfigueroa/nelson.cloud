@@ -2,7 +2,6 @@
 title = "Render HTML and CSS if JavaScript Is Disabled Using the `<noscript>` Tag"
 summary = "Render HTML and apply CSS styles if JavaScript is disabled."
 date = "2024-11-30"
-lastmod = "2024-11-30"
 categories = ["HTML", "CSS", "JavaScript"]
 keywords = ["noscript tag", "HTML noscript", "JavaScript disabled", "progressive enhancement", "HTML accessibility", "fallback content", "no JavaScript", "HTML tutorial", "CSS fallback"]
 +++

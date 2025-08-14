@@ -2,7 +2,6 @@
 title = "Leaving Proton Mail"
 summary = "Reasons why I won't renew my Proton subscription."
 date = "2024-11-26"
-lastmod = "2025-01-28"
 categories = ["Opinion", "Privacy"]
 keywords = ["Proton Mail", "email privacy", "privacy tools", "encrypted email", "email service review", "de-Google", "privacy opinion", "email provider", "ProtonMail review"]
 +++

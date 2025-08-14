@@ -2,7 +2,6 @@
 title = "Being Poor"
 summary = "Personal experiences of growing up poor"
 date = "2024-04-01"
-lastmod = "2024-04-01"
 categories = ["Random", "Personal"]
 keywords = ["being poor", "growing up poor", "personal experience", "childhood poverty", "financial struggles", "personal story", "life experiences", "social class", "economic hardship"]
 +++

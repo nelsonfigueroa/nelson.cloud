@@ -2,7 +2,6 @@
 title = "My Donation Earnings Over the Past Year"
 summary = "My donation earnings on buymeacoffee.com over the past year."
 date = "2023-05-04"
-lastmod = "2023-05-04"
 categories = ["Random"]
 keywords = ["donations", "buymeacoffee", "blog donations", "content creator", "monetization", "blog earnings", "donation platform", "creator support", "blogging income", "passive income"]
 +++

@@ -2,7 +2,6 @@
 title = "Iterating Through Hashes in Ruby"
 summary = "Several methods of iterating through Ruby hashes."
 date = "2022-11-17"
-lastmod = "2022-11-17"
 categories = ["Ruby"]
 keywords = ["Ruby hashes", "hash iteration", "Ruby each", "hash methods", "Ruby programming", "data structures", "Ruby tutorial", "hash loops", "Ruby basics"]
 ShowToc = true
