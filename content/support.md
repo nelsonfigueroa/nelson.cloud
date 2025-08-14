@@ -1,6 +1,7 @@
 +++
 title = "Support Me"
 layout = "page"
+hideMeta = true # don't show updated date and etc
 ShowReadingTime = false
 ShowWordCount = false
 +++
