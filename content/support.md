@@ -1,5 +1,6 @@
 +++
 title = "Support Me"
+layout = "page"
 ShowReadingTime = false
 ShowWordCount = false
 +++

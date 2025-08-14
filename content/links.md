@@ -1,5 +1,6 @@
 +++
 title = "Links"
+layout = "page"
 summary = "A list of links that I found interesting for one reason or another."
 ShowReadingTime = false
 ShowWordCount = false

@@ -1,5 +1,6 @@
 +++
 title = "About Me"
+layout = "page"
 ShowReadingTime = false
 ShowWordCount = false
 ShowToc = true
