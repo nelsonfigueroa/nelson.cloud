@@ -3,19 +3,19 @@ title = "Proper Hugo Template Syntax Highlighting with go-html-template"
 summary = "Use `go-html-template` to properly highlight Hugo template code blocks."
 date = "2025-08-03"
 categories = ["Hugo", "HTML"]
-keywords = ["Hugo template", "go-html-template", "syntax highlighting", "Hugo code blocks", "Chroma", "Hugo templating", "HTML templates", "code syntax", "Hugo guide"]
+keywords = ["Hugo template", "go-html-template", "Hugo syntax highlighting", "Hugo code blocks", "chroma syntax highlighter", "Hugo templating", "Hugo guide"]
 ShowToc = false
 TocOpen = false
 +++
 
 I recently learned that you can highlight Hugo template code blocks by specifying `go-html-template` after the opening backticks.
 
-So the opening backticks look like this:
+So the opening backticks in a Markdown file look like this:
 ```
 ```go-html-template
 ```
 
-It makes a huge difference when highlighting Hugo template code blocks. I was previously using `html` and it wasn't as good.
+It makes a huge difference when highlighting Hugo template code blocks. I was previously using `html` for syntax highlighting and it wasn't as good.
 
 For example, here is some HTML + Hugo templating stuff being highlighted with `html`:
 
