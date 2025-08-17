@@ -8,6 +8,8 @@ ShowToc = true
 TocOpen = true
 +++
 
+> Note: I was a scrub when I first wrote this. Proceed with caution.
+
 ## Introduction
 
 Kubernetes, also known as "k8s", is an open-source container orchestration tool designed to automate deploying, scaling, and operating application containers. Docker containers can be used to develop and build applications, then Kubernetes can be used to run these applications. You can use other container engines with Kubernetes, but I'll be using Docker since it is the most popular.
