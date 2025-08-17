@@ -284,3 +284,9 @@ a:hover {
         max-width: 220px;
     }
 } */
+
+/* remove padding and margin from text within blockquotes so text is centered properly */
+.post-content blockquote p {
+    margin: 0;
+    padding: 0;
+}
