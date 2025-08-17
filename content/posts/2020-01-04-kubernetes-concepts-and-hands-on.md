@@ -3,7 +3,7 @@ title = "Kubernetes Concepts and Hands-On with Minikube"
 summary = "Learn Kubernetes concepts and get hands-on experience with Minikube"
 date = "2020-01-04"
 categories = ["Kubernetes"]
-keywords = ["Kubernetes", "k8s", "Minikube", "container orchestration", "Docker containers", "pods", "deployments", "services", "kubectl", "Kubernetes tutorial"]
+keywords = ["Kubernetes", "k8s", "Minikube", "container orchestration", "kubernetes pods", "deployments", "kubectl", "Kubernetes minikube tutorial"]
 ShowToc = true
 TocOpen = true
 +++
