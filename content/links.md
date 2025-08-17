@@ -318,6 +318,14 @@ You will notice that I generally like minimal sites with monospaced fonts.
 
 [Dynamic Wallpaper Club](https://dynamicwallpaper.club/)
 
+## Learn Something New
+
+[cpu.land](https://cpu.land/)
+
+[www.learndmarc.com](https://www.learndmarc.com/)
+
+[flaws.cloud](http://flaws.cloud/)
+
 ## Other sites that share links
 [flamedfury.com/links/](https://flamedfury.com/links/)
 
