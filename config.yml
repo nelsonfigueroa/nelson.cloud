@@ -165,12 +165,12 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    noClasses: false
+    # noClasses: true
     # anchorLineNos: true
-    # codeFences: true
+    codeFences: true
     # guessSyntax: true
     lineNos: true
-    # style: monokai
+    # lineNumbersInTable: true
 
 # privacy:
 #   vimeo:
