@@ -34,7 +34,7 @@ Basically blogs I subscribe to via RSS or regularly read
 [ntietz.com](https://ntietz.com/blog/)
 
 
-## Posts and articles you should read
+## Posts and Articles I Think You Should Read
 
 [Disturbing facts about ProtonMail](https://encryp.ch/blog/disturbing-facts-about-protonmail/)
 
@@ -160,7 +160,7 @@ Basically blogs I subscribe to via RSS or regularly read
 
 [You're Not Losing Fat Because You're Eating Too Damn Much (Even When You Don't Think You Are)](https://physiqonomics.com/eating-too-much/)
 
-## On writing and blogging
+## On Writing and Blogging
 
 [Software Engineering - The Soft Parts](https://addyosmani.com/blog/software-engineering-soft-parts/)
 
@@ -182,7 +182,7 @@ Basically blogs I subscribe to via RSS or regularly read
 
 [Thrive in obscurity](https://www.jeetmehta.com/posts/thrive-in-obscurity)
 
-## Blog and indie site discovery
+## Blog and Indie Site Discovery
 
 [indieblog.page](https://indieblog.page/)
 
@@ -208,7 +208,7 @@ Basically blogs I subscribe to via RSS or regularly read
 
 [biglist.terraaeon.com](http://biglist.terraaeon.com/)
 
-## Sites I like aesthetically
+## Sites I Like Aesthetically
 
 You will notice that I generally like minimal sites with monospaced fonts.
 
@@ -264,7 +264,7 @@ You will notice that I generally like minimal sites with monospaced fonts.
 
 [theden.sh](https://theden.sh/)
 
-## Fun Links to kill time
+## Fun Links to Kill Time
 
 [ASCII Face Maker](https://adelfaure.net/tools/ascii_facemaker/)
 
@@ -308,11 +308,9 @@ You will notice that I generally like minimal sites with monospaced fonts.
 
 [thenftbay.org](https://thenftbay.org/)
 
-[Distributed Denial of Secrets](https://ddosecrets.com/)
-
 [theuselessweb.com](https://theuselessweb.com/)
 
-## Useful sites
+## Useful Sites
 
 [k8syaml.com](https://k8syaml.com/)
 
@@ -326,7 +324,11 @@ You will notice that I generally like minimal sites with monospaced fonts.
 
 [flaws.cloud](http://flaws.cloud/)
 
-## Other sites that share links
+## Other Interesting Links
+
+[Distributed Denial of Secrets](https://ddosecrets.com/
+
+## Other Sites That Share Links
 [flamedfury.com/links/](https://flamedfury.com/links/)
 
 [coryd.dev/links](https://www.coryd.dev/links)
