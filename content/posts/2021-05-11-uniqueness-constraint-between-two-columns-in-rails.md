@@ -3,7 +3,7 @@ title = "Uniqueness Constraint Between Two Columns in Rails"
 summary = "Add a uniqueness constraint between two columns in Ruby on Rails."
 date = "2021-05-11"
 categories = ["Ruby on Rails"]
-keywords = ["Ruby on Rails", "uniqueness constraint", "database indexes", "Rails migrations", "compound uniqueness", "database constraints", "ActiveRecord validation", "Rails models", "multi-column uniqueness", "Rails database"]
+keywords = ["Ruby on Rails", "uniqueness constraint", "ActiveRecord uniqueness constraint", "rails multi-column uniqueness", "Rails database uniqueness"]
 +++
 
 Ruby on Rails allows us to define uniqueness between two database table columns (i.e. two model attributes). At the time of this writing, I couldn't find official Rails documentation that shows how to do this in both the migration and the model, hence this post.
@@ -25,7 +25,7 @@ Here's a more realistic example. Assume the following:
 
 To accomplish the above, we add indexes to `date` and `account_id` and set them to be unique as a pair.
 
-```rb
+{{< highlight rb "hl_lines=7" >}}
 class CreateStatements < ActiveRecord::Migration[6.0]
   def change
     create_table :statements do |t|
@@ -36,7 +36,7 @@ class CreateStatements < ActiveRecord::Migration[6.0]
     end
   end
 end
-```
+{{< /highlight >}}
 
 Now an Account can have many Statements, but only a maximum of 1 per date. Without this constraint, an existing statement with today's date would prevent any other statements from being created today, even for separate accounts.
 

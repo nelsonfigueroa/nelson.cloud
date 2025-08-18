@@ -20,7 +20,7 @@ find /projects/javascript/ -type d -name "node_modules" -exec rm -rf {} \;
 
 I noticed sometimes the output says:
 
-```shell
+```
 find: ./node_modules: No such file or directory
 ```
 
