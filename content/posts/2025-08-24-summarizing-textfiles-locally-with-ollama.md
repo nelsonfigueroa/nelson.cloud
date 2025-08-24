@@ -3,7 +3,7 @@ title = "Local Text Summarization With Ollama and Python Is Just String Manipula
 summary = "Generate a string with Python, pass it into Ollama, and you get a string in return. That's it."
 date = "2025-08-24"
 categories = ["Python", "AI", "LLM", "Ollama"]
-keywords = ["Ollama", "LLM", "Large Language Model", "Generative AI"]
+keywords = ["Ollama", "LLM", "Large Language Model", "Generative AI", "local LLM Python", "Ollama Python tutorial", "run LLM locally", "Ollama Python example"]
 ShowToc = false
 TocOpen = false
 +++
