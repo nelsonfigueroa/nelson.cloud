@@ -316,6 +316,8 @@ You will notice that I generally like minimal sites with monospaced fonts.
 
 [Dynamic Wallpaper Club](https://dynamicwallpaper.club/)
 
+[The Pragmatic Engineer's Resume Template](https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/)
+
 ## Learn Something New
 
 [cpu.land](https://cpu.land/)
