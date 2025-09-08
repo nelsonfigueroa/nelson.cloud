@@ -2,7 +2,7 @@
 title = "We Exist Only to Work"
 summary = "We are born, we go to school to prepare for a job, we work most of our lives, then we die."
 date = "2025-01-23"
-categories = ["Opinion", "Funny", "Random"]
+categories = ["Opinion", "Work", "Funny", "Random"]
 keywords = ["work life balance", "career thoughts", "life philosophy", "work culture", "employment", "job market", "career advice", "workplace opinion", "modern work"]
 ShowToc = false
 TocOpen = false

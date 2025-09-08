@@ -2,7 +2,7 @@
 title = "There Is Little Incentive to Participate in Your Employer's Hackathons"
 summary = "Come up with a million-dollar idea, get $100 in return."
 date = "2025-01-07"
-categories = ["Opinion"]
+categories = ["Opinion", "Work"]
 keywords = ["hackathons", "company hackathons", "workplace culture", "software development", "career advice", "employer incentives", "workplace opinion", "tech industry", "developer experience"]
 ShowToc = true
 TocOpen = true
@@ -12,11 +12,11 @@ I don't understand why software developers participate in voluntary company [hac
 
 I'd rather do a hackathon outside of work with friends or colleagues, even if there is no financial gain.
 
-You might ask, "if you don't care about money, why not just do a hackathon for your company?". 
+You might ask, "if you don't care about money, why not just do a hackathon for your company?".
 
-If I join a hackathon outside of work I can do it to potentially create a side hustle or simply for the joy of creating software. 
+If I join a hackathon outside of work I can do it to potentially create a side hustle or simply for the joy of creating software.
 
-If I volunteer to work on a hackathon for my employer, my ideas and creations are taken from me even if I enjoy working on these projects. 
+If I volunteer to work on a hackathon for my employer, my ideas and creations are taken from me even if I enjoy working on these projects.
 It feels like someone is taking advantage of me, specially if hackathons are not part of my job description and I receive no additional compensation for participating.
 If there is compensation, it's usually something like a $100 Amazon gift card.
 

@@ -2,7 +2,7 @@
 title = "Company Missions are Bullshit"
 summary = "Every company's real mission is to make money."
 date = "2023-11-24"
-categories = ["Opinion"]
+categories = ["Opinion", "Work"]
 keywords = ["company missions", "corporate culture", "workplace opinion", "business ethics", "corporate values", "company culture", "workplace reality", "business philosophy", "corporate BS"]
 +++
 

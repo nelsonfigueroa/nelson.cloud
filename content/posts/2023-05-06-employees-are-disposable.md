@@ -2,7 +2,7 @@
 title = "As an Employee, You Are Disposable"
 summary = "Companies are willing to lay off employees despite being profitable."
 date = "2023-05-06"
-categories = ["Opinion"]
+categories = ["Opinion", "Work"]
 keywords = ["tech layoffs", "employee disposability", "corporate culture", "workplace opinion", "job security", "career advice", "employment", "tech industry", "workplace reality"]
 +++
 
