@@ -23,6 +23,8 @@ categories:
 
   - name: "Posts and Articles I Think You Should Read"
     links:
+      - url: "https://crankysec.com/blog/modern/"
+        title: "The Modern Individual Contributor"
       - url: "https://encryp.ch/blog/disturbing-facts-about-protonmail/"
         title: "Disturbing facts about ProtonMail"
       - url: "https://rubenerd.com/do-you-not-like-money/"
