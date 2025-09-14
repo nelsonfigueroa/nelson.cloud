@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout default branch
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # need the full git history for accurate post dates/updated dates
       - name: Install Hugo
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v0.146.2/hugo_extended_0.146.2_linux-amd64.deb --output-document hugo.deb
