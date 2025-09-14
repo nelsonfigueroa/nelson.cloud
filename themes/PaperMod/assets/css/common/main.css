@@ -1,9 +1,7 @@
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    /* trying out ch for readability improvements */
-    /* https://piccalil.li/blog/line-length/ */
-    max-width: 80ch;
+    max-width: var(--main-width);
     margin: auto;
     padding: var(--gap);
 }

@@ -2,7 +2,9 @@
     --gap: 24px;
     --content-gap: 20px;
     --nav-width: 720px;
-    --main-width: 720px;
+    /* trying out ch for readability improvements */
+    /* https://piccalil.li/blog/line-length/ */
+    --main-width: 80ch;
     --header-height: 60px;
     --footer-height: 60px;
     --theme: rgb(255, 255, 255);
