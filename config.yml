@@ -106,7 +106,8 @@ params:
   ShowFullTextinRSS: true
   ShowWordCount: true
   comments: true
-  images: []
+  # Default images for Open Graph fallbacks (used when posts don't have cover images)
+  images: ["/android-chrome-512x512.png"]
 
   profileMode:
     enabled: false

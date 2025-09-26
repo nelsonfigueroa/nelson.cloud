@@ -6,6 +6,11 @@ categories = ["Pulumi", "AWS"]
 keywords = ["pulumi", "pulumi cloud", "pulumi S3 state backend", "pulumi aws s3 backend", "pulumi amazon web services", "pulumi CLI login", "pulumi login s3 bucket"]
 ShowToc = true
 TocOpen = true
+
+[cover]
+image = "/pulumi-with-s3-backend/pulumi-up.gif"
+alt = "Description of your image"
+caption = "Optional caption"
 +++
 
 I'll be starting from scratch and creating an IAM user with access to an S3 bucket that will be used to store the Pulumi state file. If you're working in an enterprise setting, your authentication methods may vary.
