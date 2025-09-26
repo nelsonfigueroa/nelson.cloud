@@ -121,33 +121,7 @@ pulumi.export('bucket_name', bucket.id)
 
 Then I ran `pulumi up -y` and it worked!
 
-```
-$ pulumi up -y
-
-Previewing update (dev):
-     Type                 Name                   Plan
- +   pulumi:pulumi:Stack  pulumi-s3-backend-dev  create
- +   └─ aws:s3:Bucket     my-bucket              create
-
-Outputs:
-    bucket_name: [unknown]
-
-Resources:
-    + 2 to create
-
-Updating (dev):
-     Type                 Name                   Status
- +   pulumi:pulumi:Stack  pulumi-s3-backend-dev  created (4s)
- +   └─ aws:s3:Bucket     my-bucket              created (1s)
-
-Outputs:
-    bucket_name: "my-bucket-8443fb5"
-
-Resources:
-    + 2 created
-
-Duration: 5s
-```
+<img src="/pulumi-with-s3-backend/pulumi-up.gif" alt="terminal output when running pulumi up -y" width="720" height="475" style="max-width: 100%; height: auto; aspect-ratio: 772 / 509;" loading="lazy" decoding="async">
 
 And just to double check, I can see that my previously empty S3 bucket now has contents created by the Pulumi CLI:
 
