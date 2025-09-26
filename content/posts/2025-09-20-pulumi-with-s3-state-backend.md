@@ -9,8 +9,8 @@ TocOpen = true
 
 [cover]
 image = "/pulumi-with-s3-backend/pulumi-up.gif"
-alt = "Description of your image"
-caption = "Optional caption"
+alt = "terminal output when running pulumi up -y"
+caption = ""
 +++
 
 I'll be starting from scratch and creating an IAM user with access to an S3 bucket that will be used to store the Pulumi state file. If you're working in an enterprise setting, your authentication methods may vary.
