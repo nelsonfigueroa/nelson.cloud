@@ -1,6 +1,6 @@
 +++
 title = "Quick Tip: Mute the Terminal Login Message with A .hushlogin File"
-summary = "Create a .hughlogin file in your home directory to silence login messages."
+summary = "Create a .hushlogin file in your home directory to silence login messages."
 date = "2025-09-28"
 categories = ["Shell", "macOS", "Linux"]
 keywords = ["hushlogin", "hushlogin file", "stop terminal login message", "terminal login message settings", "turn off terminal login message"]
