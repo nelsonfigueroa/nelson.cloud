@@ -126,7 +126,7 @@ pulumi.export('bucket_name', bucket.id)
 
 Then I ran `pulumi up -y` and it worked!
 
-<img src="/pulumi-with-s3-backend/pulumi-up.gif" alt="terminal output when running pulumi up -y" width="720" height="475" style="max-width: 100%; height: auto; aspect-ratio: 772 / 509;" loading="lazy" decoding="async">
+<img src="/pulumi-with-s3-backend/pulumi-up.gif" alt="terminal output when running pulumi up -y" width="720" height="475" style="max-width: 100%; height: auto; aspect-ratio: 3532 / 2329;" loading="lazy" decoding="async">
 
 And just to double check, I can see that my previously empty S3 bucket now has contents created by the Pulumi CLI:
 
