@@ -10,7 +10,7 @@ Homebrew has a `brew leaves` command that shows all installed packages with no d
 
 Here's what my `brew leaves` output looks like at the time of this writing:
 
-```shell
+```
 $ brew leaves
 
 automake
@@ -39,13 +39,13 @@ zlib
 
 In my case, I know I don't need the `libpq` package anymore. So I can remove this package and then run `brew leaves` again to confirm it's gone.
 
-```shell
+```
 $ brew remove libpq
 
 Uninstalling /opt/homebrew/Cellar/libpq/16.1_1... (2,380 files, 29.9MB)
 ```
 
-```shell
+```
 $ brew leaves
 
 automake
