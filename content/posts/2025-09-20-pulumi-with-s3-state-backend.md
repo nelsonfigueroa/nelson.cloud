@@ -8,7 +8,7 @@ ShowToc = true
 TocOpen = true
 
 [cover]
-image = "/pulumi-with-s3-backend/pulumi-up.gif"
+image = "/pulumi-with-s3-backend/pulumi-up-y.gif"
 alt = "terminal output when running pulumi up -y"
 caption = ""
 +++
