@@ -8,7 +8,7 @@ ShowToc = false
 TocOpen = false
 +++
 
-Say you have a recording created with [Asciinema](https://asciinema.org/) named `recording.cast` and now you want to convert that into a GIF. You can use the `agg` command to convert it like so:
+Say you have a recording created with [Asciinema](https://asciinema.org/) named `recording.cast` and now you want to convert that into a GIF. You can use the `agg` command (which is a [separate installation](https://docs.asciinema.org/manual/agg/installation/)) to convert it like so:
 ```
 agg recording.cast recording.gif
 ```
@@ -33,4 +33,5 @@ I was expecting there to be some sort of `--size` or `--quality` option, but you
 
 ## References
 - https://docs.asciinema.org/manual/agg/
+- https://docs.asciinema.org/manual/agg/installation/
 - https://docs.asciinema.org/manual/agg/usage/
