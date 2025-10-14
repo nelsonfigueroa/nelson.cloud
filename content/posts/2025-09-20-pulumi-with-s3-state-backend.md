@@ -105,7 +105,7 @@ runtime: nodejs
 
 # add this section
 backend:
-  url: s3://nelsons-self-hosted-pulumi-bucket?region=us-east-1&awssdk=v2&profile=pulumi-ce
+  url: s3://nelsons-pulumi-state-backend?region=us-west-1&awssdk=v2&profile=default
 ```
 
 More information here: [Pulumi project file reference](https://www.pulumi.com/docs/iac/concepts/projects/project-file/).
