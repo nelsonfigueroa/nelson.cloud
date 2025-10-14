@@ -96,6 +96,20 @@ A successful login shows the following message:
 Logged in to 0x6E.local as nelson (s3://nelsons-pulumi-state-backend?region=us-west-1&awssdk=v2&profile=default)
 ```
 
+Alternatively, you can add your backend to your `Pulumi.yaml` file. This is useful if you're working on multiple Pulumi projects that each have different backends. You won't need to run `pulumi login` all the time. Just add a `backend` key and a nested `url` key:
+
+```yaml
+name: my-pulumi-project
+description: a pulumi project for testing
+runtime: nodejs
+
+# add this section
+backend:
+  url: s3://nelsons-self-hosted-pulumi-bucket?region=us-east-1&awssdk=v2&profile=pulumi-ce
+```
+
+More information here: [Pulumi project file reference](https://www.pulumi.com/docs/iac/concepts/projects/project-file/).
+
 ## Testing The Setup
 
 Finally, it's time to test this out.
@@ -136,4 +150,5 @@ And just to double check, I can see that my previously empty S3 bucket now has c
 - https://www.pulumi.com/docs/iac/download-install/
 - https://www.pulumi.com/registry/packages/aws/installation-configuration/
 - https://www.pulumi.com/docs/iac/concepts/state-and-backends/#aws-s3
+- https://www.pulumi.com/docs/iac/concepts/projects/project-file/
 - https://ashoksubburaj.medium.com/pulumi-with-aws-s3-as-backend-ac79533820f1
