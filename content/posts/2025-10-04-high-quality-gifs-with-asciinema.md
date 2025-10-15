@@ -1,6 +1,6 @@
 +++
 title = "Creating High Quality GIFs from Asciinema Recordings"
-summary = "Use agg with a huge font size to get high quality of GIFs."
+summary = "Use `agg` with a huge font size to get high quality GIFs."
 date = "2025-10-04"
 categories = ["Shell", "Asciinema"]
 keywords = ["asciinema high quality gif", "asciinema higher quality gif", "asciinema convert to gif", "agg high quality gif", "agg asciinema gif"]
