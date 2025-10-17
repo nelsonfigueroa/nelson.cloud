@@ -6,13 +6,18 @@ categories = ["Python"]
 keywords = ["Python lists", "Python arrays", "Python cheatsheet", "list methods", "Python tutorial", "data structures", "Python programming", "list operations", "Python basics"]
 ShowToc = true
 TocOpen = false
+
+[cover]
+image = "/pulumi-with-s3-backend/python-logo.webp"
+alt = "ASCII art of Python logo."
+caption = ""
 +++
 
 This is yet another cheatsheet I made for myself when studying for [Leetcode](https://leetcode.com/) and [Hackerrank](https://www.hackerrank.com/) kinds of interviews. It's organized in a way that makes sense to me.
 
 I previously made a [Ruby Arrays Cheatsheet]({{< relref "/posts/2024-04-10-ruby-arrays-cheatsheet.md" >}}) you can check out.
 
-All examples were tested using the Python 3.12.3 [REPL](https://www.pythonmorsels.com/using-the-python-repl/).
+All examples were tested using the Python 3.12.12 [REPL](https://www.pythonmorsels.com/using-the-python-repl/).
 
 ## Initializing a List
 
