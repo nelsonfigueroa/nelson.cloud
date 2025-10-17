@@ -5,6 +5,7 @@
 .terms-tags a {
     display: block;
     padding: 8px 0;
+    color: var(--tint-2);
 }
 
 .terms-tags a::before {

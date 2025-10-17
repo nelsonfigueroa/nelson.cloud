@@ -344,7 +344,7 @@ h6 .anchor {
 .post-tags a {
     display: inline-block;
     flex-wrap: wrap;
-    color: var(--secondary);
+    color: var(--tint-2);
     font-size: 12px;
     line-height: 24px;
 }
