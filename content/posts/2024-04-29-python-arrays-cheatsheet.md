@@ -8,7 +8,7 @@ ShowToc = true
 TocOpen = false
 
 [cover]
-image = "/pulumi-with-s3-backend/python-logo.webp"
+image = "/python-lists-cheatsheet/python-logo.webp"
 alt = "ASCII art of Python logo."
 caption = ""
 +++
