@@ -6,6 +6,11 @@ categories = ["Python"]
 keywords = ["Python type hints", "Python optional type hints", "Python tutorial"]
 ShowToc = true
 TocOpen = true
+
+[cover]
+image = "/optional-type-hints-in-python/python-logo.webp"
+alt = "ASCII art of Python logo."
+caption = ""
 +++
 
 Python lets you write optional type hints where you can return either a specified type or `None`. This is a guide with some examples demonstrating different use cases.

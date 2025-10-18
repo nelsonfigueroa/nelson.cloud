@@ -1,11 +1,16 @@
 +++
 title = "Get Unique Elements in a Python List"
-summary = "How to get unique elements in a Python list using set()"
+summary = "How to get unique elements in a Python list using the set() function."
 date = "2024-04-22"
 categories = ["Python"]
-keywords = ["Python unique elements", "Python sets", "remove duplicates", "Python list", "unique values", "Python programming", "data deduplication", "Python tutorial", "set() function"]
+keywords = ["Python unique elements", "Python sets", "Python remove duplicates from list", "Python set() function"]
 ShowToc = false
 TocOpen = false
+
+[cover]
+image = "/get-unique-elements-in-python-lists/python-logo.webp"
+alt = "ASCII art of Python logo."
+caption = ""
 +++
 
 In Python we can get the unique elements from a list by converting it to a set with `set()`. Sets are a [collection of **unique** elements](https://docs.python.org/3/tutorial/datastructures.html#sets):
