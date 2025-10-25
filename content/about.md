@@ -84,6 +84,7 @@ Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 - [Silicon Valley](https://www.imdb.com/title/tt2575988/)
 - [The Boondocks](https://www.imdb.com/title/tt0373732/)
 - [The Bear](https://www.imdb.com/title/tt14452776/)
+- [Smiling Friends](https://www.imdb.com/title/tt12074628/)
 
 ### Movies
 - [Saving Private Ryan](https://www.imdb.com/title/tt0120815/)
