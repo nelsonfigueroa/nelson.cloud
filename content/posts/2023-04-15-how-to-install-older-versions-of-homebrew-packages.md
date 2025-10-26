@@ -56,31 +56,22 @@ $ brew remove terraform
 Uninstalling /usr/local/Cellar/terraform/1.4.5... (6 files, 69MB)
 ```
 
-Then run `brew install` but specify the file you saved locally to install the older version. We'll get some warnings but it should be fine.
+Then run `brew install` but specify the file you saved locally to install the older version. Note that as of [Homebrew version 4.6.4](https://github.com/Homebrew/brew/releases/tag/4.6.4) you can no longer install formulae directly from a file. You can get around this by specifying [the environment variable](https://github.com/Homebrew/brew/pull/20414) `HOMEBREW_DEVELOPER`.
+
+So to install Terraform from the file we just downloaded, run `HOMEBREW_DEVELOPER=true brew install --formulae terraform.rb`:
 
 ```
-$ brew install terraform.rb
+$ HOMEBREW_DEVELOPER=true brew install --formulae terraform.rb
 
-Error: Failed to load cask: terraform.rb
-Cask 'terraform' is unreadable: wrong constant name #<Class:0x00007feed1183f18>
-Warning: Treating terraform.rb as a formula.
-==> Downloading https://formulae.brew.sh/api/formula.jws.json
-######################################################################## 100.0%
-==> Fetching terraform
-==> Downloading https://ghcr.io/v2/homebrew/core/terraform/manifests/1.3.6
-######################################################################## 100.0%
-==> Downloading https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:dad3b9cce25f6ae0d5ddb06029fc266af2d337013828fda6b5fb6c2bcf3f5d
-==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:dad3b9cce25f6ae0d5ddb06029fc266af2d337013828fda6b
-######################################################################## 100.0%
-Warning: terraform 1.4.5 is available and more recent than version 1.3.6.
-==> Pouring terraform--1.3.6.ventura.bottle.tar.gz
-==> Downloading https://formulae.brew.sh/api/cask.jws.json
-######################################################################## 100.0%
-🍺  /usr/local/Cellar/terraform/1.3.6: 6 files, 65MB
+==> Fetching downloads for: terraform
+✔︎ Bottle Manifest terraform (1.3.6)
+✔︎ Bottle terraform (1.3.6)
+Warning: terraform 1.5.7 is available and more recent than version 1.3.6.
+==> Pouring terraform--1.3.6.arm64_ventura.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/terraform/1.3.6: 7 files, 64MB
 ==> Running `brew cleanup terraform`...
-Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
-Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
-Removing: /Users/nelson/Library/Caches/Homebrew/terraform--1.3.6... (19.4MB)
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
 ```
 
 Now `terraform` version 1.3.6 is installed!
@@ -89,4 +80,5 @@ Now `terraform` version 1.3.6 is installed!
 $ terraform version
 
 Terraform v1.3.6
+on darwin_arm64
 ```
