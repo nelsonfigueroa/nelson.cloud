@@ -236,7 +236,7 @@ h6 .anchor {
     padding-left: 1rem;
     color: rgb(213, 213, 214);
     background: var(--code-block-bg) !important;
-    border: 1px solid var(--border);
+    /*border: 1px solid var(--border);*/
     overflow-x: auto;
     word-break: break-all;
 }

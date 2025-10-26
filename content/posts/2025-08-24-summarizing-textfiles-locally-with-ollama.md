@@ -20,7 +20,7 @@ I've included some basic examples. The examples assume you have Ollama installed
 
 ## Reading a Single File Into Ollama
 
-This is pretty straightforward. Open a file and concatenate the text with a prompt which gets passed into Ollama:
+This is straightforward. Open a file and concatenate the text with a prompt which gets passed into Ollama:
 
 ```python
 import ollama
