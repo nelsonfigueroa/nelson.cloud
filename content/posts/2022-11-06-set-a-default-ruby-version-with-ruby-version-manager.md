@@ -1,9 +1,9 @@
 +++
 title = "Set a Default Ruby Version with Ruby Version Manager (RVM)"
-summary = "How to recursively ignore files when building Docker images."
+summary = "Set a default Ruby version using RVM with rvm --default use <version number>"
 date = "2022-11-06"
 categories = ["Ruby"]
-keywords = ["RVM", "Ruby Version Manager", "Ruby versions", "default Ruby", "Ruby installation", "Ruby development", "version management", "Ruby environment", "system Ruby", "Ruby tutorial"]
+keywords = ["RVM", "Ruby Version Manager", "set default Ruby version", "Ruby installation", "ruby version management", "RVM commands", "configure RVM", "switch Ruby versions rvm", "rvm default use"]
 +++
 
 To set the system-wide version of Ruby with `rvm` run:

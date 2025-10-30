@@ -1,9 +1,9 @@
 +++
 title = "Ruby Arrays Cheatsheet"
-summary = "Ruby array basics and methods to learn fast or refresh your memory."
+summary = "A Ruby arrays cheatsheet with methods and examples for coding interviews."
 date = "2024-04-10"
 categories = ["Ruby"]
-keywords = ["Ruby arrays", "Ruby cheatsheet", "array methods", "Ruby programming", "Ruby tutorial", "data structures", "Ruby basics", "array operations", "Ruby reference"]
+keywords = ["Ruby arrays", "Ruby arrays cheatsheet", "ruby array methods", "ruby array operations", "Ruby arrays reference", "Ruby array methods reference", "Ruby array interview questions", "leetcode Ruby arrays", "Ruby coding interview cheatsheet", "array manipulation Ruby", "ruby interview prep"]
 ShowToc = true
 TocOpen = false
 +++

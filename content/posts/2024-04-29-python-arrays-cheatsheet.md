@@ -1,9 +1,9 @@
 +++
 title = "Python Lists Cheatsheet"
-summary = "Python list basics and methods to learn fast or refresh your memory."
+summary = "A Python lists cheatsheet for coding interviews."
 date = "2024-04-29"
 categories = ["Python"]
-keywords = ["Python lists cheatsheet", "Python arrays cheatsheet", "python lists and arrays"]
+keywords = ["Python lists cheatsheet", "Python arrays cheatsheet", "python lists and arrays", "Python list methods reference", "Python interview practice", "Python interview prep", "Python array operations", "Python coding cheatsheet"]
 ShowToc = true
 TocOpen = false
 

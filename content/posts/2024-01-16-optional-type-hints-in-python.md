@@ -1,9 +1,9 @@
 +++
 title = "Optional Type Hints in Python"
-summary = "How to use optional type hints in Python"
+summary = "How to use optional type hints in Python v3.10+."
 date = "2024-01-16"
 categories = ["Python"]
-keywords = ["Python type hints", "Python optional type hints", "Python tutorial"]
+keywords = ["Python type hints", "Python optional type hints", "Python types tutorial", "Python type annotations", "Python typing module", "Union type Python", "type checking Python", "Optional vs Union Python", "static typing Python", "mypy type hints"]
 ShowToc = true
 TocOpen = true
 

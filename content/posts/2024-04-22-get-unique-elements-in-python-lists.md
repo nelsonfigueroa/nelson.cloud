@@ -1,9 +1,9 @@
 +++
 title = "Get Unique Elements in a Python List"
-summary = "How to get unique elements in a Python list using the set() function."
+summary = "Remove duplicate elements from Python lists using the set() function."
 date = "2024-04-22"
 categories = ["Python"]
-keywords = ["Python unique elements", "Python sets", "Python remove duplicates from list", "Python set() function"]
+keywords = ["Python unique elements", "Python sets", "Python remove duplicates from list", "Python set() function", "Python list deduplication", "remove duplicates Python", "deduplicate list Python", "filter duplicates Python", "Python list to set", "unique values Python", "Python set operations"]
 ShowToc = false
 TocOpen = false
 

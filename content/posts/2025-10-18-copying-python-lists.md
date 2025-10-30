@@ -3,7 +3,7 @@ title = "How to Actually Copy a List in Python"
 summary = "Copy a list in Python using the copy() method, not the assignment operator."
 date = "2025-10-18"
 categories = ["Python", "Computer Science"]
-keywords = ["python lists memory address", "python copy list", "python duplicate list"]
+keywords = ["python lists memory address", "python copy list", "python duplicate list", "python shallow copy vs deep copy", "how to copy list in Python", "python list reference vs copy", "Python memory address", "python why assignment doesn't copy lists", "Python id() function", "python list copying methods"]
 ShowToc = false
 TocOpen = false
 
