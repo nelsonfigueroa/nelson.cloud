@@ -101,3 +101,11 @@ I mainly listen to metal. My Bandcamp is public if you're curious. I also have a
 - [GitHub](https://github.com/nelsonfigueroa)
 - [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)
 - [RSS Feed](/index.xml)
+- <a id="of" href="#">Onlyfans</a>
+
+<script>
+document.getElementById('of').addEventListener('click', function(e) {
+  e.preventDefault();
+  this.textContent = 'why did you click that';
+});
+</script>
