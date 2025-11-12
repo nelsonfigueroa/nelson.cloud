@@ -84,8 +84,13 @@ body:not(.dark) #sun {
     display: inline-flex;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 #menu-trigger {
     display: none;
+    cursor: pointer;
 }
 
 /* hamburger menu on smaller screens */
@@ -123,7 +128,7 @@ body:not(.dark) #sun {
         color: var(--tint);
     }
 
-    .menu.hidden {
+    #menu-toggle:not(:checked) ~ .menu {
         display: none;
     }
 }
