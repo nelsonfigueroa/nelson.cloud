@@ -1,20 +1,3 @@
 <!-- processes post links with external domains, but not nav or social links, See: https://gohugo.io/render-hooks/links/ for more info -->
-{{- $url := .Destination -}}
-{{- $refParam := "" -}}
-{{- $refDomain:= "" -}}
-{{- $hasQuery := strings.Contains $url "?" -}}
-{{- $hasHash := strings.Contains $url "#" -}}
-{{- if $hasQuery -}}
-    {{/*  taking into account existing query strings  */}}
-    {{- $refParam = "&ref=" -}}
-    {{- $refDomain = "nelson.cloud" -}}
-{{- else if $hasHash -}}
-    {{/*  ensuring that URL doesn't have a hash #  */}}
-    {{/*  do nothing in this case  */}}
-{{- else -}}
-    {{- $refParam = "?ref=" -}}
-    {{- $refDomain = "nelson.cloud" -}}
-{{- end -}}
-
 {{/*  the ending shortcode removes whitespace. Needed so periods after links don't have a space before them.  */}}
-<a href="{{ .Destination | safeURL }}{{ $refParam }}{{ $refDomain }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>{{- "" -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>{{- "" -}}
