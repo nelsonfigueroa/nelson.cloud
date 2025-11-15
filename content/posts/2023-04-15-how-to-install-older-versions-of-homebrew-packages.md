@@ -12,7 +12,7 @@ It's possible to install older versions of Homebrew packages by saving an older 
 > - Find the Ruby file for that specific version of [Terraform on the Homebrew GitHub repo](https://github.com/Homebrew/homebrew-core/blob/169f333f93fe0703b542cdf75b1decd4cb78f68d/Formula/terraform.rb)
 > - Download the Ruby file
 > - Uninstall the current version of terraform by running `brew remove terraform`
-> - Install the older version defined in the Ruby file by running `brew install terraform.rb`
+> - Install the older version defined in the Ruby file by running `HOMEBREW_DEVELOPER=true brew install --formulae terraform.rb`
 
 Let's say we have `terraform` version 1.4.5 but we need `terraform` version 1.3.6. We can start by browsing to https://github.com/Homebrew/homebrew-core/tree/master/Formula and try to find the formula for `terraform` under the `t` directory.
 
