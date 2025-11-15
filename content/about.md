@@ -97,7 +97,7 @@ I mainly listen to metal. My Bandcamp is public if you're curious. I also have a
 - [Bandcamp collection](https://bandcamp.com/nelsonfigueroa)
 - [Last.fm](https://www.last.fm/user/nelson-figueroa)
 
-## Links
+## My Links
 - [GitHub](https://github.com/nelsonfigueroa)
 - [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)
 - [RSS Feed](/index.xml)
