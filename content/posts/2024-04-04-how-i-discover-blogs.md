@@ -3,7 +3,7 @@ title = "How I Discover New Blogs"
 summary = "A list of resources I use to discover new blogs."
 date = "2024-04-04"
 categories = ["Blogs"]
-keywords = ["blog discovery", "finding blogs", "blog resources", "blog recommendations", "RSS feeds", "blog aggregators", "content discovery", "reading list", "blog exploration"]
+keywords = ["indie blog discovery", "finding indie blogs", "indie blog recommendations", "indie RSS feeds", "indie blog aggregators", "indie content discovery", "indie blog exploration", "personal blog discovery", "personal indie blogs", "personal blog recommendations"]
 ShowToc = true
 TocOpen = true
 +++
@@ -75,6 +75,12 @@ Another collection of blogs -- with previews!
 **https://1mb.club**
 
 These sites all have the same idea in that they are collections of sites that are under a certain size (at least for the home page). There's lots of blogs to discover among all three lists.
+
+## darktheme.club
+
+**https://darktheme.club/**
+
+A list of sites that have dark mode functionality. These are generally indie blogs.
 
 ## bukmark.club
 
