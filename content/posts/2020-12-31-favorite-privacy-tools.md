@@ -3,7 +3,7 @@ title = "My Favorite Privacy Apps and Services"
 summary = "My favorite privacy-respecting tools, apps, and services."
 date = "2020-12-31"
 categories = ["Privacy"]
-keywords = ["privacy tools", "privacy apps", "Firefox", "uBlock Origin", "privacy-respecting services", "online privacy", "digital privacy", "privacy software", "secure apps", "privacy protection"]
+keywords = ["privacy tools", "privacy apps", "privacy services", "privacy uBlock Origin", "privacy-respecting services", "online privacy apps and services", "privacy software", "privacy protection"]
 ShowToc = true
 TocOpen = true
 +++

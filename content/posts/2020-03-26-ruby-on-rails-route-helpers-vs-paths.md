@@ -3,7 +3,7 @@ title = "Ruby on Rails Route Helpers vs Paths"
 summary = "Comparing Ruby on Rails URL Helpers and Paths"
 date = "2020-03-26"
 categories = ["Ruby on Rails"]
-keywords = ["Ruby on Rails", "Rails routes", "URL helpers", "URI patterns", "Rails routing", "link_to", "Rails paths", "nested routes", "Rails helpers", "web development"]
+keywords = ["Ruby on Rails", "rails routes", "rails URL helpers", "rails URI patterns", "Rails routing", "rails link_to", "ruby on rails paths", "ruby on rails nested routes", "Rails helpers", "ruby on rails web development"]
 +++
 
 >**2021-11-08 update**:
