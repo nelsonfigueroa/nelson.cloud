@@ -10,22 +10,7 @@
 <tr>
 <td>
 {{- $url := .url -}}
-{{- $refParam := "" -}}
-{{- $refDomain:= "" -}}
-{{- $hasQuery := strings.Contains $url "?" -}}
-{{- $hasHash := strings.Contains $url "#" -}}
-{{- if $hasQuery -}}
-    {{/*  taking into account existing query strings  */}}
-    {{- $refParam = "&ref=" -}}
-    {{- $refDomain = "nelson.cloud" -}}
-{{- else if $hasHash -}}
-    {{/*  ensuring that URL doesn't have a hash #  */}}
-    {{/*  do nothing in this case  */}}
-{{- else -}}
-    {{- $refParam = "?ref=" -}}
-    {{- $refDomain = "nelson.cloud" -}}
-{{- end -}}
-<a href="{{ $url | safeURL }}{{ $refParam }}{{ $refDomain }}"{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .title }}</a>
+<a href="{{ $url | safeURL }}"{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .title }}</a>
 </td>
 </tr>
 {{ end }}
