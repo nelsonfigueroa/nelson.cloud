@@ -162,8 +162,6 @@ categories:
 
   - name: "On Writing and Blogging"
     links:
-      - url: "https://addyosmani.com/blog/software-engineering-soft-parts/"
-        title: "Software Engineering - The Soft Parts"
       - url: "https://notes.eatonphil.com/is-it-worth-writing-about.html"
         title: "Is it worth writing about?"
       - url: "https://collabfund.com/blog/selfish-writing/"
