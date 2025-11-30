@@ -9,10 +9,6 @@ pre.ascii-art {
     user-select: none; /* Standard syntax */
 }
 
-pre.ascii-art #ascii-subtitle {
-    color: var(--secondary);
-}
-
 /* stars animations */
 /* star animation 1 */
 .shining-star::after {
