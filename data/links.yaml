@@ -161,6 +161,8 @@ categories:
         title: "The Hype is the Product"
       - url: "https://oliverobscure.xyz/posts/you-dont-have-to-do-everything/"
         title: "You don't have to do everything"
+      - url: "https://dodov.dev/blog/zero-bullshit-take-on-llm-optimization"
+        title: "Zero-Bullshit Take on LLM Optimization"
 
   - name: "On Writing and Blogging"
     links:
