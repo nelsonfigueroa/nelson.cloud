@@ -282,8 +282,6 @@ categories:
         title: "simone.computer"
       - url: "https://chowderman.github.io/xp-paint.html"
         title: "XP Paint"
-      - url: "https://ohshitgit.com/"
-        title: "Oh Shit, Git!?!"
       - url: "https://annoying.technology/"
         title: "annoying.technology"
       - url: "https://grumpy.website/"
@@ -327,6 +325,8 @@ categories:
         title: "Dynamic Wallpaper Club"
       - url: "https://blog.pragmaticengineer.com/the-pragmatic-engineers-resume-template/"
         title: "The Pragmatic Engineer's Resume Template"
+      - url: "https://ohshitgit.com/"
+        title: "Oh Shit, Git!?!"
 
   - name: "Learn Something New"
     links:
