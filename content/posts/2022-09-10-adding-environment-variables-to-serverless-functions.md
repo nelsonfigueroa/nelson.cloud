@@ -3,7 +3,6 @@ title = "Adding Environment Variables to Serverless Functions"
 summary = "How to add environment variables to Serverless functions"
 date = "2022-09-10"
 categories = ["Serverless"]
-keywords = ["Serverless Framework", "environment variables", "serverless functions", "AWS Lambda", "serverless.yml", "function configuration", "serverless deployment", "cloud functions", "serverless tutorial", "Lambda environment"]
 +++
 
 Environment variables can be set for each individual Serverless function or at the provider level for all functions.

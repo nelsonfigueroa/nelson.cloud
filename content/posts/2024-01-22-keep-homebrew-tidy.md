@@ -3,7 +3,6 @@ title = "Keep Homebrew Tidy With \"brew leaves\""
 summary = "Use the 'brew leaves' command to find potentially unnecessary Hombrew packages."
 date = "2024-01-22"
 categories = ["Homebrew", "macOS"]
-keywords = ["Homebrew cleanup", "brew leaves", "brew cleanup", "Homebrew tips", "brew tips macos", "Homebrew maintenance", "brew maintenance", "dependency analysis Homebrew", "system maintenance macOS", "macOS tools", "macos package manager cleanup", "show Homebrew dependencies"]
 +++
 
 Homebrew has a `brew leaves` command that shows all installed packages with no dependencies. That means that they can be uninstalled without causing issues to other installed Homebrew packages. It's good to regularly run this command to keep Homebrew from getting too bloated.

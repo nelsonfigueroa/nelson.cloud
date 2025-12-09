@@ -3,7 +3,6 @@ title = "Wifi Hacking with aircrack-ng"
 summary = "A guide to using aircrack-ng to bruteforce a router's password"
 date = "2019-09-26"
 categories = ["Cybersecurity"]
-keywords = ["aircrack-ng", "wifi hacking aircrack-ng", "wireless security aircrack-ng", "WPA cracking aircrack-ng", "Kali Linux aircrack-ng", "wireless network penetration testing aircrack-ng", "aircrack ng", "wifi hacking aircrack ng", "kali linux aircrack ng"]
 ShowToc = true
 TocOpen = true
 +++

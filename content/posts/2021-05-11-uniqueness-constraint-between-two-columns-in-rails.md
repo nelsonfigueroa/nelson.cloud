@@ -3,7 +3,6 @@ title = "Uniqueness Constraint Between Two Columns in Rails"
 summary = "Add a uniqueness constraint between two columns in Ruby on Rails."
 date = "2021-05-11"
 categories = ["Ruby on Rails"]
-keywords = ["Ruby on Rails", "uniqueness constraint", "ActiveRecord uniqueness constraint", "rails multi-column uniqueness", "Rails database uniqueness"]
 +++
 
 Ruby on Rails allows us to define uniqueness between two database table columns (i.e. two model attributes). At the time of this writing, I couldn't find official Rails documentation that shows how to do this in both the migration and the model, hence this post.

@@ -3,7 +3,6 @@ title = "Getting EC2 Instance Metadata Using IMDSv1"
 summary = "How to get EC2 Instance metadata using IMDSv1"
 date = "2022-02-08"
 categories = ["AWS"]
-keywords = ["EC2 metadata", "IMDSv1", "EC2 instance metadata", "AWS metadata service", "instance metadata", "EC2 API", "AWS EC2", "metadata endpoint", "curl commands", "AWS CLI"]
 +++
 
 Sometimes I need to get information about an EC2 instance within a script but the [AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html) doesn't provide many useful examples.

@@ -3,7 +3,6 @@ title = "Render HTML and CSS if JavaScript Is Disabled Using the `<noscript>` Ta
 summary = "Render HTML and apply CSS styles if JavaScript is disabled."
 date = "2024-11-30"
 categories = ["HTML", "CSS", "JavaScript"]
-keywords = ["noscript tag", "HTML noscript", "JavaScript disabled", "progressive enhancement", "HTML accessibility", "fallback content", "no JavaScript", "HTML tutorial", "CSS fallback"]
 +++
 
 I recently learned about the [`<noscript>` HTML tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript). HTML and CSS contained within `<noscript>` tags will be rendered if JavaScript is disabled in the browser.

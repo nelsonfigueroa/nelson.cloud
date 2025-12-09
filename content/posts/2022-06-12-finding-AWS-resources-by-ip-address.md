@@ -3,7 +3,6 @@ title = "Finding AWS Resources by IP Address"
 summary = "Ways to find AWS Resources by private or public IP addresses."
 date = "2022-06-12"
 categories = ["AWS"]
-keywords = ["AWS IP address", "find AWS resources IP address", "AWS ENI lookup", "AWS IP address lookup", "how to find AWS resource by IP", "AWS unknown IP address", "Lambda IP lookup", "identify AWS resource IP", "ENI lookup AWS"]
 ShowToc = true
 TocOpen = true
 +++

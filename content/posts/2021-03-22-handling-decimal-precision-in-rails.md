@@ -3,7 +3,6 @@ title = "Handling Decimal Precision in Rails"
 summary = "Configure Rails decimal columns with precision and scale to prevent rounding errors."
 date = "2021-03-22"
 categories = ["Ruby on Rails"]
-keywords = ["Ruby on Rails", "Rails decimal precision", "Rails migrations", "Rails precision and scale", "decimal fields", "Rails decimal validation", "Rails currency decimal precision", "Rails money fields", "ActiveRecord precision scale", "prevent decimal rounding errors Rails"]
 ShowToc = true
 TocOpen = true
 +++

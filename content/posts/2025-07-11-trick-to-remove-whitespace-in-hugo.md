@@ -3,7 +3,6 @@ title = "A Trick To Remove Unwanted Whitespace After Links in Hugo"
 summary = "Use this shortcode to remove unwanted whitespace after links in Hugo."
 date = "2025-07-11"
 categories = ["Hugo", "HTML"]
-keywords = ["Hugo whitespace", "Hugo shortcode", "Hugo template", "remove whitespace in Hugo", "Hugo spacing", "Hugo guide"]
 ShowToc = false
 TocOpen = false
 +++

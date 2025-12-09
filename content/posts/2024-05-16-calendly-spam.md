@@ -3,7 +3,6 @@ title = "Calendly Denial of Service via Mass-Scheduling"
 summary = "Showing how Calendly can be easily spammed because I'm bored and unemployed."
 date = "2024-05-16"
 categories = ["Python", "Cybersecurity"]
-keywords = ["Calendly", "denial of service", "mass scheduling", "Python automation", "cybersecurity", "scheduling vulnerability", "Calendly spam", "automated booking", "security testing"]
 ShowToc = true
 TocOpen = true
 +++

@@ -3,7 +3,6 @@ title = "How I Discover New Blogs"
 summary = "A list of resources I use to discover new blogs."
 date = "2024-04-04"
 categories = ["Blogs"]
-keywords = ["indie blog discovery", "finding indie blogs", "indie blog recommendations", "indie RSS feeds", "indie blog aggregators", "indie content discovery", "indie blog exploration", "personal blog discovery", "personal indie blogs", "personal blog recommendations"]
 ShowToc = true
 TocOpen = true
 +++

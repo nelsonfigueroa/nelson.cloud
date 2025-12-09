@@ -3,7 +3,6 @@ title = "Ignore Files Across All Subdirectories in .dockerignore"
 summary = "How to recursively ignore files when building Docker images."
 date = "2022-11-01"
 categories = ["Docker"]
-keywords = ["Docker", "dockerignore", "ignore files", "Docker build", "recursive ignore", "Docker patterns", "build context", "Docker tutorial", "file exclusion", "container build"]
 +++
 
 Ignoring files within directories using `.dockerignore` is a bit different compared to `.gitignore`.

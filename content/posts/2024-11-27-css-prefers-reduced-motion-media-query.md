@@ -3,7 +3,6 @@ title = "The prefers-reduced-motion CSS Media Query"
 summary = "Apply CSS styles conditionally when a user enables reduced motion on their device."
 date = "2024-11-27"
 categories = ["CSS"]
-keywords = ["prefers-reduced-motion", "CSS accessibility reduced motion", "css accessibility best practices", "user motion preferences CSS", "css a11y reduce motion"]
 +++
 
 I recently learned about the `prefers-reduced-motion` [CSS media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion). In a nutshell, if a user enables reduced motion on their device/browser, the CSS styles within this media query will be applied.

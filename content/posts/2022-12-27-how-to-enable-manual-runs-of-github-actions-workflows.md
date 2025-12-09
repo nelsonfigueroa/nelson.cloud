@@ -3,7 +3,6 @@ title = "How to Enable Manual Runs of GitHub Actions Workflows"
 summary = "How to enable manual runs of GitHub Actions workflows."
 date = "2022-12-27"
 categories = ["GitHub"]
-keywords = ["GitHub Actions", "workflow_dispatch", "manual workflow", "GitHub CI/CD", "workflow triggers", "GitHub automation", "manual trigger", "GitHub workflow", "CI/CD pipeline", "GitHub tutorial"]
 +++
 
 By default, GitHub Actions does not allow you to run a workflow manually. In order to enable manual workflow runs, I had to add `workflow_dispatch` to the YAML file under `.github/workflows/`.

@@ -3,7 +3,6 @@ title = "Iterate Through Strings in Go with a for-range Loop"
 summary = "You can use for-range loops to iterate through strings in Go without splitting because Go handles strings as byte slices."
 date = "2024-08-27"
 categories = ["Go"]
-keywords = ["Go strings iteration", "Go loop through string", "for range loop go", "golang strings iteration", "golang loop through string", "Go string bytes", "golang string bytes"]
 ShowToc = false
 TocOpen = false
 +++

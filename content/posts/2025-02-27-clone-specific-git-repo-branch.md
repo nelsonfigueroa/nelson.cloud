@@ -3,7 +3,6 @@ title = "How to Clone a Specific Git Branch Without Other Branches"
 summary = "Clone a single Git branch using --single-branch and --depth for faster cloning."
 date = "2025-02-27"
 categories = ["Git", "Shell"]
-keywords = ["Git clone one branch", "Git clone single branch", "git single branch clone", "shallow clone Git", "--depth flag Git", "git bandwidth optimization", "Git performance", "git partial clone"]
 +++
 
 ## Cloning a Specific Branch

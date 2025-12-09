@@ -3,7 +3,6 @@ title = "How to Disable CSS Animations and Transitions"
 summary = "Disable CSS animations and transitions with a few lines of CSS."
 date = "2025-01-26"
 categories = ["CSS", "HTML"]
-keywords = ["disable CSS animations", "CSS transitions", "animation none", "CSS performance", "reduce motion", "CSS optimization", "disable transitions", "CSS accessibility", "animation control"]
 ShowToc = false
 TocOpen = false
 +++

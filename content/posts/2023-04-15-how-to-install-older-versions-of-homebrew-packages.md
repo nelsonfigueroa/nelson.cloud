@@ -3,7 +3,6 @@ title = "How To Install Older Versions of Homebrew Packages"
 summary = "How to install a specific version of Homebrew packages."
 date = "2023-04-18"
 categories = ["Homebrew", "macOS"]
-keywords = ["brew install specific version", "brew install older version", "Homebrew downgrade package", "install specific Homebrew formula version", "Homebrew version history", "downgrade Homebrew package", "brew downgrade package"]
 +++
 
 It's possible to install older versions of Homebrew packages by saving an older version of the corresponding Ruby file locally and running `brew install <package>.rb`. I'll use the `terraform` package as an example.

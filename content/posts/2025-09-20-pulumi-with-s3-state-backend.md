@@ -3,7 +3,6 @@ title = "How to Use an AWS S3 Bucket as a Pulumi State Backend"
 summary = "Self-host Pulumi state with an S3 Bucket, an IAM User, and the Pulumi CLI."
 date = "2025-09-20"
 categories = ["Pulumi", "AWS"]
-keywords = ["pulumi", "pulumi cloud", "pulumi S3 state backend", "pulumi aws s3 backend", "pulumi amazon web services self host", "pulumi login s3 bucket", "pulumi self-managed backend", "pulumi self host state", "pulumi self host backend"]
 ShowToc = true
 TocOpen = true
 

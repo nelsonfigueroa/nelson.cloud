@@ -3,7 +3,6 @@ title = "AI-Generated Images Discourage Me From Reading Your Blog"
 summary = "If you're willing to use AI-generated images, how do I know the text isn't AI-generated?"
 date = "2024-10-01"
 categories = ["AI", "Blogs", "Opinion"]
-keywords = ["AI generated images", "artificial intelligence", "blog content", "AI images", "content authenticity", "blog opinion", "AI in blogging", "image generation", "content quality"]
 ShowToc = false
 TocOpen = false
 +++

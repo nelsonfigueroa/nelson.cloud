@@ -3,7 +3,6 @@ title = "Insertion Order Iteration of Maps in Go"
 summary = "Iterating through Go maps in insertion order."
 date = "2021-02-23"
 categories = ["Go"]
-keywords = ["Go maps", "map iteration", "insertion order", "Go programming", "ordered maps", "Go slices", "map keys", "Go tutorial", "data structures", "Go basics"]
 +++
 
 In Go, map contents are randomized. Go doesn't care about insertion order. Elements in a map are always random when iterating through them.

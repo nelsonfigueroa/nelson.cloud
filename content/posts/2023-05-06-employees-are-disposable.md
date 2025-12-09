@@ -3,7 +3,6 @@ title = "As an Employee, You Are Disposable"
 summary = "Companies are willing to lay off employees despite being profitable."
 date = "2023-05-06"
 categories = ["Opinion", "Work"]
-keywords = ["tech layoffs", "tech field", "corporate tech culture", "tech field opinion", "tech job security", "tech career advice", "tech industry", "tech industry layoffs"]
 +++
 
 The recent tech layoffs have shown that employees are disposable in the eyes of executives. This isn't surprising though and I'm definitely not the first person that has written about this. I just want to highlight the current situation.

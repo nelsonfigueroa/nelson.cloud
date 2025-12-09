@@ -3,7 +3,6 @@ title = "How to Determine the Entrypoint for a Docker Image"
 summary = "Using `docker inspect` to determine the entrypoint for a given docker image."
 date = "2023-09-27"
 categories = ["Docker"]
-keywords = ["Docker inspect", "Docker entrypoint", "Docker image", "container entrypoint", "Docker commands", "Docker tutorial", "Docker configuration", "container inspection", "Docker CLI"]
 +++
 
 You can use `docker inspect` to determine the entrypoint of a docker image.

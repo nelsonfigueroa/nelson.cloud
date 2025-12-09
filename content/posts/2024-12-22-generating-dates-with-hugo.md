@@ -3,7 +3,6 @@ title = "How to Generate the Current Date and Time in Hugo"
 summary = "How to generate dates and times with Hugo shortcodes."
 date = "2024-12-22"
 categories = ["Hugo"]
-keywords = ["Hugo dates", "Hugo time", "Hugo now function", "Hugo date formatting", "Hugo templates", "current date Hugo", "Hugo shortcodes", "date generation", "Hugo tutorial"]
 ShowToc = true
 TocOpen = true
 +++

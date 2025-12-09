@@ -3,7 +3,6 @@ title = "Delete All node_modules Directories Recursively in macOS and Linux"
 summary = "How to delete all node_modules directories recursively in macOS and Linux systems."
 date = "2023-05-14"
 categories = ["Linux", "Shell", "Bash", "macOS", "Node"]
-keywords = ["delete node_modules recursively", "delete all node_modules", "clean up node_modules", "delete node modules recursively", "delete all node modules", "clean up node modules"]
 +++
 
 We can use the `find` command to delete a specific directory recursively. This is the command formula:

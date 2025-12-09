@@ -3,7 +3,6 @@ title = "Fix Devise Errors in Ruby on Rails 7"
 summary = "How to fix Devise errors in Ruby on Rails 7."
 date = "2022-11-16"
 categories = ["Ruby on Rails"]
-keywords = ["Ruby on Rails 7", "Devise", "Rails 7 upgrade", "Devise errors", "Import Maps", "Hotwire", "Turbo", "Rails authentication", "Devise troubleshooting", "Rails 7 compatibility"]
 ShowToc = true
 TocOpen = true
 +++

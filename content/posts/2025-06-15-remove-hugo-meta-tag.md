@@ -3,7 +3,6 @@ title = "Remove Unnecessary Hugo Meta Tag to Keep HTML Lean"
 summary = "Remove an unnecessary and auto-generated Hugo meta tag by setting `disableHugoGeneratorInject` to `true`."
 date = "2025-06-15"
 categories = ["Hugo", "HTML"]
-keywords = ["Hugo meta tag", "disableHugoGeneratorInject", "Hugo performance", "HTML optimization", "Hugo configuration", "static site generator", "Hugo guide", "lean HTML", "Hugo settings"]
 ShowToc = false
 TocOpen = false
 +++

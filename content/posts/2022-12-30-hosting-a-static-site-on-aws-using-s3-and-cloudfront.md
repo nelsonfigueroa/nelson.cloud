@@ -3,7 +3,6 @@ title = "Hosting a Static Website on AWS Using S3 and CloudFront"
 summary = "How to host a static website on Amazon Web Services using S3, CloudFront, ACM, and Route 53"
 date = "2022-12-30"
 categories = ["AWS"]
-keywords = ["AWS S3", "CloudFront", "static website hosting", "AWS tutorial", "S3 static site", "AWS CDN", "website deployment", "AWS static website hosting", "static site AWS", "S3 bucket hosting", "AWS static website tutorial", "S3 static hosting guide", "CloudFront SSL setup", "how to host website AWS", "SSL certificate CloudFront"]
 ShowToc = true
 TocOpen = true
 +++

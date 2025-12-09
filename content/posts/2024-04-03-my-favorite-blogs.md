@@ -3,7 +3,6 @@ title = "My Favorite Blogs"
 summary = "A list of my favorite blogs from around the web."
 date = "2024-04-03"
 categories = ["Blogs"]
-keywords = ["favorite blogs", "blog recommendations", "blogroll", "tech blogs", "programming blogs", "blog discovery", "recommended reading", "web blogs", "blog list"]
 +++
 
 These are some blogs I enjoy. This is essentially a [blogroll](https://indieweb.org/blogroll). I'll be updating this over time.
