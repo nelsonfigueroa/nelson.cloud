@@ -93,9 +93,7 @@ Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 - [Mad Max: Fury Road](https://www.imdb.com/title/tt1392190/)
 
 ### Music
-I mainly listen to metal. My Bandcamp is public if you're curious. I also have a Last.fm page where you can see my most listened to songs and artists:
-- [Bandcamp collection](https://bandcamp.com/nelsonfigueroa)
-- [Last.fm](https://www.last.fm/user/nelson-figueroa)
+I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfigueroa) is public if you're curious.
 
 ## My Links
 - [GitHub](https://github.com/nelsonfigueroa)
