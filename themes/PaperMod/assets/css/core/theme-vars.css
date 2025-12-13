@@ -21,7 +21,7 @@
     --border: rgb(220, 220, 220);
 
     --tint: rgb(22, 78, 199);
-    --tint-2: #3F5CCD;
+    --tint-2: rgb(14, 116, 144);
 
 
     --blockquote-border: rgb(22, 78, 199);
@@ -41,7 +41,7 @@
     --border: rgb(51, 51, 51);
 
     --tint: rgb(96, 165, 250);
-    --tint-2: #6860FA;
+    --tint-2: rgb(45, 212, 191);
 
     --blockquote-border: rgb(96, 165, 250);
     --blockquote-background: rgba(96, 165, 250, 0.2);
