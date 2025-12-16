@@ -10,7 +10,7 @@
 <tr>
 <td>
 {{- $url := .url -}}
-<a href="{{ $url | safeURL }}"{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .title }}</a>
+<a href="{{ $url | safeURL }}"{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .title }}</a>
 </td>
 </tr>
 {{ end }}
