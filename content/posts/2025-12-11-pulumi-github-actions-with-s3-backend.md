@@ -27,7 +27,7 @@ You can create these by browsing to your GitHub repository > Settings > Secrets 
 
 Create the three secrets and fill in their respective values. `PULUMI_CONFIG_PASSPHRASE` can be whatever you want and doesn't come from AWS. **Make sure you don't change this after the fact though, or your Pulumi state may break**. The end result should look like this:
 
-<img src="/github-actions-with-pulumi-s3/github-secrets.webp">
+<img src="/github-actions-with-pulumi-s3/github-secrets.webp" alt="GitHub repository secrets showing AWS credentials and Pulumi passphrase" width="3096" height="1708" style="max-width: 100%; height: auto; aspect-ratio: 774 / 427;" loading="lazy" decoding="async">
 
 ## Defining the GitHub Actions Workflow
 
@@ -69,7 +69,7 @@ This runs a `pulumi preview` so it'll veryify that everything is set up correctl
 
 Now push your code to GitHub and see if the GitHub Action workflow ran successfully. You should see output from a successful `pulumi preview`.
 
-<img src="/github-actions-with-pulumi-s3/github-actions-logs.webp">
+<img src="/github-actions-with-pulumi-s3/github-actions-logs.webp" alt="GitHub Actions workflow logs showing successful Pulumi preview" width="2854" height="1632" style="max-width: 100%; height: auto; aspect-ratio: 1427 / 816;" loading="lazy" decoding="async">
 
 If this works, you should be good to go. You can update your Pulumi code and, change `command: preview` to `command: up` in the GitHub Actions YAML file and run it again to actually deploy some infrastructure.
 
