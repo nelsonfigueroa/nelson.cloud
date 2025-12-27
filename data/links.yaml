@@ -174,6 +174,15 @@ categories:
       - url: "https://github.com/readme/guides/publishing-your-work"
         title: "Publishing your work increases your luck"
 
+  - name: "Technical Guides and Tutorials"
+    links:
+      - url: "https://alexop.dev/posts/understanding-claude-code-full-stack/"
+        title: "Understanding Claude Code's Full Stack: MCP, Skills, Subagents, and Hooks Explained"
+      - url: "https://alexop.dev/posts/customize_claude_code_status_line/"
+        title: "How to Customize Your Claude Code Status Line"
+      - url: "https://alexop.dev/posts/claude-code-notification-hooks/"
+        title: "Get Notified When Claude Code Finishes With Hooks"
+
   - name: "On Writing and Blogging"
     links:
       - url: "https://notes.eatonphil.com/is-it-worth-writing-about.html"
