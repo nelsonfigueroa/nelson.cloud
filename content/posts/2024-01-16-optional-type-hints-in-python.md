@@ -1,6 +1,6 @@
 +++
 title = "Optional Type Hints in Python"
-summary = "How to use optional type hints in Python v3.10+."
+summary = "Comparing Optional[str] vs str | None syntax in Python v3.10+ with practical examples."
 date = "2024-01-16"
 categories = ["Python"]
 ShowToc = true
