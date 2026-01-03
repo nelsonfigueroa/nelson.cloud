@@ -352,6 +352,8 @@ categories:
         title: "The Pragmatic Engineer's Resume Template"
       - url: "https://ohshitgit.com/"
         title: "Oh Shit, Git!?!"
+      - url: "https://har-sanitizer.pages.dev/"
+        title: "HAR File Sanitizer"
 
   - name: "Learn Something New"
     links:
