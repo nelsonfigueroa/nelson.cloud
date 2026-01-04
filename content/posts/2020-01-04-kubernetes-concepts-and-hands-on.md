@@ -7,7 +7,9 @@ ShowToc = true
 TocOpen = true
 +++
 
-> Note: I was a scrub when I first wrote this. Proceed with caution.
+{{< admonition type="warning" >}}
+I was a scrub when I first wrote this. Proceed with caution.
+{{< /admonition >}}
 
 ## Introduction
 

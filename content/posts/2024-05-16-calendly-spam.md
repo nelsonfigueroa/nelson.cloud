@@ -17,7 +17,9 @@ I noticed that I don't have to be authenticated any way to be able to schedule a
 
 The plan is to automate the process of scheduling appointments with Python to fill up someone's calendar with fake appointments.
 
-> **Disclaimer:** This is purely for educational purposes. Please do not spam people's calendars.
+{{< admonition type="warning" title="Disclaimer" >}}
+This is purely for educational purposes. Please do not spam people's calendars.
+{{< /admonition >}}
 
 ## Gathering Request URLs, Headers, and Payloads
 

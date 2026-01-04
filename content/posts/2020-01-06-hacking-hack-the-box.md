@@ -10,11 +10,9 @@ categories = ["Cybersecurity"]
 
 Hack The Box is an online penetration testing platform where users can practice their hacking abilities and test their cybersecurity knowledge. What's interesting is that in order to sign up to the site in the first place, you need to hack your way in. In this post, I'll be showing how I managed to get in and what my thought process was along the way.
 
-<br>
-
->2022-12-10 Update: I noticed that hackthebox no longer requires users to solve a puzzle to register, so this post no longer applies :(
-
-<br>
+{{< admonition type="note" >}}
+2022-12-10 Update: I noticed that hackthebox no longer requires users to solve a puzzle to register, so this post no longer applies :(
+{{< /admonition >}}
 
 To sign up to the site, I was redirected to [https://www.hackthebox.eu/invite](https://www.hackthebox.eu/invite). There is a single field that prompts for an invite code. Other than that, there are no clues on the surface.
 

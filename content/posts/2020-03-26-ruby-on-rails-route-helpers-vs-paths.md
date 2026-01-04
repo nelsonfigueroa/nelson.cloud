@@ -5,9 +5,11 @@ date = "2020-03-26"
 categories = ["Ruby on Rails"]
 +++
 
->**2021-11-08 update**:
+{{< admonition type="warning" >}}
+2021-11-08 update:
 When I first wrote this post I thought this was a better way of writing links, specially after seeing it done this way in a professional setting.
 However, it may not be best practice. It's best to stick with Rails helpers since they're dynamic. If routes change, the helpers may not need to be changed at all.
+{{< /admonition >}}
 
 While learning how to write tests for requests, I came across a different way of writing links in Rails. Up until this discovery I've used URL helpers as such:
 

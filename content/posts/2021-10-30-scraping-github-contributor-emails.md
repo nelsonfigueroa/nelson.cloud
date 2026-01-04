@@ -5,7 +5,9 @@ date = "2021-10-30"
 categories = ["Git", "GitHub", "Privacy", "Cybersecurity"]
 +++
 
->2022-07-21 update: Note that I discovered a better way to do this and I wrote about it in a separate blog post. Check it out here: [Scrape Contributor Emails From Any Git Repository]({{< relref "/posts/2022-07-21-scrape-contributor-emails-from-any-git-repository.md" >}})
+{{< admonition type="note" >}}
+2022-07-21 update: I discovered a better way to do this and I wrote about it in a separate blog post. Check it out here: [Scrape Contributor Emails From Any Git Repository]({{< relref "/posts/2022-07-21-scrape-contributor-emails-from-any-git-repository.md" >}})
+{{< /admonition >}}
 
 ## Git Emails
 

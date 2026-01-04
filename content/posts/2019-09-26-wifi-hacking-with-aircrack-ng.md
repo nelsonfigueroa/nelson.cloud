@@ -9,11 +9,15 @@ TocOpen = true
 
 ## Introduction
 
-> This post is an organized re-write of notes I took in 2017. As such, this guide may now be outdated.
+{{< admonition type="note" >}}
+This post is an organized re-write of notes I took in 2017. As such, this guide may now be outdated.
+{{< /admonition >}}
+
+{{< admonition type="warning" title="Disclaimer" >}}
+This is purely for educational purposes. Do not try to break into access points that do not belong to you.
+{{< /admonition >}}
 
 I used [Kali Linux](https://www.kali.org/) for the entire process, but the process should be very similar for any Linux distribution. `aircrack-ng` is already included on Kali Linux but you can install it on any Linux OS.
-
-> **Disclaimer**: This is purely for educational purposes. Do not try to break into access points that do not belong to you.
 
 ## What is aircrack-ng?
 

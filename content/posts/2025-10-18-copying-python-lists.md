@@ -12,7 +12,13 @@ alt = "ASCII art of Python logo."
 caption = ""
 +++
 
-> tl;dr: use the `copy()` method.
+{{< admonition type="info" title="tl;dr" >}}
+Use the `copy()` method.
+
+```python
+list_a = list_b.copy()
+```
+{{< /admonition >}}
 
 Say we have two Python lists -- `list_a` and `list_b`.
 

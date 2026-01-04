@@ -14,10 +14,12 @@ caption = ""
 
 I'll be starting from scratch and creating an IAM user with access to an S3 bucket that will be used to store the Pulumi state file. If you're working in an enterprise setting, your authentication methods may vary.
 
-> The TL;DR is that you can run this if you already have an S3 bucket and AWS credentials configured on your machine:
->```
->pulumi login 's3://<bucket-name>?region=<region>&awssdk=v2&profile=<aws-profile-name>'
->```
+{{< admonition type="info" title="tl;dr" >}}
+You can run this command (replacing placeholders as needed) if you already have an S3 bucket and AWS credentials configured on your machine:
+```sh
+pulumi login 's3://<bucket-name>?region=<region>&awssdk=v2&profile=<aws-profile-name>'
+```
+{{< /admonition >}}
 
 This post assumes you have the Pulumi CLI installed. Check out the following guide if you don't have it installed: [Download & install Pulumi](https://www.pulumi.com/docs/iac/download-install/).
 
@@ -65,7 +67,9 @@ We finally have our Access key and Secret access key. Save these somewhere safe 
 
 Now we can try using these credentials to tell the Pulumi CLI to use the S3 bucket as a backend.
 
->Note that you do NOT need the [AWS CLI](https://aws.amazon.com/cli/) installed. Pulumi just needs the AWS credentials.
+{{< admonition type="note" >}}
+Note that you do NOT need the [AWS CLI](https://aws.amazon.com/cli/) installed. Pulumi just needs the AWS credentials.
+{{< /admonition >}}
 
 Create the file `~/.aws/credentials` if you don't have it. Then add in your credentials there under the `[default]` profile. (You can add more profiles, but this is beyond the scope of this post.)
 

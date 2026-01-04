@@ -97,7 +97,9 @@ services:
     restart: unless-stopped
 ```
 
-> Note that if it's easier you can create `docker-compose.yml` locally on your device and then drag it over to a directory of your choosing through the Web UI.
+{{< admonition type="note" >}}
+Note that if it's easier you can create `docker-compose.yml` locally on your device and then drag it over to a directory of your choosing through the Web UI.
+{{< /admonition >}}
 
 We'll need to fill in `WIREGUARD_PRIVATE_KEY` and `WIREGUARD_ADDRESSES` in `docker-compose.yml`. These can be retrieved from a WireGuard configuration file.
 
@@ -117,9 +119,13 @@ Endpoint = 138.199.43.91:51820
 
 Copy the `PrivateKey` field and paste it as the value for `WIREGUARD_PRIVATE_KEY` in `docker-compose.yml`. Then copy `Address` and paste it as the value for `WIREGUARD_ADDRESSES`.
 
-> Note: at the time of writing Gluetun only supports IPv4 addresses. So if your `Address` value contains an IPv6 range it will not work and you'll get an error like `cannot add address to wireguard interface: permission denied: when adding address`.
-> The value should look like this: `10.67.205.85/32`.
-> The value should **NOT** look like this: `10.67.205.85/32,fc00:bbbb:bbbb:bb01::4:cd54/128`.
+{{< admonition type="note" >}}
+At the time of writing Gluetun only supports IPv4 addresses. So if your `Address` value contains an IPv6 range it will not work and you'll get an error like `cannot add address to wireguard interface: permission denied: when adding address`.
+
+The value should look like this: `10.67.205.85/32`
+
+The value should **NOT** look like this: `10.67.205.85/32,fc00:bbbb:bbbb:bb01::4:cd54/128`
+{{< /admonition >}}
 
 Here's what the updated `docker-compose.yml` file will look like in this case:
 

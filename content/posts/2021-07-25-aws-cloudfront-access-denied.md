@@ -32,6 +32,8 @@ Or
 
 I was surprised that this isnt documented in Amazon's own troubleshooting guide. I only learned about this issue through a [comment on a forum](https://forums.aws.amazon.com/thread.jspa?threadID=85849) (which has now been archived) that reads as follows:
 
-> "...CloudFront provides default root object support as well, but not for any subdirectories. You can solve this by using a custom origin instead. When CloudFront uses the S3 static website URL as the origin, you get the desired functionality."
+{{< admonition type="quote" >}}
+*"...CloudFront provides default root object support as well, but not for any subdirectories. You can solve this by using a custom origin instead. When CloudFront uses the S3 static website URL as the origin, you get the desired functionality."*
+{{< /admonition >}}
 
 This seems like a limitation of CloudFront. While this issue won't affect me too much, there are others who would not want their buckets to be publicly accessible. For security purposes, it's best if users are only able to access a site through the distribution and not directly from the bucket, specially since S3 static website hosting does not support HTTPS. Hopefully AWS fixes this flaw.

@@ -7,7 +7,9 @@ ShowToc = false
 TocOpen = false
 +++
 
-> TL;DR: You can use the `{{- "" -}}` shortcode to remove trailing whitespace on links in Hugo.
+{{< admonition type="info" title="tl;dr" >}}
+You can use the `{{- "" -}}` shortcode to remove trailing whitespace on links in Hugo.
+{{< /admonition >}}
 
 For some reason, [Hugo](https://gohugo.io/) was rendering links with a space after them. Here's a screenshot of what that looked like:
 

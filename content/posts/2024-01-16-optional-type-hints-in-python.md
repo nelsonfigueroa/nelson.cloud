@@ -14,9 +14,11 @@ caption = ""
 
 Python lets you write optional type hints where you can return either a specified type or `None`. This is a guide with some examples demonstrating different use cases.
 
-> Note that despite type hints, a function will still let you return whatever type you want. Type hints are more useful when using linting tools or an IDE to ensure that functions return the correct value(s).
->
-> All examples on this post have been tested with Python 3.12.1
+{{< admonition type="note" >}}
+Despite type hints, a function will still let you return whatever type you want. Type hints are more useful when using linting tools or an IDE to ensure that functions return the correct value(s).
+
+All examples on this post have been tested with Python 3.12.1
+{{< /admonition >}}
 
 For reference, here is what it looks like when a *non-optional* type hint for a string is specified in a Python function's argument and return value:
 

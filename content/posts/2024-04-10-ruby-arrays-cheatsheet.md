@@ -484,7 +484,9 @@ arr.sort
 # => ["a", "aa", "aaa", "aaaa"]
  ```
 
-> Note: There's also a `sort_by()` method but I am too dumb to come up with good examples. You should read about it in this article instead: [How to Sort Arrays & Hashes in Ruby](https://www.rubyguides.com/2017/07/ruby-sort/).
+{{< admonition type="note" >}}
+There's also a `sort_by()` method but I am too dumb to come up with good examples. You should read about it in this article instead: [How to Sort Arrays & Hashes in Ruby](https://www.rubyguides.com/2017/07/ruby-sort/).
+{{< /admonition >}}
 
 ## Looping Through Arrays
 

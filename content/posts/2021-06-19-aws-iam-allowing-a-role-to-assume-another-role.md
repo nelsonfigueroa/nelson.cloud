@@ -28,7 +28,9 @@ Let's say we have two roles, `Role_A` and `Role_B`. If we want to allow `Role_A`
 
 This is all that's needed to allow a role to assume another role within the same account.
 
-> Note the `Principal` element where we specify the role that we want to give permissions to. In general, the `Principal` element is used in policies to give users/roles/services access to other AWS resources. However, the `Principal` element cannot be used in policies attached to Roles. It can only exist in the trust relationships of roles (you'll get errors if you try to use the `Principal` element in an IAM Role policy). You can read more about this element in the [AWS docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html).
+{{< admonition type="note" >}}
+Be mindful of the `Principal` element where we specify the role that we want to give permissions to. In general, the `Principal` element is used in policies to give users/roles/services access to other AWS resources. However, the `Principal` element cannot be used in policies attached to Roles. It can only exist in the trust relationships of roles (you'll get errors if you try to use the `Principal` element in an IAM Role policy). You can read more about this element in the [AWS docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html).
+{{< /admonition >}}
 
 
 ## Roles in Different Accounts
