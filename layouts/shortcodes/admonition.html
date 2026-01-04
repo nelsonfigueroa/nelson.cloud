@@ -1,0 +1,40 @@
+{{- $inner := .Inner | .Page.RenderString -}}
+
+{{- /* Get type from named or positional parameter */ -}}
+{{- $type := "note" -}}
+{{- $title := "" -}}
+
+{{- if .IsNamedParams -}}
+    {{- $type = .Get "type" | default "note" -}}
+    {{- $title = .Get "title" -}}
+{{- else -}}
+    {{- $type = .Get 0 | default "note" -}}
+    {{- $title = .Get 1 -}}
+{{- end -}}
+
+{{- /* Default titles for each type */ -}}
+{{- $defaultTitles := dict
+    "note" "Note"
+    "info" "Info"
+    "tip" "Tip"
+    "warning" "Warning"
+    "danger" "Danger"
+    "success" "Success"
+    "question" "Question"
+    "example" "Example"
+    "quote" "Quote"
+-}}
+
+{{- if not $title -}}
+    {{- $title = index $defaultTitles $type | default "Note" -}}
+{{- end -}}
+
+<div class="admonition admonition-{{ $type }}">
+    <div class="admonition-title">
+        <span class="admonition-icon"></span>
+        <span>{{ $title }}</span>
+    </div>
+    <div class="admonition-content">
+        {{- $inner -}}
+    </div>
+</div>
