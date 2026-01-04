@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0 # need the full git history for accurate post dates/updated dates
       - name: Install Hugo
         run: |
-          wget https://github.com/gohugoio/hugo/releases/download/v0.146.2/hugo_extended_0.146.2_linux-amd64.deb --output-document hugo.deb
+          wget https://github.com/gohugoio/hugo/releases/download/v0.154.2/hugo_extended_0.154.2_linux-amd64.deb --output-document hugo.deb
           sudo dpkg -i hugo.deb
       - name: Install AWS CLI
         run: |
