@@ -1,6 +1,6 @@
 +++
 title = "Support Me"
-layout = "page"
+layout = "static-page"
 hideMeta = true # don't show updated date and etc
 ShowReadingTime = false
 ShowWordCount = false

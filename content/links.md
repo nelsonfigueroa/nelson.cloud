@@ -1,6 +1,6 @@
 +++
 title = "Links"
-layout = "page"
+layout = "static-page"
 hideMeta = true # don't show updated date and etc
 summary = "A list of links that I found interesting for one reason or another."
 ShowReadingTime = false
