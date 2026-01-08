@@ -227,16 +227,16 @@ services:
       - WIREGUARD_ADDRESSES=10.67.205.85/32
       - SERVER_CITIES=Los Angeles CA # change as needed
     ports:
-      - 8080:8080/tcp    # qBittorrent WebUI
-      - 6881:6881/tcp    # qBittorrent torrenting
-      - 6881:6881/udp    # qBittorrent torrenting
+      - 8080:8080/tcp # qBittorrent WebUI
+      - 6881:6881/tcp # qBittorrent torrenting
+      - 6881:6881/udp # qBittorrent torrenting
     volumes:
       - /volume1/docker/gluetun:/gluetun # edit if your directory is something other than `volume1`
     restart: unless-stopped
   qbittorrent:
     image: linuxserver/qbittorrent:latest
     container_name: qb
-    network_mode: "service:gluetun"  # route all traffic through Gluetun (WireGuard)
+    network_mode: "service:gluetun" # route all traffic through Gluetun (WireGuard)
     environment:
       - TZ=America/Los_Angeles # change as needed
       - WEBUI_PORT=8080
