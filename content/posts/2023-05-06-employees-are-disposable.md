@@ -84,6 +84,7 @@ Here are some articles I've come across that share similar sentiments or are ver
 - [I Accidentally Saved Half A Million Dollars](https://ludic.mataroa.blog/blog/i-accidentally-saved-half-a-million-dollars/)
 - [Once You're Laid Off, You'll Never Be the Same Again](https://mertbulan.com/2025/01/26/once-you-are-laid-off-you-will-never-be-the-same-again/)
 - [G̶o̶o̶g̶l̶e̶r̶... ex-Googler.](https://nerdy.dev/ex-googler)
+- [Motivation in an Absurd System](https://www.lloydatkinson.net/posts/2025/motivation-in-an-absurd-system/)
 
 ---
 
