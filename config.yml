@@ -107,7 +107,7 @@ params:
   ShowWordCount: true
   comments: true
   # Default images for Open Graph fallbacks (used when posts don't have cover images)
-  images: ["/android-chrome-512x512.png"]
+  images: ["opengraph-images/default.png"]
 
   profileMode:
     enabled: false
