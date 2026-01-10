@@ -5,6 +5,11 @@ date = "2020-01-04"
 categories = ["Kubernetes"]
 ShowToc = true
 TocOpen = true
+
+[cover]
+image = "/opengraph-images/k8s.png"
+alt = "ASCII art of Kubernetes logo."
+caption = ""
 +++
 
 {{< admonition type="warning" >}}

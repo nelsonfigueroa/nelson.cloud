@@ -3,6 +3,11 @@ title = "Resolving AWS CloudFront Access Denied Errors"
 summary = "Resolving Access Denied Errors in a CloudFront Distribution that uses a Private S3 Bucket, Origin Access Identity, and Contains Multiple index.html Templates."
 date = "2021-07-25"
 categories = ["AWS"]
+
+[cover]
+image = "/opengraph-images/aws.png"
+alt = "ASCII art of AWS logo."
+caption = ""
 +++
 
 If you're seeing "Access Denied" errors on CloudFront and [the official troubleshooting docs](https://repost.aws/knowledge-center/s3-website-cloudfront-error-403) aren't helping, you might be running into the following issue.

@@ -3,6 +3,11 @@ title = "Delete All Pulumi Stacks with One Command"
 summary = "How to delete all pulumi stacks with a shell one-liner."
 date = "2025-02-18"
 categories = ["Shell", "Pulumi"]
+
+[cover]
+image = "/opengraph-images/pulumi.png"
+alt = "ASCII art of Pulumi logo."
+caption = ""
 +++
 
 There currently isn't a way to delete all stacks with `pulumi stack rm` so this is an alternative way to achieve that.

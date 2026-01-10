@@ -7,7 +7,7 @@ ShowToc = true
 TocOpen = true
 
 [cover]
-image = "/optional-type-hints-in-python/python-logo.webp"
+image = "/opengraph-images/python.webp"
 alt = "ASCII art of Python logo."
 caption = ""
 +++

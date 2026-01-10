@@ -5,6 +5,11 @@ date = "2025-01-01"
 categories = ["AWS", "HTTP"]
 ShowToc = false
 TocOpen = false
+
+[cover]
+image = "/opengraph-images/aws.png"
+alt = "ASCII art of AWS logo."
+caption = ""
 +++
 
 This post assumes you already have an [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) Distribution deployed and properly configured. You'll also need knowledge about [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) if you found your way here because your boss told you to do this and "figure it out".

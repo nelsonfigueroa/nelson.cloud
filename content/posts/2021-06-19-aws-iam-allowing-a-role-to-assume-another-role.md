@@ -3,6 +3,11 @@ title = "AWS IAM: Allowing a Role to Assume Another Role"
 summary = "How to allow an IAM Role to assume another Role."
 date = "2021-06-19"
 categories = ["AWS"]
+
+[cover]
+image = "/opengraph-images/aws.png"
+alt = "ASCII art of AWS logo."
+caption = ""
 +++
 
 To allow an IAM Role to assume another Role, we need to modify the **trust relationship** of the role that is to be assumed. This process varies depending if the roles exist within the same account or if they're in separate accounts.

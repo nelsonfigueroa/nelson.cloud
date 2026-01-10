@@ -7,7 +7,7 @@ ShowToc = false
 TocOpen = false
 
 [cover]
-image = "/get-unique-elements-in-python-lists/python-logo.webp"
+image = "/opengraph-images/python.webp"
 alt = "ASCII art of Python logo."
 caption = ""
 +++

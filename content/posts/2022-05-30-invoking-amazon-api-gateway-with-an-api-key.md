@@ -5,6 +5,11 @@ date = "2022-06-06"
 categories = ["AWS"]
 ShowToc = true
 TocOpen = true
+
+[cover]
+image = "/opengraph-images/aws.png"
+alt = "ASCII art of AWS logo."
+caption = ""
 +++
 
 To invoke an Amazon API Gateway with an API Key we need to pass in the API key in a `x-api-key` header.

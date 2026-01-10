@@ -3,6 +3,11 @@ title = "Replacing AWS ACM SSL Certificates With No Downtime"
 summary = "Updating Amazon Certificate Manager SSL certificates with no downtime"
 date = "2022-06-12"
 categories = ["AWS"]
+
+[cover]
+image = "/opengraph-images/aws.png"
+alt = "ASCII art of AWS logo."
+caption = ""
 +++
 
 I recently learned that it is possible to replace an existing ACM SSL certificate on any AWS resource with no downtime.
