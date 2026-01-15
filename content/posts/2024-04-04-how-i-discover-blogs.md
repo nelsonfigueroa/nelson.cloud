@@ -16,6 +16,7 @@ https://news.ycombinator.com/
 By far the best way I've discovered new blogs is through Hacker News. I occasionally discover new blogs when a post/article from that blog is submitted to Hacker News. There are also HN posts where people share blogs:
 - [Ask HN: Could you share your personal blog here?](https://news.ycombinator.com/item?id=36575081)
 - [Ask HN: Favorite Blogs by Individuals?](https://news.ycombinator.com/item?id=27302195)
+- [Ask HN: Share your personal website](https://news.ycombinator.com/item?id=46618714)
 
 There's more posts like these that can be found with a quick Google ssearch.
 
