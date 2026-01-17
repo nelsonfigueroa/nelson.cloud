@@ -16,7 +16,9 @@ Run any of these commands within an EC2 instance. These commands have been teste
 
 These are not all the possible values you can retrieve from the metadata service, these are only the ones I found most useful.
 
-Note that these commands are using Instance Metadata Service Version 1 (IMDSv1) which use a simple request/response method. I created a separate post covering IMDSv2: [Getting EC2 Instance Metadata Using IMDSv2]({{< relref "/posts/2023-12-01-ec2-metadata-using-imdsv2" >}}). **For security purposes it is recommended that you use IMDSv2**.
+{{< admonition type="warning" >}}
+This post covers Instance Metadata Service Version 1 (IMDSv1). For security purposes, it is recommended that you use IMDSv2. I created a separate post covering IMDSv2 here: [Getting EC2 Instance Metadata Using IMDSv2]({{< relref "/posts/2023-12-01-ec2-metadata-using-imdsv2" >}})
+{{< /admonition >}}
 
 If you want a bash script that you can copy and paste, scroll down to the bottom of this article.
 
