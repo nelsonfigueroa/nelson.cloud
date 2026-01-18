@@ -14,7 +14,7 @@ One workaround is to establish a WireGuard connection using [Gluetun](https://gi
 
 ## Prerequisites
 
-This guide is intended for those comfortable with the [command line](https://en.wikipedia.org/wiki/Command-line_interface), SSH, and Docker.
+This guide is intended for those comfortable with the [command line](https://en.wikipedia.org/wiki/Command-line_interface), [SSH](https://www.cloudflare.com/learning/access-management/what-is-ssh/), and [Docker](https://www.docker.com/).
 
 You'll need [Container Manager](https://www.synology.com/en-us/dsm/feature/docker) installed, which is basically just Synology's wrapper around Docker. Install it via the Web UI, then you'll be able to use `docker` commands via SSH. Installing Container Manager is straightforward. Log into the Synology DSM Web UI -> open Package Center -> search for "Container Manager" -> click "Install".
 
@@ -204,8 +204,8 @@ I'll be using a qBittorrent container as an example as that is a common use case
 First, create some directories that qBittorrent will need for configuration and downloads:
 
 ```
-mkdir -p /volume1/docker/qbittorrent/config
-mkdir -p /volume1/docker/qbittorrent/downloads
+$ mkdir -p /volume1/docker/qbittorrent/config
+$ mkdir -p /volume1/docker/qbittorrent/downloads
 ```
 
 Then update `docker-compose.yml` like so:
