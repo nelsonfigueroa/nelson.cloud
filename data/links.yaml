@@ -177,6 +177,8 @@ categories:
         title: "Motivation in an Absurd System"
       - url: "https://ossa-ma.github.io/blog/openads"
         title: "The A in AGI stands for Ads"
+      - url: "https://alexharri.com/blog/ascii-rendering"
+        title: "ASCII characters are not pixels: a deep dive into ASCII rendering"
 
   - name: "Technical Guides and Tutorials"
     links:
