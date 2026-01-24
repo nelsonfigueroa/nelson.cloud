@@ -179,6 +179,8 @@ categories:
         title: "The A in AGI stands for Ads"
       - url: "https://alexharri.com/blog/ascii-rendering"
         title: "ASCII characters are not pixels: a deep dive into ASCII rendering"
+      - url: "https://aaronstuyvenberg.com/posts/clawd-bought-a-car"
+        title: "Clawdbot bought me a car"
 
   - name: "Technical Guides and Tutorials"
     links:
