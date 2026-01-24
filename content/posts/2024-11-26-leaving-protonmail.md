@@ -25,6 +25,9 @@ Finally, Proton released [Proton Wallet](https://proton.me/blog/proton-wallet-la
 
 This post is meant as honest feedback. Proton has a [respectable mission](https://proton.me/about) that resonates with me. I wish Proton well and I hope I can return some day. I sincerely mean that.
 
+## Further Reading
+- [Proton Spam and the AI Consent Problem](https://dbushell.com/2026/01/22/proton-spam/)
+
 ---
 
 2025-01-15: I was recently made aware about [Proton CEO Andy Yen](https://proton.me/blog/author/ayen)'s comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
