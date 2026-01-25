@@ -14,7 +14,7 @@ If the hash is written in JSON-style syntax, all keys become symbols.
 
 In both scenarios, values will retain their type.
 
-If a key is added to the hash after the hash has been created, that key will retain it's type.
+If a key is added to the hash after the hash has been created, that key will retain its type.
 This can lead to situations where a hash has keys that are of multiple data types.
 
 ## Hashes With Hash Rocket Syntax
@@ -41,7 +41,7 @@ $ ruby script.rb
 String
 ```
 
-We can see that with hash rocket syntax the `A` key retained it's string type and can be written as a string in `items['A']`.
+We can see that with hash rocket syntax the `A` key retained its string type and can be written as a string in `items['A']`.
 
 ## Hashes with JSON Syntax
 

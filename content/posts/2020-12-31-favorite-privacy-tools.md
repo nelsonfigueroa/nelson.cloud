@@ -17,7 +17,7 @@ Firefox has always been a great alternative to Chrome for privacy purposes. Fire
 
 ## uBlock Origin
 
-**Official site:**: [https://ublockorigin.com/](https://ublockorigin.com/)
+**Official site:** [https://ublockorigin.com/](https://ublockorigin.com/)
 
 uBlock Origin is probably the best adblocker out there. I debated adding it to my list because I thought it was the norm to install an adblocker but I've come across so many people that, for whatever reason, do not use any sort of adblocker.
 

@@ -11,7 +11,7 @@ TocOpen = true
 
 ### Ascending Order
 
-Lets say we had the following hash:
+Let's say we had the following hash:
 
 ```ruby
 items = {

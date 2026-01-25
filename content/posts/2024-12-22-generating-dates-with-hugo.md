@@ -35,7 +35,7 @@ Output:
 2024-12-22 2:30
 ```
 
-You can Specify AM or PM as well:
+You can specify AM or PM as well:
 ```go-html-template
 {{ now | dateFormat "2006-01-02 3:04AM" }}
 ```

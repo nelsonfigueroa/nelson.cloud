@@ -19,7 +19,7 @@ And I'm sick of it.
 
 To add more context, I have both succeeded and failed at these kinds of interviews. My failure rate is not influencing my opinion. If anything, my previous professional experience influences my opinion.
 
-If you need a Software Engineer with AWS, Kuberentes, and Ruby on Rails experience, and you don't do silly quizzes, feel free to reach out!
+If you need a Software Engineer with AWS, Kubernetes, and Ruby on Rails experience, and you don't do silly quizzes, feel free to reach out!
 
 ## Further Reading
 

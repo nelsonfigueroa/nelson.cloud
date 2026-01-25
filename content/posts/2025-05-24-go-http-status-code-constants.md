@@ -82,7 +82,7 @@ func main() {
 }
 ```
 
-## Turning Http Status Codes into Messsages with Statustext()
+## Turning HTTP Status Codes into Messages with http.StatusText()
 
 There's also [a function `http.StatusText()`](https://pkg.go.dev/net/http#StatusText) that allows you to pass in status codes and get a message for logging purposes or displaying to users. You can see all the responses in [the source code here](https://go.dev/src/net/http/status.go), it's a bunch of `case` statements.
 

@@ -285,7 +285,7 @@ Either way, someone could manually schedule an appointment, check the browser de
 
 ## Conclusion
 
-Calendly is suceptible to spam.
+Calendly is susceptible to spam.
 
 I can think of a few scenarios where this could do some damage:
 - If you're a salesperson, something like this would fill up your calendar and prevent potential customers from booking time with you.

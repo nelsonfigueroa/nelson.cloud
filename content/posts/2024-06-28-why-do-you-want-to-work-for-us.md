@@ -17,7 +17,7 @@ Sure, the tech stack might be exciting. Or the product may be compelling. The wo
 
 If you don't believe me, find your most passionate engineers, cut their compensation in half, and see if they stick around. I guarantee you they won't.
 
-Let's stop beating around the bush and be real with each other. Do you really want to to be lied to by every candidate?
+Let's stop beating around the bush and be real with each other. Do you really want to be lied to by every candidate?
 
 It's okay to be motivated by money. That's the world we live in. An engineer can do amazing work for your company even if they are only motivated by money. Also, companies are only motivated by making money. What's wrong with the average person being motivated by the same thing?
 

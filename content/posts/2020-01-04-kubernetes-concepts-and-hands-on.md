@@ -45,9 +45,9 @@ Each cluster contains a single master node and multiple worker nodes. Each node 
 The master node is responsible for the overall management of the cluster. It has an API Server, a Scheduler, a Controller Manager, and a distributed key-value store called `etcd`.
 
 - The API Server allows you to interact with the Kubernetes API.
-- The scheduler watches created pods who do not ave a node assigned yet, and assigns the pod to run on a specific node.
+- The scheduler watches created pods who do not have a node assigned yet, and assigns the pod to run on a specific node.
 - The Controller Manager runs controllers, which are simply background threads that run tasks in the cluster.
-- The `etcd` store is used as a database for cluster datta such as job scheduling information and pod details.
+- The `etcd` store is used as a database for cluster data such as job scheduling information and pod details.
 
 We interact with the master node using the `kubectl` command in the terminal. `kubectl` has a configuration file called `kubeconfig` that has server information and authentication information to access the API server.
 
@@ -67,7 +67,7 @@ A Pod is a single instance of a running process in your cluster. It is the small
 
 When pods are deployed and running, the `kubelet` process in the node communicates with the pods to check on state and health. The `kube-proxy` process in the node routes any packets to the pods from other resources.
 
-Pods are designed to be disposable. They never self-heal and are not restarted by the scheduler itself. You should never create pods just by themselves, always user higher-level constructs to manage pods.
+Pods are designed to be disposable. They never self-heal and are not restarted by the scheduler itself. You should never create pods just by themselves, always use higher-level constructs to manage pods.
 
 Pods have several states: pending, running, succeeded, failed, and CrashLoopBackOff
 

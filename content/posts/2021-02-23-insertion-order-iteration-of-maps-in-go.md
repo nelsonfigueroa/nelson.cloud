@@ -27,7 +27,7 @@ func main() {
 	keys := []string{"a", "b", "c", "d", "e", "f"}
 
 	// iterate through "keys" slice to get map values in insert order
-	// the underscore is there because we wont be using the first value, which is the index of the slice
+	// the underscore is there because we won't be using the first value, which is the index of the slice
 	for _, key := range keys {
 		fmt.Println("Key:", key, "\t", "Value:", m[key])
 	}

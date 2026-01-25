@@ -122,7 +122,7 @@ files.append(open("path/to/file2.txt"))
 for file in files:
     prompt = f'Can you summarize the following text for me? {file.read()}'
 
-    # pass in the prompt to Ollam
+    # pass in the prompt to Ollama
     response = ollama.chat(
         model='gpt-oss:20b',
         messages=[
