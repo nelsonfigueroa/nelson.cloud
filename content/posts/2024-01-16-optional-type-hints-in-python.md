@@ -60,40 +60,56 @@ A single optional type hint for an integer as an argument and as a return value 
 ```python
 from typing import Optional
 
-def example(num: Optional[int] = 0) -> Optional[str]:
+def example(num: Optional[int] = 0) -> Optional[int]:
     return num
 ```
 
-And this is how the shorthand notation looks like:
+And this is what the shorthand notation looks like:
 
 ```python
-def example(num: int | None = 0) -> str | None:
+def example(num: int | None = 0) -> int | None:
     return num
 ```
 
-In the examples above, the `num` variable has to be an integer or `None`, and it has a default value of `0`. The return type has to be a string or `None`.
+In the examples above, the `num` variable has to be an integer or `None`, and it has a default value of `0`. The return type has to be an integer or `None`.
 
 ### Two or More Optional Type Hints
 
 To specify two or more optional type hints, we need to import `Union` from the `typing` module.
 
-In this example, the type hints indicate that either an integer or a string can be assigned to the `data` input variable. The `data` variable has a default value of `None`.
+In this example, the type hints indicate that either an integer, a string, or `None` can be assigned to the `data` input variable. The `data` variable has a default value of `None`.
 
-The type hints also indicate that either an integer or a string can be returned. Like before, `None` can also be returned.
+The type hints also indicate that an integer, a string, or `None` can be returned.
+
+Linters like [mypy](https://mypy.readthedocs.io/en/stable/getting_started.html) prefer an explicit `None` return value when `None` is a valid return type. That's why the examples have `return None` instead of just `return` at the end of the function.
 
 ```python
 from typing import Union
 
-def example(data: Union[int, str] = None) -> Union[int, str]:
-    return
+def example(data: Union[int, str, None] = None) -> Union[int, str, None]:
+    return None
 ```
 
-And this is how the shorthand notation would look like in Python 3.10+:
+And this is what the shorthand notation would look like in Python 3.10+:
 
 ```python
-def example(data: int | str | None = None) -> int | str:
-    return
+def example(data: int | str | None = None) -> int | str | None:
+    return None
 ```
+
+{{< admonition type="note" >}}
+When using `Union`, it does not include the `None` type by default. Unlike `Optional`, which includes `None` by default.
+
+If you want `None` to be included in `Union` you need to be explicit: 
+```python
+Union[int, None]
+```
+
+With `Optional`, you don't need to be explicit: 
+```python
+Optional[int]
+```
+{{< /admonition >}}
 
 ### Mandatory Presence of Two or More Optional Type Hints
 
@@ -106,20 +122,18 @@ def example(num: int = 0, string: str = "Hello!") -> Tuple[int, str]:
     return num, string
 ```
 
-Tuples can also be used as type hints for function arguments. In the example below, the type of `values` must be a tuple consisting of an integer and a string.
+Tuples can also be used as type hints for function arguments. In the example below, the type of `values` must be a tuple consisting of an integer and a string. The default value is a tuple with `0` and an empty string `""`.
 
 ```python
 from typing import Tuple
 
-def example(values: Tuple[int, str] = None) -> Tuple[int, str]:
+def example(values: Tuple[int, str] = (0, "")) -> Tuple[int, str]:
     return values
 ```
-
-In both examples above, `None` is also an acceptable return value.
 
 To my knowledge, there is no shorthand version when using tuples as type hints.
 
 ## References
 
-I am no expert in Python so please Refer to the official documentation for more information:
+I am no expert in Python, so please refer to the official documentation for more information:
 - https://docs.python.org/3/library/typing.html
