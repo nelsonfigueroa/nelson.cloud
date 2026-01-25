@@ -39,18 +39,26 @@ aws ec2 describe-instances --region=us-west-1 --filter Name=private-ip-address,V
 To find EC2 instances by public IP address, the `Name` filter changes to `ip-address` but otherwise the command is the same as the one from above:
 
 ```bash
-aws ec2 describe-instances --region=us-west-1 --filter Name=ip-address,Values=10.0.0.1
+aws ec2 describe-instances --region=us-west-1 --filter Name=ip-address,Values=54.123.45.67
 ```
 
 #### Specifying Multiple IP Addresses
 
 For either of these commands, you can specify several IP addresses by adding them to the `Values` filter as such:
 
+For public IP addresses:
+
+```bash
+aws ec2 describe-instances --region=us-west-1 --filter Name=ip-address,Values=54.123.45.67,54.123.45.68,54.123.45.69
+```
+
+For private IP addresses:
+
 ```bash
 aws ec2 describe-instances --region=us-west-1 --filter Name=private-ip-address,Values=10.0.0.1,10.0.0.2,10.0.0.3
 ```
 
-Example Output
+### Example Output
 
 The output for these commands will look something like this:
 
@@ -204,7 +212,6 @@ The output for these commands will look something like this:
     ]
 }
 ```
-
 
 ## Finding Other Resources by IP Address
 
