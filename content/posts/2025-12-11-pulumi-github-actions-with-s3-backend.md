@@ -30,7 +30,13 @@ First, set up secrets on your GitHub repository. These will be filled in by GitH
 
 You can create these by browsing to your GitHub repository > Settings > Secrets and variables > Actions. There are "Environment secrets" and "Repository secrets". In this case go with "Repository secrets".
 
-Create the three secrets and fill in their respective values. `PULUMI_CONFIG_PASSPHRASE` can be whatever you want and doesn't come from AWS. **Make sure you don't change this after the fact though, or your Pulumi state may break**. The end result should look like this:
+Create the three secrets and fill in their respective values. `PULUMI_CONFIG_PASSPHRASE` can be whatever you want and doesn't come from AWS.
+
+{{< admonition type="warning" >}}
+Make sure you don't change this passphrase after the fact, or your Pulumi state may break.
+{{< /admonition >}}
+
+The end result should look like this:
 
 <img src="/github-actions-with-pulumi-s3/github-secrets.webp" alt="GitHub repository secrets showing AWS credentials and Pulumi passphrase" width="3096" height="1708" style="max-width: 100%; height: auto; aspect-ratio: 774 / 427;" loading="lazy" decoding="async">
 

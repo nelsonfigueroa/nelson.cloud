@@ -51,7 +51,9 @@ Finally, under the "Redirection rules" text box add the following (change the do
 
 This rule will redirect to the new domain and append paths as well. So if a user goes to `nelsonfigueroa.dev/about` they will be redirected to `https://nelson.cloud/about`.
 
-(If you want to redirect to HTTP instead of HTTPS, you can change the protocol to `http`)
+{{< admonition type="tip" >}}
+If you want to redirect to HTTP instead of HTTPS, you can change `"Protocol"` to `"http"`.
+{{< /admonition >}}
 
 <img src="/redirect-one-domain-to-another/bucket-configuration.webp" alt="S3 bucket configuration" width="720" height="727" style="max-width: 100%; height: auto; aspect-ratio: 1516 / 1532;" loading="lazy" decoding="async">
 
@@ -75,12 +77,17 @@ You will need to update the DNS nameservers for your domain specifying the names
 
 Next, create a CNAME record in the new hosted zone that points the old domain to the S3 Bucket Website endpoint.
 
-(Note that in Route 53 specifically you can create an `A` record, enable the "Alias" toggle, and then select the S3 Bucket website endpoint. This is an alternative solution.)
+{{< admonition type="tip" >}}
+In Route 53 specifically you can create an `A` record, enable the "Alias" toggle, and then select the S3 Bucket website endpoint. This is an alternative solution.
+{{< /admonition >}}
 
 <img src="/redirect-one-domain-to-another/cname-record.webp" alt="CNAME record" width="720" height="464" style="max-width: 100%; height: auto; aspect-ratio: 2208 / 1424;" loading="lazy" decoding="async">
 
 After the CNAME record is created (and changes have propagated), all requests going to the old domain will be redirected to the new domain.
-However, this will only work with HTTP requests to the old domain and *not* HTTPS requests.
+
+{{< admonition type="warning" >}}
+This will only work with HTTP requests to the old domain and *not* HTTPS requests.
+{{< /admonition >}}
 
 In my case, `http://nelsonfigueroa.dev` will be redirected to `https://nelson.cloud`, but `https://nelsonfigueroa.dev` will time out. This is because there is nothing redirecting the HTTPS version of the old domain.
 

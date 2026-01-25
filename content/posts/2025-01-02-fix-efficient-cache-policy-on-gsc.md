@@ -21,7 +21,9 @@ After the header was configured, I checked PageSpeed Insights again and the warn
 
 (The remaining asset is not under my control so I can't fix that one.)
 
-Note that you may be able to use a different value smaller than `31536000` for your header. I chose a year in seconds to be on the safe side for PageSpeed Insights.
+{{< admonition type="note" >}}
+You may be able to use a different value smaller than `31536000` for your header. I chose a year in seconds to be on the safe side for PageSpeed Insights.
+{{< /admonition >}}
 
 # References
 - https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl/

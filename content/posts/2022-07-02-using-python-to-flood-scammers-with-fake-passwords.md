@@ -103,11 +103,13 @@ if __name__ == "__main__":
 
 ```
 
-Quick note about `fake.simple_profile()` from the `payload` dictionary: this line generates a dictionary containing user information. I am only using the username portion in this case.
+{{< admonition type="info" >}}
+`fake.simple_profile()` from the `payload` dictionary generates a dictionary containing user information. I am only using the username portion in this case.
 
 ```python
 {'username': 'ywarren', 'name': 'Patricia Lyons', 'sex': 'F', 'address': '2910 Smith Islands Suite 134\nRogerschester, SC 47471', 'mail': 'joel67@gmail.com', 'birthdate': datetime.date(1984, 4, 20)}
 ```
+{{< /admonition >}}
 
 I ran the script and left it running for a while. The time being printed out is extracted from the response headers. This way I could easily see requests as they're being sent in the CLI:
 

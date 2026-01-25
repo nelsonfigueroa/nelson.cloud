@@ -18,7 +18,9 @@ While your GitHub email does not publicly show when viewing a repository's commi
 This presents a privacy risk and the potential for someone to find the email associated with your GitHub account.
 I wanted to see how easily someone could do this so I created a scraper to do this for me. It turns out it's not hard to scrape commits for emails that are otherwise hidden from public view.
 
-**I don't plan on doing anything malicious with this script or the emails collected. I did this out of curiosity and for demonstrational purposes.**
+{{< admonition type="danger" title="Disclaimer" >}}
+I don't plan on doing anything malicious with this script or the emails collected. I did this out of curiosity and for demonstrational purposes.
+{{< /admonition >}}
 
 The scraper I created is below. Instructions can be found on the README:
 

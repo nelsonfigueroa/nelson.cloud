@@ -61,7 +61,9 @@ Ultimately this was a case of understanding the `download` HTML attribute for `<
 
 ## Further Reading and References
 
-Note that there are other ways of handling this, like using the `send_data` method in a controller. But that's beyond the scope of this post. Read more about it here: https://api.rubyonrails.org/v7.0.1/classes/ActionController/DataStreaming.html#method-i-send_data
+{{< admonition type="note" >}}
+There are other ways of handling this, like using the `send_data` method in a controller. But that's beyond the scope of this post. Read more about it here: https://api.rubyonrails.org/v7.0.1/classes/ActionController/DataStreaming.html#method-i-send_data
+{{< /admonition >}}
 
 References:
 - https://www.w3schools.com/tags/att_a_download.asp

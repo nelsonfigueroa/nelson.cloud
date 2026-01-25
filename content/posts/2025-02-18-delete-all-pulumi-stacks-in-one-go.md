@@ -22,7 +22,9 @@ pulumi stack ls | tail -n +2 | tr -d "*" | awk '{print $1}' | while read -r stac
 
 ## Delete All Stacks Across All Projects
 
-**Be careful when doing this.**
+{{< admonition type="warning" >}}
+It should go without saying but, **be careful when doing this**.
+{{< /admonition >}}
 
 To delete all Pulumi stacks across all Pulumi projects we need to use `pulumi stack ls -a` instead of `pulumi stack ls`. So the full command is:
 

@@ -126,8 +126,8 @@ The morning after, I noticed that my script output was stuck along with a new re
 
 I guess they caught on LOL. They blocked my IP address from sending requests, so I simply changed changed my IP address and carried on.
 
----
-2022-07-25 update: I should have included headers in my requests to make them look as legitimate as possible. The `requests` Python package sends the version of the package itself in the `User-Agent` header, giving away the fact that Python is being used to send requests.
+{{< admonition type="tip" title="2022-07-25 Update" >}}
+I should have included headers in my requests to make them look as legitimate as possible. The `requests` Python package sends the version of the package itself in the `User-Agent` header, giving away the fact that Python is being used to send requests.
 
 The following code shows an example of the `User-Agent` being sent:
 
@@ -140,8 +140,7 @@ print(r.request.headers)
 
 # => {'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
 ```
-
----
+{{< /admonition >}}
 
 Using [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) I was able to see that this IP address originates from Russia, which I thought was interesting.
 

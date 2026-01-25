@@ -7,13 +7,15 @@ categories = ["macOS", "Shell"]
 
 After deleting apps on macOS, they tend leave behind residual files and directories throughout the system. You can use the `find` command to find these files after an app has been deleted. I'll be deleting the LastPass app and removing its residual files as an example.
 
-**2024-10-13 Update**: I recently discovered [Pearcleaner](https://github.com/alienator88/Pearcleaner). You can use this app to delete other apps along with all the extra files and folders they create. I recommend you use this first and then continue reading this post if you want to look more deeply.
+{{< admonition type="tip" title="2024-10-13 Update" >}}
+I recently discovered [Pearcleaner](https://github.com/alienator88/Pearcleaner). You can use this app to delete other apps along with all the extra files and folders they create. I recommend you use this first and then continue reading this post if you want to look more deeply.
 
 You can download Pearcleaner from the link above or install it with [Homebrew](https://formulae.brew.sh/cask/pearcleaner):
 
 ```shell
 brew install --cask pearcleaner
 ```
+{{< /admonition >}}
 
 ## Searching for Residual Files and Directories
 

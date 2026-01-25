@@ -56,7 +56,9 @@ If you're using a CSS library that comes with animations by default it may be a 
 
 My motivation behind this post was disabling button animations when using [daisyUI](https://daisyui.com/) on a side project.
 
-Note that I am not a CSS expert and there may be other ways of animating elements via CSS that I did not cover here. Also, this doesn't help if elements are being moved around by JavaScript. But you can easily disable JavaScript for any site through your browser :)
+{{< admonition type="note" >}}
+I am not a CSS expert and there may be other ways of animating elements via CSS that I did not cover here. Also, this doesn't help if elements are being moved around by JavaScript. But you can easily disable JavaScript for any site through your browser :)
+{{< /admonition >}}
 
 ## References
 - https://stackoverflow.com/questions/11131875/what-is-the-cleanest-way-to-disable-css-transition-effects-temporarily

@@ -28,9 +28,8 @@ This post is meant as honest feedback. Proton has a [respectable mission](https:
 ## Further Reading
 - [Proton Spam and the AI Consent Problem](https://dbushell.com/2026/01/22/proton-spam/)
 
----
-
-2025-01-15: I was recently made aware about [Proton CEO Andy Yen](https://proton.me/blog/author/ayen)'s comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
+{{< admonition type="info" title="2025-01-15 Update" >}}
+I was recently made aware about [Proton CEO Andy Yen](https://proton.me/blog/author/ayen)'s comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
 
 - https://theintercept.com/2025/01/28/proton-mail-andy-yen-trump-republicans/
 - https://archive.ph/txuJ2
@@ -38,3 +37,4 @@ This post is meant as honest feedback. Proton has a [respectable mission](https:
 - https://www.reddit.com/r/privacy/comments/1i210jg/protonmail_supporting_the_party_that_killed/
 
 <img src="/leaving-proton/andy-yen-tweet.webp" alt="Andy Yen on Twitter aka X" width="720" height="1149" style="max-width: 100%; height: auto; aspect-ratio: 932 / 1488;" loading="lazy" decoding="async">
+{{< /admonition >}}

@@ -31,7 +31,9 @@ I also got another notification that shows that the attacker was using Powershel
 
 <img src="/putting-up-fake-aws-keys/notification2.webp" alt="canarytokens.org notification showing powershell usage" width="720" height="509" style="max-width: 100%; height: auto; aspect-ratio: 1300 / 920;" loading="lazy" decoding="async">
 
-It's worth noting that **User Agent strings can be spoofed**, so take these screenshots with a grain of salt.
+{{< admonition type="note" >}}
+User Agent strings can be spoofed, so take these screenshots with a grain of salt.
+{{< /admonition >}}
 
 There is a guide here if you're interested in trying this out for yourself:
 - https://docs.canarytokens.org/guide/

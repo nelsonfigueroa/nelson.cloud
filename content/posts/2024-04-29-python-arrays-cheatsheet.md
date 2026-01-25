@@ -255,7 +255,9 @@ for index, element in enumerate(my_list):
 
 ### Lists vs Arrays
 
-Note that there are both Arrays and Lists in Python. Arrays are saved contiguously in memory and have fixed sizes so they are faster for reading but insertion and deletion costs are high. Arrays can only have elements of the same type.
+{{< admonition type="note" >}}
+There are both Arrays and Lists in Python. Arrays are saved contiguously in memory and have fixed sizes so they are faster for reading but insertion and deletion costs are high. Arrays can only have elements of the same type.
+{{< /admonition >}}
 
 Lists are more flexible. Lists can have elements of different types and do not have fixed sizes. The flexibility of Lists results in more memory being used by these data structures.
 

@@ -17,12 +17,14 @@ For example, if we wanted to delete all `node_modules` directories within the pa
 find /projects/javascript/ -type d -name "node_modules" -exec rm -rf {} \;
 ```
 
-I noticed sometimes the output says:
+{{< admonition type="note" >}}
+Sometimes the output says:
 
 ```
 find: ./node_modules: No such file or directory
 ```
 
 But the command should still work.
+{{< /admonition >}}
 
 If you look closely, we're really just executing a command against all `node_modules` directories in the `/projects/javascript/` directory (`rm -rf`). This command can be modified to execute other commands against all `node_modules` directories, but that is out of the scope of this post :)

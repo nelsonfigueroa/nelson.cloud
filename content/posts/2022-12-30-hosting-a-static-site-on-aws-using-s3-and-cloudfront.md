@@ -89,7 +89,12 @@ The AWS docs provide more information about S3 permissions for static hosting if
 Next we need to request an SSL certificate in ACM that we'll use with CloudFront. This will allow us to set up our site with HTTPS.
 
 In AWS, go to "AWS Certificate Manager (ACM)".
-Check the upper right corner and make sure you are in the us-east-1 region. SSL certificates used with CloudFront must be in the us-east-1 region. Then click the "Request" button.
+
+{{< admonition type="warning" >}}
+SSL certificates used with CloudFront must be in the us-east-1 region. Check the upper right corner and make sure you are in the us-east-1 region before proceeding.
+{{< /admonition >}}
+
+Then click the "Request" button.
 
 For "Certificate type" select "Request a public certificate". Then click Next
 
@@ -114,7 +119,9 @@ You'll have to create a CNAME record in Route 53 to validate this certificate.
 
 Note that in my case the CNAME names and values are repeated. I only had to create the record once to validate both domains.
 
-*Side note: The CNAME record(s) can also be created on your registrar, but I chose to do it all on AWS to keep things in one place.*
+{{< admonition type="info" >}}
+The CNAME record(s) can also be created on your registrar, but I chose to do it all on AWS to keep things in one place.
+{{< /admonition >}}
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/cname-record.webp" alt="ACM SSL certificate CNAME records." width="720" height="169" style="max-width: 100%; height: auto; aspect-ratio: 1440 / 338;" loading="lazy" decoding="async">
 
