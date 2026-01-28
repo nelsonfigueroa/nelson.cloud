@@ -107,3 +107,7 @@ document.getElementById('of').addEventListener('click', function(e) {
   this.textContent = 'why did you click that';
 });
 </script>
+
+## Get in Touch
+
+You can get in touch with me on [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/) or by sending an email to `nelson@<this domain>`.
