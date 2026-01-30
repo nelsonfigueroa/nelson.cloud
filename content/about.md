@@ -104,7 +104,7 @@ I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfi
 <script>
 document.getElementById('of').addEventListener('click', function(e) {
   e.preventDefault();
-  this.textContent = 'why did you click that';
+  this.textContent = 'why did you click that 🤨';
 });
 </script>
 
