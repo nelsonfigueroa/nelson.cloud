@@ -123,7 +123,7 @@ func main() {
 }
 ```
 
+My main motivation for writing this is that I think the official documentation is way too dense and doesn't show several examples of `time.Sleep()`. I just needed some examples to understand the syntax and move on with my day.
+
 ## References
 - https://pkg.go.dev/time
-
-My main motivation for writing this is that I think the official documentation is way too dense and doesn't show several examples of `time.Sleep()`. I just needed some examples to understand the syntax and move on with my day.
