@@ -101,6 +101,10 @@ a:hover {
     line-height: 1.3;
 }
 
+.post-content ol {
+    padding-inline-start: 32px;
+}
+
 .post-meta {
     line-height: 1.3;
 }
