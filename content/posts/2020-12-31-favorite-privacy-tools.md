@@ -27,7 +27,7 @@ If you use a browser (aside from Safari) and you don't have this extension insta
 
 **Official site:** [https://www.torproject.org/](https://www.torproject.org/)
 
-If you really care about privacy to the point where you want to be anonymous, use Tor. When using Tor, your connection goes through several Tor servers that encrypt connections multiple times along the way. This way, your connection is difficult to trace and decrypt. Tor is widely used by journalists, whistleblowers, and activists to remain safe from government surveillance and punishment. This is just the gist of it, feel free to [read more details on the official site](https://2019.www.torproject.org/about/overview.html.en) about how it works.
+If you really care about privacy to the point where you want to be anonymous, use Tor. When using Tor, your connection goes through several Tor servers that encrypt connections multiple times along the way. This way, your connection is difficult to trace and decrypt. Tor is widely used by journalists, whistleblowers, and activists to remain safe from government surveillance and punishment.
 
 ## Signal
 
