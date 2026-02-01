@@ -88,3 +88,31 @@ $ terraform version
 Terraform v1.3.6
 on darwin_arm64
 ```
+
+
+{{< admonition type="tip" title="Pro Tip" >}}
+You can pin the current version so it doesn't upgrade in the future.
+
+```
+brew pin terraform
+```
+
+The next time you run `brew upgrade` it will be skipped:
+
+```
+$ brew upgrade
+
+Warning: Not upgrading 1 pinned package:
+terraform 1.5.7
+```
+
+When you're ready to upgrade, you can unpin it:
+
+```
+brew unpin terraform
+```
+{{< /admonition >}}
+
+## References
+- https://docs.brew.sh/Manpage
+- https://docs.brew.sh/FAQ#how-do-i-stop-certain-formulae-from-being-updated
