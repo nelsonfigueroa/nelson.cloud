@@ -22,9 +22,9 @@ agg --font-size 64 recording.cast recording.gif
 
 Here are two GIFs you can compare. The top one was created with the default `agg` settings. The bottom one was created with `--font-size 64`. Depending on your display, you may need to zoom in a bit to see the difference:
 
-<img src="/asciinema-high-quality-gifs/pulumi-up.gif" alt="S3 Bucket naming" width="720" height="474" style="max-width: 100%; height: auto; aspect-ratio: 772 / 509;" loading="lazy" decoding="async">
+<img src="/asciinema-high-quality-gifs/pulumi-up.gif" alt="fuzzy GIF created with default agg settings" width="720" height="474" style="max-width: 100%; height: auto; aspect-ratio: 772 / 509;" loading="lazy" decoding="async">
 
-<img src="/asciinema-high-quality-gifs/pulumi-up-in-hd.gif" alt="S3 Bucket naming" width="720" height="475" style="max-width: 100%; height: auto; aspect-ratio: 3532 / 2329;" loading="lazy" decoding="async">
+<img src="/asciinema-high-quality-gifs/pulumi-up-in-hd.gif" alt="higher quality GIF created with agg --font-size 64" width="720" height="475" style="max-width: 100%; height: auto; aspect-ratio: 3532 / 2329;" loading="lazy" decoding="async">
 
 It's a noticeable difference. The trade-off here is that the higher quality GIF will be a bigger filesize, so be mindful of that. Try experimenting with different font sizes.
 

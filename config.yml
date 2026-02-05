@@ -105,7 +105,6 @@ params:
   ShowToc: false
   ShowFullTextinRSS: true
   ShowWordCount: true
-  comments: true
   # Default images for Open Graph fallbacks (used when posts don't have cover images)
   images: ["/opengraph-images/default.png"]
 
