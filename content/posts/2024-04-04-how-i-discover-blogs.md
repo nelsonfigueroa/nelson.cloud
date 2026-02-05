@@ -7,7 +7,7 @@ ShowToc = true
 TocOpen = true
 +++
 
-This is a list of resources I use to discover new blogs. I also maintain a [list of my favorite blogs]({{< relref "2024-04-03-my-favorite-blogs.md" >}}) if you're interested.
+This is a list of resources I use to discover new blogs. I also maintain a [list of my favorite blogs]({{< ref "/posts/2024-04-03-my-favorite-blogs.md" >}}) if you're interested.
 
 ## Hacker News
 
@@ -18,7 +18,7 @@ By far the best way I've discovered new blogs is through Hacker News. I occasion
 - [Ask HN: Favorite Blogs by Individuals?](https://news.ycombinator.com/item?id=27302195)
 - [Ask HN: Share your personal website](https://news.ycombinator.com/item?id=46618714)
 
-There's more posts like these that can be found with a quick Google ssearch.
+There's more posts like these that can be found with a quick Google search.
 
 ## Kagi Small Web
 

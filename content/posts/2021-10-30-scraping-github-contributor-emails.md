@@ -6,7 +6,7 @@ categories = ["Git", "GitHub", "Privacy", "Cybersecurity"]
 +++
 
 {{< admonition type="note" >}}
-2022-07-21 update: I discovered a better way to do this and I wrote about it in a separate blog post. Check it out here: [Scrape Contributor Emails From Any Git Repository]({{< relref "/posts/2022-07-21-scrape-contributor-emails-from-any-git-repository.md" >}})
+2022-07-21 update: I discovered a better way to do this and I wrote about it in a separate blog post. Check it out here: [Scrape Contributor Emails From Any Git Repository]({{< ref "/posts/2022-07-21-scrape-contributor-emails-from-any-git-repository.md" >}})
 {{< /admonition >}}
 
 ## Git Emails

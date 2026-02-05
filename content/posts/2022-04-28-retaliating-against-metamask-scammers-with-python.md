@@ -7,7 +7,7 @@ categories = ["Cybersecurity", "Python"]
 
 ## Reconnaissance
 
-Recently, I recieved this email:
+Recently, I received this email:
 
 <img src="/retaliating-against-metamask-scammers/fake-metamask-email.webp" alt="fake metamask email" width="720" height="482" style="max-width: 100%; height: auto; aspect-ratio: 1190 / 798;" loading="lazy" decoding="async">
 
@@ -33,7 +33,7 @@ After doing some reading from the official [MetaMask site](https://metamask.zend
 
 <img src="/retaliating-against-metamask-scammers/metamask-documentation.webp" alt="metamask documentation" width="720" height="305" style="max-width: 100%; height: auto; aspect-ratio: 1724 / 732;" loading="lazy" decoding="async">
 
-So there's a specific list of words that seed phrases are generated from and I have a direct link to them. This was pefect. I could use this list of words in my script:
+So there's a specific list of words that seed phrases are generated from and I have a direct link to them. This was perfect. I could use this list of words in my script:
 
 - https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
 

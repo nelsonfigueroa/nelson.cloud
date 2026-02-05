@@ -33,7 +33,7 @@ I checked the browser dev tools to see where this phrase was going to. It was ge
 
 ## Writing a Python Script
 
-I had an idea to write a quick Python script to send fake data to the scammers. This is something I've done in the past to MetaMask scammers: [Retaliating Against MetaMask Scammers With Python]({{< relref "/posts/2022-04-28-retaliating-against-metamask-scammers-with-python.md" >}}).
+I had an idea to write a quick Python script to send fake data to the scammers. This is something I've done in the past to MetaMask scammers: [Retaliating Against MetaMask Scammers With Python]({{< ref "/posts/2022-04-28-retaliating-against-metamask-scammers-with-python.md" >}}).
 
 With some quick research, I found that the recovery phrases for Ledger devices are created using the same wordlist that MetaMask uses. I also learned that Ledger recovery phrases are 24 words long. With this information I was ready to start writing a script.
 

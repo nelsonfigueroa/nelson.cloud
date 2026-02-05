@@ -5,7 +5,7 @@ date = "2022-07-21"
 categories = ["Cybersecurity", "Privacy", "Git", "Shell"]
 +++
 
-In a [previous post]({{< relref "/posts/2021-10-30-scraping-github-contributor-emails.md" >}}) I wrote about how it's possible to scrape emails from GitHub repositories using their API.
+In a [previous post]({{< ref "/posts/2021-10-30-scraping-github-contributor-emails.md" >}}) I wrote about how it's possible to scrape emails from GitHub repositories using their API.
 I even wrote up a [Ruby script](https://github.com/nelsonfigueroa/github-email-scraper) to do this.
 I now realize that is a very complicated way to go about it after discovering the `git shortlog` command.
 

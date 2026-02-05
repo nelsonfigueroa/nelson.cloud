@@ -14,7 +14,7 @@ caption = ""
 
 This is yet another cheatsheet I made for myself when studying for [Leetcode](https://leetcode.com/) and [Hackerrank](https://www.hackerrank.com/) kinds of interviews. It's organized in a way that makes sense to me.
 
-I previously made a [Ruby Arrays Cheatsheet]({{< relref "/posts/2024-04-10-ruby-arrays-cheatsheet.md" >}}) you can check out.
+I previously made a [Ruby Arrays Cheatsheet]({{< ref "/posts/2024-04-10-ruby-arrays-cheatsheet.md" >}}) you can check out.
 
 All examples were tested using the Python 3.12.12 [REPL](https://www.pythonmorsels.com/using-the-python-repl/).
 

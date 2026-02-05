@@ -13,7 +13,7 @@ I ran into this warning recently on [PageSpeed Insights](https://pagespeed.web.d
 
 To resolve this warning, I added a `Cache-Control` header with the value `max-age=31536000` to the HTTP responses of my domain (`31536000` is the number of seconds in a year).
 
-I host [nelson.cloud](https://nelson.cloud) on [Amazon CloudFront](https://aws.amazon.com/cloudfront/). I added this header to the CloudFront Distribution that the `nelson.cloud` domain points to. This can be done by adding a "Response headers policy" in the Behavior of the Distribution. I wrote post demonstrating how to do this in detail: [How to Add a Custom Response Header to an Amazon Cloudfront Distribution]({{< relref "/posts/2025-01-01-aws-cloudfront-custom-response-header" >}}).
+I host [nelson.cloud](https://nelson.cloud) on [Amazon CloudFront](https://aws.amazon.com/cloudfront/). I added this header to the CloudFront Distribution that the `nelson.cloud` domain points to. This can be done by adding a "Response headers policy" in the Behavior of the Distribution. I wrote post demonstrating how to do this in detail: [How to Add a Custom Response Header to an Amazon Cloudfront Distribution]({{< ref "/posts/2025-01-01-aws-cloudfront-custom-response-header" >}}).
 
 After the header was configured, I checked PageSpeed Insights again and the warning had gone away for the assets under my domain `nelson.cloud`:
 
