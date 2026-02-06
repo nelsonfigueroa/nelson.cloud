@@ -1,6 +1,6 @@
 +++
 title = "How to Add a Custom Response Header to an Amazon Cloudfront Distribution"
-summary = "Adding a custom header to AWS CloudFront Distribution responses."
+summary = "A guide to adding custom response headers to a CloudFront distribution using response headers policies in the AWS Console."
 date = "2025-01-01"
 categories = ["AWS", "HTTP"]
 ShowToc = false
