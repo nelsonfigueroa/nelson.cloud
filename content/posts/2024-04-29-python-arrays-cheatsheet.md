@@ -349,7 +349,7 @@ print(len(my_list))
 We can check for the number of occurrences of a value in a list using `.count()`. In the example below, we check to see how many times the number `1` appears in the list, which is 5 times.:
 
 ```python
-my_list [1, 2, 3, 4, 5, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
+my_list = [1, 2, 3, 4, 5, 4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
 
 my_list.count(1)
 # 5
