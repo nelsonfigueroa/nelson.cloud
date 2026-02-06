@@ -14,7 +14,7 @@ caption = ""
 
 ## TL;DR
 
-Having `get` permissions to a Kubernetes object does not imply you have `list` premissions and vice versa.
+Having `get` permissions to a Kubernetes object does not imply you have `list` permissions and vice versa.
 
 This was not immediately obvious to me.
 

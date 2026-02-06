@@ -76,7 +76,7 @@ end
 
 In the form, we need to use use `step` to add front-end validation and to be able to accept decimal values in the field.
 
-```py
+```rb
 <%= form_with model: @expense, url: {controller: 'expenses', action: 'create'} do |f| %>
   <%= f.label :amount %>
   <%= f.number_field :amount, step: 0.01, class: 'input' %>

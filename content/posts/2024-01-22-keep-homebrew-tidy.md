@@ -1,6 +1,6 @@
 +++
 title = "Keep Homebrew Tidy With \"brew leaves\""
-summary = "Use the 'brew leaves' command to find potentially unnecessary Hombrew packages."
+summary = "Use the 'brew leaves' command to find potentially unnecessary Homebrew packages."
 date = "2024-01-22"
 categories = ["Homebrew", "macOS"]
 

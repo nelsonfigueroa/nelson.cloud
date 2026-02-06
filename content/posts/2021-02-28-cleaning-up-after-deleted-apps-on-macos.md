@@ -19,7 +19,7 @@ brew install --cask pearcleaner
 
 ## Searching for Residual Files and Directories
 
-To find directories and files related to LastPass, I ran a system-wide search using `find`. I exlcluded directories such as `/System/Volumes/Data` since those result in errors like "Operation not permitted". I also excluded Homebrew directories that don't need to be cleaned up. You can add more directories as needed, just make sure to not add a trailing slash to the filepaths!
+To find directories and files related to LastPass, I ran a system-wide search using `find`. I excluded directories such as `/System/Volumes/Data` since those result in errors like "Operation not permitted". I also excluded Homebrew directories that don't need to be cleaned up. You can add more directories as needed, just make sure to not add a trailing slash to the filepaths!
 
 ```shell
 find / \
