@@ -6,7 +6,7 @@
 
 {{/* show last modified date if it differs from the posted date */}}
 {{- if ne .Lastmod .Date -}}
-  {{- $scratch.Add "meta" (slice (printf "<span title='%s'>[Updated %s]</span>" (.Lastmod) (.Lastmod.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+  {{- $scratch.Add "meta" (slice (printf "<span class='entry-footer-updated' title='%s'>Updated %s</span>" (.Lastmod) (.Lastmod.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}

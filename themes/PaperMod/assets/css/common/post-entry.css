@@ -45,6 +45,16 @@
     line-height: 1.6rem;
 }
 
+span.entry-footer-updated::before {
+    content: "[";
+    color: var(--tertiary);
+}
+
+span.entry-footer-updated::after {
+    content: "]";
+    color: var(--tertiary);
+}
+
 .entry-link {
     position: absolute;
     left: 0;
