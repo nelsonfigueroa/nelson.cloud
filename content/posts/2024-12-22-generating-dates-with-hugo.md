@@ -1,10 +1,11 @@
 +++
-title = "How to Generate the Current Date and Time in Hugo"
-summary = "How to generate dates and times with Hugo shortcodes."
+title = "How to Generate and Format the Current Date and Time in Hugo with dateFormat"
+summary = "Several examples of dateFormat including date only, date + 12-hour time, date + 24-hour time, date + timezone, and date + UTC offset."
 date = "2024-12-22"
 categories = ["Hugo"]
 ShowToc = true
 TocOpen = true
+aliases = ["/how-to-generate-the-current-date-and-time-in-hugo/"]
 +++
 
 Here are a bunch of [Hugo](https://gohugo.io/) snippets you can use to generate the current date and time in your Hugo site.

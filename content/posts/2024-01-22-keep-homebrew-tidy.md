@@ -1,8 +1,9 @@
 +++
-title = "Keep Homebrew Tidy With \"brew leaves\""
+title = "Find Unnecessary Homebrew Packages with \"brew leaves\""
 summary = "Use the 'brew leaves' command to find potentially unnecessary Homebrew packages."
 date = "2024-01-22"
 categories = ["Homebrew", "macOS"]
+aliases = ["/keep-homebrew-tidy-with-brew-leaves/"]
 
 [cover]
 image = "/opengraph-images/brew.png"
