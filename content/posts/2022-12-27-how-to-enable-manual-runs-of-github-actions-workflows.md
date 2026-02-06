@@ -1,6 +1,6 @@
 +++
 title = "How to Enable Manual Runs of GitHub Actions Workflows"
-summary = "How to enable manual runs of GitHub Actions workflows."
+summary = "Add workflow_dispatch to your GitHub Actions YAML to enable the 'Run workflow' button."
 date = "2022-12-27"
 categories = ["GitHub"]
 +++

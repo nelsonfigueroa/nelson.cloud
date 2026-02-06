@@ -1,6 +1,6 @@
 +++
 title = "Getting EC2 Instance Metadata Using IMDSv2"
-summary = "How to get EC2 Instance metadata using IMDSv2"
+summary = "Curl examples for retrieving EC2 instance metadata using IMDSv2 including IP address, instance ID, and security groups."
 date = "2023-12-01"
 categories = ["AWS"]
 
