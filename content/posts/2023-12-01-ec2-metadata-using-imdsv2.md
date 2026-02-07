@@ -3,11 +3,6 @@ title = "Getting EC2 Instance Metadata Using IMDSv2"
 summary = "Curl examples for retrieving EC2 instance metadata using IMDSv2 including IP address, instance ID, and security groups."
 date = "2023-12-01"
 categories = ["AWS"]
-
-[cover]
-image = "/opengraph-images/aws.png"
-alt = "ASCII art of AWS logo."
-caption = ""
 +++
 
 The EC2 Instance Metadata Service (IMDS) allows us to make an API call within an EC2 instance to retrieve instance metadata, such as a local IP address. There are 2 versions of IMDS.

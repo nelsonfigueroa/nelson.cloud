@@ -5,11 +5,6 @@ date = "2024-04-29"
 categories = ["Python"]
 ShowToc = true
 TocOpen = false
-
-[cover]
-image = "/opengraph-images/python.webp"
-alt = "ASCII art of Python logo."
-caption = ""
 +++
 
 This is yet another cheatsheet I made for myself when studying for [Leetcode](https://leetcode.com/) and [Hackerrank](https://www.hackerrank.com/) kinds of interviews. It's organized in a way that makes sense to me.

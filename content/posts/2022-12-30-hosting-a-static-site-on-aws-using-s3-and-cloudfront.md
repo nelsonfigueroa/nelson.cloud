@@ -5,11 +5,6 @@ date = "2022-12-30"
 categories = ["AWS"]
 ShowToc = true
 TocOpen = true
-
-[cover]
-image = "/opengraph-images/aws.png"
-alt = "ASCII art of AWS logo."
-caption = ""
 +++
 
 ## Overview

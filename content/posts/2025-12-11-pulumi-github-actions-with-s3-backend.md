@@ -5,11 +5,6 @@ date = "2025-12-11"
 categories = ["Pulumi", "AWS", "GitHub"]
 ShowToc = false
 TocOpen = false
-
-[cover]
-image = "/opengraph-images/pulumi.png"
-alt = "ASCII art of Pulumi logo."
-caption = ""
 +++
 
 ## Introduction

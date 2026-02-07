@@ -5,11 +5,6 @@ date = "2022-06-12"
 categories = ["AWS"]
 ShowToc = true
 TocOpen = true
-
-[cover]
-image = "/opengraph-images/aws.png"
-alt = "ASCII art of AWS logo."
-caption = ""
 +++
 
 ## Finding EC2 Instances by IP Address

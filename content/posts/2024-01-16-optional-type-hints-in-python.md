@@ -5,11 +5,6 @@ date = "2024-01-16"
 categories = ["Python"]
 ShowToc = true
 TocOpen = true
-
-[cover]
-image = "/opengraph-images/python.webp"
-alt = "ASCII art of Python logo."
-caption = ""
 +++
 
 Python lets you write optional type hints where you can return either a specified type or `None`. This is a guide with some examples demonstrating different use cases.

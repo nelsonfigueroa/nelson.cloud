@@ -5,11 +5,6 @@ date = "2024-01-18"
 categories = ["AWS", "Shell"]
 ShowToc = true
 TocOpen = true
-
-[cover]
-image = "/opengraph-images/aws.png"
-alt = "ASCII art of AWS logo."
-caption = ""
 +++
 
 In AWS, you can use [AWS Systems Manager](https://aws.amazon.com/systems-manager/) to run commands on any EC2 Instances that have the [AWS Systems Manager Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html) installed. AWS Systems Manager has a lot more functionality than what I'm demonstrating here, but this is a specific use case.

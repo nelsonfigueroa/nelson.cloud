@@ -1,0 +1,43 @@
+{{- $img := "" -}}
+{{- $base := resources.Get "images/opengraph_base.png" -}}
+{{- $font := resources.Get "fonts/CommitMono.ttf" -}}
+{{- if and $base $font -}}
+  {{- $img = $base.Filter (images.Text .Title (dict
+    "color" "#ffffff"
+    "size" 48
+    "linespacing" 8
+    "x" 60
+    "y" 80
+    "font" $font
+  )) -}}
+  {{/* Render [nelson.cloud] as three segments: bracket, domain, bracket */}}
+  {{- $size := 28 -}}
+  {{- $charW := 17 -}}
+  {{- $baseX := 60 -}}
+  {{- $y := 540 -}}
+  {{- $bracketColor := "#414244" -}}
+  {{- $tintColor := "#60a5fa" -}}
+  {{- $img = $img.Filter (images.Text "[" (dict
+    "color" $bracketColor
+    "size" $size
+    "x" $baseX
+    "y" $y
+    "font" $font
+  )) -}}
+  {{- $img = $img.Filter (images.Text "nelson.cloud" (dict
+    "color" $tintColor
+    "size" $size
+    "x" (add $baseX $charW)
+    "y" $y
+    "font" $font
+  )) -}}
+  {{- $img = $img.Filter (images.Text "]" (dict
+    "color" $bracketColor
+    "size" $size
+    "x" (add $baseX (mul $charW 13))
+    "y" $y
+    "font" $font
+  )) -}}
+  {{- $img = resources.Copy (printf "%sog.png" .RelPermalink) $img -}}
+{{- end -}}
+{{- return $img -}}

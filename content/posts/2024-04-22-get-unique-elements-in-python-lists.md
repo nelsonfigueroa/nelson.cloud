@@ -5,11 +5,6 @@ date = "2024-04-22"
 categories = ["Python"]
 ShowToc = false
 TocOpen = false
-
-[cover]
-image = "/opengraph-images/python.webp"
-alt = "ASCII art of Python logo."
-caption = ""
 +++
 
 In Python we can get the unique elements from a list by converting it to a set with `set()`. Sets are a [collection of **unique** elements](https://docs.python.org/3/tutorial/datastructures.html#sets):

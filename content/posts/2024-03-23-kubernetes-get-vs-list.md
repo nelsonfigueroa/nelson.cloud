@@ -5,11 +5,6 @@ date = "2024-03-23"
 categories = ["Kubernetes", "Cybersecurity"]
 ShowToc = true
 TocOpen = true
-
-[cover]
-image = "/opengraph-images/k8s.png"
-alt = "ASCII art of Kubernetes logo."
-caption = ""
 +++
 
 ## TL;DR

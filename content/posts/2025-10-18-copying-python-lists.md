@@ -5,11 +5,6 @@ date = "2025-10-18"
 categories = ["Python", "Computer Science"]
 ShowToc = false
 TocOpen = false
-
-[cover]
-image = "/opengraph-images/python.webp"
-alt = "ASCII art of Python logo."
-caption = ""
 +++
 
 {{< admonition type="info" title="tl;dr" >}}
