@@ -1,7 +1,7 @@
 {{- $img := "" -}}
 {{- $base := resources.Get "images/opengraph_base.png" -}}
 {{- $font := resources.Get "fonts/CommitMono.ttf" -}}
-{{- if and $base $font -}}
+{{- if and $base $font (not .Params.cover.image) -}}
   {{- $img = $base.Filter (images.Text .Title (dict
     "color" "#ffffff"
     "size" 48
