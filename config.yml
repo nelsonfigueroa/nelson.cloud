@@ -80,6 +80,8 @@ outputs:
     - JSON
 
 params:
+  # enable giscus comments
+  comments: true
   env: production
   description: "Nelson Figueroa - Software Engineer"
   author: Nelson Figueroa
