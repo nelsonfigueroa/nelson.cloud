@@ -195,6 +195,83 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+/* `tree` style table of contents */
+.toc details summary {
+    list-style: none;
+}
+
+.toc details summary::-webkit-details-marker {
+    display: none;
+}
+
+.toc details summary::before {
+    content: "[+] ";
+    font-family: monospace;
+    color: var(--secondary);
+}
+
+.toc details[open] summary::before {
+    content: "[-] ";
+}
+
+.toc .inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc .inner ul ul {
+    margin-left: 0;
+    padding-left: 0;
+    margin-inline-start: 0;
+}
+
+.toc li ul {
+    margin-inline-start: 0;
+}
+
+.toc .inner li {
+    position: relative;
+    padding-left: 4.5ch;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.toc .inner li::before {
+    content: "├── ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--secondary);
+    font-family: monospace;
+    line-height: 1.2;
+}
+
+/* vertical line connecting even through indentations */
+.toc .inner li:not(:last-child)::after {
+    content: "│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│\A│";
+    white-space: pre;
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    bottom: 0;
+    overflow: hidden;
+    color: var(--secondary);
+    font-family: monospace;
+    line-height: 1.2;
+    width: 1ch;
+}
+
+.toc .inner li:last-child::before {
+    content: "└── ";
+}
+
+.toc .inner {
+    padding: 10px 0;
+    margin: 0 20px 0 28px;
+}
+/* end `tree` style table of contents */
+
 /* floating table of contents */
 .dynamic-toc {
     position: fixed;
@@ -226,7 +303,6 @@ a:hover {
     padding: 0;
 }
 
-/* wtf this works */
 .dynamic-toc-list .dynamic-toc-list {
     margin-left: 1rem;
     margin-top: 0.25rem;
