@@ -5,6 +5,7 @@ date = "2024-05-16"
 categories = ["Python", "Cybersecurity"]
 ShowToc = true
 TocOpen = true
+featured = true
 +++
 
 ## Introduction

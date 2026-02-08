@@ -5,6 +5,7 @@ date = "2024-10-01"
 categories = ["AI", "Blogs", "Opinion"]
 ShowToc = false
 TocOpen = false
+featured = true
 +++
 
 I have a growing hatred for AI-generated images in blogs. It makes me wonder if the text in the blog posts is AI-generated to some extent. It's always disappointing seeing these images in blogs run by individuals. I expect this from corporate blogs but not indie blogs.

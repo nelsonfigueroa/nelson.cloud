@@ -1,0 +1,21 @@
+{{- $featured := where .Site.RegularPages "Params.featured" true -}}
+{{- if gt (len $featured) 0 -}}
+<span class="page-header">
+    <h2>Best Of</h2>
+</span>
+{{- range $featured }}
+<article class="post-entry">
+  <a class="post-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">{{- .Title }}</a>
+  {{- if (ne (.Param "hideSummary") true) }}
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  {{- end }}
+</article>
+{{- end }}
+{{- end -}}

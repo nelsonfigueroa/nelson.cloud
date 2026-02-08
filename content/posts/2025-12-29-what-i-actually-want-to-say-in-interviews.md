@@ -3,6 +3,7 @@ title = "What I Actually Want To Say in Tech Interviews"
 summary = "Honest answers to common interview questions in the tech field."
 date = "2025-12-29"
 categories = ["Opinion", "Work"]
+featured = true
 ShowToc = false
 TocOpen = false
 +++

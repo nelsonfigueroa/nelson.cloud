@@ -93,9 +93,12 @@ params:
   # hide summary in post links
   hideSummary: false
 
-  defaultTheme: auto
+  # show share buttons under every post.
   ShowShareButtons: false
-  ShowReadingTime: false
+  ShareButtons: ["x", "linkedin", "reddit", "ycombinator"] # whitelist share buttons
+
+  defaultTheme: auto
+  ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
   ShowPostNavLinks: true
