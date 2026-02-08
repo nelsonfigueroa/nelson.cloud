@@ -1,7 +1,7 @@
 {{- $featured := where .Site.RegularPages "Params.featured" true -}}
 {{- if gt (len $featured) 0 -}}
 <span class="page-header">
-    <h2>Best Of</h2>
+    <h2>Featured</h2>
 </span>
 {{- range $featured }}
 <article class="post-entry">
