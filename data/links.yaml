@@ -14,12 +14,6 @@ categories:
         title: "xeiaso.net"
       - url: "https://www.wheresyoured.at/"
         title: "wheresyoured.at"
-      - url: "https://pluralistic.net/"
-        title: "pluralistic.net"
-      - url: "https://coryd.dev/"
-        title: "coryd.dev"
-      - url: "https://ntietz.com/blog/"
-        title: "ntietz.com"
 
   - name: "Posts and Articles I Think You Should Read"
     links:
@@ -177,6 +171,10 @@ categories:
         title: "ASCII characters are not pixels: a deep dive into ASCII rendering"
       - url: "https://aaronstuyvenberg.com/posts/clawd-bought-a-car"
         title: "Clawdbot bought me a car"
+      - url: "https://campedersen.com/singularity"
+        title: "The Singularity will Occur on a Tuesday"
+      - url: "https://noyaml.com/"
+        title: "No YAML"
 
   - name: "Technical Guides and Tutorials"
     links:
@@ -250,8 +248,6 @@ categories:
         title: "musicforprogramming.net"
       - url: "https://plaintextsports.com/"
         title: "plaintextsports.com"
-      - url: "https://sdomi.pl/"
-        title: "sdomi.pl"
       - url: "https://scarpino.dev/"
         title: "scarpino.dev"
       - url: "https://karecha.com/"
@@ -264,8 +260,6 @@ categories:
         title: "oxide.computer"
       - url: "https://fabiensanglard.net/"
         title: "fabiensanglard.net"
-      - url: "https://laplab.me/"
-        title: "laplab.me"
       - url: "https://wttr.in/"
         title: "wttr.in"
       - url: "https://adelfaure.net/"
@@ -294,6 +288,8 @@ categories:
         title: "glfmn.io"
       - url: "https://theden.sh/"
         title: "theden.sh"
+      - url: "https://campedersen.com/"
+        title: "campedersen.com"
 
   - name: "Fun Links to Kill Time"
     links:
