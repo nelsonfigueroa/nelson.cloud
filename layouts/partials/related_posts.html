@@ -1,22 +1,11 @@
-{{- $currentPost := . -}}
-{{- $categories := .Params.categories -}}
-{{- if $categories -}}
-  {{- $primaryCategory := index $categories 0 -}}
-  {{- $relatedPosts := slice -}}
-
-  {{- range .Site.RegularPages -}}
-    {{- if and (ne . $currentPost) (in .Params.categories $primaryCategory) -}}
-      {{- $relatedPosts = $relatedPosts | append . -}}
-    {{- end -}}
-  {{- end -}}
-
-  {{- if gt (len $relatedPosts) 0 -}}
-    <div class="related-posts">
-        <span class="related-posts-header">
-            <h2>Related {{ $primaryCategory }} Posts</h2>
-        </span>
-      <ul>
-        {{- range first 3 $relatedPosts -}}
+{{- $related := .Site.RegularPages.Related . | first 3 -}}
+{{- with $related -}}
+<div class="related-posts">
+    <span class="related-posts-header">
+        <h2>Related Posts</h2>
+    </span>
+    <ul>
+        {{- range . -}}
           <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             {{- if .Params.summary -}}
@@ -24,13 +13,6 @@
             {{- end -}}
           </li>
         {{- end -}}
-      </ul>
-
-      {{- if gt (len $relatedPosts) 3 -}}
-        <p class="see-all-posts">
-          <a href="/categories/{{ $primaryCategory | urlize }}/">See all {{ $primaryCategory }} Posts →</a>
-        </p>
-      {{- end -}}
-    </div>
-  {{- end -}}
+    </ul>
+</div>
 {{- end -}}

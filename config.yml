@@ -192,6 +192,16 @@ markup:
 #     disabled: false
 #     privacyEnhanced: true
 
+related:
+  includeNewer: true
+  threshold: 80
+  toLower: false
+  indices:
+    - name: categories
+      weight: 100
+    - name: date
+      weight: 10
+
 services:
   instagram:
     disableInlineCSS: true
