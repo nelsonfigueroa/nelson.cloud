@@ -5,6 +5,7 @@ date = "2025-12-31"
 categories = ["Docker", "Synology"]
 ShowToc = true
 TocOpen = true
+featured = true
 +++
 
 At the time of writing Synology DiskStation Manager (DSM) [v7.2.2-72806](https://www.synology.com/en-us/releaseNote/DSM#ver_72806-5) is running on Linux v4.4.4 which doesn't support WireGuard.  
