@@ -18,11 +18,3 @@ These are some blogs I enjoy. This is essentially a [blogroll](https://indieweb.
 - https://xeiaso.net/
 
 - https://www.wheresyoured.at/
-
-- https://pluralistic.net/
-
-- https://coryd.dev/
-
-- https://ntietz.com/blog/
-
-- https://www.trickster.dev/post/
