@@ -3,6 +3,7 @@ title = "As an Employee, You Are Disposable"
 summary = "Companies are willing to lay off employees despite being profitable."
 date = "2023-05-06"
 categories = ["Opinion", "Work"]
+featured = true
 +++
 
 The recent tech layoffs have shown that employees are disposable in the eyes of executives. This isn't surprising though and I'm definitely not the first person that has written about this. I just want to highlight the current situation.
@@ -85,6 +86,7 @@ Here are some articles I've come across that share similar sentiments or are ver
 - [Once You're Laid Off, You'll Never Be the Same Again](https://mertbulan.com/2025/01/26/once-you-are-laid-off-you-will-never-be-the-same-again/)
 - [G̶o̶o̶g̶l̶e̶r̶... ex-Googler.](https://nerdy.dev/ex-googler)
 - [Motivation in an Absurd System](https://www.lloydatkinson.net/posts/2025/motivation-in-an-absurd-system/)
+- [The Three Year Myth](https://green.spacedino.net/the-three-year-myth/)
 
 ---
 
