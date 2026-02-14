@@ -133,12 +133,12 @@ a:hover {
     padding: 0;
 }
 
-.post-link:before {
+.post-link::before {
     content: "[";
     color: var(--tertiary);
 }
 
-.post-link:after {
+.post-link::after {
     content: "]";
     color: var(--tertiary);
 }
@@ -191,9 +191,6 @@ a:hover {
     color: var(--secondary);
 }
 
-.see-all-posts {
-    margin-bottom: 1.5rem;
-}
 
 /* `tree` style table of contents */
 .toc details summary {
