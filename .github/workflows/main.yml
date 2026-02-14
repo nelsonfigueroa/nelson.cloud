@@ -23,10 +23,6 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v0.155.2/hugo_extended_0.155.2_linux-amd64.deb --output-document hugo.deb
           sudo dpkg -i hugo.deb
-      - name: Install AWS CLI
-        run: |
-          pip3 install --upgrade setuptools
-          pip3 install awscli --upgrade --user
       - name: Build Site
         run: |
           hugo version
