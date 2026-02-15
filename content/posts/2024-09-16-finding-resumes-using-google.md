@@ -12,6 +12,10 @@ I recently had an idea of using Google search filters to see how easy it would b
 I wanted to see how easily a malicious person could harvest things like phone numbers, email addresses, and even physical addresses.
 Turns out it's not that difficult.
 
+{{< admonition type="warning" title="Disclaimer" >}}
+This is purely for educational purposes. I don't plan on collecting information and using it for malicious purposes.
+{{< /admonition >}}
+
 I started by searching domains that host static sites like `github.io` and `pages.dev`.
 
 I found a lot of resumes with this Google search. [Try this search yourself](https://www.google.com/search?q=resume.pdf+filetype:pdf+site:github.io).
