@@ -1,6 +1,6 @@
 +++
 title = "Setting up WireGuard on Synology DSM 7 using Docker and Gluetun"
-summary = "A guide to connect a Synology NAS to a WireGuard VPN server."
+summary = "A guide to connect a Synology NAS to a WireGuard VPN server, with qBittorrent as an example."
 date = "2025-12-31"
 categories = ["Docker", "Synology"]
 ShowToc = true
