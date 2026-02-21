@@ -99,6 +99,7 @@ I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfi
 - [GitHub](https://github.com/nelsonfigueroa)
 - [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)
 - [RSS Feed](/index.xml)
+- [Mastodon](https://infosec.exchange/@nelson)
 - <a id="of" href="#">Onlyfans</a>
 
 <script>

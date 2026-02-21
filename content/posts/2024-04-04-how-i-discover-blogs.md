@@ -99,3 +99,11 @@ A curated list of human-written blogs. When viewing a post or article from a blo
 **http://biglist.terraaeon.com/**
 
 Another curated list of personal websites.
+
+## blogroll.club
+
+**https://blogroll.club/**
+
+## rawweb.org
+
+**https://rawweb.org/**

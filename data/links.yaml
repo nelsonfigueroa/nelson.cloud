@@ -238,6 +238,10 @@ categories:
         title: "minifeed.net"
       - url: "http://biglist.terraaeon.com/"
         title: "biglist.terraaeon.com"
+      - url: "https://blogroll.club/"
+        title: "blogroll.club"
+      - url: "https://rawweb.org/"
+        title: "rawweb.org"
 
   - name: "Sites I Like Aesthetically"
     description: "You will notice that I generally like minimal sites with monospaced fonts."
