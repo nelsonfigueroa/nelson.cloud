@@ -296,6 +296,8 @@ categories:
         title: "theden.sh"
       - url: "https://campedersen.com/"
         title: "campedersen.com"
+      - url: "https://moonlit.exposed/"
+        title: "moonlit.exposed"
 
   - name: "Fun Links to Kill Time"
     links:
@@ -374,6 +376,8 @@ categories:
         title: "Distributed Denial of Secrets"
       - url: "https://canyoubeatthemarket.com/"
         title: "Can You Beat The Market?"
+      - url: "https://http.cat/"
+        title: "HTTP Cats"
 
   - name: "Other Sites That Share Links"
     links:
