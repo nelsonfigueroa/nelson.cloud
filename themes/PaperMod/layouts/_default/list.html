@@ -82,12 +82,13 @@
 </article>
 {{- end }}
 
-{{/* custom: random post button for home page only */}}
+{{/* custom: random post button in home page */}}
 {{- if .IsHome }}
 {{- partial "random_post_button.html" . }}
 <a class="random-post-button" href="/posts/">« See all Posts »</a>
 {{- end }}
 
+{{/* pagination */}}
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
   <nav class="pagination">
