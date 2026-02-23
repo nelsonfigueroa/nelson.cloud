@@ -22,13 +22,7 @@
 
 .post-entry {
     position: relative;
-    padding: 2px 4px;
-    background-color: color-mix(in srgb, var(--primary) 3%, var(--theme));
     margin-bottom: var(--gap);
-}
-
-.post-entry:hover {
-    background-color: color-mix(in srgb, var(--primary) 7%, var(--theme));
 }
 
 .tag-entry .entry-cover {
