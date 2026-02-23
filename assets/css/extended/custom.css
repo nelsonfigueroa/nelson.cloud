@@ -4,9 +4,8 @@ pre.ascii-art {
     white-space: pre-wrap;
     max-width: 100%;
 
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /* stars animations */
@@ -108,7 +107,6 @@ a:hover {
 
 /* code blocks with syntax highlighting */
 .highlight {
-    /*border: 1px solid var(--border);*/
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
@@ -337,20 +335,6 @@ a:hover {
         max-width: 280px;
     }
 }
-
-/* @media (min-width: 1200px) and (max-width: 1599px) {
-    .dynamic-toc {
-        right: 2.5rem !important;
-        max-width: 250px;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1199px) {
-    .dynamic-toc {
-        right: 1rem !important;
-        max-width: 220px;
-    }
-} */
 
 /* remove padding and margin from text within blockquotes so text is centered properly */
 .post-content blockquote p {
