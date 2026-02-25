@@ -83,6 +83,8 @@ params:
   # enable giscus comments
   comments: true
   env: production
+  assets:
+    disableFingerprinting: true
   description: "Nelson Figueroa - Software Engineer"
   author: Nelson Figueroa
   # keywords for home page
