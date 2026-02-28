@@ -173,7 +173,7 @@ Once the "Last modified" field doesn't say "Deploying" and displays a date, it's
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/distribution-created.webp" alt="Deployed CloudFront Distribution." width="720" height="51" style="max-width: 100%; height: auto; aspect-ratio: 1892 / 136;" loading="lazy" decoding="async">
 
-I chose to use the S3 website endpoint as the Origin, but you can also use the S3 bucket itself. I chose the website endpoint because my site has multiple `index.html` templates [which can give errors in CloudFront](https://nelson.cloud/resolving-aws-cloudfront-access-denied-errors/).
+I chose to use the S3 website endpoint as the Origin, but you can also use the S3 bucket itself. I chose the website endpoint because my site has multiple `index.html` templates [which can give errors in CloudFront]({{< ref "2021-07-25-aws-cloudfront-access-denied" >}}).
 
 More on Origins in the AWS documentation:
 - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigins.html
