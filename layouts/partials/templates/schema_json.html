@@ -100,13 +100,15 @@
   {{- if $i }}, {{end -}}
   {
     "@type": "Person",
-    "name": {{ $v }}
+    "name": {{ $v }},
+    "url": {{ "about/" | absURL }}
   }
   {{- end }}],
     {{- else -}}
   {
     "@type": "Person",
-    "name": {{ . }}
+    "name": {{ . }},
+    "url": {{ "about/" | absURL }}
   },
     {{- end -}}
   {{- end }}
