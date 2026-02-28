@@ -56,23 +56,6 @@ languages:
           url: support/
           weight: 7
 
-    # custom params for each language should be under [langcode].parms - hugo v0.120.0
-    params:
-      languageAltTitle: French
-      profileMode:
-        enabled: false
-        title: PaperMod
-        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
-        imageTitle: ProfileMode image
-        # imageWidth: 120
-        # imageHeight: 120
-        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-        buttons:
-          - name: Blog
-            url: posts
-          - name: Profile Mode
-            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-
 outputs:
   home:
     - HTML
@@ -114,19 +97,6 @@ params:
   ShowWordCount: true
   # Default images for Open Graph fallbacks (used when posts don't have cover images)
   images: ["/opengraph-images/default.png"]
-
-  profileMode:
-    enabled: false
-    title: PaperMod
-    imageUrl: "#"
-    imageTitle: my image
-    # imageWidth: 120
-    # imageHeight: 120
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Categories
-        url: categories
 
   homeInfoParams:
     Title: Nelson Figueroa
