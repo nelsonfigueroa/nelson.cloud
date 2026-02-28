@@ -6,7 +6,7 @@ categories = ["Homebrew", "macOS"]
 aliases = ["/keep-homebrew-tidy-with-brew-leaves/"]
 +++
 
-Homebrew has a `brew leaves` command that shows all installed packages with no dependencies. That means that they can be uninstalled without causing issues to other installed Homebrew packages. It's good to regularly run this command to keep Homebrew from getting too bloated.
+[Homebrew](https://brew.sh/) has a ["brew leaves"](https://docs.brew.sh/Manpage#leaves---installed-on-request---installed-as-dependency) command that shows all installed packages with no dependencies. That means that they can be uninstalled without causing issues to other installed Homebrew packages. It's good to regularly run this command to keep Homebrew from getting too bloated.
 
 Here's what my `brew leaves` output looks like at the time of this writing:
 
@@ -72,3 +72,6 @@ zlib
 ```
 
 And now `libpq` is gone! Try out `brew leaves` yourself. You may be surprised at the amount of things installed that you may not actually need.
+
+## References
+- https://docs.brew.sh/Manpage#leaves---installed-on-request---installed-as-dependency
