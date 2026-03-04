@@ -544,3 +544,42 @@ a:hover {
     background-color: rgba(158, 158, 158, 0.1);
 }
 .dark .admonition-quote .admonition-title { color: #9e9e9e; }
+
+/* categories page */
+.categories-chart {
+    list-style: none;
+    columns: 2;
+}
+
+/* uncomment if categories get too long and 2 columns is a tight fit on mobile */
+/*@media (max-width: 600px) {
+    .categories-chart {
+        columns: 1;
+    }
+}*/
+
+.categories-chart li {
+    display: flex;
+    gap: 1ch;
+    break-inside: avoid;
+}
+
+.categories-chart a {
+    min-width: 20ch;
+    color: var(--tint-2);
+}
+
+.categories-chart a::before {
+    content: "[";
+    color: var(--tertiary);
+}
+
+.categories-chart a::after {
+    content: "]";
+    color: var(--tertiary);
+}
+
+.cat-count {
+    color: var(--secondary);
+    user-select: none;
+}
