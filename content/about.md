@@ -36,7 +36,7 @@ Software Engineer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
 
 **Operating Systems**: macOS, Linux (Ubuntu, Kali Linux, Amazon Linux, Alpine Linux)
 
-**Other**: Command Line, Git, Agile, Scrum, Atlassian Suite (Jira, Confluence, Bitbucket)
+**Other**: Claude Code, Command Line, Git, Agile, Scrum, Atlassian Suite (Jira, Confluence, Bitbucket)
 
 ## Certifications
 
