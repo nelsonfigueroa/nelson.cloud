@@ -1,4 +1,10 @@
-/* from reset */
+/* standards-based scrollbar styling (cross-browser) */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--tertiary) transparent;
+}
+
+/* webkit-specific scrollbar styling (legacy) */
 ::-webkit-scrollbar-track {
     background: 0 0;
 }
@@ -52,7 +58,7 @@
 }
 
 /* from zmedia */
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
 
     /* reset */
     ::-webkit-scrollbar {

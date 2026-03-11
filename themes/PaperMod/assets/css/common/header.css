@@ -95,7 +95,7 @@ body:not(.dark) #sun {
 
 /* hamburger menu on smaller screens */
 /* Source: https://github.com/adityatelange/hugo-PaperMod/discussions/943 */
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
     .menu {
         list-style: none;
         position: absolute;

@@ -38,7 +38,3 @@
     justify-content: center;
 }
 
-.top-link:focus,
-#theme-toggle:focus {
-    outline: 0;
-}

@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
     /* theme-vars */
     :root {
         --gap: 14px;
@@ -29,13 +29,13 @@
 }
 
 /* footer */
-@media screen and (max-width: 900px) {
+@media screen and (width <= 900px) {
     .list .top-link {
         transform: translateY(-5rem);
     }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (width <= 340px) {
     .share-buttons {
         justify-content: unset;
     }
