@@ -243,7 +243,7 @@ kube-system            Active   1m
 kubernetes-dashboard   Active   1m
 ```
 
-There are additonal Namespaces here used by core Kubernetes services, but we don't have to worry about those.
+There are additional Namespaces here used by core Kubernetes services, but we don't have to worry about those.
 
 All of our `kubectl` commands right now will run against the 'default' Namespace within the 'minikube' Context. If in the future you have a Cluster running, say, on Amazon Web Services, you can switch to that Context/Namespace and run commands against that Cluster.
 
