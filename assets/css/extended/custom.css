@@ -333,6 +333,11 @@ a:hover {
     border-left-color: var(--tint);
 }
 
+.dark .toc,
+.dark .dynamic-toc {
+    box-shadow: 5px 5px var(--tertiary);
+}
+
 /* Hide on mobile and tablet */
 @media (width < 1450px) {
     .dynamic-toc {
