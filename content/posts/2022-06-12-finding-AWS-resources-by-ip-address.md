@@ -283,8 +283,5 @@ Check the value of `InterfaceType` for clues as to what resource is using the EN
 
 ## References
 
-Thanks to this Serverfault post for information regarding EC2 Instances:
-[https://serverfault.com/questions/710931/is-it-possible-to-get-aws-ec2-instance-id-based-on-its-ip-address](https://serverfault.com/questions/710931/is-it-possible-to-get-aws-ec2-instance-id-based-on-its-ip-address)
-
-Thanks to this AWS support page for the information regarding ENIs:
-[How can I find the resource that owns the unknown IP addresses in my Amazon VPC?](https://aws.amazon.com/premiumsupport/knowledge-center/vpc-find-owner-unknown-ip-addresses/)
+- https://serverfault.com/questions/710931/is-it-possible-to-get-aws-ec2-instance-id-based-on-its-ip-address
+- https://repost.aws/knowledge-center/vpc-find-owner-unknown-ip-addresses
