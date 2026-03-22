@@ -1,1 +1,1 @@
-Repo for my personal site [nelson.cloud](https://nelson.cloud). Built using [Hugo](https://gohugo.io). My site uses a modified version of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+Source code for my personal site [nelson.cloud](https://nelson.cloud). Built using [Hugo](https://gohugo.io). It has a custom theme that originally started with [PaperMod](https://github.com/adityatelange/hugo-PaperMod) as the base.

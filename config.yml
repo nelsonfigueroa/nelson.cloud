@@ -2,7 +2,7 @@ baseURL: "https://nelson.cloud/"
 title: Nelson Figueroa
 pagination:
   pagerSize: 20
-theme: [PaperMod]
+theme: [cli]
 
 disableHugoGeneratorInject: true # remove <meta name="generator" content="Hugo {{ hugo.Version }}"> from HTML output
 enableInlineShortcodes: true
