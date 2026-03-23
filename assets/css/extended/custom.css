@@ -14,6 +14,14 @@ pre.ascii-art {
     color: var(--tertiary);
 }
 
+.hidden-star.star-tint {
+    color: var(--tint);
+}
+
+.hidden-star.star-tint-2 {
+    color: var(--tint-2);
+}
+
 /* stars animations */
 /* star animation 1 */
 .shining-star::after {
