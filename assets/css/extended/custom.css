@@ -346,6 +346,12 @@ a:hover {
     box-shadow: 5px 5px var(--tertiary);
 }
 
+@media screen and (width <= 768px) {
+    .dark .menu {
+        box-shadow: 5px 5px var(--tertiary);
+    }
+}
+
 /* Hide on mobile and tablet */
 @media (width < 1450px) {
     .dynamic-toc {
