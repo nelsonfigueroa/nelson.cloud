@@ -10,7 +10,7 @@ aliases = ["/how-to-generate-the-current-date-and-time-in-hugo/"]
 
 Here are a bunch of [Hugo](https://gohugo.io/) snippets you can use to generate the current date and time in your Hugo site.
 
-You can copy and paste these into HMTL templates. If you want to use these within your posts/articles (Markdown files) you'll need to create a shortcode first. Scroll down to the [Using Shortcodes](#using-shortcodes) section for more details.
+You can copy and paste these into HTML templates. If you want to use these within your posts/articles (Markdown files) you'll need to create a shortcode first. Scroll down to the [Using Shortcodes](#using-shortcodes) section for more details.
 
 I'm running Hugo v0.140.0+extended. For all examples, I will assume the time is 2024-12-22 2:30PM PT.
 

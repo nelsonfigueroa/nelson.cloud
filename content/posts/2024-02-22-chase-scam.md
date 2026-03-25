@@ -80,7 +80,7 @@ I typed in some fake credentials and submitted the form. A `POST` request goes o
 {"uid":"1ef25781cb3fd42f981b2bbb183d9887","stp":"4","cemail":"nah@fu.com","bdate":"ajlksdasdjl"}
 ```
 
-Then I was redirected to the offical Chase site:
+Then I was redirected to the official Chase site:
 
 <img src="/chase-scam/chase-site.webp" alt="official chase site" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
@@ -90,7 +90,7 @@ If you've read my previous articles about scams and phishing, you know what's ne
 
 These guys were thorough so I'll need to dynamically create 5 different payloads and send them to the url. Thankfully it's the same endpoint for all of these payloads.
 
-I want to dynamically generate headers and payloads that seem as realstic as possible. These scammers were thorough so I want to be thorough in making their lives more difficult (also I'm unemployed right now so I have a lot of free time. Someone please hire me 🥺)
+I want to dynamically generate headers and payloads that seem as realistic as possible. These scammers were thorough so I want to be thorough in making their lives more difficult (also I'm unemployed right now so I have a lot of free time. Someone please hire me 🥺)
 
 This is the Python script I came up with:
 

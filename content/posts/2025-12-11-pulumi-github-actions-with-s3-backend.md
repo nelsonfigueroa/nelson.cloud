@@ -69,7 +69,7 @@ jobs:
           AWS_REGION: us-east-1 # change the region as needed
 ```
 
-This runs a `pulumi preview` so it'll veryify that everything is set up correctly without actually deplpoying anything.
+This runs a `pulumi preview` so it'll verify that everything is set up correctly without actually deploying anything.
 
 ## Testing the Workflow
 

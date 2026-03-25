@@ -41,7 +41,7 @@ It has all the essential features that you'd expect from a modern messaging appl
 
 **Official site:** [https://mullvad.net/en/](https://mullvad.net/en/)
 
-Mullvad VPN does not log any activity (and has been audited to prove it), and is pretty afforable. I know many people out there opt to use free VPNs, but there's a 99% chance they're selling your information to marketing companies. It's much better to pay for a VPN.
+Mullvad VPN does not log any activity (and has been audited to prove it), and is pretty affordable. I know many people out there opt to use free VPNs, but there's a 99% chance they're selling your information to marketing companies. It's much better to pay for a VPN.
 
 The source code for the Mullvad client applications [is open-source](https://github.com/mullvad/mullvadvpn-app).
 

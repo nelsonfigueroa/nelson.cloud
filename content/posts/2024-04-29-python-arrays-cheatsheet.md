@@ -134,7 +134,7 @@ print(my_list)
 
 ### The First Element
 
-There's no bult-in Python method to get the first element as far as I know, just specify index 0 like in most programming languages:
+There's no built-in Python method to get the first element as far as I know, just specify index 0 like in most programming languages:
 
 ```python
 my_list = ['A', 'B', 'C', 'D']

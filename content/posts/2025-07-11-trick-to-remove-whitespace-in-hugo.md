@@ -54,7 +54,7 @@ The period was on its own line, which looks suspicious. Why is there additional 
 
 Eventually, I was out of ideas and asked ChatGPT what could be going wrong. ChatGPT suggested I could add the `{{- "" -}}` shortcode to `render-link.html` to remove the whitespace. Apparently that would force the removal of both leading and trailing whitespace. And sure enough it worked!
 
-I modified my `render-link.html` template to include the `{{- "" -}}` shortcode at the end of the `<a>` tag in the hightlighted line:
+I modified my `render-link.html` template to include the `{{- "" -}}` shortcode at the end of the `<a>` tag in the highlighted line:
 
 {{< highlight go-html-template "hl_lines=18" >}}
 {{- $url := .Destination -}}
