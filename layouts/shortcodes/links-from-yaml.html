@@ -1,4 +1,4 @@
-{{ range .Site.Data.links.categories }}
+{{ range hugo.Data.links.categories }}
 {{ $anchor := .name | urlize }}
 <h2 id="{{ $anchor }}">{{ .name }}</h2>
 
