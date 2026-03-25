@@ -26,3 +26,7 @@ I keep thinking a lot about how I perhaps tied my identity too much to my career
 At the end of the day, the shareholders care about delivering features, gaining customers, and making money. They don't care how software is built.
 
 I don't know what to make of this.
+
+---
+
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=47497679)
