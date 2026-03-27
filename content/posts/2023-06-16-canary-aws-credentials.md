@@ -19,7 +19,7 @@ AWS_SECRET_ACCESS_KEY=hOLua0wygPCjjB3/w8wO+a1t6pvGSqYDFV6MD2Il
 REGION=us-east-2
 ```
 
-Around 2 minutes after deploying out this file, I received my first email notification from [canarytokens.org](https://canarytokens.org). That was fast! It just goes to show that people are constantly scanning for credentials on the internet. Within an an hour or so I had ~10 notifications.
+Around 2 minutes after deploying out this file, I received my first email notification from [canarytokens.org](https://canarytokens.org). That was fast! It just goes to show that people are constantly scanning for credentials on the internet. Within an hour or so I had ~10 notifications.
 
 The notification emails from canarytokens.org provide useful details about the attackers using the AWS API keys. Here's an example notification I received:
 

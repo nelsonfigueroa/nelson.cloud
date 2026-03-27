@@ -69,11 +69,11 @@ You can create a free account to try it out.
 
 **Official site:** [https://www.obdev.at/products/littlesnitch/index.html](https://www.obdev.at/products/littlesnitch/index.html)
 
-Little Snitch is a macOS-only application firewall that runs on your Mac and monitors all incoming and outgoing connections. It allows you to allow or deny connections as needed and gives you plenty of information about what your applications are connecting to. There's also [curated blocklists](https://www.obdev.at/products/littlesnitch-mini/blocklists.html) you can add to Little Snitch to block things like ads on your entire machine.
+Little Snitch is a macOS-only application firewall that runs on your Mac and monitors all incoming and outgoing connections. It allows you to allow or deny connections as needed and gives you plenty of information about what your applications are connecting to. There are also [curated blocklists](https://www.obdev.at/products/littlesnitch-mini/blocklists.html) you can add to Little Snitch to block things like ads on your entire machine.
 
 This is a paid app (and there's a free trial), but I think it's worth it.
 
-If you want a free alternative, check out [LuLu](https://objective-see.com/products/lulu.html). It has less features, but it's worth a try if you want to see what your machine is connecting to. The same developer has other Mac-related applications that may be useful: [objective-see.com](https://objective-see.com/index.html).
+If you want a free alternative, check out [LuLu](https://objective-see.com/products/lulu.html). It has fewer features, but it's worth a try if you want to see what your machine is connecting to. The same developer has other Mac-related applications that may be useful: [objective-see.com](https://objective-see.com/index.html).
 
 ## Further Research
 

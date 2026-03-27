@@ -25,9 +25,7 @@ This guide assumes the following:
 
 ## Creating an S3 Bucket
 
-First, we'll need to create an S3 bucket. This is where static files will be placed (HTML/CSS/JavaScript).
-
-This bucket is where static files (HTML/CSS/JavaScript/Images, etc) will go.
+First, we'll need to create an S3 bucket. This is where static files (HTML/CSS/JavaScript/Images, etc) will go.
 
 In the AWS console, browse to S3. Create a new bucket. I named my bucket with the same name as my domain.
 
@@ -91,7 +89,7 @@ SSL certificates used with CloudFront must be in the us-east-1 region. Check the
 
 Then click the "Request" button.
 
-For "Certificate type" select "Request a public certificate". Then click Next
+For "Certificate type" select "Request a public certificate". Then click Next.
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/requesting-ssl-certificate.webp" alt="Requesting an ACM SSL certificate." width="720" height="236" style="max-width: 100%; height: auto; aspect-ratio: 2122 / 696;" loading="lazy" decoding="async">
 

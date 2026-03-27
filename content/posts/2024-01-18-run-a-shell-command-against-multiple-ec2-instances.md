@@ -47,7 +47,7 @@ After running a command you'll see the following screen. You can see the status 
 
 ### Viewing Logs
 
-If you enabled logging to S3, you can browse to the bucket you selected and view logs. The output log file will be several directories deep under `<Command ID>/<ec2-instance-id/<command document>/...`. It's easier if you refer to the screenshot below:
+If you enabled logging to S3, you can browse to the bucket you selected and view logs. The output log file will be several directories deep under `<Command ID>/<ec2-instance-id>/<command document>/...`. It's easier if you refer to the screenshot below:
 
 <img src="/run-a-shell-command-on-ec2-instances/s3-logs.webp" alt="AWS SSM output logs" width="720" height="324" style="max-width: 100%; height: auto; aspect-ratio: 2444 / 1100;" loading="lazy" decoding="async">
 

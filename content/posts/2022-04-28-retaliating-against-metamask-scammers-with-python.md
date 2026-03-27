@@ -124,7 +124,7 @@ The morning after, I noticed that my script output was stuck along with a new re
 
 <img src="/retaliating-against-metamask-scammers/scammer-response.webp" alt="scammer response" width="720" height="503" style="max-width: 100%; height: auto; aspect-ratio: 1662 / 1163;" loading="lazy" decoding="async">
 
-I guess they caught on LOL. They blocked my IP address from sending requests, so I simply changed changed my IP address and carried on.
+I guess they caught on LOL. They blocked my IP address from sending requests, so I simply changed my IP address and carried on.
 
 {{< admonition type="tip" title="2022-07-25 Update" >}}
 I should have included headers in my requests to make them look as legitimate as possible. The `requests` Python package sends the version of the package itself in the `User-Agent` header, giving away the fact that Python is being used to send requests.

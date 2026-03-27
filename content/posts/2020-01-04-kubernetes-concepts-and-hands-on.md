@@ -134,7 +134,7 @@ There are four types of Services in Kubernetes
 - `ClusterIP`: The default type of service. It exposes the service internally in the cluster and can only be reached from within the cluster.
 - `NodePort`: This type of service exposes the service on each node's IP on a static port. A ClusterIP service is automatically created and the NodePort service will route to it. You can access the NodePort service from outside of the cluster by using the NodeIP:NodePort socket.
 - `LoadBalancer`: This service type exposes the service externally using the load balancer of your chosen cloud provider. The external load balancer routes to NodePort and ClusterIP services which are automatically created.
-- `ExternalName`: Maps the service to to the contents of the `ExternalName` field. No Proxying of any kind is set up.
+- `ExternalName`: Maps the service to the contents of the `ExternalName` field. No Proxying of any kind is set up.
 
 If a Deployment named `mydeployment` has been previously created, we can create a Service using the command line as such:
 
@@ -192,7 +192,7 @@ After installation is complete, start up minikube
 $ minikube start
 ```
 
-This command will download the Minkube .iso and run it using Virtualbox.
+This command will download the Minikube .iso and run it using Virtualbox.
 
 We can double check that everything is working by running the following:
 
@@ -218,7 +218,7 @@ And we have confirmation that a single Node is up and running!
 
 ### Deploying An Image Through The Command Line
 
-Now that Minkube is set up and we have a Cluster running, let's recap some of the concepts we covered above. Recall Contexts and Namespaces.
+Now that Minikube is set up and we have a Cluster running, let's recap some of the concepts we covered above. Recall Contexts and Namespaces.
 
 By default, Minikube created a Cluster with a Context called 'minikube'. We can see this by running:
 
@@ -299,7 +299,7 @@ helloworld   NodePort    10.96.77.40   <none>        80:31003/TCP   6m17s
 kubernetes   ClusterIP   10.96.0.1     <none>        443/TCP        12m
 ```
 
-There's a default 'kubernetes' service that we can ignore. The one we created is 'helloworld'.The Deployment we created specified the state we want our Cluster to be in, while the Service we created exposed the Pod created by the Deployment.
+There's a default 'kubernetes' service that we can ignore. The one we created is 'helloworld'. The Deployment we created specified the state we want our Cluster to be in, while the Service we created exposed the Pod created by the Deployment.
 
 We can also view the single Node in our Cluster:
 

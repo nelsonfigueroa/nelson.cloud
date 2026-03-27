@@ -9,7 +9,7 @@ TocOpen = true
 
 ## Generating All Routes for a Model
 
-Lets say we have an `item` model in a Ruby on Rails application. To create standard routes for this model, we write the following in `config.rb`:
+Let's say we have an `item` model in a Ruby on Rails application. To create standard routes for this model, we write the following in `config.rb`:
 
 ```ruby
 Rails.application.routes.draw do

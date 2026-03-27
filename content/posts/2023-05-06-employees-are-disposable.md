@@ -14,7 +14,7 @@ caption="*Source: [TrueUp: Tech Layoff Tracker](https://www.trueup.io/layoffs)*"
 <br>
 
 It doesn't matter if investor expectations are surpassed, layoffs can still take place.
-{{< figure src="/employees-are-disposable/cnbc-shopify.webp" alt="CNBC Shopfiy headline"
+{{< figure src="/employees-are-disposable/cnbc-shopify.webp" alt="CNBC Shopify headline"
 caption="*Source: [CNBC: Shopify cuts 20% of its workforce; shares surge on earnings beat](https://www.cnbc.com/2023/05/04/shopify-cuts-20percent-of-its-workforce-shares-surge-on-earnings-beat.html)*" >}}
 
 <br>

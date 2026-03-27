@@ -153,7 +153,7 @@ We can use the following command formula to test the permissions set to both ser
 kubectl auth can-i <verb> <resource> --as=system:serviceaccount:<namespace>:<serviceaccountname> -n <namespace>
 ```
 
-First lets try getting a secret under both service accounts. We expect `service-account-1` to be able to `get` a secret, but not `service-account-2`:
+First let's try getting a secret under both service accounts. We expect `service-account-1` to be able to `get` a secret, but not `service-account-2`:
 
 ```shell
 $ kubectl auth can-i get secrets --as=system:serviceaccount:example:service-account-1 -n example
@@ -169,7 +169,7 @@ no
 
 Works as expected!
 
-Now lets try getting the `credentials` secret we created earlier just to double check. We should get the same results as above.
+Now let's try getting the `credentials` secret we created earlier just to double check. We should get the same results as above.
 
 ```shell
 $ kubectl auth can-i get secrets/credentials --as=system:serviceaccount:example:service-account-1 -n example
@@ -185,7 +185,7 @@ no
 
 Works as expected.
 
-Next lets try listing secrets under both service accounts. This time we expect `service-account-2` to be able to `list` secrets, but not `service-account-1`:
+Next let's try listing secrets under both service accounts. This time we expect `service-account-2` to be able to `list` secrets, but not `service-account-1`:
 
 ```shell
 $ kubectl auth can-i list secrets --as=system:serviceaccount:example:service-account-1 -n example

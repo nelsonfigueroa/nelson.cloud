@@ -9,7 +9,7 @@ I find myself asking this any time I discover that someone uses a web browser wi
 
 The "main" web is a terrible experience when browsing without ad blockers.
 
-If you're one of those people that doesn't have an ad blocker here are some links to improve your web browsing experience.
+If you're one of those people that doesn't have an ad blocker, here are some links to improve your web browsing experience.
 
 ## Browser Extensions to Block Ads
 

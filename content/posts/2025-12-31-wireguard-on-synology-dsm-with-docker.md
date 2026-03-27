@@ -171,14 +171,14 @@ You'll see some output similar to the following:
 [+] Running 2/2
  ✔ Network docker_default  Created
  ✔ Container gluetun       Started
- ```
- 
- For Mullvad VPN specifically there's a way to verify that a connection is going through their servers. We can run a command against the Gluetun container to confirm.
- 
- ```
- $ docker exec gluetun wget -qO- https://am.i.mullvad.net/connected
- You are connected to Mullvad (server us-lax-wg-602). Your IP address is 23.162.40.236
- ```
+```
+
+For Mullvad VPN specifically there's a way to verify that a connection is going through their servers. We can run a command against the Gluetun container to confirm.
+
+```
+$ docker exec gluetun wget -qO- https://am.i.mullvad.net/connected
+You are connected to Mullvad (server us-lax-wg-602). Your IP address is 23.162.40.236
+```
 
 Regardless of VPN provider, you can check that the `wget` command returns a different IP address from the IP address your internet provider has assigned to you.
 
@@ -273,9 +273,9 @@ You'll see output similar to:
 [+] Running 2/2
  ✔ Container gluetun  Started
  ✔ Container qb       Started
- ```
- 
- qBittorrent has a web interface that can be accessed on port `8080`. Open up a web browser and go to `http://<your-synology-ip-address>:8080` and see if the web UI shows up. If it does, qBittorrent is running successfully and all of its network traffic will run through Gluetun and WireGuard!
+```
+
+qBittorrent has a web interface that can be accessed on port `8080`. Open up a web browser and go to `http://<your-synology-ip-address>:8080` and see if the web UI shows up. If it does, qBittorrent is running successfully and all of its network traffic will run through Gluetun and WireGuard!
 
 We can do one final check with the qBittorrent container to make sure it has the same IP address as the Gluetun container:
 

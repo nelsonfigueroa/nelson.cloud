@@ -5,7 +5,7 @@ date = "2023-05-04"
 categories = ["Random"]
 +++
 
-Here are my donations earnings for the past year.
+Here are my donation earnings for the past year.
 
 <img src="/my-donation-earnings-over-the-past-year/earnings.webp" alt="Buymeacoffee total donations" width="720" height="286" style="max-width: 100%; height: auto; aspect-ratio: 1772 / 704;" loading="lazy" decoding="async">
 

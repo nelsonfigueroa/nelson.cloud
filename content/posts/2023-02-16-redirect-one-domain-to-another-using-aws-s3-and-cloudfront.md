@@ -19,7 +19,7 @@ This section covers the redirecting of the HTTP version of the old domain. In my
 
 ### Configuring a S3 Bucket
 
-To begin redirecting one domain to another, we need to create a S3 bucket.
+To begin redirecting one domain to another, we need to create an S3 bucket.
 
 Go to [Amazon S3](https://s3.console.aws.amazon.com/s3/) and click the "Create bucket" button.
 I prefer to name the bucket with the same name as the domain being redirected, but you can choose any name you want.
@@ -90,9 +90,9 @@ If this isn't a problem to you, you are free to stop here. Otherwise, read on.
 
 ## Redirecting the Old Domain Using HTTPS
 
-To redirect the old domain when using HTTPS we'll need a ACM SSL Certificate and a CloudFront Distribution. This will allow the HTTPS version of the old domain to be redirected.
+To redirect the old domain when using HTTPS we'll need an ACM SSL Certificate and a CloudFront Distribution. This will allow the HTTPS version of the old domain to be redirected.
 
-### Requesting a ACM SSL Certificate
+### Requesting an ACM SSL Certificate
 
 Browse to the AWS Certificate Manager console. Make sure you are in the us-east-1 region by looking at the region on the top-right corner of the screen. Only ACM certificates from the us-east-1 region will work with a CloudFront Distribution.
 
@@ -123,7 +123,7 @@ Now we can create a CloudFront Distribution and associate this certificate to it
 
 Browse to the CloudFront console and click on the "Create distribution" button on the top right.
 
-In the form, fill out the form with the following:
+Fill out the form with the following:
 
 For "Origin domain" select the S3 bucket you created for your old domain. Or you can paste in the S3 bucket website endpoint from earlier (this is what I did). Either one of these work for our case.
 
@@ -147,7 +147,7 @@ The rest of the settings can remain as is. Click the "Create distribution" butto
 
 The final step is to update the previous record so that it points to the distribution instead of the bucket website endpoint.
 
-Go to Route 53. Click into the hosted zone for the old domain. Then edit the record that was previously created. Instead of entering the S3 Bucket website endpoint in the "Value field, enter the CloudFront Distribution domain name. Then click "Save".
+Go to Route 53. Click into the hosted zone for the old domain. Then edit the record that was previously created. Instead of entering the S3 Bucket website endpoint in the "Value" field, enter the CloudFront Distribution domain name. Then click "Save".
 
 <img src="/redirect-one-domain-to-another/editing-record.webp" alt="Editing Route 53 CNAME record" width="720" height="257" style="max-width: 100%; height: auto; aspect-ratio: 2740 / 980;" loading="lazy" decoding="async">
 

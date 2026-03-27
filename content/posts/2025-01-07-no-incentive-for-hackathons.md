@@ -16,7 +16,7 @@ You might ask, "if you don't care about money, why not just do a hackathon for y
 If I join a hackathon outside of work I can do it to potentially create a side hustle or simply for the joy of creating software.
 
 If I volunteer to work on a hackathon for my employer, my ideas and creations are taken from me even if I enjoy working on these projects.
-It feels like someone is taking advantage of me, specially if hackathons are not part of my job description and I receive no additional compensation for participating.
+It feels like someone is taking advantage of me, especially if hackathons are not part of my job description and I receive no additional compensation for participating.
 If there is compensation, it's usually something like a $100 Amazon gift card.
 
 Maybe it's just me that can't get motivated or excited about a company hackathon.

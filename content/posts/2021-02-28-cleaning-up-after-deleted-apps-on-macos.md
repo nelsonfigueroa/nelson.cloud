@@ -30,7 +30,7 @@ find / \
 -name \*lastpass\* 2>&1 | grep -v -E 'Operation not permitted|Permission denied|Not a directory'
 ```
 
-The command may take some time to complete depending on your machine specs and amount of files you have. It took around ~10 minutes for me on an 2019 Macbook Pro with an i7 Intel CPU.
+The command may take some time to complete depending on your machine specs and amount of files you have. It took around ~10 minutes for me on a 2019 MacBook Pro with an i7 Intel CPU.
 
 
 Here's the output I got from the command above. I can now go through each of these files and folders and decide if I want to delete them manually:

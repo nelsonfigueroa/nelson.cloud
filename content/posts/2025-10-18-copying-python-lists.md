@@ -19,7 +19,7 @@ Say we have two Python lists -- `list_a` and `list_b`.
 
 If we try to make a copy of `list_a` and assign it to `list_b` using the assignment operator `=`, what really happens is that both `list_a` and `list_b` point to the same memory address.
 
-That means that any list-manipulating actions that are done on either `list_a` or `list_b` will affect the same list in memory. We don't have actually have two separate lists we can act upon.
+That means that any list-manipulating actions that are done on either `list_a` or `list_b` will affect the same list in memory. We don't actually have two separate lists we can act upon.
 
 In the example below, although we append the integer `4` to `list_a`, we can see that printing out `list_b` shows the newly added element. That's because both list variables point to the same memory address:
 

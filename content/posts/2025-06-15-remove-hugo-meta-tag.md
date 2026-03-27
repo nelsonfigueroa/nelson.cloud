@@ -9,7 +9,7 @@ TocOpen = false
 
 I like to keep my [Hugo](https://gohugo.io/) site as lean as possible for performance reasons and to save on hosting costs.
 
-I recently discovered that Hugo generates a HTML `<meta>` tag with the Hugo version in the `<head>` tag. This is done by default and looks like this:
+I recently discovered that Hugo generates an HTML `<meta>` tag with the Hugo version in the `<head>` tag. This is done by default and looks like this:
 
 ```html
 <head>

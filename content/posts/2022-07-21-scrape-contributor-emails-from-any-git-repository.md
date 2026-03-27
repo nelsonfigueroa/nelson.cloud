@@ -12,7 +12,7 @@ I now realize that is a very complicated way to go about it after discovering th
 With `git shortlog` you can list all contributor emails for any git repository, not just GitHub repos.
 
 {{< admonition type="warning" title="Disclaimer" >}}
-I am writing about this to make others aware of this form of scraping and it is purely for educational purposes. I do not plan on doing anything with emails from git repos and you shouldn’t either
+I am writing about this to make others aware of this form of scraping and it is purely for educational purposes. I do not plan on doing anything with emails from git repos and you shouldn’t either.
 {{< /admonition >}}
 
 {{< admonition type="info" title="tl;dr" >}}

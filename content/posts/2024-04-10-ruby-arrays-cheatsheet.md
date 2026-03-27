@@ -7,7 +7,7 @@ ShowToc = true
 TocOpen = false
 +++
 
-This is a cheatsheet I made for myself when studying for ([Leetcode](https://leetcode.com/)/[Hackerrank](https://www.hackerrank.com/))-style interviews. It's organized in a way that makes sense to me when I'm trying to solve an array problem. I figured I would make it public incase it can help others :)
+This is a cheatsheet I made for myself when studying for ([Leetcode](https://leetcode.com/)/[Hackerrank](https://www.hackerrank.com/))-style interviews. It's organized in a way that makes sense to me when I'm trying to solve an array problem. I figured I would make it public in case it can help others :)
 
 All examples were run using the [Ruby v3.2.3 REPL](https://www.rubyguides.com/2018/12/what-is-a-repl-in-ruby/).
 

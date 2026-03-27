@@ -49,7 +49,7 @@ public-ipv4
 reservation-id
 security-groups
 services/
-````
+```
 
 Get instance AMI ID:
 

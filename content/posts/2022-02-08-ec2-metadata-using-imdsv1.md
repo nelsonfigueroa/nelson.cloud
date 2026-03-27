@@ -82,7 +82,7 @@ $ curl -s http://169.254.169.254/latest/meta-data/instance-id
 i-01234567890f1234b
 ```
 
-Get instance type
+Get instance type:
 
 ```sh
 $ curl -s http://169.254.169.254/latest/meta-data/instance-type

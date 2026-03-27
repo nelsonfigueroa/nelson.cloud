@@ -7,7 +7,7 @@ categories = ["Ruby on Rails"]
 
 {{< admonition type="warning" >}}
 2021-11-08 update:
-When I first wrote this post I thought this was a better way of writing links, specially after seeing it done this way in a professional setting.
+When I first wrote this post I thought this was a better way of writing links, especially after seeing it done this way in a professional setting.
 However, it may not be best practice. It's best to stick with Rails helpers since they're dynamic. If routes change, the helpers may not need to be changed at all.
 {{< /admonition >}}
 
@@ -52,7 +52,7 @@ If a link requires an ID, we can add it through string interpolation. So the fol
 <%= link_to account.name, "/accounts/#{@account.id}" %>
 ```
 
-This also applies to nested routes. Lets say we have the following in `routes.rb`:
+This also applies to nested routes. Let's say we have the following in `routes.rb`:
 
 ```rb
 resources :accounts do

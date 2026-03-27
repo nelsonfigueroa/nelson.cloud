@@ -26,7 +26,7 @@ end
 
 Notice that we're specifying `precision` and `scale` in the decimal column:
 - Precision is the total number of digits in the number, both before and after the decimal point.
-- Scale is the number of digits after the decimal
+- Scale is the number of digits after the decimal.
 
 So this field will take a decimal value up to 999.99.
 
@@ -74,7 +74,7 @@ end
 
 ## ERB Form
 
-In the form, we need to use use `step` to add front-end validation and to be able to accept decimal values in the field.
+In the form, we need to use `step` to add front-end validation and to be able to accept decimal values in the field.
 
 ```rb
 <%= form_with model: @expense, url: {controller: 'expenses', action: 'create'} do |f| %>
@@ -90,7 +90,7 @@ Thanks to our model validation, a user won't be able to submit values like `555.
 
 ## SQLite vs PostgreSQL Validation
 
-Lets say we didn't have any front-end or model validations. How would the database handle decimal inputs that exceed both precision and scale? We can do some experiments in the Rails console.
+Let's say we didn't have any front-end or model validations. How would the database handle decimal inputs that exceed both precision and scale? We can do some experiments in the Rails console.
 
 ### Exceeding Scale Constraints
 

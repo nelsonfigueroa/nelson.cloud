@@ -77,7 +77,7 @@ Now push your code to GitHub and see if the GitHub Action workflow ran successfu
 
 <img src="/github-actions-with-pulumi-s3/github-actions-logs.webp" alt="GitHub Actions workflow logs showing successful Pulumi preview" width="2854" height="1632" style="max-width: 100%; height: auto; aspect-ratio: 1427 / 816;" loading="lazy" decoding="async">
 
-If this works, you should be good to go. You can update your Pulumi code and, change `command: preview` to `command: up` in the GitHub Actions YAML file and run it again to actually deploy some infrastructure.
+If this works, you should be good to go. You can update your Pulumi code and change `command: preview` to `command: up` in the GitHub Actions YAML file and run it again to actually deploy some infrastructure.
 
 ## References
 - https://github.com/pulumi/actions

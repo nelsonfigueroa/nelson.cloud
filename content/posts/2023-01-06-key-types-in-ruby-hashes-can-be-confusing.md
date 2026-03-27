@@ -89,7 +89,7 @@ $ ruby script.rb
 1
 ```
 
-We can see that JSON syntax turns all keys in the hash symbols.
+We can see that JSON syntax turns all keys in the hash into symbols.
 
 ## Mixing Hash Key Data Types
 

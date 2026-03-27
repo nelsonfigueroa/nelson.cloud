@@ -24,7 +24,7 @@ There's more posts like these that can be found with a quick Google search.
 
 **https://kagi.com/smallweb/**
 
-Kagi Small Web is an effort to highlight smaller sites and blogs around the web. You can learn more in [Kagi's announcement post](https://blog.kagi.com/small-web)
+Kagi Small Web is an effort to highlight smaller sites and blogs around the web. You can learn more in [Kagi's announcement post](https://blog.kagi.com/small-web).
 
 A list of all sites indexed by Kagi Small Web is on GitHub: [https://github.com/kagisearch/smallweb/blob/main/smallweb.txt](https://github.com/kagisearch/smallweb/blob/main/smallweb.txt)
 

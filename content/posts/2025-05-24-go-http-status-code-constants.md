@@ -26,7 +26,7 @@ if resp.StatusCode == http.StatusOK {
 }
 ```
 
-Unfortunately the the link doesn't show any any full, working examples. So here's an example covering some of the more common http status codes that you can use and modify as needed.
+Unfortunately the link doesn't show any full, working examples. So here's an example covering some of the more common http status codes that you can use and modify as needed.
 
 ```go
 package main
@@ -86,7 +86,7 @@ func main() {
 
 There's also [a function `http.StatusText()`](https://pkg.go.dev/net/http#StatusText) that allows you to pass in status codes and get a message for logging purposes or displaying to users. You can see all the responses in [the source code here](https://go.dev/src/net/http/status.go), it's a bunch of `case` statements.
 
-For example, lets say we want to display a message if we don't get a 200 status code. Instead of writing code to print out a different message depending on the status code value, we can use the `http.StatusText()` function:
+For example, let's say we want to display a message if we don't get a 200 status code. Instead of writing code to print out a different message depending on the status code value, we can use the `http.StatusText()` function:
 
 ```go
 package main
