@@ -86,7 +86,7 @@ at_exit do
 
   if File.exist?(development_logfile)
     # get file size of development.log and convert to Megabytes rounded to 2 decimal places
-    file_size = (File.size(development_logfile) / 1_024_000.0).round(2)
+    file_size = (File.size(development_logfile) / 1_000_000.0).round(2)
 
     # if development.log is 50MB or more, delete it.
     if file_size >= 50
