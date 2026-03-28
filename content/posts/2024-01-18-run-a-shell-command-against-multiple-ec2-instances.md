@@ -70,7 +70,7 @@ I personally ran into some issues when trying to do this for the first time. Her
 
 If your EC2 Instances do not show up under "Target selection" they may not have the SSM agent installed. AWS has documentation to guide you through the installation process: [Manually installing SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-manual-agent-install.html).
 
-If your EC2 Instances do have the SSM agent installed but still aren't showing up, they may not have an IAM instance profile. You can confirm this by clicking on an EC2 Instance and then checking under the "IAM Role" field. If this field is empty, assign an IAM Role and ensure it has proper permissions. In my case, I used to AWS managed policies `AmazonSSMManagedInstanceCore` and `AmazonSSMPatchAssociation`.
+If your EC2 Instances do have the SSM agent installed but still aren't showing up, they may not have an IAM instance profile. You can confirm this by clicking on an EC2 Instance and then checking under the "IAM Role" field. If this field is empty, assign an IAM Role and ensure it has proper permissions. In my case, I used two AWS managed policies `AmazonSSMManagedInstanceCore` and `AmazonSSMPatchAssociation`.
 
 <img src="/run-a-shell-command-on-ec2-instances/permission-policies.webp" alt="AWS IAM permission policies" width="720" height="299" style="max-width: 100%; height: auto; aspect-ratio: 1500 / 624;" loading="lazy" decoding="async">
 

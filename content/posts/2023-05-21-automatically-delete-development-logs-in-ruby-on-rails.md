@@ -17,7 +17,7 @@ at_exit do
   development_logfile = Rails.application.config.paths['log'].first
 
   # if development.log exists, delete it.
-  if File.exists?(development_logfile)
+  if File.exist?(development_logfile)
     Rails.logger.debug 'Deleting development.log...'
     File.delete(development_logfile)
   end
