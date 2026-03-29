@@ -89,7 +89,7 @@ Key: c 	 Value: 2
 Key: d 	 Value: 3
 ```
 
-Interestingly, printing a map without a loop prints elements in insertion order:
+Interestingly, printing a map with `fmt.Println` prints elements in key-sorted order and NOT by insertion order. Since Go 1.12, the `fmt` package sorts map keys for display purposes:
 
 ```go
 // example.go
@@ -101,12 +101,12 @@ import "fmt"
 func main() {
 	m := make(map[string]int)
 
-	m["a"] = 0
-	m["b"] = 1
 	m["c"] = 2
-	m["d"] = 3
-	m["e"] = 4
+	m["a"] = 0
 	m["f"] = 5
+	m["b"] = 1
+	m["e"] = 4
+	m["d"] = 3
 
 	// print map directly
 	fmt.Println(m)
@@ -118,3 +118,5 @@ $ go run example.go
 
 map[a:0 b:1 c:2 d:3 e:4 f:5]
 ```
+
+The keys were inserted in a random order, but printing the map displays the key-value pairs sorted by key (alphabetically).
