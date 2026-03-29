@@ -310,11 +310,11 @@ print(reversed_list)
 # [5, 4, 3, 2, 1]
 ```
 
-We can also use `sort(reverse=True)` to reverse a list. This modifies the list in-place:
+We can also use `list.reverse()` to reverse a list. This modifies the list in-place:
 
 ```python
 my_list = [1, 2, 3, 4, 5]
-my_list.sort(reverse=True)
+my_list.reverse()
 
 print(my_list)
 # [5, 4, 3, 2, 1]
