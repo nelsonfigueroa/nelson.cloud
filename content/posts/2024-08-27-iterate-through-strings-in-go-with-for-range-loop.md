@@ -17,7 +17,7 @@ import "fmt"
 
 func main() {
 	for i, v := range "testing" {
-		fmt.Printf("index: %d, char: %d\n", i, v)
+		fmt.Printf("index: %d, char: %c\n", i, v)
 	}
 }
 ```
