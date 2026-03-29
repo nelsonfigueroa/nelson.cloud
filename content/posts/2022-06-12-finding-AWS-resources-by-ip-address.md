@@ -105,13 +105,13 @@ The output for these commands will look something like this:
                     "EbsOptimized": false,
                     "Hypervisor": "xen",
                     "IamInstanceProfile": {
-                        "Arn": "arn:aws:iam::0000000000",
+                        "Arn": "arn:aws:iam::000000000000:instance-profile/my-instance-profile",
                         "Id": "ABCDEF12345"
                     },
                     "NetworkInterfaces": [
                         {
                             "Attachment": {
-                                "AttachTime": "2022-00-00T00:00:00.000Z",
+                                "AttachTime": "2022-01-01T00:00:00.000Z",
                                 "AttachmentId": "eni-attach-abcd1234",
                                 "DeleteOnTermination": true,
                                 "DeviceIndex": 0,
