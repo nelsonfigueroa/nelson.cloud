@@ -13,7 +13,15 @@ Use the `copy()` method.
 ```python
 list_a = list_b.copy()
 ```
+
+If the list has other lists in it, import `copy` and use `copy.deepcopy()` to get fully independent lists.
+```python
+import copy
+list_a = copy.deepcopy(list_b)
+```
 {{< /admonition >}}
+
+## Simple Lists
 
 Say we have two Python lists -- `list_a` and `list_b`.
 
@@ -106,6 +114,19 @@ list_b address: 140264514892160
 ```
 
 We can see the memory addresses are different (most obvious due to the ending digits).
+
+## Lists Containing Lists, Dictionaries, and Sets
+
+If a list contains other lists, dictionaries, or sets, the `copy()` method won't work as expected. The nested lists/dictionaries/sets will still be shared between both lists.
+
+In this scenario, we need to import the `copy` module and use `copy.deepcopy()` so that lists/dictionaries/sets inside a list are actually copied to another list.
+
+```python
+import copy
+
+list_a = [[1, 2], {"a": 1}, {1, 2}]
+list_b = copy.deepcopy(list_a)
+```
 
 Although I've been in the field for some time, I still have my smooth brain moments. This is a reminder to myself (and whoever reads this) to remember the basics!
 
