@@ -236,7 +236,7 @@ $ crunch [min password length] [max password length] [characters to use] | aircr
 I already know the length of the password to my own router. My full command looks like this:
 
 ```
-$ crunch 14 14 abcdefghijklmnopqrstuvwxyz 1234567890 | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
+$ crunch 14 14 abcdefghijklmnopqrstuvwxyz1234567890 | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\ Rent
 ```
 
 This will be very slow, as the program will attempt every 14-character letter and number combination possible.
