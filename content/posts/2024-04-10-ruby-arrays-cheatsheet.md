@@ -710,16 +710,13 @@ arr
 # => []
 ```
 
-This is the same as assigning an empty array to the existing array variable.
+{{< admonition type="note" >}}
+Using `arr.clear` is not the same as setting `arr` to an empty array.
 
-```ruby
-arr = ["A", "B", "C"]
-arr = []
-# => []
+`arr.clear` modifies the array in-place. All references to `arr` will be an empty array `[]`.
 
-arr
-# => []
-```
+`arr = []` creates a new empty array and assigns it to the `arr` variable. Other references to the original array are left intact.
+{{< /admonition >}}
 
 ### Removing `nil` Elements from Array
 
