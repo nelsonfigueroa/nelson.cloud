@@ -29,14 +29,16 @@ TOKEN=`curl -s -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-me
 #---- output ----#
 ami-id
 ami-launch-index
-ami-manifest-pathblock-device-mapping/
+ami-manifest-path
+block-device-mapping/
 events/
 hostname
 iam/
 identity-credentials/
 instance-action
 instance-id
-instance-life-cycleinstance-type
+instance-life-cycle
+instance-type
 local-hostname
 local-ipv4
 mac
