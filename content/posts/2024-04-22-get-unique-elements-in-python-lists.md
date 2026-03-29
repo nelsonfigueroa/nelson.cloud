@@ -42,6 +42,10 @@ Output:
 [1, 2, 3]
 ```
 
+{{< admonition type="warning" >}}
+The order of elements after using `set()` is not guaranteed. I wrote the examples in order to make it clear that duplicates were removed.
+{{< /admonition >}}
+
 ---
 
 I learned this trick after realizing that unfortunately Python doesn't have a [`uniq()` method like Ruby](https://apidock.com/ruby/Array/uniq) that does this exact thing.
