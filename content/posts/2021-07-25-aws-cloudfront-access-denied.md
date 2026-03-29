@@ -5,6 +5,10 @@ date = "2021-07-25"
 categories = ["AWS"]
 +++
 
+{{< admonition type="info" >}}
+Note that Origin Access Identity has since been deprecated by AWS. The replacement is [Origin Access Control](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html). I have no idea if that fixes the issue I talk about below, but it's something to be aware of.
+{{< /admonition >}}
+
 If you're seeing "Access Denied" errors on CloudFront and [the official troubleshooting docs](https://repost.aws/knowledge-center/s3-website-cloudfront-error-403) aren't helping, you might be running into the following issue.
 
 I discovered that "Access Denied" errors may show up when a CloudFront Distribution is set up under the following conditions:
