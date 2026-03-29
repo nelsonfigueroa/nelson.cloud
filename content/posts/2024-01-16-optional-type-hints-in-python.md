@@ -126,7 +126,12 @@ def example(values: Tuple[int, str] = (0, "")) -> Tuple[int, str]:
     return values
 ```
 
-To my knowledge, there is no shorthand version when using tuples as type hints.
+As of Python 3.9, there is a shorthand for tuple type hints. You can use `tuple` instead of importing `Tuple` from the `typing` module:
+
+```python
+def example(values: tuple[int, str] = (0, "")) -> tuple[int, str]:
+    return values
+```
 
 ## References
 
