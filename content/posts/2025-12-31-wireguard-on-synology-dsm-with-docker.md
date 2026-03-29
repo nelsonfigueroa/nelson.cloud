@@ -78,8 +78,6 @@ touch /volume1/docker/docker-compose.yml
 Now we can fill in `docker-compose.yml`. Here's the starting point you'll need for Gluetun:
 
 ```yaml
-version: "3.8"
-
 services:
   gluetun:
     image: qmcgaw/gluetun:latest
@@ -130,9 +128,7 @@ The value should **NOT** look like this: `10.67.205.85/32,fc00:bbbb:bbbb:bb01::4
 
 Here's what the updated `docker-compose.yml` file will look like in this case:
 
-{{< highlight yaml "hl_lines=13-14" >}}
-version: "3.8"
-
+{{< highlight yaml "hl_lines=11-12" >}}
 services:
   gluetun:
     image: qmcgaw/gluetun:latest
@@ -211,9 +207,7 @@ $ mkdir -p /volume1/docker/qbittorrent/downloads
 
 Then update `docker-compose.yml` like so:
 
-{{< highlight yaml "hl_lines=16-19 23-35" >}}
-version: "3.8"
-
+{{< highlight yaml "hl_lines=14-17 21-33" >}}
 services:
   gluetun:
     image: qmcgaw/gluetun:latest
