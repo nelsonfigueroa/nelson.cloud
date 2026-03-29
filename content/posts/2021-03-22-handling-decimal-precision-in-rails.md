@@ -41,8 +41,6 @@ class Expense < ApplicationRecord
 end
 ```
 
-Note for the regular expression: `\A` is the same as `^`, while `\z` is the same as `$`.
-
 ## Controller
 
 For the expense model, we have a standard controller. We don't need to do anything here in regards to decimal precision. I'm showing this for completeness of the example.
