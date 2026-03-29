@@ -27,6 +27,7 @@ Here's a full example:
 package main
 
 import (
+	"log"
 	"net/http"
 )
 
@@ -37,7 +38,7 @@ func main() {
 	// create a request with NewRequest, specifying HTTP method and URL
 	req, err := http.NewRequest("GET", "https://example.com/", nil)
 	if err != nil {
-		// handle any errors however you'd like
+		log.Fatal(err)
 	}
 
 	// add headers to the request
@@ -50,7 +51,7 @@ func main() {
 	// use the client to actually send the request
 	resp, err := client.Do(req)
 	if err != nil {
-		// handle any errors however you'd like
+		log.Fatal(err)
 	}
 	defer resp.Body.Close()
 }
