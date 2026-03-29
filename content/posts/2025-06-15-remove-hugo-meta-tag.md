@@ -31,7 +31,7 @@ In TOML:
 disableHugoGeneratorInject = true
 ```
 
-If setting `disableHugoGeneratorInject` doesn't work, do a global search in your Hugo project for `{{ hugo.Generator }}`. This shortcode outputs the same `<meta>` tag and doesn't respect the `disableHugoGeneratorInject` configuration (at least as of Hugo v0.147.8).
+If setting `disableHugoGeneratorInject` doesn't work, do a global search in your Hugo project for `{{ hugo.Generator }}`. This template syntax outputs the same `<meta>` tag and doesn't respect the `disableHugoGeneratorInject` configuration (at least as of Hugo v0.147.8).
 
 ## References:
 - https://gohugo.io/configuration/all/#disablehugogeneratorinject
