@@ -23,7 +23,7 @@ Here is the markdown that I was using to generate the link above. Nothing out of
 This sentence has a [link at the end](https://example.com).
 ```
 
-In Hugo, you can apply post-processing to links through [link render hooks](https://gohugo.io/render-hooks/links/) by editing the `layouts/partials/link.html` file. Here's my terrible template that I use to process links. Once again, nothing stood out that would add unnecessary whitespace after links:
+In Hugo, you can apply post-processing to links through [link render hooks](https://gohugo.io/render-hooks/links/) by editing the `layouts/_default/_markup/render-link.html` file. Here's my terrible template that I use to process links. Once again, nothing stood out that would add unnecessary whitespace after links:
 
 ```go-html-template
 {{- $url := .Destination -}}
