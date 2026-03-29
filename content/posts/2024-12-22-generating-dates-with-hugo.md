@@ -12,7 +12,9 @@ Here are a bunch of [Hugo](https://gohugo.io/) snippets you can use to generate 
 
 You can copy and paste these into HTML templates. If you want to use these within your posts/articles (Markdown files) you'll need to create a shortcode first. Scroll down to the [Using Shortcodes](#using-shortcodes) section for more details.
 
-I'm running Hugo v0.140.0+extended. For all examples, I will assume the time is 2024-12-22 2:30PM PT.
+I'm running Hugo v0.140.0+extended.
+
+**For all examples, I will assume the time is 2024-12-22 2:30PM PT.**
 
 ## Date Only
 
@@ -36,18 +38,7 @@ Output:
 2024-12-22 2:30
 ```
 
-You can specify AM or PM as well:
-```go-html-template
-{{ now | dateFormat "2006-01-02 3:04AM" }}
-```
-
-Output:
-```
-2024-12-22 2:30AM
-```
-
-<br>
-
+You can specify AM or PM by adding `PM` to the time. Go will output the correct one (AM/PM) based on the actual time:
 ```go-html-template
 {{ now | dateFormat "2006-01-02 3:04PM" }}
 ```
@@ -56,6 +47,20 @@ Output:
 ```
 2024-12-22 2:30PM
 ```
+
+{{< admonition type="note" >}}
+Always use `PM` (or `pm`) as the placeholder in the time string. Using `AM` in the time string will print the literal text `AM` as regardless of the actual time. For example:
+
+```go-html-template
+{{ now | dateFormat "2006-01-02 3:04AM" }}
+```
+
+Will output:
+```
+2024-12-22 2:30AM
+```
+Even if it's actually 2:30PM.
+{{< /admonition >}}
 
 ## Date and 24-Hour Time
 
