@@ -89,5 +89,5 @@ But at least the whitespace was gone when viewing the article in a browser. That
 
 This template syntax trick can probably be applied to other areas of Hugo and not just for links, but I haven't done any additional experimenting.
 
-## References:
+## References
 - Wherever ChatGPT ~~stole~~ got this information from. I feel weird using ChatGPT as a reference but that really is how I discovered the solution.

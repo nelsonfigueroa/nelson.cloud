@@ -19,6 +19,6 @@ That's depressing. We work most of our lives. I know that wasn't their intent bu
 
 Fuck.
 
-## Sources
+## References
 
 - https://www.cdc.gov/nchs/fastats/life-expectancy.htm

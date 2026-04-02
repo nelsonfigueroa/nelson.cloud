@@ -25,6 +25,6 @@ Then I opened a new terminal window to verify that the message no longer shows u
 
 <img src="/mute-terminal-login-message/after.webp" alt="terminal without login message after creating .hushlogin file" width="980" height="254" style="max-width: 100%; height: auto; aspect-ratio: 980 / 254;" loading="lazy" decoding="async">
 
-## References:
+## References
 - https://stackoverflow.com/questions/15769615/remove-last-login-message-for-new-tabs-in-terminal
 - https://www.cyberciti.biz/howto/turn-off-the-login-banner-in-linux-unix-with-hushlogin-file/
