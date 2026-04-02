@@ -25,7 +25,7 @@ After the header was configured, I checked PageSpeed Insights again and the warn
 You may be able to use a different value smaller than `31536000` for your header. I chose a year in seconds to be on the safe side for PageSpeed Insights.
 {{< /admonition >}}
 
-# References
+## References
 - https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl/
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html

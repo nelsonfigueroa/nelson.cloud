@@ -156,7 +156,7 @@ e.amount
  => 0.12346e6
 ```
 
-Interestingly, SQLite saves the value `123456.01` incorrectly as `1234560.00` with no errors whatsoever. This is undesired behavior because it defeats the point of defining a precision in the first place.
+Interestingly, SQLite saves the value `123456.01` incorrectly as `123460.0` with no errors whatsoever. This is undesired behavior because it defeats the point of defining a precision in the first place.
 
 **Rails console with PostgreSQL:**
 

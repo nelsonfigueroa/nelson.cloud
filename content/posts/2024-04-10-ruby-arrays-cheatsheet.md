@@ -408,25 +408,25 @@ arr = ["B", "D", "A", "C"]
 
 arr.min
 # => "A"
- ```
+```
 
- It works the same way for an array of Symbols:
+It works the same way for an array of Symbols:
 
- ```ruby
- arr = [:A, :C, :D, :B]
+```ruby
+arr = [:A, :C, :D, :B]
 
- arr.min
+arr.min
 # => :A
- ```
+```
 
- And once again, `min()` will not work on an array containing elements of different types:
+And once again, `min()` will not work on an array containing elements of different types:
 
- ```ruby
- arr = [1, "B", 4, "C", 2, "A"]
+```ruby
+arr = [1, "B", 4, "C", 2, "A"]
 
- arr.min
- # => (irb):27:in `min': comparison of Integer with String failed (ArgumentError)
- ```
+arr.min
+# => (irb):27:in `min': comparison of Integer with String failed (ArgumentError)
+```
 
 ## Sorting Arrays
 
