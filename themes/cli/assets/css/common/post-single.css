@@ -12,7 +12,6 @@
     color: var(--secondary);
     font-size: 14px;
     display: inline-block;
-    flex-wrap: wrap;
 }
 
 .breadcrumbs {
@@ -314,7 +313,6 @@
 
 .post-tags {
     display: inline-block;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -329,7 +327,6 @@
 
 .post-tags a {
     display: inline-block;
-    flex-wrap: wrap;
     color: var(--tint-2);
     font-size: 12px;
     line-height: 24px;
