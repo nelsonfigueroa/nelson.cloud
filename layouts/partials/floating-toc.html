@@ -1,7 +1,7 @@
 <!-- source: https://gist.github.com/skyzyx/a796d66f6a124f057f3374eff0b3f99a -->
 <!-- idk how this works though lmao -->
 
-{{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
+{{- $headers := findRE "<h[1-6].*?>(.|\n)+?</h[1-6]>" .Content -}}
 {{- $has_headers := ge (len $headers) 1 -}}
 {{- if $has_headers -}}
 
@@ -37,7 +37,7 @@
                 {{- $id := index (findRE "(id=\"(.*?)\")" $header 9) 0 }}
 
                 {{- $cleanedID := replace (replace $id "id=\"" "") "\"" "" }}
-                {{- $header := replaceRE "<h[1-6].*?>((.|\n])+?)</h[1-6]>" "$1" $header -}}
+                {{- $header := replaceRE "<h[1-6].*?>((.|\n)+?)</h[1-6]>" "$1" $header -}}
 
                 {{- if ne $i 0 -}}
                 {{- $prevHeaderLevel := index (findRE "[1-6]" (index $headers (sub $i 1)) 1) 0 -}}
