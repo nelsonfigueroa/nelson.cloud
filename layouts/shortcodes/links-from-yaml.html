@@ -1,6 +1,7 @@
 {{ range hugo.Data.links.categories }}
 {{ $anchor := .name | urlize }}
-<h2 id="{{ $anchor }}">{{ .name }}</h2>
+<details>
+<summary><h2 id="{{ $anchor }}">{{ .name }}</h2></summary>
 
 {{ if .description }}<p>{{ .description }}</p>{{ end }}
 
@@ -17,4 +18,5 @@
 </tbody>
 </table>
 
+</details>
 {{ end }}

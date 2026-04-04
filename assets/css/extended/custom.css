@@ -607,3 +607,32 @@ a:hover {
     color: var(--secondary);
     user-select: none;
 }
+
+/* links page styles */
+/**/
+.post-content > details {
+    margin-bottom: 0.8rem;
+}
+
+.post-content > details > summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* removes the triangle icon on safari */
+.post-content > details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.post-content > details > summary h2 {
+    display: inline;
+    pointer-events: none; /* allows clicking headers to also reveal contents */
+}
+
+.post-content > details > summary::before {
+    content: "[+] ";
+}
+
+.post-content > details[open] > summary::before {
+    content: "[-] ";
+}
