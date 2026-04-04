@@ -5,6 +5,7 @@ date = "2026-03-23"
 categories = ["AI", "Opinion"]
 ShowToc = false
 TocOpen = false
+featured = true
 +++
 
 I created [my first AI pull request](https://github.com/alecthomas/chroma/pull/1228) for [Chroma](https://github.com/alecthomas/chroma), which is the default syntax highlighter used in [Hugo](https://github.com/gohugoio/hugo).
