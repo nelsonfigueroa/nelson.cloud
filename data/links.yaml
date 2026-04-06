@@ -1,30 +1,4 @@
 categories:
-  - name: "Posts and Articles I Think You Should Read"
-    links:
-      - url: "https://xuanwo.io/2024/10-a-letter-to-open-source-maintainers/"
-        title: "A letter to open-source maintainers"
-      - url: "https://crankysec.com/blog/interesting/"
-        title: "Be interesting"
-      - url: "https://obsidian.rocks/creating-a-digital-garden-in-obsidian/"
-        title: "Creating a Digital Garden in Obsidian"
-      - url: "https://pluralistic.net/2024/08/17/hack-the-planet/"
-        title: "Disenshittify or Die"
-      - url: "https://www.nothingeasyaboutthis.com/dont-ask-someone-to-file-a-ticket/"
-        title: "Don't ask someone to file a ticket"
-      - url: "https://crankysec.com/blog/howto/"
-        title: "How To Build Your Professional Brand!"
-      - url: "https://www.coryd.dev/posts/2025/make-yourself-less-valuable-to-tech-companies"
-        title: "Make yourself less valuable to tech companies"
-      - url: "https://ludic.mataroa.blog/blog/quitting-my-job-for-the-way-of-pain/"
-        title: "Quitting My Job For The Way Of Pain"
-      - url: "https://donmoynihan.substack.com/p/real-chilling-effects"
-        title: "Real chilling effects"
-      - url: "https://furbo.org/2024/08/26/slop-is-good/"
-        title: "Slop is Good"
-      - url: "https://matduggan.com/stop-trying-to-schedule-a-call-with-me/"
-        title: "Stop Trying To Schedule A Call With Me"
-
-
   - name: "Work, Corporate Culture, and Getting Paid"
     links:
       - url: "https://whitep4nth3r.com/blog/i-am-in-an-abusive-relationship-with-the-technology-industry/"
@@ -59,6 +33,12 @@ categories:
         title: "Yikes."
       - url: "https://www.wheresyoured.at/tss/"
         title: "The Shareholder Supremacy"
+      - url: "https://ludic.mataroa.blog/blog/quitting-my-job-for-the-way-of-pain/"
+        title: "Quitting My Job For The Way Of Pain"
+      - url: "https://crankysec.com/blog/howto/"
+        title: "How To Build Your Professional Brand!"
+      - url: "https://crankysec.com/blog/interesting/"
+        title: "Be interesting"
 
   - name: "Cybersecurity"
     links:
@@ -150,6 +130,8 @@ categories:
         title: "Zero-Bullshit Take on LLM Optimization"
       - url: "https://rys.io/en/180.html"
         title: "The Hype is the Product"
+      - url: "https://furbo.org/2024/08/26/slop-is-good/"
+        title: "Slop is Good"
 
   - name: "On Writing and Blogging"
     links:
@@ -379,6 +361,20 @@ categories:
         title: "The candid naivety of geeks"
       - url: "https://crankysec.com/blog/care/"
         title: "Take care of yourself"
+      - url: "https://matduggan.com/stop-trying-to-schedule-a-call-with-me/"
+        title: "Stop Trying To Schedule A Call With Me"
+      - url: "https://donmoynihan.substack.com/p/real-chilling-effects"
+        title: "Real chilling effects"
+      - url: "https://www.coryd.dev/posts/2025/make-yourself-less-valuable-to-tech-companies"
+        title: "Make yourself less valuable to tech companies"
+      - url: "https://www.nothingeasyaboutthis.com/dont-ask-someone-to-file-a-ticket/"
+        title: "Don't ask someone to file a ticket"
+      - url: "https://pluralistic.net/2024/08/17/hack-the-planet/"
+        title: "Disenshittify or Die"
+      - url: "https://obsidian.rocks/creating-a-digital-garden-in-obsidian/"
+        title: "Creating a Digital Garden in Obsidian"
+      - url: "https://xuanwo.io/2024/10-a-letter-to-open-source-maintainers/"
+        title: "A letter to open-source maintainers"
 
   - name: "Other Interesting Links"
     links:
