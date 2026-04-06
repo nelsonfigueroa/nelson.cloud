@@ -637,7 +637,6 @@ a:hover {
     content: "[-] ";
 }
 
-/* links page */
 .link-domain {
     color: var(--secondary);
     font-size: 0.8em;
