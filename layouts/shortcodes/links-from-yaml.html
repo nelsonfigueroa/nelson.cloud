@@ -12,6 +12,10 @@
 <td>
 {{- $url := .url -}}
 <a href="{{ $url | safeURL }}"{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .title }}</a>
+{{- if strings.HasPrefix $url "http" }}
+{{- $parsed := urls.Parse $url }}
+<br><span class="link-domain">{{ $parsed.Hostname }}</span>
+{{- end -}}
 </td>
 </tr>
 {{ end }}

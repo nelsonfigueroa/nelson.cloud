@@ -636,3 +636,9 @@ a:hover {
 .post-content > details[open] > summary::before {
     content: "[-] ";
 }
+
+/* links page */
+.link-domain {
+    color: var(--secondary);
+    font-size: 0.8em;
+}
