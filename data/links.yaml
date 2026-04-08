@@ -103,6 +103,8 @@ categories:
         title: "Creating a Brainrot Language Server in Golang"
       - url: "https://bramjetten.dev/articles/the-one-person-framework-in-practice"
         title: "The One-Person Framework in practice"
+      - url: "https://piechowski.io/post/git-commands-before-reading-code/"
+        title: "The Git Commands I Run Before Reading Any Code"
 
   - name: "Artificial Intelligence"
     links:
