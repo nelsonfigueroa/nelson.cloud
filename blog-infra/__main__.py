@@ -6,6 +6,20 @@ import pulumi_aws as aws
 # Explicit provider for resources in us-west-1
 us_west_1 = aws.Provider("us-west-1", region="us-west-1")
 
+# CloudFront Function to strip /gc prefix for GoatCounter proxy
+goatcounter_rewrite = aws.cloudfront.Function("goatcounter-rewrite",
+    name="goatcounter-rewrite",
+    runtime="cloudfront-js-2.0",
+    code="""\
+function handler(event) {
+    var request = event.request;
+    request.uri = request.uri.replace(/^\\/gc/, '');
+    if (request.uri === '') request.uri = '/';
+    return request;
+}
+""",
+)
+
 # S3 bucket for nelson.cloud site files
 bucket = aws.s3.Bucket("nelson-cloud-bucket",
     bucket="nelson.cloud",
@@ -175,16 +189,44 @@ nelson_cloud_distribution = aws.cloudfront.Distribution("nelson-cloud",
     enabled=True,
     http_version="http2and3",
     is_ipv6_enabled=True,
-    origins=[{
-        "custom_origin_config": {
-            "http_port": 80,
-            "https_port": 443,
-            "origin_protocol_policy": "http-only",
-            "origin_ssl_protocols": ["TLSv1.2"],
-        },
-        "domain_name": "nelson.cloud.s3-website-us-west-1.amazonaws.com",
-        "origin_id": "nelson.cloud.s3.us-west-1.amazonaws.com",
+    # route /gc/* requests to GoatCounter, stripping the /gc prefix via CloudFront Function
+    ordered_cache_behaviors=[{
+        "path_pattern": "/gc/*",
+        "allowed_methods": ["GET", "HEAD"],
+        "cached_methods": ["GET", "HEAD"],
+        "target_origin_id": "goatcounter",
+        "viewer_protocol_policy": "redirect-to-https",
+        "compress": False,
+        "cache_policy_id": "4135ea2d-6df8-44a3-9df3-4b5a84be39ad",  # CachingDisabled
+        "origin_request_policy_id": "b689b0a8-53d0-40ab-baf2-68738e2966ac",  # AllViewerExceptHostHeader
+        "function_associations": [{
+            "event_type": "viewer-request",
+            "function_arn": goatcounter_rewrite.arn,
+        }],
     }],
+    origins=[
+        {
+            "custom_origin_config": {
+                "http_port": 80,
+                "https_port": 443,
+                "origin_protocol_policy": "http-only",
+                "origin_ssl_protocols": ["TLSv1.2"],
+            },
+            "domain_name": "nelson.cloud.s3-website-us-west-1.amazonaws.com",
+            "origin_id": "nelson.cloud.s3.us-west-1.amazonaws.com",
+        },
+        # an origin to proxy Goatcounter requests
+        {
+            "custom_origin_config": {
+                "http_port": 80,
+                "https_port": 443,
+                "origin_protocol_policy": "https-only",
+                "origin_ssl_protocols": ["TLSv1.2"],
+            },
+            "domain_name": "nelsonfigueroa.goatcounter.com",
+            "origin_id": "goatcounter",
+        },
+    ],
     price_class="PriceClass_All",
     restrictions={
         "geo_restriction": {
