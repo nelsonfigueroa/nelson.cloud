@@ -8,3 +8,6 @@ package-lock.json
 yarn.lock
 /resources/_gen/
 .claude
+*.pyc
+__pycache__/
+venv/
