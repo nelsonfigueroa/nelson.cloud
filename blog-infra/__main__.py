@@ -192,7 +192,7 @@ nelson_cloud_distribution = aws.cloudfront.Distribution("nelson-cloud",
     # route /gc/* requests to GoatCounter, stripping the /gc prefix via CloudFront Function
     ordered_cache_behaviors=[{
         "path_pattern": "/gc/*",
-        "allowed_methods": ["GET", "HEAD"],
+        "allowed_methods": ["GET", "HEAD", "OPTIONS", "PUT", "PATCH", "POST", "DELETE"],
         "cached_methods": ["GET", "HEAD"],
         "target_origin_id": "goatcounter",
         "viewer_protocol_policy": "redirect-to-https",
@@ -215,7 +215,7 @@ nelson_cloud_distribution = aws.cloudfront.Distribution("nelson-cloud",
             "domain_name": "nelson.cloud.s3-website-us-west-1.amazonaws.com",
             "origin_id": "nelson.cloud.s3.us-west-1.amazonaws.com",
         },
-        # an origin to proxy Goatcounter requests
+        # an origin to proxy GoatCounter requests
         {
             "custom_origin_config": {
                 "http_port": 80,
