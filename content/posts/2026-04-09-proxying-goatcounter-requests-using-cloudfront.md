@@ -5,7 +5,7 @@ date = "2026-04-09"
 categories = ["AWS", "Hugo", "Pulumi"]
 ShowToc = true
 TocOpen = true
-featured = true
+featured = false
 +++
 
 ## Intro
