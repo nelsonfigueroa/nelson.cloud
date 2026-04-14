@@ -2,7 +2,7 @@
 title = "Optional Type Hints in Python"
 summary = "Comparing Optional[str] vs str | None syntax in Python v3.10+ with practical examples."
 date = "2024-01-16"
-lastmod = "2026-03-28T23:35:00-07:00"
+lastmod = "2026-04-14T16:36:00-07:00"
 categories = ["Python"]
 ShowToc = true
 TocOpen = true
@@ -106,33 +106,6 @@ With `Optional`, you don't need to be explicit:
 Optional[int]
 ```
 {{< /admonition >}}
-
-### Mandatory Presence of Two or More Optional Type Hints
-
-If you'd like to create a type hint that specifies a function *must* return 2 or more types (as opposed to at least one of the specified types), you need to use tuples. In this case we import `Tuple` instead of `Union` and use it in the type hint:
-
-```python
-from typing import Tuple
-
-def example(num: int = 0, string: str = "Hello!") -> Tuple[int, str]:
-    return num, string
-```
-
-Tuples can also be used as type hints for function arguments. In the example below, the type of `values` must be a tuple consisting of an integer and a string. The default value is a tuple with `0` and an empty string `""`.
-
-```python
-from typing import Tuple
-
-def example(values: Tuple[int, str] = (0, "")) -> Tuple[int, str]:
-    return values
-```
-
-As of Python 3.9, there is a shorthand for tuple type hints. You can use `tuple` instead of importing `Tuple` from the `typing` module:
-
-```python
-def example(values: tuple[int, str] = (0, "")) -> tuple[int, str]:
-    return values
-```
 
 ## References
 
