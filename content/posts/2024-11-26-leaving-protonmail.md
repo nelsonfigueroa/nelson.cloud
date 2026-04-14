@@ -2,6 +2,7 @@
 title = "Leaving Proton Mail"
 summary = "Reasons why I won't renew my Proton subscription."
 date = "2024-11-26"
+lastmod = "2026-01-24T16:22:37-08:00"
 categories = ["Opinion", "Privacy"]
 +++
 

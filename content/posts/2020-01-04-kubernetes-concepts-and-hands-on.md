@@ -2,6 +2,7 @@
 title = "Kubernetes Concepts and Hands-On with Minikube"
 summary = "Learn Kubernetes concepts and get hands-on experience with Minikube"
 date = "2020-01-04"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Kubernetes"]
 ShowToc = true
 TocOpen = true

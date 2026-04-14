@@ -2,6 +2,7 @@
 title = "As an Employee, You Are Disposable"
 summary = "Companies are willing to lay off employees despite being profitable."
 date = "2023-05-06"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Opinion", "Work"]
 featured = false
 +++

@@ -2,6 +2,7 @@
 title = "My Favorite Privacy Apps and Services"
 summary = "My favorite privacy-respecting tools, apps, and services."
 date = "2020-12-31"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Privacy"]
 ShowToc = true
 TocOpen = true

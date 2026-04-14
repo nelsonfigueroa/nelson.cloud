@@ -2,6 +2,7 @@
 title = "Insertion Order Iteration of Maps in Go"
 summary = "Iterating through Go maps in insertion order."
 date = "2021-02-23"
+lastmod = "2026-03-28T20:55:33-07:00"
 categories = ["Go"]
 +++
 

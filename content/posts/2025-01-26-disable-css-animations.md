@@ -2,6 +2,7 @@
 title = "How to Disable CSS Animations and Transitions"
 summary = "Disable CSS animations and transitions with a few lines of CSS."
 date = "2025-01-26"
+lastmod = "2026-01-24T23:25:23-08:00"
 categories = ["CSS", "HTML"]
 ShowToc = false
 TocOpen = false

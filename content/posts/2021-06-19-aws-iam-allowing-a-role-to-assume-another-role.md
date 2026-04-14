@@ -2,6 +2,7 @@
 title = "AWS IAM: Allowing a Role to Assume Another Role"
 summary = "How to allow an IAM Role to assume another Role."
 date = "2021-06-19"
+lastmod = "2026-02-07T01:54:50-08:00"
 categories = ["AWS"]
 +++
 

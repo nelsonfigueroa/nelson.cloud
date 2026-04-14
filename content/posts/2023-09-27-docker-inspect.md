@@ -2,6 +2,7 @@
 title = "How to Determine the Entrypoint for a Docker Image"
 summary = "Using `docker inspect` to determine the entrypoint for a given docker image."
 date = "2023-09-27"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Docker"]
 +++
 

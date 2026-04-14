@@ -2,6 +2,7 @@
 title = "Local Text Summarization With Ollama and Python Is Just String Manipulation"
 summary = "Generate a string with Python, pass it into Ollama, and you get a string in return. That's it."
 date = "2025-08-24"
+lastmod = "2026-01-25T13:54:55-08:00"
 categories = ["Python", "AI", "LLM", "Ollama"]
 ShowToc = false
 TocOpen = false

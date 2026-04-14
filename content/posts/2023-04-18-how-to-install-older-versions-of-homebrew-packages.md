@@ -2,6 +2,7 @@
 title = "How To Install Older Versions of Homebrew Packages"
 summary = "How to install a specific version of Homebrew packages."
 date = "2023-04-18"
+lastmod = "2026-04-01T22:42:16-07:00"
 categories = ["Homebrew", "macOS"]
 featured = false
 +++

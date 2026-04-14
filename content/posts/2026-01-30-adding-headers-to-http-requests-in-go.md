@@ -2,6 +2,7 @@
 title = "Adding Headers to HTTP Requests in Go"
 summary = "Build requests with http.NewRequest() to add headers, then send them with http.Client{}"
 date = "2026-01-30"
+lastmod = "2026-03-28T23:31:55-07:00"
 categories = ["Go"]
 ShowToc = false
 TocOpen = false

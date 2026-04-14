@@ -2,6 +2,7 @@
 title = "How I Discover New Blogs"
 summary = "A list of resources I use to discover new blogs."
 date = "2024-04-04"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Blogs"]
 ShowToc = true
 TocOpen = true

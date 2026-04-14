@@ -2,6 +2,7 @@
 title = "How to Clone a Specific Git Branch Without Other Branches"
 summary = "Clone a single Git branch using --single-branch and --depth for faster cloning."
 date = "2025-02-27"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Git", "Shell"]
 +++
 

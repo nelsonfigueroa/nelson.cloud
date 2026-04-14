@@ -2,6 +2,7 @@
 title = "GitHub Actions for Pulumi with an AWS S3 Backend"
 summary = "How to set up GitHub Actions for Pulumi when the state is stored in an AWS S3 Bucket."
 date = "2025-12-11"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Pulumi", "AWS", "GitHub"]
 ShowToc = false
 TocOpen = false

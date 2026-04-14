@@ -2,6 +2,7 @@
 title = "Finding AWS Resources by IP Address"
 summary = "Ways to find AWS Resources by private or public IP addresses."
 date = "2022-06-12"
+lastmod = "2026-03-28T20:33:37-07:00"
 categories = ["AWS"]
 ShowToc = true
 TocOpen = true

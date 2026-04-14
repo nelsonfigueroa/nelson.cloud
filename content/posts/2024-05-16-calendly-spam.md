@@ -2,6 +2,7 @@
 title = "Calendly Denial of Service via Mass-Scheduling"
 summary = "Showing how Calendly can be easily spammed because I'm bored and unemployed."
 date = "2024-05-16"
+lastmod = "2026-02-08T01:50:40-08:00"
 categories = ["Python", "Cybersecurity"]
 ShowToc = true
 TocOpen = true

@@ -2,6 +2,7 @@
 title = "The prefers-reduced-motion CSS Media Query"
 summary = "Apply CSS styles conditionally when a user enables reduced motion on their device."
 date = "2024-11-27"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["CSS"]
 +++
 

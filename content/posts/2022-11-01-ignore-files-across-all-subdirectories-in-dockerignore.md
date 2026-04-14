@@ -2,6 +2,7 @@
 title = "Ignore Files Across All Subdirectories in .dockerignore"
 summary = "How to recursively ignore files when building Docker images."
 date = "2022-11-01"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Docker"]
 +++
 

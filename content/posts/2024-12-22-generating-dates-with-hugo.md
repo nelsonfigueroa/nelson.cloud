@@ -2,6 +2,7 @@
 title = "How to Generate and Format the Current Date and Time in Hugo with dateFormat"
 summary = "Several examples of dateFormat including date only, date + 12-hour time, date + 24-hour time, date + timezone, and date + UTC offset."
 date = "2024-12-22"
+lastmod = "2026-03-28T23:13:31-07:00"
 categories = ["Hugo"]
 ShowToc = true
 TocOpen = true

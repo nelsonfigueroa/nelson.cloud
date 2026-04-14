@@ -2,6 +2,7 @@
 title = "Making Life More Difficult for Bank Scammers"
 summary = "Using Python to flood scammers with fake information."
 date = "2024-02-22"
+lastmod = "2026-03-24T22:53:09-07:00"
 categories = ["Python", "Cybersecurity"]
 +++
 

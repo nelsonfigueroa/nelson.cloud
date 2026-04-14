@@ -2,6 +2,7 @@
 title = "Ruby on Rails: Enable File Downloads Using link_to"
 summary = "How to enable file downloads using the link_to helper in Ruby on Rails."
 date = "2024-02-03"
+lastmod = "2026-01-24T16:22:37-08:00"
 categories = ["Ruby on Rails", "HTML"]
 +++
 

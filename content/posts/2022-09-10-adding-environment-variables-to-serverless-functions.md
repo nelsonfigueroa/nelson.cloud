@@ -2,6 +2,7 @@
 title = "Adding Environment Variables to Serverless Functions"
 summary = "How to add environment variables to Serverless functions"
 date = "2022-09-10"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Serverless"]
 +++
 

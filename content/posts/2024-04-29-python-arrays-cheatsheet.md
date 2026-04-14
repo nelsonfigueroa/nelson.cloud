@@ -2,6 +2,7 @@
 title = "Python Lists Cheatsheet"
 summary = "A Python lists cheatsheet for coding interviews."
 date = "2024-04-29"
+lastmod = "2026-03-28T22:41:31-07:00"
 categories = ["Python"]
 ShowToc = true
 TocOpen = false

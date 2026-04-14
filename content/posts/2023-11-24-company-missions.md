@@ -2,6 +2,7 @@
 title = "Company Missions are Bullshit"
 summary = "Every company's real mission is to make money."
 date = "2023-11-24"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Opinion", "Work"]
 +++
 

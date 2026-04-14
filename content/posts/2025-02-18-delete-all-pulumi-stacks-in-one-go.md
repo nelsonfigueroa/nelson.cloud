@@ -2,6 +2,7 @@
 title = "Delete All Pulumi Stacks with One Command"
 summary = "How to delete all pulumi stacks with a shell one-liner."
 date = "2025-02-18"
+lastmod = "2026-02-07T01:54:50-08:00"
 categories = ["Shell", "Pulumi"]
 +++
 

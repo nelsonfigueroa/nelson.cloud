@@ -2,6 +2,7 @@
 title = "Getting EC2 Instance Metadata Using IMDSv1"
 summary = "How to get EC2 Instance metadata using IMDSv1"
 date = "2022-02-08"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["AWS"]
 +++
 

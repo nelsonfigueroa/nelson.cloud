@@ -2,6 +2,7 @@
 title = "Retaliating Against MetaMask Scammers With Python"
 summary = "Using Python to send fake seed phrases to a MetaMask scam site."
 date = "2022-04-28"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Cybersecurity", "Python"]
 +++
 

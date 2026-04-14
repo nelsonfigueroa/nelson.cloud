@@ -15,8 +15,12 @@ mainsections: ["posts"]
 
 # use first 160 words as summary if a summary is not provided for a post
 summaryLength: 160
-# enable git information in posts. Allows for lastmod to be updated automatically based on git commit timestamps.
-enableGitInfo: true
+
+enableGitInfo: false
+frontmatter:
+  lastmod:
+    - lastmod
+    - date
 
 permalinks:
   posts: "/:title/"

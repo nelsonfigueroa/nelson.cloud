@@ -2,6 +2,7 @@
 title = "Let's Stop Asking \"Why Do You Want To Work for Us?\" in Interviews"
 summary = "Most people want to work for your company for money, and there's nothing wrong with that."
 date = "2024-06-28"
+lastmod = "2026-01-25T13:54:55-08:00"
 categories = ["Opinion", "Work"]
 ShowToc = false
 TocOpen = false

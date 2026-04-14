@@ -2,6 +2,7 @@
 title = "Automatically Delete Development Logs in Ruby on Rails"
 summary = "How to automatically delete development logs in Ruby on Rails."
 date = "2023-05-21"
+lastmod = "2026-03-28T01:38:01-07:00"
 categories = ["Ruby on Rails"]
 +++
 

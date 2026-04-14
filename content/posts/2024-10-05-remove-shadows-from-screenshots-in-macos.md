@@ -2,6 +2,7 @@
 title = "Remove Shadows From Screenshots in macOS"
 summary = "Run this command to remove shadows from your screenshots in macOS: `defaults write com.apple.screencapture \"disable-shadow\" -bool \"true\"`"
 date = "2024-10-05"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["macOS"]
 +++
 

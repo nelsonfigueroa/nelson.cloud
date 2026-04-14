@@ -2,6 +2,7 @@
 title = "I Hate Workday"
 summary = "Workday makes it a huge pain in the ass to apply to companies."
 date = "2026-02-18"
+lastmod = "2026-02-28T02:27:22-08:00"
 categories = ["Opinion"]
 ShowToc = false
 TocOpen = false

@@ -2,6 +2,7 @@
 title = "My Favorite Blogs"
 summary = "A list of my favorite blogs from around the web."
 date = "2024-04-03"
+lastmod = "2026-02-12T18:48:02-08:00"
 categories = ["Blogs"]
 +++
 

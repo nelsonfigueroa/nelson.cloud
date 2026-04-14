@@ -2,6 +2,7 @@
 title = "Sorting Hashes in Ruby"
 summary = "Many ways of sorting hashes in Ruby."
 date = "2022-12-04"
+lastmod = "2026-01-25T13:54:55-08:00"
 categories = ["Ruby"]
 ShowToc = true
 TocOpen = true

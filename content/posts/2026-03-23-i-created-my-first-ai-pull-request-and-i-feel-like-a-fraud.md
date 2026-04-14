@@ -2,6 +2,7 @@
 title = "I Created My First AI-assisted Pull Request and I Feel Like a Fraud"
 summary = "I used AI to contribute to an open source project. The code was merged. I didn't learn anything and I felt bad as an engineer."
 date = "2026-03-23"
+lastmod = "2026-04-04T14:40:21-07:00"
 categories = ["AI", "Opinion"]
 ShowToc = false
 TocOpen = false

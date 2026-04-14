@@ -2,6 +2,7 @@
 title = "Hitting Back at Ledger Scammers With Python"
 summary = "Using a Python script to send fake data to a Ledger phishing site."
 date = "2023-12-27"
+lastmod = "2026-02-05T14:24:38-08:00"
 categories = ["Cybersecurity", "Python"]
 +++
 

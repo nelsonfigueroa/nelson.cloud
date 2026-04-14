@@ -2,6 +2,7 @@
 title = "Creating High Quality GIFs from Asciinema Recordings"
 summary = "Use `agg` with a huge font size to get high quality GIFs."
 date = "2025-10-04"
+lastmod = "2026-02-05T15:18:19-08:00"
 categories = ["Shell", "Asciinema"]
 ShowToc = false
 TocOpen = false

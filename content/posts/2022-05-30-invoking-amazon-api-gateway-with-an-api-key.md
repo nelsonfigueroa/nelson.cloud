@@ -2,6 +2,7 @@
 title = "Invoking Amazon API Gateway with an API Key"
 summary = "How to pass an API key via the x-api-key header when invoking AWS API Gateway with curl and Python."
 date = "2022-06-06"
+lastmod = "2026-02-07T01:54:50-08:00"
 categories = ["AWS"]
 ShowToc = true
 TocOpen = true

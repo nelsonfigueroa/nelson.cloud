@@ -2,6 +2,7 @@
 title = "How to Actually Copy a List in Python"
 summary = "Copy a list in Python using the copy() method, not the assignment operator."
 date = "2025-10-18"
+lastmod = "2026-03-28T23:55:38-07:00"
 categories = ["Python", "Computer Science"]
 ShowToc = false
 TocOpen = false

@@ -2,6 +2,7 @@
 title = "Preserve Child Objects When Parent Objects Are Deleted in Ruby on Rails"
 summary = "Use dependent: :nullify in Rails associations to preserve child records when parent objects are deleted."
 date = "2024-11-18"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Ruby on Rails", "Ruby"]
 +++
 

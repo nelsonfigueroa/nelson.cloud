@@ -2,6 +2,7 @@
 title = "Find Unnecessary Homebrew Packages with \"brew leaves\""
 summary = "Use the 'brew leaves' command to find potentially unnecessary Homebrew packages."
 date = "2024-01-22"
+lastmod = "2026-03-28T20:10:02-07:00"
 categories = ["Homebrew", "macOS"]
 aliases = ["/keep-homebrew-tidy-with-brew-leaves/"]
 +++

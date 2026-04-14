@@ -2,6 +2,7 @@
 title = "Using Python to Flood Scammers with Fake Passwords"
 summary = "Creating a python script to flood scammers with fake credentials."
 date = "2022-07-02"
+lastmod = "2026-01-24T16:22:37-08:00"
 categories = ["Cybersecurity", "Python"]
 +++
 

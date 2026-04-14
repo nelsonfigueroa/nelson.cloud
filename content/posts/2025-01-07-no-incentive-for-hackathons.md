@@ -2,6 +2,7 @@
 title = "There Is Little Incentive to Participate in Your Employer's Hackathons"
 summary = "Come up with a million-dollar idea, get $100 in return."
 date = "2025-01-07"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Opinion", "Work"]
 ShowToc = true
 TocOpen = true

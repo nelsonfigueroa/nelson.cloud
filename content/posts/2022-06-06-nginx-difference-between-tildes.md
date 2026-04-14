@@ -2,6 +2,7 @@
 title = "NGINX: Difference Between ~ and ~* Tildes"
 summary = "~ for case-sensitive matching vs ~* for case-insensitive pattern matching in location blocks."
 date = "2022-06-06"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["NGINX"]
 +++
 

@@ -2,6 +2,7 @@
 title = "How to Use an AWS S3 Bucket as a Pulumi State Backend"
 summary = "Self-host Pulumi state with an S3 Bucket, an IAM User, and the Pulumi CLI."
 date = "2025-09-20"
+lastmod = "2026-02-07T01:54:50-08:00"
 categories = ["Pulumi", "AWS"]
 ShowToc = true
 TocOpen = true

@@ -2,6 +2,7 @@
 title = "Iterating Through Hashes in Ruby"
 summary = "Several methods of iterating through Ruby hashes."
 date = "2022-11-17"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Ruby"]
 ShowToc = true
 TocOpen = true

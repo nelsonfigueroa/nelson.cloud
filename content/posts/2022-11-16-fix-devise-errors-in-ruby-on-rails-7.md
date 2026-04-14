@@ -2,6 +2,7 @@
 title = "Fix Devise Errors in Ruby on Rails 7"
 summary = "How to fix Devise errors in Ruby on Rails 7."
 date = "2022-11-16"
+lastmod = "2026-03-12T22:48:28-07:00"
 categories = ["Ruby on Rails"]
 ShowToc = true
 TocOpen = true

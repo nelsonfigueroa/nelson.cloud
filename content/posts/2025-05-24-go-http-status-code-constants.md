@@ -2,6 +2,7 @@
 title = "Validate HTTP Status Codes in Go Using Built-in Constants"
 summary = "Use Go net/http constants like StatusOK and StatusNotFound for more readable code."
 date = "2025-05-24"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Go", "HTTP"]
 ShowToc = true
 TocOpen = true

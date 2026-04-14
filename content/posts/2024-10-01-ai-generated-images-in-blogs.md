@@ -2,6 +2,7 @@
 title = "AI-Generated Images Discourage Me From Reading Your Blog"
 summary = "If you're willing to use AI-generated images, how do I know the text isn't AI-generated?"
 date = "2024-10-01"
+lastmod = "2026-02-18T22:25:56-08:00"
 categories = ["AI", "Blogs", "Opinion"]
 ShowToc = false
 TocOpen = false

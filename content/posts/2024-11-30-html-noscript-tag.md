@@ -2,6 +2,7 @@
 title = "Render HTML and CSS if JavaScript Is Disabled Using the `<noscript>` Tag"
 summary = "Render HTML and apply CSS styles if JavaScript is disabled."
 date = "2024-11-30"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["HTML", "CSS", "JavaScript"]
 +++
 

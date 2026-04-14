@@ -2,6 +2,7 @@
 title = "Finding Private Information Through Resumes on Google Search"
 summary = "Reconsider uploading your resume on the open web."
 date = "2024-09-16"
+lastmod = "2026-02-15T14:04:40-08:00"
 categories = ["Cybersecurity", "Privacy", "Google"]
 ShowToc = false
 TocOpen = false

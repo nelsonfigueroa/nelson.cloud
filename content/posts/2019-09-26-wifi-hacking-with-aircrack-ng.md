@@ -2,6 +2,7 @@
 title = "Wifi Hacking with aircrack-ng"
 summary = "A guide to using aircrack-ng to bruteforce a router's password"
 date = "2019-09-26"
+lastmod = "2026-03-28T23:19:01-07:00"
 categories = ["Cybersecurity"]
 ShowToc = true
 TocOpen = true

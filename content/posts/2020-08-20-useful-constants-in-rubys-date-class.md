@@ -2,6 +2,7 @@
 title = "Useful Constants in Ruby's Date Class"
 summary = "Diving into useful constants in Ruby's Date class"
 date = "2020-08-20"
+lastmod = "2026-01-25T13:54:55-08:00"
 categories = ["Ruby"]
 +++
 

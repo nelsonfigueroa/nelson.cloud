@@ -2,6 +2,7 @@
 title = "My Donation Earnings Over the Past Year"
 summary = "My donation earnings on buymeacoffee.com over the past year."
 date = "2023-05-04"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Random"]
 +++
 

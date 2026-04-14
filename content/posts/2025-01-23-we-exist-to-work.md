@@ -2,6 +2,7 @@
 title = "We Exist Only to Work"
 summary = "We are born, we go to school to prepare for a job, we work most of our lives, then we die."
 date = "2025-01-23"
+lastmod = "2026-04-01T22:42:16-07:00"
 categories = ["Opinion", "Work", "Funny", "Random"]
 ShowToc = false
 TocOpen = false

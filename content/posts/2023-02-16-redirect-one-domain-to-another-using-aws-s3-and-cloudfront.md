@@ -2,6 +2,7 @@
 title = "Redirect One Domain to Another Using AWS S3 and CloudFront"
 summary = "How to redirect a domain to another one using AWS S3, ACM, and CloudFront"
 date = "2023-02-16"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["AWS"]
 ShowToc = true
 TocOpen = true

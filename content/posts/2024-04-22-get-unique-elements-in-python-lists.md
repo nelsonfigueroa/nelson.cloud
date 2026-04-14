@@ -2,6 +2,7 @@
 title = "Get Unique Elements in a Python List"
 summary = "Remove duplicate elements from Python lists using the set() function."
 date = "2024-04-22"
+lastmod = "2026-03-28T23:28:25-07:00"
 categories = ["Python"]
 ShowToc = false
 TocOpen = false

@@ -2,6 +2,7 @@
 title = "Proxying GoatCounter Requests for a Hugo Blog on CloudFront to bypass Ad Blockers"
 summary = "Using CloudFront to proxy requests to GoatCounter so that adblockers don't block page views."
 date = "2026-04-09"
+lastmod = "2026-04-09T20:18:58-07:00"
 categories = ["AWS", "Hugo", "Pulumi"]
 ShowToc = true
 TocOpen = true

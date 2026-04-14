@@ -2,6 +2,7 @@
 title = "Optional Type Hints in Python"
 summary = "Comparing Optional[str] vs str | None syntax in Python v3.10+ with practical examples."
 date = "2024-01-16"
+lastmod = "2026-03-28T23:35:00-07:00"
 categories = ["Python"]
 ShowToc = true
 TocOpen = true

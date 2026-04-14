@@ -2,6 +2,7 @@
 title = "Proper Hugo Template Syntax Highlighting with go-html-template"
 summary = "Improve Hugo template code highlighting using go-html-template Markdown code blocks."
 date = "2025-08-03"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Hugo", "HTML"]
 ShowToc = false
 TocOpen = false

@@ -2,6 +2,7 @@
 title = "It’s 2025, Why Aren’t You Using an Ad Blocker?"
 summary = "Far too many people still don't use ad blockers."
 date = "2025-05-10"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Privacy"]
 +++
 

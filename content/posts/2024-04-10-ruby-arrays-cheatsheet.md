@@ -2,6 +2,7 @@
 title = "Ruby Arrays Cheatsheet"
 summary = "A Ruby arrays cheatsheet with methods and examples for coding interviews."
 date = "2024-04-10"
+lastmod = "2026-04-01T22:35:32-07:00"
 categories = ["Ruby"]
 ShowToc = true
 TocOpen = false

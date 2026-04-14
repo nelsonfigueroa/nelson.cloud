@@ -2,6 +2,7 @@
 title = "Publishing Fake AWS API Keys on My Site"
 summary = "Using canarytokens.org to generate fake AWS API keys and then publishing them on my site."
 date = "2023-06-16"
+lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Cybersecurity"]
 +++
 

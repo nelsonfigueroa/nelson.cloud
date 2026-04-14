@@ -2,6 +2,7 @@
 title = "Using time.Sleep() in Go"
 summary = "Examples of using time.Sleep() in Go because the official documentation is lacking."
 date = "2026-01-29"
+lastmod = "2026-01-30T22:10:46-08:00"
 categories = ["Go"]
 ShowToc = true
 TocOpen = true

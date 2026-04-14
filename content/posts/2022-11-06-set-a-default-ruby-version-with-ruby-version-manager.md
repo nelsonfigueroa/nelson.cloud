@@ -2,6 +2,7 @@
 title = "Set a Default Ruby Version with Ruby Version Manager (RVM)"
 summary = "Set a default Ruby version using RVM with rvm --default use <version number>"
 date = "2022-11-06"
+lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["Ruby"]
 +++
 
