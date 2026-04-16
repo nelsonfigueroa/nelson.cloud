@@ -383,6 +383,17 @@ nelson_cloud_a = aws.route53.Record("nelson-cloud-a",
     zone_id="Z032177030KUZLOKGS50G",
     opts = pulumi.ResourceOptions(protect=True))
 
+nelson_cloud_aaaa = aws.route53.Record("nelson-cloud-aaaa",
+    aliases=[{
+        "evaluate_target_health": False,
+        "name": "d31hz6jsrwz1m1.cloudfront.net",
+        "zone_id": "Z2FDTNDATAQYW2",
+    }],
+    name="nelson.cloud",
+    type=aws.route53.RecordType.AAAA,
+    zone_id="Z032177030KUZLOKGS50G",
+    opts = pulumi.ResourceOptions(protect=True))
+
 nelson_cloud_mx = aws.route53.Record("nelson-cloud-mx",
     name="nelson.cloud",
     records=[
