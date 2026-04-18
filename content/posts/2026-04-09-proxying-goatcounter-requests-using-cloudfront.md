@@ -2,14 +2,12 @@
 title = "Proxying GoatCounter Requests for a Hugo Blog on CloudFront to bypass Ad Blockers"
 summary = "Using CloudFront to proxy requests to GoatCounter so that adblockers don't block page views."
 date = "2026-04-09"
-lastmod = "2026-04-09T20:18:58-07:00"
+lastmod = "2026-04-18T14:32:00-07:00"
 categories = ["AWS", "Hugo", "Pulumi"]
 ShowToc = true
 TocOpen = true
 featured = false
 +++
-
-## Intro
 
 I've been running [GoatCounter](https://www.goatcounter.com/) on my site using [the script](https://gc.zgo.at/count.js). The problem is that adblockers like uBlock Origin block it (understandably).
 
@@ -21,7 +19,7 @@ It's possible to [self-host](https://github.com/arp242/goatcounter) GoatCounter,
 
 ## On Analytics and Privacy
 
-I know there are concerns around analytics being privacy-invasive. GoatCounter is privacy-respecting. I care about privacy. I am of the belief that GoatCounter is harmless. I just like to keep track of the visitors on my site.
+I know I'm bypassing a user's preference to not be tracked, even if it's (in my opinion) a harmless analytics tool. I just want to see who reads my stuff, that's all.
 
 Read the GoatCounter developer's take if you want another opinion: [Analytics on personal websites](https://www.arp242.net/personal-analytics.html).
 
@@ -149,6 +147,10 @@ After this, I built my site with Hugo and deployed it on S3/CloudFront by updati
 Now, GoatCounter should no longer be blocked by uBlock Origin. I tested by loading my site on an incognito browser window and checked that uBlock Origin was no longer blocking anything on my domain.
 
 <img src="/proxying-goatcounter-requests/after.webp" alt="uBlock Origin no longer showing a blocked domain" width="720" height="540" style="max-width: 100%; height: auto; aspect-ratio: 1290 / 968;" loading="lazy" decoding="async">
+
+And for further proof, checking the network tab shows a successful `POST` request to the `/gc/count` endpoint on my domain along with response headers from AWS/CloudFront:
+
+<img src="/proxying-goatcounter-requests/network.webp" alt="Firefox network tab showing a successful request to /gc/count" width="609" height="720" style="max-width: 100%; height: auto; aspect-ratio: 870 / 1028;" loading="lazy" decoding="async">
     
 Everything looks good!
 
