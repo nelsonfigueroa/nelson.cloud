@@ -2,7 +2,7 @@
 title = "How to Install a Specific Version of a Homebrew Package with brew extract"
 summary = "Use `brew extract` to install a specific version of a homebrew package."
 date = "2026-04-19"
-lastmod = "2026-04-19T00:32:00-07:00"
+# lastmod = "2026-04-19T00:32:00-07:00"
 categories = ["Homebrew", "macOS", "Hugo"]
 ShowToc = true
 TocOpen = true
