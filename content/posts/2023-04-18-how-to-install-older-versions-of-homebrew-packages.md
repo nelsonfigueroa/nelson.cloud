@@ -2,10 +2,27 @@
 title = "How To Install Older Versions of Homebrew Packages"
 summary = "How to install a specific version of Homebrew packages."
 date = "2023-04-18"
-lastmod = "2026-04-01T22:42:16-07:00"
+lastmod = "2026-04-19T00:32:00-07:00"
 categories = ["Homebrew", "macOS"]
+ShowToc = false
+TocOpen = false
 featured = false
 +++
+
+{{< admonition type="warning" title="This method is outdated" >}}
+The approach outlined in this post still works in some cases, but as Homebrew has changed, this method has become unreliable. You may run into errors like:
+
+```
+Error: Couldn't find manifest matching bottle checksum.
+```
+
+```
+Error: An exception occurred within a child process:
+  NoMethodError: undefined method 'user' for nil
+```
+
+A cleaner approach is `brew extract`, which copies the historical formula into a local tap so Homebrew has the context it needs. See my newer post instead: [How to Install a Specific Version of a Homebrew Package with brew extract]({{< ref "/posts/2026-04-19-how-to-install-a-specific-version-of-a-homebrew-package.md" >}}).
+{{< /admonition >}}
 
 It's possible to install older versions of Homebrew packages by saving an older version of the corresponding Ruby file locally and running `brew install <package>.rb`. I'll use the `terraform` package as an example.
 
