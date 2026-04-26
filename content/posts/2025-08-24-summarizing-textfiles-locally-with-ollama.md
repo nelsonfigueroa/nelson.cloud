@@ -4,8 +4,8 @@ summary = "Generate a string with Python, pass it into Ollama, and you get a str
 date = "2025-08-24"
 lastmod = "2026-01-25T13:54:55-08:00"
 categories = ["Python", "AI", "LLM", "Ollama"]
-ShowToc = false
-TocOpen = false
+ShowToc = true
+TocOpen = true
 +++
 
 I've used LLMs before but through an interface (i.e. [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/app), etc) but when I was trying to run a LLM locally I was overthinking how it worked.
