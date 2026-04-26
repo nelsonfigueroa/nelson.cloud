@@ -328,6 +328,8 @@ categories:
         title: "Oh Shit, Git!?!"
       - url: "https://har-sanitizer.pages.dev/"
         title: "HAR File Sanitizer"
+      - url: "https://knowyourbar.com/kyb_scatter_interactive"
+        title: "Protein Bars: Protein vs. Calories"
 
   - name: "Other Good Reads"
     links:
