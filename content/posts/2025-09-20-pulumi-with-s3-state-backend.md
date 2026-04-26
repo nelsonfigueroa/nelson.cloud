@@ -2,7 +2,7 @@
 title = "How to Use an AWS S3 Bucket as a Pulumi State Backend"
 summary = "Self-host Pulumi state with an S3 Bucket, an IAM User, and the Pulumi CLI."
 date = "2025-09-20"
-lastmod = "2026-02-07T01:54:50-08:00"
+lastmod = "2026-04-25T23:51:05-07:00"
 categories = ["Pulumi", "AWS"]
 ShowToc = true
 TocOpen = true
@@ -148,6 +148,12 @@ Then I ran `pulumi up -y` and it worked!
 And just to double check, I can see that my previously empty S3 bucket now has contents created by the Pulumi CLI:
 
 <img src="/pulumi-with-s3-backend/s3-bucket-with-contents.webp" alt="S3 Bucket with Pulumi state contents" width="720" height="274" style="max-width: 100%; height: auto; aspect-ratio: 2236 / 850;" loading="lazy" decoding="async">
+
+Everything works!
+
+---
+
+If you're interested in setting up CI/CD with this setup, I wrote a post showing how to do so: [GitHub Actions for Pulumi with an AWS S3 Backend]({{< ref "/posts/2025-12-11-pulumi-github-actions-with-s3-backend.md" >}}).
 
 ## References
 - https://www.pulumi.com/docs/iac/download-install/
