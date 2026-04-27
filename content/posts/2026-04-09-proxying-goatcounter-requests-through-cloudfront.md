@@ -1,15 +1,16 @@
 +++
-title = "Proxying GoatCounter Requests for a Hugo Blog on CloudFront to bypass Ad Blockers"
-summary = "Using CloudFront to proxy requests to GoatCounter so that adblockers don't block page views."
+title = "Proxying GoatCounter Requests Through CloudFront to Bypass Ad Blockers"
+summary = "How to configure CloudFront to proxy requests to GoatCounter so that adblockers don't block page views."
+aliases = ["/proxying-goatcounter-requests-for-a-hugo-blog-on-cloudfront-to-bypass-ad-blockers/"]
 date = "2026-04-09"
 lastmod = "2026-04-18T14:32:00-07:00"
-categories = ["AWS", "Hugo", "Pulumi"]
+categories = ["AWS", "Pulumi"]
 ShowToc = true
 TocOpen = true
 featured = false
 +++
 
-I've been running [GoatCounter](https://www.goatcounter.com/) on my site using [the script](https://gc.zgo.at/count.js). The problem is that adblockers like uBlock Origin block it (understandably).
+This blog is a [Hugo](https://gohugo.io/)-generated static site hosted on AWS using S3 and CloudFront. I've been running [GoatCounter](https://www.goatcounter.com/) on my site using [the provided script](https://gc.zgo.at/count.js) to see who views my blog posts. Every time someone visits my site, a request goes out to GoatCounter. The problem is that adblockers like uBlock Origin block it (understandably).
 
 <img src="/proxying-goatcounter-requests/before.webp" alt="uBlock Origin showing a blocked domain" width="720" height="546" style="max-width: 100%; height: auto; aspect-ratio: 1292 / 980;" loading="lazy" decoding="async">
 
