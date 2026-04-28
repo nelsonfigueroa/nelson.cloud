@@ -134,6 +134,8 @@ categories:
         title: "The Hype is the Product"
       - url: "https://furbo.org/2024/08/26/slop-is-good/"
         title: "Slop is Good"
+      - url: "https://fnhipster.com/posts/personal-software"
+        title: "Personal Software"
 
   - name: "On Writing and Blogging"
     links:
@@ -266,6 +268,8 @@ categories:
         title: "campedersen.com"
       - url: "https://moonlit.exposed/"
         title: "moonlit.exposed"
+      - url: "https://fnhipster.com/"
+        title: "fnhipster.com"
 
   - name: "Fun Links to Kill Time"
     links:
