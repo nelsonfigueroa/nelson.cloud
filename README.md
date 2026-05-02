@@ -1,1 +1,7 @@
 Source code for my personal site [nelson.cloud](https://nelson.cloud). Built using [Hugo](https://gohugo.io). It has a custom theme that originally started with [PaperMod](https://github.com/adityatelange/hugo-PaperMod) as the base.
+
+To run the site locally, run the following in the root of the repository:
+
+```
+hugo server
+```
