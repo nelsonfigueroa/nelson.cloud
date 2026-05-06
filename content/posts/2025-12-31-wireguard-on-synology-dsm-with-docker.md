@@ -2,14 +2,14 @@
 title = "Setting up WireGuard on Synology DSM 7 using Docker and Gluetun"
 summary = "A guide to connect a Synology NAS to a WireGuard VPN server, with qBittorrent as an example."
 date = "2025-12-31"
-lastmod = "2026-03-28T20:20:15-07:00"
+lastmod = "2026-05-06T15:48:18-07:00"
 categories = ["Docker", "Synology"]
 ShowToc = true
 TocOpen = true
 featured = true
 +++
 
-At the time of writing Synology DiskStation Manager (DSM) [v7.2.2-72806](https://www.synology.com/en-us/releaseNote/DSM#ver_72806-5) is running on Linux v4.4.4 which doesn't support WireGuard.  
+At the time of writing Synology DiskStation Manager (DSM) [v7.3.2-86009 Update 3](https://www.synology.com/en-us/releaseNote/DSM?model=DS920%2B#ver_86009-3) is running on Linux v4.4.302+ which doesn't support WireGuard.  
 It [doesn't look like Synology is interested in adding WireGuard support](https://community.synology.com/enu/forum/1/post/158013) the way OpenVPN is supported. So if you want certain services on your Synology NAS to connect through WireGuard, you'll need a workaround.
 
 One workaround is to establish a WireGuard connection using [Gluetun](https://github.com/qdm12/gluetun) in Docker. Then have containerized services do their networking through this Gluetun container. The caveat is that whatever services you want to go through a WireGuard tunnel will need to be containerized.
@@ -24,7 +24,7 @@ You'll also need a WireGuard configuration file. For this guide I'll be using a 
 
 ## Why Gluetun?
 
-A bit of background as to why I'm using Gluetun. There's a [linuxserver/wireguard](https://hub.docker.com/r/linuxserver/wireguard) docker image we can use, but that image expects the underlying kernel to have WireGuard support. Since Synology DSM runs on 4.4.4 at this time that means it doesn't support WireGuard, which means the linuxserver/wireguard image won't work. I tried to get it working myself but kept running into errors.
+A bit of background as to why I'm using Gluetun. There's a [linuxserver/wireguard](https://hub.docker.com/r/linuxserver/wireguard) docker image we can use, but that image expects the underlying kernel to have WireGuard support. Since Synology DSM runs on 4.4.302+ at this time that means it doesn't support WireGuard, which means the linuxserver/wireguard image won't work. I tried to get it working myself but kept running into errors.
 
 Unlike linuxserver/wireguard, Gluetun works on any kernel by using something called userspace WireGuard implementation. Basically it runs at the user level rather than at the kernel level. This is beyond my knowledge though, so I encourage you to do some of your own research if you want to learn more.
 
@@ -152,10 +152,10 @@ Now we can start up the Gluetun container and verify that it works.
 
 ## Running the Gluetun Container and Verifying WireGuard Works
 
-In the same directory as `docker-compose.yml`, spin up a Gluetun container with `docker-compose`:
+In the same directory as `docker-compose.yml`, spin up a Gluetun container with `docker compose`:
 
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 You'll see some output similar to the following:
@@ -247,7 +247,7 @@ services:
 Then run:
 
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 You'll see output similar to:
@@ -271,6 +271,10 @@ You'll see output similar to:
 ```
 
 qBittorrent has a web interface that can be accessed on port `8080`. Open up a web browser and go to `http://<your-synology-ip-address>:8080` and see if the web UI shows up. If it does, qBittorrent is running successfully and all of its network traffic will run through Gluetun and WireGuard!
+
+{{< admonition type="note" >}}
+In the qBittorrent Web UI, you may need to go to Tools > Options > Advanced and set the Network interface to the correct one to establish a successful connection. In my case, the interface `tun0` was the one that worked.
+{{< /admonition >}}
 
 We can do one final check with the qBittorrent container to make sure it has the same IP address as the Gluetun container:
 
