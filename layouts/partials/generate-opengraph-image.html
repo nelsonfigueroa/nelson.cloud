@@ -10,6 +10,41 @@
     "y" 80
     "font" $font
   )) -}}
+
+  {{/* Position description below however many lines the title wrapped to.
+       CommitMono at size 48 fits ~38 chars per line within the 1080px usable width. */}}
+  {{- $titleLines := math.Ceil (div (len .Title | float) 38.0) -}}
+  {{- $descY := add 80 (mul $titleLines 56) | add 12 -}}
+
+  {{/* Description below title, greedy word-wrapped. --secondary in dark mode. */}}
+  {{- $desc := or .Description .Params.summary -}}
+  {{- with $desc -}}
+    {{- $maxChars := 65 -}}
+    {{- $lines := slice -}}
+    {{- $current := "" -}}
+    {{- range (split (. | plainify) " ") -}}
+      {{- $word := . -}}
+      {{- if ne $word "" -}}
+        {{- $candidate := cond (eq $current "") $word (printf "%s %s" $current $word) -}}
+        {{- if le (len $candidate) $maxChars -}}
+          {{- $current = $candidate -}}
+        {{- else -}}
+          {{- if ne $current "" -}}{{- $lines = $lines | append $current -}}{{- end -}}
+          {{- $current = $word -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if ne $current "" -}}{{- $lines = $lines | append $current -}}{{- end -}}
+    {{- $img = $img.Filter (images.Text (delimit $lines "\n") (dict
+      "color" "#9b9c9d"
+      "size" 24
+      "linespacing" 6
+      "x" 60
+      "y" $descY
+      "font" $font
+    )) -}}
+  {{- end -}}
+
   {{/* Render [nelson.cloud] as three segments: bracket, domain, bracket */}}
   {{- $size := 28 -}}
   {{- $charW := 17 -}}
