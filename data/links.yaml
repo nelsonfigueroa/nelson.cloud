@@ -171,7 +171,7 @@ categories:
       - url: "https://blogs.hn/"
         title: "blogs.hn"
       - url: "https://neocities.org/browse"
-        title: "neocities.org"
+        title: "Neocities"
       - url: "https://ooh.directory/"
         title: "ooh.directory"
       - url: "https://personalsit.es/"
@@ -194,6 +194,8 @@ categories:
         title: "blogroll.club"
       - url: "https://rawweb.org/"
         title: "rawweb.org"
+      - url: "https://text.blogosphere.app/"
+        title: "Blogosphere"
 
   - name: "Blogroll"
     description: "Basically blogs I subscribe to via RSS or regularly read"
