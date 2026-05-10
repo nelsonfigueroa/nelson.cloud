@@ -10,6 +10,8 @@ TocOpen = false
 
 This is a cheatsheet I made for myself when studying for ([Leetcode](https://leetcode.com/)/[Hackerrank](https://www.hackerrank.com/))-style interviews. It's organized in a way that makes sense to me when I'm trying to solve an array problem. I figured I would make it public in case it can help others :)
 
+I also made a [Python Lists Cheatsheet]({{< ref "/posts/2024-04-29-python-arrays-cheatsheet.md" >}}) you can check out.
+
 All examples were run using the [Ruby v3.2.3 REPL](https://www.rubyguides.com/2018/12/what-is-a-repl-in-ruby/).
 
 ## Initializing an Array

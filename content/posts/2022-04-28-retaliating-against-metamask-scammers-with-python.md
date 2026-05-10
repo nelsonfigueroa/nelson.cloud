@@ -153,3 +153,5 @@ I hate scammers. I hope I made their lives difficult.
 If they're smart, they'll filter out seed phrases coming in from my IP address in their database.
 But considering that their fake MetaMask site doesn't use a domain or SSL, they probably aren't very bright.
 Even if my original IP address was blocked, I'm sure the seed phrases I provided polluted their database. I doubt they're keeping track of IP addresses at the database level.
+
+If you enjoyed this you'll probably enjoy this other post where I was messing with scammers: [Using Python to Flood Scammers with Fake Passwords]({{< ref "/posts/2022-07-02-using-python-to-flood-scammers-with-fake-passwords.md" >}}).

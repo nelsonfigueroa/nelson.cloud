@@ -10,7 +10,9 @@ TocOpen = true
 
 ## Introduction
 
-This is a quick guide to set up GitHub Actions for Pulumi with an [AWS S3](https://aws.amazon.com/s3/) Backend. There are some differences compared to running `pulumi` commands locally. This guide assumes you have the following:
+This is a quick guide to set up GitHub Actions for Pulumi with an [AWS S3](https://aws.amazon.com/s3/) backend. It builds on a previous guide I wrote: [How to Use an AWS S3 Bucket as a Pulumi State Backend]({{< ref "/posts/2025-09-20-pulumi-with-s3-state-backend.md" >}}).
+
+This guide assumes you have the following:
 - An AWS S3 Bucket created and ready to be used with Pulumi
 - An IAM User that has permissions to read/write to the S3 bucket
 - The Access Key and Secret Access Key for the IAM User to use for authenticating to AWS within GitHub Actions

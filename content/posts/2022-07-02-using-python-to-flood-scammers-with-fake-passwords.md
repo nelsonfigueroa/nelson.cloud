@@ -119,3 +119,5 @@ I ran the script and left it running for a while. The time being printed out is 
 It's not easy to tell in a screenshot, but with the `multiprocessing` package I was able to speed up the process of sending post requests. My terminal was filling up pretty quickly.
 
 I hope I made the scammers' lives more difficult as a result of this. I also reported the domains being used so that they are hopefully flagged by browsers in the future.
+
+If you enjoyed this, I previously did something similar to mess with some MetaMask scammers: [Retaliating Against MetaMask Scammers With Python]({{< ref "/posts/2022-04-28-retaliating-against-metamask-scammers-with-python.md" >}}).
