@@ -3,7 +3,7 @@ title = "Being Poor"
 summary = "Personal experiences of growing up poor"
 date = "2024-04-01"
 lastmod = "2026-03-26T19:18:46-07:00"
-categories = ["Random", "Personal"]
+categories = ["Random"]
 +++
 
 I came across this article and it hit pretty deep: https://whatever.scalzi.com/2005/09/03/being-poor/
