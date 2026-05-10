@@ -6,7 +6,7 @@ lastmod = "2026-02-08T01:50:40-08:00"
 categories = ["Python", "Cybersecurity"]
 ShowToc = true
 TocOpen = true
-featured = true
+featured = false
 +++
 
 ## Introduction

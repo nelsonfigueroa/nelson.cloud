@@ -6,6 +6,7 @@ lastmod = "2026-05-05T17:43:02-07:00"
 categories = ["Blogs"]
 ShowToc = true
 TocOpen = true
+featured = true
 +++
 
 This is a list of resources I use to discover new blogs. I also maintain a [list of my favorite blogs]({{< ref "/posts/2024-04-03-my-favorite-blogs.md" >}}) if you're interested.
