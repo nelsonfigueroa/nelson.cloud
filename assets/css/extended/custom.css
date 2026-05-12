@@ -12,6 +12,7 @@ pre.ascii-art {
     opacity: 0;
     transition: opacity 0.15s ease;
     color: var(--tertiary);
+    text-shadow: 0 0 8px currentColor, 0 0 14px currentColor;
 }
 
 .hidden-star.star-tint {
@@ -43,6 +44,11 @@ pre.ascii-art {
 @keyframes shine-2 {
     0%, 50% { content: "+"; }
     51%, 100% { content: "×"; }
+}
+
+.shining-star::after,
+.shining-star-2::after {
+    text-shadow: 0 0 8px currentColor, 0 0 14px currentColor;
 }
 
 ::selection {
