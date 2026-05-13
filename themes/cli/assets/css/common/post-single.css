@@ -169,10 +169,12 @@
     margin: auto 0;
 }
 
+/* code blocks with syntax highlighting */
 .post-content .highlight:not(table) {
     margin: 10px auto;
     background: var(--code-block-bg) !important;
     direction: ltr;
+    border: 1px solid var(--border);
 }
 
 .post-content li > .highlight {
