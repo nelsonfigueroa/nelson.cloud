@@ -166,8 +166,8 @@ today = datetime.today()
 today_formatted = today.strftime("%Y-%m-%d")
 
 # generate the date 30 days from today for use in range later
-one_year_from_today = today + timedelta(days=30)
-one_year_from_today_formatted = one_year_from_today.strftime("%Y-%m-%d")
+thirty_days_from_today = today + timedelta(days=30)
+thirty_days_from_today_formatted = thirty_days_from_today.strftime("%Y-%m-%d")
 
 # GET request to get event types
 username = starting_url.split("/")[3]
@@ -185,7 +185,7 @@ for event_type in event_types:
     # GET request to get the dates available for the event type
     time_zone = "America/Los_Angeles"
     range_start = today_formatted
-    range_end = one_year_from_today_formatted
+    range_end = thirty_days_from_today_formatted
     booking_dates_url = (
         f"https://calendly.com/api/booking/event_types/{uuid}/calendar/range"
     )

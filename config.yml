@@ -53,7 +53,7 @@ languages:
           url: links/
           weight: 5
         - name: About
-          url: about
+          url: about/
           weight: 6
         - name: Support
           url: support/
