@@ -6,7 +6,7 @@ lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["macOS", "Shell"]
 +++
 
-After deleting apps on macOS, they tend leave behind residual files and directories throughout the system. You can use the `find` command to find these files after an app has been deleted. I'll be deleting the LastPass app and removing its residual files as an example.
+After deleting apps on macOS, they tend to leave behind residual files and directories throughout the system. You can use the `find` command to find these files after an app has been deleted. I'll be deleting the LastPass app and removing its residual files as an example.
 
 {{< admonition type="tip" title="2024-10-13 Update" >}}
 I recently discovered [Pearcleaner](https://github.com/alienator88/Pearcleaner). You can use this app to delete other apps along with all the extra files and folders they create. I recommend you use this first and then continue reading this post if you want to look more deeply.
@@ -61,7 +61,7 @@ This could probably be automated all the way through the deletion step, but I pr
 
 Also, this *may* help to free up space on macOS, but I mainly did it because I like keeping my system tidy.
 
-Try this out with whatever apps you've deleted in the past. You can also try finding files and folders be specifying a company name. For example, replace `\*lastpass\*` with `\*microsoft\*` and see what you get!
+Try this out with whatever apps you've deleted in the past. You can also try finding files and folders by specifying a company name. For example, replace `\*lastpass\*` with `\*microsoft\*` and see what you get!
 
 ## References
 - https://stackoverflow.com/questions/4210042/how-do-i-exclude-a-directory-when-using-find

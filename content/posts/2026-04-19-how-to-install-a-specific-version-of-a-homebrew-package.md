@@ -175,7 +175,7 @@ Unlinking /opt/homebrew/Cellar/hugo@0.145.0/0.145.0... 1 symlinks removed.
 Linking /opt/homebrew/Cellar/hugo@0.145.0/0.145.0... 48 symlinks created.
 ```
 
-At first I expected `brew link --overwrite hugo` to work right off the bat, but running both `brew unlink` and `brew link --overwrite` is necessary to switch between versions properly. This is because homebrew tracks linked formulas and actual symlinks on disk separately. To help Homebrew track things properly we need to run both `brew unlink` to clean the records, then `brew link --overwrite` to write the new symlinks.
+At first I expected `brew link --overwrite hugo` to work right off the bat, but running both `brew unlink` and `brew link --overwrite` is necessary to switch between versions properly. This is because Homebrew tracks linked formulas and actual symlinks on disk separately. To help Homebrew track things properly we need to run both `brew unlink` to clean the records, then `brew link --overwrite` to write the new symlinks.
 
 There's no need to use `brew pin` to prevent the older version of Hugo from updating. Since this is a local copy, there is no remote repository that would be updated that would in turn update our local version. You can even try running `brew update` to see the warning message:
 

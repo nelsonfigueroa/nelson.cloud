@@ -26,7 +26,7 @@ You'll also need a WireGuard configuration file. For this guide I'll be using a 
 
 A bit of background as to why I'm using Gluetun. There's a [linuxserver/wireguard](https://hub.docker.com/r/linuxserver/wireguard) docker image we can use, but that image expects the underlying kernel to have WireGuard support. Since Synology DSM runs on 4.4.302+ at this time that means it doesn't support WireGuard, which means the linuxserver/wireguard image won't work. I tried to get it working myself but kept running into errors.
 
-Unlike linuxserver/wireguard, Gluetun works on any kernel by using something called userspace WireGuard implementation. Basically it runs at the user level rather than at the kernel level. This is beyond my knowledge though, so I encourage you to do some of your own research if you want to learn more.
+Unlike linuxserver/wireguard, Gluetun works on any kernel by using something called a userspace WireGuard implementation. Basically it runs at the user level rather than at the kernel level. This is beyond my knowledge though, so I encourage you to do some of your own research if you want to learn more.
 
 ## Creating Gluetun Directories
 

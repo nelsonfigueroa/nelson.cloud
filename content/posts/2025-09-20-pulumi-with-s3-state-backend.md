@@ -41,7 +41,7 @@ Then in the next step, I selected "Attach policies directly" and selected the AW
 
 <img src="/pulumi-with-s3-backend/iam-permissions.webp" alt="IAM permissions" width="720" height="418" style="max-width: 100%; height: auto; aspect-ratio: 1968 / 1144;" loading="lazy" decoding="async">
 
-In the next screen, double check everything and then click on "Create user".
+In the next screen, double-check everything and then click on "Create user".
 
 <img src="/pulumi-with-s3-backend/iam-review.webp" alt="Reviewing IAM user" width="720" height="384" style="max-width: 100%; height: auto; aspect-ratio: 2540 / 1356;" loading="lazy" decoding="async">
 

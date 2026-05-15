@@ -39,7 +39,7 @@ This was the final step before creating an appointment:
 
 <img src="/calendly-spam/scheduling-appointment.webp" alt="The process of scheduling an appointment on Calendly" width="720" height="422" style="max-width: 100%; height: auto; aspect-ratio: 2706 / 1588;" loading="lazy" decoding="async">
 
-As I went through the process of scheduling and appointment I was keeping track of all the `GET` requests and their payloads (I chose not to show those here to get to the good stuff sooner). The final request that actually created an appointment was a `POST` request to `https://calendly.com/api/booking/invitees`. This is the payload of that request:
+As I went through the process of scheduling an appointment I was keeping track of all the `GET` requests and their payloads (I chose not to show those here to get to the good stuff sooner). The final request that actually created an appointment was a `POST` request to `https://calendly.com/api/booking/invitees`. This is the payload of that request:
 
 ```json
 {
@@ -294,7 +294,7 @@ I can think of a few scenarios where this could do some damage:
 - If you provide support to customers via Calendly, your calendar would also fill up, preventing actual customers from seeking support.
 - If you get spammed, you may take the time to delete appointments and you might accidentally delete some legitimate appointments with real people.
 
-There's probably a lot more scenarios.
+There are probably a lot more scenarios.
 
 ## Further Reading
 

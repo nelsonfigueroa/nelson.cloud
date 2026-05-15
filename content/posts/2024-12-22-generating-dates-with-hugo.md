@@ -50,7 +50,7 @@ Output:
 ```
 
 {{< admonition type="note" >}}
-Always use `PM` (or `pm`) as the placeholder in the time string. Using `AM` in the time string will print the literal text `AM` as regardless of the actual time. For example:
+Always use `PM` (or `pm`) as the placeholder in the time string. Using `AM` in the time string will print the literal text `AM` regardless of the actual time. For example:
 
 ```go-html-template
 {{ now | dateFormat "2006-01-02 3:04AM" }}

@@ -6,11 +6,11 @@ lastmod = "2026-03-26T19:18:46-07:00"
 categories = ["Privacy"]
 +++
 
-I find myself asking this any time I discover that someone uses a web browser with no ad blocking solution. More specifically, it blows my mind when tech-savvy people that work in software development (and related roles) don't use ad blockers. I don't understand why.
+I find myself asking this any time I discover that someone uses a web browser with no ad blocking solution. More specifically, it blows my mind when tech-savvy people who work in software development (and related roles) don't use ad blockers. I don't understand why.
 
 The "main" web is a terrible experience when browsing without ad blockers.
 
-If you're one of those people that doesn't have an ad blocker, here are some links to improve your web browsing experience.
+If you're one of those people who don't have an ad blocker, here are some links to improve your web browsing experience.
 
 ## Browser Extensions to Block Ads
 

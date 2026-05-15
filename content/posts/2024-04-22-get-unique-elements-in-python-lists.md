@@ -51,7 +51,7 @@ The order of elements after using `set()` is not guaranteed. I wrote the example
 
 I learned this trick after realizing that unfortunately Python doesn't have a [`uniq()` method like Ruby](https://apidock.com/ruby/Array/uniq) that does this exact thing.
 
-There's also other ways of getting unique values from a list that you can read about in [this GeeksforGeeks article](https://www.geeksforgeeks.org/python-get-unique-values-list/). I didn't cover the other cases because I feel like the easiest way is to use `set()`.
+There are also other ways of getting unique values from a list that you can read about in [this GeeksforGeeks article](https://www.geeksforgeeks.org/python-get-unique-values-list/). I didn't cover the other cases because I feel like the easiest way is to use `set()`.
 
 ## References
 - https://docs.python.org/3/tutorial/datastructures.html#sets

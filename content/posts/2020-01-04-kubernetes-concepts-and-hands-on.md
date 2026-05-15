@@ -41,7 +41,7 @@ Each cluster contains a single master node and multiple worker nodes. Each node 
 The master node is responsible for the overall management of the cluster. It has an API Server, a Scheduler, a Controller Manager, and a distributed key-value store called `etcd`.
 
 - The API Server allows you to interact with the Kubernetes API.
-- The scheduler watches created pods who do not have a node assigned yet, and assigns the pod to run on a specific node.
+- The scheduler watches created pods that do not have a node assigned yet, and assigns the pod to run on a specific node.
 - The Controller Manager runs controllers, which are simply background threads that run tasks in the cluster.
 - The `etcd` store is used as a database for cluster data such as job scheduling information and pod details.
 
@@ -67,7 +67,7 @@ Pods are designed to be disposable. They never self-heal and are not restarted b
 
 Pods have several states: pending, running, succeeded, failed, and CrashLoopBackOff
 
-- `pending`: A pod as been accepted by Kubernetes but a container has not been created yet.
+- `pending`: A pod has been accepted by Kubernetes but a container has not been created yet.
 - `running`: A pod has been scheduled on a node and all of its containers have been created, and at least one container is in a running state
 - `succeeded`: All the containers in a pod have exited with a status of 0 which means success. These containers will not be restarted.
 - `failed`: All containers in the pod have exited and at least one container has failed and returned a non-zero exit status.
@@ -173,7 +173,7 @@ Minikube is a tool that will start up a single-node Kubernetes cluster on a virt
 
 ### Installing Minikube
 
-I'll be showing steps to install Minikube on macOS using `brew`. If you're running Windows, Your best bet is to refer to the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/install-minikube/).
+I'll be showing steps to install Minikube on macOS using `brew`. If you're running Windows, your best bet is to refer to the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/install-minikube/).
 
 You'll need a hypervisor to run Minikube on. I chose VirtualBox, and installing it was easy as running:
 
@@ -193,7 +193,7 @@ After installation is complete, start up minikube
 $ minikube start
 ```
 
-This command will download the Minikube .iso and run it using Virtualbox.
+This command will download the Minikube .iso and run it using VirtualBox.
 
 We can double check that everything is working by running the following:
 
@@ -334,7 +334,7 @@ While it's nice looking at a dashboard, I highly recommend getting comfortable w
 
 In an earlier section, I briefly mentioned that you can specify Kubernetes objects using YAML files. We're going to deploy a Ruby on Rails application on Minikube using YAML files. (*Note: The application was created by me for learning purposes, but we could be using any other image for this*)
 
-Using YAML files are useful because they allow you to version control your Kubernetes resources and modify them in a single file. Whenever changes are made to a YAML file, we simply need to run `kubectl apply` as you'll see soon. This process can even be automated in a CI service.
+Using YAML files is useful because they allow you to version control your Kubernetes resources and modify them in a single file. Whenever changes are made to a YAML file, we simply need to run `kubectl apply` as you'll see soon. This process can even be automated in a CI service.
 
 First, let's start a fresh Minikube instance. Go ahead and delete the current Minikube VM and start another one:
 

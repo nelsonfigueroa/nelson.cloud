@@ -33,7 +33,7 @@ Whatever the maximum of the salary range is for this position.
 
 **> "Where do you see yourself in 5 years?"**
 
-If the compensation for this position increases year to year and is in line with other top paying companies, I see myself staying at your company. It also helps if there are growth opportunities for me as a software engineer.
+If the compensation for this position increases year to year and is in line with other top-paying companies, I see myself staying at your company. It also helps if there are growth opportunities for me as a software engineer.
 
 Otherwise, I see myself at a different company from yours that pays more.
 

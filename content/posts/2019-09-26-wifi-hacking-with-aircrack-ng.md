@@ -117,7 +117,7 @@ You'll see a list of access points and devices associated with each access point
 - ESSID - Name of access point
 - STATION - Device connected to access point (Laptop, smartphone, etc)
 
-Now lets select an access point and run a scan on only that particular device. We'll capture traffic and save it to a file. You'll need to make note of the BSSID and channel of the access point. In my case, my router's ESSID is "Lower The Rent". We'll scan it using the following command formula:
+Now let's select an access point and run a scan on only that particular device. We'll capture traffic and save it to a file. You'll need to make note of the BSSID and channel of the access point. In my case, my router's ESSID is "Lower The Rent". We'll scan it using the following command formula:
 
 ```
 $ airodump-ng -c [channel number] -w [filename for output] --bssid [MAC Address of A.P.] [your interface]
@@ -317,7 +317,7 @@ Using this knowledge of MAC Addresses, we can also determine the manufacturers o
 
 ### Password Lists
 
-Password lists are often used in password cracking to speed up the process. Instead of trying every possible combination of characters, we can try our luck using leaked passwords from one of these lists. A good place to find passwords lists and more is the [SecLists GitHub repo](https://github.com/danielmiessler/SecLists). To start off, I suggest trying one of the ["Common Credentials" lists](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials).
+Password lists are often used in password cracking to speed up the process. Instead of trying every possible combination of characters, we can try our luck using leaked passwords from one of these lists. A good place to find password lists and more is the [SecLists GitHub repo](https://github.com/danielmiessler/SecLists). To start off, I suggest trying one of the ["Common Credentials" lists](https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials).
 
 Password lists can be used along with the `crunch` tool we used earlier. `crunch` has much more functionality that I did not dive into. I encourage you to read through the `man` pages and learn more about it. It's versatile but still easy to pick up.
 
@@ -327,7 +327,7 @@ In this post I covered how to use `aircrack-ng` to scan for nearby access points
 
 Scanning for Wi-Fi networks and acquiring handshakes is not too difficult. Anyone with some command line experience can achieve this. The hardest part will be cracking the password itself due to processing power required.
 
-This is an example of why long passwords are important. It is not enough to add symbols to a short password. In fact, it is better to get into the habit of creating pass-*phrases* as opposed to pass-*words*. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword123?` is much harder to crack than `Password123?`
+This is an example of why long passwords are important. It is not enough to add symbols to a short password. In fact, it is better to get into the habit of creating pass-*phrases* as opposed to pass-*words*. A combination of words with lowercase and capital letters in addition to symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword123?` is much harder to crack than `Password123?`
 
 There are other tools that we could have used to crack the password, such as `hashcat`. If I'm not mistaken, `hashcat` can take advantage of a GPU which will allow you to crack passwords much faster. However, I wanted to focus on the tools that come with the `aircrack-ng` suite.
 

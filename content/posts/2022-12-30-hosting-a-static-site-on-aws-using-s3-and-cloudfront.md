@@ -204,7 +204,7 @@ There are several other error codes you can account for using the same process. 
 
 ## Pointing a Custom Domain to the CloudFront Distribution
 
-The last step is to point your domain to the cloudfront distribution.
+The last step is to point your domain to the CloudFront distribution.
 For this step, I once again used Route 53, but you can also create a CNAME or ALIAS record in your domain's registrar and get the same results.
 
 Go to Route 53 again. Click on the Hosted Zone you created earlier.

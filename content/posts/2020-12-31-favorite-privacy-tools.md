@@ -62,7 +62,7 @@ I eventually switched to Proton VPN since I bought their subscription suite that
 
 Proton Mail is an email service based in Switzerland. Your emails are encrypted and aren't used for training AI or selling advertisements to you.
 
-The UI/UX isn't as great as something like GMail but I think it's worth the trade-off. They also support bringing in your own domain to use for emailing.
+The UI/UX isn't as great as something like Gmail but I think it's worth the trade-off. They also support bringing in your own domain to use for emailing.
 
 You can create a free account to try it out.
 

@@ -32,7 +32,7 @@ Here is a very long manifest that creates the following objects:
 - A [basic authentication secret](https://kubernetes.io/docs/concepts/configuration/secret/#basic-authentication-secret) called `credentials` in the `example` namespace
 - Two service accounts. One called `service-account-1` and another called `service-account-2`
 - Two Roles:
-  - A role named `get-secret` that allows users associated with this role to get a secret.
+  - A role named `get-secrets` that allows users associated with this role to get a secret.
   - A role named `list-secrets` that allows users to list secrets.
 - Two RoleBindings:
   - A RoleBinding named `get-secrets-binding` that will associate the service account `service-account-1` with the `get-secrets` role.
