@@ -14,7 +14,7 @@ If you're seeing "Access Denied" errors on CloudFront and [the official troubles
 
 I discovered that "Access Denied" errors may show up when a CloudFront Distribution is set up under the following conditions:
 
-- A private S3 Bucket is being used along with a S3 Origin in the CloudFront Distribution
+- A private S3 Bucket is being used along with an S3 Origin in the CloudFront Distribution
 - An Origin Access Identity is being used. (This is necessary if the bucket is private. When a user hits the distribution, the Origin Access Identity retrieves files from the bucket and forwards them to the distribution and to the end user. The end user never accesses the bucket directly.)
 - Multiple index.html templates exist in the bucket
 
@@ -30,7 +30,7 @@ The solution is to either:
 Or
 
 - Use a private bucket.
-- Don't enable static website hosting on the bucket (the Distribution will have a S3 Origin).
+- Don't enable static website hosting on the bucket (the Distribution will have an S3 Origin).
 - Use an Origin Access Identity so that users cannot access S3 contents directly and can only view contents via CloudFront.
 - Avoid having multiple index.html templates in the bucket, excluding the root index.html template, which could be a hurdle.
 

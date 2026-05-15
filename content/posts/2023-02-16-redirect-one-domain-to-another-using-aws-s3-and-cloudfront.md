@@ -18,7 +18,7 @@ This guide assumes that you already have ownership or control of the domain you 
 
 This section covers the redirecting of the HTTP version of the old domain. In my case, this section covers how I redirected `http://nelsonfigueroa.dev` to `https://nelson.cloud`. There is an additional section you can read if you need to redirect the HTTPS version of the old domain.
 
-### Configuring a S3 Bucket
+### Configuring an S3 Bucket
 
 To begin redirecting one domain to another, we need to create an S3 bucket.
 

@@ -8,11 +8,11 @@ ShowToc = true
 TocOpen = true
 +++
 
-I've used LLMs before but through an interface (i.e. [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/app), etc) but when I was trying to run a LLM locally I was overthinking how it worked.
+I've used LLMs before but through an interface (i.e. [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/app), etc) but when I was trying to run an LLM locally I was overthinking how it worked.
 
 Basically, it comes down to this: You pass in a string, and you get a string in return. That's it.
 
-So if we want to run a LLM locally using Python to summarize files, we build strings with Python and pass them into Ollama. If you want to read in files, open them in Python and concatenate the text with your prompt string. Then pass in the prompt string to Ollama.
+So if we want to run an LLM locally using Python to summarize files, we build strings with Python and pass them into Ollama. If you want to read in files, open them in Python and concatenate the text with your prompt string. Then pass in the prompt string to Ollama.
 
 Python is just a bridge between you and Ollama.
 

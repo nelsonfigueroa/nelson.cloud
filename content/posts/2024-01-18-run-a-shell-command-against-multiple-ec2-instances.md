@@ -32,7 +32,7 @@ Then select EC2 Instances by your preferred method under "Target Selection". I c
 
 <img src="/run-a-shell-command-on-ec2-instances/target-selection.webp" alt="AWS SSM target selection" width="720" height="333" style="max-width: 100%; height: auto; aspect-ratio: 2692 / 1248;" loading="lazy" decoding="async">
 
-This part is optional. If you want log outputs of the commands that are run on every instance you can save logs to a S3 Bucket under "Output options". Make sure the Instance Profile IAM Role has permissions to write to this bucket!
+This part is optional. If you want log outputs of the commands that are run on every instance you can save logs to an S3 Bucket under "Output options". Make sure the Instance Profile IAM Role has permissions to write to this bucket!
 
 <img src="/run-a-shell-command-on-ec2-instances/output-options.webp" alt="AWS SSM output options" width="720" height="269" style="max-width: 100%; height: auto; aspect-ratio: 2688 / 1006;" loading="lazy" decoding="async">
 

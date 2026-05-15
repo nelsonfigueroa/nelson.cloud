@@ -1,6 +1,7 @@
 +++
-title = "Wifi Hacking with aircrack-ng"
+title = "Wi-Fi Hacking with aircrack-ng"
 summary = "A guide to using aircrack-ng to bruteforce a router's password"
+aliases = ["/wifi-hacking-with-aircrack-ng/"]
 date = "2019-09-26"
 lastmod = "2026-03-28T23:19:01-07:00"
 categories = ["Cybersecurity"]
@@ -22,7 +23,7 @@ I used [Kali Linux](https://www.kali.org/) for the entire process, but the proce
 
 ## What is aircrack-ng?
 
-`aircrack-ng` is a complete suite of tools to assess WiFi network security. It can be used to scan wifi signals and to perform denial-of-service (DOS) attacks among other things. Read more about it on the [official aircrack-ng website](https://www.aircrack-ng.org/).
+`aircrack-ng` is a complete suite of tools to assess Wi-Fi network security. It can be used to scan Wi-Fi signals and to perform denial-of-service (DOS) attacks among other things. Read more about it on the [official aircrack-ng website](https://www.aircrack-ng.org/).
 
 The goal in this post is to use the tools included in `aircrack-ng` to:
 1. Scan for nearby routers
@@ -32,11 +33,11 @@ The goal in this post is to use the tools included in `aircrack-ng` to:
 
 ## Hardware requirements
 
-To use `aircrack-ng` you'll need a wireless network adapter that has monitor mode and packet injection capabilities. Feel free to do some research about your particular card and its compatibility. There's a good guide on [the aircrack-ng site](https://www.aircrack-ng.org/doku.php?id=compatible_cards) that can help you with research. You can also do what I did and buy a cheap USB wireless adapter with these capabilities. I have the [Panda Wireless N600](https://www.amazon.com/Panda-2-4GHz-300Mbps-Wireless-Adapter/dp/B00U2SIS0O/) and it works perfectly fine on my Macbook Pro.
+To use `aircrack-ng` you'll need a wireless network adapter that has monitor mode and packet injection capabilities. Feel free to do some research about your particular card and its compatibility. There's a good guide on [the aircrack-ng site](https://www.aircrack-ng.org/doku.php?id=compatible_cards) that can help you with research. You can also do what I did and buy a cheap USB wireless adapter with these capabilities. I have the [Panda Wireless N600](https://www.amazon.com/Panda-2-4GHz-300Mbps-Wireless-Adapter/dp/B00U2SIS0O/) and it works perfectly fine on my MacBook Pro.
 
 ## Installation
 
-If you're not on Kali Linux, `aircrack-ng` is most likely available through your preferred package manager. For Windows users, refer to the [official aircrack-ng site](https://www.aircrack-ng.org/) to download the suite. On MacOS using [Homebrew](https://brew.sh/) you can run `brew install aircrack-ng`
+If you're not on Kali Linux, `aircrack-ng` is most likely available through your preferred package manager. For Windows users, refer to the [official aircrack-ng site](https://www.aircrack-ng.org/) to download the suite. On macOS using [Homebrew](https://brew.sh/) you can run `brew install aircrack-ng`
 
 ## Setting up monitor mode
 
@@ -324,10 +325,10 @@ Password lists can be used along with the `crunch` tool we used earlier. `crunch
 
 In this post I covered how to use `aircrack-ng` to scan for nearby access points, capture the 4-way handshake by sending spoofed deauthentication packets, and crack the hash using `crunch`. Once again, only try this on devices you own!
 
-Scanning for wifi networks and acquiring handshakes is not too difficult. Anyone with some command line experience can achieve this. The hardest part will be cracking the password itself due to processing power required.
+Scanning for Wi-Fi networks and acquiring handshakes is not too difficult. Anyone with some command line experience can achieve this. The hardest part will be cracking the password itself due to processing power required.
 
 This is an example of why long passwords are important. It is not enough to add symbols to a short password. In fact, it is better to get into the habit of creating pass-*phrases* as opposed to pass-*words*. A combination of words with lowercase and capital letters in addition so symbols will be more secure than a single word with symbols. In other words, `!ThisIsALongPassword123?` is much harder to crack than `Password123?`
 
 There are other tools that we could have used to crack the password, such as `hashcat`. If I'm not mistaken, `hashcat` can take advantage of a GPU which will allow you to crack passwords much faster. However, I wanted to focus on the tools that come with the `aircrack-ng` suite.
 
-This concludes my wifi hacking notes, I hope you learned something!
+This concludes my Wi-Fi hacking notes, I hope you learned something!

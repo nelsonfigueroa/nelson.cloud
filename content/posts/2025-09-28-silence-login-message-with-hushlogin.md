@@ -1,5 +1,5 @@
 +++
-title = "Quick Tip: Mute the Terminal Login Message with A .hushlogin File"
+title = "Quick Tip: Mute the Terminal Login Message with a .hushlogin File"
 summary = "Create a .hushlogin file in your home directory to silence login messages."
 date = "2025-09-28"
 lastmod = "2026-04-01T22:42:16-07:00"
