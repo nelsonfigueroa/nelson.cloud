@@ -8,7 +8,7 @@ ShowToc = true
 TocOpen = true
 +++
 
-I've used LLMs before but through an interface (i.e. [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/app), etc) but when I was trying to run an LLM locally I was overthinking how it worked.
+I've used LLMs before through an interface (e.g. [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/app), etc) but when I was trying to run an LLM locally I was overthinking how it worked.
 
 Basically, it comes down to this: You pass in a string, and you get a string in return. That's it.
 
