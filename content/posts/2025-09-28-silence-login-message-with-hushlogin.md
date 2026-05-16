@@ -18,7 +18,7 @@ For example, when I start up a new terminal window/tab I see the following messa
 
 After I create the `.hushlogin` file in my home directory, the login message goes away. First I created the file:
 
-```
+```shell
 touch ~/.hushlogin
 ```
 

@@ -34,26 +34,26 @@ First, let's create a directory where the Gluetun container will store a configu
 
 SSH into your Synology device with an admin user:
 
-```
+```shell
 ssh <admin-user>@<synology-ip-address>
 ```
 
 Once you're in, get root access to make this process easier:
 
-```
+```shell
 sudo -i
 ```
 
 If you can run `whoami` and get `root` as the output then you're good to go.
 
-```
+```console
 $ whoami
 root
 ```
 
 Now we can create the directory that Gluetun will need. In my case, I only have one volume and it's called `volume1`, so your path may be a little different:
 
-```
+```shell
 mkdir -p /volume1/docker/gluetun
 ```
 
@@ -65,14 +65,14 @@ Next we can create a `docker-compose.yml` file where we'll tell Docker to run a 
 
 First, make sure Docker is actually installed as it's a prerequisite I mentioned at the beginning of this post:
 
-```
+```console
 $ docker --version
 Docker version 24.0.2, build 610b8d0
 ```
 
 Then create a `docker-compose.yml` file. I chose to create it in `/volume1/docker/` because it seemed logical but you can place this just about anywhere you'd like.
 
-```
+```shell
 touch /volume1/docker/docker-compose.yml
 ```
 
@@ -154,12 +154,12 @@ Now we can start up the Gluetun container and verify that it works.
 
 In the same directory as `docker-compose.yml`, spin up a Gluetun container with `docker compose`:
 
-```
+```shell
 docker compose up -d
 ```
 
 You'll see some output similar to the following:
-```
+```text
 [+] Running 4/4
  ✔ gluetun 3 layers [⣿⣿⣿]      0B/0B      Pulled                                                                                                            9.8s
    ✔ 2d35ebdb57d9 Pull complete
@@ -172,7 +172,7 @@ You'll see some output similar to the following:
 
 For Mullvad VPN specifically there's a way to verify that a connection is going through their servers. We can run a command against the Gluetun container to confirm.
 
-```
+```console
 $ docker exec gluetun wget -qO- https://am.i.mullvad.net/connected
 You are connected to Mullvad (server us-lax-wg-602). Your IP address is 23.162.40.236
 ```
@@ -181,14 +181,14 @@ Regardless of VPN provider, you can check that the `wget` command returns a diff
 
 Get your normal IP address first by running `wget` outside of Docker.
 
-```
+```console
 $ wget -qO- https://icanhazip.com/
 205.154.229.24
 ```
 
 Then run the same command against Gluetun to verify that you get a different IP address:
 
-```
+```console
 $ docker exec gluetun wget -qO- https://icanhazip.com/
 23.162.40.236
 ```
@@ -201,7 +201,7 @@ I'll be using a qBittorrent container as an example as that is a common use case
 
 First, create some directories that qBittorrent will need for configuration and downloads:
 
-```
+```console
 $ mkdir -p /volume1/docker/qbittorrent/config
 $ mkdir -p /volume1/docker/qbittorrent/downloads
 ```
@@ -246,13 +246,13 @@ services:
 
 Then run:
 
-```
+```shell
 docker compose up -d
 ```
 
 You'll see output similar to:
 
-```
+```text
 [+] Running 11/11
  ✔ qbittorrent 10 layers [⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿]      0B/0B      Pulled
    ✔ 7b8aceaf0e4b Pull complete
@@ -278,7 +278,7 @@ In the qBittorrent Web UI, you may need to go to Tools > Options > Advanced and 
 
 We can do one final check with the qBittorrent container to make sure it has the same IP address as the Gluetun container:
 
-```
+```console
 $ docker exec gluetun wget -qO- https://icanhazip.com/
 23.162.40.236
 

@@ -9,7 +9,7 @@ TocOpen = false
 +++
 
 Say you have a recording created with [Asciinema](https://asciinema.org/) named `recording.cast` and now you want to convert that into a GIF. You can use the `agg` command (which is a [separate installation](https://docs.asciinema.org/manual/agg/installation/)) to convert it like so:
-```
+```shell
 agg recording.cast recording.gif
 ```
 
@@ -17,7 +17,7 @@ However, if you run `agg` with the default settings the resulting GIF won't be h
 
 To get a high quality GIF you need to specify a big font size with the `--font-size` option:
 
-```
+```shell
 agg --font-size 64 recording.cast recording.gif
 ```
 

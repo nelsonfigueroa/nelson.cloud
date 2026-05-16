@@ -82,8 +82,8 @@ Using the tool, I decrypted the string and got the result: "In order to generate
 
 Now, to make a `POST` request to `https://hackthebox.eu/api/invite/` I used [HTTPie](https://httpie.org/). It was as easy as running the following:
 
-```
-$ http post https://www.hackthebox.eu/api/invite/generate
+```shell
+http post https://www.hackthebox.eu/api/invite/generate
 ```
 
 And I got the following JSON response:
@@ -100,7 +100,7 @@ And I got the following JSON response:
 ```
 The code appears to be encoded. Based on previous experience, encoded strings that end with a `=` are generally encoded in base64. I could be wrong, but I decided to try decoding it as a base64 string anyway:
 
-```
+```console
 $ echo QUpXRlAtR01QUlgtSVhSUFQtQ0dBVUEtUklNWE4= | base64 --decode
 
 AJWFP-GMPRX-IXRPT-CGAUA-RIMXN

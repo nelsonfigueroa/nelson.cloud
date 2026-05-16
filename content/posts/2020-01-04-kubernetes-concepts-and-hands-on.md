@@ -85,8 +85,8 @@ Namespaces are virtual clusters within a single physical cluster. Within a singl
 
 A Deployment is a representation of multiple identical pods, and how we describe a desired state in Kubernetes. After describing a desired state, Kubernetes then changes the actual state to match the state we want. We can create a Deployment directly in the command line like this:
 
-```
-$ kubectl create deployment mydeployment --image=nginx:1.7.9
+```shell
+kubectl create deployment mydeployment --image=nginx:1.7.9
 ```
 
 We can also create a Deployment through a YAML file and specify more information, such as the number of pods we want using the `replicas` line:
@@ -118,8 +118,8 @@ spec:
 
 And then apply the YAML with the following command:
 
-```
-$ kubectl apply -f mydeployment.yaml
+```shell
+kubectl apply -f mydeployment.yaml
 ```
 
 The Deployment will ensure that the number of Pods we want are running and available at all times.
@@ -139,8 +139,8 @@ There are four types of Services in Kubernetes
 
 If a Deployment named `mydeployment` has been previously created, we can create a Service using the command line as such:
 
-```
-$ kubectl create service nodeport mydeployment --tcp=80
+```shell
+kubectl create service nodeport mydeployment --tcp=80
 ```
 
 Just like with Deployments, we can also specify a Service using a YAML file:
@@ -163,8 +163,8 @@ spec:
 
 And apply it using
 
-```
-$ kubectl apply -f myservice.yaml
+```shell
+kubectl apply -f myservice.yaml
 ```
 
 ## Kubernetes Hands-On with Minikube
@@ -177,27 +177,27 @@ I'll be showing steps to install Minikube on macOS using `brew`. If you're runni
 
 You'll need a hypervisor to run Minikube on. I chose VirtualBox, and installing it was easy as running:
 
-```
-$ brew cask install virtualbox
+```shell
+brew cask install virtualbox
 ```
 
 Then we can install Minikube by running
 
-```
-$ brew install minikube
+```shell
+brew install minikube
 ```
 
 After installation is complete, start up minikube
 
-```
-$ minikube start
+```shell
+minikube start
 ```
 
 This command will download the Minikube .iso and run it using VirtualBox.
 
 We can double check that everything is working by running the following:
 
-```
+```console
 $ minikube status
 
 host: Running
@@ -208,7 +208,7 @@ kubeconfig: Configured
 
 We can also run Kubernetes commands to verify that we have a Node running:
 
-```
+```console
 $ kubectl get nodes
 
 NAME       STATUS   ROLES    AGE   VERSION
@@ -223,7 +223,7 @@ Now that Minikube is set up and we have a Cluster running, let's recap some of t
 
 By default, Minikube created a Cluster with a Context called 'minikube'. We can see this by running:
 
-```
+```console
 $ kubectl config get-contexts
 
 CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
@@ -233,7 +233,7 @@ CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
 
 Minikube also created a default Namespace simply called 'default'. View it by running:
 
-```
+```console
 $ kubectl get namespaces
 
 NAME                   STATUS   AGE
@@ -252,20 +252,20 @@ Now, let's deploy a simple container that displays "Hello World" on a browser.
 
 First, create a deployment specifying the image to use:
 
-```
-$ kubectl create deployment helloworld --image=karthequian/helloworld
+```shell
+kubectl create deployment helloworld --image=karthequian/helloworld
 ```
 
 Then, create a service to expose the deployment:
 
-```
-$ kubectl create service nodeport helloworld --tcp=80
+```shell
+kubectl create service nodeport helloworld --tcp=80
 ```
 
 Now we can access the service through Minikube with the following command:
 
-```
-$ minikube service helloworld
+```shell
+minikube service helloworld
 ```
 
 You should get similar output to this:
@@ -285,14 +285,14 @@ Now let's recap some more concepts. Recall Deployments, Services, Nodes, and Pod
 
 We can view the deployments and services we created with the following commands:
 
-```
+```console
 $ kubectl get deployments
 
 NAME         READY   UP-TO-DATE   AVAILABLE   AGE
 helloworld   1/1     1            1           6m39s
 ```
 
-```
+```console
 $ kubectl get services
 
 NAME         TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
@@ -304,7 +304,7 @@ There's a default 'kubernetes' service that we can ignore. The one we created is
 
 We can also view the single Node in our Cluster:
 
-```
+```console
 $ kubectl get nodes
 
 NAME       STATUS   ROLES    AGE   VERSION
@@ -313,7 +313,7 @@ minikube   Ready    master   10m   v1.17.0
 
 And we can view the Pod that was created by the Deployment:
 
-```
+```console
 $ kubectl get pods
 
 NAME                          READY   STATUS    RESTARTS   AGE
@@ -322,8 +322,8 @@ helloworld-7f9bdc6489-tdpd6   1/1     Running   0          2m9s
 
 And finally, we can view everything running on Minikube through the dashboard:
 
-```
-$ minikube dashboard
+```shell
+minikube dashboard
 ```
 
 You'll notice that there are a lot more Kubernetes Objects and features in the dashboard that I have not covered. Those are beyond the scope of this post and for more advanced purposes. However, feel free to read up on those once you have a solid grasp of the concepts covered in this post.
@@ -338,7 +338,7 @@ Using YAML files is useful because they allow you to version control your Kubern
 
 First, let's start a fresh Minikube instance. Go ahead and delete the current Minikube VM and start another one:
 
-```
+```console
 $ minikube delete
 
 $ minikube start
@@ -394,7 +394,7 @@ The Service is specifying that we want to expose a Node port (`nodePort`) on por
 
 Let's apply the Deployment YAML:
 
-```
+```console
 $ kubectl apply -f deployment.yaml
 
 deployment.apps/forum-deployment created
@@ -402,7 +402,7 @@ deployment.apps/forum-deployment created
 
 Once the Deployment has been created, we can view it:
 
-```
+```console
 $ kubectl get deployments
 
 NAME               READY   UP-TO-DATE   AVAILABLE   AGE
@@ -411,7 +411,7 @@ forum-deployment   0/3     3            0           5s
 
 And we can see the Pods starting up:
 
-```
+```console
 $ kubectl get pods
 
 NAME                              READY   STATUS              RESTARTS   AGE
@@ -422,7 +422,7 @@ forum-deployment-8d5dd5b9-xllg4   0/1     ContainerCreating   0          35s
 
 Next, let's apply the Service YAML:
 
-```
+```console
 $ kubectl apply -f service.yaml
 
 service/forum-service created
@@ -430,7 +430,7 @@ service/forum-service created
 
 We can view the Service:
 
-```
+```console
 $ kubectl get services
 
 NAME            TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)          AGE
@@ -440,7 +440,7 @@ kubernetes      ClusterIP   10.96.0.1     <none>        443/TCP          3m14s
 
 Now we can view our application with the same command we used before:
 
-```
+```shell
 minikube service forum-service
 ```
 
@@ -456,14 +456,14 @@ Refer to the Kubernetes documentation and see what other Objects and configurati
 
 After you're done playing with Minikube you can shut it down so it doesn't use up resources:
 
-```
-$ minikube stop
+```shell
+minikube stop
 ```
 
 If you want to completely remove the Minikube virtual machine, run:
 
-```
-$ minikube delete
+```shell
+minikube delete
 ```
 
 ## Conclusion

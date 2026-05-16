@@ -40,7 +40,7 @@ After pushing changes, I was able to see a "Run workflow" button that allows me 
 
 You can also run workflows using the [GitHub CLI](https://cli.github.com/) once `workflow_dispatch` is in your workflow YAML file. Assuming your workflow YAML is named `main.yml`, you can run:
 
-```
+```shell
 gh workflow run main.yml
 ```
 

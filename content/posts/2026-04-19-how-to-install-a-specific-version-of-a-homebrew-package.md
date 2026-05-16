@@ -28,7 +28,8 @@ Note that this process will point your `hugo` command to the older version, but 
 ## Create a local tap
 
 Run `brew tap-new $USER/local`
-```
+
+```console
 $ brew tap-new $USER/local
 
 Initialized empty Git repository in /opt/homebrew/Library/Taps/nelson/homebrew-local/.git/
@@ -51,7 +52,7 @@ It will enable developer mode. This is normal and safe.
 
 Next, run `brew tap --force homebrew/core`. At the time of writing, it's a 1.3GB download. This is necessary to get this working because Homebrew no longer keeps [homebrew-core](https://github.com/homebrew/homebrew-core) cloned locally. The `brew extract` command needs the full git history to search for older versions.
 
-```
+```console
 $ brew tap --force homebrew/core
 
 ✔︎ JSON API formula.jws.json                                                                                                                                    Downloaded   32.0MB/ 32.0MB
@@ -73,7 +74,7 @@ Now we can use `brew extract`. This command will find a commit where the formula
 
 In this case we want Hugo v0.145.0, so we run `brew extract --version=0.145.0 hugo $USER/local`:
 
-```
+```console
 $ brew extract --version=0.145.0 hugo $USER/local
 
 ==> Searching repository history
@@ -111,7 +112,7 @@ It's a mismatch between the path Homebrew expects (`bin/hugo`) vs the path that 
 
 Now that Hugo is extracted and patched, we can install with `brew install hugo@0.145.0`:
 
-```
+```console
 $ brew install hugo@0.145.0
 
 ✔︎ JSON API cask.jws.json
@@ -141,14 +142,15 @@ zsh completions have been installed to:
 
 Hugo v0.145.0 is now installed. There's a warning with long output in the previous example due to the normal Hugo package being already installed but that is expected. Homebrew is now pointing the `hugo` binary to v0.145.0 instead of the latest version (v0.160.1 at the time of writing). We can verify with `hugo version`:
 
-```
+```console
 $ hugo version
 
 hugo v0.145.0+extended+withdeploy darwin/arm64 BuildDate=2025-02-26T15:41:25Z VendorInfo=brew
 ```
 
 We can also see that Hugo v0.145.0 is installed along with the latest version with `brew list | grep hugo`:
-```
+
+```console
 $ brew list | grep hugo
 
 hugo
@@ -159,7 +161,7 @@ hugo@0.145.0
 
 Currently the `hugo` command is pointing to v0.145.0. To have it point back to the regular version, run `brew unlink hugo && brew link --overwrite hugo`:
 
-```
+```console
 $ brew unlink hugo && brew link --overwrite hugo
 
 Unlinking /opt/homebrew/Cellar/hugo/0.160.1... 2 symlinks removed.
@@ -168,7 +170,7 @@ Linking /opt/homebrew/Cellar/hugo/0.160.1... 49 symlinks created.
 
 And if we want `hugo` to point back to the old version, run `brew unlink hugo@0.145.0 && brew link --overwrite hugo@0.145.0`
 
-```
+```console
 $ brew unlink hugo@0.145.0 && brew link --overwrite hugo@0.145.0
 
 Unlinking /opt/homebrew/Cellar/hugo@0.145.0/0.145.0... 1 symlinks removed.
@@ -179,7 +181,7 @@ At first I expected `brew link --overwrite hugo` to work right off the bat, but 
 
 There's no need to use `brew pin` to prevent the older version of Hugo from updating. Since this is a local copy, there is no remote repository that would be updated that would in turn update our local version. You can even try running `brew update` to see the warning message:
 
-```
+```console
 $ brew update
 
 ==> Updating Homebrew...
@@ -191,7 +193,7 @@ Already up-to-date.
 
 If you no longer need Hugo v0.145.0 you can run `brew uninstall hugo@0.145.0`:
 
-```
+```console
 $ brew uninstall hugo@0.145.0
 
 Uninstalling /opt/homebrew/Cellar/hugo@0.145.0/0.145.0... (53 files, 73MB)
@@ -199,7 +201,7 @@ Uninstalling /opt/homebrew/Cellar/hugo@0.145.0/0.145.0... (53 files, 73MB)
 
 If you don't have any other packages you extracted with `brew extract`, you can also remove your local tap with `brew untap $USER/local`
 
-```
+```console
 $ brew untap $USER/local
 
 Untapping nelson/local...
@@ -208,7 +210,7 @@ Untapped 1 formula (34 files, 36.7KB).
 
 Finally, if you don't plan on using `brew extract` again in the future, you can remove the local clone of homebrew-core with `brew untap homebrew/core`. This will clean up the 1.3GB of files that was downloaded:
 
-```
+```console
 $ brew untap homebrew/core
 
 Untapping homebrew/core...
@@ -217,7 +219,7 @@ Untapped 5 commands and 8313 formulae (8,975 files, 1.3GB).
 
 Then re-link `hugo` to the latest version with `brew unlink hugo && brew link hugo`:
 
-```
+```console
 $ brew unlink hugo && brew link hugo
 
 Unlinking /opt/homebrew/Cellar/hugo/0.160.1... 2 symlinks removed.

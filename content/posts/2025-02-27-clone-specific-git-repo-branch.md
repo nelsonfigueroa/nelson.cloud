@@ -10,13 +10,13 @@ categories = ["Git", "Shell"]
 
 To clone a specific branch of a git repository without cloning all other branches, use the following command formula:
 
-```
+```shell
 git clone --single-branch --branch <branch_name> <repo_URL.git>
 ```
 
 For example, if you want to clone the `release-1.28` branch of the [Kubernetes GitHub repository](https://github.com/kubernetes/kubernetes/tree/release-1.28), run:
 
-```
+```shell
 git clone --single-branch --branch release-1.28 https://github.com/kubernetes/kubernetes.git
 ```
 
@@ -24,13 +24,13 @@ git clone --single-branch --branch release-1.28 https://github.com/kubernetes/ku
 
 If you only want to clone the latest commit of a specific branch (which results in a faster and smaller cloning operation) use `--depth 1`. The command formula looks like this:
 
-```
+```shell
 git clone --single-branch --branch <branch_name> --depth 1 <repo_URL.git>
 ```
 
 And here is another example using the `release-1.28` branch of the [Kubernetes GitHub repository](https://github.com/kubernetes/kubernetes/tree/release-1.28):
 
-```
+```shell
 git clone --single-branch --branch release-1.28 --depth 1 https://github.com/kubernetes/kubernetes.git
 ```
 
