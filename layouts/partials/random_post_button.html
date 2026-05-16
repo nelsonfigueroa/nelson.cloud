@@ -5,11 +5,10 @@
     {{- end -}}
     ];
     
-    if (posts.length > 0) {
-      function getRandomPost() {
-        const randomIndex = Math.floor(Math.random() * posts.length);
-        window.location.href = posts[randomIndex].concat("?ref=random");
-      }
+    function getRandomPost() {
+      if (!posts.length) return;
+      const randomIndex = Math.floor(Math.random() * posts.length);
+      window.location.href = posts[randomIndex].concat("?ref=random");
     }
 </script>
     
