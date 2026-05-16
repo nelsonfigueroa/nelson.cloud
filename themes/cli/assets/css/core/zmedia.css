@@ -4,11 +4,6 @@
         --gap: 14px;
     }
 
-    /* profile-mode */
-    .profile img {
-        transform: scale(0.85);
-    }
-
     .first-entry {
         min-height: 260px;
     }
