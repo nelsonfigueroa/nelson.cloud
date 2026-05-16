@@ -15,7 +15,7 @@ I've been doing interviews lately and I have been sent several [Calendly](https:
 
 If you haven't heard of Calendly, it's an online scheduling site. You can send someone your Calendly link, and they can see your availability and schedule an appointment.
 
-I noticed that I don't have to be authenticated any way to be able to schedule an appointment on someone's calendar. Not great from a security perspective. So I decided to create a free Calendly account and see how easily a theoretical bad actor could abuse it.
+I noticed that I don't have to be authenticated in any way to be able to schedule an appointment on someone's calendar. Not great from a security perspective. So I decided to create a free Calendly account and see how easily a theoretical bad actor could abuse it.
 
 The plan is to automate the process of scheduling appointments with Python to fill up someone's calendar with fake appointments.
 

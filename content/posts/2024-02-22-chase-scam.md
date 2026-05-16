@@ -6,7 +6,7 @@ lastmod = "2026-03-24T22:53:09-07:00"
 categories = ["Python", "Cybersecurity"]
 +++
 
-If you've been around you know I enjoy spamming phishing/scamming sites. I recently received this fake Chase email and decided to go down another phishing/scamming attempt.
+If you've been around you know I enjoy spamming phishing/scamming sites. I recently received this fake Chase email and decided to see what this phishing/scamming attempt was all about.
 
 <img src="/chase-scam/email.webp" alt="Phishing Email" width="720" height="357" style="max-width: 100%; height: auto; aspect-ratio: 1500 / 744;" loading="lazy" decoding="async">
 
@@ -50,7 +50,7 @@ Then I landed on this page that asks me for my card information:
 
 <img src="/chase-scam/credit-card.webp" alt="credit card form" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
-I once again filled the form with fake information and hit "Next". Another `POST` request went out to the same URL as before. The main thing that changes here are the headers and the JSON payload.
+I once again filled the form with fake information and hit "Next". Another `POST` request went out to the same URL as before. The main things that change here are the headers and the JSON payload.
 
 ```json
 {"uid":"1ef25781cb3fd42f981b2bbb183d9887","stp":"2","cnum":"6504 8764 7593 8248","expd":"03/24","cvv":"333"}

@@ -50,7 +50,7 @@ Print only the first column:
 awk '{print $1}'
 ```
 
-This is a loop in one-liner format. It reads the previous output line by line and assigns each line to an array called `stack`, then runs the command `pulumi stack rm -y` on each stack.
+This is a loop in one-liner format. It reads the previous output line by line and assigns each line to a string variable called `stack`, then runs the command `pulumi stack rm -y` on each stack.
 ```shell
 while read -r stack; do pulumi stack rm -y "$stack"; done;
 ```
