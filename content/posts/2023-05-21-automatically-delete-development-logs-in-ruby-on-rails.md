@@ -29,7 +29,7 @@ This code will delete `development.log` after the Rails process exits.
 
 For example, I can start up a Rails app locally and see that a `development.log` file is created under `log`/:
 
-```
+```console
 $ rails s
 => Booting Puma
 => Rails 7.0.4.3 application starting in development
@@ -47,7 +47,7 @@ Use Ctrl-C to stop
 
 And I can see the `development.log` file under `log/`:
 
-```
+```console
 $ ls -1 log/
 bullet.log
 development.log # here's the development log file
@@ -57,7 +57,7 @@ test.log
 
 Now when I exit the `rails` process, I should see a message saying "Deleting development.log..." and I should also see the `development.log` file disappear:
 
-```
+```text
 ^C- Gracefully stopping, waiting for requests to finish
 === puma shutdown: 2023-05-21 13:58:25 -0700 ===
 - Goodbye!
@@ -67,7 +67,7 @@ Deleting development.log...
 
 The custom message is there. Now to verify that there is no `development.log` file:
 
-```
+```console
 $ ls -1 log/
 bullet.log
 production.log

@@ -24,7 +24,7 @@ I'm running Hugo v0.140.0+extended.
 ```
 
 Output:
-```
+```text
 2024-12-22
 ```
 
@@ -35,7 +35,7 @@ Output:
 ```
 
 Output:
-```
+```text
 2024-12-22 2:30
 ```
 
@@ -45,7 +45,7 @@ You can specify AM or PM by adding `PM` to the time. Go will output the correct 
 ```
 
 Output:
-```
+```text
 2024-12-22 2:30PM
 ```
 
@@ -57,7 +57,7 @@ Always use `PM` (or `pm`) as the placeholder in the time string. Using `AM` in t
 ```
 
 Will output:
-```
+```text
 2024-12-22 2:30AM
 ```
 Even if it's actually 2:30PM.
@@ -72,7 +72,7 @@ Essentially just changing `3:04` to `15:04`.
 ```
 
 Output:
-```
+```text
 2024-12-22 14:30
 ```
 
@@ -83,7 +83,7 @@ Output:
 ```
 
 Output:
-```
+```text
 2024-12-22 14:30 PST
 ```
 
@@ -96,7 +96,7 @@ It's possible to add just about anything in place of the timezone and it'll take
 ```
 
 Output:
-```
+```text
 2024-12-22 14:30 test
 ```
 
@@ -110,7 +110,7 @@ The first way:
 ```
 
 Output. Note how Hugo changed the offset from `-0700` to `-0800` in this case:
-```
+```text
 2024-12-22 14:30 PST -0800
 ```
 
@@ -122,7 +122,7 @@ The second way:
 ```
 
 Output. Hugo once again changed the offset from `UTC-0700` to `UTC-0800`:
-```
+```text
 2024-12-22 14:30 PST UTC-0800
 ```
 

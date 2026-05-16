@@ -45,7 +45,7 @@ gh workflow run main.yml
 ```
 
 And you'll get output similar to the following:
-```
+```text
 ✓ Created workflow_dispatch event for main.yml at master
 https://github.com/nelsonfigueroa/nelson.cloud/actions/runs/22656361802
 

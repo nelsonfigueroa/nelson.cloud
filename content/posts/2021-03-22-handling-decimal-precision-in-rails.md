@@ -97,7 +97,7 @@ First, we'll try the value `555.555`, which exceeds the scale of 2.
 
 **Rails console with SQLite:**
 
-```
+```console
 $ rails c
 
 e = Expense.new(amount: 555.555)
@@ -117,7 +117,7 @@ After saving a new expense with the amount `555.555`, the resulting amount is `0
 
 **Rails console with PostgreSQL:**
 
-```
+```console
 $ rails c
 
 e = Expense.new(amount: 555.555)
@@ -141,7 +141,7 @@ Next we'll try the value `123456.01`, which exceeds the precision of 5.
 
 **Rails console with SQLite:**
 
-```
+```console
 $ rails c
 
 e = Expense.new(amount: 123456.01)
@@ -161,7 +161,7 @@ Interestingly, SQLite saves the value `123456.01` incorrectly as `123460.0` with
 
 **Rails console with PostgreSQL:**
 
-```
+```console
 $ rails c
 
 e = Expense.new(amount: 123456.01)

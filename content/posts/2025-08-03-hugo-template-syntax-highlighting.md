@@ -11,7 +11,7 @@ TocOpen = false
 I recently learned that you can highlight Hugo template code blocks by specifying `go-html-template` after the opening backticks.
 
 So the opening backticks in a Markdown file look like this:
-```
+```text
 ```go-html-template
 ```
 

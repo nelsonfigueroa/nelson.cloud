@@ -11,7 +11,7 @@ aliases = ["/keep-homebrew-tidy-with-brew-leaves/"]
 
 Here's what my `brew leaves` output looks like at the time of this writing:
 
-```
+```console
 $ brew leaves
 
 automake
@@ -40,13 +40,13 @@ zlib
 
 In my case, I know I don't need the `libpq` package anymore. So I can remove this package and then run `brew leaves` again to confirm it's gone.
 
-```
+```console
 $ brew remove libpq
 
 Uninstalling /opt/homebrew/Cellar/libpq/16.1_1... (2,380 files, 29.9MB)
 ```
 
-```
+```console
 $ brew leaves
 
 automake

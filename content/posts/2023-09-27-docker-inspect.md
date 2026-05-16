@@ -16,7 +16,7 @@ docker inspect --type=image --format='{{json .Config.Entrypoint}}' <image-name>
 
 And here's a real-world example (assuming you have the `hashicorp/terraform` image downloaded):
 
-```
+```console
 $ docker inspect --type=image --format='{{json .Config.Entrypoint}}' hashicorp/terraform
 
 ["/bin/terraform"]
@@ -26,7 +26,7 @@ There are some examples on the [official docs](https://docs.docker.com/engine/re
 
 List environment variables:
 
-```
+```console
 $ docker inspect --type=image --format='{{json .Config.Env}}' busybox
 
 ["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"]
@@ -34,7 +34,7 @@ $ docker inspect --type=image --format='{{json .Config.Env}}' busybox
 
 List the `CMD`:
 
-```
+```console
 $ docker inspect --type=image --format='{{json .Config.Cmd}}' busybox
 
 ["sh"]
@@ -42,7 +42,7 @@ $ docker inspect --type=image --format='{{json .Config.Cmd}}' busybox
 
 Print out the architecture:
 
-```
+```console
 $ docker inspect --type=image --format='{{json .Architecture}}' busybox
 
 "amd64"

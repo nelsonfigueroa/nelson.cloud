@@ -20,7 +20,7 @@ print(values)
 
 Output:
 
-```
+```text
 {1, 2, 3}
 ```
 
@@ -39,7 +39,7 @@ print(values)
 
 Output:
 
-```
+```text
 [1, 2, 3]
 ```
 

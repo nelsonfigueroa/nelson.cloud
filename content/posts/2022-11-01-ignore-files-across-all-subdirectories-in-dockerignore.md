@@ -11,19 +11,19 @@ Ignoring files within directories using `.dockerignore` is a bit different compa
 To ignore a file across all subdirectories, prefix the filename with `**`.
 For example, to ignore the file `file.txt` in all subdirectories, add the following to `.dockerignore`:
 
-```
+```text
 **file.txt
 ```
 
 Another example to ignore `.DS_Store` files on macOS devices:
 
-```
+```text
 **.DS_Store
 ```
 
 To ignore a specific file extension across all subdirectories, prefix the file extension with `**/*`. In this example, all files with the `.txt` extension will be ignored by Docker:
 
-```
+```text
 **/*.txt
 ```
 

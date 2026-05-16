@@ -35,7 +35,7 @@ func main() {
 }
 ```
 
-```
+```console
 $ go run example.go
 
 Key: a 	 Value: 0
@@ -79,7 +79,7 @@ func main() {
 
 And the output is:
 
-```
+```console
 $ go run example.go
 
 Key: e 	 Value: 4
@@ -114,7 +114,7 @@ func main() {
 }
 ```
 
-```
+```console
 $ go run example.go
 
 map[a:0 b:1 c:2 d:3 e:4 f:5]

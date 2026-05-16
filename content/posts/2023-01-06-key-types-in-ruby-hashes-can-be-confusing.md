@@ -35,7 +35,7 @@ puts items.keys.first.class
 
 The output is:
 
-```
+```console
 $ ruby script.rb
 
 1
@@ -61,7 +61,7 @@ puts items.keys.first.class
 
 The output is as follows:
 
-```
+```console
 $ ruby script.rb
 
 Symbol
@@ -84,7 +84,7 @@ puts items[:A]
 
 Now we get the expected output:
 
-```
+```console
 $ ruby script.rb
 
 1
@@ -110,7 +110,7 @@ end
 
 The output from the code above is:
 
-```
+```console
 $ ruby script.rb
 
 1, Integer
@@ -134,7 +134,7 @@ end
 
 The code above throws the error:
 
-```
+```console
 $ ruby script.rb
 
 syntax error, unexpected ':', expecting =>
@@ -164,7 +164,7 @@ end
 
 The output is:
 
-```
+```console
 $ ruby script.rb
 
 A, Symbol
@@ -195,7 +195,7 @@ end
 
 The output is:
 
-```
+```console
 $ ruby script.rb
 
 A, String

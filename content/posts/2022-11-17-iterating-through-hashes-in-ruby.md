@@ -31,7 +31,7 @@ end
 
 The code above has the following output:
 
-```
+```text
 key: A, value: 1
 key: B, value: 2
 key: C, value: 3
@@ -55,7 +55,7 @@ end
 
 The code above has the following output:
 
-```
+```text
 [:A, 1]
 [:B, 2]
 [:C, 3]
@@ -79,7 +79,7 @@ end
 
 The output is exactly the same as before:
 
-```
+```text
 [:A, 1]
 [:B, 2]
 [:C, 3]
@@ -101,7 +101,7 @@ puts items.keys
 
 The code above prints out the following:
 
-```
+```text
 A
 B
 C
@@ -123,7 +123,7 @@ end
 
 And the output is exactly the same:
 
-```
+```text
 A
 B
 C
@@ -145,7 +145,7 @@ end
 
 Once again, the output is the same:
 
-```
+```text
 A
 B
 C
@@ -167,7 +167,7 @@ puts items.values
 
 The code above outputs the following:
 
-```
+```text
 1
 2
 3
@@ -189,7 +189,7 @@ end
 
 The output is the same:
 
-```
+```text
 1
 2
 3
@@ -211,7 +211,7 @@ end
 
 Once again, the output is exactly the same as before:
 
-```
+```text
 1
 2
 3

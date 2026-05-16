@@ -122,7 +122,7 @@ Most of the fields aren't necessary. Through trial and error I noticed I really 
 
 I also made a note of the request headers that I needed for this `POST` request:
 
-```
+```http
 POST /api/booking/invitees HTTP/2
 Host: calendly.com
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.79 Safari/537.36 Gecko/20100101 Firefox/126.0

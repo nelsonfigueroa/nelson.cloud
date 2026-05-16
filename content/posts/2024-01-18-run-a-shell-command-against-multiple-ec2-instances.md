@@ -54,7 +54,7 @@ If you enabled logging to S3, you can browse to the bucket you selected and view
 
 I downloaded the `stdout` file locally and viewed it via the command line to confirm that my command executed properly on this particular EC2 instance:
 
-```
+```console
 $ cat stdout
 
 Last metadata expiration check: 0:15:25 ago on Thu Jan 18 21:10:06 2024.

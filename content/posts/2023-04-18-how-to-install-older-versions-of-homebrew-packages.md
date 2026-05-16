@@ -12,11 +12,11 @@ featured = false
 {{< admonition type="warning" title="This method is outdated" >}}
 The approach outlined in this post still works in some cases, but as Homebrew has changed, this method has become unreliable. You may run into errors like:
 
-```
+```text
 Error: Couldn't find manifest matching bottle checksum.
 ```
 
-```
+```text
 Error: An exception occurred within a child process:
   NoMethodError: undefined method 'user' for nil
 ```
@@ -70,7 +70,7 @@ curl https://raw.githubusercontent.com/Homebrew/homebrew-core/169f333f93fe0703b5
 
 Then, remove the existing package:
 
-```
+```console
 $ brew remove terraform
 
 Uninstalling /usr/local/Cellar/terraform/1.4.5... (6 files, 69MB)
@@ -80,7 +80,7 @@ Then run `brew install` but specify the file you saved locally to install the ol
 
 So to install Terraform from the file we just downloaded, run `HOMEBREW_DEVELOPER=true brew install --formulae terraform.rb`:
 
-```
+```console
 $ HOMEBREW_DEVELOPER=true brew install --formulae terraform.rb
 
 ==> Fetching downloads for: terraform
@@ -96,7 +96,7 @@ Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
 
 Now `terraform` version 1.3.6 is installed!
 
-```
+```console
 $ terraform version
 
 Terraform v1.3.6
@@ -107,13 +107,13 @@ on darwin_arm64
 {{< admonition type="tip" title="Pro Tip" >}}
 You can pin the current version so it doesn't upgrade in the future.
 
-```
+```shell
 brew pin terraform
 ```
 
 The next time you run `brew upgrade` it will be skipped:
 
-```
+```console
 $ brew upgrade
 
 Warning: Not upgrading 1 pinned package:
@@ -122,7 +122,7 @@ terraform 1.5.7
 
 When you're ready to upgrade, you can unpin it:
 
-```
+```shell
 brew unpin terraform
 ```
 {{< /admonition >}}

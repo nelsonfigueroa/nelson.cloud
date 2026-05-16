@@ -113,7 +113,7 @@ func main() {
 }
 ```
 
-```
+```console
 $ go run example.go
 
 Not Found

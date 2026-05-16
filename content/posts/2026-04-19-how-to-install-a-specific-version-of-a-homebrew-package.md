@@ -102,7 +102,7 @@ system "go", "build", *std_go_args(output: bin/"hugo", ldflags:, tags:)
 
 The reason we need to patch this file is because it prevents the error:
 
-```
+```text
 command not found: /opt/homebrew/Cellar/hugo@0.145.0/0.145.0/bin/hugo
 ```
 

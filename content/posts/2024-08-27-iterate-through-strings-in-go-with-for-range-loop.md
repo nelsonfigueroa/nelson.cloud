@@ -25,7 +25,7 @@ func main() {
 
 This outputs:
 
-```
+```text
 index: 0, char: t
 index: 1, char: e
 index: 2, char: s
@@ -51,7 +51,7 @@ func main() {
 
 This outputs:
 
-```
+```text
 116
 101
 115

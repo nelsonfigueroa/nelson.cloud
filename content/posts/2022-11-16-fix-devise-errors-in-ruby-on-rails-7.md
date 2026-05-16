@@ -33,21 +33,21 @@ gem 'hotwire-rails', '~> 0.1.3'
 
 Then I installed the gems with `bundle`
 
-```
-$ bundle install
+```shell
+bundle install
 ```
 
 Then I ran the following to complete the `importmap` installation:
 
-```sh
-$ rails importmap:install
+```shell
+rails importmap:install
 ```
 
 Then I had to run an additional command to install Hotwire:
 
 
-```sh
-$ rails hotwire:install
+```shell
+rails hotwire:install
 ```
 
 That completed the installation phase. Next, I had to update my views.

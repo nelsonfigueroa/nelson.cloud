@@ -40,7 +40,7 @@ Wait a few minutes and your distribution will be updated with the new header. Th
 
 You can test this out by running `curl -IX GET <your-distribution-domain-name>`. Your output should look something like this. Look for your custom header in the output. In my case, `cache-control` shows up at the very bottom.
 
-```
+```console
 $ curl -IX GET https://abcdefghijklmn.cloudfront.net
 
 HTTP/2 301

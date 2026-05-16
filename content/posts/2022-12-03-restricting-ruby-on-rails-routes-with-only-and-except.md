@@ -20,7 +20,7 @@ end
 
 We can run `rails routes` to see the routes created by the code above:
 
-```
+```console
 $ rails routes -c items
 
    Prefix Verb   URI Pattern               Controller#Action
@@ -48,7 +48,7 @@ end
 
 This results in only 2 routes being created and we can verify with `rails routes`:
 
-```
+```console
 $ rails routes -c items
 
 Prefix Verb URI Pattern          Controller#Action
@@ -70,7 +70,7 @@ end
 
 This time we can see that all routes except for `index` and `show` were created:
 
-```
+```console
 $ rails routes -c items
 
    Prefix Verb   URI Pattern               Controller#Action

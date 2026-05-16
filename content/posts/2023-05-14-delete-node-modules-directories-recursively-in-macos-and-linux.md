@@ -21,7 +21,7 @@ find /projects/javascript/ -type d -name "node_modules" -exec rm -rf {} \;
 {{< admonition type="note" >}}
 Sometimes the output says:
 
-```
+```text
 find: ./node_modules: No such file or directory
 ```
 

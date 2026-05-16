@@ -46,7 +46,7 @@ print(list_b) # [1, 2, 3, 4]
 ```
 
 Output of the program above:
-```
+```text
 [1, 2, 3]
 [1, 2, 3, 4]
 ```
@@ -70,7 +70,7 @@ print(list_b) # [1, 2, 3]
 ```
 
 Output of the program above:
-```
+```text
 [1, 2, 3]
 [1, 2, 3, 4]
 [1, 2, 3]
@@ -90,7 +90,7 @@ print(f'list_b address: {id(list_b)}')
 ```
 
 The program above outputs:
-```
+```text
 list_a address: 140226819497536
 list_b address: 140226819497536
 ```
@@ -109,7 +109,7 @@ print(f'list_b address: {id(list_b)}')
 ```
 
 The program above outputs:
-```
+```text
 list_a address: 140264515620480
 list_b address: 140264514892160
 ```

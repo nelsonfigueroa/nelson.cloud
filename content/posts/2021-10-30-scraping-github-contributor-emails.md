@@ -31,7 +31,7 @@ The scraper I created is below. Instructions can be found on the README:
 
 By running the script, I can scrape for emails found in each commit for a given repository:
 
-```
+```console
 $ ruby main.rb -u torvalds -r linux
 
 	+-------------------+
@@ -60,13 +60,13 @@ You can choose to hide your email when performing Git operations on the GitHub s
 
 Next, you'll need to change your email Git uses on your machine to the `@users.noreply.github.com` email that GitHub provided in the previous step. Run the following:
 
-```
+```console
 $ git config --global user.email "00000000+yourusername@users.noreply.github.com"
 ```
 
 Then verify that the email has been set:
 
-```
+```console
 $ git config --global user.email
 00000000+yourusername@users.noreply.github.com
 ```

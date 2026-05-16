@@ -160,7 +160,7 @@ You can test this out by entering the old domain in a browser prefixed with `htt
 
 The HTTP version of the domain should give us a location header redirecting us to `https://nelsonfigueroa.dev`:
 
-```
+```console
 $ curl -IX GET http://nelsonfigueroa.dev
 
 HTTP/1.1 301 Moved Permanently
@@ -174,7 +174,7 @@ Location: https://nelsonfigueroa.dev/
 
 And the HTTPS version of the domain should then redirect to the new domain `https://nelson.cloud`:
 
-```
+```console
 $ curl -IX GET https://nelsonfigueroa.dev
 
 HTTP/2 301
@@ -187,7 +187,7 @@ x-cache: Miss from cloudfront
 
 As a final test, we can make sure that paths are also redirected to the new domain. In other words, `https://nelsonfigueroa.dev/test-path/` should redirect to `https://nelson.cloud/test-path/`, and we should see this value in the `location` header:
 
-```
+```console
 $ curl -IX GET https://nelsonfigueroa.dev/test-path/
 
 HTTP/2 301

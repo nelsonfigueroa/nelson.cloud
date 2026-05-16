@@ -270,7 +270,7 @@ minikube service helloworld
 
 You should get similar output to this:
 
-```
+```text
 |-----------|------------|-------------|-----------------------------|
 | NAMESPACE |    NAME    | TARGET PORT |             URL             |
 |-----------|------------|-------------|-----------------------------|

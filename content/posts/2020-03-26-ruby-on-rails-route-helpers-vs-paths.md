@@ -20,7 +20,7 @@ While learning how to write tests for requests, I came across a different way of
 
 By checking the application's routes, we can see URL helpers (1st column) and URI Patterns (3rd column).
 
-```
+```console
 $ rails routes -c accounts
 
       Prefix Verb   URI Pattern                  Controller#Action
@@ -63,7 +63,7 @@ end
 
 This block generates the following routes for the `statement` model:
 
-```
+```console
 $ rails routes -c statements
 
                 Prefix Verb  URI Pattern                                         Controller#Action
