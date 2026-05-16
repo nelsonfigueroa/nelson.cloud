@@ -25,10 +25,6 @@ frontmatter:
 permalinks:
   posts: "/:title/"
 
-minify:
-  disableXML: true
-  # minifyOutput: true
-
 languages:
   en:
     label: "English"
