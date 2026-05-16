@@ -214,7 +214,7 @@
     color: var(--code-font-color);
 }
 
-/* code blocks without syntax highlighting */
+/* shared code block styles */
 .post-content pre code {
     display: grid;
     margin: auto 0;
@@ -223,9 +223,13 @@
     padding-left: 1rem;
     color: rgb(213, 213, 214);
     background: var(--code-block-bg) !important;
-    border: 1px solid var(--border);
     overflow-x: auto;
     word-break: break-all;
+}
+
+/* border only on code blocks WITHOUT syntax highlighting (the .highlight wrapper provides the border for chroma blocks) */
+.post-content pre:not(.chroma) code {
+    border: 1px solid var(--border);
 }
 
 .post-content blockquote {
