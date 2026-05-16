@@ -12,7 +12,7 @@ TocOpen = false
 
 I have run into this question many times as I've been applying to and interviewing with lots of companies.
 
-99% of the reason people want to work for a company is **because they need money**. That's it. They want to be able to pay off debt. They want to be able to pay their bills. They want to be able to pay rent or their mortgage. They want to be able provide for their family. They want to be able to afford a better life. And so on.
+99% of the reason people want to work for a company is **because they need money**. That's it. They want to be able to pay off debt. They want to be able to pay their bills. They want to be able to pay rent or their mortgage. They want to be able to provide for their family. They want to be able to afford a better life. And so on.
 
 Sure, the tech stack might be exciting. Or the product may be compelling. The work-life balance may be good. But I promise you that the biggest reason is still money.
 

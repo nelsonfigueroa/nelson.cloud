@@ -76,7 +76,7 @@ Another collection of blogs -- with previews!
 
 **https://1mb.club**
 
-These sites all have the same idea in that they are collections of sites that are under a certain size (at least for the home page). There's lots of blogs to discover among all three lists.
+These sites all have the same idea in that they are collections of sites that are under a certain size (at least for the home page). There are lots of blogs to discover among all three lists.
 
 ## darktheme.club
 

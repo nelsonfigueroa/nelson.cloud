@@ -12,7 +12,7 @@ I have a growing hatred for AI-generated images in blogs. It makes me wonder if 
 
 I'd rather see a shitty [Microsoft Paint](https://en.wikipedia.org/wiki/Microsoft_Paint) drawing as opposed to some AI image.
 
-I know there's plenty of things you can roast my blog for but at least you know for a fact you're getting the thoughts of a real human being and not some [LLM](https://en.wikipedia.org/wiki/Large_language_model).
+I know there are plenty of things you can roast my blog for but at least you know for a fact you're getting the thoughts of a real human being and not some [LLM](https://en.wikipedia.org/wiki/Large_language_model).
 
 If you run a personal blog, please avoid AI-generated images.
 

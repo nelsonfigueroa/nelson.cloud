@@ -20,7 +20,7 @@ caption="*Source: [CNBC: Shopify cuts 20% of its workforce; shares surge on earn
 
 <br>
 
-It's somewhat understandable if a company is struggling financially and resorts to layoffs. However, there's plenty of companies that are profitable and still lay off the people that earned the company those profits.
+It's somewhat understandable if a company is struggling financially and resorts to layoffs. However, there are plenty of companies that are profitable and still lay off the people that earned the company those profits.
 {{< figure src="/employees-are-disposable/microsoft.webp" alt="Polygon Microsoft headline"
 caption="*Source: [Polygon: Microsoft mass layoffs reportedly impact Bethesda, Halo Infinite teams](https://www.polygon.com/23561210/microsoft-layoffs-xbox-bethesda-halo-infinite-343-industries)*" >}}
 
