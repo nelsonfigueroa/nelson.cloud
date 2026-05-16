@@ -22,3 +22,8 @@
 .chroma .lntd:last-of-type {
     width: 100%;
 }
+
+/* mute the output color in `console` code blocks so the command stands out */
+.chroma .go {
+    color: var(--secondary);
+}
