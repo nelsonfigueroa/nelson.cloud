@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dynamicToc = document.getElementById('dynamic-toc');
     const tocNav = document.getElementById('dynamic-toc-nav');
     const tocLinks = document.querySelectorAll('.dynamic-toc-link');
-    const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    const headings = document.querySelectorAll('.post-content :is(h1, h2, h3, h4, h5, h6)');
 
 
     if (!dynamicToc || !tocNav || headings.length === 0) return;
