@@ -70,7 +70,7 @@ params:
   comments: true
   env: production
   assets:
-    disableFingerprinting: true
+    disableFingerprinting: false
   description: "Nelson Figueroa - Software Engineer"
   author: Nelson Figueroa
   # keywords for home page
