@@ -70,10 +70,10 @@
             {{- end -}}
             {{- end }}
             <li class="dynamic-toc-item">
-                <a href="#{{- $cleanedID -}}" class="dynamic-toc-link" data-heading="{{- $cleanedID -}}" aria-label="{{- $header | plainify | safeHTML -}}">{{- $header | plainify | safeHTML -}}</a>
+                <a href="#{{- $cleanedID -}}" class="dynamic-toc-link" data-heading="{{- $cleanedID -}}">{{- $header | plainify | safeHTML -}}</a>
                 {{- else }}
             <li class="dynamic-toc-item">
-                <a href="#{{- $cleanedID -}}" class="dynamic-toc-link" data-heading="{{- $cleanedID -}}" aria-label="{{- $header | plainify | safeHTML -}}">{{- $header | plainify | safeHTML -}}</a>
+                <a href="#{{- $cleanedID -}}" class="dynamic-toc-link" data-heading="{{- $cleanedID -}}">{{- $header | plainify | safeHTML -}}</a>
                 {{- end -}}
                 {{- end -}}
                 {{- $firstHeaderLevel := $largest }}
