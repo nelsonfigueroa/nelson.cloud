@@ -7,7 +7,7 @@ categories = ["AWS"]
 +++
 
 I recently learned that it is possible to replace an existing ACM SSL certificate on any AWS resource with no downtime.
-The key is that the old certificate must exist while making SSL certificate updates to a resource. AWS does not allow users to delete a certificate that has resources associated. That means there is no risk of an in-use SSL certificate from being missing.
+The key is that the old certificate must exist while making SSL certificate updates to a resource. AWS does not allow users to delete a certificate that has resources associated. That means there is no risk of an in-use SSL certificate being missing.
 
 Here's what a resource associated to an ACM SSL certificate looks like. In this case it's a CloudFront Distribution:
 

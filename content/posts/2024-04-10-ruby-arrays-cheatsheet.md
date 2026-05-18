@@ -230,7 +230,7 @@ arr.delete(1,2,3)
 
 You can subtract an array to remove all occurrences of an element and get the resulting array as a return value, but it does not modify the array in-place:
 
-``` ruby
+```ruby
 arr = [1, 2, 3, 3, 3]
 arr - [3]
 # => [1, 2]
