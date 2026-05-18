@@ -44,15 +44,6 @@
     background: rgb(163, 163, 165);
 }
 
-.gist table::-webkit-scrollbar-thumb {
-    border: 2px solid rgb(255, 255, 255);
-    background: rgb(173, 173, 173);
-}
-
-.gist table::-webkit-scrollbar-thumb:hover {
-    background: rgb(112, 112, 112);
-}
-
 .post-content table::-webkit-scrollbar-thumb {
     border-width: 2px;
 }

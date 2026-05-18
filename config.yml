@@ -97,6 +97,7 @@ params:
   # Default images for Open Graph fallbacks (used when posts don't have cover images)
   images: ["/opengraph-images/default.png"]
 
+  # if i remove this config block then the front page ascii art breaks lol
   homeInfoParams:
     Title: Nelson Figueroa
     Content: Software Engineer
@@ -144,24 +145,6 @@ markup:
     # guessSyntax: true
     lineNos: false
     # lineNumbersInTable: true
-
-# privacy:
-#   vimeo:
-#     disabled: false
-#     simple: true
-
-#   twitter:
-#     disabled: false
-#     enableDNT: true
-#     simple: true
-
-#   instagram:
-#     disabled: false
-#     simple: true
-
-#   youtube:
-#     disabled: false
-#     privacyEnhanced: true
 
 related:
   includeNewer: true
