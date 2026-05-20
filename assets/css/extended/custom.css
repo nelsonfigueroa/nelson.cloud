@@ -646,3 +646,15 @@ a:hover {
     color: var(--secondary);
     font-size: 0.8em;
 }
+
+.link-count {
+    color: var(--secondary);
+}
+
+.link-count::before {
+    content: "[";
+}
+
+.link-count::after {
+    content: "]";
+}
