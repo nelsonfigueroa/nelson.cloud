@@ -1,0 +1,23 @@
+# maps code block language to text to actually display on code block tab
+python: Python
+ruby: Ruby
+rb: Ruby
+shell: Shell
+sh: Shell
+bash: Shell
+console: Console
+text: Text
+json: JSON
+go: Go
+go-html-template: Go HTML
+yaml: YAML
+toml: TOML
+html: HTML
+css: CSS
+javascript: JavaScript
+js: JavaScript
+markdown: Markdown
+md: Markdown
+nginx: Nginx
+ini: INI
+http: HTTP

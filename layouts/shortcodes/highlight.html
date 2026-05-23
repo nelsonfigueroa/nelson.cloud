@@ -1,0 +1,5 @@
+<!-- overrides Hugo's built in `highlight` shortcode so blocks with highlighting (`hl_lines=5`) also get a code block language tab -->
+{{- $lang := .Get 0 -}}
+{{- $opts := .Get 1 | default "" -}}
+{{- $h := transform.Highlight (trim .Inner "\n\r") $lang $opts -}}
+{{- partial "codelang-tab.html" (dict "highlighted" $h "lang" $lang) | safeHTML -}}

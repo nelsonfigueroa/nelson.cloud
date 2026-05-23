@@ -1,0 +1,15 @@
+{{- /*
+    adds language tab to code blocks. Uses codelang.yaml to map code block language to actual text displayed
+
+    shared logic for
+    - layouts/_default/_markup/render-codeblock.html  (markdown fences)
+    - layouts/shortcodes/highlight.html               (highlight shortcode)
+*/ -}}
+
+{{- $h := .highlighted | string -}}
+{{- with .lang -}}
+  {{- $label := index site.Data.codelang (lower .) | default . -}}
+  {{- $tab := printf `<span class="code-lang">%s</span>` $label -}}
+  {{- $h = replaceRE `^(<div class="highlight"[^>]*>)` (printf "${1}%s" $tab) $h 1 -}}
+{{- end -}}
+{{- return $h -}}

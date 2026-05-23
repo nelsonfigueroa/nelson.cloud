@@ -24,9 +24,11 @@
     --tint: rgb(22, 78, 199);
     --tint-2: rgb(14, 116, 144);
 
-
     --blockquote-border: rgb(22, 78, 199);
     --blockquote-background: rgba(22, 78, 199, 0.2);
+
+    --code-block-tab-text: rgb(218, 218, 219);
+    --code-block-tab-border: rgb(108, 108, 108);
 }
 
 .dark {
@@ -46,4 +48,6 @@
 
     --blockquote-border: rgb(96, 165, 250);
     --blockquote-background: rgba(96, 165, 250, 0.2);
+
+    --code-block-tab-border: rgb(51, 51, 51);
 }

@@ -658,3 +658,25 @@ a:hover {
 .link-count::after {
     content: "]";
 }
+
+/* language tab on code blocks */
+.post-content .highlight .code-lang {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0.2rem 0.6rem;
+    font-family: 'Commit Mono', monospace;
+    font-size: 0.72rem;
+    line-height: 1;
+    color: var(--code-block-tab-text);
+    background: var(--code-block-bg);
+    border-right: 1px solid var(--code-block-tab-border);
+    border-bottom: 1px solid var(--code-block-tab-border);
+    user-select: none;
+}
+
+/* extra top padding so the tab never overlaps the first line of code */
+.post-content .highlight > pre.chroma > code {
+    padding-top: 1.6rem;
+}

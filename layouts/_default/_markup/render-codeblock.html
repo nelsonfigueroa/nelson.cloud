@@ -1,0 +1,8 @@
+{{- /*
+  Code block render hook. Highlights fenced code via Chroma exactly like
+  Hugo's default, then injects a language "tab" into the .highlight wrapper
+  (label resolved at build time from data/codelang.yaml).
+*/ -}}
+{{- $lang := .Type | default "" -}}
+{{- $h := transform.Highlight .Inner $lang .Options -}}
+{{- partial "codelang-tab.html" (dict "highlighted" $h "lang" $lang) | safeHTML -}}
