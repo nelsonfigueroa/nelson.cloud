@@ -138,6 +138,10 @@ categories:
         title: "Personal Software"
       - url: "https://dogdogfish.com/blog/2026/05/10/the-struggle-is-gone/"
         title: "The Struggle is Gone"
+      - url: "https://tildes.net/~tech/1u5s/how_i_feel_about_llm_ai_writing"
+        title: "How I feel about LLM (AI) writing"
+      - url: "https://noslopgrenade.com/"
+        title: "no slop grenade."
 
   - name: "On Writing and Blogging"
     links:
@@ -327,6 +331,8 @@ categories:
         title: "osrs.world"
       - url: "https://beyondloom.com/tools/wigglypaint.html"
         title: "WigglyPaint"
+      - url: "https://dos.zone/"
+        title: "DOS Zone"
 
   - name: "Useful Sites"
     links:
@@ -393,6 +399,8 @@ categories:
         title: "A letter to open-source maintainers"
       - url: "https://aaronfrancis.com/2024/what-if-you-tried-hard-dac139a5"
         title: "What if you tried hard?"
+      - url: "https://lelouch.dev/blog/escaping-rut/"
+        title: "Stuck in a Rut? Here’s Your Way Out"
 
   - name: "Other Interesting Links"
     links:
