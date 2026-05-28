@@ -58,13 +58,13 @@ That completed the installation phase. Next, I had to update my views.
 
 Before the changes, my 'logout' link looked like this:
 
-```ruby
+```erb
 <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
 ```
 
 To get this to work properly, I had to remove `method: :delete` and replace it with `data: { turbo_method: :delete }`:
 
-```ruby
+```erb
 <%= link_to('Logout', destroy_user_session_path, data: { turbo_method: :delete }) %>
 ```
 
@@ -76,7 +76,7 @@ To fix the new user registrations, I had to add `data: { turbo: false }` to the 
 
 This is what it looked like before the changes:
 
-```ruby
+```erb
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.text_field :name, autofocus: true, placeholder: 'Name', autocomplete: "name" %>
@@ -89,7 +89,7 @@ This is what it looked like before the changes:
 
 And this is what the form looked like after the changes were implemented:
 
-```ruby
+```erb
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.text_field :name, autofocus: true, placeholder: 'Name', autocomplete: "name" %>

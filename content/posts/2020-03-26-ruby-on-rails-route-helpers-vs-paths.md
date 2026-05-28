@@ -14,7 +14,7 @@ However, it may not be best practice. It's best to stick with Rails helpers sinc
 
 While learning how to write tests for requests, I came across a different way of writing links in Rails. Up until this discovery I've used URL helpers as such:
 
-```rb
+```erb
 <%= link_to 'Add Account', new_account_path %>
 ```
 
@@ -37,19 +37,19 @@ edit_account GET    /accounts/:id/edit(.:format) accounts#edit
 
 URL helpers are mapped URI patterns, but we can also use these endpoints directly. In this case, the `new_account` URL helper is the same as `/accounts/new`. So the previous link can be changed to:
 
-```rb
+```erb
 <%= link_to 'Add Account', '/accounts/new' %>
 ```
 
 If a link requires an ID, we can add it through string interpolation. So the following link...
 
-```rb
+```erb
 <%= link_to account.name, account_path(@account) %>
 ```
 
 ...can be rewritten like this:
 
-```rb
+```erb
 <%= link_to account.name, "/accounts/#{@account.id}" %>
 ```
 
@@ -76,13 +76,13 @@ edit_account_statement GET   /accounts/:account_id/statements/:id/edit(.:format)
 
 If we want to create a link to edit a statement using a URL helper, we would write the following. (Notice we need to pass in two different IDs):
 
-```rb
+```erb
 <%= link_to 'Edit', edit_account_statement_path(account_id: @account.id, id: @statement.id) %>
 ```
 
 We can rewrite the link using a URI pattern instead.
 
-```rb
+```erb
 <%= link_to 'Edit', "/accounts/#{@account.id}/statements/#{@statement.id}/edit" %>
 ```
 

@@ -21,3 +21,4 @@ md: Markdown
 nginx: Nginx
 ini: INI
 http: HTTP
+erb: ERB
