@@ -8,7 +8,7 @@
 
 {{- $h := .highlighted | string -}}
 {{- with .lang -}}
-  {{- $label := index site.Data.codelang (lower .) | default . -}}
+  {{- $label := index hugo.Data.codelang (lower .) | default . -}}
   {{- $tab := printf `<span class="code-lang">%s</span>` $label -}}
   {{- $h = replaceRE `^(<div class="highlight"[^>]*>)` (printf "${1}%s" $tab) $h 1 -}}
 {{- end -}}
