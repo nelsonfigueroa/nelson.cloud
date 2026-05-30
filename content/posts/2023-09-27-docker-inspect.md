@@ -22,7 +22,7 @@ $ docker inspect --type=image --format='{{json .Config.Entrypoint}}' hashicorp/t
 ["/bin/terraform"]
 ```
 
-There are some examples on the [official docs](https://docs.docker.com/engine/reference/commandline/inspect/) but none of the examples covered my use cases, so here are some additional useful `docker inspect` examples using the `busybox` image.
+There are some examples on the [official docs](https://docs.docker.com/reference/cli/docker/inspect/) but none of the examples covered my use cases, so here are some additional useful `docker inspect` examples using the `busybox` image.
 
 List environment variables:
 
@@ -52,4 +52,4 @@ $ docker inspect --type=image --format='{{json .Architecture}}' busybox
 The `docker inspect` command can also be used to inspect other docker resources too, not just images. Check out the documentation for more information.
 
 References:
-- https://docs.docker.com/engine/reference/commandline/inspect/
+- https://docs.docker.com/reference/cli/docker/inspect/

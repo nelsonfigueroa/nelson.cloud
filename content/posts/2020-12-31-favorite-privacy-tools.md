@@ -58,7 +58,7 @@ I eventually switched to Proton VPN since I bought their subscription suite that
 
 ## Proton Mail
 
-**Official site:** [https://protonmail.com/](https://protonmail.com/)
+**Official site:** [https://proton.me/mail](https://proton.me/mail)
 
 Proton Mail is an email service based in Switzerland. Your emails are encrypted and aren't used for training AI or selling advertisements to you.
 

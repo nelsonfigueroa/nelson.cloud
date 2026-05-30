@@ -15,7 +15,7 @@ I used Claude Code for that PR. I didn't learn anything. I felt like I was fling
 
 But here's the thing, I still contributed something of value. It's something I have been wanting in Hugo for a long time: the ability to syntax highlight [ERB](https://github.com/ruby/erb) snippets in my posts. It was approved and merged by the maintainer (thanks for dealing with my slop, [Alec](https://github.com/alecthomas)).
 
-It just feels odd. I know there are many people that are excited about this new era of writing code. But to me this has sucked out all of the fun. I have never felt like a bigger fraud in this field. I've always thought that I'm privileged that I get to have fun at all in my line of work. As Ori Bernstein says: ["using LLMs to write code is as fun as hiring a taskrabbit to solve my jigsaw puzzles"](https://orib.dev/nofun.html).
+It just feels odd. I know there are many people that are excited about this new era of writing code. But to me this has sucked out all of the fun. I have never felt like a bigger fraud in this field. I've always thought that I'm privileged that I get to have fun at all in my line of work. As Ori Bernstein says: ["using LLMs to write code is as fun as hiring a taskrabbit to solve my jigsaw puzzles"](https://web.archive.org/web/20260330102830/https://orib.dev/nofun.html).
 
 But then again, I know that realistically I would not have the mental capacity or skill to create a pull request like that without AI tooling. My brain is already fried from work on most days. I don't think I would have been able to learn the codebase and get enough context to make that PR all by myself. It's a lot. I just wanted some ERB syntax highlighting for my little blog.
 

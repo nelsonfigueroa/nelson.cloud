@@ -178,7 +178,7 @@ I'll be showing steps to install Minikube on macOS using `brew`. If you're runni
 You'll need a hypervisor to run Minikube on. I chose VirtualBox, and installing it was easy as running:
 
 ```shell
-brew cask install virtualbox
+brew install --cask virtualbox
 ```
 
 Then we can install Minikube by running
