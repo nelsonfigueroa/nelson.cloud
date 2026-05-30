@@ -22,4 +22,4 @@ If there is compensation, it's usually something like a $100 Amazon gift card.
 
 Maybe it's just me that can't get motivated or excited about a company hackathon.
 
-I can summarize company hackathons like this: you come up with a million dollar idea for your employer and (maybe) get $100 in return.
+I can summarize company hackathons like this: you come up with a million-dollar idea for your employer and (maybe) get $100 in return.

@@ -109,6 +109,7 @@ print(my_list)
 ### At the End of a List
 
 We can use `pop()`. Modifies list in-place:
+
 ```python
 my_list = [1, 2, 3]
 my_list.pop()

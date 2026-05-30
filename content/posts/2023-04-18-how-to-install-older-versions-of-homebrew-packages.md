@@ -64,7 +64,7 @@ This will take you to the [package formula for this specific version of terrafor
 
 On the upper right side of the code block, click on "Raw". This [gives us the exact code we need](https://raw.githubusercontent.com/Homebrew/homebrew-core/169f333f93fe0703b542cdf75b1decd4cb78f68d/Formula/terraform.rb) to install Terraform 1.3.6. Save the code locally to a file called `terraform.rb`. You can manually copy and paste or use `curl`:
 
-```sh
+```shell
 curl https://raw.githubusercontent.com/Homebrew/homebrew-core/169f333f93fe0703b542cdf75b1decd4cb78f68d/Formula/terraform.rb > terraform.rb
 ```
 

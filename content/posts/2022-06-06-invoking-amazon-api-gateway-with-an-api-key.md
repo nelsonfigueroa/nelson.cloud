@@ -8,18 +8,18 @@ ShowToc = true
 TocOpen = true
 +++
 
-To invoke an Amazon API Gateway with an API Key we need to pass in the API key in a `x-api-key` header.
+To invoke an Amazon API Gateway with an API Key we need to pass in the API key in an `x-api-key` header.
 For the following examples, assume the invoke URL is `https://12abcde45.execute-api.us-west-1.amazonaws.com/prod/create` and the API key is `abc123`.
 
 ## Invoking with curl
 To invoke this API with `curl` it would look like this:
 
-```sh
+```shell
 # GET request
 curl --header "x-api-key: abc123" https://12abcde45.execute-api.us-west-1.amazonaws.com/prod/create
 ```
 
-```sh
+```shell
 # POST request with data
 curl -d "key1=value1&key2=value2" --header "x-api-key: abc123" -X POST https://12abcde45.execute-api.us-west-1.amazonaws.com/prod/create
 ```
@@ -27,12 +27,12 @@ curl -d "key1=value1&key2=value2" --header "x-api-key: abc123" -X POST https://1
 ## Invoking with HTTPie
 To invoke the API with [HTTPie](https://httpie.io/):
 
-```sh
+```shell
 # GET request
 http https://12abcde45.execute-api.us-west-1.amazonaws.com/prod/create x-api-key:abc123
 ```
 
-```sh
+```shell
 # POST request with data
 http post https://12abcde45.execute-api.us-west-1.amazonaws.com/prod/create key1=value1 x-api-key:abc123
 

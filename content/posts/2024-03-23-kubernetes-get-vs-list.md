@@ -128,7 +128,7 @@ roleRef:
 
 This manifest can be saved to a YAML file and applied like so:
 
-```shell
+```console
 $ kubectl apply -f manifest.yaml
 
 namespace/example created
@@ -156,13 +156,13 @@ kubectl auth can-i <verb> <resource> --as=system:serviceaccount:<namespace>:<ser
 
 First let's try getting a secret under both service accounts. We expect `service-account-1` to be able to `get` a secret, but not `service-account-2`:
 
-```shell
+```console
 $ kubectl auth can-i get secrets --as=system:serviceaccount:example:service-account-1 -n example
 
 yes
 ```
 
-```shell
+```console
 $ kubectl auth can-i get secrets --as=system:serviceaccount:example:service-account-2 -n example
 
 no
@@ -172,13 +172,13 @@ Works as expected!
 
 Now let's try getting the `credentials` secret we created earlier just to double check. We should get the same results as above.
 
-```shell
+```console
 $ kubectl auth can-i get secrets/credentials --as=system:serviceaccount:example:service-account-1 -n example
 
 yes
 ```
 
-```shell
+```console
 $ kubectl auth can-i get secrets/credentials --as=system:serviceaccount:example:service-account-2 -n example
 
 no
@@ -188,13 +188,13 @@ Works as expected.
 
 Next let's try listing secrets under both service accounts. This time we expect `service-account-2` to be able to `list` secrets, but not `service-account-1`:
 
-```shell
+```console
 $ kubectl auth can-i list secrets --as=system:serviceaccount:example:service-account-1 -n example
 
 no
 ```
 
-```shell
+```console
 $ kubectl auth can-i list secrets --as=system:serviceaccount:example:service-account-2 -n example
 
 yes

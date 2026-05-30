@@ -16,7 +16,7 @@ I'll be starting from scratch and creating an IAM user with access to an S3 buck
 
 {{< admonition type="info" title="tl;dr" >}}
 You can run this command (replacing placeholders as needed) if you already have an S3 bucket and AWS credentials configured on your machine:
-```sh
+```shell
 pulumi login 's3://<bucket-name>?region=<region>&awssdk=v2&profile=<aws-profile-name>'
 ```
 {{< /admonition >}}
@@ -83,13 +83,13 @@ You'll need the bucket's region and your local AWS profile name to use S3 as a b
 
 The command formula looks like this:
 
-```sh
+```shell
 pulumi login 's3://<bucket-name>?region=<region>&awssdk=v2&profile=<aws-profile-name>'
 ```
 
 In my case, the command looks like this (make sure to edit for your needs):
 
-```sh
+```shell
 pulumi login 's3://nelsons-pulumi-state-backend?region=us-west-1&awssdk=v2&profile=default'
 ```
 
@@ -120,7 +120,7 @@ Finally, it's time to test this out.
 
 To demonstrate, I created a simple Pulumi program by running:
 
-```sh
+```shell
 pulumi new aws-python
 ```
 

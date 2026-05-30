@@ -45,7 +45,6 @@ rails importmap:install
 
 Then I had to run an additional command to install Hotwire:
 
-
 ```shell
 rails hotwire:install
 ```

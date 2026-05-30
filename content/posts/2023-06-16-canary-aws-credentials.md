@@ -12,7 +12,7 @@ I published the fake AWS API keys to my site under [https://nelson.cloud/.env](h
 
 At the time of writing this blog post, this is what the `.env` file contains:
 
-```shell
+```console
 $ curl https://nelson.cloud/.env
 
 AWS_ACCESS_KEY_ID=AKIA2OGYBAH6TDQ3GH4E

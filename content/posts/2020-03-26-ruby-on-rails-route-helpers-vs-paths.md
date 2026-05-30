@@ -55,7 +55,7 @@ If a link requires an ID, we can add it through string interpolation. So the fol
 
 This also applies to nested routes. Let's say we have the following in `routes.rb`:
 
-```rb
+```ruby
 resources :accounts do
   resources :statements, only: %i[new create edit update]
 end

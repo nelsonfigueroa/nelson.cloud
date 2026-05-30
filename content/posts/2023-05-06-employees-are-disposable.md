@@ -33,7 +33,7 @@ caption="*Source: [Ars Technica: Googlers angry about CEO's $226M pay after cuts
 
 <br>
 
-Aside from layoffs, employees may have their pay frozen even though company revenues are up. That's what happened at Microsoft. Let's not forget that Microsoft is a $2.5 trillion dollar company (at the time of this writing).
+Aside from layoffs, employees may have their pay frozen even though company revenues are up. That's what happened at Microsoft. Let's not forget that Microsoft is a $2.5 trillion company (at the time of this writing).
 
 {{< figure src="/employees-are-disposable/microsoft-pay-freeze.webp" alt="Techradar headline"
 caption="*Source: [Techradar: Microsoft workers protest 'landmark year' CEO memo following pay freeze](https://www.techradar.com/pro/microsoft-workers-protest-landmark-year-ceo-memo-following-pay-freeze)*" >}}

@@ -25,7 +25,7 @@ I found a lot of resumes with this Google search. [Try this search yourself](htt
 resume.pdf filetype:pdf site:github.io
 ```
 
-Searching for `resume` instead of `resume.pdf` also works, but the results are polluted by "Resume Guide" PDFs and etc.
+Searching for `resume` instead of `resume.pdf` also works, but the results are polluted by "Resume Guide" PDFs, etc.
 
 <br>
 

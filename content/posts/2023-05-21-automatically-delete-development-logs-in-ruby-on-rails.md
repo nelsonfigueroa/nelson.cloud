@@ -27,7 +27,7 @@ end
 
 This code will delete `development.log` after the Rails process exits.
 
-For example, I can start up a Rails app locally and see that a `development.log` file is created under `log`/:
+For example, I can start up a Rails app locally and see that a `development.log` file is created under `log/`:
 
 ```console
 $ rails s

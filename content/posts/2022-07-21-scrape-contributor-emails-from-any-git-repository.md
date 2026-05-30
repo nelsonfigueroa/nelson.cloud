@@ -19,7 +19,7 @@ I am writing about this to make others aware of this form of scraping and it is 
 {{< admonition type="info" title="tl;dr" >}}
 You can run this command within any git repo to extract all contributor emails:
 
-```bash
+```shell
 git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b" | awk '{print tolower($0)}' | sort | uniq | grep -wv 'users.noreply.github.com'
 ```
 {{< /admonition >}}
@@ -28,7 +28,7 @@ git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6
 
 The `git shortlog -sea` part of the command is short for `git shortlog --summary --email --all`. This command outputs the number of commits each user has made, along with their name and email, across all branches.
 
-```bash
+```console
 $ git shortlog -sea
 
     54  First Last <FirstLast@example.com>
@@ -40,7 +40,7 @@ $ git shortlog -sea
 
 The next command, `grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"`, extracts emails from each line using a regular expression.
 
-```bash
+```console
 $ git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"
 
 FirstLast@example.com
@@ -52,7 +52,7 @@ firstlast@example.com
 
 The output from the previous command is piped into `awk '{print tolower($0)}'`, which lowercases all the emails. Sometimes emails are typed in with capital letters. Lowercasing all characters will help with sorting and finding unique emails later.
 
-```bash
+```console
 $ git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b" | awk '{print tolower($0)}'
 
 firstlast@example.com
@@ -65,7 +65,7 @@ firstlast@example.com
 
 After that, the output is piped into `sort` and `uniq`. These commands are straightforward. The emails are sorted alphabetically, then duplicates are excluded from the output.
 
-```bash
+```console
 $ git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b" | awk '{print tolower($0)}' | sort | uniq
 
 1234567+someoneelse@users.noreply.github.com
@@ -76,7 +76,7 @@ user1@example.com
 
 That should suffice for a lot of git repos, but I also added `grep -wv 'users.noreply.github.com'` to the end of the command to exclude noreply emails associated with GitHub.
 
-```bash
+```console
 $ git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b" | awk '{print tolower($0)}' | sort | uniq | grep -wv 'users.noreply.github.com'
 
 anotheruser@example.com

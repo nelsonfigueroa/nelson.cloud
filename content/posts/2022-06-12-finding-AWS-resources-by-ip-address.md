@@ -26,7 +26,7 @@ The AWS CLI can be used to find EC2 instances by either private or public IP add
 
 To find EC2 instances by private IP address, the command looks like this (Replace `--region` with your region if it's not set by default. Replace `Values` with the IP address):
 
-```bash
+```shell
 aws ec2 describe-instances --region=us-west-1 --filter Name=private-ip-address,Values=10.0.0.1
 ```
 
@@ -34,7 +34,7 @@ aws ec2 describe-instances --region=us-west-1 --filter Name=private-ip-address,V
 
 To find EC2 instances by public IP address, the `Name` filter changes to `ip-address` but otherwise the command is the same as the one from above:
 
-```bash
+```shell
 aws ec2 describe-instances --region=us-west-1 --filter Name=ip-address,Values=54.123.45.67
 ```
 
@@ -44,13 +44,13 @@ For either of these commands, you can specify several IP addresses by adding the
 
 For public IP addresses:
 
-```bash
+```shell
 aws ec2 describe-instances --region=us-west-1 --filter Name=ip-address,Values=54.123.45.67,54.123.45.68,54.123.45.69
 ```
 
 For private IP addresses:
 
-```bash
+```shell
 aws ec2 describe-instances --region=us-west-1 --filter Name=private-ip-address,Values=10.0.0.1,10.0.0.2,10.0.0.3
 ```
 
@@ -224,11 +224,11 @@ You can then poke around through the ENI details to figure out what resource is 
 
 This can also be done using the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) with the following command, replacing `--region` and `Values` as needed:
 
-```bash
+```shell
 aws ec2 describe-network-interfaces --region=us-west-1 --filters Name=addresses.private-ip-address,Values=10.0.0.1
 ```
 
-Here's what the output looks like
+Here's what the output looks like:
 
 ```json
 {

@@ -22,13 +22,13 @@ To remove this tag, we can disable it in `config.yaml` or `config.toml` by setti
 
 In YAML:
 
-```YAML
+```yaml
 disableHugoGeneratorInject: true
 ```
 
 In TOML:
 
-```TOML
+```toml
 disableHugoGeneratorInject = true
 ```
 

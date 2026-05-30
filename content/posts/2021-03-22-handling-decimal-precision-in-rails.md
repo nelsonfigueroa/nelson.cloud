@@ -14,7 +14,7 @@ Ruby on Rails allows us to specify how precise we want decimals to be by definin
 
 The migration for an expense model that has a decimal field looks like this:
 
-```rb
+```ruby
 class CreateExpenses < ActiveRecord::Migration[6.0]
   def change
     create_table :expenses do |t|
@@ -35,7 +35,7 @@ So this field will take a decimal value up to 999.99.
 
 For the expense model, we want to add validations so that the amount is positive and is less than 1000. This is based on the precision and scale we defined in the migration. We can also add validation to take into account decimal places by using a regular expression that allows values up to 999.99.
 
-```rb
+```ruby
 class Expense < ApplicationRecord
   validates :amount, numericality: { greater_than_or_equal_to: 0, less_than: BigDecimal(10**3) },
                      format: { with: /\A\d{1,3}(\.\d{1,2})?\z/ }
@@ -46,7 +46,7 @@ end
 
 For the expense model, we have a standard controller. We don't need to do anything here in regards to decimal precision. I'm showing this for completeness of the example.
 
-```rb
+```ruby
 class ExpensesController < ApplicationController
 
   def index

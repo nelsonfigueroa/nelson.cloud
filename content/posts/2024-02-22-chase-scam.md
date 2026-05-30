@@ -77,6 +77,7 @@ After submitting the previous form I was shown yet another one, this time asking
 <img src="/chase-scam/email-form.webp" alt="email form" width="720" height="492" style="max-width: 100%; height: auto; aspect-ratio: 2552 / 1744;" loading="lazy" decoding="async">
 
 I typed in some fake credentials and submitted the form. A `POST` request goes out to the same URL as before with the following JSON payload:
+
 ```json
 {"uid":"1ef25781cb3fd42f981b2bbb183d9887","stp":"4","cemail":"nah@fu.com","bdate":"ajlksdasdjl"}
 ```

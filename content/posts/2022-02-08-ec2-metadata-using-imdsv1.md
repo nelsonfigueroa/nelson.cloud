@@ -22,7 +22,7 @@ If you want a bash script that you can copy and paste, scroll down to the bottom
 
 View all available categories of metadata:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/
 
 ami-id
@@ -53,7 +53,7 @@ services/
 
 Get instance AMI ID:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/ami-id
 
 ami-0d43f810ac49e9511
@@ -61,7 +61,7 @@ ami-0d43f810ac49e9511
 
 Get hostname:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/hostname
 
 ip-10-128-128-128.us-west-1.compute.internal
@@ -69,7 +69,7 @@ ip-10-128-128-128.us-west-1.compute.internal
 
 Get AWS account ID:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/identity-credentials/ec2/info | grep "AccountId" | awk -F\" '{print $4}'
 
 123456789012
@@ -77,7 +77,7 @@ $ curl -s http://169.254.169.254/latest/meta-data/identity-credentials/ec2/info 
 
 Get instance ID:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/instance-id
 
 i-01234567890f1234b
@@ -85,7 +85,7 @@ i-01234567890f1234b
 
 Get instance type:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/instance-type
 
 t2.medium
@@ -93,7 +93,7 @@ t2.medium
 
 Get IPv4 address:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/local-ipv4
 
 10.128.128.128
@@ -101,7 +101,7 @@ $ curl -s http://169.254.169.254/latest/meta-data/local-ipv4
 
 Get MAC address:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/mac
 
 05:5f:bd:1a:4c:77
@@ -109,7 +109,7 @@ $ curl -s http://169.254.169.254/latest/meta-data/mac
 
 Get availability zone:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone
 
 us-west-1a
@@ -117,7 +117,7 @@ us-west-1a
 
 Get availability zone ID:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone-id
 
 usw1-az1
@@ -125,7 +125,7 @@ usw1-az1
 
 Get security groups associated with the instance:
 
-```sh
+```console
 $ curl -s http://169.254.169.254/latest/meta-data/security-groups
 
 my-security-group-1
@@ -137,7 +137,7 @@ my-security-group-3
 
 Copy and paste this bash snippet and use values as needed:
 
-```sh
+```shell
 AMI_ID=$(curl -s http://169.254.169.254/latest/meta-data/ami-id)
 HOSTNAME=$(curl -s http://169.254.169.254/latest/meta-data/hostname)
 ACCOUNT_ID=$(curl -s http://169.254.169.254/latest/meta-data/identity-credentials/ec2/info | grep "AccountId" | awk -F\" '{print $4}')

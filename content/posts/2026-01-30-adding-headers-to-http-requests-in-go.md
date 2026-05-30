@@ -58,7 +58,7 @@ func main() {
 }
 ```
 
-{{< admonition type="note">}}
+{{< admonition type="note" >}}
 `req.Header.Set()` can be used to set a header but will ***overwrite*** any existing value for that header.
 
 `req.Header.Add()` can be used to add a value to a header and will **append** to any existing value for that header.

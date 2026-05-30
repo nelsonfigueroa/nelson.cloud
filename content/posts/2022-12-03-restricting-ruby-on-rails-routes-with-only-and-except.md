@@ -60,7 +60,7 @@ Prefix Verb URI Pattern          Controller#Action
 
 `:except` works in the opposite way. Instead of specifying the routes we want to create, we specify the ones we don't want to create.
 
-If we take the example from above and replace `only:` with `:except`, we can see what happens:
+If we take the example from above and replace `only:` with `except:`, we can see what happens:
 
 ```ruby
 Rails.application.routes.draw do
@@ -87,6 +87,7 @@ edit_item GET    /items/:id/edit(.:format) items#edit
 Note that if you need to restrict a single route with either `:only` or `:except`, there is no need to place the route in an array. Write it as a symbol after `:only` or `:except` like so:
 
 Using `except:`:
+
 ```ruby
 Rails.application.routes.draw do
   resources :items, except: :index
@@ -94,6 +95,7 @@ end
 ```
 
 Using `only:`:
+
 ```ruby
 Rails.application.routes.draw do
   resources :items, only: :index

@@ -160,7 +160,7 @@ my-security-group-3
 
 Copy and paste this Bash snippet and use the assigned values as needed:
 
-```bash
+```shell
 TOKEN=$(curl -s -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
 
 ACCOUNT_ID=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/identity-credentials/ec2/info | grep "AccountId" | awk -F\" '{print $4}')

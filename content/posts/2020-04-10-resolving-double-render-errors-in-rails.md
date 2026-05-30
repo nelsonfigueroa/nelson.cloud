@@ -10,7 +10,7 @@ When using `redirect_to` or `render` twice in one action, we get the `AbstractCo
 
 For example, I had the following action with two `redirect_to` methods:
 
-```rb
+```ruby
 def create
   if @user.has_statement_this_month?(@account)
     flash[:alert] = "You already have a statement for this month."
@@ -34,7 +34,7 @@ In this case, if a statement has an existing statement record for the current mo
 
 To resolve this we need to add a `return` statement after the `redirect_to` in order to exit out of the action:
 
-```rb
+```ruby
 if @user.has_statement_this_month?(@account)
   flash[:alert] = "You already have a statement for this month."
   redirect_to(account_path(@account))

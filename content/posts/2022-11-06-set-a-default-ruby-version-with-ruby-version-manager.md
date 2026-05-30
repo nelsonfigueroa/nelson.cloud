@@ -8,13 +8,13 @@ categories = ["Ruby"]
 
 To set the system-wide version of Ruby with `rvm` run:
 
-```bash
+```shell
 rvm --default use <version number>
 ```
 
 For example, to use 3.1.2 as the default version system-wide, run:
 
-```bash
+```shell
 rvm --default use 3.1.2
 ```
 
@@ -22,4 +22,4 @@ Now this version will be used even when a new terminal tab or window is opened.
 
 References:
 
--  https://rvm.io/rubies/default
+- https://rvm.io/rubies/default

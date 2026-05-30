@@ -39,7 +39,7 @@ Then click on the bucket and go to the "properties" tab. Scroll all the way to t
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/s3-static-website-hosting.webp" alt="Static website hosting configuration." width="720" height="729" style="max-width: 100%; height: auto; aspect-ratio: 1516 / 1536;" loading="lazy" decoding="async">
 
 Then go to the "Permissions" tab in the bucket. Click the "Edit" button under the "Block public access (bucket settings)" section.
-Uncheck the "Block *all* public access" checkbox. We need this bucket to have public access so the site is viewable across the internet.
+Uncheck the "Block all public access" checkbox. We need this bucket to have public access so the site is viewable across the internet.
 Save changes.
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/bucket-public-access.webp" alt="S3 bucket access." width="720" height="586" style="max-width: 100%; height: auto; aspect-ratio: 1572 / 1280;" loading="lazy" decoding="async">
@@ -63,7 +63,7 @@ Next, still under the "Permissions tab", click the "Edit" button on the "Bucket 
 
 Then save changes.
 
-At this point "Block *all* public access" should be off, and the bucket policy should show under the section:
+At this point "Block all public access" should be off, and the bucket policy should show under the section:
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/completed-bucket-permissions.webp" alt="Completed S3 bucket configuration." width="720" height="410" style="max-width: 100%; height: auto; aspect-ratio: 2202 / 1254;" loading="lazy" decoding="async">
 
@@ -94,13 +94,13 @@ For "Certificate type" select "Request a public certificate". Then click Next.
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/requesting-ssl-certificate.webp" alt="Requesting an ACM SSL certificate." width="720" height="236" style="max-width: 100%; height: auto; aspect-ratio: 2122 / 696;" loading="lazy" decoding="async">
 
-Then, under "Fully qualified domain name" write in the name of your domain
+Then, under "Fully qualified domain name" write in the name of your domain.
 I also like to add in support for all subdomains. If you want to do this, add in the wildcard subdomain `*.yourdomain.com`
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/ssl-cert-domains.webp" alt="Adding domain names to ACM SSL certificate." width="720" height="196" style="max-width: 100%; height: auto; aspect-ratio: 1906 / 520;" loading="lazy" decoding="async">
 
 Under "Validation method" select DNS validation.
-Under "Key algorithm" select "RSA 2048" or higher if you'd like
+Under "Key algorithm" select "RSA 2048" or higher if you'd like.
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/ssl-cert-validation-and-key-algorithm.webp" alt="Validation method and key algorithm for ACM SSL certificate." width="720" height="317" style="max-width: 100%; height: auto; aspect-ratio: 1976 / 870;" loading="lazy" decoding="async">
 
@@ -146,7 +146,7 @@ Then, under the "Properties" tab, scroll all the way down and copy the value of 
 
 Then go to the CloudFront service in the AWS console. Click the "Create distribution" button on the top right.
 
-Under "Origin domain"  paste the value of "Bucket website endpoint" that you copied. The value should be something like `http://mybucket.s3-website-us-east-1.amazonaws.com`
+Under "Origin domain" paste the value of "Bucket website endpoint" that you copied. The value should be something like `http://mybucket.s3-website-us-east-1.amazonaws.com`
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/origin-domain.webp" alt="CloudFront Distribution Origin domain." width="720" height="129" style="max-width: 100%; height: auto; aspect-ratio: 1086 / 196;" loading="lazy" decoding="async">
 

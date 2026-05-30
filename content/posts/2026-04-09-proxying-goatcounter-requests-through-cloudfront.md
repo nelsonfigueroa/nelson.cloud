@@ -47,7 +47,7 @@ We need to strip `/gc` for two reasons:
 2. GoatCounter accepts requests under `/count`, not `/gc/count`
 
 Here is the code for the function:
-```js
+```javascript
 function handler(event) {
     var request = event.request;
     request.uri = request.uri.replace(/^\/gc/, '');

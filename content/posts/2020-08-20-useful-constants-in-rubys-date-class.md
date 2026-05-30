@@ -52,7 +52,7 @@ Now, when parsing `Aug 20, 2020`, I can run the following to get a numerical val
 
 => true
 
-Date::ABBR_MONTHNAMES.index('Aug')
+> Date::ABBR_MONTHNAMES.index('Aug')
 
 => 8
 ```

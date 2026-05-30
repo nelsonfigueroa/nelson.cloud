@@ -13,7 +13,7 @@ I created [my first AI pull request](https://github.com/alecthomas/chroma/pull/1
 
 I used Claude Code for that PR. I didn't learn anything. I felt like I was flinging slop over the wall to an open-source maintainer. I felt like a fraud and my impostor syndrome got worse.
 
-But here's the thing, I still contributed something of value. It’s something I have been wanting in Hugo for a long time to syntax highlight [ERB](https://github.com/ruby/erb) snippets in my posts. It was approved and merged by the maintainer (thanks for dealing with my slop, [Alec](https://github.com/alecthomas)).
+But here's the thing, I still contributed something of value. It's something I have been wanting in Hugo for a long time: the ability to syntax highlight [ERB](https://github.com/ruby/erb) snippets in my posts. It was approved and merged by the maintainer (thanks for dealing with my slop, [Alec](https://github.com/alecthomas)).
 
 It just feels odd. I know there are many people that are excited about this new era of writing code. But to me this has sucked out all of the fun. I have never felt like a bigger fraud in this field. I've always thought that I'm privileged that I get to have fun at all in my line of work. As Ori Bernstein says: ["using LLMs to write code is as fun as hiring a taskrabbit to solve my jigsaw puzzles"](https://orib.dev/nofun.html).
 
