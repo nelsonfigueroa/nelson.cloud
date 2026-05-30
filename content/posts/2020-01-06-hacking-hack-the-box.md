@@ -74,7 +74,7 @@ Just looking at the names of the functions confirmed to me that I was on the rig
 }
 ```
 
-The `data` clearly looks like encrypted text. And we even get the `enctype` telling us what form of encryption was used: ROT 13. Once again, I opened up a new browser tab and searched for "ROT 13 decrypt". I chose [this website](https://cryptii.com/pipes/rot13-decoder)
+The `data` string looks like encoded text. And we even get the `enctype` telling us what form of encoding was used: [ROT 13](https://en.wikipedia.org/wiki/ROT13). Once again, I opened up a new browser tab and searched for "ROT 13 decrypt". I chose [this website](https://cryptii.com/pipes/rot13-decoder)
 
 Using the tool, I decrypted the string and got the result: "In order to generate the invite code, make a POST request to /api/invite/"
 
