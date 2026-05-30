@@ -73,7 +73,7 @@ Note that you do NOT need the [AWS CLI](https://aws.amazon.com/cli/) installed. 
 
 Create the file `~/.aws/credentials` if you don't have it. Then add in your credentials there under the `[default]` profile. (You can add more profiles, but this is beyond the scope of this post.)
 
-```toml
+```ini
 [default]
 aws_access_key_id = <key_id>
 aws_secret_access_key = <access_key>

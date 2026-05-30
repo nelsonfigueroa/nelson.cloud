@@ -71,7 +71,7 @@ In the examples above, the `num` variable has to be an integer or `None`, and it
 
 ### Two or More Optional Type Hints
 
-To specify two or more optional type hints, we need to import `Union` from the `typing` module.
+To specify two or more optional type hints, we can import `Union` from the `typing` module.
 
 In this example, the type hints indicate that either an integer, a string, or `None` can be assigned to the `data` input variable. The `data` variable has a default value of `None`.
 

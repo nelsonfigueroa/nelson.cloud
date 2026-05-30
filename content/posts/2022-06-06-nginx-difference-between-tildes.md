@@ -16,7 +16,7 @@ location ~ ^/admin/$ {
 }
 ```
 
-In this example, both `/admin` and `/Admin/` would match and be redirected:
+In this example, both `/admin/` and `/Admin/` would match and be redirected:
 
 ```nginx
 location ~* ^/admin/$ {

@@ -23,7 +23,7 @@ Here are some convenient links to get uBlock Origin:
 
 ## For Safari Users
 
-[Safari](https://www.apple.com/safari/) doesn't support extensions like other browsers. While there is some tracking protection out of the box it doesn't compare to uBlock Origin. If you REALLY want to keep using Safari then check out [AdGuard for Mac](https://adguard.com/adguard-mac/overview.html). It blocks ads system-wide on macOS and not just in Safari.
+[Safari](https://www.apple.com/safari/) has limited support for extensions. While there is some tracking protection out of the box it, doesn't compare to running a full blown version of uBlock Origin. If you REALLY want to keep using Safari then check out [AdGuard for Mac](https://adguard.com/adguard-mac/overview.html). It blocks ads system-wide on macOS and not just in Safari.
 
 If you like the Safari aesthetic but don't want to install AdGuard, check out [Orion Browser](https://kagi.com/orion/). It comes with ad blocking out of the box. It's based on [WebKit](https://webkit.org/) just like Safari. There's even an iOS app available.
 - [Get Orion for macOS](https://kagi.com/orion/#download_sec)

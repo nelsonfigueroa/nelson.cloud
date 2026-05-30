@@ -654,7 +654,7 @@ arr.index("Z")
 
 ### Reversing Elements in an Array
 
-Elements in an array can be reversed with `reverse()`. This method returns an array with elements sorted in reverse and does not modify the original array:
+Elements in an array can be reversed with `reverse()`. This method returns a new array with the elements in reverse order and does not modify the original array:
 
 ```ruby
 arr = ["A", "B", "C"]

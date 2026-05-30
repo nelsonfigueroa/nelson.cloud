@@ -92,7 +92,7 @@ Your terminal screen will fill up with something like this:
  51:EF:63:2E:47:72  -55        0        0    0   3  -1                    <length:  0>
  7C:B1:DF:B9:12:59  -42        3        0    0   7  130  WPA2 CCMP   PSK  Lower The Rent
  DA:4B:77:1A:84:50  -75        2        0    0   1  195  WPA2 CCMP   PSK  Spectrum
- 19:7H:8D:73:97:FE  -77        2        0    0   1  195  WPA2 CCMP   PSK  MyWifi
+ 19:7F:8D:73:97:FE  -77        2        0    0   1  195  WPA2 CCMP   PSK  MyWifi
  DA:F4:AC:DC:31:A7  -75        2        0    0   1  130  WPA2 CCMP   PSK  Home
  19:AD:EF:C4:0A:36  -71        3        0    0   1  195  WPA2 CCMP   PSK  Verizon
  5D:19:32:EA:E0:66  -62        3        0    0   1  360  WPA2 CCMP   PSK  Cali
@@ -304,7 +304,7 @@ We can be more clever and use a MAC address from a known company. The first 3 by
 We can specify a MAC address with the following command:
 
 ```shell
-macchanger -m f8:d8:88:64:fd:c7 wlan0
+macchanger -m f8:db:88:64:fd:c7 wlan0
 ```
 
 On macOS you can change the MAC address of an interface to one of your choosing with the following command:

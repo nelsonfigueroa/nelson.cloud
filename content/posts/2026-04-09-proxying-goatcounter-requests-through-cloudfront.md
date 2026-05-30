@@ -133,9 +133,9 @@ Now that my Pulumi code has both the CloudFront function defined and the CloudFr
 
 ### Update the GoatCounter Script
 
-Finally, I updated goatcounter.js to use the new endpoint. So instead of `goatcounter.com` I changed it to my own domain `nelson.cloud/gc/count` at the very top of the snippet:
+Finally, I updated the GoatCounter JavaScript to use the new endpoint. So instead of `goatcounter.com` I changed the `data-goatcounter` attribute to my own domain `nelson.cloud/gc/count`:
 
-```javascript
+```html
 <script data-goatcounter="https://nelson.cloud/gc/count">
 /* rest of script */
 </script>
