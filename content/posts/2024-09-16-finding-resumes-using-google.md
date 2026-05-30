@@ -64,7 +64,7 @@ resume filetype:pdf site:*.me
 And here is a Google search for the `.dev` TLD which is commonly used by developers. [Try this out yourself](https://www.google.com/search?q=resume+filetype:pdf+site:*.dev).
 
 ```text
-resume.pdf filetype:pdf site:*.dev
+resume filetype:pdf site:*.dev
 ```
 
 <br>
