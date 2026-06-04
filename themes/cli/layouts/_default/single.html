@@ -32,6 +32,7 @@
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
+  {{- partial "floating-toc.html" . }}
   {{- end }}
 
   {{- if .Content }}
@@ -56,6 +57,8 @@
     {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>
+
+  {{- partial "related_posts.html" . }}
 
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
