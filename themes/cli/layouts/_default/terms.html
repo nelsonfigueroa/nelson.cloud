@@ -11,14 +11,17 @@
 </header>
 {{- end }}
 
-<ul class="terms-tags">
-    {{- $type := .Type }}
-    {{- range $key, $value := .Data.Terms.Alphabetical }}
+{{- $type := .Type }}
+{{- $terms := .Data.Terms.ByCount }}
+
+<ul class="categories-chart">
+    {{- range $terms }}
     {{- $name := .Name }}
     {{- $count := .Count }}
     {{- with site.GetPage (printf "/%s/%s" $type $name) }}
     <li>
-        <a href="{{ .Permalink }}">{{ .Name }}<sup> {{ $count }}</sup></a>
+        <a href="{{ .Permalink }}">{{ .Name }}</a>
+        <span class="cat-count">{{ $count }}</span>
     </li>
     {{- end }}
     {{- end }}
