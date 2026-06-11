@@ -8,24 +8,24 @@
     --main-width: 80ch;
     --header-height: 60px;
     --footer-height: 60px;
-    --theme: rgb(255, 255, 255);
-    --entry: rgb(243, 243, 243);
+    --theme: rgb(208 208 208);
+    --entry: rgb(166, 170, 158);
     --primary: rgb(0, 0, 0);
-    --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(173, 173, 173);
+    --secondary: rgb(60, 64, 56);
+    --tertiary: rgb(110, 114, 104);
     --content: rgb(0, 0, 0);
     --code-block-bg: rgb(0, 0, 0);
     --code-block-hover: rgb(33, 35, 36);
     --code-block-selection: rgb(90, 213, 131);
-    --code-bg: rgb(230, 230, 230);
-    --code-font-color: rgb(86, 54, 155);
-    --border: rgb(220, 220, 220);
+    --code-bg: rgb(202, 189, 189);
+    --code-font-color: rgb(150, 15, 15);
+    --border: rgb(124, 128, 118);
 
-    --tint: rgb(22, 78, 199);
-    --tint-2: rgb(14, 116, 144);
+    --tint: rgb(10, 15, 205);
+    --tint-2: rgb(150, 15, 15);
 
-    --blockquote-border: rgb(22, 78, 199);
-    --blockquote-background: rgba(22, 78, 199, 0.2);
+    --blockquote-border: rgb(10, 15, 205);
+    --blockquote-background: rgba(10, 15, 205, 0.18);
 
     --code-block-tab-text: rgb(218, 218, 219);
     --code-block-tab-border: rgb(108, 108, 108);
@@ -34,17 +34,17 @@
 .dark {
     --theme: rgb(0, 0, 0);
     --entry: rgb(46, 46, 51);
-    --primary: rgb(218, 218, 219);
+    --primary: rgb(178, 178, 178);
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(65, 66, 68);
-    --content: rgb(218, 218, 219);
-    --code-block-bg: rgb(14, 14, 14);
-    --code-bg: rgb(40, 40, 40);
-    --code-font-color: rgb(191, 169, 240);
+    --content: rgb(178, 178, 178);
+    --code-block-bg: rgb(0, 0, 0);
+    --code-bg: rgb(43, 0, 0);
+    --code-font-color: rgb(255, 100, 100);
     --border: rgb(51, 51, 51);
 
     --tint: rgb(96, 165, 250);
-    --tint-2: rgb(45, 212, 191);
+    --tint-2: rgb(255, 108, 108);
 
     --blockquote-border: rgb(96, 165, 250);
     --blockquote-background: rgba(96, 165, 250, 0.2);
