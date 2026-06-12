@@ -189,14 +189,16 @@ a:hover {
     color: var(--tertiary);
 }
 
-/* separator between posts */
-.post-entry:not(:last-child) {
+/* separator between posts (lists and the related posts section) */
+.post-entry:not(:last-child),
+.related-posts li:not(:last-child) {
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border);
 }
 
 /* on light mode, add extra line for the Win 95 look */
-body:not(.dark) .post-entry:not(:last-child) {
+body:not(.dark) .post-entry:not(:last-child),
+body:not(.dark) .related-posts li:not(:last-child) {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
