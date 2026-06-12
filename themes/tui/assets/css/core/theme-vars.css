@@ -9,45 +9,50 @@
     --header-height: 60px;
     --footer-height: 60px;
     --theme: rgb(208 208 208);
-    --entry: rgb(166, 170, 158);
+    --entry: rgb(168, 168, 168);
     --primary: rgb(0, 0, 0);
-    --secondary: rgb(60, 64, 56);
-    --tertiary: rgb(110, 114, 104);
+    --secondary: rgb(60, 60, 60);
+    --tertiary: rgb(110, 110, 110);
     --content: rgb(0, 0, 0);
-    --code-block-bg: rgb(0, 0, 0);
-    --code-block-hover: rgb(33, 35, 36);
-    --code-block-selection: rgb(90, 213, 131);
-    --code-bg: rgb(202, 189, 189);
-    --code-font-color: rgb(150, 15, 15);
-    --border: rgb(124, 128, 118);
+    --code-block-bg: rgb(36, 36, 36);
+    --code-block-fg: rgb(201, 201, 201);
+    --code-block-hover: rgb(56, 56, 56);
+    --code-block-selection: rgb(214, 214, 214);
+    --code-block-muted: rgb(150, 150, 150);
+    --code-bg: rgb(192, 192, 192);
+    --code-font-color: rgb(0, 0, 0);
+    --border: rgb(124, 124, 124);
 
-    --tint: rgb(10, 15, 205);
-    --tint-2: rgb(150, 15, 15);
+    --tint: rgb(0, 0, 0);
+    --tint-2: rgb(70, 70, 70);
 
-    --blockquote-border: rgb(10, 15, 205);
-    --blockquote-background: rgba(10, 15, 205, 0.18);
+    --blockquote-border: rgb(90, 90, 90);
+    --blockquote-background: rgba(0, 0, 0, 0.1);
 
-    --code-block-tab-text: rgb(218, 218, 219);
-    --code-block-tab-border: rgb(108, 108, 108);
+    --code-block-tab-text: rgb(201, 201, 201);
+    --code-block-tab-border: rgb(90, 90, 90);
 }
 
 .dark {
     --theme: rgb(0, 0, 0);
-    --entry: rgb(46, 46, 51);
+    --entry: rgb(46, 46, 46);
     --primary: rgb(178, 178, 178);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(65, 66, 68);
+    --secondary: rgb(156, 156, 156);
+    --tertiary: rgb(66, 66, 66);
     --content: rgb(178, 178, 178);
-    --code-block-bg: rgb(0, 0, 0);
-    --code-bg: rgb(43, 0, 0);
-    --code-font-color: rgb(255, 100, 100);
+    --code-block-bg: rgb(17, 17, 17);
+    --code-block-fg: rgb(213, 213, 213);
+    --code-block-hover: rgb(34, 34, 34);
+    --code-block-muted: rgb(150, 150, 150);
+    --code-bg: rgb(38, 38, 38);
+    --code-font-color: rgb(220, 220, 220);
     --border: rgb(51, 51, 51);
 
-    --tint: rgb(96, 165, 250);
-    --tint-2: rgb(255, 108, 108);
+    --tint: rgb(220, 220, 220);
+    --tint-2: rgb(170, 170, 170);
 
-    --blockquote-border: rgb(96, 165, 250);
-    --blockquote-background: rgba(96, 165, 250, 0.2);
+    --blockquote-border: rgb(140, 140, 140);
+    --blockquote-background: rgba(255, 255, 255, 0.08);
 
     --code-block-tab-border: rgb(51, 51, 51);
 }

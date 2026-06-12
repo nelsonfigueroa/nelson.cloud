@@ -23,7 +23,9 @@
     width: 100%;
 }
 
-/* mute the output color in `console` code blocks so the command stands out */
+/* mute the output color in `console` code blocks so the command stands out
+   (uses its own variable: --secondary is dark in light mode, where the code
+   block surface is also dark) */
 .chroma .go {
-    color: var(--secondary);
+    color: var(--code-block-muted);
 }

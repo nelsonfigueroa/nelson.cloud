@@ -221,7 +221,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    color: rgb(213, 213, 214);
+    color: var(--code-block-fg);
     background: var(--code-block-bg) !important;
     overflow-x: auto;
     word-break: break-all;

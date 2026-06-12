@@ -65,7 +65,7 @@ pre ::selection {
 /* styling for links throughout */
 a {
     color: var(--tint);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
