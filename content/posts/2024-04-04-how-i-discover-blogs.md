@@ -119,3 +119,9 @@ Blogs, portfolios, and personal sites.
 Another blog aggregator.
 
 **https://text.blogosphere.app/**
+
+## bubbles.town
+
+A community-ranked feed of blog posts from indie blogs
+
+https://bubbles.town/

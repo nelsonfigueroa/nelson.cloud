@@ -206,6 +206,8 @@ categories:
         title: "rawweb.org"
       - url: "https://text.blogosphere.app/"
         title: "Blogosphere"
+      - url: "https://bubbles.town/"
+        title: "bubbles.town"
 
   - name: "Blogroll"
     description: "Basically blogs I subscribe to via RSS or regularly read"
