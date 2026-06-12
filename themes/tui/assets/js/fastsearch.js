@@ -99,10 +99,7 @@ sInput.onkeyup = function (e) {
             for (let item in results) {
                 const title = escapeHTML(results[item].item.title);
                 const permalink = results[item].item.permalink;
-                resultSet += `<li class="post-entry">
-                                <header class="post-link">${title}</header>
-                                <a href="${permalink}" aria-label="${title}"></a>
-                              </li>`;
+                resultSet += `<li class="post-entry"><a class="post-link" href="${permalink}">${title}</a></li>`;
             }
 
             resList.innerHTML = resultSet;

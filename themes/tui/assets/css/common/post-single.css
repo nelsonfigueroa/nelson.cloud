@@ -387,9 +387,6 @@
     width: 50%;
 }
 
-.paginav span:hover:not(.title) {
-    box-shadow: 0 1px 0;
-}
 
 .paginav .next {
     margin-inline-start: auto;

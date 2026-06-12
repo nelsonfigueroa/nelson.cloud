@@ -69,18 +69,47 @@ a {
 }
 
 a:hover {
-    filter: brightness(75%);
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+    background-clip: content-box; /* necessary for proper inverse on hover */
+    text-decoration: none;
+}
+
+/* hover inverse for nav bar */
+.nav a:hover,
+.paginav a:hover {
+    color: var(--tint);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nav a span:hover,
+.paginav a span:hover {
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+}
+
+/* remove underlineonce inversion is showing */
+.nav a:has(span:hover),
+.paginav a:has(span:hover) {
+    text-decoration: none;
+}
+
+.post-tags a {
+    display: inline; /* needed for inversion on hover for post categories */
 }
 
 /* Random post button */
 .random-post-button {
     color: var(--tint);
-    text-decoration: none;
+    text-decoration: underline;
     margin-bottom: 2rem;
 }
 
 .random-post-button:hover {
-    filter: brightness(75%);
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+    text-decoration: none;
 }
 
 .random-post-button::before {
@@ -346,7 +375,6 @@ body:not(.dark) .post-entry:not(:last-child) {
     color: var(--primary);
     background: rgb(from var(--tint) r g b / 0.15);
     border-left-color: var(--tint);
-    filter: none;
 }
 
 .dynamic-toc-link.active {
@@ -602,14 +630,19 @@ body:not(.dark) .post-entry:not(:last-child) {
 }*/
 
 .categories-chart li {
-    display: flex;
+    display: grid; /* necessary for inverse on hover over text */
+    grid-template-columns: minmax(20ch, max-content) auto; /* necessary for inverse on hover over text */
     gap: 1ch;
     break-inside: avoid;
 }
 
 .categories-chart a {
-    min-width: 20ch;
+    justify-self: start; /* necessary for inverse on hover */
     color: var(--tint-2);
+}
+
+.categories-chart a:hover {
+    color: var(--link-hover-fg);
 }
 
 .categories-chart a::before {
@@ -667,6 +700,11 @@ body:not(.dark) .post-entry:not(:last-child) {
 
 .link-count {
     color: var(--secondary);
+}
+
+/* inverse link counts on hover, for /links/ page */
+.toc a:hover .link-count {
+    color: var(--link-hover-secondary);
 }
 
 .link-count::before {
