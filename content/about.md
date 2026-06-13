@@ -101,12 +101,14 @@ I mainly listen to metal. My [Bandcamp collection](https://bandcamp.com/nelsonfi
 - [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/)
 - [RSS Feed](/index.xml)
 - [Mastodon](https://infosec.exchange/@nelson)
+- [Buy Me a Coffee](https://buymeacoffee.com/nelsonfigueroa)
+- [GitHub Sponsors](https://github.com/sponsors/nelsonfigueroa)
 - <a id="of" href="#">OnlyFans</a>
 
 <script>
 document.getElementById('of').addEventListener('click', function(e) {
   e.preventDefault();
-  this.textContent = 'why did you click that 🤨';
+  this.textContent = '...why did you click that';
 });
 </script>
 
