@@ -68,32 +68,54 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
+a:hover,
+a:focus-visible {
     color: var(--link-hover-fg);
     background-color: var(--link-hover-bg);
     background-clip: content-box; /* necessary for proper inverse on hover */
     text-decoration: none;
+    outline: none;
 }
 
 /* hover inverse for nav bar */
-.nav a:hover {
+.nav a:hover,
+.nav a:focus-visible {
     color: var(--tint);
     background-color: transparent;
     text-decoration: underline;
 }
 
-.nav a span:hover {
+.nav a span:hover,
+.nav a:focus-visible span {
     color: var(--link-hover-fg);
     background-color: var(--link-hover-bg);
 }
 
 /* remove underlineonce inversion is showing */
-.nav a:has(span:hover) {
+.nav a:has(span:hover),
+.nav a:focus-visible {
     text-decoration: none;
 }
 
+/* to make theme toggle look nice when focused on with Tab key */
+#theme-toggle {
+    display: inline-flex;
+    align-items: center;
+}
+
+#theme-toggle:focus-visible {
+    background-color: var(--link-hover-bg);
+    outline: none;
+}
+
+#theme-toggle:focus-visible #moon,
+#theme-toggle:focus-visible #sun {
+    color: var(--link-hover-fg);
+}
+
 /* pagination buttons */
-.pagination a:hover {
+.pagination a:hover,
+.pagination a:focus-visible {
     color: var(--link-hover-fg);
     background-color: var(--link-hover-bg);
     background-clip: border-box;
@@ -101,14 +123,16 @@ a:hover {
 }
 
 /* prev/next post links under each post */
-.paginav a:hover {
+.paginav a:hover,
+.paginav a:focus-visible {
     color: var(--link-hover-fg);
     background-color: var(--link-hover-bg);
     background-clip: border-box;
     text-decoration: none;
 }
 
-.paginav a:hover .title {
+.paginav a:hover .title,
+.paginav a:focus-visible .title {
     color: var(--link-hover-fg);
 }
 
@@ -136,10 +160,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* drop the underline once the hover inversion shows */
+/* drop the underline once the hover/focus inversion shows */
 .post-link:hover > span,
+.post-link:focus-visible > span,
 .related-posts a:hover > span,
-.categories-chart a:hover > span {
+.related-posts a:focus-visible > span,
+.categories-chart a:hover > span,
+.categories-chart a:focus-visible > span {
     text-decoration: none;
 }
 
@@ -150,10 +177,12 @@ a:hover {
     margin-bottom: 2rem;
 }
 
-.random-post-button:hover {
+.random-post-button:hover,
+.random-post-button:focus-visible {
     color: var(--link-hover-fg);
     background-color: var(--link-hover-bg);
     text-decoration: none;
+    outline: none;
 }
 
 .random-post-button::before {
@@ -416,10 +445,12 @@ body:not(.dark) .related-posts li:not(:last-child) {
     border-left: 2px solid transparent;
 }
 
-.dynamic-toc-link:hover {
+.dynamic-toc-link:hover,
+.dynamic-toc-link:focus-visible {
     color: var(--link-hover-fg);
     background-color: var(--link-hover-bg);
     background-clip: border-box; /* fill the link's padding, like the other inverted elements */
+    outline: none;
 }
 
 .dynamic-toc-link.active {
@@ -427,7 +458,8 @@ body:not(.dark) .related-posts li:not(:last-child) {
     border-left-color: var(--tint);
 }
 
-.dynamic-toc-link.active:hover {
+.dynamic-toc-link.active:hover,
+.dynamic-toc-link.active:focus-visible {
     color: var(--link-hover-fg);
 }
 
@@ -690,7 +722,8 @@ body:not(.dark) .related-posts li:not(:last-child) {
     color: var(--tint-2);
 }
 
-.categories-chart a:hover {
+.categories-chart a:hover,
+.categories-chart a:focus-visible {
     color: var(--link-hover-fg);
 }
 
@@ -751,8 +784,9 @@ body:not(.dark) .related-posts li:not(:last-child) {
     color: var(--secondary);
 }
 
-/* inverse link counts on hover, for /links/ page */
-.toc a:hover .link-count {
+/* inverse link counts on hover/focus, for /links/ page */
+.toc a:hover .link-count,
+.toc a:focus-visible .link-count {
     color: var(--link-hover-secondary);
 }
 
@@ -787,8 +821,10 @@ body:not(.dark) .related-posts li:not(:last-child) {
 }
 
 /* "go to top" color inversion on hover */
-.top-link:hover {
+.top-link:hover,
+.top-link:focus-visible {
     color: var(--link-hover-fg);
     background-color: var(--link-hover-bg);
     background-clip: border-box;
+    outline: none;
 }

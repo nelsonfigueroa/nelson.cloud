@@ -155,6 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // If there's no normal TOC, keep dynamic TOC hidden
             dynamicToc.style.opacity = '0';
             dynamicToc.style.pointerEvents = 'none';
+            dynamicToc.inert = true; // keep links out of tab key while hidden
             return;
         }
 
@@ -163,6 +164,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         dynamicToc.style.opacity = shouldShowDynamic ? '1' : '0';
         dynamicToc.style.pointerEvents = shouldShowDynamic ? 'auto' : 'none';
+        // removes the hidden TOC from the tab order so Tab key doesn't land on invisible (opacity:0) links; restored when it's actually shown.
+        dynamicToc.inert = !shouldShowDynamic;
     }
 
     // Throttled scroll handler
