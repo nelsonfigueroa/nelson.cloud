@@ -76,23 +76,40 @@ a:hover {
 }
 
 /* hover inverse for nav bar */
-.nav a:hover,
-.paginav a:hover {
+.nav a:hover {
     color: var(--tint);
     background-color: transparent;
     text-decoration: underline;
 }
 
-.nav a span:hover,
-.paginav a span:hover {
+.nav a span:hover {
     color: var(--link-hover-fg);
     background-color: var(--link-hover-bg);
 }
 
 /* remove underlineonce inversion is showing */
-.nav a:has(span:hover),
-.paginav a:has(span:hover) {
+.nav a:has(span:hover) {
     text-decoration: none;
+}
+
+/* pagination buttons */
+.pagination a:hover {
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+    background-clip: border-box;
+    text-decoration: none;
+}
+
+/* prev/next post links under each post */
+.paginav a:hover {
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+    background-clip: border-box;
+    text-decoration: none;
+}
+
+.paginav a:hover .title {
+    color: var(--link-hover-fg);
 }
 
 .post-tags a {
