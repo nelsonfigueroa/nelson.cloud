@@ -6,7 +6,7 @@ lastmod = "2026-05-06T15:48:18-07:00"
 categories = ["Docker", "Synology"]
 ShowToc = true
 TocOpen = true
-featured = true
+featured = false
 +++
 
 At the time of writing Synology DiskStation Manager (DSM) [v7.3.2-86009 Update 3](https://www.synology.com/en-us/releaseNote/DSM?model=DS920%2B#ver_86009-3) is running on Linux v4.4.302+ which doesn't support WireGuard.  

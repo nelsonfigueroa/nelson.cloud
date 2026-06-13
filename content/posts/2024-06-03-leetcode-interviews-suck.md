@@ -6,6 +6,7 @@ lastmod = "2026-01-25T13:54:55-08:00"
 categories = ["Opinion", "Work"]
 ShowToc = false
 TocOpen = false
+featured = true
 +++
 
 I quit my previous job at [Robinhood](https://robinhood.com/) in late November of 2023 mainly for health reasons. I've been in various interviews since then. Things have fallen off for one reason or another but I just gotta say...I am getting so tired of [Leetcode](https://leetcode.com/problemset/)-style interviews, especially since I know they don't reflect the actual responsibilities of software engineering.
