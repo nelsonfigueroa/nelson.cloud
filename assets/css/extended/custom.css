@@ -116,6 +116,33 @@ a:hover {
     display: inline; /* needed for inversion on hover for post categories */
 }
 
+/* CSS that underlines only the text within bracketed links */
+/* need to target <span> surrounding text so text gets underlined but not brackets */
+.random-post-button::before, .random-post-button::after,
+.link-count::before, .link-count::after,
+.post-tags a::before, .post-tags a::after {
+    display: inline-block;
+}
+
+.post-link,
+.related-posts a,
+.categories-chart a {
+    text-decoration: none;
+}
+
+.post-link > span,
+.related-posts a > span,
+.categories-chart a > span {
+    text-decoration: underline;
+}
+
+/* drop the underline once the hover inversion shows */
+.post-link:hover > span,
+.related-posts a:hover > span,
+.categories-chart a:hover > span {
+    text-decoration: none;
+}
+
 /* Random post button */
 .random-post-button {
     color: var(--tint);
