@@ -782,3 +782,10 @@ body:not(.dark) .related-posts li:not(:last-child) {
 .post-content .highlight > pre.chroma > code {
     padding-top: 1.6rem;
 }
+
+/* "go to top" color inversion on hover */
+.top-link:hover {
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+    background-clip: border-box;
+}
