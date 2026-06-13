@@ -10,6 +10,8 @@ TocOpen = true
 
 I'm Nelson. I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog to share things I learn and to occasionally rant.
 
+I'm available for work! You can get in touch with me on [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/) or by sending an email to `nelson@<this domain>`.
+
 ## Experience
 
 Cloud Support Engineer II @ [Pulumi](https://www.pulumi.com/) (Aug 2024 - Present)
@@ -111,7 +113,3 @@ document.getElementById('of').addEventListener('click', function(e) {
   this.textContent = '...why did you click that';
 });
 </script>
-
-## Get in Touch
-
-You can get in touch with me on [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/) or by sending an email to `nelson@<this domain>`.

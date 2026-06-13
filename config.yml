@@ -51,9 +51,6 @@ languages:
         - name: About
           url: about/
           weight: 6
-        - name: Support
-          url: support/
-          weight: 7
 
 outputs:
   home:
