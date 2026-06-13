@@ -413,19 +413,22 @@ body:not(.dark) .related-posts li:not(:last-child) {
     text-decoration: none;
     line-height: 1.2;
     padding: 0.25rem 0.5rem;
-    transition: all 0.2s ease;
     border-left: 2px solid transparent;
 }
 
 .dynamic-toc-link:hover {
-    color: var(--primary);
-    background: rgb(from var(--tint) r g b / 0.15);
-    border-left-color: var(--tint);
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+    background-clip: border-box; /* fill the link's padding, like the other inverted elements */
 }
 
 .dynamic-toc-link.active {
     color: var(--tint);
     border-left-color: var(--tint);
+}
+
+.dynamic-toc-link.active:hover {
+    color: var(--link-hover-fg);
 }
 
 /* light mode ToC drop shadow */
