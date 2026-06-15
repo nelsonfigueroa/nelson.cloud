@@ -1,14 +1,15 @@
 {{- $img := "" -}}
 {{- $base := resources.Get "images/opengraph_base.png" -}}
 {{- $font := resources.Get "fonts/CommitMono.ttf" -}}
-{{- if and $base $font (not .Params.cover.image) -}}
-  {{- $img = $base.Filter (images.Text .Title (dict
+{{- $fontBold := resources.Get "fonts/CommitMono-700.ttf" -}}
+{{- if and $base $font $fontBold (not .Params.cover.image) -}}
+  {{- $img = $base.Filter (images.Text (upper .Title) (dict
     "color" "#ffffff"
     "size" 48
     "linespacing" 8
     "x" 60
     "y" 80
-    "font" $font
+    "font" $fontBold
   )) -}}
 
   {{/* Position description below however many lines the title wrapped to.
@@ -36,7 +37,7 @@
     {{- end -}}
     {{- if ne $current "" -}}{{- $lines = $lines | append $current -}}{{- end -}}
     {{- $img = $img.Filter (images.Text (delimit $lines "\n") (dict
-      "color" "#9b9c9d"
+      "color" "#9c9c9c"
       "size" 24
       "linespacing" 6
       "x" 60
@@ -50,8 +51,8 @@
   {{- $charW := 17 -}}
   {{- $baseX := 60 -}}
   {{- $y := 540 -}}
-  {{- $bracketColor := "#414244" -}}
-  {{- $tintColor := "#60a5fa" -}}
+  {{- $bracketColor := "#424242" -}}
+  {{- $tintColor := "#dcdcdc" -}}
   {{- $img = $img.Filter (images.Text "[" (dict
     "color" $bracketColor
     "size" $size
@@ -73,6 +74,7 @@
     "y" $y
     "font" $font
   )) -}}
+  {{- $img = $img.Filter (images.Padding 1 "#7c7c7c") -}}
   {{- $img = resources.Copy (printf "%sog.png" .RelPermalink) $img -}}
 {{- end -}}
 {{- return $img -}}
