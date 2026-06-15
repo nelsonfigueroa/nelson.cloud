@@ -16,6 +16,10 @@
   </a>
   {{- end }}
 </nav>
-{{- partial "random_post_button.html" . }}
-<a class="post-link" href="/"><span>Return Home</span></a>
+<div class="paginav paginav-row">
+  {{- partial "random_post_button.html" . }}
+</div>
+<nav class="paginav paginav-row">
+  <a href="/">Return Home</a>
+</nav>
 {{- end }}

@@ -195,6 +195,41 @@ a:focus-visible {
     color: var(--tertiary);
 }
 
+/* making random post + return home button full width rectangles */
+.paginav-row {
+    margin-bottom: 10px; /* gap between stacked boxes (home page has no .post-footer rhythm) */
+}
+
+.paginav-row .random-post-button,
+.paginav-row a {
+    width: 100%;
+    padding-inline: 14px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.paginav-row .random-post-button {
+    margin-bottom: 0;
+}
+
+/* no [ ] brackets */
+.paginav-row .random-post-button::before,
+.paginav-row .random-post-button::after {
+    content: none;
+}
+
+.paginav-row .random-post-button:hover,
+.paginav-row .random-post-button:focus-visible,
+.paginav-row a:hover,
+.paginav-row a:focus-visible {
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+    text-decoration: none;
+    outline: none;
+}
+
 /* make regular text prettier? */
 /* https://codersblock.com/blog/nicer-text-wrapping-with-css-text-wrap/ */
 .post-content p {

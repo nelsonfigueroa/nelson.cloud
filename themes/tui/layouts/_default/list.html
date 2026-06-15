@@ -84,8 +84,12 @@
 
 {{/* custom: random post button in home page */}}
 {{- if .IsHome }}
-{{- partial "random_post_button.html" . }}
-<a class="random-post-button" href="/posts/">« See all Posts »</a>
+<div class="paginav paginav-row">
+  {{- partial "random_post_button.html" . }}
+</div>
+<nav class="paginav paginav-row">
+  <a href="/posts/">See all Posts »</a>
+</nav>
 {{- end }}
 
 {{/* pagination */}}
