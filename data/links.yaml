@@ -208,6 +208,8 @@ categories:
         title: "Blogosphere"
       - url: "https://bubbles.town/"
         title: "bubbles.town"
+      - url: "https://diff.blog"
+        title: "diff.blog"
 
   - name: "Blogroll"
     description: "Basically blogs I subscribe to via RSS or regularly read"

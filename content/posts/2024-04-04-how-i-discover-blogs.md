@@ -125,3 +125,9 @@ Another blog aggregator.
 A community-ranked feed of blog posts from indie blogs
 
 https://bubbles.town/
+
+## diff.blog
+
+A feed of independent dev blogs
+
+https://diff.blog
