@@ -84,7 +84,7 @@ Here are some articles I've come across that share similar sentiments or are ver
 - [Our Company Is Doing So Well That You’re All Fired](https://www.mcsweeneys.net/articles/our-company-is-doing-so-well-that-youre-all-fired)
 - [What Companies Still Get Wrong About Layoffs](https://hbr.org/2022/12/what-companies-still-get-wrong-about-layoffs)
 - [I Accidentally Saved Half A Million Dollars](https://ludic.mataroa.blog/blog/i-accidentally-saved-half-a-million-dollars/)
-- [Once You're Laid Off, You'll Never Be the Same Again](https://mertbulan.com/2025/01/26/once-you-are-laid-off-you-will-never-be-the-same-again/)
+- [Once You're Laid Off, You'll Never Be the Same Again](https://web.archive.org/web/20260425091344/https://mertbulan.com/2025/01/26/once-you-are-laid-off-you-will-never-be-the-same-again/)
 - [G̶o̶o̶g̶l̶e̶r̶... ex-Googler.](https://nerdy.dev/ex-googler)
 - [Motivation in an Absurd System](https://www.lloydatkinson.net/posts/2025/motivation-in-an-absurd-system/)
 - [The Three Year Myth](https://green.spacedino.net/the-three-year-myth/)
