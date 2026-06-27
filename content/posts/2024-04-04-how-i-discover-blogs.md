@@ -131,3 +131,9 @@ https://bubbles.town/
 A feed of independent dev blogs
 
 https://diff.blog
+
+## bearblog.dev
+
+A straightforward and minimal blogging platform. I recommend checking out the discovery feed:
+
+https://bearblog.dev/discover/

@@ -212,6 +212,8 @@ categories:
         title: "bubbles.town"
       - url: "https://diff.blog"
         title: "diff.blog"
+      - url: "https://bearblog.dev/discover/"
+        title: bearblog.dev/discover
 
   - name: "Blogroll"
     description: "Basically blogs I subscribe to via RSS or regularly read"
