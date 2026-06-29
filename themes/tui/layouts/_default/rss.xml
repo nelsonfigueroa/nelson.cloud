@@ -48,13 +48,11 @@
     <title>{{ if eq .Title site.Title }}{{ site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
     <description>Recent content {{ if ne .Title site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ site.Title }}</description>
-    {{- with site.Params.images }}
     <image>
       <title>{{ site.Title }}</title>
-      <url>{{ index . 0 | absURL }}</url>
-      <link>{{ index . 0 | absURL }}</link>
+      <url>{{ "apple-touch-icon.png" | absURL }}</url>
+      <link>{{ .Permalink }}</link>
     </image>
-    {{- end }}
     <language>{{ site.Language.Locale }}</language>{{ with $authorEmail }}
     <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with site.Copyright }}
