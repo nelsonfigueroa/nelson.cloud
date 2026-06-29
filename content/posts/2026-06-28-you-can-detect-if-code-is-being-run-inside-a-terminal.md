@@ -1,5 +1,5 @@
 +++
-title = "You Can Detect if Code is Being Run Inside a Terminal"
+title = "You Can Detect if Code Is Being Run Inside a Terminal"
 summary = "Most programming languages have a way to detect if it's being run in a terminal."
 date = "2026-06-28"
 categories = ["Shell"]
