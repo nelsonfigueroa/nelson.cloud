@@ -14,7 +14,7 @@ These are some blogs I enjoy. This is essentially a [blogroll](https://indieweb.
 
 - https://jvns.ca/
 
-- https://www.writesoftwarewell.com/
+- https://writesoftwarewell.com/
 
 - https://xeiaso.net/
 
