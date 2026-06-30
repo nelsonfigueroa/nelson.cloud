@@ -50,4 +50,4 @@ And this is what the HTML and CSS looks like for the example above:
 
 ## References
 
-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/noscript

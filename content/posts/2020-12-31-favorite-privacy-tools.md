@@ -12,7 +12,7 @@ This is a collection of my most used privacy tools and services. I have not been
 
 ## Firefox
 
-**Official site:** [https://www.mozilla.org/](https://www.mozilla.org/en-US/firefox/new/)
+**Official site:** [https://www.mozilla.org/](https://www.firefox.com/en-US/)
 
 Firefox has always been a great alternative to Chrome for privacy purposes. Firefox is, in my opinion, the only real alternative to Chrome and Chromium-based browsers. Sure there's also Safari but the support for extensions is butchered. If I can't install [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) on a browser, I don't use it.
 
@@ -40,7 +40,7 @@ It has all the essential features that you'd expect from a modern messaging appl
 
 ## Mullvad VPN
 
-**Official site:** [https://mullvad.net/en/](https://mullvad.net/en/)
+**Official site:** [https://mullvad.net/](https://mullvad.net/en)
 
 Mullvad VPN does not log any activity (and has been audited to prove it), and is pretty affordable. I know many people out there opt to use free VPNs, but there's a 99% chance they're selling your information to marketing companies. It's much better to pay for a VPN.
 
@@ -74,7 +74,7 @@ Little Snitch is a macOS-only application firewall that runs on your Mac and mon
 
 This is a paid app (and there's a free trial), but I think it's worth it.
 
-If you want a free alternative, check out [LuLu](https://objective-see.com/products/lulu.html). It has fewer features, but it's worth a try if you want to see what your machine is connecting to. The same developer has other Mac-related applications that may be useful: [objective-see.com](https://objective-see.com/index.html).
+If you want a free alternative, check out [LuLu](https://objective-see.org/products/lulu.html). It has fewer features, but it's worth a try if you want to see what your machine is connecting to. The same developer has other Mac-related applications that may be useful: [objective-see.org](https://objective-see.org).
 
 ## Further Research
 

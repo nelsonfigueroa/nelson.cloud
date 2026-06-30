@@ -16,9 +16,9 @@ I'm available for work! You can get in touch with me on [LinkedIn](https://www.l
 
 Cloud Support Engineer II @ [Pulumi](https://www.pulumi.com/) (Aug 2024 - Present)
 
-Software Engineer @ [Robinhood](https://robinhood.com) (Jan - Nov 2023)
+Software Engineer @ [Robinhood](https://robinhood.com/us/en/) (Jan - Nov 2023)
 
-Software Engineer IV @ [Edmunds](https://edmunds.com) (2020 - 2022)
+Software Engineer IV @ [Edmunds](https://www.edmunds.com/) (2020 - 2022)
 
 Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
 

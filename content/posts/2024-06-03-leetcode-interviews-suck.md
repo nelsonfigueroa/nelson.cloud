@@ -9,7 +9,7 @@ TocOpen = false
 featured = true
 +++
 
-I quit my previous job at [Robinhood](https://robinhood.com/) in late November of 2023 mainly for health reasons. I've been in various interviews since then. Things have fallen off for one reason or another but I just gotta say...I am getting so tired of [Leetcode](https://leetcode.com/problemset/)-style interviews, especially since I know they don't reflect the actual responsibilities of software engineering.
+I quit my previous job at [Robinhood](https://robinhood.com/us/en/) in late November of 2023 mainly for health reasons. I've been in various interviews since then. Things have fallen off for one reason or another but I just gotta say...I am getting so tired of [Leetcode](https://leetcode.com/problemset/)-style interviews, especially since I know they don't reflect the actual responsibilities of software engineering.
 
 It seems like most (if not all) companies do these kinds of interviews simply because that's what all the big companies do, like Google, Facebook/Meta, Amazon, and so on.
 

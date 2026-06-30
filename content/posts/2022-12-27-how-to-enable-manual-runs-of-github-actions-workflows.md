@@ -56,7 +56,7 @@ Note that there are a lot more configuration options available when adding the `
 
 ## References
 
-- https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow
-- https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch
-- https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
+- https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow
+- https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
+- https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
 - https://cli.github.com/manual/gh_workflow_run
