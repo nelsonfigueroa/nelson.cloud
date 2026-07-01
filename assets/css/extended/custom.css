@@ -754,6 +754,8 @@ body:not(.dark) .related-posts li:not(:last-child) {
 
 .categories-chart a {
     justify-self: start; /* necessary for inverse on hover */
+    align-self: center;
+    line-height: 1.1;
     color: var(--tint-2);
 }
 
