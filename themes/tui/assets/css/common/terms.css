@@ -1,19 +1,58 @@
-.terms-tags li {
-    display: inline-block;
+/* categories page */
+.categories-chart {
+    list-style: none;
+    columns: 2;
 }
 
-.terms-tags a {
-    display: block;
-    padding: 8px 0;
+/* uncomment if categories get too long and 2 columns is a tight fit on mobile */
+/*@media (max-width: 600px) {
+    .categories-chart {
+        columns: 1;
+    }
+}*/
+
+.categories-chart li {
+    display: grid; /* necessary for inverse on hover over text */
+    grid-template-columns: minmax(20ch, max-content) auto; /* necessary for inverse on hover over text */
+    gap: 1ch;
+    break-inside: avoid;
+}
+
+.categories-chart a {
+    justify-self: start; /* necessary for inverse on hover */
+    align-self: center; /* stop the grid item stretching to row height, which inflated the hover box */
+    line-height: 1.1; /* match .post-link so the hover highlight is the same height as elsewhere */
     color: var(--tint-2);
+    text-decoration: none;
 }
 
-.terms-tags a::before {
+/* underline the text but not the [ ] brackets */
+.categories-chart a > span {
+    text-decoration: underline;
+}
+
+.categories-chart a:hover,
+.categories-chart a:focus-visible {
+    color: var(--link-hover-fg);
+}
+
+/* drop the underline once the hover/focus inversion shows */
+.categories-chart a:hover > span,
+.categories-chart a:focus-visible > span {
+    text-decoration: none;
+}
+
+.categories-chart a::before {
     content: "[";
     color: var(--tertiary);
 }
 
-.terms-tags a::after {
+.categories-chart a::after {
     content: "]";
     color: var(--tertiary);
+}
+
+.cat-count {
+    color: var(--secondary);
+    user-select: none;
 }
