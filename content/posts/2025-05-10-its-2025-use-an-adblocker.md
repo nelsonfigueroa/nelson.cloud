@@ -17,16 +17,16 @@ If you're one of those people who don't have an ad blocker, here are some links 
 The best and arguably only ad blocker you'll need for your browser is [uBlock Origin](https://github.com/gorhill/uBlock). It has worked consistently for me on Firefox and Chrome for many, many years.
 
 Here are some convenient links to get uBlock Origin:
-- [Get the uBlock Origin Firefox extension](https://addons.mozilla.org/firefox/addon/ublock-origin/)
+- [Get the uBlock Origin Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 - [Get the uBlock Origin Chrome extension](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 - [Get the uBlock Origin Microsoft Edge extension](https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak) (if you use Edge for some reason)
 
 ## For Safari Users
 
-[Safari](https://www.apple.com/safari/) has limited support for extensions. While there is some tracking protection out of the box it, doesn't compare to running a full blown version of uBlock Origin. If you REALLY want to keep using Safari then check out [AdGuard for Mac](https://adguard.com/adguard-mac/overview.html). It blocks ads system-wide on macOS and not just in Safari.
+[Safari](https://www.apple.com/safari/) has limited support for extensions. While there is some tracking protection out of the box it, doesn't compare to running a full blown version of uBlock Origin. If you REALLY want to keep using Safari then check out [AdGuard for Mac](https://adguard.com/en/adguard-mac/overview.html). It blocks ads system-wide on macOS and not just in Safari.
 
-If you like the Safari aesthetic but don't want to install AdGuard, check out [Orion Browser](https://kagi.com/orion/). It comes with ad blocking out of the box. It's based on [WebKit](https://webkit.org/) just like Safari. There's even an iOS app available.
-- [Get Orion for macOS](https://kagi.com/orion/#download_sec)
+If you like the Safari aesthetic but don't want to install AdGuard, check out [Orion Browser](https://orionbrowser.com/). It comes with ad blocking out of the box. It's based on [WebKit](https://webkit.org/) just like Safari. There's even an iOS app available.
+- [Get Orion for macOS](https://orionbrowser.com/)
 - [Get Orion for iOS](https://apps.apple.com/us/app/orion-browser-by-kagi/id1484498200)
 
 ## Brave Browser

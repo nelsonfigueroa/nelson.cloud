@@ -293,7 +293,7 @@ print(a)
 # array('i', [1, 2, 3, 4, 5, 6])
 ```
 
-You can learn more about Arrays in this [GeeksForGeeks article](https://www.geeksforgeeks.org/difference-between-list-and-array-in-python/).
+You can learn more about Arrays in this [GeeksForGeeks article](https://www.geeksforgeeks.org/python/difference-between-list-and-array-in-python/).
 
 ### Reversing a List
 
@@ -352,8 +352,8 @@ my_list.count(1)
 
 ## References
 - https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/
-- https://www.geeksforgeeks.org/difference-between-list-and-array-in-python/
-- https://www.geeksforgeeks.org/python-get-first-and-last-elements-of-a-list/
+- https://www.geeksforgeeks.org/python/difference-between-list-and-array-in-python/
+- https://www.geeksforgeeks.org/python/python-get-first-and-last-elements-of-a-list/
 - https://www.w3schools.com/python/python_lists_add.asp
 - https://www.w3schools.com/python/ref_list_sort.asp
 - https://stackoverflow.com/questions/43025748/deleting-first-element-of-a-list-in-python

@@ -22,7 +22,7 @@ This section covers the redirecting of the HTTP version of the old domain. In my
 
 To begin redirecting one domain to another, we need to create an S3 bucket.
 
-Go to [Amazon S3](https://s3.console.aws.amazon.com/s3/) and click the "Create bucket" button.
+Go to [Amazon S3](https://console.aws.amazon.com/s3/) and click the "Create bucket" button.
 I prefer to name the bucket with the same name as the domain being redirected, but you can choose any name you want.
 
 Click into the bucket and then click on the "Properties" tab. Scroll to the bottom to the "Static website hosting" section and click the "Edit" button.

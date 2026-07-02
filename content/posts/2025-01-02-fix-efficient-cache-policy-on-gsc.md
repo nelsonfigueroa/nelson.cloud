@@ -28,5 +28,5 @@ You may be able to use a different value smaller than `31536000` for your header
 
 ## References
 - https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl/
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control
 - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html

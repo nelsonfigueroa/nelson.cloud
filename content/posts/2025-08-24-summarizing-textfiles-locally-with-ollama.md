@@ -160,6 +160,6 @@ print(response.message['content'])
 That should be enough to get started. Thinking about all of this as just string manipulation made it "click" for me.
 
 ## References
-- https://ollama.com/download/
+- https://ollama.com/download
 - https://ollama.com/library/gpt-oss
 - https://github.com/ollama/ollama-python/tree/main/examples

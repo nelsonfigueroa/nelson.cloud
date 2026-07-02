@@ -20,7 +20,7 @@ Proton also released a [Proton Mail desktop app](https://proton.me/support/mail-
 
 Instead of focusing on optimizations and bug fixes, Proton rolled out [Scribe](https://proton.me/blog/proton-scribe-writing-assistant). It's basically an AI assistant for emails. This is the wrong area to focus on, in my opinion. Also, it feels like Proton is just following the current trend of tacking on [LLMs](https://en.wikipedia.org/wiki/Large_language_model) into every product.
 
-Aside from mail, [Proton Calendar](https://proton.me/calendar), [Proton Drive](https://proton.me/drive), and [Proton VPN](https://protonvpn.com/) were also services I was interested in. With the exception of Proton Drive, I found these services to also be lacking. Proton Calendar was barebones for a calendar and I don't trust it to use professionally. I still use Google Calendar for scheduling important meetings. Proton VPN gets the job done, but it is not as customizable as [Mullvad VPN](https://mullvad.net/). In my case, I like being able to choose the protocol and port to use when connecting to a VPN. Mullvad VPN lets me do that. Proton VPN does not.
+Aside from mail, [Proton Calendar](https://proton.me/calendar), [Proton Drive](https://proton.me/drive), and [Proton VPN](https://protonvpn.com/) were also services I was interested in. With the exception of Proton Drive, I found these services to also be lacking. Proton Calendar was barebones for a calendar and I don't trust it to use professionally. I still use Google Calendar for scheduling important meetings. Proton VPN gets the job done, but it is not as customizable as [Mullvad VPN](https://mullvad.net/en). In my case, I like being able to choose the protocol and port to use when connecting to a VPN. Mullvad VPN lets me do that. Proton VPN does not.
 
 Finally, Proton released [Proton Wallet](https://proton.me/blog/proton-wallet-launch). This came out of the blue. I do not understand why they would work on this service when their other offerings need more work. There was a lot of [community backlash on Reddit](https://www.reddit.com/r/ProtonMail/comments/1eayqs4/proton_wallet_early_access/) when they announced it. Here's [some more feedback](https://www.reddit.com/r/ProtonMail/comments/1ebfjp4/proton_wallet_is_unexpected/) that overall represents my sentiments.
 
@@ -30,7 +30,7 @@ This post is meant as honest feedback. Proton has a [respectable mission](https:
 - [Proton Spam and the AI Consent Problem](https://dbushell.com/2026/01/22/proton-spam/)
 
 {{< admonition type="info" title="2025-01-15 Update" >}}
-I was recently made aware about [Proton CEO Andy Yen](https://proton.me/blog/author/ayen)'s comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
+I was recently made aware about [Proton CEO Andy Yen](https://proton.me/blog/author/andy-yen)'s comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
 
 - https://theintercept.com/2025/01/28/proton-mail-andy-yen-trump-republicans/
 - https://archive.ph/txuJ2

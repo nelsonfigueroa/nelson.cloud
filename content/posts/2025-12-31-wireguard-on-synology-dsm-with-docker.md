@@ -12,7 +12,7 @@ featured = false
 At the time of writing Synology DiskStation Manager (DSM) [v7.3.2-86009 Update 3](https://www.synology.com/en-us/releaseNote/DSM?model=DS920%2B#ver_86009-3) is running on Linux v4.4.302+ which doesn't support WireGuard.  
 It [doesn't look like Synology is interested in adding WireGuard support](https://community.synology.com/enu/forum/1/post/158013) the way OpenVPN is supported. So if you want certain services on your Synology NAS to connect through WireGuard, you'll need a workaround.
 
-One workaround is to establish a WireGuard connection using [Gluetun](https://github.com/qdm12/gluetun) in Docker. Then have containerized services do their networking through this Gluetun container. The caveat is that whatever services you want to go through a WireGuard tunnel will need to be containerized.
+One workaround is to establish a WireGuard connection using [Gluetun](https://github.com/passteque/gluetun) in Docker. Then have containerized services do their networking through this Gluetun container. The caveat is that whatever services you want to go through a WireGuard tunnel will need to be containerized.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ This guide is intended for those comfortable with the [command line](https://en.
 
 You'll need [Container Manager](https://www.synology.com/en-us/dsm/feature/docker) installed, which is basically just Synology's wrapper around Docker. Install it via the Web UI, then you'll be able to use `docker` commands via SSH. Installing Container Manager is straightforward. Log into the Synology DSM Web UI -> open Package Center -> search for "Container Manager" -> click "Install".
 
-You'll also need a WireGuard configuration file. For this guide I'll be using a configuration file from [Mullvad VPN](https://mullvad.net/).
+You'll also need a WireGuard configuration file. For this guide I'll be using a configuration file from [Mullvad VPN](https://mullvad.net/en).
 
 ## Why Gluetun?
 
@@ -289,7 +289,7 @@ $ docker exec qb wget -qO- https://icanhazip.com/
 Both IP addresses are the same, which means qBittorrent is running through Gluetun and through a WireGuard connection. Everything works!
 
 ## References
-- https://github.com/qdm12/gluetun
+- https://github.com/passteque/gluetun
 - https://github.com/qdm12/gluetun-wiki/blob/main/setup/providers/mullvad.md
 - https://docs.linuxserver.io/images/docker-qbittorrent/
 - a lot of trial and error

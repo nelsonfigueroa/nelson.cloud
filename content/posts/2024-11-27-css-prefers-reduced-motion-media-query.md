@@ -6,7 +6,7 @@ lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["CSS"]
 +++
 
-I recently learned about the `prefers-reduced-motion` [CSS media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion). In a nutshell, if a user enables reduced motion on their device/browser, the CSS styles within this media query will be applied.
+I recently learned about the `prefers-reduced-motion` [CSS media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion). In a nutshell, if a user enables reduced motion on their device/browser, the CSS styles within this media query will be applied.
 
 For example, if buttons have animations when they're clicked like this:
 
@@ -42,9 +42,9 @@ body {
 ```
 
 The Mozilla docs cover how to enable reduced motion on several browsers:
-- https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
 
 ## References
-- https://developer.mozilla.org/en-US/docs/Web/CSS/@media
-- https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using

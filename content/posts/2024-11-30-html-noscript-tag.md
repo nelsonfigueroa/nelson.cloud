@@ -6,7 +6,7 @@ lastmod = "2025-12-08T19:34:09-08:00"
 categories = ["HTML", "CSS", "JavaScript"]
 +++
 
-I recently learned about the [`<noscript>` HTML tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript). HTML and CSS contained within `<noscript>` tags will be rendered if JavaScript is disabled in the browser.
+I recently learned about the [`<noscript>` HTML tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/noscript). HTML and CSS contained within `<noscript>` tags will be rendered if JavaScript is disabled in the browser.
 
 For example, try reloading this page with JavaScript disabled and you'll see a new message below:
 

@@ -56,7 +56,7 @@ So what can we do about this?
 
 You can choose to hide your email when performing Git operations on the GitHub site as well as the command line. There are two checkboxes you'll need to tick. Instructions are below:
 
-- [Blocking command line pushes that expose your personal email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address)
+- [Blocking command line pushes that expose your personal email address](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address)
 
 Next, you'll need to change your email Git uses on your machine to the `@users.noreply.github.com` email that GitHub provided in the previous step. Run the following:
 

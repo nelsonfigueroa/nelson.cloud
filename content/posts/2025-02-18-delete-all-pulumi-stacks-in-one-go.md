@@ -57,5 +57,5 @@ while read -r stack; do pulumi stack rm -y "$stack"; done;
 
 ## References
 - https://stackoverflow.com/questions/7318497/omitting-the-first-line-from-any-linux-command-output
-- https://www.pulumi.com/docs/iac/cli/commands/pulumi_stack_ls/
-- https://www.pulumi.com/docs/iac/cli/commands/pulumi_stack_rm/
+- https://www.pulumi.com/docs/iac/cli/commands/pulumi_stack_list/
+- https://www.pulumi.com/docs/iac/cli/commands/pulumi_stack_remove/

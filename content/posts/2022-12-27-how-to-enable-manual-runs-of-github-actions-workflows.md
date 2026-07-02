@@ -52,7 +52,7 @@ https://github.com/nelsonfigueroa/nelson.cloud/actions/runs/22656361802
 To see the created workflow run, try: gh run view 22656361802
 ```
 
-Note that there are a lot more configuration options available when adding the `workflow_dispatch` key. However, I just wanted to enable manual runs and nothing more. Refer to [the documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch) for more information.
+Note that there are a lot more configuration options available when adding the `workflow_dispatch` key. However, I just wanted to enable manual runs and nothing more. Refer to [the documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch) for more information.
 
 ## References
 

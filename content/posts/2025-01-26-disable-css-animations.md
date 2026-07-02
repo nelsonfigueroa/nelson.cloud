@@ -73,5 +73,5 @@ You can also put these into a CSS class and apply to HTML elements as needed if 
 ## References
 - https://stackoverflow.com/questions/11131875/what-is-the-cleanest-way-to-disable-css-transition-effects-temporarily
 - https://stackoverflow.com/questions/31576156/what-does-animationnone-do-exactly
-- https://developer.mozilla.org/en-US/docs/Web/CSS/animation
-- https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition

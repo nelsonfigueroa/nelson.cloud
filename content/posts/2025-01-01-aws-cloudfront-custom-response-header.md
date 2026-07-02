@@ -8,7 +8,7 @@ ShowToc = false
 TocOpen = false
 +++
 
-This post assumes you already have an [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) Distribution deployed and properly configured. You'll also need knowledge about [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) if you found your way here because your boss told you to do this and "figure it out".
+This post assumes you already have an [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) Distribution deployed and properly configured. You'll also need knowledge about [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers) if you found your way here because your boss told you to do this and "figure it out".
 
 Go to the AWS Console and click into your CloudFront Distribution. Then click on the "Behaviors" tab. If you already have a behavior, you can edit the existing one. Otherwise, create a behavior.
 
@@ -59,6 +59,6 @@ cache-control: max-age=31536000
 Done!
 
 ## References
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers
 - https://stackoverflow.com/questions/56187791/how-to-set-cache-control-header-in-amazon-cloudfront
 - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/modifying-response-headers.html

@@ -21,7 +21,7 @@ pulumi login 's3://<bucket-name>?region=<region>&awssdk=v2&profile=<aws-profile-
 ```
 {{< /admonition >}}
 
-This post assumes you have the Pulumi CLI installed. Check out the following guide if you don't have it installed: [Download & install Pulumi](https://www.pulumi.com/docs/iac/download-install/).
+This post assumes you have the Pulumi CLI installed. Check out the following guide if you don't have it installed: [Download & install Pulumi](https://www.pulumi.com/docs/install/).
 
 ## Creating an S3 Bucket
 
@@ -156,7 +156,7 @@ Everything works!
 If you're interested in setting up CI/CD with this setup, I wrote a post showing how to do so: [GitHub Actions for Pulumi with an AWS S3 Backend]({{< ref "/posts/2025-12-11-pulumi-github-actions-with-s3-backend.md" >}}).
 
 ## References
-- https://www.pulumi.com/docs/iac/download-install/
+- https://www.pulumi.com/docs/install/
 - https://www.pulumi.com/registry/packages/aws/installation-configuration/
 - https://www.pulumi.com/docs/iac/concepts/state-and-backends/#aws-s3
 - https://www.pulumi.com/docs/iac/concepts/projects/project-file/

@@ -333,7 +333,7 @@ arr.last
 
 ### Range of Elements
 
-We can use a `..` or `...` to specify a range of indices within an array. These are useful for [sliding window problems](https://www.geeksforgeeks.org/window-sliding-technique/):
+We can use a `..` or `...` to specify a range of indices within an array. These are useful for [sliding window problems](https://www.geeksforgeeks.org/dsa/window-sliding-technique/):
 
 Using `..` results in an inclusive range:
 
@@ -750,7 +750,7 @@ arr
 - https://www.rubyguides.com/2017/07/ruby-sort/
 - https://apidock.com/ruby/v2_5_5/Enumerable/sort_by
 - https://www.shortcutfoo.com/app/dojos/ruby-arrays/cheatsheet
-- https://apidock.com/ruby/Array/
+- https://apidock.com/ruby/Array
 - https://ruby-doc.org/core-3.1.0/Array.html
 - https://www.rubyguides.com/2018/10/ruby-map-method/
 - https://womanonrails.com/one-line-map-ruby
