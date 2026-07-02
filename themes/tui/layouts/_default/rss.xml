@@ -72,6 +72,8 @@
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if and site.Params.ShowFullTextinRSS .Content }}
       {{- $content := .Content -}}
+      {{- /* Strip the code block language tab; it's CSS-styled chrome that renders as a stray word in RSS readers */ -}}
+      {{- $content = replaceRE `<span class="code-lang">[^<]*</span>` "" $content -}}
       {{- /* Convert admonitions to simple blockquotes for RSS readers */ -}}
       {{- $content = replaceRE `<div class="admonition admonition-(\w+)">\s*<div class="admonition-title">\s*<span class="admonition-icon"></span>\s*<span>([^<]+)</span>\s*</div>\s*<div class="admonition-content">` `<blockquote><p><strong>$2:</strong></p>` $content -}}
       {{- $content = replaceRE `</div>\s*</div>(\s*</div>)?` `</blockquote>` $content -}}
