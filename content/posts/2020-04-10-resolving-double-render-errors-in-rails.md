@@ -34,13 +34,13 @@ In this case, if a statement has an existing statement record for the current mo
 
 To resolve this we need to add a `return` statement after the `redirect_to` in order to exit out of the action:
 
-```ruby
+{{< highlight ruby "hl_lines=4" >}}
 if @user.has_statement_this_month?(@account)
   flash[:alert] = "You already have a statement for this month."
   redirect_to(account_path(@account))
   return # add this
 end
-```
+{{< /highlight >}}
 
 Sometimes I forget that actions are just regular ruby methods and can be exited out of by using `return`.
 

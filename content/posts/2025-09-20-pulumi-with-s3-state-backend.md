@@ -101,15 +101,14 @@ Logged in to 0x6E.local as nelson (s3://nelsons-pulumi-state-backend?region=us-w
 
 Alternatively, you can add your backend to your `Pulumi.yaml` file. This is useful if you're working on multiple Pulumi projects that each have different backends. You won't need to run `pulumi login` all the time. Just add a `backend` key and a nested `url` key:
 
-```yaml
+{{< highlight yaml "hl_lines=5-6" >}}
 name: my-pulumi-project
 description: a pulumi project for testing
 runtime: nodejs
 
-# add this section
 backend:
   url: s3://nelsons-pulumi-state-backend?region=us-west-1&awssdk=v2&profile=default
-```
+{{< /highlight >}}
 
 More information here: [Pulumi project file reference](https://www.pulumi.com/docs/iac/concepts/projects/project-file/).
 
