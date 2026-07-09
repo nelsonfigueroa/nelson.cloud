@@ -59,7 +59,7 @@ end
 
 In Bash:
 
-```bash
+```shell
 if [ -t 1 ]; then
   echo "This program is running in a terminal!"
 else
