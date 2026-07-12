@@ -6,6 +6,7 @@ ShowReadingTime = false
 ShowWordCount = false
 ShowToc = true
 TocOpen = true
+summary = "All about me, from my work experience to my interests and hobbies."
 +++
 
 I'm Nelson. I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog to share things I learn and to occasionally rant.
