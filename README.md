@@ -5,3 +5,5 @@ To run the site locally, run the following in the root of the repository:
 ```
 hugo server
 ```
+
+Then browse to http://127.0.0.1:1313 (unless a different port is listed)
