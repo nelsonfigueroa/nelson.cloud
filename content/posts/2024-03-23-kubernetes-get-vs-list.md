@@ -1,8 +1,8 @@
 +++
 title = "Kubernetes RBAC: Get vs List"
-summary = "The differences of get vs list RBAC verbs in Kubernetes"
+summary = "\"Get\" lets you see individual objects and their contents. \"List\" lets you see all objects, including their contents, even without \"Get\" permissions."
 date = "2024-03-23"
-lastmod = "2026-03-26T19:18:46-07:00"
+lastmod = "2026-07-20T01:35:40-07:00"
 categories = ["Kubernetes", "Cybersecurity"]
 ShowToc = true
 TocOpen = true
@@ -14,13 +14,15 @@ Having `get` permissions to a Kubernetes object does not imply you have `list` p
 
 This was not immediately obvious to me.
 
-I figured that if you can list all objects of a certain kind (like secrets) you can also get individual objects and vice versa, but that's not the case.
+I figured that if you can list all objects of a certain kind (like secrets) you can also get an individual object by name, but that's not the case.
 
 Here's how it works using Kubernetes Secrets as an example object:
 
 - If you only have `get` permissions, you will have to know the exact name of the secret you are trying to read beforehand. You can run a command like `kubectl get secret <secret-name>` successfully, but running `kubectl get secrets` will not work.
 
 - If you only have `list` permissions for secrets, you can run `kubectl get secrets` and see a list of secrets. But running `kubectl get secret <secret-name>` will not work.
+
+- There's a tricky part: if you run `kubectl get secrets -o yaml` you will see a list of secrets and all of their contents. Having `list` permissions doesn't mean you only get to list the names of the secrets, you can append `-o yaml` to the command and see all the contents as well. Just because you don't have `get` permissions doesn't mean you can't see the contents of the objects.
 
 
 ## Example with Minikube
@@ -154,53 +156,115 @@ We can use the following command formula to test the permissions set to both ser
 kubectl auth can-i <verb> <resource> --as=system:serviceaccount:<namespace>:<serviceaccountname> -n <namespace>
 ```
 
+### Testing `get` Permissions
+
 First let's try getting a secret under both service accounts. We expect `service-account-1` to be able to `get` a secret, but not `service-account-2`:
 
 ```console
-$ kubectl auth can-i get secrets --as=system:serviceaccount:example:service-account-1 -n example
+$ kubectl auth can-i get secrets -n example --as=system:serviceaccount:example:service-account-1
 
 yes
 ```
 
 ```console
-$ kubectl auth can-i get secrets --as=system:serviceaccount:example:service-account-2 -n example
+$ kubectl auth can-i get secrets -n example --as=system:serviceaccount:example:service-account-2
 
 no
 ```
 
 Works as expected!
 
-Now let's try getting the `credentials` secret we created earlier just to double check. We should get the same results as above.
+Now let's try getting the `credentials` secret specifically that we created earlier, just to double check. We should get the same results as above.
 
 ```console
-$ kubectl auth can-i get secrets/credentials --as=system:serviceaccount:example:service-account-1 -n example
+$ kubectl auth can-i get secrets/credentials -n example --as=system:serviceaccount:example:service-account-1
 
 yes
 ```
 
 ```console
-$ kubectl auth can-i get secrets/credentials --as=system:serviceaccount:example:service-account-2 -n example
+$ kubectl auth can-i get secrets/credentials -n example --as=system:serviceaccount:example:service-account-2
 
 no
 ```
 
 Works as expected.
 
+### Testing `list` Permissions
+
 Next let's try listing secrets under both service accounts. This time we expect `service-account-2` to be able to `list` secrets, but not `service-account-1`:
 
 ```console
-$ kubectl auth can-i list secrets --as=system:serviceaccount:example:service-account-1 -n example
+$ kubectl auth can-i list secrets -n example --as=system:serviceaccount:example:service-account-1
 
 no
 ```
 
 ```console
-$ kubectl auth can-i list secrets --as=system:serviceaccount:example:service-account-2 -n example
+$ kubectl auth can-i list secrets -n example --as=system:serviceaccount:example:service-account-2
 
 yes
 ```
 
-Works as expected once again!
+Works as expected once again.
+
+### Revealing Secret Data With Only `list` Permissions
+
+Next, let's try listing secrets with `-o yaml` to show that just because you don't have `get` permissions it doesn't mean you can't see contents of secrets.
+
+`service-account-2` has `list` permissions but not `get`. If we try to `get` a specific Secret, Kubernetes doesn't allow it. This is expected:
+
+```console
+$ kubectl get secret credentials -n example --as=system:serviceaccount:example:service-account-2
+
+Error from server (Forbidden): secrets "credentials" is forbidden: User "system:serviceaccount:example:service-account-2" cannot get resource "secrets" in API group "" in the namespace "example"
+```
+
+Listing secrets does work, as expected.
+
+```console
+$ kubectl get secrets -n example --as=system:serviceaccount:example:service-account-2
+
+NAME          TYPE                       DATA   AGE
+credentials   kubernetes.io/basic-auth   2      9m38s
+```
+
+And if we add `-o yaml` to the command, we get the full YAML output for the Secret, revealing a username and password, despite not having `get` permissions:
+
+```console
+$ kubectl get secrets -n example -o yaml --as=system:serviceaccount:example:service-account-2
+
+apiVersion: v1
+items:
+- apiVersion: v1
+  data:
+    password: c2VjdXJlcGFzc3dvcmQ=
+    username: YWRtaW4=
+  kind: Secret
+  metadata:
+    creationTimestamp: "2026-07-20T08:12:24Z"
+    name: credentials
+    namespace: example
+    resourceVersion: "418"
+    uid: bcd4013c-9ed5-4cdc-9436-9ff8dc7d9982
+  type: kubernetes.io/basic-auth
+kind: List
+metadata:
+  resourceVersion: ""
+```
+
+The data of each Secret is revealed under the `data` key in base64 encoding, which can easily be decoded:
+
+```console
+$ echo "YWRtaW4=" | base64 --decode
+
+admin
+
+$ echo "c2VjdXJlcGFzc3dvcmQ=" | base64 --decode
+
+securepassword
+```
 
 ## Further Reading
 - https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+- https://kubernetes.io/docs/reference/access-authn-authz/authorization/#request-verb-resource
