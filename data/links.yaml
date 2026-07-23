@@ -148,6 +148,8 @@ categories:
         title: "Cannibalism"
       - url: "https://borretti.me/article/human-routers-of-machine-words"
         title: "Human Routers of Machine Words"
+      - url: "https://beej.us/blog/data/ai-making/"
+        title: "On Making"
 
   - name: "On Writing and Blogging"
     links:
