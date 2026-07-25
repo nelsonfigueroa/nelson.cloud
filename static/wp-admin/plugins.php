@@ -92,7 +92,7 @@ tr.active.update td,tr.inactive.update td{border-bottom:0}
       <a class="ab-item" href="/wp-admin/post-new.php">+ New</a>
     </div>
     <div class="ab-top-secondary">
-      <a class="ab-item" href="/wp-admin/profile.php">Howdy, admin</a>
+      <a class="ab-item" href="/wp-admin/profile.php">Howdy, <span class="display-name">admin</span></a>
     </div>
   </div>
 </div>

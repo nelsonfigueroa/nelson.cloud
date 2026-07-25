@@ -86,7 +86,7 @@ h1,h2,h3{color:#1d2327;font-weight:400;margin:0}
       <a class="ab-item" href="/wp-admin/post-new.php">+ New</a>
     </div>
     <div class="ab-top-secondary">
-      <a class="ab-item" href="/wp-admin/profile.php">Howdy, admin</a>
+      <a class="ab-item" href="/wp-admin/profile.php">Howdy, <span class="display-name">admin</span></a>
     </div>
   </div>
 </div>

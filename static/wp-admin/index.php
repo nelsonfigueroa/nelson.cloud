@@ -98,7 +98,7 @@ input[type=text],textarea{border:1px solid #8c8f94;border-radius:4px;padding:6px
       <a class="ab-item" href="/wp-admin/post-new.php">+ New</a>
     </div>
     <div class="ab-top-secondary">
-      <a class="ab-item" href="/wp-admin/profile.php">Howdy, admin</a>
+      <a class="ab-item" href="/wp-admin/profile.php">Howdy, <span class="display-name">admin</span></a>
     </div>
   </div>
 </div>
