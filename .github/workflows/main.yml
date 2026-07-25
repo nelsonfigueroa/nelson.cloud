@@ -28,4 +28,11 @@ jobs:
       - name: Push to S3 and CloudFront
         run: |
           aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+          # to serve *.php files as text/html
+          aws s3 cp public/ s3://${{ secrets.S3_BUCKET_NAME }} --recursive \
+            --exclude '*' --include '*.php' --exclude 'xmlrpc.php' \
+            --content-type 'text/html; charset=utf-8'
+          # to serve xmlrpc.php as text/plain
+          aws s3 cp public/xmlrpc.php s3://${{ secrets.S3_BUCKET_NAME }}/xmlrpc.php \
+            --content-type 'text/plain;charset=UTF-8'
           aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
