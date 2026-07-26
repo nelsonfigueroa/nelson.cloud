@@ -35,4 +35,10 @@ jobs:
           # to serve xmlrpc.php as text/plain
           aws s3 cp public/xmlrpc.php s3://${{ secrets.S3_BUCKET_NAME }}/xmlrpc.php \
             --content-type 'text/plain;charset=UTF-8'
+          # .env has no extension mapping so we need to be explicit
+          aws s3 cp public/.env s3://${{ secrets.S3_BUCKET_NAME }}/.env \
+            --content-type 'text/plain; charset=utf-8'
+          # credentials.txt needs an explicit charset for its UTF-8 ascii art
+          aws s3 cp public/credentials.txt s3://${{ secrets.S3_BUCKET_NAME }}/credentials.txt \
+            --content-type 'text/plain; charset=utf-8'
           aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'

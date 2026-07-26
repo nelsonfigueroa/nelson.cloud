@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &rsaquo; ReadMe</title>
+	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
+	<style>
+	body{background:#f1f1f1;color:#444;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:15px;line-height:1.6;margin:0;padding:1em 2em}
+	#logo{margin:6em auto 1em;text-align:center;font-size:1em;font-weight:400}
+	#logo svg{display:block;margin:0 auto .4em}
+	.wrap{background:#fff;border:1px solid #dfdfdf;box-shadow:0 1px 3px rgba(0,0,0,.04);margin:0 auto;max-width:700px;padding:2em 3em}
+	h1{font-size:1.4em;font-weight:400;margin:0 0 .6em}
+	h2{font-size:1.15em;font-weight:600;margin:1.8em 0 .5em;color:#23282d}
+	p,li{font-size:14px}
+	ol,ul{padding-left:1.4em}
+	.file,code{font-family:Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:13px;background:#f6f7f7;padding:1px 4px;border-radius:2px}
+	a{color:#2271b1;text-decoration:none}
+	a:hover{text-decoration:underline}
+	.center{text-align:center}
+	</style>
+</head>
+<body>
+<div class="wrap">
+<h1 id="logo">
+	<a href="https://wordpress.org/">
+	<svg viewBox="0 0 122.5 122.5" width="72" height="72" aria-hidden="true" focusable="false">
+		<circle cx="61.25" cy="61.25" r="58.5" fill="none" stroke="#444" stroke-width="5"/>
+		<text x="61.25" y="89" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700" fill="#444" text-anchor="middle">W</text>
+	</svg>
+	</a>
+	<br /> Version 6.2.2
+</h1>
+<p class="center">Semantic Personal Publishing Platform</p>
+
+<h2>First Things First</h2>
+<p>Welcome. WordPress is a very special project to me. Every developer and contributor adds something unique to the mix, and together we create something beautiful that I am proud to be a part of. Thousands of hours have gone into WordPress, and we are dedicated to making it better every day. Thank you for making it part of your world.</p>
+<p class="center">&#8212; Matt Mullenweg</p>
+
+<h2>Installation: Famous 5-minute install</h2>
+<ol>
+	<li>Unzip the package in an empty directory and upload everything.</li>
+	<li>Open <span class="file">wp-admin/install.php</span> in your browser. It will take you through the process to set up a <span class="file">wp-config.php</span> file with your database connection details.
+		<ol>
+			<li>If for some reason this does not work, do not worry. It may not work on all web hosts. Open up <span class="file">wp-config-sample.php</span> with a text editor, fill in your database connection details, and save it as <span class="file">wp-config.php</span>.</li>
+			<li>Upload the file.</li>
+		</ol>
+	</li>
+	<li>Once the configuration file is set up, the installer will set up the tables needed for your site. If there is an error, double check your <span class="file">wp-config.php</span> file, and try again. If it fails again, please go to the <a href="https://wordpress.org/support/forums/">WordPress support forums</a> with as much data as you can gather.</li>
+	<li><strong>If you did not enter a password, note the password given to you.</strong> If you did not provide a username, it will be <code>admin</code>.</li>
+	<li>The installer should then send you to the <a href="wp-login.php">login page</a>. Sign in with the username and password you chose during the installation. If a password was generated for you, you can then click on &#8220;Profile&#8221; to change the password.</li>
+</ol>
+
+<h2>Updating</h2>
+<h3>Using the Automatic Updater</h3>
+<ol>
+	<li>Open <span class="file">wp-admin/update-core.php</span> in your browser and follow the instructions.</li>
+	<li>You wanted more, perhaps? That&#8217;s it!</li>
+</ol>
+<h3>Updating Manually</h3>
+<ol>
+	<li>Before you update anything, make sure you have backup copies of any files you may have modified such as <span class="file">index.php</span>.</li>
+	<li>Delete your old WordPress files, saving ones you&#8217;ve modified.</li>
+	<li>Upload the new files.</li>
+	<li>Point your browser to <span class="file">/wp-admin/upgrade.php</span>.</li>
+</ol>
+
+<h2>Migrating from other systems</h2>
+<p>WordPress can <a href="https://wordpress.org/documentation/article/importing-content/">import from a number of systems</a>. First you need to get WordPress installed and working as described above, before using our <a href="wp-admin/import.php">import tools</a>.</p>
+
+<h2>System Requirements</h2>
+<ul>
+	<li><a href="https://www.php.net/">PHP</a> version <strong>7.4</strong> or greater.</li>
+	<li><a href="https://www.mysql.com/">MySQL</a> version <strong>5.7</strong> or greater.</li>
+	<li>&#8230; or <a href="https://mariadb.org/">MariaDB</a> version <strong>10.4</strong> or greater.</li>
+	<li>The <a href="https://httpd.apache.org/docs/2.2/mod/mod_rewrite.html">mod_rewrite</a> Apache module.</li>
+	<li><a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a> support.</li>
+</ul>
+
+<h2>Online Resources</h2>
+<p>If you have any questions that are not addressed in this document, please take advantage of WordPress&#8217; numerous online resources:</p>
+<dl>
+	<dt><a href="https://wordpress.org/documentation/">HelpHub</a></dt>
+	<dd>HelpHub is the encyclopedia of all things WordPress. It is the most comprehensive source of information for WordPress available.</dd>
+	<dt><a href="https://wordpress.org/news/">The WordPress Blog</a></dt>
+	<dd>This is where you&#8217;ll find the latest updates and news related to WordPress.</dd>
+	<dt><a href="https://wordpress.org/support/forums/">Support Forums</a></dt>
+	<dd>If you&#8217;ve looked everywhere and still cannot find an answer, the support forums are very active and have a large community ready to help.</dd>
+</dl>
+
+<h2>Final Notes</h2>
+<ul>
+	<li>If you have any suggestions, ideas, or comments, or if you (gasp!) found a bug, join us in the <a href="https://wordpress.org/support/forums/">Support Forums</a>.</li>
+	<li>WordPress has a robust plugin API that makes extending the code easy. If you are a developer interested in utilizing this, see the <a href="https://developer.wordpress.org/plugins/">Plugin Developer Handbook</a>.</li>
+</ul>
+
+<h2>Share the Love</h2>
+<p>WordPress has no multi-million dollar marketing campaign or celebrity sponsors, but we do have something even better&#8212;you. If you enjoy WordPress please consider telling a friend, setting it up for someone less knowledgeable than yourself, or writing the author of a media article that overlooks us.</p>
+
+<h2>License</h2>
+<p>WordPress is free software, and is released under the terms of the GPL (GNU General Public License) version 2 or (at your option) any later version. See <a href="license.txt">license.txt</a>.</p>
+</div>
+</body>
+</html>
