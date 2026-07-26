@@ -486,7 +486,7 @@ nelson_cloud_txt = aws.route53.Record(
     records=[
         "apple-domain=shXv4LOydqcMHwRZ",
         "google-site-verification=hRsMFfsE6us1cN9TsKFQt7hUm700XU2SgLsZb6RJb4E",
-        "v=spf1 include:icloud.com ~all",
+        "v=spf1 include:icloud.com -all",
     ],
     ttl=300,
     type=aws.route53.RecordType.TXT,
@@ -507,7 +507,7 @@ nelson_cloud_acm_validation = aws.route53.Record(
 nelson_cloud_dmarc = aws.route53.Record(
     "nelson-cloud-dmarc",
     name="_dmarc.nelson.cloud",
-    records=["v=DMARC1; p=none"],
+    records=["v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc@nelson.cloud"],
     ttl=300,
     type=aws.route53.RecordType.TXT,
     zone_id="Z032177030KUZLOKGS50G",
