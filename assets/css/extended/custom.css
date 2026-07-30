@@ -226,10 +226,7 @@ a:focus-visible {
     outline: none;
 }
 
-/* make regular text prettier? */
-/* https://codersblock.com/blog/nicer-text-wrapping-with-css-text-wrap/ */
 .post-content p {
-    text-wrap: pretty;
     line-height: 1.3;
 }
 
