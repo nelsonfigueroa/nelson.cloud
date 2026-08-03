@@ -562,6 +562,11 @@ body:not(.dark) .related-posts li:not(:last-child) {
     font-style: normal;
 }
 
+/* darker inline code inside admonitions so it stands out against the tinted backgrounds */
+.post-content .admonition :not(pre) > code {
+    background: var(--entry);
+}
+
 /* Note */
 .admonition-note {
     border-left-color: #0000aa;
