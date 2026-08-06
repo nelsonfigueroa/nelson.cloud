@@ -74,6 +74,7 @@ Programming/Coding, DevOps/Cloud/Infrastructure, Cybersecurity, Privacy
 ### Games
 - [Elden Ring](https://en.bandainamcoent.eu/elden-ring/elden-ring)
 - [Red Dead Redemption 2](https://www.rockstargames.com/reddeadredemption2/)
+- [Halo](https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/)
 - [Stardew Valley](https://www.stardewvalley.net/)
 - [Factorio](https://www.factorio.com/)
 - [Helldivers 2](https://store.steampowered.com/app/553850/HELLDIVERS_2/)
