@@ -67,4 +67,4 @@ If there is nothing ignoring a file, the `git check-ignore -v` command produces 
 
 ---
 
-This post received a lot of attention on Hacker News! Check it out here: https://news.ycombinator.com/item?id=48583356
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=48583356).

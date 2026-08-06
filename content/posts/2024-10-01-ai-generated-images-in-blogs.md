@@ -19,4 +19,4 @@ If you run a personal blog, please avoid AI-generated images.
 
 ---
 
-Discussion over at [Hacker News](https://news.ycombinator.com/item?id=42506989)
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=49167113).
