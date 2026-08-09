@@ -80,7 +80,7 @@ Using the tool, I decrypted the string and got the result: "In order to generate
 
 <img src="/hacking-hack-the-box/rot13site.webp" alt="Site used to decrypt ROT13 cipher" width="720" height="158" style="max-width: 100%; height: auto; aspect-ratio: 1820 / 400;" loading="lazy" decoding="async">
 
-Now, to make a `POST` request to `https://hackthebox.eu/api/invite/` I used [HTTPie](https://httpie.io/). It was as easy as running the following:
+Now, to make a `POST` request to `https://hackthebox.eu/api/invite/generate` I used [HTTPie](https://httpie.io/). It was as easy as running the following:
 
 ```shell
 http post https://www.hackthebox.eu/api/invite/generate
