@@ -33,7 +33,7 @@ This post is meant as honest feedback. Proton has a [respectable mission](https:
 I was recently made aware about [Proton CEO Andy Yen](https://proton.me/blog/author/andy-yen)'s comments regarding the [incoming USA administration](https://en.wikipedia.org/wiki/2024_United_States_presidential_election). Do with this information what you will.
 
 - https://theintercept.com/2025/01/28/proton-mail-andy-yen-trump-republicans/
-- https://archive.ph/txuJ2
+- https://web.archive.org/web/20250116145602/https://archive.ph/txuJ2
 - https://www.reddit.com/r/ProtonMail/comments/1i1zjgn/so_that_happened/
 - https://www.reddit.com/r/privacy/comments/1i210jg/protonmail_supporting_the_party_that_killed/
 
