@@ -91,4 +91,4 @@ Here are some articles I've come across that share similar sentiments or are ver
 
 ---
 
-Discussion over at [Hacker News](https://news.ycombinator.com/item?id=40943436)
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=40943436)

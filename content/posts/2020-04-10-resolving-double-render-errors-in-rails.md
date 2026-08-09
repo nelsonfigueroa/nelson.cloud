@@ -30,7 +30,7 @@ def create
 end
 ```
 
-In this case, if a statement has an existing statement record for the current month, the action should redirect the user to `account_path`. This part works. However, redirects *do not* stop execution of the remaining code. This means that in the code above, it is possible to try to redirect to `account_path` as well as render the `new` template. This results in an error: `AbstractController::DoubleRenderError`.
+In this case, if a user has an existing statement record for the current month, the action should redirect the user to `account_path`. This part works. However, redirects *do not* stop execution of the remaining code. This means that in the code above, it is possible to try to redirect to `account_path` as well as render the `new` template. This results in an error: `AbstractController::DoubleRenderError`.
 
 To resolve this we need to add a `return` statement after the `redirect_to` in order to exit out of the action:
 

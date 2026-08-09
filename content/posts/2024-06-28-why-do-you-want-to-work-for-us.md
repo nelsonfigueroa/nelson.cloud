@@ -28,4 +28,4 @@ Let's stop asking this question in the application and interview process. We all
 
 ---
 
-Discussion over at [Hacker News](https://news.ycombinator.com/item?id=40842603)
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=40842603)

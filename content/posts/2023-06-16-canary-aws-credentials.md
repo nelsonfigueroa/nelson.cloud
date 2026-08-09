@@ -28,7 +28,7 @@ The notification emails from canarytokens.org provide useful details about the a
 
 We can see based on the user agent that whoever used these AWS keys was doing this automatically using Python.
 
-I also got another notification that shows that the attacker was using Powershell:
+I also got another notification that shows that the attacker was using PowerShell:
 
 <img src="/putting-up-fake-aws-keys/notification2.webp" alt="canarytokens.org notification showing powershell usage" width="720" height="509" style="max-width: 100%; height: auto; aspect-ratio: 1300 / 920;" loading="lazy" decoding="async">
 

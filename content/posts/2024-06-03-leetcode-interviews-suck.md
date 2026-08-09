@@ -25,5 +25,5 @@ If you need a Software Engineer with AWS, Kubernetes, and Ruby on Rails experien
 
 ## Further Reading
 
-- Discussion over at [Hacker News](https://news.ycombinator.com/item?id=40571395)
+- Discussion on [Hacker News](https://news.ycombinator.com/item?id=40571395)
 - [Re-imagining Technical Interviews: Valuing Experience Over Exam Skills](https://danielabaron.me/blog/reimagining-technical-interviews/)
