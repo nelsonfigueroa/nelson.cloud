@@ -2,14 +2,14 @@
 title = "How To Install Older Versions of Homebrew Packages"
 summary = "How to install a specific version of Homebrew packages."
 date = "2023-04-18"
-lastmod = "2026-04-19T00:32:00-07:00"
+lastmod = "2026-08-09T01:22:57-07:00"
 categories = ["Homebrew", "macOS"]
 ShowToc = false
 TocOpen = false
 featured = false
 +++
 
-{{< admonition type="warning" title="This method is outdated" >}}
+{{< admonition type="warning" title="Warning: This method is outdated!" >}}
 The approach outlined in this post still works in some cases, but as Homebrew has changed, this method has become unreliable. You may run into errors like:
 
 ```text
@@ -36,11 +36,15 @@ If I wanted to downgrade to Terraform 1.3.6, I would need to:
 
 Let's say we have `terraform` version 1.4.5 but we need `terraform` version 1.3.6. We can start by browsing to https://github.com/Homebrew/homebrew-core/tree/master/Formula and try to find the formula for `terraform` under the `t` directory.
 
+{{< admonition type="note" >}}
+Terraform has since been removed from [homebrew-core](https://github.com/Homebrew/homebrew-core) after its [license change](https://www.hashicorp.com/en/blog/hashicorp-adopts-business-source-license), so the `blob/master` URL no longer exists. I'll be using a Terraform link pinned to a specific commit hash. For any package that is still in homebrew-core, the URL pattern previously described still applies: `https://github.com/Homebrew/homebrew-core/blob/master/Formula/<directory-containing-package>/<package-name>.rb`
+{{< /admonition >}}
+
 <img src="/how-to-install-older-versions-of-homebrew-packages/formulas.webp" alt="List of Homebrew formulas" width="720" height="410" style="max-width: 100%; height: auto; aspect-ratio: 3120 / 1780;" loading="lazy" decoding="async">
 
 Since there are a lot of files here, it's easier to just modify the URL path in the browser. Modify the path based on the directory the command is in: Take the name of the package and append it at the end of the url, adding `/<directory-containing-package>/<package-name>.rb` to the URL. The `.rb` is important because all Homebrew packages are defined in Ruby (files with the `.rb` extension).
 
-In this case, we'll append `/t/terraform.rb` to the URL like so: https://github.com/Homebrew/homebrew-core/blob/master/Formula/t/terraform.rb
+In this case, we'll append `/t/terraform.rb` to the URL like so: https://github.com/Homebrew/homebrew-core/blob/6785b6baa9a6ce18c8230de9e9f0f847547dda9a/Formula/t/terraform.rb
 
 That URL will then take us to the Ruby file where the `terraform` Homebrew package is defined.
 
