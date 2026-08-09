@@ -18,6 +18,8 @@ All three kinds of tokens look similar and have the same format: `pul-` followed
 However, you can use the Pulumi CLI or API to get some useful information.
 
 {{< admonition type="info" title="tl;dr" >}}
+*(Note that these commands will update the token's last-used timestamp.)*
+
 Run `pulumi whoami` with the token using the `PULUMI_ACCESS_TOKEN` environment variable. A personal token returns a human username. Organization or team tokens return a service account:
 
 ```shell

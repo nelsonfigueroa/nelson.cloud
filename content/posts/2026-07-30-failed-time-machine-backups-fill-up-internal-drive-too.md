@@ -24,7 +24,7 @@ Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on
 /dev/disk3s5   1.8Ti   974Gi   861Gi    54%    1.6M  9.0G    0%   /System/Volumes/Data
 ```
 
-I ran this to see local snapshots
+I ran this to see local snapshots:
 
 ```console
 $ tmutil listlocalsnapshots /
