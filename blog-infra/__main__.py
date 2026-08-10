@@ -1,5 +1,3 @@
-"""An AWS Python Pulumi program"""
-
 import pulumi
 import pulumi_aws as aws
 
@@ -59,6 +57,81 @@ hugo_cloudfront_full_access = aws.iam.UserPolicyAttachment(
     user=hugo_user.name,
     policy_arn="arn:aws:iam::aws:policy/CloudFrontFullAccess",
 )
+
+immutable_assets_headers_policy = aws.cloudfront.ResponseHeadersPolicy(
+    "immutable-assets",
+    name="immutable-assets",
+    comment="headers for immutable assets, like fingerprinted assets",
+    custom_headers_config={
+        "items": [
+            {
+                "header": "Cache-Control",
+                "value": "public, max-age=31536000, immutable",
+                "override": True,
+            }
+        ]
+    },
+)
+
+long_lived_headers_policy = aws.cloudfront.ResponseHeadersPolicy(
+    "long-lived-assets",
+    name="long-lived-assets",
+    comment="headers for long lived assets like fonts",
+    custom_headers_config={
+        "items": [
+            {
+                "header": "Cache-Control",
+                "value": "public, max-age=31536000",
+                "override": True,
+            }
+        ]
+    },
+)
+
+images_headers_policy = aws.cloudfront.ResponseHeadersPolicy(
+    "images",
+    name="images",
+    comment="headers for images",
+    custom_headers_config={
+        "items": [
+            {
+                "header": "Cache-Control",
+                "value": "public, max-age=2592000", # 30 days
+                "override": True,
+            }
+        ]
+    },
+)
+
+revalidate_headers_policy = aws.cloudfront.ResponseHeadersPolicy(
+    "revalidate",
+    name="revalidate",
+    comment="header for content with a permanent URL but changing content, like posts, RSS feed, and sitemap.",
+    custom_headers_config={
+        "items": [
+            {
+                "header": "Cache-Control",
+                "value": "public, max-age=0, must-revalidate",
+                "override": True,
+            }
+        ]
+    },
+)
+
+# just a helper that is used to fill in config in nelson.cloud cloudfront distribution ordered_cache_behaviors[]
+def nelson_cloud_asset_behavior(path_pattern, response_headers_policy):
+    """Cache behavior that only exists to attach a Cache-Control header."""
+    return {
+        "path_pattern": path_pattern,
+        "allowed_methods": ["GET", "HEAD"],
+        "cached_methods": ["GET", "HEAD"],
+        "cache_policy_id": "658327ea-f89d-4fab-a63d-7e88639e58f6",  # CachingOptimized
+        "compress": True,
+        "response_headers_policy_id": response_headers_policy.id,
+        "target_origin_id": "nelson.cloud.s3.us-west-1.amazonaws.com",
+        "viewer_protocol_policy": "redirect-to-https",
+    }
+
 
 # CloudFront Distributions
 nelsonfigueroa_sh_cloudfront = aws.cloudfront.Distribution(
@@ -201,7 +274,7 @@ nelson_cloud_distribution = aws.cloudfront.Distribution(
             "HEAD",
         ],
         "compress": True,
-        "response_headers_policy_id": "1c10dca8-b7b6-476c-a137-2761529f090d",
+        "response_headers_policy_id": revalidate_headers_policy.id,
         "target_origin_id": "nelson.cloud.s3.us-west-1.amazonaws.com",
         "viewer_protocol_policy": "redirect-to-https",
     },
@@ -209,8 +282,8 @@ nelson_cloud_distribution = aws.cloudfront.Distribution(
     enabled=True,
     http_version="http2and3",
     is_ipv6_enabled=True,
-    # route /gc/* requests to GoatCounter, stripping the /gc prefix via CloudFront Function
     ordered_cache_behaviors=[
+        # goatcounter has to be ahead of headers for assets
         {
             "path_pattern": "/gc/*",
             "allowed_methods": [
@@ -234,7 +307,14 @@ nelson_cloud_distribution = aws.cloudfront.Distribution(
                     "function_arn": goatcounter_rewrite.arn,
                 }
             ],
-        }
+        },
+        # Hugo writes fingerprinted CSS and JS under /assets/
+        nelson_cloud_asset_behavior("/assets/*", immutable_assets_headers_policy),
+        nelson_cloud_asset_behavior("*.woff2", long_lived_headers_policy),
+        *[
+            nelson_cloud_asset_behavior(pattern, images_headers_policy)
+            for pattern in ["*.webp", "*.png", "*.gif", "*.ico"]
+        ],
     ],
     origins=[
         {
