@@ -1,6 +1,6 @@
 {{ range hugo.Data.links.categories }}
 {{ $anchor := .name | urlize }}
-<details>
+<details open="true">
 <summary><h2 id="{{ $anchor }}">{{ .name }} <span class="link-count">{{ len .links }}</span></h2></summary>
 
 {{ if .description }}<p>{{ .description }}</p>{{ end }}
