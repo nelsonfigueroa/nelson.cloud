@@ -21,13 +21,13 @@ You can get in touch with me on [LinkedIn](https://www.linkedin.com/in/nelsonfig
 
 Cloud Support Engineer II @ [Pulumi](https://www.pulumi.com/) (Aug 2024 - Present)
 
-Software Engineer @ [Robinhood](https://robinhood.com/us/en/) (Jan - Nov 2023)
+Software Engineer III @ [Robinhood](https://robinhood.com/us/en/) (Jan - Nov 2023)
 
 Software Engineer IV @ [Edmunds](https://www.edmunds.com/) (2020 - 2022)
 
 Junior DevOps Engineer @ [Vitu](https://vitu.com/) (2019 - 2020)
 
-Software Engineer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
+Web Developer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
 
 ## Skills
 
