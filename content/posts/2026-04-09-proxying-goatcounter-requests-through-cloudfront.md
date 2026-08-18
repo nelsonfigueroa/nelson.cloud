@@ -3,7 +3,7 @@ title = "Proxying GoatCounter Requests Through CloudFront to Bypass Ad Blockers"
 summary = "How to configure CloudFront to proxy requests to GoatCounter so that adblockers don't block page views."
 aliases = ["/proxying-goatcounter-requests-for-a-hugo-blog-on-cloudfront-to-bypass-ad-blockers/"]
 date = "2026-04-09"
-lastmod = "2026-04-18T14:32:00-07:00"
+lastmod = "2026-08-17T19:00:47-07:00"
 categories = ["AWS", "Pulumi"]
 ShowToc = true
 TocOpen = true
@@ -46,10 +46,15 @@ We need to strip `/gc` for two reasons:
 1. I chose to proxy requests that hit the `/gc/count` endpoint on my site to make sure there's no collision with post titles/slugs. I'll never use the `/gc/*` path for posts.
 2. GoatCounter accepts requests under `/count`, not `/gc/count`
 
+We also need to set the `cf-connecting-ip` header to the visitor's IP address, because otherwise GoatCounter sees CloudFront's IP addresses instead and marks those as bot requests, which are not counted on the dashboard as views.
+
 Here is the code for the function:
 ```javascript
 function handler(event) {
     var request = event.request;
+
+    request.headers['cf-connecting-ip'] = { value: event.viewer.ip };
+
     request.uri = request.uri.replace(/^\/gc/, '');
     if (request.uri === '') request.uri = '/';
     return request;
@@ -59,12 +64,16 @@ function handler(event) {
 And here is the CloudFront function resource defined in Pulumi (using Python) that includes the JavaScript from above. This is a new resource defined in the same Python file where my existing distribution already exists:
 
 ```python
-goatcounter_rewrite = aws.cloudfront.Function("goatcounter-rewrite",
+goatcounter_rewrite = aws.cloudfront.Function(
+    "goatcounter-rewrite",
     name="goatcounter-rewrite",
     runtime="cloudfront-js-2.0",
     code="""\
 function handler(event) {
     var request = event.request;
+
+    request.headers['cf-connecting-ip'] = { value: event.viewer.ip };
+
     request.uri = request.uri.replace(/^\\/gc/, '');
     if (request.uri === '') request.uri = '/';
     return request;
