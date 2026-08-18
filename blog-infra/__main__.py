@@ -12,6 +12,9 @@ goatcounter_rewrite = aws.cloudfront.Function(
     code="""\
 function handler(event) {
     var request = event.request;
+
+    request.headers['cf-connecting-ip'] = { value: event.viewer.ip };
+
     request.uri = request.uri.replace(/^\\/gc/, '');
     if (request.uri === '') request.uri = '/';
     return request;
