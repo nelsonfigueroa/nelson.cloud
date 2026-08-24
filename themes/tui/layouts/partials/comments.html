@@ -4,9 +4,7 @@
 {{/*  don't show for /support/ or /about/ pages  */}}
 {{ if not (or (hasPrefix .RelPermalink "/support/") (hasPrefix .RelPermalink "/about/")) }}
 
-<span class="comments-header">
-  <h2>Comments</h2>
-</span>
+<h2 class="comments-header">Comments</h2>
 
 <p class="reply-email">
   <a href="mailto:nelson@nelson.cloud?subject={{ printf "Re: %s" .Title }}">Reply via email</a>

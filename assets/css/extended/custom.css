@@ -305,19 +305,25 @@ body:not(.dark) .related-posts li:not(:last-child) {
 
 .page-header {
     margin: 24px auto var(--content-gap) auto;
+}
+
+h2.page-header {
+    margin: 0;
+}
+
+.page-header,
+.related-posts-header,
+.comments-header {
     text-transform: uppercase;
 }
 
-.page-header::after {
-    content: "---";
-}
-
-.related-posts-header::after {
-    content: "---";
-}
-
+.page-header::after,
+.related-posts-header::after,
 .comments-header::after {
     content: "---";
+    display: block;
+    font-weight: normal;
+    line-height: 1.5rem;
 }
 
 .reply-email {
