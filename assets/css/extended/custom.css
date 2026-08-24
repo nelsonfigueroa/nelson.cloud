@@ -330,6 +330,10 @@ h2.page-header {
     margin-bottom: 1.5rem;
 }
 
+.reply-email a::before {
+    content: "➜ ";
+}
+
 /* related posts section */
 .related-posts {
     padding-bottom: 1.5rem;
