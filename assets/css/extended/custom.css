@@ -323,7 +323,7 @@ h2.page-header {
 
 .toc details summary::before {
     content: "[+] ";
-    font-family: monospace;
+    font-family: 'Commit Mono', monospace;
     color: var(--secondary);
 }
 
@@ -360,7 +360,7 @@ h2.page-header {
     left: 0;
     top: 0;
     color: var(--secondary);
-    font-family: monospace;
+    font-family: 'Commit Mono', monospace;
     line-height: 1.2;
 }
 
@@ -374,8 +374,8 @@ h2.page-header {
     bottom: 0;
     overflow: hidden;
     color: var(--secondary);
-    font-family: monospace;
-    line-height: 1.2;
+    font-family: 'Commit Mono', monospace;
+    line-height: 1.714;
     width: 1ch;
 }
 
