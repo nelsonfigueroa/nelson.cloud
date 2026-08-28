@@ -1,0 +1,90 @@
+/* for ascii art on home page */
+.ascii-hero {
+    container-type: inline-size;
+    position: relative;
+    overflow: hidden;
+}
+
+pre.ascii-art {
+    font-family: 'Commit Mono', monospace;
+    font-size: calc(100cqw / 44.4);
+    line-height: 1; /* braille requires line-height: 1 to look okay */
+    white-space: pre;
+    margin: 0;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* background mountains should be darker */
+.ascii-art .ridge-far {
+    color: var(--tertiary);
+}
+
+/* CSS for my name over the ascii art */
+.ascii-hero-name {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    font-weight: normal;
+    pointer-events: none; /* so that hover effect works through the name */
+}
+
+/* CSS for name text and background colors */
+.ascii-hero-name span {
+    background: var(--link-hover-bg);
+    color: var(--link-hover-fg);
+    padding: 0 1ch;
+}
+
+/* to reduce gap between ascii art and post links on mobile devices */
+@media screen and (width <= 768px) {
+    .first-entry.home-info {
+        min-height: 0;
+    }
+}
+
+.hidden-star {
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    color: var(--tertiary);
+    text-shadow: 0 0 8px currentColor, 0 0 14px currentColor;
+}
+
+.hidden-star.star-tint {
+    color: var(--tint);
+}
+
+.hidden-star.star-tint-2 {
+    color: var(--tint-2);
+}
+
+/* stars animations */
+/* star animation 1 */
+.shining-star::after {
+    content: "*";
+    animation: shine 2s infinite alternate;
+}
+
+@keyframes shine {
+    0%, 50% { content: "*"; }
+    51%, 100% { content: "·"; }
+}
+
+/* star animation 2 */
+.shining-star-2::after {
+    content: "+";
+    animation: shine-2 2s infinite alternate;
+}
+
+@keyframes shine-2 {
+    0%, 50% { content: "+"; }
+    51%, 100% { content: "×"; }
+}
+
+.shining-star::after,
+.shining-star-2::after {
+    text-shadow: 0 0 8px currentColor, 0 0 14px currentColor;
+}
