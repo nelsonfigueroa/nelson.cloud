@@ -7,6 +7,9 @@
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
+<!-- body font is used for ascii art, so get it along with stylesheets rather than after it -->
+<link rel="preload" as="font" type="font/woff2" href="/CommitMono-400-Regular.woff2" crossorigin>
+
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
 

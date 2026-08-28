@@ -1,6 +1,16 @@
+/* additional font face to prevent ascii art from appearing broken on load */
+@font-face {
+    font-family: 'Commit Mono Grid';
+    src: url('/CommitMono-400-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 /* for ascii art on home page */
 .ascii-hero {
     container-type: inline-size;
+    font-family: 'Commit Mono Grid', 'Commit Mono', monospace;
     position: relative;
     overflow: hidden;
     -webkit-user-select: none;
@@ -8,7 +18,7 @@
 }
 
 pre.ascii-art {
-    font-family: 'Commit Mono', monospace;
+    font-family: 'Commit Mono Grid', 'Commit Mono', monospace;
     font-size: calc(100cqw / 44.4);
     line-height: 1; /* braille requires line-height: 1 to look okay */
     white-space: pre;
