@@ -3,6 +3,8 @@
     container-type: inline-size;
     position: relative;
     overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 pre.ascii-art {
@@ -11,9 +13,6 @@ pre.ascii-art {
     line-height: 1; /* braille requires line-height: 1 to look okay */
     white-space: pre;
     margin: 0;
-
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 /* background mountains should be darker */
