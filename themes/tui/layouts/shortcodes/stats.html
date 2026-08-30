@@ -1,0 +1,148 @@
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $count := len $posts -}}
+{{- $fmt := "2006-01-02" -}}
+{{- $selfHosts := slice (urls.Parse site.BaseURL).Hostname "nelson.cloud" -}}
+
+{{- $words := 0 -}}
+{{- $minutes := 0 -}}
+{{- $images := 0 -}}
+{{- $blocks := 0 -}}
+{{- $codeLines := 0 -}}
+{{- $inline := 0 -}}
+{{- $langBlocks := dict -}}
+{{- $langLines := dict -}}
+{{- $swears := dict -}}
+{{- $links := 0 -}}
+{{- $weekdays := dict -}}
+
+{{- range $posts -}}
+  {{- $words = add $words .WordCount -}}
+  {{- $minutes = add $minutes .ReadingTime -}}
+  {{- $images = add $images (len (findRE `<img[ >]` .Content)) -}}
+  {{- $d := .Date.Format "Monday" -}}
+  {{- $weekdays = merge $weekdays (dict $d (add 1 (index $weekdays $d | default 0))) -}}
+
+  {{- $found := findRE `(?s)<div class="highlight">.*?</div>` .Content -}}
+  {{- range $found -}}
+    {{- $blocks = add $blocks 1 -}}
+    {{- $lines := len (findRE `<span class="line"` .) -}}
+    {{- $codeLines = add $codeLines $lines -}}
+    {{- $id := "" -}}
+    {{- with findRE `data-lang="[^"]+"` . 1 -}}
+      {{- $id = index . 0 | strings.TrimPrefix `data-lang="` | strings.TrimSuffix `"` | lower -}}
+    {{- end -}}
+    {{- $name := index hugo.Data.codelang $id | default (title $id) -}}
+    {{- $langBlocks = merge $langBlocks (dict $name (add 1 (index $langBlocks $name | default 0))) -}}
+    {{- $langLines = merge $langLines (dict $name (add $lines (index $langLines $name | default 0))) -}}
+  {{- end -}}
+  {{- $inline = add $inline (len (findRE `<code[ >]` (replaceRE `(?s)<pre.*?</pre>` " " .Content))) -}}
+
+  {{- $writing := .Content | replaceRE `(?s)<pre.*?</pre>` " " | replaceRE `(?s)<code.*?</code>` " " | plainify | replaceRE `https?://\S+` " " -}}
+  {{- $text := printf "%s %s %s" .Title (.Summary | plainify) $writing -}}
+  {{- range findRE `(?i)\b(\w*fuck\w*|\w*shit\w*|ass|asshole\w*|piss\w*|bitch\w*|cunt\w*|wtf)\b` $text -}}
+    {{- $w := lower . -}}
+    {{- $swears = merge $swears (dict $w (add 1 (index $swears $w | default 0))) -}}
+  {{- end -}}
+
+  {{- range findRE `href="https?://[^"]+"` .Content -}}
+    {{- $host := replaceRE `^href="https?://([^/"?#:]*).*$` "$1" . | lower | strings.TrimPrefix "www." -}}
+    {{- if and $host (not (in $selfHosts $host)) -}}{{- $links = add $links 1 -}}{{- end -}}
+  {{- end -}}
+
+{{- end -}}
+
+{{- $yearRows := slice -}}
+{{- $cumRows := slice -}}
+{{- $cum := 0 -}}
+{{- range ($posts.GroupByDate "2006").Reverse -}}
+  {{- $yearWords := 0 -}}
+  {{- range .Pages -}}{{- $yearWords = add $yearWords .WordCount -}}{{- end -}}
+  {{- $cum = add $cum $yearWords -}}
+  {{- $yearRows = $yearRows | append (dict "label" .Key "count" (len .Pages)) -}}
+  {{- $cumRows = $cumRows | append (dict "label" .Key "count" $cum "display" (lang.FormatNumberCustom 0 $cum) "note" (printf "+%s" (lang.FormatNumberCustom 0 $yearWords))) -}}
+{{- end -}}
+
+{{- $first := index $posts.ByDate 0 -}}
+{{- $years := sub now.Year $first.Date.Year -}}
+{{- $months := sub (int (now.Format "1")) (int ($first.Date.Format "1")) -}}
+{{- $days := sub (int (now.Format "2")) (int ($first.Date.Format "2")) -}}
+{{- if lt $days 0 -}}
+  {{- $days = add $days (now.AddDate 0 0 (sub 0 (int (now.Format "2")))).Day -}}
+  {{- $months = sub $months 1 -}}
+{{- end -}}
+{{- if lt $months 0 -}}
+  {{- $months = add $months 12 -}}
+  {{- $years = sub $years 1 -}}
+{{- end -}}
+{{- $writingFor := slice -}}
+{{- if gt $years 0 -}}{{- $writingFor = $writingFor | append (printf "%d year%s" $years (cond (eq $years 1) "" "s")) -}}{{- end -}}
+{{- if gt $months 0 -}}{{- $writingFor = $writingFor | append (printf "%d month%s" $months (cond (eq $months 1) "" "s")) -}}{{- end -}}
+{{- if or (gt $days 0) (not $writingFor) -}}{{- $writingFor = $writingFor | append (printf "%d day%s" $days (cond (eq $days 1) "" "s")) -}}{{- end -}}
+
+{{- $weekdayRows := slice -}}
+{{- range slice "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday" -}}
+  {{- $weekdayRows = $weekdayRows | append (dict "label" . "count" (index $weekdays . | default 0)) -}}
+{{- end -}}
+
+{{- $langRows := slice -}}
+{{- range $k, $v := $langBlocks -}}
+  {{- $n := index $langLines $k -}}
+  {{- $langRows = $langRows | append (dict "label" $k "count" $v "note" (printf "[%s line%s]" (lang.FormatNumberCustom 0 $n) (cond (eq $n 1) "" "s"))) -}}
+{{- end -}}
+{{- $langRows = sort $langRows "count" "desc" -}}
+
+{{- $swearTotal := 0 -}}
+{{- range $k, $v := $swears -}}{{- $swearTotal = add $swearTotal $v -}}{{- end -}}
+
+{{- $categoryCount := len site.Taxonomies.categories -}}
+
+<p>Last generated on {{ now.Format $fmt }}</p>
+
+{{- $overview := slice
+  (dict "key" "Total posts" "value" $count)
+  (dict "key" "Writing since" "value" ($first.Date.Format $fmt))
+  (dict "key" "Writing for" "value" (delimit $writingFor ", "))
+  (dict "key" "Words written" "value" (lang.FormatNumberCustom 0 $words))
+  (dict "key" "Swear words" "value" $swearTotal)
+  (dict "key" "Total read time" "value" (printf "%dh %dm" (div $minutes 60) (mod $minutes 60)))
+  (dict "key" "Number of images" "value" $images)
+  (dict "key" "External links" "value" (lang.FormatNumberCustom 0 $links))
+  (dict "key" "Categories" "value" $categoryCount)
+-}}
+{{- $code := slice
+  (dict "key" "Code blocks" "value" $blocks)
+  (dict "key" "Lines of code" "value" (lang.FormatNumberCustom 0 $codeLines))
+  (dict "key" "Inline code snippets" "value" (lang.FormatNumberCustom 0 $inline))
+-}}
+
+<h2 id="overview">Overview</h2>
+<dl class="stat-kv">
+{{- range $overview }}
+<div>
+  <dt>{{ .key }}<span class="stat-leader" aria-hidden="true">{{ strings.Repeat 80 "." }}</span></dt>
+  <dd>{{ .value }}</dd>
+</div>
+{{- end }}
+</dl>
+
+<h2 id="posts-per-year">Posts per year</h2>
+{{ partial "stats-chart.html" (dict "rows" $yearRows) }}
+
+<h2 id="words-written">Cumulative words written</h2>
+{{ partial "stats-chart.html" (dict "rows" $cumRows) }}
+
+<h2 id="posts-per-weekday">Posts per weekday</h2>
+{{ partial "stats-chart.html" (dict "rows" $weekdayRows) }}
+
+<h2 id="code">Code</h2>
+<dl class="stat-kv">
+{{- range $code }}
+<div>
+  <dt>{{ .key }}<span class="stat-leader" aria-hidden="true">{{ strings.Repeat 80 "." }}</span></dt>
+  <dd>{{ .value }}</dd>
+</div>
+{{- end }}
+</dl>
+<h3 id="languages">Languages</h3>
+<p>By number of code blocks.</p>
+{{ partial "stats-chart.html" (dict "rows" $langRows) }}

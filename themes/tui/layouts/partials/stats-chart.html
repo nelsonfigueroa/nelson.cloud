@@ -1,0 +1,20 @@
+{{- $max := 0.0 -}}
+{{- $labelWidth := 0 -}}
+{{- $valueWidth := 0 -}}
+{{- range .rows -}}
+  {{- if gt (float .count) $max -}}{{- $max = float .count -}}{{- end -}}
+  {{- $w := strings.RuneCount .label -}}
+  {{- if gt $w $labelWidth -}}{{- $labelWidth = $w -}}{{- end -}}
+  {{- $v := strings.RuneCount (printf "%v" (.display | default .count)) -}}
+  {{- with .note -}}{{- $v = add $v 1 (strings.RuneCount .) -}}{{- end -}}
+  {{- if gt $v $valueWidth -}}{{- $valueWidth = $v -}}{{- end -}}
+{{- end -}}
+<div class="stat-chart" style="--stat-label-width: {{ $labelWidth }}ch; --stat-value-width: {{ $valueWidth }}ch">
+{{- range .rows }}
+<div class="stat-row">
+  <span class="stat-label">{{ .label }}</span>
+  <span class="stat-track" aria-hidden="true">{{ strings.Repeat 80 "░" }}<span class="stat-fill" style="--stat-pct: {{ printf "%.2f" (mul 100 (div (float .count) $max)) }}%">{{ strings.Repeat 80 "█" }}</span></span>
+  <span class="stat-value">{{ .display | default .count }}{{ with .note }} <span class="stat-note">{{ . }}</span>{{ end }}</span>
+</div>
+{{- end }}
+</div>
