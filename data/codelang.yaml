@@ -22,3 +22,4 @@ nginx: Nginx
 ini: INI
 http: HTTP
 erb: ERB
+rust: Rust
