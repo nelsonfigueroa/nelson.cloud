@@ -271,11 +271,12 @@
 
 /* table of contents */
 .toc {
+    position: relative;
+    --toc-gutter: 2.5ch;
     margin: 0 2px 40px 2px;
     border: 1px solid var(--primary);
     background: var(--theme);
-    padding: 0.4em;
-    box-shadow: 5px 5px var(--secondary);
+    padding: 0.8em 0.4em 0.6em 0;
 }
 
 .dark .toc {
@@ -284,7 +285,14 @@
 
 .toc details summary {
     cursor: zoom-in;
-    margin-inline-start: 20px;
+    position: absolute;
+    top: 0;
+    left: calc(var(--toc-gutter) - 0.5ch);
+    translate: 0 -50%;
+    margin-inline-start: 0;
+    padding: 0 0.5ch;
+    background: var(--theme);
+    line-height: 1;
 }
 
 .toc details[open] summary {
@@ -294,6 +302,7 @@
 .toc .details {
     display: inline;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .toc .inner {

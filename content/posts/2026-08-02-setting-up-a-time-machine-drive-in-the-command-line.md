@@ -57,8 +57,8 @@ $ diskutil list external
 
 Two identifiers matter here:
 
-- **`disk4`** — the whole physical disk. We'll need this later on when running the `eraseDisk` command.
-- **`disk5`** — the APFS container. This is what we'll need for the `addVolume` command. (A brand new drive won't have this one yet. It'll get created when we erase the disk in a later step.)
+- `disk4`: the whole physical disk. We'll need this later on when running the `eraseDisk` command.
+- `disk5`: the APFS container. This is what we'll need for the `addVolume` command. (A brand new drive won't have this one yet. It'll get created when we erase the disk in a later step.)
 
 {{< admonition type="warning" >}}
 `eraseDisk` destroys everything on whichever disk you name. Confirm you've got the right one before running it or you might nuke your local drive instead of your backup drive.

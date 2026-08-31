@@ -385,7 +385,7 @@ h2.page-header {
 
 .toc .inner {
     padding: 10px 0;
-    margin: 0 20px 0 28px;
+    margin: 0 20px 0 calc(var(--toc-gutter) + 1ch);
 }
 /* end `tree` style table of contents */
 
@@ -396,18 +396,25 @@ h2.page-header {
     right: 5%;
     translate: 0 -50%;
     border: 1px solid var(--primary);
-    padding: 1rem;
+    background: var(--theme);
+    padding: 1rem 0.5rem;
     max-width: 260px;
-    max-height: 70vh;
-    overflow-y: auto;
     z-index: 1000;
-    box-shadow: 5px 5px var(--primary);
+}
+
+.dynamic-toc nav {
+    max-height: 65vh;
+    overflow-y: auto;
 }
 
 .dynamic-toc-header {
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
+    position: absolute;
+    top: 0;
+    left: 2ch;
+    translate: 0 -50%;
+    padding: 0 0.5ch;
+    background: var(--theme);
+    line-height: 1;
 }
 
 .dynamic-toc-title {
@@ -454,17 +461,6 @@ h2.page-header {
 .dynamic-toc-link.active:hover,
 .dynamic-toc-link.active:focus-visible {
     color: var(--link-hover-fg);
-}
-
-/* light mode ToC drop shadow */
-.toc {
-    box-shadow: 5px 5px var(--primary);
-}
-
-/* dark mode ToC drop shadow*/
-.dark .toc,
-.dark .dynamic-toc {
-    box-shadow: 5px 5px var(--tertiary);
 }
 
 @media screen and (width <= 768px) {
