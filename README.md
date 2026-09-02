@@ -8,6 +8,7 @@ Source code for my personal site [nelson.cloud](https://nelson.cloud). Built usi
 - [.gitignore Isn’t the Only Way To Ignore Files in Git](https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/) - [Hacker News](https://news.ycombinator.com/item?id=48583356)
 - [I Am So Sick of Leetcode-Style Interviews](https://nelson.cloud/i-am-so-sick-of-leetcode-style-interviews/) - [Hacker News](https://news.ycombinator.com/item?id=40571395)
 - [As an Employee, You Are Disposable](https://nelson.cloud/as-an-employee-you-are-disposable/) - [Hacker News](https://news.ycombinator.com/item?id=40943436)
+- [Let's Stop Asking "Why Do You Want To Work for Us?" in Interviews](https://nelson.cloud/lets-stop-asking-why-do-you-want-to-work-for-us-in-interviews/) - [Hacker News](https://news.ycombinator.com/item?id=40842603)
 
 ## Running Locally
 
