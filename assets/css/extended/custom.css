@@ -521,7 +521,35 @@ h2.page-header {
     margin-bottom: 1rem;
 }
 
+.post-content .link-grid {
+    display: grid;
+    padding: 0;
+    list-style: none;
+}
+
+.post-content .link-grid li {
+    margin: 0;
+    padding: 0.4rem 0;
+    border-block-end: 1px solid var(--border);
+}
+
+@media (width >= 40rem) {
+    .post-content .link-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .post-content .link-grid li:nth-child(odd) {
+        padding-inline-end: 2ch;
+        border-inline-end: 1px solid var(--border);
+    }
+
+    .post-content .link-grid li:nth-child(even) {
+        padding-inline-start: 2ch;
+    }
+}
+
 .link-domain {
+    display: block;
     color: var(--secondary);
     font-size: 0.8em;
 }
