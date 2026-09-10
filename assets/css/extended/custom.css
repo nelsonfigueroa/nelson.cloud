@@ -173,10 +173,6 @@ a:focus-visible {
     outline: none;
 }
 
-.post-content p {
-    line-height: 1.3;
-}
-
 /* balanced headings prevent awkward short last lines */
 .post-title,
 .post-content :is(h1, h2) {
@@ -184,15 +180,12 @@ a:focus-visible {
 }
 
 /* going for a more "packed" terminal look */
+.post-content,
 .entry-content {
     line-height: 1.3;
 }
 
 .entry-footer {
-    line-height: 1.3;
-}
-
-.post-content li {
     line-height: 1.3;
 }
 
