@@ -80,9 +80,7 @@ func main() {
 As a side note, strings in Go are basically slices of bytes. This is why we can iterate through them using `range` like we would a typical slice.
 
 From https://go.dev/blog/strings:
-{{< admonition type="quote" >}}
-In Go, a string is in effect a read-only slice of bytes
-{{< /admonition >}}
+> In Go, a string is in effect a read-only slice of bytes
 
 
 ## References

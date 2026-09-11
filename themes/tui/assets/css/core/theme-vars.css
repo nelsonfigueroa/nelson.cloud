@@ -26,9 +26,6 @@
     --tint: rgb(0, 0, 0);
     --tint-2: rgb(70, 70, 70);
 
-    --blockquote-border: rgb(90, 90, 90);
-    --blockquote-background: rgba(0, 0, 0, 0.1);
-
     --code-block-tab-text: rgb(201, 201, 201);
     --code-block-tab-border: rgb(90, 90, 90);
 
@@ -55,9 +52,6 @@
 
     --tint: rgb(220, 220, 220);
     --tint-2: rgb(170, 170, 170);
-
-    --blockquote-border: rgb(140, 140, 140);
-    --blockquote-background: rgba(255, 255, 255, 0.08);
 
     --code-block-tab-border: rgb(51, 51, 51);
 

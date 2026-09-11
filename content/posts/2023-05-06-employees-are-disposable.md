@@ -65,13 +65,9 @@ caption="*Source: [BBC: Tim Gurner apologises over call for more unemployment to
 There are some bits I want to highlight:
 
 
-{{< admonition type="quote" >}}
-"There's been a systematic change where employees feel the employer is extremely lucky to have them," Mr Gurner said. "We need to remind people they work for the employer, not the other way around."
-{{< /admonition >}}
+> "There's been a systematic change where employees feel the employer is extremely lucky to have them," Mr Gurner said. "We need to remind people they work for the employer, not the other way around."
 
-{{< admonition type="quote" >}}
-[Mr Gurner] has previously made headlines by suggesting young people cannot afford homes because they spend too much on avocado toast.
-{{< /admonition >}}
+> [Mr Gurner] has previously made headlines by suggesting young people cannot afford homes because they spend too much on avocado toast.
 
 ## In Conclusion...
 

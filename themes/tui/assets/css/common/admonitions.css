@@ -1,5 +1,6 @@
 /* CSS for admonitions */
-.admonition {
+.admonition,
+.post-content blockquote {
     --adm: var(--border);
     --adm-gutter: 2.5ch;
 
@@ -9,7 +10,8 @@
     padding: 1.1em 1rem 0.75rem var(--adm-gutter);
 }
 
-.admonition-title {
+.admonition-title,
+.post-content blockquote::before {
     position: absolute;
     top: 0;
     left: calc(var(--adm-gutter) - 0.5ch);
@@ -24,12 +26,19 @@
     background: var(--theme);
 }
 
-.admonition-content p:first-child {
+.admonition-content p:first-child,
+.post-content blockquote > :first-child {
     margin-top: 0;
 }
 
-.admonition-content p:last-child {
+.admonition-content p:last-child,
+.post-content blockquote > :last-child {
     margin-bottom: 0;
+}
+
+/* markdown blockquotes with `>` get the same styling as admonitiions */
+.post-content blockquote::before {
+    content: "[\"]";
 }
 
 /* Note */
@@ -65,7 +74,8 @@
 .admonition-example .admonition-icon::before { content: "[#]"; }
 
 /* Quote */
-.admonition-quote { --adm: #474747; }
+.admonition-quote,
+.post-content blockquote { --adm: #474747; }
 .admonition-quote .admonition-icon::before { content: "[\"]"; }
 
 /* Dark mode */
@@ -77,4 +87,5 @@
 .dark .admonition-success { --adm: #55ff55; }
 .dark .admonition-question { --adm: #ff55ff; }
 .dark .admonition-example { --adm: #aaaaaa; }
-.dark .admonition-quote { --adm: #aaaaaa; }
+.dark .admonition-quote,
+.dark .post-content blockquote { --adm: #aaaaaa; }
