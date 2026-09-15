@@ -222,6 +222,8 @@ categories:
         title: "diff.blog"
       - url: "https://bearblog.dev/discover/"
         title: bearblog.dev/discover
+      - url: "https://blogofthe.day/"
+        title: "Blog of the .Day"
 
   - name: "Blogroll"
     description: "Basically blogs I subscribe to via RSS or regularly read"
