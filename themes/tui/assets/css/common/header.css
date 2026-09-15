@@ -36,27 +36,17 @@
 }
 
 button#theme-toggle {
-    font-size: 26px;
+    width: 16px;
+    height: 16px;
     margin: 0;
+    border: 1.5px solid var(--tint);
+    background-image: linear-gradient(135deg, var(--tint) 50%, var(--theme) 50%);
 }
 
-body.dark #moon {
-    vertical-align: middle;
-    display: none;
-}
-
-body:not(.dark) #sun {
-    display: none;
-}
-
-#moon,
-#sun {
-    color: var(--tint);
-}
-
-#moon:hover,
-#sun:hover {
-    filter: brightness(75%);
+button#theme-toggle:hover,
+button#theme-toggle:focus-visible {
+    outline: 1px solid var(--tint);
+    outline-offset: 2px;
 }
 
 .menu {
