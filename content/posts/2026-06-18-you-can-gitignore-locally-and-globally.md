@@ -5,7 +5,7 @@ date = "2026-06-18"
 categories = ["Git"]
 ShowToc = false
 TocOpen = false
-featured = false
+featured = true
 +++
 
 I've been using Git for so long and I just realized you can ignore files at three different levels and not just with `.gitignore`. The three files you can use to ignore files are:
