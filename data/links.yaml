@@ -70,17 +70,13 @@ categories:
         title: "How I Hacked McDonald's (Their Security Contact Was Harder to Find Than Their Secret Sauce Recipe)"
       - url: "http://flaws.cloud/"
         title: "flaws.cloud"
+      - url: "https://www.learndmarc.com/"
+        title: "www.learndmarc.com"
 
-  - name: "Software Engineering"
+  - name: "Computing and Software"
     links:
       - url: "https://codersblock.com/blog/nicer-text-wrapping-with-css-text-wrap/"
         title: "Nicer Text Wrapping with CSS text-wrap"
-      - url: "https://alexop.dev/posts/understanding-claude-code-full-stack/"
-        title: "Understanding Claude Code's Full Stack: MCP, Skills, Subagents, and Hooks Explained"
-      - url: "https://alexop.dev/posts/customize_claude_code_status_line/"
-        title: "How to Customize Your Claude Code Status Line"
-      - url: "https://alexop.dev/posts/claude-code-notification-hooks/"
-        title: "Get Notified When Claude Code Finishes With Hooks"
       - url: "https://noyaml.com/"
         title: "No YAML"
       - url: "https://micahkepe.com/blog/gitconfig/"
@@ -97,8 +93,6 @@ categories:
         title: "Why All My Servers Have An 8gb Empty File"
       - url: "https://cpu.land/"
         title: "cpu.land"
-      - url: "https://www.learndmarc.com/"
-        title: "www.learndmarc.com"
       - url: "https://lucasoshiro.github.io/posts-en/2024-06-17-ruby-shellscript/"
         title: "Ruby: a great language for shell scripts!"
       - url: "https://jiteshcodes.com/blog/creating-a-brainrot-language-server-in-golang/"
@@ -107,6 +101,8 @@ categories:
         title: "The One-Person Framework in practice"
       - url: "https://piechowski.io/post/git-commands-before-reading-code/"
         title: "The Git Commands I Run Before Reading Any Code"
+      - url: "https://will-keleher.com/posts/small-programming-tricks-matter/"
+        title: "Small Programming Tricks"
 
   - name: "Artificial Intelligence"
     links:
@@ -152,6 +148,12 @@ categories:
         title: "Human Routers of Machine Words"
       - url: "https://beej.us/blog/data/ai-making/"
         title: "On Making"
+      - url: "https://alexop.dev/posts/understanding-claude-code-full-stack/"
+        title: "Understanding Claude Code's Full Stack: MCP, Skills, Subagents, and Hooks Explained"
+      - url: "https://alexop.dev/posts/customize_claude_code_status_line/"
+        title: "How to Customize Your Claude Code Status Line"
+      - url: "https://alexop.dev/posts/claude-code-notification-hooks/"
+        title: "Get Notified When Claude Code Finishes With Hooks"
 
   - name: "On Writing and Blogging"
     links:
