@@ -154,7 +154,7 @@
 }
 
 .post-content table th,
-.post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+.post-content table:not(.highlight table) td {
     min-width: 80px;
     padding: 8px 5px;
     line-height: 1.5;
@@ -165,7 +165,7 @@
     text-align: start;
 }
 
-.post-content table:not(.highlighttable) td code:only-child {
+.post-content table td code:only-child {
     margin: auto 0;
 }
 
@@ -187,23 +187,6 @@
 
 .post-content .highlight pre {
     margin: 0;
-}
-
-.post-content .highlighttable {
-    table-layout: fixed;
-}
-
-.post-content .highlighttable td:first-child {
-    width: 40px;
-}
-
-.post-content .highlighttable td .linenodiv {
-    padding-inline-end: 0 !important;
-}
-
-.post-content .highlighttable td .highlight,
-.post-content .highlighttable td .linenodiv pre {
-    margin-bottom: 0;
 }
 
 .post-content code {

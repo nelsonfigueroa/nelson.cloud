@@ -45,11 +45,6 @@
     line-height: 1.6rem;
 }
 
-.entry-link {
-    position: absolute;
-    inset: 0;
-}
-
 .entry-hint {
     color: var(--secondary);
 }

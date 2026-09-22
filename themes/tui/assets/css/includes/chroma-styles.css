@@ -82,7 +82,6 @@ body:not(.dark) .highlight:hover .chroma :is(.nc, .ne) { color: #e5c07b; }
 /* ==== per-mode surfaces (not slot-driven; unchanged on hover) ======== */
 
 /* Light mode (default) */
-/* Background */ .bg { color:#c9c9c9;background-color:#242424; }
 /* PreWrapper */ .chroma { color:var(--syn-plain);background-color:#242424; }
 /* LineHighlight */ .chroma .hl { background-color:#343434 }
 /* LineNumbersTable */ .chroma .lnt { color:#757575 }
@@ -90,7 +89,6 @@ body:not(.dark) .highlight:hover .chroma :is(.nc, .ne) { color: #e5c07b; }
 /* TextWhitespace */ .chroma .w { color:#4a4a4a }
 
 /* Dark mode */
-/* Background */ .dark .bg { color:#c4c4c4;background-color:#111111; }
 /* PreWrapper */ .dark .chroma { background-color:#111111; }
 /* LineHighlight */ .dark .chroma .hl { background-color:#1f1f1f }
 /* LineNumbersTable */ .dark .chroma .lnt { color:#6f6f6f }

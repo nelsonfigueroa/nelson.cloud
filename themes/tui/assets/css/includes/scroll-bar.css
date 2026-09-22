@@ -9,30 +9,17 @@
     background: 0 0;
 }
 
-.list:not(.dark)::-webkit-scrollbar-track {
-    background: var(--code-bg);
-}
-
 ::-webkit-scrollbar-thumb {
     background: var(--tertiary);
     border: 5px solid var(--theme);
-}
-
-.list:not(.dark)::-webkit-scrollbar-thumb {
-    border: 5px solid var(--code-bg);
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary);
 }
 
-::-webkit-scrollbar:not(.highlighttable, .highlight table, .gist .highlight) {
+::-webkit-scrollbar:not(.highlight table) {
     background: var(--theme);
-}
-
-/* from post-single */
-.post-content .highlighttable td .highlight pre code::-webkit-scrollbar {
-    display: none;
 }
 
 .post-content :not(table) ::-webkit-scrollbar-thumb {

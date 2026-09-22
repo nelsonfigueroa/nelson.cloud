@@ -55,11 +55,6 @@ a:focus-visible {
     outline: none;
 }
 
-#theme-toggle:focus-visible #moon,
-#theme-toggle:focus-visible #sun {
-    color: var(--link-hover-fg);
-}
-
 /* pagination buttons */
 .pagination a:hover,
 .pagination a:focus-visible {

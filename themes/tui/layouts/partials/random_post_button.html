@@ -1,18 +1,1 @@
-<script>
-    const posts = [
-    {{- $current := .RelPermalink -}}
-    {{- range where .Site.RegularPages "Section" "posts" -}}
-      {{- if ne .RelPermalink $current -}}
-      "{{ .RelPermalink }}",
-      {{- end -}}
-    {{- end -}}
-    ];
-
-    function getRandomPost() {
-      if (!posts.length) return;
-      const randomIndex = Math.floor(Math.random() * posts.length);
-      window.location.href = posts[randomIndex].concat("?ref=random");
-    }
-</script>
-
-<button class="random-post-button" onclick="getRandomPost()">Random Post</button>
+<button type="button" class="random-post-button">Random Post</button>
