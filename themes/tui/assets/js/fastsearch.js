@@ -67,6 +67,7 @@ function activeToggle(ae) {
 }
 
 function reset() {
+    clearTimeout(searchTimer);
     resultsAvailable = false;
     resList.innerHTML = sInput.value = ''; // clear inputbox and searchResults
     sInput.focus(); // shift focus to input box
@@ -81,16 +82,13 @@ function escapeHTML(str) {
               .replace(/'/g, "&#039;");
 }
 
-// execute search as each character is typed
-sInput.onkeyup = function (e) {
-    // run a search query (for "term") every time a letter is typed
-    // in the search box
+function runSearch(query) {
     if (fuse) {
         let results;
         if (params.fuseOpts) {
-            results = fuse.search(this.value.trim(), {limit: params.fuseOpts.limit}); // the actual query being run using fuse.js along with options
+            results = fuse.search(query.trim(), {limit: params.fuseOpts.limit}); // the actual query being run using fuse.js along with options
         } else {
-            results = fuse.search(this.value.trim()); // the actual query being run using fuse.js
+            results = fuse.search(query.trim()); // the actual query being run using fuse.js
         }
         if (results.length !== 0) {
             // build our html if result exists
@@ -111,6 +109,13 @@ sInput.onkeyup = function (e) {
             resList.innerHTML = '';
         }
     }
+}
+
+// run the search once typing pauses, not on every keystroke
+let searchTimer;
+sInput.onkeyup = function (e) {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => runSearch(sInput.value), 150);
 }
 
 sInput.addEventListener('search', function (e) {
