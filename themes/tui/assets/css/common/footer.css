@@ -39,6 +39,7 @@ body:not(.dark) .footer::before {
 .top-link {
     color: var(--tint);
     visibility: hidden;
+    opacity: 0;
     position: fixed;
     bottom: 60px;
     right: 30px;
@@ -52,4 +53,9 @@ body:not(.dark) .footer::before {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.top-link.visible {
+    visibility: visible;
+    opacity: 1;
 }

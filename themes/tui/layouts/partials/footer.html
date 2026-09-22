@@ -38,55 +38,34 @@
 
 {{- partial "extend_footer.html" . }}
 
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-
 {{- if (not site.Params.disableScrollToTop) }}
 <script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
+    const topLink = document.getElementById("top-link");
+    let topLinkShown = false;
 
+    topLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo(0, 0);
+        if (location.hash) {
+            history.replaceState(null, "", location.pathname + location.search);
+        }
+    });
+
+    window.addEventListener("scroll", () => {
+        const show = window.scrollY > 800;
+        if (show !== topLinkShown) {
+            topLinkShown = show;
+            topLink.classList.toggle("visible", show);
+        }
+    }, { passive: true });
 </script>
 {{- end }}
 
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
+        const dark = document.body.classList.toggle("dark");
+        localStorage.setItem("pref-theme", dark ? "dark" : "light");
+    });
 </script>
 
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
@@ -105,23 +84,8 @@
             }, 2000);
         }
 
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
+        copybutton.addEventListener('click', () => {
+            navigator.clipboard.writeText(codeblock.textContent).then(copyingDone);
         });
 
         if (container.classList.contains("highlight")) {

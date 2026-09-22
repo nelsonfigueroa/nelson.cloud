@@ -14,13 +14,6 @@
     }
 }
 
-/* footer */
-@media screen and (width <= 900px) {
-    .list .top-link {
-        transform: translateY(-5rem);
-    }
-}
-
 @media screen and (width <= 340px) {
     .share-buttons {
         justify-content: unset;

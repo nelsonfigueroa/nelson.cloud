@@ -102,21 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!dynamicToc || !tocNav || headings.length === 0) return;
 
-    // Smooth scrolling for TOC links
-    tocLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('data-heading');
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
     // Update active link and progress bar on scroll
     function updateActiveLink() {
         const scrollY = window.scrollY;
