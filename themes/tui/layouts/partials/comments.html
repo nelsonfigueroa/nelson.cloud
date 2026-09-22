@@ -28,6 +28,7 @@ let giscusAttributes = {
     "data-reactions-enabled": "1",
     "data-emit-metadata": "0",
     "data-input-position": "bottom",
+    "data-loading": "lazy",
     "data-theme": giscusTheme,
     "data-lang": "en",
     "crossorigin": "anonymous",
@@ -37,6 +38,25 @@ let giscusAttributes = {
 let giscusScript = document.createElement("script");
 Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
 document.querySelector('.giscus').appendChild(giscusScript);
+
+document.addEventListener('load', (e) => {
+    if (e.target.classList && e.target.classList.contains('giscus-frame')) {
+        e.target.dataset.loaded = '1';
+    }
+}, true);
+
+new MutationObserver(() => {
+    const frame = document.querySelector('iframe.giscus-frame');
+    if (!frame) return;
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    if (frame.dataset.loaded) {
+        frame.contentWindow.postMessage({ giscus: { setConfig: { theme: theme } } }, 'https://giscus.app');
+    } else {
+        const url = new URL(frame.src);
+        url.searchParams.set('theme', theme);
+        frame.src = url;
+    }
+}).observe(document.body, { attributes: true, attributeFilter: ['class'] });
 </script>
 
 {{- /* Comments area end */ -}}
