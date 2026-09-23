@@ -1,5 +1,5 @@
 :root {
-    color-scheme: light dark;
+    color-scheme: light;
     --gap: 24px;
     --content-gap: 20px;
     --nav-width: 720px;
@@ -33,6 +33,10 @@
     --link-hover-bg: rgb(0, 0, 0);
     --link-hover-fg: rgb(220, 220, 220);
     --link-hover-secondary: rgb(156, 156, 156);
+}
+
+:root:has(> body.dark) {
+    color-scheme: dark;
 }
 
 .dark {

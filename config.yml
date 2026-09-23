@@ -66,8 +66,6 @@ params:
     disableFingerprinting: false
   description: "Nelson Figueroa - Software Engineer based in Los Angeles, California. Writing about programming, cloud infrastructure, cybersecurity, and the tech industry."
   author: Nelson Figueroa
-  # keywords for home page
-  keywords: ["Nelson Figueroa", "Nelson Software Engineer", "Nelson Figueroa software engineer"]
 
   DateFormat: 2006-01-02
 

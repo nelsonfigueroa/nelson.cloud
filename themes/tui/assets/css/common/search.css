@@ -9,6 +9,24 @@
     border-color: var(--secondary);
 }
 
+/* placeholder test should be the same color across all browsers with this CSS rule */
+#searchbox input::placeholder {
+    color: var(--secondary);
+    opacity: 1;
+}
+
+/* chrome and safari add their own "clear" button to search bars. replace it with an x in the text color */
+#searchbox input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 3l10 10M13 3L3 13' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 3l10 10M13 3L3 13' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
 #searchResults li {
     list-style: none;
     padding: 6px;
