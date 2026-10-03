@@ -16,7 +16,6 @@ mainsections: ["posts"]
 # use first 160 words as summary if a summary is not provided for a post
 summaryLength: 160
 
-enableGitInfo: false
 frontmatter:
   lastmod:
     - lastmod
@@ -84,7 +83,6 @@ params:
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
-  ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: false
   ShowFullTextinRSS: true
@@ -150,9 +148,3 @@ related:
       weight: 100
     - name: date
       weight: 10
-
-services:
-  instagram:
-    disableInlineCSS: true
-  x:
-    disableInlineCSS: true
