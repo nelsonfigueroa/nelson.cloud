@@ -228,6 +228,8 @@ categories:
         title: bearblog.dev/discover
       - url: "https://blogofthe.day/"
         title: "Blog of the .Day"
+      - url: "https://tech-blogs.dev/"
+        title: "Tech Blogs"
 
   - name: "Blogroll"
     description: "Basically blogs I subscribe to via RSS or regularly read"
