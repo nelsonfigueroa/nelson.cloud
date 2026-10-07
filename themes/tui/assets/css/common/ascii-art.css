@@ -92,6 +92,13 @@ pre.ascii-art {
     51%, 100% { content: "×"; }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .shining-star::after,
+    .shining-star-2::after {
+        animation: none;
+    }
+}
+
 .dark .hidden-star,
 .dark .shining-star::after,
 .dark .shining-star-2::after {
