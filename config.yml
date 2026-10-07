@@ -11,6 +11,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+capitalizeListTitles: false
 mainsections: ["posts"]
 
 # use first 160 words as summary if a summary is not provided for a post
