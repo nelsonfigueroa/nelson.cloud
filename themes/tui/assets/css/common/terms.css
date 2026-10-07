@@ -4,12 +4,11 @@
     columns: 2;
 }
 
-/* uncomment if categories get too long and 2 columns is a tight fit on mobile */
-/*@media (max-width: 600px) {
+@media (width < 27rem) {
     .categories-chart {
         columns: 1;
     }
-}*/
+}
 
 .categories-chart li {
     display: grid; /* necessary for inverse on hover over text */
