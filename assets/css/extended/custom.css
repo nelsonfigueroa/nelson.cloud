@@ -55,6 +55,15 @@ a:focus-visible {
     outline: none;
 }
 
+#menu-trigger:focus-visible {
+    outline: none;
+}
+
+#menu-trigger:focus-visible svg {
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+}
+
 /* pagination buttons */
 .pagination a:hover,
 .pagination a:focus-visible {

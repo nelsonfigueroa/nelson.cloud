@@ -79,8 +79,13 @@ button#theme-toggle:focus-visible {
 }
 
 #menu-trigger {
-    display: none;
     cursor: pointer;
+    list-style: none;
+}
+
+/* for safari versions before 18.4 */
+#menu-trigger::-webkit-details-marker {
+    display: none;
 }
 
 /* hamburger menu on smaller screens */
@@ -105,16 +110,17 @@ button#theme-toggle:focus-visible {
         margin-inline-start: 0;
     }
 
+    #menu-toggle {
+        display: block;
+        margin: auto var(--gap);
+    }
+
     #menu-trigger {
         font-size: 30px;
-        position: relative;
-        display: block;
-        float: right;
-        margin: auto var(--gap);
         color: var(--tint);
     }
 
-    #menu-toggle:not(:checked) ~ .menu {
+    #menu-toggle:not([open]) ~ .menu {
         display: none;
     }
 }
