@@ -1,0 +1,79 @@
+{{- $headers := .headers -}}
+{{- $ulClass := .ulClass -}}
+{{- $liClass := .liClass -}}
+{{- $linkClass := .linkClass -}}
+{{- $s := newScratch -}}
+{{- $largest := 6 -}}
+{{- range $headers -}}
+{{- $headerLevel := index (findRE "[1-6]" . 1) 0 -}}
+{{- $headerLevel := len (seq $headerLevel) -}}
+{{- if lt $headerLevel $largest -}}
+{{- $largest = $headerLevel -}}
+{{- end -}}
+{{- end -}}
+
+{{- $firstHeaderLevel := len (seq (index (findRE "[1-6]" (index $headers 0) 1) 0)) -}}
+
+{{- $s.Set "bareul" slice -}}
+<ul{{ with $ulClass }} class="{{ . }}"{{ end }}>
+    {{- range seq (sub $firstHeaderLevel $largest) -}}
+    <ul{{ with $ulClass }} class="{{ . }}"{{ end }}>
+        {{- $s.Add "bareul" (sub (add $largest .) 1) -}}
+        {{- end -}}
+        {{- range $i, $header := $headers -}}
+        {{- $headerLevel := index (findRE "[1-6]" . 1) 0 -}}
+        {{- $headerLevel := len (seq $headerLevel) -}}
+
+        {{- $id := index (findRE "(id=\"(.*?)\")" $header 9) 0 }}
+
+        {{- $cleanedID := replace (replace $id "id=\"" "") "\"" "" }}
+        {{- $header := replaceRE "<h[1-6].*?>((.|\n)+?)</h[1-6]>" "$1" $header -}}
+
+        {{- if ne $i 0 -}}
+        {{- $prevHeaderLevel := index (findRE "[1-6]" (index $headers (sub $i 1)) 1) 0 -}}
+        {{- $prevHeaderLevel := len (seq $prevHeaderLevel) -}}
+        {{- if gt $headerLevel $prevHeaderLevel -}}
+        {{- range seq $prevHeaderLevel (sub $headerLevel 1) -}}
+        <ul{{ with $ulClass }} class="{{ . }}"{{ end }}>
+            {{- if ne $prevHeaderLevel . -}}
+            {{- $s.Add "bareul" . -}}
+            {{- end -}}
+            {{- end -}}
+            {{- else -}}
+            </li>
+            {{- if lt $headerLevel $prevHeaderLevel -}}
+            {{- range seq (sub $prevHeaderLevel 1) -1 $headerLevel -}}
+            {{- if in ($s.Get "bareul") . -}}
+        </ul>
+        {{- $tmp := $s.Get "bareul" -}}
+        {{- $s.Delete "bareul" -}}
+        {{- $s.Set "bareul" slice}}
+        {{- range seq (sub (len $tmp) 1) -}}
+        {{- $s.Add "bareul" (index $tmp (sub . 1)) -}}
+        {{- end -}}
+        {{- else -}}
+    </ul>
+    </li>
+    {{- end -}}
+    {{- end -}}
+    {{- end -}}
+    {{- end }}
+    <li{{ with $liClass }} class="{{ . }}"{{ end }}>
+        <a href="#{{- $cleanedID -}}"{{ with $linkClass }} class="{{ . }}" data-heading="{{ $cleanedID }}"{{ end }}>{{- $header | safeHTML -}}</a>
+        {{- else }}
+    <li{{ with $liClass }} class="{{ . }}"{{ end }}>
+        <a href="#{{- $cleanedID -}}"{{ with $linkClass }} class="{{ . }}" data-heading="{{ $cleanedID }}"{{ end }}>{{- $header | safeHTML -}}</a>
+        {{- end -}}
+        {{- end -}}
+        {{- $firstHeaderLevel := $largest }}
+        {{- $lastHeaderLevel := len (seq (index (findRE "[1-6]" (index $headers (sub (len $headers) 1)) 1) 0)) }}
+    </li>
+    {{- range seq (sub $lastHeaderLevel $firstHeaderLevel) -}}
+    {{- if in ($s.Get "bareul") (add . $firstHeaderLevel) }}
+</ul>
+{{- else }}
+</ul>
+</li>
+{{- end -}}
+{{- end }}
+</ul>

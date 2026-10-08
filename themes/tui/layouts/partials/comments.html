@@ -1,9 +1,6 @@
 {{- /* Comments area start */ -}}
 {{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
 
-{{/*  don't show for /support/ or /about/ pages  */}}
-{{ if not (or (hasPrefix .RelPermalink "/support/") (hasPrefix .RelPermalink "/about/")) }}
-
 <h2 class="comments-header">Comments</h2>
 
 <p class="reply-email">
@@ -59,5 +56,3 @@ new MutationObserver(() => {
 </script>
 
 {{- /* Comments area end */ -}}
-
-{{ end }}

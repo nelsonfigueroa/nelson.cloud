@@ -1,19 +1,9 @@
-{{- /*
-  Structured data as a single @graph of linked nodes.
-
-  Everything hangs off two canonical @id anchors:
-    - {baseURL}#person   the one Person node (author + publisher for the whole site)
-    - {baseURL}#website  the WebSite node
-  Other nodes reference these by @id instead of redeclaring them, so crawlers
-  (and LLMs) merge every mention into one entity across all pages.
-*/ -}}
 {{- if or .IsHome .IsPage .IsSection -}}
 
 {{- $home := site.Home.Permalink -}}
 {{- $personID := printf "%s#person" $home -}}
 {{- $websiteID := printf "%s#website" $home -}}
 
-{{- /* sameAs: external profile URLs only (relative links like the RSS feed are skipped) */ -}}
 {{- $sameAs := slice -}}
 {{- if site.Params.schema.sameAs -}}
   {{- range site.Params.schema.sameAs -}}{{- $sameAs = $sameAs | append (trim . " ") -}}{{- end -}}
@@ -23,7 +13,6 @@
   {{- end -}}
 {{- end -}}
 
-{{- /* canonical Person node */ -}}
 {{- $names := split site.Params.author " " -}}
 {{- $knowsAbout := site.Params.schema.knowsAbout | default (slice "Cloud Computing" "Amazon Web Services" "Infrastructure as Code" "Software Engineering" "Cybersecurity") -}}
 {{- $person := dict
@@ -40,7 +29,6 @@
   "sameAs" $sameAs
 -}}
 
-{{- /* WebSite node: full on home, slimmed elsewhere */ -}}
 {{- $websiteFull := dict
   "@type" "WebSite"
   "@id" $websiteID
@@ -61,7 +49,6 @@
 {{- else -}}
   {{- $graph = $graph | append $person $websiteSlim -}}
 
-  {{- /* BreadcrumbList */ -}}
   {{- $crumbs := slice -}}
   {{- $url := replace .Parent.Permalink $home "" -}}
   {{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}
@@ -84,16 +71,13 @@
     "itemListElement" $crumbs) -}}
 
   {{- if .IsPage -}}
-    {{- /* description */ -}}
     {{- $desc := "" -}}
     {{- with .Description -}}{{- $desc = . | plainify | htmlUnescape -}}{{- else -}}{{- $desc = .Summary | plainify | htmlUnescape -}}{{- end -}}
 
-    {{- /* keywords: explicit keywords, else tags */ -}}
     {{- $keywords := slice -}}
     {{- with .Params.keywords -}}{{- range . -}}{{- $keywords = $keywords | append . -}}{{- end -}}
     {{- else -}}{{- range .Params.tags -}}{{- $keywords = $keywords | append . -}}{{- end -}}{{- end -}}
 
-    {{- /* image: mirror the OG image; ImageObject w/ dimensions for the generated one */ -}}
     {{- $image := "" -}}
     {{- if .Params.cover.image -}}
       {{- if ne .Params.cover.relative true -}}
