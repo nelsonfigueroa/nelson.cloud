@@ -1,0 +1,3 @@
+# so code block language labels aren't searchable
+exclude_selectors:
+  - ".code-lang"

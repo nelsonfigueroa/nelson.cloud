@@ -36,7 +36,7 @@
   {{- end }}
 
   {{- if .Content }}
-  <div class="post-content">
+  <div class="post-content" data-pagefind-body>
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}

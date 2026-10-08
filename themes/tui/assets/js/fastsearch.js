@@ -1,56 +1,11 @@
-import * as params from '@params';
-
-let fuse; // holds our search engine
 let resList = document.getElementById('searchResults');
 let sInput = document.getElementById('searchInput');
 let first, last, current_elem = null
 let resultsAvailable = false;
+let searchCount = 0;
 
 // load our search index
-window.onload = function () {
-    let xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                let data = JSON.parse(xhr.responseText);
-                if (data) {
-                    // fuse.js options; check fuse.js website for details
-                    let options = {
-                        distance: 100,
-                        threshold: 0.4,
-                        ignoreLocation: true,
-                        keys: [
-                            'title',
-                            'permalink',
-                            'summary',
-                            'content'
-                        ]
-                    };
-                    if (params.fuseOpts) {
-                        options = {
-                            isCaseSensitive: params.fuseOpts.iscasesensitive ?? false,
-                            includeScore: params.fuseOpts.includescore ?? false,
-                            includeMatches: params.fuseOpts.includematches ?? false,
-                            minMatchCharLength: params.fuseOpts.minmatchcharlength ?? 1,
-                            shouldSort: params.fuseOpts.shouldsort ?? true,
-                            findAllMatches: params.fuseOpts.findallmatches ?? false,
-                            keys: params.fuseOpts.keys ?? ['title', 'permalink', 'summary', 'content'],
-                            location: params.fuseOpts.location ?? 0,
-                            threshold: params.fuseOpts.threshold ?? 0.4,
-                            distance: params.fuseOpts.distance ?? 100,
-                            ignoreLocation: params.fuseOpts.ignorelocation ?? true
-                        }
-                    }
-                    fuse = new Fuse(data, options); // build the index from the json file
-                }
-            } else {
-                console.log(xhr.responseText);
-            }
-        }
-    };
-    xhr.open('GET', "../index.json");
-    xhr.send();
-}
+const pagefindReady = import('/pagefind/pagefind.js');
 
 function activeToggle(ae) {
     document.querySelectorAll('.focus').forEach(function (element) {
@@ -68,6 +23,7 @@ function activeToggle(ae) {
 
 function reset() {
     clearTimeout(searchTimer);
+    searchCount++;
     resultsAvailable = false;
     resList.innerHTML = sInput.value = ''; // clear inputbox and searchResults
     sInput.focus(); // shift focus to input box
@@ -82,41 +38,45 @@ function escapeHTML(str) {
               .replace(/'/g, "&#039;");
 }
 
-function runSearch(query) {
-    if (fuse) {
-        let results;
-        if (params.fuseOpts) {
-            results = fuse.search(query.trim(), {limit: params.fuseOpts.limit}); // the actual query being run using fuse.js along with options
-        } else {
-            results = fuse.search(query.trim()); // the actual query being run using fuse.js
-        }
-        if (results.length !== 0) {
-            // build our html if result exists
-            let resultSet = ''; // our results bucket
+async function runSearch(query) {
+    const thisSearch = ++searchCount;
+    query = query.trim();
+    if (query.length < 2) {
+        resultsAvailable = false;
+        resList.innerHTML = '';
+        return;
+    }
 
-            for (let item in results) {
-                const title = escapeHTML(results[item].item.title);
-                const permalink = results[item].item.permalink;
-                resultSet += `<li class="post-entry"><a class="post-link" href="${permalink}">${title}</a></li>`;
-            }
+    const pagefind = await pagefindReady;
+    const search = await pagefind.search(query); // the actual query being run using pagefind
+    const results = await Promise.all(search.results.slice(0, 20).map(r => r.data()));
+    if (thisSearch !== searchCount) return;
 
-            resList.innerHTML = resultSet;
-            resultsAvailable = true;
-            first = resList.firstChild;
-            last = resList.lastChild;
-        } else {
-            resultsAvailable = false;
-            resList.innerHTML = '';
+    if (results.length !== 0) {
+        // build our html if result exists
+        let resultSet = ''; // our results bucket
+
+        for (const result of results) {
+            const title = escapeHTML(result.meta.title);
+            resultSet += `<li class="post-entry"><a class="post-link" href="${result.url}">${title}</a></li>`;
         }
+
+        resList.innerHTML = resultSet;
+        resultsAvailable = true;
+        first = resList.firstChild;
+        last = resList.lastChild;
+    } else {
+        resultsAvailable = false;
+        resList.innerHTML = '';
     }
 }
 
 // run the search once typing pauses, not on every keystroke
 let searchTimer;
-sInput.onkeyup = function (e) {
+sInput.addEventListener('input', function () {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => runSearch(sInput.value), 150);
-}
+});
 
 sInput.addEventListener('search', function (e) {
     // clicked on x

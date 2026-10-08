@@ -25,6 +25,7 @@ jobs:
         run: |
           hugo version
           hugo --minify --gc
+          npx -y pagefind@1.5.2 --site public
       - name: Push to S3 and CloudFront
         run: |
           aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --delete

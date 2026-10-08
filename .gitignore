@@ -1,5 +1,6 @@
 .DS_Store
 public/
+static/pagefind/
 .hugo_build.lock
 node_modules
 .stylelintrc.json
