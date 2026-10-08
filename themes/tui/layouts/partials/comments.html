@@ -13,11 +13,6 @@
 <div class="giscus"></div>
 
 <script>
-var giscusTheme = "light"
-if (document.body.classList.contains('dark')) {
-    giscusTheme = 'dark'
-}
-
 let giscusAttributes = {
     "src": "https://giscus.app/client.js",
     "data-repo": "nelsonfigueroa/nelson.cloud",
@@ -28,16 +23,20 @@ let giscusAttributes = {
     "data-reactions-enabled": "1",
     "data-emit-metadata": "0",
     "data-input-position": "bottom",
-    "data-loading": "lazy",
-    "data-theme": giscusTheme,
     "data-lang": "en",
     "crossorigin": "anonymous",
     "async": "",
 };
 
-let giscusScript = document.createElement("script");
-Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-document.querySelector('.giscus').appendChild(giscusScript);
+const giscusContainer = document.querySelector('.giscus');
+new IntersectionObserver((entries, observer) => {
+    if (!entries[0].isIntersecting) return;
+    observer.disconnect();
+    giscusAttributes["data-theme"] = document.body.classList.contains('dark') ? 'dark' : 'light';
+    let giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    giscusContainer.appendChild(giscusScript);
+}, { rootMargin: '600px' }).observe(giscusContainer);
 
 document.addEventListener('load', (e) => {
     if (e.target.classList && e.target.classList.contains('giscus-frame')) {
