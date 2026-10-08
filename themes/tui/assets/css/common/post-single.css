@@ -206,13 +206,17 @@
     padding-left: 1rem;
     color: var(--code-block-fg);
     background: var(--code-block-bg) !important;
-    overflow-x: auto;
     word-break: break-all;
+}
+
+.post-content pre.chroma {
+    overflow-x: auto;
 }
 
 /* border only on code blocks WITHOUT syntax highlighting (the .highlight wrapper provides the border for chroma blocks) */
 .post-content pre:not(.chroma) code {
     border: 1px solid var(--border);
+    overflow-x: auto;
 }
 
 .post-content iframe {
