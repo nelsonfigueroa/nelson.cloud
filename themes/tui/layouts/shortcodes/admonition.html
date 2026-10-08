@@ -29,7 +29,7 @@
     {{- $title = index $defaultTitles $type | default "Note" -}}
 {{- end -}}
 
-<div class="admonition admonition-{{ $type }}">
+<aside class="admonition admonition-{{ $type }}">
     <div class="admonition-title">
         <span class="admonition-icon"></span>
         <span>{{ $title }}</span>
@@ -37,4 +37,4 @@
     <div class="admonition-content">
         {{- $inner -}}
     </div>
-</div>
+</aside>

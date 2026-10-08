@@ -73,8 +73,8 @@
       {{- if and site.Params.ShowFullTextinRSS .Content }}
       {{- $content := .Content -}}
       {{- $content = replaceRE `<span class="code-lang">[^<]*</span>` "" $content -}}
-      {{- $content = replaceRE `<div class="admonition admonition-(\w+)">\s*<div class="admonition-title">\s*<span class="admonition-icon"></span>\s*<span>([^<]+)</span>\s*</div>\s*<div class="admonition-content">` `<blockquote><p><strong>$2:</strong></p>` $content -}}
-      {{- $content = replaceRE `</div>\s*</div>(\s*</div>)?` `</blockquote>` $content -}}
+      {{- $content = replaceRE `<aside class="admonition admonition-(\w+)">\s*<div class="admonition-title">\s*<span class="admonition-icon"></span>\s*<span>([^<]+)</span>\s*</div>\s*<div class="admonition-content">` `<blockquote><p><strong>$2:</strong></p>` $content -}}
+      {{- $content = replaceRE `</div>\s*</aside>` `</blockquote>` $content -}}
       {{- $content = replaceRE `(src|href)="/([^/])` (printf `${1}="%s/${2}` (strings.TrimSuffix "/" site.BaseURL)) $content -}}
       <content:encoded>{{ (printf "<![CDATA[%s]]>" $content) | safeHTML }}</content:encoded>
       {{- end }}
