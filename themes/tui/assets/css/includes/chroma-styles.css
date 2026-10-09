@@ -42,7 +42,7 @@
 }
 
 /* light mode text palette: One Dark */
-.highlight:hover .chroma {
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma {
     --syn-plain: #abb2bf;
     --syn-keyword: #c678dd;
     --syn-function: #61afef;
@@ -57,11 +57,11 @@
 
 /* one dark accents beyond the slots: tags/keys red, classes yellow.
    body:not(.dark) keeps them out of the dark (eva) palette */
-body:not(.dark) .highlight:hover .chroma .nt { color: #e06c75; }
-body:not(.dark) .highlight:hover .chroma :is(.nc, .ne) { color: #e5c07b; }
+body:not(.dark) .highlight:is(:hover, :has(> pre:focus-visible)) .chroma .nt { color: #e06c75; }
+body:not(.dark) .highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.nc, .ne) { color: #e5c07b; }
 
 /* dark mode text palette: Eva Dark (fisheva) */
-.dark .highlight:hover .chroma {
+.dark .highlight:is(:hover, :has(> pre:focus-visible)) .chroma {
     --syn-plain: #9da5b3;
     --syn-keyword: #cf68e1;
     --syn-function: #6495ee;
@@ -76,8 +76,8 @@ body:not(.dark) .highlight:hover .chroma :is(.nc, .ne) { color: #e5c07b; }
 
 /* eva accents beyond the slots: declaration/import keywords get its
    second violet, primitive types get its pink */
-.dark .highlight:hover .chroma :is(.kd, .kn) { color: #a78cfa; }
-.dark .highlight:hover .chroma .kt { color: #ff6ab3; }
+.dark .highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.kd, .kn) { color: #a78cfa; }
+.dark .highlight:is(:hover, :has(> pre:focus-visible)) .chroma .kt { color: #ff6ab3; }
 
 /* ==== per-mode surfaces (not slot-driven; unchanged on hover) ======== */
 

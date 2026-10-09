@@ -64,6 +64,16 @@ a:focus-visible {
     background-color: var(--link-hover-bg);
 }
 
+.post-content summary:focus-visible,
+.post-content .highlight:has(> pre:focus-visible) {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.post-content .highlight:has(> pre:focus-visible) > pre {
+    outline: none;
+}
+
 /* pagination buttons */
 .pagination a:hover,
 .pagination a:focus-visible {
@@ -326,6 +336,15 @@ h2.page-header {
 
 .toc details[open] summary::before {
     content: "[-] ";
+}
+
+.toc summary:focus-visible {
+    color: var(--link-hover-fg);
+    background-color: var(--link-hover-bg);
+}
+
+.toc summary:focus-visible::before {
+    color: var(--link-hover-secondary);
 }
 
 .toc .inner ul {
