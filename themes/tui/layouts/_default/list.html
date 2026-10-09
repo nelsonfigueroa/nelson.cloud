@@ -64,7 +64,11 @@
 <article class="{{ $class }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-  <a class="post-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"><span>{{- .Title }}</span></a>
+  {{- if $.IsHome }}
+  <h3><a class="post-link" href="{{ .Permalink }}"><span>{{- .Title }}</span></a></h3>
+  {{- else }}
+  <h2><a class="post-link" href="{{ .Permalink }}"><span>{{- .Title }}</span></a></h2>
+  {{- end }}
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
@@ -83,15 +87,15 @@
 <div class="paginav paginav-row">
   {{- partial "random_post_button.html" . }}
 </div>
-<nav class="paginav paginav-row">
+<div class="paginav paginav-row">
   <a href="/posts/">See all Posts »</a>
-</nav>
+</div>
 {{- end }}
 
 {{/* pagination */}}
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
-  <nav class="pagination">
+  <nav class="pagination" aria-label="Pagination">
     {{- if $paginator.HasPrev }}
     <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
       «&nbsp;{{ i18n "prev_page" }}&nbsp;

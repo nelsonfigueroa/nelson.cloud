@@ -3,7 +3,7 @@
 <h2 class="page-header">Featured Posts</h2>
 {{- range $featured }}
 <article class="post-entry">
-  <a class="post-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"><span>{{- .Title }}</span></a>
+  <h3><a class="post-link" href="{{ .Permalink }}"><span>{{- .Title }}</span></a></h3>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>

@@ -234,6 +234,11 @@ a:focus-visible {
     line-height: 1.1;
 }
 
+.post-entry :is(h2, h3) {
+    font-weight: inherit;
+    line-height: inherit;
+}
+
 .post-link::before {
     content: "[";
     color: var(--tertiary);

@@ -1,6 +1,6 @@
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- if and (gt (len $pages) 1) (in $pages . ) }}
-<nav class="paginav">
+<nav class="paginav" aria-label="Previous and next post">
   {{- with $pages.Next . }}
   <a class="prev" href="{{ .Permalink }}">
     <span class="title">« {{ i18n "prev_page" }}</span>
@@ -19,7 +19,7 @@
 <div class="paginav paginav-row">
   {{- partial "random_post_button.html" . }}
 </div>
-<nav class="paginav paginav-row">
+<div class="paginav paginav-row">
   <a href="/">Return Home</a>
-</nav>
+</div>
 {{- end }}

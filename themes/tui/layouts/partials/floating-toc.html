@@ -9,7 +9,7 @@
     <div class="dynamic-toc-header">
         <span class="dynamic-toc-title">{{- i18n "toc" | default "Contents" }}</span>
     </div>
-    <nav id="dynamic-toc-nav">
+    <nav id="dynamic-toc-nav" aria-label="Table of contents">
         {{- if (.Param "UseHugoToc") }}
         {{- .TableOfContents -}}
         {{- else }}

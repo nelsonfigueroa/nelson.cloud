@@ -7,6 +7,7 @@ ShowReadingTime = false
 ShowWordCount = false
 ShowToc = true
 TocOpen = true
+disableAnchoredHeadings = true
 +++
 
 Links that I found interesting for one reason or another.

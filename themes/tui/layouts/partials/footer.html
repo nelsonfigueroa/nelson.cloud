@@ -60,9 +60,12 @@
 {{- end }}
 
 <script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.setAttribute("aria-pressed", document.body.classList.contains("dark"));
+    themeToggle.addEventListener("click", () => {
         const dark = document.body.classList.toggle("dark");
         localStorage.setItem("pref-theme", dark ? "dark" : "light");
+        themeToggle.setAttribute("aria-pressed", dark);
     });
 </script>
 
