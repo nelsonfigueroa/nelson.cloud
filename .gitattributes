@@ -1,1 +1,1 @@
-static/**/*.php linguist-detectable=false
+static/**/*.php -linguist-detectable
