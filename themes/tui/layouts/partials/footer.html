@@ -86,7 +86,20 @@
         }
 
         copybutton.addEventListener('click', () => {
-            navigator.clipboard.writeText(codeblock.textContent).then(copyingDone);
+            let text = codeblock.textContent;
+            if (codeblock.dataset.lang === 'console') {
+                const commands = [];
+                let continued = false;
+                for (const line of codeblock.querySelectorAll('.line')) {
+                    const prompt = line.querySelector('.gp');
+                    if (!prompt && !continued) continue;
+                    const command = prompt ? line.textContent.replace(prompt.textContent, '').trim() : line.textContent.trimEnd();
+                    commands.push(command);
+                    continued = command.endsWith('\\');
+                }
+                text = commands.join('\n');
+            }
+            navigator.clipboard.writeText(text).then(copyingDone);
         });
 
         if (container.classList.contains("highlight")) {
