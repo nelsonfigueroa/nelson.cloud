@@ -1,6 +1,7 @@
 +++
 title = "About Me"
 layout = "static-page"
+schemaType = "ProfilePage" # used in schema_json.html, for SEO purposes.
 hideMeta = true # don't show updated date and etc
 ShowReadingTime = false
 ShowWordCount = false

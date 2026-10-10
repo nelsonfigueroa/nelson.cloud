@@ -24,7 +24,6 @@
   "url" $home
   "description" site.Params.description
   "jobTitle" (site.Params.schema.jobTitle | default "Software Engineer")
-  "image" (site.Params.assets.favicon | default "favicon.ico" | absURL)
   "knowsAbout" $knowsAbout
   "sameAs" $sameAs
 -}}
@@ -70,7 +69,7 @@
     "@id" (printf "%s#breadcrumb" .Permalink)
     "itemListElement" $crumbs) -}}
 
-  {{- if .IsPage -}}
+  {{- if and .IsPage (in site.Params.mainSections .Type) -}}
     {{- $desc := "" -}}
     {{- with .Description -}}{{- $desc = . | plainify | htmlUnescape -}}{{- else -}}{{- $desc = .Summary | plainify | htmlUnescape -}}{{- end -}}
 
@@ -88,7 +87,7 @@
     {{- else -}}
       {{- $og := partial "generate-opengraph-image.html" . -}}
       {{- with $og -}}
-        {{- $image = dict "@type" "ImageObject" "url" .Permalink "width" 1200 "height" 630 -}}
+        {{- $image = dict "@type" "ImageObject" "url" .Permalink "width" .Width "height" .Height -}}
       {{- else -}}
         {{- $images := partial "templates/_funcs/get-page-images" . -}}
         {{- with index $images 0 -}}{{- $image = .Permalink -}}{{- end -}}
@@ -113,6 +112,23 @@
     -}}
     {{- if $image -}}{{- $post = merge $post (dict "image" $image) -}}{{- end -}}
     {{- $graph = $graph | append $post -}}
+  {{- else if .IsPage -}}
+    {{- $desc := "" -}}
+    {{- with .Description -}}{{- $desc = . | plainify | htmlUnescape -}}{{- else -}}{{- $desc = .Summary | plainify | htmlUnescape -}}{{- end -}}
+
+    {{- $page := dict
+      "@type" (.Params.schemaType | default "WebPage")
+      "@id" (printf "%s#webpage" .Permalink)
+      "url" .Permalink
+      "name" (.Title | plainify)
+      "description" $desc
+      "inLanguage" (.Language.Lang | default "en-us")
+      "isPartOf" (dict "@id" $websiteID)
+    -}}
+    {{- if eq .Params.schemaType "ProfilePage" -}}
+      {{- $page = merge $page (dict "mainEntity" (dict "@id" $personID) "dateModified" .Lastmod) -}}
+    {{- end -}}
+    {{- $graph = $graph | append $page -}}
   {{- end -}}
 {{- end -}}
 

@@ -103,6 +103,9 @@ params:
     - name: linkedin
       title: LinkedIn
       url: "https://www.linkedin.com/in/nelsonfigueroa1/"
+    - name: mastodon
+      title: Mastodon
+      url: "https://infosec.exchange/@nelson"
     - name: rss
       title: RSS Feed
       url: "/index.xml"

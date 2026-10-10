@@ -5,4 +5,8 @@ layout = "search" # necessary for search
 # description = "Description for Search"
 summary = "Search for posts across all of nelson.cloud"
 placeholder = "Start typing to search posts"
+robotsNoIndex = true
+
+[sitemap]
+disable = true
 +++
