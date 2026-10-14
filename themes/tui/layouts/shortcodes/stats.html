@@ -11,7 +11,6 @@
 {{- $inline := 0 -}}
 {{- $langBlocks := dict -}}
 {{- $langLines := dict -}}
-{{- $swears := dict -}}
 {{- $links := 0 -}}
 {{- $weekdays := dict -}}
 
@@ -36,13 +35,6 @@
     {{- $langLines = merge $langLines (dict $name (add $lines (index $langLines $name | default 0))) -}}
   {{- end -}}
   {{- $inline = add $inline (len (findRE `<code[ >]` (replaceRE `(?s)<pre.*?</pre>` " " .Content))) -}}
-
-  {{- $writing := .Content | replaceRE `(?s)<pre.*?</pre>` " " | replaceRE `(?s)<code.*?</code>` " " | plainify | replaceRE `https?://\S+` " " -}}
-  {{- $text := printf "%s %s %s" .Title (.Summary | plainify) $writing -}}
-  {{- range findRE `(?i)\b(\w*fuck\w*|\w*shit\w*|ass|asshole\w*|piss\w*|bitch\w*|cunt\w*|wtf)\b` $text -}}
-    {{- $w := lower . -}}
-    {{- $swears = merge $swears (dict $w (add 1 (index $swears $w | default 0))) -}}
-  {{- end -}}
 
   {{- range findRE `href="https?://[^"]+"` .Content -}}
     {{- $host := replaceRE `^href="https?://([^/"?#:]*).*$` "$1" . | lower | strings.TrimPrefix "www." -}}
@@ -91,19 +83,15 @@
 {{- end -}}
 {{- $langRows = sort $langRows "count" "desc" -}}
 
-{{- $swearTotal := 0 -}}
-{{- range $k, $v := $swears -}}{{- $swearTotal = add $swearTotal $v -}}{{- end -}}
-
 {{- $categoryCount := len site.Taxonomies.categories -}}
 
-<p>Last generated on {{ now.Format $fmt }}</p>
+Site stats that I thought were cool and fun.
 
 {{- $overview := slice
   (dict "key" "Total posts" "value" $count)
   (dict "key" "Writing since" "value" ($first.Date.Format $fmt))
   (dict "key" "Writing for" "value" (delimit $writingFor ", "))
   (dict "key" "Words written" "value" (lang.FormatNumberCustom 0 $words))
-  (dict "key" "Swear words" "value" $swearTotal)
   (dict "key" "Total read time" "value" (printf "%dh %dm" (div $minutes 60) (mod $minutes 60)))
   (dict "key" "Number of images" "value" $images)
   (dict "key" "External links" "value" (lang.FormatNumberCustom 0 $links))

@@ -6,7 +6,7 @@ ShowReadingTime = false
 ShowWordCount = false
 ShowToc = true
 TocOpen = true
-summary = "Numbers about this site: posts, words, code blocks, and swear words."
+summary = "Fun and cool stats about this site."
 +++
 
 {{< stats >}}
