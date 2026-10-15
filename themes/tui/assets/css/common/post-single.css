@@ -224,15 +224,11 @@
 }
 
 .post-content img {
-    margin: 1rem 0;
+    margin: 1rem auto;
     border: 1px solid var(--border);
 }
 
-.post-content img[src*="#center"] {
-    margin: 1rem auto;
-}
-
-.post-content figure.align-center {
+.post-content figure {
     text-align: center;
 }
 

@@ -28,4 +28,4 @@ I am not necessarily anti-AI. I regularly use AI at work to get things done and 
 
 At the end of the day, the stock needs to go up. Shorter work days will not make it go up. Increased output in the same amount of time will.
 
-<img src="/ai-and-productivity-gains/question.webp#center" alt="Wojak staring over mountains and thinking 'Am I providing enough value to the shareholders?'" width="400" height="414" style="max-width: 100%; height: auto; aspect-ratio: 1237 / 1280;" loading="lazy" decoding="async">
+<img src="/ai-and-productivity-gains/question.webp" alt="Wojak staring over mountains and thinking 'Am I providing enough value to the shareholders?'" width="400" height="414" style="max-width: 100%; height: auto; aspect-ratio: 1237 / 1280;" loading="lazy" decoding="async">
