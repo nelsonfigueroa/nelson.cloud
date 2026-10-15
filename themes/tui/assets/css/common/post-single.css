@@ -41,7 +41,6 @@
 /* basically <header><h1>...so keep this consistent with H1 */
 .post-title {
     margin-bottom: 2px;
-    /* font-size: 24px; */
 }
 
 .post-content :is(h1, h2, h3, h4, h5, h6) {
