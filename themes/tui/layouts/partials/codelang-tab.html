@@ -1,4 +1,16 @@
 {{- $h := .highlighted | string -}}
+{{- if in (slice "console" "bash" "sh" "shell" "zsh") (lower .lang) -}}
+  {{- $lines := slice -}}
+  {{- range split $h `<span class="line">` -}}
+    {{- $l := . -}}
+    {{- if not (strings.Contains $l `class="go"`) -}}
+      {{- $l = replaceRE `(<span class="cl">(?:<span class="gp">[^<]*</span> )?|<span class="[op]">(?:\||;|&amp;&amp;|\|\|)</span> |<span class="k">(?:do|then|else)</span> )([\w.~/][\w.~/-]*)` `${1}<span class="nb">${2}</span>` $l -}}
+      {{- $l = replaceRE `(\s)(--?[A-Za-z][\w-]*)` `${1}<span class="no">${2}</span>` $l -}}
+    {{- end -}}
+    {{- $lines = $lines | append $l -}}
+  {{- end -}}
+  {{- $h = delimit $lines `<span class="line">` -}}
+{{- end -}}
 {{- with .lang -}}
   {{- $label := index hugo.Data.codelang (lower .) | default . -}}
   {{- $tab := printf `<span class="code-lang">%s</span>` $label -}}

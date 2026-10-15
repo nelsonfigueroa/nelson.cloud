@@ -603,7 +603,8 @@ h2.page-header {
     font-family: 'Commit Mono', monospace;
     font-size: 0.72rem;
     line-height: 1;
-    color: var(--code-block-tab-text);
+    color: var(--code-block-muted);
+    font-style: italic;
     background: var(--code-block-bg);
     border-right: 1px solid var(--code-block-tab-border);
     border-bottom: 1px solid var(--code-block-tab-border);
