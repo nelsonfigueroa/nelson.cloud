@@ -2,6 +2,7 @@
 title = "AI Productivity Gains Mainly Benefit People At The Top"
 summary = "While we were promised shorter workdays thanks to AI, it has only increased expectations and surplus value goes to the executives and shareholders."
 date = "2026-09-14"
+lastmod = "2026-10-17T15:00:07-07:00"
 categories = ["AI", "Opinion"]
 ShowToc = false
 TocOpen = false
@@ -10,7 +11,7 @@ featured = false
 
 Every time a new technology is introduced that increases productivity people are told that it will allow for more free time and shorter workdays. But that has not been the case. Instead, what happens is that the baseline expectation goes up. There isn't less work or more free time. It is no different this time around with AI. When I say "AI", I am specifically talking about [generative AI](https://en.wikipedia.org/wiki/Generative_AI) like [LLMs](https://en.wikipedia.org/wiki/Large_language_model).
 
-In ["The Gentle Singularity"](https://blog.samaltman.com/the-gentle-singularity), Sam Altman of OpenAI said "Expectations will go up, but capabilities will go up equally quickly, and we'll all get better stuff." The "better stuff" has yet to arrive for the average person. [Fortune reported](https://web.archive.org/web/20240107020025/https://fortune.com/2023/10/03/jamie-dimon-jpmorgan-chase-ceo-ai-impact-working-week/) that JPMorgan Chase CEO Jamie Dimon said "People have to take a deep breath. Technology has always replaced jobs. Your children are going to live to 100 and not have cancer because of technology, and literally they'll probably be working three and a half days a week."
+In ["The Gentle Singularity"](https://blog.samaltman.com/the-gentle-singularity), Sam Altman of OpenAI said "Expectations will go up, but capabilities will go up equally quickly, and we'll all get better stuff." The "better stuff" has yet to arrive for the average person. [Fortune reported](https://web.archive.org/web/20240107020025/https://fortune.com/2023/10/03/jamie-dimon-jpmorgan-chase-ceo-ai-impact-working-week/) that JPMorgan Chase CEO Jamie Dimon said "People have to take a deep breath. Technology has always replaced jobs. Your children are going to live to 100 and not have cancer because of technology, and literally they'll probably be working three and a half days a week." More recently, Jeff Bezos reiterated the three-day work week. [Forbes reported](https://www.forbes.com/sites/siladityaray/2026/10/08/jeff-bezos-claims-ai-could-allow-for-3-day-workweeks-and-one-income-families/) that Bezos believes AI productivity gains could let some people decide "I can support my family by working three days a week".
 
 These are the kinds of dreams we're sold when a new technology arrives.
 
