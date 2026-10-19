@@ -23,6 +23,15 @@ pre.ascii-art {
     line-height: 1; /* braille requires line-height: 1 to look okay */
     white-space: pre;
     margin: 0;
+    position: relative;
+}
+
+/* border for ascii art */
+pre.ascii-art::before {
+    content: "";
+    position: absolute;
+    inset: 0.5em 0.3em;
+    border: 1px solid;
 }
 
 /* background mountains should be darker */
