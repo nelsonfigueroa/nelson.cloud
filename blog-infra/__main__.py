@@ -121,9 +121,34 @@ revalidate_headers_policy = aws.cloudfront.ResponseHeadersPolicy(
     },
 )
 
+php_headers_policy = aws.cloudfront.ResponseHeadersPolicy(
+    "php-headers",
+    name="php-headers",
+    comment="headers for *.php files",
+    custom_headers_config={
+        "items": [
+            {
+                "header": "X-Powered-By",
+                "value": "PHP/8.3.35",
+                "override": True,
+            }
+        ]
+    },
+    remove_headers_config={
+        "items": [
+            {"header": "Server"},
+            {"header": "ETag"},
+            {"header": "Last-Modified"},
+        ]
+    },
+)
+
 # just a helper that is used to fill in config in nelson.cloud cloudfront distribution ordered_cache_behaviors[]
-def nelson_cloud_asset_behavior(path_pattern, response_headers_policy):
-    """Cache behavior that only exists to attach a Cache-Control header."""
+def nelson_cloud_asset_behavior(
+    path_pattern: str,
+    response_headers_policy: aws.cloudfront.ResponseHeadersPolicy,
+) -> aws.cloudfront.DistributionOrderedCacheBehaviorArgsDict:
+    """Cache behavior that only exists to attach a response headers policy."""
     return {
         "path_pattern": path_pattern,
         "allowed_methods": ["GET", "HEAD"],
@@ -314,6 +339,7 @@ nelson_cloud_distribution = aws.cloudfront.Distribution(
         # Hugo writes fingerprinted CSS and JS under /assets/
         nelson_cloud_asset_behavior("/assets/*", immutable_assets_headers_policy),
         nelson_cloud_asset_behavior("*.woff2", long_lived_headers_policy),
+        nelson_cloud_asset_behavior("*.php", php_headers_policy),
         *[
             nelson_cloud_asset_behavior(pattern, images_headers_policy)
             for pattern in ["*.webp", "*.png", "*.gif", "*.ico"]
