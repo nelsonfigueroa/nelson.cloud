@@ -103,6 +103,8 @@ categories:
         title: "The Git Commands I Run Before Reading Any Code"
       - url: "https://will-keleher.com/posts/small-programming-tricks-matter/"
         title: "Small Programming Tricks"
+      - url: "https://codeandcake.dev/posts/2026-10-22-docker-is-weird"
+        title: "Docker is weird"
 
   - name: "Artificial Intelligence"
     links:
