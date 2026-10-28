@@ -160,6 +160,8 @@ categories:
         title: "Grieving the loss of details"
       - url: "https://www.seangoedecke.com/software-engineers-dont-get-to-be-luddites-about-ai/"
         title: "Software engineers don't get to be Luddites about AI"
+      - url: "https://hrih.si/articles/the-compiler-was-supposed-to-end-programming/"
+        title: "The compiler was supposed to end programming too"
 
   - name: "On Writing and Blogging"
     links:
@@ -436,6 +438,8 @@ categories:
         title: "Can You Beat The Market?"
       - url: "https://http.cat/"
         title: "HTTP Cats"
+      - url: "https://fred.stlouisfed.org/series/W270RE1A156NBEA"
+        title: "Shares of gross domestic income: Compensation of employees, paid: Wage and salary accruals: Disbursements: to persons"
 
   - name: "Other Sites That Share Links"
     links:
