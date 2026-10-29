@@ -3,7 +3,7 @@ title = "Handling Decimal Precision in Rails"
 summary = "Configure Rails decimal columns with precision and scale to prevent rounding errors."
 date = "2021-03-22"
 lastmod = "2026-04-01T22:35:32-07:00"
-categories = ["Ruby on Rails"]
+categories = ["Ruby on Rails", "Databases"]
 ShowToc = true
 TocOpen = true
 +++
