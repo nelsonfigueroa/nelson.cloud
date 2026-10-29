@@ -542,6 +542,10 @@ h2.page-header {
     margin-bottom: 1rem;
 }
 
+.post-content > details[open] + details {
+    margin-top: 40px;
+}
+
 .post-content .link-grid {
     display: grid;
     padding: 0;
