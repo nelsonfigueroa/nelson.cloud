@@ -2,7 +2,7 @@
 title = "How to Remove Rounded Firefox Tabs"
 summary = "You can remove Firefox's rounded tabs and other rounded elements with a few lines of CSS."
 date = "2026-10-31"
-categories = ["CSS"]
+categories = ["CSS", "Firefox"]
 ShowToc = false
 TocOpen = false
 featured = false
