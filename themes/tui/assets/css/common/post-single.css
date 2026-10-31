@@ -170,7 +170,7 @@
 
 /* code blocks with syntax highlighting */
 .post-content .highlight:not(table) {
-    margin: 10px auto;
+    margin: 10px auto var(--content-gap);
     background: var(--code-block-bg) !important;
     direction: ltr;
     border: 1px solid var(--border);
