@@ -6,8 +6,8 @@
         {{- range . -}}
           <li>
             <a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a>
-            {{- if .Params.summary -}}
-              <p class="related-summary">{{ .Params.summary }}</p>
+            {{- if .RawSummary -}}
+              <p class="related-summary">{{ .RawSummary }}</p>
             {{- end -}}
           </li>
         {{- end -}}

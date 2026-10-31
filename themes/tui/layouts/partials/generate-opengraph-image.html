@@ -30,7 +30,7 @@
   {{- $descY := add 80 (mul (len $titleLines) 56) | add 12 -}}
 
   {{/* Description below title, greedy word-wrapped. --secondary in dark mode. */}}
-  {{- $desc := or .Description .Params.summary -}}
+  {{- $desc := or .Description .RawSummary -}}
   {{- with $desc -}}
     {{- $maxChars := 65 -}}
     {{- $lines := slice -}}

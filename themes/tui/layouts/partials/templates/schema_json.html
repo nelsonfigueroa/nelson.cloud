@@ -74,7 +74,7 @@
     {{- with .Description -}}{{- $desc = . | plainify | htmlUnescape -}}{{- else -}}{{- $desc = .Summary | plainify | htmlUnescape -}}{{- end -}}
 
     {{- $keywords := slice -}}
-    {{- with .Params.keywords -}}{{- range . -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+    {{- with .Keywords -}}{{- range . -}}{{- $keywords = $keywords | append . -}}{{- end -}}
     {{- else -}}{{- range .Params.tags -}}{{- $keywords = $keywords | append . -}}{{- end -}}{{- end -}}
 
     {{- $image := "" -}}
