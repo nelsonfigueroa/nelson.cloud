@@ -68,5 +68,5 @@ There are other ways of handling this, like using the `send_data` method in a co
 
 References:
 - https://www.w3schools.com/tags/att_a_download.asp
-- https://forum.upcase.com/t/download-html-file-instead-of-opening-in-browser-with-link-to/2994
+- https://web.archive.org/web/20251103201007/https://forum.upcase.com/t/download-html-file-instead-of-opening-in-browser-with-link-to/2994
 - https://www.reddit.com/r/rails/comments/co0h6i/whats_the_best_way_create_a_download_image_link/

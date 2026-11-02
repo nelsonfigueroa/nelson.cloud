@@ -15,11 +15,11 @@ Hack The Box is an online penetration testing platform where users can practice 
 2022-12-10 Update: I noticed that hackthebox no longer requires users to solve a puzzle to register, so this post no longer applies :(
 {{< /admonition >}}
 
-To sign up to the site, I was redirected to [https://www.hackthebox.eu/invite](https://www.hackthebox.eu/invite). There is a single field that prompts for an invite code. Other than that, there are no clues on the surface.
+To sign up to the site, I was redirected to [https://www.hackthebox.eu/invite](https://web.archive.org/web/20210401162642/https://www.hackthebox.eu/invite). There is a single field that prompts for an invite code. Other than that, there are no clues on the surface.
 
 <img src="/hacking-hack-the-box/invitecode.webp" alt="Invite code field" width="610" height="260" style="max-width: 100%; height: auto; aspect-ratio: 610 / 260;" loading="lazy" decoding="async">
 
-The first thing I did was to inspect the code by simply right-clicking on the page and selecting 'View Page Source'. Once I had the raw code in front of me, I tried to look for any clues as to how to get in. I ended up finding a JavaScript file that looked like exactly what I needed due to its name: [inviteapi.min.js](https://www.hackthebox.eu/js/inviteapi.min.js). However, it was minified and hard to decipher just by looking at it:
+The first thing I did was to inspect the code by simply right-clicking on the page and selecting 'View Page Source'. Once I had the raw code in front of me, I tried to look for any clues as to how to get in. I ended up finding a JavaScript file that looked like exactly what I needed due to its name: [inviteapi.min.js](https://web.archive.org/web/20210905130615/https://www.hackthebox.eu/js/inviteapi.min.js). However, it was minified and hard to decipher just by looking at it:
 
 ```javascript
 eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1 i(4){h 8={"4":4};$.9({a:"7",5:"6",g:8,b:\'/d/e/n\',c:1(0){3.2(0)},f:1(0){3.2(0)}})}1 j(){$.9({a:"7",5:"6",b:\'/d/e/k/l/m\',c:1(0){3.2(0)},f:1(0){3.2(0)}})}',24,24,'response|function|log|console|code|dataType|json|POST|formData|ajax|type|url|success|api|invite|error|data|var|verifyInviteCode|makeInviteCode|how|to|generate|verify'.split('|'),0,{}))
