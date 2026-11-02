@@ -14,18 +14,18 @@ Firefox [157.0](https://www.firefox.com/en-US/firefox/157.0/releasenotes/) made 
 
 This has been tested on Firefox v159.
 
-1. Type `about:config` in your browser and press enter. If you see a "Proceed with Caution" screen, click on "Accept the Risk and Continue".
+1. Type `about:config` in your address bar and press enter. If you see a "Proceed with Caution" screen, click on "Accept the Risk and Continue".
 2. Type `toolkit.legacyUserProfileCustomizations.stylesheets` into the search field and press enter.
-3. In the result that comes up, click on the circle icon on the right side. The `false` value should change to `true`.
-4. Next, go to `about:support`, search for "Profile Folder". You should see the full path to your Firefox profile, usually ending with `.default-release`. Open that directory.
-5. In that folder, create a folder named "chrome". Then, create a file inside it called "userChrome.css".
-6. Copy and paste this CSS into "userChrome.css":
+3. In the result that comes up, click the toggle button on the right side (or double click the row). The `false` value should change to `true`.
+4. Next, type `about:support` in your address bar and press enter. Use CTRL/CMD + F to search for "Profile Folder". You should see the full path to your Firefox profile, usually ending with `.default-release`. Open that folder.
+5. In that folder, create a folder named "chrome" (all lowercase). Then, create a file inside it called "userChrome.css".
+6. Open "userChrome.css" with a plain text editor. Copy and paste this CSS into it:
    ```css
    :root {
      --tab-border-radius: 4px !important;
    }
    ```
-7. Save "userChrome.css" and restart Firefox.
+7. Save "userChrome.css". Make sure the file ends with `.css`. Then restart Firefox.
 
 The tabs are more squared now. I like my tabs boxy, but you can tweak the `4px` value and increase it if you want more roundness, or set it to `0px` if you want fully square corners. Just remember to restart Firefox after editing and saving. Here's a before and after screenshot:
 
@@ -54,7 +54,7 @@ Then restart Firefox. Your address bar, menus, and bookmarks should be more squa
 
 ## Squaring off the New Tab and Home Pages
 
-In the same "chrome" directory that you previously created, create a new file named "userContent.css" and add this CSS to it:
+In the same "chrome" folder that you previously created, create a new file named "userContent.css" and add this CSS to it:
 
 ```css
 @-moz-document url("about:newtab"), url("about:home") {
