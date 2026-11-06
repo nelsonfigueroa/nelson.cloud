@@ -34,7 +34,7 @@ Web Developer @ [CSU Northridge](https://www.csun.edu/) (2018 - 2019)
 
 **Programming Languages**: Ruby, Python, Bash, Go
 
-**Web Technologies**: Ruby on Rails, HTML, CSS, JavaScript, Bootstrap CSS, Bulma CSS
+**Web Technologies**: Ruby on Rails, HTML, CSS, JavaScript
 
 **Databases**: MySQL, SQLite 3, PostgreSQL, DynamoDB
 
