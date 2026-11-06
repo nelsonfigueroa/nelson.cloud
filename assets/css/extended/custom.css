@@ -581,6 +581,7 @@ h2.page-header {
 
 .link-count {
     color: var(--secondary);
+    white-space: nowrap;
 }
 
 /* inverse link counts on hover/focus, for /links/ page */
