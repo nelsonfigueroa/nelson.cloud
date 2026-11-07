@@ -57,6 +57,10 @@ outputs:
   home:
     - HTML
     - RSS
+  section:
+    - HTML
+  taxonomy:
+    - HTML
 
 params:
   # enable giscus comments
