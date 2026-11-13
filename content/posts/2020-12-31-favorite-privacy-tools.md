@@ -12,7 +12,7 @@ This is a collection of my most used privacy tools and services. I have not been
 
 ## Firefox
 
-**Official site:** [https://www.mozilla.org/](https://www.firefox.com/en-US/)
+**Official site:** [https://www.firefox.com/](https://www.firefox.com/en-US/)
 
 Firefox has always been a great alternative to Chrome for privacy purposes. Firefox is, in my opinion, the only real alternative to Chrome and Chromium-based browsers. Sure there's also Safari but the support for extensions is butchered. If I can't install [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) on a browser, I don't use it.
 

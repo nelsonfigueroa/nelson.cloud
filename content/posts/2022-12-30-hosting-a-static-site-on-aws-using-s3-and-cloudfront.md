@@ -44,7 +44,7 @@ Save changes.
 
 <img src="/hosting-a-static-site-on-aws-using-s3-and-cloudfront/bucket-public-access.webp" alt="S3 bucket access." width="720" height="586" style="max-width: 100%; height: auto; aspect-ratio: 1572 / 1280;" loading="lazy" decoding="async">
 
-Next, still under the "Permissions tab", click the "Edit" button on the "Bucket policy" section. We need to add permissions for public access. Here is what the policy should look like. Change the bucket name after `Resource` to your bucket name:
+Next, still under the "Permissions" tab, click the "Edit" button on the "Bucket policy" section. We need to add permissions for public access. Here is what the policy should look like. Change the bucket name after `Resource` to your bucket name:
 
 ```json
 {

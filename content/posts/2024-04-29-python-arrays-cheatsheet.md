@@ -8,7 +8,7 @@ ShowToc = true
 TocOpen = false
 +++
 
-This is yet another cheatsheet I made for myself when studying for [Leetcode](https://leetcode.com/) and [Hackerrank](https://www.hackerrank.com/) kinds of interviews. It's organized in a way that makes sense to me.
+This is yet another cheatsheet I made for myself when studying for [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/) kinds of interviews. It's organized in a way that makes sense to me.
 
 I previously made a [Ruby Arrays Cheatsheet]({{< ref "/posts/2024-04-10-ruby-arrays-cheatsheet.md" >}}) you can check out.
 
@@ -53,7 +53,7 @@ print(my_list)
 
 ### At the Beginning of a List
 
-We can also use `insert()` to add elements to the beginning of a list by specifying index 0:
+We can use `insert()` to add elements to the beginning of a list by specifying index 0:
 
 ```python
 my_list = [1, 2, 3]

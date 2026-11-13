@@ -24,7 +24,7 @@ git shortlog -sea | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6
 ```
 {{< /admonition >}}
 
-## Command Break Down
+## Command Breakdown
 
 The `git shortlog -sea` part of the command is short for `git shortlog --summary --email --all`. This command outputs the number of commits each user has made, along with their name and email, across all branches.
 

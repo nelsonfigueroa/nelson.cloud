@@ -77,7 +77,7 @@ That code has the same output as before:
 
 The `colored` function from the `termcolor` library makes it much cleaner to colorize terminal output.
 
-There are many ANSI codes for colors. Here's a few examples of different colors:
+There are many ANSI codes for colors. Here are a few examples of different colors:
 
 | Color   | Code | Escape String | Output |
 |---------|------|---------------|------------|

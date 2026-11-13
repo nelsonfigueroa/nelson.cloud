@@ -42,7 +42,7 @@ Terraform has since been removed from [homebrew-core](https://github.com/Homebre
 
 <img src="/how-to-install-older-versions-of-homebrew-packages/formulas.webp" alt="List of Homebrew formulas" width="720" height="410" style="max-width: 100%; height: auto; aspect-ratio: 3120 / 1780;" loading="lazy" decoding="async">
 
-Since there are a lot of files here, it's easier to just modify the URL path in the browser. Modify the path based on the directory the command is in: Take the name of the package and append it at the end of the url, adding `/<directory-containing-package>/<package-name>.rb` to the URL. The `.rb` is important because all Homebrew packages are defined in Ruby (files with the `.rb` extension).
+Since there are a lot of files here, it's easier to just modify the URL path in the browser. Modify the path based on the directory the formula is in: Take the name of the package and append it at the end of the url, adding `/<directory-containing-package>/<package-name>.rb` to the URL. The `.rb` is important because all Homebrew packages are defined in Ruby (files with the `.rb` extension).
 
 In this case, we'll append `/t/terraform.rb` to the URL like so: https://github.com/Homebrew/homebrew-core/blob/6785b6baa9a6ce18c8230de9e9f0f847547dda9a/Formula/t/terraform.rb
 

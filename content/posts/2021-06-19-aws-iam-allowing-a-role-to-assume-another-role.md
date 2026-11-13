@@ -6,7 +6,7 @@ lastmod = "2026-02-07T01:54:50-08:00"
 categories = ["AWS"]
 +++
 
-To allow an IAM Role to assume another Role, we need to modify the **trust relationship** of the role that is to be assumed. This process varies depending if the roles exist within the same account or if they're in separate accounts.
+To allow an IAM Role to assume another Role, we need to modify the **trust relationship** of the role that is to be assumed. This process varies depending on whether the roles exist within the same account or if they're in separate accounts.
 
 ## Roles in the Same Account
 

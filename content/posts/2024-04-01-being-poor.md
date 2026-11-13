@@ -35,7 +35,7 @@ Being poor is preferring to walk instead of taking the bus to save money.
 
 Being poor is always being concerned about getting robbed on the street.
 
-Being poor is being confused as a gangster by the police due to your race/ethnicity.
+Being poor is being mistaken for a gangster by the police due to your race/ethnicity.
 
 Being poor is hearing gunshots on a regular basis.
 

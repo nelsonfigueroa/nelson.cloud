@@ -331,7 +331,7 @@ We can add paths we want to exclude from backups through the command line too.
 
 There are three kinds of exclusions: fixed-path exclusions, sticky exclusions, and volume exclusions. But for our purposes we only care about fixed-path and sticky exclusions.
 - Fixed-path exclusions are tied to a path regardless of what is there. Use these exclusions for anything that gets deleted and recreated, like build caches.
-- Sticky exclusions are the default. They're tied to the item itself. They follows the file if you move it and copies inherit it. Deleting and recreating a directory loses its stickiness.
+- Sticky exclusions are the default. They're tied to the item itself. They follow the file if you move it and copies inherit it. Deleting and recreating a directory loses its stickiness.
 
 Here's an example of adding a fixed-path exclusion:
 
@@ -473,7 +473,7 @@ backup  016C2F32-854B-4B94-8B87-DEA1774902CB
 backup  E3EA1B15-B920-4313-AB30-01E4AF10A27D
 ```
 
-There's two `backup` entries. To find the one that actually points to a volume, run:
+There are two `backup` entries. To find the one that actually points to a volume, run:
 
 ```console
 $ diskutil apfs list | grep -E "^\s+\+->"

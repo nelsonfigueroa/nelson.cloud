@@ -42,6 +42,6 @@ if @user.has_statement_this_month?(@account)
 end
 {{< /highlight >}}
 
-Sometimes I forget that actions are just regular ruby methods and can be exited out of by using `return`.
+Sometimes I forget that actions are just regular Ruby methods and can be exited out of by using `return`.
 
 More information is available here: [Avoiding Double Render Errors](https://guides.rubyonrails.org/layouts_and_rendering.html#avoiding-double-render-errors)

@@ -10,7 +10,7 @@ The EC2 Instance Metadata Service (IMDS) allows us to make an API call within an
 
 Using IMDSv1, all we needed to do was to hit the `http://169.254.169.254/latest/meta-data/` endpoint to retrieve metadata. I previously created a post with some examples: [Getting EC2 Instance Metadata Using IMDSv1]({{< ref "/posts/2022-02-08-ec2-metadata-using-imdsv1" >}}).
 
-Using IMDSv2, we now need to make an API call to `http://169.254.169.254/latest/api/token` to retrieve a token, then include that token in a `X-aws-ec2-metadata-token` header to hit the metadata endpoint `http://169.254.169.254/latest/meta-data/`.
+Using IMDSv2, we now need to make an API call to `http://169.254.169.254/latest/api/token` to retrieve a token, then include that token in an `X-aws-ec2-metadata-token` header to hit the metadata endpoint `http://169.254.169.254/latest/meta-data/`.
 
 During EC2 creation you can configure your instance to use IMDSv2. This is what the setting looks like under "Advanced details" when creating an EC2 Instance. As of December 2023, it defaulted to "V2 only (token required)":
 <img src="/getting-ec2-metadata-using-imdsv2/imdsv2.webp" alt="AWS EC2 creation process" width="720" height="414" style="max-width: 100%; height: auto; aspect-ratio: 1140 / 656;" loading="lazy" decoding="async">

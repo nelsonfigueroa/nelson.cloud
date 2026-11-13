@@ -26,7 +26,7 @@ At the highest level, we have **Clusters**. Each Cluster contains a **Master Nod
 
 Cluster -> Master Node/Worker Nodes -> Pods -> Containers
 
-Each of these objects are declared through **Deployments** and **Services** within a specified **Context** and **Namespace**. Deployments, Services, Contexts, and Namespaces can be declared through the command line or using YAML files.
+Each of these objects is declared through **Deployments** and **Services** within a specified **Context** and **Namespace**. Deployments, Services, Contexts, and Namespaces can be declared through the command line or using YAML files.
 
 The `kubectl` command is how we interact with Kubernetes objects.
 
@@ -75,7 +75,7 @@ Pods have several states: pending, running, succeeded, failed, and CrashLoopBack
 
 ### Contexts
 
-A Context simply refers to a Kubernetes Cluster. Each Cluster that is created will have its own Context. Contexts tell the `kubectl` command to which Cluster to run commands against. We'll get some hands-on experience with Contexts in a later section.
+A Context simply refers to a Kubernetes Cluster. Each Cluster that is created will have its own Context. Contexts tell the `kubectl` command which Cluster to run commands against. We'll get some hands-on experience with Contexts in a later section.
 
 ### Namespaces
 
@@ -130,7 +130,7 @@ A Service is an abstract way to expose an application running on a set of pods a
 
 Deployments are used to describe a state and update Pods and applications, then Services are used to expose these Pods to make them accessible by users. You can also use Services to expose two deployments and get them to talk to each other, such as frontend and backend pods.
 
-There are four types of Services in Kubernetes
+There are four types of Services in Kubernetes:
 
 - `ClusterIP`: The default type of service. It exposes the service internally in the cluster and can only be reached from within the cluster.
 - `NodePort`: This type of service exposes the service on each node's IP on a static port. A ClusterIP service is automatically created and the NodePort service will route to it. You can access the NodePort service from outside of the cluster by using the NodeIP:NodePort socket.
@@ -175,7 +175,7 @@ Minikube is a tool that will start up a single-node Kubernetes cluster on a virt
 
 I'll be showing steps to install Minikube on macOS using `brew`. If you're running Windows, your best bet is to refer to the [official Kubernetes documentation](https://minikube.sigs.k8s.io/docs/start/).
 
-You'll need a hypervisor to run Minikube on. I chose VirtualBox, and installing it was easy as running:
+You'll need a hypervisor to run Minikube on. I chose VirtualBox, and installing it was as easy as running:
 
 ```shell
 brew install --cask virtualbox

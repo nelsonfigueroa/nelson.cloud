@@ -43,7 +43,7 @@ With this information, I could create a Python script to flood the scammers with
 ## Creating a Python Script
 
 My plan was to create a loop that would continuously send POST requests to the scammer site.
-I wanted to speed up the amount of `POST` requests I could send at a time. I came across the [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) package that could help me with that.
+I wanted to increase the number of `POST` requests I could send at a time. I came across the [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) package that could help me with that.
 I also planned on using [Faker](https://faker.readthedocs.io/) to dynamically generate credentials.
 
 I came up with the following code:

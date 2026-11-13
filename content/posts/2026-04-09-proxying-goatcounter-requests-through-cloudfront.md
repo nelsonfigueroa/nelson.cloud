@@ -138,7 +138,7 @@ nelson_cloud_distribution = aws.cloudfront.Distribution("nelson-cloud",
     opts = pulumi.ResourceOptions(protect=True))
 ```
 
-Now that my Pulumi code has both the CloudFront function defined and the CloudFront distribution has been updated, I ran `pulumi up` to apply changes.
+Now that my Pulumi code defines the CloudFront function and updates the CloudFront distribution, I ran `pulumi up` to apply changes.
 
 ### Update the GoatCounter Script
 
@@ -154,7 +154,7 @@ After this, I built my site with Hugo and deployed it on S3/CloudFront by updati
 
 ## Verifying that it Works
 
-Now, GoatCounter should no longer be blocked by uBlock Origin. I tested by loading my site on an incognito browser window and checked that uBlock Origin was no longer blocking anything on my domain.
+Now, GoatCounter should no longer be blocked by uBlock Origin. I tested by loading my site in an incognito browser window and checked that uBlock Origin was no longer blocking anything on my domain.
 
 <img src="/proxying-goatcounter-requests/after.webp" alt="uBlock Origin no longer showing a blocked domain" width="720" height="540" style="max-width: 100%; height: auto; aspect-ratio: 1290 / 968;" loading="lazy" decoding="async">
 
