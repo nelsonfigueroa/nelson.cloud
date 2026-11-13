@@ -28,6 +28,7 @@ I ran this to see local snapshots:
 
 ```console
 $ tmutil listlocalsnapshots /
+Snapshots for disk /:
 com.apple.TimeMachine.2026-03-15-121124.local
 com.apple.TimeMachine.2026-07-30-071923.local
 ```
