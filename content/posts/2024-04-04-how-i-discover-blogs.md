@@ -66,11 +66,9 @@ ooh.directory is a collection of blogs on all sorts of topics. They have a [Rand
 
 **https://personalsit.es/**
 
-Another collection of blogs -- with previews!
+Another collection of blogs - with previews!
 
-## 250kb.club, 512kb.club, 1mb.club
-
-**https://250kb.club/**
+## 512kb.club, 1mb.club
 
 **https://512kb.club**
 
