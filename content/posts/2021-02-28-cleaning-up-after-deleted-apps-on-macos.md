@@ -28,7 +28,7 @@ find / \
 -not \( -path /usr/local/Homebrew -prune \) \
 -not \( -path /usr/local/Cellar -prune \) \
 -not \( -path /usr/local/Caskroom -prune \) \
--name \*lastpass\* 2>&1 | grep -v -E 'Operation not permitted|Permission denied|Not a directory'
+-iname \*lastpass\* 2>&1 | grep -v -E 'Operation not permitted|Permission denied|Not a directory'
 ```
 
 The command may take some time to complete depending on your machine specs and the number of files you have. It took around 10 minutes for me on a 2019 MacBook Pro with an i7 Intel CPU.

@@ -275,7 +275,7 @@ This was much easier than expected. I didn't even let my script run indefinitely
 
 After (presumably) sending too many requests I started getting a `400` status code in the response along with a message:
 
-```json
+```python
 {'message': 'recaptcha_challenge_required'}
 ```
 

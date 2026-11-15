@@ -44,13 +44,13 @@ URL helpers are mapped URI patterns, but we can also use these endpoints directl
 If a link requires an ID, we can add it through string interpolation. So the following link...
 
 ```erb
-<%= link_to account.name, account_path(@account) %>
+<%= link_to @account.name, account_path(@account) %>
 ```
 
 ...can be rewritten like this:
 
 ```erb
-<%= link_to account.name, "/accounts/#{@account.id}" %>
+<%= link_to @account.name, "/accounts/#{@account.id}" %>
 ```
 
 This also applies to nested routes. Let's say we have the following in `routes.rb`:
