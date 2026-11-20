@@ -40,6 +40,12 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
+    {{- with and (eq .Section "posts") site.Params.hireMe }}
+    <aside class="admonition admonition-note" data-pagefind-ignore>
+      <div class="admonition-title"><span class="admonition-icon"></span><span>Hiring?</span></div>
+      <div class="admonition-content"><p><em>{{ . | markdownify }}</em></p></div>
+    </aside>
+    {{- end }}
   </div>
   {{- end }}
 

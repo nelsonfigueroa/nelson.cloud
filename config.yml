@@ -98,7 +98,9 @@ params:
   # if i remove this config block then the front page ascii art breaks lol
   homeInfoParams:
     Title: Nelson Figueroa
-    Content: Software Engineer
+
+  # job search sentence at the end of posts and on /about page
+  hireMe: "If your team is hiring for Platform, SRE, or Cloud Security roles, I'm actively looking. You can reach out via [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/) or by sending an email to `nelson@<this domain>`."
 
   socialIcons:
     - name: github

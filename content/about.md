@@ -12,11 +12,9 @@ summary = "All about me, from my work experience to my interests and hobbies."
 
 ## Me
 
-I'm Nelson. I'm a Software Engineer with professional experience using technologies like Ruby on Rails, Kubernetes, and Amazon Web Services. I started this blog to share things I learn and to occasionally rant.
+I'm Nelson. I'm a Software Engineer working on cloud infrastructure and security. I have experience with things like Kubernetes, AWS, and infrastructure as code. I started this blog to share things I learn and to occasionally rant.
 
-## Contact
-
-You can get in touch with me on [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/) or by sending an email to `nelson@<this domain>`. I'm currently available for work!
+{{% hire-me %}}You can get in touch with me on [LinkedIn](https://www.linkedin.com/in/nelsonfigueroa1/) or by sending an email to `nelson@<this domain>`.{{% /hire-me %}}
 
 ## Experience
 
