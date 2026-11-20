@@ -41,43 +41,21 @@
     --syn-del: #858585;
 }
 
-/* light mode text palette: One Dark */
-.highlight:is(:hover, :has(> pre:focus-visible)) .chroma {
-    --syn-plain: #abb2bf;
-    --syn-keyword: #c678dd;
-    --syn-function: #61afef;
-    --syn-name: #56b6c2;
-    --syn-variable: #e06c75;
-    --syn-string: #98c379;
-    --syn-number: #d19a66;
-    --syn-comment: #5c6370;
-    --syn-ins: #98c379;
-    --syn-del: #e06c75;
-}
+/* the theme is Material Theme Palenight with extra saturation */
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma { --syn-plain: #babed8; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.bp, .py, .se, .cp, .ni, .gr, .gt, .nn) { color: #babed8; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.c, .c1, .ch, .cm, .cpf, .cs, .sd, .go, .gp) { color: #8e8e8e; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.s, .s1, .s2, .sa, .sb, .sc, .sh, .sr, .sx, .dl, .l, .ld, .gi) { color: #baed65; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.nf, .fm, .nb, .nd) { color: #739ffe; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.nv, .vc, .vg, .vi, .vm, .nt, .gd, .ge, .gs) { color: #ff606e; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.k, .kc, .kn, .kp, .kr, .ow, .o, .no, .si, .ss, .gh, .gu) { color: #48cfff; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.m, .mb, .mf, .mh, .mi, .il, .mo) { color: #ff7b53; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.kd, .na) { color: #cf81ff; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.kt, .nc, .ne) { color: #ffcb6b; }
 
-/* one dark accents beyond the slots: tags/keys red, classes yellow.
-   body:not(.dark) keeps them out of the dark (eva) palette */
-body:not(.dark) .highlight:is(:hover, :has(> pre:focus-visible)) .chroma .nt { color: #e06c75; }
-body:not(.dark) .highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.nc, .ne) { color: #e5c07b; }
-
-/* dark mode text palette: Eva Dark (fisheva) */
-.dark .highlight:is(:hover, :has(> pre:focus-visible)) .chroma {
-    --syn-plain: #9da5b3;
-    --syn-keyword: #cf68e1;
-    --syn-function: #6495ee;
-    --syn-name: #56b7c3;
-    --syn-variable: #b0b7c3;
-    --syn-string: #98c379;
-    --syn-number: #ff9070;
-    --syn-comment: #676e95;
-    --syn-ins: #4ec150;
-    --syn-del: #f14c4c;
-}
-
-/* eva accents beyond the slots: declaration/import keywords get its
-   second violet, primitive types get its pink */
-.dark .highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.kd, .kn) { color: #a78cfa; }
-.dark .highlight:is(:hover, :has(> pre:focus-visible)) .chroma .kt { color: #ff6ab3; }
+/* custom theme for JSON and YAML blocks */
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is([data-lang="json"], [data-lang="yaml"]) .nt { color: #48cfff; }
+.highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is([data-lang="json"], [data-lang="yaml"]) :is(.m, .mi, .mf, .kc) { color: #cf81ff; }
 
 /* ==== per-mode surfaces (not slot-driven; unchanged on hover) ======== */
 
@@ -101,48 +79,48 @@ body:not(.dark) .highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.nc
 /* CodeLine */ /* .chroma .cl {  } */
 /* Keyword */ .chroma .k { color:var(--syn-keyword);font-weight:bold }
 /* KeywordConstant */ .chroma .kc { color:var(--syn-keyword);font-weight:bold }
-/* KeywordDeclaration */ .chroma .kd { color:var(--syn-keyword);font-weight:bold }
+/* KeywordDeclaration */ .chroma .kd { color:var(--syn-keyword);font-weight:bold;font-style:italic }
 /* KeywordNamespace */ .chroma .kn { color:var(--syn-keyword);font-weight:bold }
 /* KeywordPseudo */ .chroma .kp { color:var(--syn-keyword);font-weight:bold }
 /* KeywordReserved */ .chroma .kr { color:var(--syn-keyword);font-weight:bold }
 /* KeywordType */ .chroma .kt { color:var(--syn-keyword);font-weight:bold }
 /* Name */ .chroma .n { color:var(--syn-plain) }
 /* NameAttribute */ .chroma .na { color:var(--syn-variable) }
-/* NameBuiltin */ .chroma .nb { color:var(--syn-name) }
-/* NameBuiltinPseudo */ .chroma .bp { color:var(--syn-name) }
-/* NameClass */ .chroma .nc { color:var(--syn-name) }
-/* NameConstant */ .chroma .no { color:var(--syn-number) }
+/* NameBuiltin */ .chroma .nb { color:var(--syn-name);font-weight:bold;font-style:italic }
+/* NameBuiltinPseudo */ .chroma .bp { color:var(--syn-name);font-weight:bold;font-style:italic }
+/* NameClass */ .chroma .nc { color:var(--syn-name);font-weight:bold;font-style:italic }
+/* NameConstant */ .chroma .no { color:var(--syn-number);font-weight:bold;font-style:italic }
 /* NameDecorator */ .chroma .nd { color:var(--syn-function) }
 /* NameEntity */ .chroma .ni { color:var(--syn-name) }
 /* NameException */ .chroma .ne { color:var(--syn-name) }
-/* NameFunction */ .chroma .nf { color:var(--syn-function);font-weight:bold }
-/* NameFunctionMagic */ .chroma .fm { color:var(--syn-function);font-weight:bold }
+/* NameFunction */ .chroma .nf { color:var(--syn-function);font-weight:bold;font-style:italic }
+/* NameFunctionMagic */ .chroma .fm { color:var(--syn-function);font-weight:bold;font-style:italic }
 /* NameLabel */ .chroma .nl { color:var(--syn-plain) }
-/* NameNamespace */ .chroma .nn { color:var(--syn-name) }
+/* NameNamespace */ .chroma .nn { color:var(--syn-name);font-weight:bold;font-style:italic }
 /* NameOther */ .chroma .nx { color:var(--syn-plain) }
 /* NameProperty */ .chroma .py { color:var(--syn-variable) }
-/* NameTag */ .chroma .nt { color:var(--syn-name);font-weight:bold }
-/* NameVariable */ .chroma .nv { color:var(--syn-variable) }
-/* NameVariableClass */ .chroma .vc { color:var(--syn-variable) }
-/* NameVariableGlobal */ .chroma .vg { color:var(--syn-variable) }
-/* NameVariableInstance */ .chroma .vi { color:var(--syn-variable) }
-/* NameVariableMagic */ .chroma .vm { color:var(--syn-variable) }
+/* NameTag */ .chroma .nt { color:var(--syn-name) }
+/* NameVariable */ .chroma .nv { color:var(--syn-variable);font-weight:bold;font-style:italic }
+/* NameVariableClass */ .chroma .vc { color:var(--syn-variable);font-weight:bold;font-style:italic }
+/* NameVariableGlobal */ .chroma .vg { color:var(--syn-variable);font-weight:bold;font-style:italic }
+/* NameVariableInstance */ .chroma .vi { color:var(--syn-variable);font-weight:bold;font-style:italic }
+/* NameVariableMagic */ .chroma .vm { color:var(--syn-variable);font-weight:bold;font-style:italic }
 /* Literal */ .chroma .l { color:var(--syn-string) }
 /* LiteralDate */ .chroma .ld { color:var(--syn-string) }
-/* LiteralString */ .chroma .s { color:var(--syn-string) }
-/* LiteralStringAffix */ .chroma .sa { color:var(--syn-string) }
-/* LiteralStringBacktick */ .chroma .sb { color:var(--syn-string) }
-/* LiteralStringChar */ .chroma .sc { color:var(--syn-string) }
-/* LiteralStringDelimiter */ .chroma .dl { color:var(--syn-string) }
-/* LiteralStringDoc */ .chroma .sd { color:var(--syn-string) }
-/* LiteralStringDouble */ .chroma .s2 { color:var(--syn-string) }
-/* LiteralStringEscape */ .chroma .se { color:var(--syn-string) }
-/* LiteralStringHeredoc */ .chroma .sh { color:var(--syn-string) }
-/* LiteralStringInterpol */ .chroma .si { color:var(--syn-string) }
-/* LiteralStringOther */ .chroma .sx { color:var(--syn-string) }
-/* LiteralStringRegex */ .chroma .sr { color:var(--syn-string) }
-/* LiteralStringSingle */ .chroma .s1 { color:var(--syn-string) }
-/* LiteralStringSymbol */ .chroma .ss { color:var(--syn-string) }
+/* LiteralString */ .chroma .s { color:var(--syn-string);font-style:italic }
+/* LiteralStringAffix */ .chroma .sa { color:var(--syn-string);font-style:italic }
+/* LiteralStringBacktick */ .chroma .sb { color:var(--syn-string);font-style:italic }
+/* LiteralStringChar */ .chroma .sc { color:var(--syn-string);font-style:italic }
+/* LiteralStringDelimiter */ .chroma .dl { color:var(--syn-string);font-style:italic }
+/* LiteralStringDoc */ .chroma .sd { color:var(--syn-string);font-style:italic }
+/* LiteralStringDouble */ .chroma .s2 { color:var(--syn-string);font-style:italic }
+/* LiteralStringEscape */ .chroma .se { color:var(--syn-string);font-style:italic }
+/* LiteralStringHeredoc */ .chroma .sh { color:var(--syn-string);font-style:italic }
+/* LiteralStringInterpol */ .chroma .si { color:var(--syn-string);font-style:italic }
+/* LiteralStringOther */ .chroma .sx { color:var(--syn-string);font-style:italic }
+/* LiteralStringRegex */ .chroma .sr { color:var(--syn-string);font-style:italic }
+/* LiteralStringSingle */ .chroma .s1 { color:var(--syn-string);font-style:italic }
+/* LiteralStringSymbol */ .chroma .ss { color:var(--syn-string);font-style:italic }
 /* LiteralNumber */ .chroma .m { color:var(--syn-number) }
 /* LiteralNumberBin */ .chroma .mb { color:var(--syn-number) }
 /* LiteralNumberFloat */ .chroma .mf { color:var(--syn-number) }
@@ -153,21 +131,21 @@ body:not(.dark) .highlight:is(:hover, :has(> pre:focus-visible)) .chroma :is(.nc
 /* Operator */ .chroma .o { color:var(--syn-plain) }
 /* OperatorWord */ .chroma .ow { color:var(--syn-keyword);font-weight:bold }
 /* Punctuation */ .chroma .p { color:var(--syn-plain) }
-/* Comment */ .chroma .c { color:var(--syn-comment); font-style: italic; }
-/* CommentHashbang */ .chroma .ch { color:var(--syn-comment); font-style: italic; }
-/* CommentMultiline */ .chroma .cm { color:var(--syn-comment); font-style: italic; }
-/* CommentSingle */ .chroma .c1 { color:var(--syn-comment); font-style: italic; }
-/* CommentSpecial */ .chroma .cs { color:var(--syn-comment); font-style: italic; }
+/* Comment */ .chroma .c { color:var(--syn-comment);font-style:italic }
+/* CommentHashbang */ .chroma .ch { color:var(--syn-comment);font-style:italic }
+/* CommentMultiline */ .chroma .cm { color:var(--syn-comment);font-style:italic }
+/* CommentSingle */ .chroma .c1 { color:var(--syn-comment);font-style:italic }
+/* CommentSpecial */ .chroma .cs { color:var(--syn-comment);font-weight:bold }
 /* CommentPreproc */ .chroma .cp { color:var(--syn-keyword);font-weight:bold }
-/* CommentPreprocFile */ .chroma .cpf { color:var(--syn-comment); font-style: italic; }
+/* CommentPreprocFile */ .chroma .cpf { color:var(--syn-comment);font-weight:bold }
 /* Generic */ .chroma .g { color:var(--syn-plain) }
 /* GenericDeleted */ .chroma .gd { color:var(--syn-del) }
 /* GenericEmph */ .chroma .ge { color:var(--syn-plain);font-style:italic }
 /* GenericError */ .chroma .gr { color:var(--syn-keyword) }
 /* GenericHeading */ .chroma .gh { color:var(--syn-keyword);font-weight:bold }
-/* GenericInserted */ .chroma .gi { color:var(--syn-ins);font-weight:bold }
+/* GenericInserted */ .chroma .gi { color:var(--syn-ins) }
 /* GenericOutput */ /* .go owned by chroma-mod.css (muted console output) */
-/* GenericPrompt */ .chroma .gp { color:var(--syn-ins);font-weight:bold }
+/* GenericPrompt */ .chroma .gp { color:var(--syn-comment) }
 /* GenericStrong */ .chroma .gs { color:var(--syn-keyword);font-weight:bold }
 /* GenericSubheading */ .chroma .gu { color:var(--syn-keyword) }
 /* GenericTraceback */ .chroma .gt { color:var(--syn-keyword) }

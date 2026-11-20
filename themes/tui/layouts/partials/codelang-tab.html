@@ -1,15 +1,24 @@
 {{- $h := .highlighted | string -}}
-{{- if in (slice "console" "bash" "sh" "shell" "zsh") (lower .lang) -}}
+{{- $lang := lower (.lang | default "") -}}
+{{- if in (slice "console" "bash" "sh" "shell" "zsh") $lang -}}
   {{- $lines := slice -}}
   {{- range split $h `<span class="line">` -}}
     {{- $l := . -}}
     {{- if not (strings.Contains $l `class="go"`) -}}
-      {{- $l = replaceRE `(<span class="cl">(?:<span class="gp">[^<]*</span> )?|<span class="[op]">(?:\||;|&amp;&amp;|\|\|)</span> |<span class="k">(?:do|then|else)</span> )([\w.~/][\w.~/-]*)` `${1}<span class="nb">${2}</span>` $l -}}
+      {{- $l = replaceRE `(<span class="k">function</span> +)([\w.:-]+)` `${1}<span class="nf">${2}</span>` $l -}}
+      {{- $l = replaceRE `(<span class="cl">\s*)([\w.:-]+)( *<span class="o">\(\)</span>)` `${1}<span class="nf">${2}</span>${3}` $l -}}
+      {{- $l = replaceRE `((?:<span class="cl">\s*(?:<span class="gp">[^<]*</span> )?|<span class="[op]">(?:\||;|&amp;&amp;|\|\|)</span> |<span class="k">(?:do|then|else)</span> |<span class="k">\$\(</span>)(?:<span class="nv">\w+</span><span class="o">=</span>(?:<span class="(?:s\w*|si|nv|nb|m\w*)">[^<]*</span>|[^\s<])* )*)([\w.~/][\w.~/-]*)` `${1}<span class="nb">${2}</span>` $l -}}
       {{- $l = replaceRE `(\s)(--?[A-Za-z][\w-]*)` `${1}<span class="no">${2}</span>` $l -}}
     {{- end -}}
     {{- $lines = $lines | append $l -}}
   {{- end -}}
   {{- $h = delimit $lines `<span class="line">` -}}
+{{- else if in (slice "ruby" "rb" "erb") $lang -}}
+  {{- $h = replaceRE `<span class="mi">(\d[\d_]*)</span><span class="o">\.</span><span class="mi">(\d[\d_]*)</span>` `<span class="mf">${1}.${2}</span>` $h -}}
+{{- else if in (slice "javascript" "js" "typescript" "ts" "jsx" "tsx") $lang -}}
+  {{- $h = replaceRE `(<span class="kd">function</span>\s+)<span class="nx">` `${1}<span class="nf">` $h -}}
+{{- else if in (slice "python" "py" "python3") $lang -}}
+  {{- $h = replaceRE `<span class="n">([^<]+)</span>(<span class="p">\()` `<span class="nf">${1}</span>${2}` $h -}}
 {{- end -}}
 {{- with .lang -}}
   {{- $label := index hugo.Data.codelang (lower .) | default . -}}
