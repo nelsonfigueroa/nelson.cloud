@@ -10,7 +10,7 @@ featured = false
 
 PostgreSQL databases support having [enumerated type](https://en.wikipedia.org/wiki/Enumerated_type) (enum) columns so that the column only accepts one of a predefined set of values. I've worked with [ORMs](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping) like [Active Record](https://guides.rubyonrails.org/active_record_basics.html) from [Ruby on Rails](https://rubyonrails.org/). Using Active Record, I could work with database columns that only allowed a certain set of values. I always thought that was only possible due to the ORM layer abstracting away these things, but that's not the case. Enums can be enforced at the database level (at least with PostgreSQL).
 
-I'll demonstrate on a PostgreSQL container with a simple table. I'll be using Podman. You can also use Docker to follow along, just replace `podman` with `docker` in the commands.
+I'll demonstrate on a PostgreSQL container with a simple table. I'll be using Podman. You can also use Docker to follow along. Just replace `podman` with `docker` in the commands.
 
 Make sure Podman/Docker is running, then run the following to get a running PostgreSQL container locally:
 
@@ -138,7 +138,7 @@ PostgreSQL responds with:
 INSERT 0 1
 ```
 
-We should have two rows total now. We can double check:
+We should have two rows total now. We can double-check:
 
 ```sql
 SELECT * FROM pipeline_runs;

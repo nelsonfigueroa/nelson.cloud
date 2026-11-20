@@ -20,7 +20,7 @@ The `--bind 0.0.0.0` option is necessary because Hugo binds itself to `127.0.0.1
 
 The `--baseURL <local-IP-address>` option is needed so that links generated in the Hugo site all point to the local IP address the site is being served from. Otherwise, the links will be generated with `localhost:1313`.
 
-Note that if you're on public wifi this command may not work due to client isolation!
+Note that if you're on public Wi-Fi, this command may not work due to client isolation!
 
 If you need to get your local IP address, here are a few methods depending on your operating system.
 

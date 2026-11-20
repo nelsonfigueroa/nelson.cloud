@@ -14,10 +14,10 @@ Firefox [157.0](https://www.firefox.com/en-US/firefox/157.0/releasenotes/) made 
 
 This has been tested on Firefox v159.
 
-1. Type `about:config` in your address bar and press enter. If you see a "Proceed with Caution" screen, click on "Accept the Risk and Continue".
-2. Type `toolkit.legacyUserProfileCustomizations.stylesheets` into the search field and press enter.
-3. In the result that comes up, click the toggle button on the right side (or double click the row). The `false` value should change to `true`.
-4. Next, type `about:support` in your address bar and press enter. Use CTRL/CMD + F to search for "Profile Folder". You should see the full path to your Firefox profile, usually ending with `.default-release`. Open that folder.
+1. Type `about:config` in your address bar and press Enter. If you see a "Proceed with Caution" screen, click on "Accept the Risk and Continue".
+2. Type `toolkit.legacyUserProfileCustomizations.stylesheets` into the search field and press Enter.
+3. In the result that comes up, click the toggle button on the right side (or double-click the row). The `false` value should change to `true`.
+4. Next, type `about:support` in your address bar and press Enter. Use CTRL/CMD + F to search for "Profile Folder". You should see the full path to your Firefox profile, usually ending with `.default-release`. Open that folder.
 5. In that folder, create a folder named "chrome" (all lowercase). Then, create a file inside it called "userChrome.css".
 6. Open "userChrome.css" with a plain text editor. Copy and paste this CSS into it:
    ```css
