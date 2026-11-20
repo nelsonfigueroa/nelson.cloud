@@ -101,7 +101,7 @@
       "name" (.Title | plainify)
       "description" $desc
       "inLanguage" (.Language.Lang | default "en-us")
-      "wordCount" .WordCount
+      "wordCount" (partialCached "word_count.html" . .RelPermalink)
       "datePublished" .PublishDate
       "dateModified" .Lastmod
       "keywords" $keywords

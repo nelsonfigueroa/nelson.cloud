@@ -15,8 +15,8 @@
 {{- $weekdays := dict -}}
 
 {{- range $posts -}}
-  {{- $words = add $words .WordCount -}}
-  {{- $minutes = add $minutes .ReadingTime -}}
+  {{- $words = add $words (partialCached "word_count.html" . .RelPermalink) -}}
+  {{- $minutes = add $minutes (partial "reading_time.html" .) -}}
   {{- $images = add $images (len (findRE `<img[ >]` .Content)) -}}
   {{- $d := .Date.Format "Monday" -}}
   {{- $weekdays = merge $weekdays (dict $d (add 1 (index $weekdays $d | default 0))) -}}
@@ -48,7 +48,7 @@
 {{- $cum := 0 -}}
 {{- range ($posts.GroupByDate "2006").Reverse -}}
   {{- $yearWords := 0 -}}
-  {{- range .Pages -}}{{- $yearWords = add $yearWords .WordCount -}}{{- end -}}
+  {{- range .Pages -}}{{- $yearWords = add $yearWords (partialCached "word_count.html" . .RelPermalink) -}}{{- end -}}
   {{- $cum = add $cum $yearWords -}}
   {{- $yearRows = $yearRows | append (dict "label" .Key "count" (len .Pages)) -}}
   {{- $cumRows = $cumRows | append (dict "label" .Key "count" $cum "display" (lang.FormatNumberCustom 0 $cum) "note" (printf "+%s" (lang.FormatNumberCustom 0 $yearWords))) -}}

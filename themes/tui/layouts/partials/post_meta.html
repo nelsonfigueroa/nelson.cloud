@@ -10,11 +10,13 @@
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}
-{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
+{{- $minutes := partial "reading_time.html" . }}
+{{- $scratch.Add "meta" (slice (i18n "read_time" $minutes | default (printf "%d min" $minutes))) }}
 {{- end }}
 
 {{- if (.Param "ShowWordCount") -}}
-{{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
+{{- $words := partialCached "word_count.html" . .RelPermalink }}
+{{- $scratch.Add "meta" (slice (i18n "words" $words | default (printf "%d words" $words))) }}
 {{- end }}
 
 {{- with ($scratch.Get "meta") }}
