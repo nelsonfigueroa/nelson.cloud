@@ -51,9 +51,9 @@ func main() {
 		fmt.Println("ok!")
 	}
 
-	// Status code 301
-	if resp.StatusCode == http.StatusMovedPermanently {
-		fmt.Println("moved permanently")
+	// Status code 401
+	if resp.StatusCode == http.StatusUnauthorized {
+		fmt.Println("unauthorized")
 	}
 
 	// Status code 403
