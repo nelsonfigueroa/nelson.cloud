@@ -30,7 +30,7 @@ I figured I could come up with a quick script to slam this endpoint with random 
 
 To make my made up seed phrases look more legitimate, I needed to find out if the words in seed phrases have certain limits or if they come from a pool of words. I want the scammers to try every single phrase I submit only to find out that they don't work.
 
-After doing some reading from the official [MetaMask site](https://metamask.zendesk.com/hc/en-us/articles/4404722782107-User-Guide-Secret-Recovery-Phrase-password-and-private-keys#h_01FYVAXJQT914HCHEYFPNMEJEA), I saw this:
+After doing some reading from the official [MetaMask site](https://support.metamask.com/start/user-guide-secret-recovery-phrase-password-and-private-keys/), I saw this (2026 update: the page has changed now):
 
 <img src="/retaliating-against-metamask-scammers/metamask-documentation.webp" alt="metamask documentation" width="720" height="305" style="max-width: 100%; height: auto; aspect-ratio: 1724 / 732;" loading="lazy" decoding="async">
 

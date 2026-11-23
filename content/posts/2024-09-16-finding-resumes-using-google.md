@@ -37,7 +37,7 @@ resume.pdf filetype:pdf site:github.com
 
 <br>
 
-After GitHub I decided to try the `pages.dev` domain used by [Cloudflare Pages](https://pages.cloudflare.com/). Here is a simple search query that gives good results. [Try this search yourself](https://www.google.com/search?q=resume+filetype:pdf+site:pages.dev).
+After GitHub I decided to try the `pages.dev` domain used by [Cloudflare Pages](https://www.cloudflare.com/products/pages/). Here is a simple search query that gives good results. [Try this search yourself](https://www.google.com/search?q=resume+filetype:pdf+site:pages.dev).
 
 ```text
 resume filetype:pdf site:pages.dev

@@ -214,8 +214,8 @@ If you want to revoke any of these tokens for security reasons, there are differ
 
 ## References
 
-- https://www.pulumi.com/docs/pulumi-cloud/access-management/access-tokens/
-- https://www.pulumi.com/docs/pulumi-cloud/cloud-rest-api/
+- https://www.pulumi.com/docs/administration/concepts/access-tokens/
+- https://www.pulumi.com/docs/reference/cloud-rest-api/
 - https://www.pulumi.com/docs/reference/cloud-rest-api/users/
 - https://www.pulumi.com/docs/reference/cloud-rest-api/access-tokens/
 - https://www.pulumi.com/docs/iac/cli/commands/pulumi_whoami/

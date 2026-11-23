@@ -302,4 +302,4 @@ After writing this post I noticed someone else already had the same idea. I hesi
 - https://www.ipm-corporation.com/research/distributed-denial-of-scheduling-on-calendly
 
 I also noticed that there are Calendly API docs. These would have come in handy earlier but I only found out after I was done. That's fine though, the process of figuring it all out by inspecting browser requests was fun:
-- https://developer.calendly.com/api-docs/
+- https://developer.calendly.com/api-docs/overview/api/reference
