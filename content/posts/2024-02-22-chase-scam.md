@@ -254,7 +254,7 @@ while True:
         requests_sent = requests_sent + 5
         print(f"Requests sent: {requests_sent}")
     except requests.exceptions.RequestException as e:
-        print({e})
+        print(e)
 ```
 
 It's quite lengthy but it works. I ran the script in the background and went about my day.

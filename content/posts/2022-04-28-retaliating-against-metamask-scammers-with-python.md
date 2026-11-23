@@ -54,9 +54,7 @@ SEED_PHRASE_WORDS = [
     "able",
     "about",
     "above",
-    .
-    .
-    .
+    # ...
 ]
 
 # getting list of 12 random words
@@ -94,9 +92,7 @@ SEED_PHRASE_WORDS = [
     "able",
     "about",
     "above",
-    .
-    .
-    .
+    # ...
 ]
 
 while True:

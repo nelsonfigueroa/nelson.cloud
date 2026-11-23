@@ -12,13 +12,13 @@ TocOpen = false
 Use the `copy()` method.
 
 ```python
-list_a = list_b.copy()
+list_b = list_a.copy()
 ```
 
 If the list has other lists in it, import `copy` and use `copy.deepcopy()` to get fully independent lists.
 ```python
 import copy
-list_a = copy.deepcopy(list_b)
+list_b = copy.deepcopy(list_a)
 ```
 {{< /admonition >}}
 
